@@ -7,7 +7,7 @@ tags : events, PHP
 
 # Hardcore Simple Events Dispatcher for PHP
 
-Events is simple pure functional **event dispatching library** for PHP 5.5+ and have nice and clear interface with function `on()`, `off()`, `fire()`, `filter()`, `care()`, `once()`, `listeners()`, `events()` - that's all.
+Sphido events is simple pure functional **event dispatching library** for PHP 5.5+ and have nice and clear interface with function `on()`, `off()`, `fire()`, `filter()`, `care()`, `once()`, `listeners()`, `events()` - that's all.
 
 With events can:
 
