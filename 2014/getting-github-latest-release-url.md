@@ -7,7 +7,7 @@ tags : github, PHP, tip
 
 # Getting GitHub latest release URL
 
-Do you need **Download Latest Version**Â button? Try follow PHP code:
+Do you need **Download Latest Version** button? Try follow PHP code:
 
     function getLatestTagUrl($repository, $default = 'master') {
         $file = @json_decode(@file_get_contents("https://api.github.com/repos/$repository/tags", false,
