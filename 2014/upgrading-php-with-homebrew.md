@@ -7,7 +7,7 @@ tags : brew, mac, osx, PHP
 
 # Upgrading PHP with Homebrew
 
-Are you using [josegonzalez brew repository][1]Â accordingÂ my [previous blog post][2]? You will need switch your brew to an [official PHP repository][3].
+Are you using [josegonzalez brew repository][1] according my [previous blog post][2]? You will need switch your brew to an [official PHP repository][3].
 
     brew untap josegonzalez/homebrew-php
     brew tap homebrew/dupes
@@ -24,7 +24,7 @@ Do not forgot change your shortcut in your [bash profile][4]:
     alias php-stop="sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php55.plist"
     alias php-restart="php-stop && php-start"
 
-You can also getting an errorÂ **Dubious ownership on file&#8230;** then change *._plists_ rights:
+You can also getting an error **Dubious ownership on file&#8230;** then change *._plists_ rights:
 
     sudo chown root ~/Library/LaunchAgents/*
     sudo chmod 644 ~/Library/LaunchAgents/*<p</p>
