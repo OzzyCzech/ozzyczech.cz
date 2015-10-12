@@ -1,6 +1,6 @@
 <!--
 title : How to protect your emails with PHP and Javascript
-author : Roman Ožana <ozana@omdesign.cz>
+author : Roman OÅ¾ana <ozana@omdesign.cz>
 date : 22.4.2014 07:38:08
 tags : email, js, PHP, protection
 -->
@@ -23,7 +23,7 @@ Working with or without javascript it&#8217;s combine two technique for email pr
 Sources:
 
   * [Nine ways to obfuscate e-mail addresses compared][2]
-  * and� [Best Method for Email Obfuscation?][3]<p</p>
+  * and [Best Method for Email Obfuscation?][3]
 
  [1]: http://en.wikipedia.org/wiki/ROT13
  [2]: http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
