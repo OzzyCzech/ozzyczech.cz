@@ -1,9 +1,10 @@
 <!--
-title : Composer require PEAR package
-author : Roman Ožana <ozana@omdesign.cz>
-date : 25.9.2013 16:36:00
-tags : composer, pear, tip
+title: Composer require PEAR package
+date: 25.9.2013 18:36:00
+author: Roman Ožana <ozana@omdesign.cz>
+tags: composer, pear, tip
 -->
+
 
 # Composer require PEAR package
 
@@ -18,4 +19,6 @@ tags : composer, pear, tip
       "pear-pear/Mail": ">=1.2.0"
      }
     }
-    <p</p>
+
+
+ #tip #composer #PEAR

@@ -1,13 +1,15 @@
 <!--
-title : Getting GitHub latest release URL
-author : Roman Ožana <ozana@omdesign.cz>
-date : 28.9.2014 19:13:04
-tags : github, PHP, tip
+title: Getting GitHub latest release URL
+date: 28.9.2014 21:13:04
+author: Roman Ožana <ozana@omdesign.cz>
+tags: github, PHP, tip
 -->
+
 
 # Getting GitHub latest release URL
 
-Do you need **Download Latest Version** button? Try follow PHP code:
+Do you need **Download Latest Version** button? Try follow PHP code:
+
 
     function getLatestTagUrl($repository, $default = 'master') {
         $file = @json_decode(@file_get_contents("https://api.github.com/repos/$repository/tags", false,
@@ -17,4 +19,7 @@ Do you need **Download Latest Version** button? Try follow PHP code:
     }
     
     echo getLatestTagUrl('OzzyCzech/vestibulum');
-    // will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip<p</p>
+    // will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip
+
+
+ #php #github #tip

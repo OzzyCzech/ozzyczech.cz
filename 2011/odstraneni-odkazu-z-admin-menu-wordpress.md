@@ -1,18 +1,19 @@
 <!--
-title : Odstranění odkazů z admin menu WordPress
-author : Roman Ožana <ozana@omdesign.cz>
-date : 11.9.2011 20:06:48
-tags : wordpress
+title: Odstranění odkazů z admin menu Wordpress
+date: 11.9.2011 22:06:48
+author: Roman Ožana <ozana@omdesign.cz>
+tags: wordpress
 -->
 
-# Odstranění odkazů z admin menu WordPress
 
-Pro� [manažer odkazů][1] jsem nenašel nikdy **smysluplné využití**. Proč ho rovnou z menu neodstranit? Stejně tam jen zavazí:
+# Odstranění odkazů z admin menu Wordpress
 
-<pre>add_action('admin_menu', function(){
-  remove_menu_page('link-manager.php');
-});</pre>
+Pro [manažer odkazů](http://codex.wordpress.org/Links_Manager) #wordpress jsem nenašel nikdy **smysluplné využití**. Proč ho rovnou z menu neodstranit? Stejně tam jen zavazí:
 
-Obdobně je možné odstranit cokoliv dalšího např. `remove_menu_page('edit-comments.php');`� &#8211; odstraní odkaz na komentáře.
 
- [1]: http://codex.wordpress.org/Links_Manager
+    add_action('admin_menu', function(){
+      remove_menu_page('link-manager.php');
+    });
+
+
+ Obdobně je možné odstranit cokoliv dalšího např. `remove_menu_page('edit-comments.php');` - odstraní odkaz na komentáře.

@@ -1,20 +1,21 @@
 <!--
-title : Upgrade all npm packages to latest versions
-author : Roman Ožana <ozana@omdesign.cz>
-date : 30.12.2013 14:36:31
-tags : nodejs, npm, tip
+title: Upgrade all npm packages to latest versions
+date: 30.12.2013 15:36:31
+author: Roman Ožana <ozana@omdesign.cz>
+tags: nodejs, npm, tip
 -->
+
 
 # Upgrade all npm packages to latest versions
 
-Install follow package [npm-check-updates][1] by 
+Install follow package [npm-check-updates](https://npmjs.org/package/npm-check-updates) by
 
-<pre>npm install -g npm-check-updates</pre>
 
-and run 
+    npm install -g npm-check-updates
 
-<pre>npm-check-updates -u</pre>
 
-for upgrade package.json<p</p>
+ and run 
+    npm-check-updates -u
 
- [1]: https://npmjs.org/package/npm-check-updates
+
+ for upgrade package.json #npm #nodejs #tip

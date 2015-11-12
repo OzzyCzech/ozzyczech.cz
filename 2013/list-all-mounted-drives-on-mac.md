@@ -1,10 +1,11 @@
 <!--
-title : List all mounted drives on mac
-author : Roman Ožana <ozana@omdesign.cz>
-date : 11.3.2013 08:25:01
-tags : mac, terminal
+title: List all mounted drives on mac
+date: 11.3.2013 09:25:01
+author: Roman Ožana <ozana@omdesign.cz>
+tags: mac, terminal
 -->
+
 
 # List all mounted drives on mac
 
-It&#8217;s simple: `df -h`
+It's simple: `df -h` #mac #terminal
