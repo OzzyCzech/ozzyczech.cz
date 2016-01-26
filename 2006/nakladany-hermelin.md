@@ -10,8 +10,6 @@ tags: mix, Recepty, student
 
 Jsou to právě 4 dny co jsme si doma **naložili hermelínek**. Posuďte sami nevypadá to úplně božsky?
 
-[![Nakládaný hermelín](http://www.nabito.net/wp-content/uploads/2006/hermelin01_small.jpg "Nakládaný hermelín")](http://www.nabito.net/wp-content/uploads/2006/hermelin01.jpg "Hermelín číslo jedna")
-
 **Co budete potřebovat?**- Několik sklenic tzv. **sedmiček** (nebo 5 litrovou velkou sklenici od okurek)
 - (Sedlčanské) **hermelíny** - dle počtu osob, čím více tím lépe
 - Kvalitní rostlinný Olej, nejlépe slunečnicový tak asi litr až dva podle množství herrmelínů
@@ -33,5 +31,3 @@ Jsou to právě 4 dny co jsme si doma **naložili hermelínek**. Posuďte sami n
 **Čekání a hlavně konzumace!**- Zrání může při pokojové teplotě trvat **tak 7-14 dní**. Záleží na tom, jak ho máte rádi.
 - Hlavně ho nemějte na sluníčku a občas doporučuji povolit a zkontrolovat (neujídat).
 - Podávat s Pivem, čerstvým chlebem a hlavně vychutnávat !
-
-[![Hermelínek číslo dva](http://www.nabito.net/wp-content/uploads/2006/hermelin02_small.jpg "Hermelínek číslo dva")](http://www.nabito.net/wp-content/uploads/2006/hermelin02.jpg "Nakládaný hermelín číslo dva")
