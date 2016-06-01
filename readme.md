@@ -1,6 +1,6 @@
 # Content backup of nabito.net blog
 
-This is backup of my old blog from www.nabito.net
+This is markdown backup of my old blog (www.nabito.net)
 
 ## Contact
 
