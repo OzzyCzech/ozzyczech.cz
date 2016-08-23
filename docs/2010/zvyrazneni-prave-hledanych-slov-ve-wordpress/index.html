@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> -- nabito.net</title>
+
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ozzyczech.github.io/nabito.net/">nabito.net</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                  </ul>
+            </div>
+           
+
+          </div>
+    </nav>
+
+
+
+<p>title: Zvýraznění právě hledaných slov ve Wordpress
+date: 15.11.2010 17:21:28
+author: Roman Ožana <a href="mailto:ozana@omdesign.cz">ozana@omdesign.cz</a>
+tags: CSS, PHP, wordpress
+&ndash;&gt;</p>
+
+<h1 id="zvýraznění-právě-hledaných-slov-ve-wordpress">Zvýraznění právě hledaných slov ve Wordpress</h1>
+
+<p>Několik následujících řádků kódu <strong>obalí</strong> všechna právě vyhledávaná <strong>klíčová slova</strong> do značky STRONG (class search-keyword). Kód je možné vložit do <em>function.php</em> ve Vašem template. Nebo jej můžete vložit rovnou do <em>search.php</em> někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí <a href="http://codex.wordpress.org/Function_Reference/get_search_form">Wordpress</a>.</p>
+
+<pre><code>function omSearchHeighlight($text)
+{
+$keys = explode(&quot; &quot;, get_search_query());
+$text = preg_replace('/('.implode('|', $keys) .')/iu', '&lt;strong class=&quot;search-keyword&quot;&gt;\0&lt;/strong&gt;', $text);
+return $text;
+}
+
+add_filter('the_title','omSearchHeighlight');
+add_filter('the_content','omSearchHeighlight');
+add_filter('the_excerpt','omSearchHeighlight');
+
+// nezapomeňte strong element nastylovat např.
+// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
+</code></pre>
+
+<p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
+
+
+    <footer>
+
+    </footer>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/jquery.min.js"></script>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/bootstrap.min.js"></script>
+
+
+    
+
+</body>
+
+</html>
+

@@ -1,0 +1,20 @@
+.svg-background-fill(@src, @fill) {
+	@data-uri: data-uri('image/svg+xml;charset=UTF-8', "@{src}");
+	background-image: e(
+			replace(
+          // Follow regular expression remove fill rules from SVG source
+          // @data-uri is escaped and therefore you also need escape regular expression
+          // 'fill=".*?"|fill:.*?;' ===>
+          // escape('fill="'') + '.*?' + escape('"') + '|'
+          // escape('fill:') + '.*?' + escape(';')
+          replace('@{data-uri}', '(fill%3D%22.*?%22|fill%3A.*?%3B)', '', 'g'),
+					escape('<path '),
+          escape('<path fill="@{fill}" '),
+					"g"
+			)
+	);
+}
+
+a {
+  .svg-background-fill('./open.svg', '#fff');
+}

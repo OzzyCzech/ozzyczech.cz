@@ -1,0 +1,17 @@
+
+    <footer>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
+
+
+    {{ if isset .Site.Params "Ganalytics" }}{{ partial "ga.html" . }}{{ end }}
+
+</body>
+
+</html>

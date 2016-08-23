@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> -- nabito.net</title>
+
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ozzyczech.github.io/nabito.net/">nabito.net</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                  </ul>
+            </div>
+           
+
+          </div>
+    </nav>
+
+
+
+<p>title: Convert JSON data to valid PHP code
+date: 19.1.2014 18:30:01
+author: Roman Ožana <a href="mailto:ozana@omdesign.cz">ozana@omdesign.cz</a>
+tags:
+&ndash;&gt;</p>
+
+<h1 id="convert-json-data-to-valid-php-code">Convert JSON data to valid PHP code</h1>
+
+<p>Do you need <strong>convert JSON data to valid PHP</strong> code without pain? I&rsquo;ve got a short script for that! My simple solution used <a href="http://www.php.net/manual/en/function.var-export.php">var_export()</a> function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace <code>stdClass::__set_state/</code> with <code>(object)</code>.</p>
+
+<p>Take a closer look at example data. I have here <a href="https://gist.github.com/Fluidbyte/2973986">currency.json</a> - PHP code should look something like this:</p>
+
+<pre><code>&lt;?php
+ return array (
+  'USD' =&gt; 
+  (object)(array(
+     'symbol' =&gt; '$',
+     'name' =&gt; 'US Dollar',
+     'symbol_native' =&gt; '$',
+     'decimal_digits' =&gt; 2,
+     'rounding' =&gt; 0,
+     'code' =&gt; 'USD',
+     'name' =&gt; 'US dollars',
+  )),
+  'CAD' =&gt; 
+  //...
+);
+</code></pre>
+
+<p>It&rsquo;s can be done in only four lines of PHP code:
+    $data = json_decode(file_get_contents(<strong>DIR</strong> . &lsquo;/currency.json&rsquo;));
+    $code = var_export((array)$data, true);
+    $code = &ldquo;&lt;?php\n return &ldquo; . preg_replace(&lsquo;/stdClass::<strong>set_state/&lsquo;, &lsquo;(object)&rsquo;, $code) . &lsquo;;&rsquo;;
+    file_put_contents(</strong>DIR__ . &lsquo;/currencies.locale.php&rsquo;, $code);</p>
+
+<p>If you need call some function (like <a href="http://www.php.net/manual/en/book.gettext.php">gettext</a>) above the variable, just add more regular expression:
+    $data = json_decode(file_get_contents(<strong>DIR</strong> . &lsquo;/currency.json&rsquo;));
+    $code = var_export((array)$data, true);</p>
+
+<pre><code>// add gettext function call
+$code = preg_replace(&quot;/'name' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+$code = preg_replace(&quot;/'name_plural' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+
+// save PHP code
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p> </p>
+
+
+    <footer>
+
+    </footer>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/jquery.min.js"></script>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/bootstrap.min.js"></script>
+
+
+    
+
+</body>
+
+</html>
+

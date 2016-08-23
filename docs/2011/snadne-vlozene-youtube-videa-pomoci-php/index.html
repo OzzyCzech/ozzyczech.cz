@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> -- nabito.net</title>
+
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ozzyczech.github.io/nabito.net/">nabito.net</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                  </ul>
+            </div>
+           
+
+          </div>
+    </nav>
+
+
+
+<p>title: Snadné vložené YouTube videa pomocí PHP
+date: 27.3.2011 23:49:51
+author: Roman Ožana <a href="mailto:ozana@omdesign.cz">ozana@omdesign.cz</a>
+tags: PHP, YouTube
+&ndash;&gt;</p>
+
+<h1 id="snadné-vložené-youtube-videa-pomocí-php">Snadné vložené YouTube videa pomocí PHP</h1>
+
+<p>Následující PHP kód zamění jakýkoliv odkazu na <a href="http://www.youtube.com/">YouTube</a> video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.</p>
+
+<pre><code>function youtube($string)
+{
+  return preg_replace(
+    '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&amp;?.*?#i',
+    '&lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/$4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;',
+    $string
+  );
+}
+
+echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
+echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
+</code></pre>
+
+
+    <footer>
+
+    </footer>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/jquery.min.js"></script>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/bootstrap.min.js"></script>
+
+
+    
+
+</body>
+
+</html>
+

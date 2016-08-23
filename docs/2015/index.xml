@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2015s on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/2015/</link>
+    <description>Recent content in 2015s on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/2015/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2015/_recommended-database-structure-for-oauth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2015/_recommended-database-structure-for-oauth/</guid>
+      <description>
+
+&lt;h1 id=&#34;my-recommended-database-structure-for-oauth&#34;&gt;My Recommended database structure for OAuth&lt;/h1&gt;
+
+&lt;p&gt;Here is my recommended database structure for storing consumer and token data on the server side. Example is for Mysql, but can be easily transform to others.&lt;/p&gt;
+
+&lt;p&gt;Starts with schema of &lt;code&gt;users&lt;/code&gt; table:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `password` varchar(255) DEFAULT NULL COMMENT &#39;User password hashed or empty if is created by oauth&#39;,
+  `username` varchar(255) NOT NULL COMMENT &#39;User e-mail&#39;,
+  `email` varchar(255) NOT NULL COMMENT &#39;Account username&#39;,
+  `date` datetime NOT NULL COMMENT &#39;Date of creation&#39;,
+  `stamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY (`id`),
+  UNIQUE KEY `email_UNIQUE` (`email`),
+  KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=&#39;Registrovaní uživatelé&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and follow by &lt;code&gt;users_oauths&lt;/code&gt; table:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;DROP TABLE IF EXISTS `users_oauths`;
+CREATE TABLE `users_oauths` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `users_id` bigint(20) unsigned NOT NULL COMMENT &#39;Foreign key&#39;,
+  `created` datetime NOT NULL COMMENT &#39;When was connection created&#39;,
+  `oauth_provider` varchar(20) NOT NULL DEFAULT &#39;&#39; COMMENT &#39;Provider twitter, facebook, github etc.&#39;,
+  `access_token` varchar(40) NOT NULL DEFAULT &#39;&#39; COMMENT &#39;Access token&#39;,
+  `refresh_token` varchar(40) NOT NULL DEFAULT &#39;&#39; COMMENT &#39;Refresh token&#39;,
+  `expire_date` datetime NOT NULL COMMENT &#39;When token expires&#39;,
+  `response_raw` text CHARACTER SET utf8 COLLATE utf8_bin,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `users_oauths_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=&#39;oAuths connected to the users&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Advantages&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you delete user account, all connected oAuths are deleted also.&lt;/li&gt;
+&lt;li&gt;Real user account is created, user can also login via email and password.&lt;/li&gt;
+&lt;li&gt;User can connect multiple providers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SELECT FROM&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2015/social-networks-colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2015/social-networks-colors/</guid>
+      <description>
+
+&lt;p&gt;title: Social networks Colors
+date: 26.5.2015
+tags: colors, social networks
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;social-networks-colors&#34;&gt;Social Networks Colors&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;facebook     #3b5998
+twitter      #55acee
+google-plus  #dd4b39
+
+flickr       #0063dc
+flickr-2     #ff0084
+
+github       #4183c4
+github-2     #999999
+github-3     #666666
+github-4     #333333
+github-5     #6cc644
+github-6     #bd2c00
+github-7     #ff9933
+
+google       #4285f4
+google-2     #db4437
+google-3     #f4b400
+google-4     #0f9d58
+google-5     #e7e6dd
+
+instagram    #3f729b
+
+reddit       #ff4500
+reddit-2     #5f99cf
+reddit-3     #cee3f8
+
+stackoverflow  #fe7a15
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;More colors can be found here on &lt;a href=&#34;http://brandcolors.net/&#34;&gt;Brand Colors&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2015/todo-movies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2015/todo-movies/</guid>
+      <description>
+
+&lt;h1 id=&#34;movies&#34;&gt;Movies&lt;/h1&gt;
+
+&lt;h3 id=&#34;schmitke-http-www-csfd-cz-film-389075-schmitke-videa&#34;&gt;&lt;a href=&#34;http://www.csfd.cz/film/389075-schmitke/videa/&#34;&gt;Schmitke&lt;/a&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Příběh neotřele a originálně vyprávěného filmu se odehrává v současném Německu a Česku, jeho hlavní část pak na pomezí – v malém městečku uprostřed lesů na hřebenech Krušných hor. S lehkým komediálním nadhledem nabízí mix napínavé detektivní zápletky s místy až dokumentárně realistickým pohledem na dnešní Sudety. Hlavní postavou je stárnoucí inženýr Julius Schmitke. A také Krušné hory, které byly, stejně jako Schmitke, už téměř úplně prázdné a zničené, ale v současnosti se dávají znovu dohromady a život se do nich pomalu ale jistě vrací.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=4nykmr7Q628&#34;&gt;https://www.youtube.com/watch?v=4nykmr7Q628&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;tags: movies, schmitke&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2015/twitter-bootstrap-feedback-button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2015/twitter-bootstrap-feedback-button/</guid>
+      <description>
+
+&lt;p&gt;title: Twitter Bootstrap Feedback Button
+date: 3.2.2015 11:32:41
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags:
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;twitter-bootstrap-feedback-button&#34;&gt;Twitter Bootstrap Feedback Button&lt;/h1&gt;
+
+&lt;p&gt;Follow code add orange &lt;strong&gt;Feedback button&lt;/strong&gt; similar to the UserEcho button allow users send you feedback from any page. It&amp;rsquo;s based on Twitter Boostrap modal window.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Transparent SVG Feedback text&lt;/li&gt;
+&lt;li&gt;Pure CSS animation and positioning&lt;/li&gt;
+&lt;li&gt;jQuery for Ajax form submit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Download source code here &lt;a href=&#34;http://jsfiddle.net/gogmfazc/&#34; title=&#34;http://jsfiddle.net/gogmfazc/&#34;&gt;http://jsfiddle.net/gogmfazc/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

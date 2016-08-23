@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> -- nabito.net</title>
+
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ozzyczech.github.io/nabito.net/">nabito.net</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                  </ul>
+            </div>
+           
+
+          </div>
+    </nav>
+
+
+
+<p>title: Wordpress: register and setup witgets from PHP code
+date: 29.1.2013 18:30:26
+author: Roman Ožana <a href="mailto:ozana@omdesign.cz">ozana@omdesign.cz</a>
+tags: en, PHP, Widgets, wordpress
+&ndash;&gt;</p>
+
+<h1 id="wordpress-register-and-setup-witgets-from-php-code">Wordpress: register and setup witgets from PHP code</h1>
+
+<p>PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:</p>
+
+<pre><code>class Widgets {
+
+ private $widgets = array();
+ private $options = array();
+
+ public function __construct() {
+  $this-&gt;options = wp_get_sidebars_widgets();
+ }
+
+ public function unregisterAllWidgets() {
+  foreach ($this-&gt;options as $name =&gt; $values)
+   $this-&gt;options[$name] = array();
+ }
+
+ public function cleanWidgetSettings($type, $multi = null) {
+  $this-&gt;widgets[$type] = array();
+  if ($multi !== null) $this-&gt;widgets[$type]['_multiwidget'] = (int)(bool)$multi;
+ }
+
+ public function setMultiWidget($type, $val = 1) {
+  $this-&gt;widgets[$type]['_multiwidget'] = $val;
+ }
+
+ public function add($type, array $options, $area = null) {
+  $this-&gt;widgets[$type][] = $options;
+  if ($area !== null) {
+   if (array_key_exists($area, $this-&gt;options) === false) {
+    throw new Exception('Widget area ' . $area . ' not exists.');
+   }
+   end($this-&gt;widgets[$type]);
+   $this-&gt;options[$area][] = $type . '-' . key($this-&gt;widgets[$type]);
+  }
+ }
+
+ public function __destruct() {
+  foreach ($this-&gt;widgets as $name =&gt; $settings) {
+   if (!array_key_exists('_multiwidget', $settings)) $settings['_multiwidget'] = 1;
+   update_option('widget_' . $name, $settings);
+  }
+  wp_set_sidebars_widgets($this-&gt;options);
+ }
+
+}
+</code></pre>
+
+<p>Following code is an example how to use <code>class Witgets</code>:
+    $widgets = new Widgets();
+    $widgets-&gt;unregisterAllWidgets();</p>
+
+<pre><code>$widgets-&gt;add(
+ 'text',
+ array(
+  'title' =&gt; 'About us',
+  'text' =&gt; 'Simple text about us',
+  'filter' =&gt; true,
+  'classes' =&gt; '',
+  'ids' =&gt; null,
+ ),
+ 'footer-1'
+);
+
+// ...
+</code></pre>
+
+<p>This code need to be call only once. Put your code to <code>function.php</code> to <code>after_switch_theme</code> action:
+    add_action(
+     &lsquo;after_switch_theme&rsquo;, function () {
+      $widgets = new Widgets();
+      $widgets-&gt;unregisterAllWidgets();
+      // &hellip;
+     }
+    );</p>
+
+<p><a href="https://gist.github.com/4663766/">https://gist.github.com/4663766/</a> #wordpress #widgets #php #en</p>
+
+
+    <footer>
+
+    </footer>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/jquery.min.js"></script>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/bootstrap.min.js"></script>
+
+
+    
+
+</body>
+
+</html>
+

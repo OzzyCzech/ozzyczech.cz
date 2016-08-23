@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> -- nabito.net</title>
+
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ozzyczech.github.io/nabito.net/">nabito.net</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                  </ul>
+            </div>
+           
+
+          </div>
+    </nav>
+
+
+
+<p>title: Simple pie chart progress bar in canvas element
+date: 9.7.2014 15:38:40
+author: Roman Ožana <a href="mailto:ozana@omdesign.cz">ozana@omdesign.cz</a>
+tags: canvas, CSS, HTML5, js
+&ndash;&gt;</p>
+
+<h1 id="simple-pie-chart-progress-bar-in-canvas-element">Simple pie chart progress bar in canvas element</h1>
+
+<p><img src="http://www.nabito.net/wp-content/uploads/2014/07/progres.png" alt="" />HTML
+<code>&lt;div class=&quot;chart&quot; id=&quot;graph&quot; data-percent=&quot;88&quot;&gt;&lt;/div&gt;</code>
+ Javascript
+     var el = document.getElementById(&lsquo;graph&rsquo;); // get canvas</p>
+
+<pre><code>var options = {
+ percent: el.getAttribute('data-percent') || 25,
+ size: el.getAttribute('data-size') || 220,
+ lineWidth: el.getAttribute('data-line') || 15,
+ rotate: el.getAttribute('data-rotate') || 0
+}
+
+var canvas = document.createElement('canvas');
+var span = document.createElement('span');
+span.textContent = options.percent + '%';
+
+if (typeof(G_vmlCanvasManager) !== 'undefined') {
+ G_vmlCanvasManager.initElement(canvas);
+}
+
+var ctx = canvas.getContext('2d');
+canvas.width = canvas.height = options.size;
+
+el.appendChild(span);
+el.appendChild(canvas);
+
+ctx.translate(options.size / 2, options.size / 2); // change center
+ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+
+//imd = ctx.getImageData(0, 0, 240, 240);
+var radius = (options.size - options.lineWidth) / 2;
+
+var drawCircle = function(color, lineWidth, percent) {
+ percent = Math.min(Math.max(0, percent || 1), 1);
+ ctx.beginPath();
+ ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+ ctx.strokeStyle = color;
+ ctx.lineCap = 'round'; // butt, round or square
+ ctx.lineWidth = lineWidth
+ ctx.stroke();
+};
+
+drawCircle('#efefef', options.lineWidth, 100 / 100);
+drawCircle('#555555', options.lineWidth, options.percent / 100);
+</code></pre>
+
+<p>And CSS
+    div {
+        position:relative;
+        margin:80px;
+        width:220px; height:220px;
+    }
+    canvas {
+        display: block;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    span {
+        color:#555;
+        display:block;
+        line-height:220px;
+        text-align:center;
+        width:220px;
+        font-family:sans-serif;
+        font-size:40px;
+        font-weight:100;
+        margin-left:5px;
+    }</p>
+
+<p><a href="http://jsfiddle.net/Aapn8/3410/">http://jsfiddle.net/Aapn8/3410/</a> Basic code was taken from Simple PIE Chart <a href="http://rendro.github.io/easy-pie-chart/">http://rendro.github.io/easy-pie-chart/</a> #css #js #canvas #html5</p>
+
+
+    <footer>
+
+    </footer>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/jquery.min.js"></script>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/bootstrap.min.js"></script>
+
+
+    
+
+</body>
+
+</html>
+

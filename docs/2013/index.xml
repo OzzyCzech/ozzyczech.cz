@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2013s on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/2013/</link>
+    <description>Recent content in 2013s on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/2013/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/10-veci-ktere-internet-zabil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/10-veci-ktere-internet-zabil/</guid>
+      <description>
+
+&lt;p&gt;title: 10 věcí které Internet zabil
+date: 8.1.2013 21:01:24
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags:
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;10-věcí-které-internet-zabil&#34;&gt;10 věcí které Internet zabil&lt;/h1&gt;
+
+&lt;p&gt;Co všechno Internet zabil nebo zabíjí?&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hudební průmysl&lt;/li&gt;
+&lt;li&gt;Filmový průmysl&lt;/li&gt;
+&lt;li&gt;Porno průmysl&lt;/li&gt;
+&lt;li&gt;Zásilkové služby (Quelle, Neckermann atd.)&lt;/li&gt;
+&lt;li&gt;Pohledy a dopisy psané rukou&lt;/li&gt;
+&lt;li&gt;Anonymitu (ta postupně mizí)&lt;/li&gt;
+&lt;li&gt;DVD a videopůjčovny&lt;/li&gt;
+&lt;li&gt;Časopisy noviny a poctivou novinařinu&lt;/li&gt;
+&lt;li&gt;Televizi&lt;/li&gt;
+&lt;li&gt;Encyklopedie&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Co má na kahánku? 1. Knižní průmysl (brzo na něj taky dojde)
+2. Klasická kartografie (tzn. tištěné mapy)
+3. Svoboda (na Internetu bude zabita kontrolou Internetu)
+4. SMS, MMS
+5. Hospodské hádky (to má na svědomí konkrétně mobilní Internet)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/composer-require-pear-package/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/composer-require-pear-package/</guid>
+      <description>
+
+&lt;p&gt;title: Composer require PEAR package
+date: 25.9.2013 18:36:00
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: composer, pear, tip
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;composer-require-pear-package&#34;&gt;Composer require PEAR package&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;{ 
+ &amp;quot;repositories&amp;quot;: [
+  {
+   &amp;quot;type&amp;quot;: &amp;quot;pear&amp;quot;,
+   &amp;quot;url&amp;quot;: &amp;quot;http://pear.php.net&amp;quot;
+  }
+ ],
+ &amp;quot;require&amp;quot;: { 
+  &amp;quot;pear-pear/Mail&amp;quot;: &amp;quot;&amp;gt;=1.2.0&amp;quot;
+ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#tip #composer #PEAR&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/how-to-clean-flash-drive-before-unmount-on-mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/how-to-clean-flash-drive-before-unmount-on-mac/</guid>
+      <description>
+
+&lt;p&gt;title: How to clean flash drive before unmount on Mac
+date: 21.12.2013 20:03:52
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: flashdrive, mac, tip
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;how-to-clean-flash-drive-before-unmount-on-mac&#34;&gt;How to clean flash drive before unmount on Mac&lt;/h1&gt;
+
+&lt;p&gt;How to &lt;strong&gt;clean flash drive&lt;/strong&gt; and delete all hidden (dot) files on mac before unmount? It&amp;rsquo;s simple, save follow commands as &lt;code&gt;flash&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+if [ -n &amp;quot;$1&amp;quot; ]; then
+  read -r -p &amp;quot;Clean /Volumes/$1/ and unmount? [y/N] &amp;quot; response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then      
+    find /Volumes/$1/ -name &#39;._*&#39; -type f -delete 
+    rm -rf /Volumes/$1/.Spotlight-V100/
+    rm -rf /Volumes/$1/.Trashes/
+    diskutil unmount /Volumes/$1/
+    echo &amp;quot;Done...&amp;quot;
+  fi
+else
+  echo &amp;quot;Flash drive name missing&amp;quot;
+fi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then change the access mode of a file &lt;code&gt;chmod +x flash&lt;/code&gt;. To unmount a clean flash drive just run     ./flash
+    Flashka
+ (Flashka is name od drive). #mac #flashdrive #tip&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/how-to-detect-retina-display-in-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/how-to-detect-retina-display-in-css/</guid>
+      <description>
+
+&lt;p&gt;title: How to detect Retina display in CSS?
+date: 27.3.2013 21:58:55
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: CSS, howto, retina
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;how-to-detect-retina-display-in-css&#34;&gt;How to detect Retina display in CSS?&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+  /* it&#39;s retina yeah! */
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#css #retina #howto&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/how-to-safely-commit-vendor-dir-with-php-composer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/how-to-safely-commit-vendor-dir-with-php-composer/</guid>
+      <description>
+
+&lt;p&gt;title: How to safely commit vendor dir with php Composer
+date: 24.7.2013 12:32:29
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: composer, git, PHP
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;how-to-safely-commit-vendor-dir-with-php-composer&#34;&gt;How to safely commit vendor dir with php Composer&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://getcomposer.org/&#34;&gt;Composer&lt;/a&gt; is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I &lt;a href=&#34;http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md&#34;&gt; commit the dependencies&lt;/a&gt; in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
+- I will work on application and my packages together.
+- I need a simple way how to commit and publish new version of packages.
+- Workflow need to be simple (mimimum of commands)&lt;/p&gt;
+
+&lt;h3 id=&#34;how-to-commit-vendor-dir&#34;&gt;How to commit vendor dir?&lt;/h3&gt;
+
+&lt;p&gt;Remove &lt;code&gt;vendor&lt;/code&gt; dir from your &lt;code&gt;.gitignore&lt;/code&gt; and add follow lines to root of &lt;code&gt;composer.json&lt;/code&gt;
+    &amp;ldquo;scripts&amp;rdquo;: {
+     &amp;ldquo;post-update-cmd&amp;rdquo;: [&amp;ldquo;echo [WARNING] Delete all .git dirs&amp;rdquo;, &amp;ldquo;rm -rf vendor/&lt;strong&gt;/&lt;/strong&gt;/.git&amp;rdquo;],
+     &amp;ldquo;post-install-cmd&amp;rdquo;: [&amp;ldquo;echo [WARNING] Delete all .git dirs&amp;rdquo;, &amp;ldquo;rm -rf vendor/&lt;strong&gt;/&lt;/strong&gt;/.git&amp;rdquo;]
+    },&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s automatically remove the &lt;code&gt;.git&lt;/code&gt; directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &amp;ldquo;submodules&amp;rdquo;. Run: &lt;code&gt;composer update&lt;/code&gt; and commit everything to your repo. ### How make changes in packages?&lt;/p&gt;
+
+&lt;p&gt;When you are using tagged releases (no dev versions) of package then run:     rm -rf vendor/some/package &amp;amp;&amp;amp; composer
+    update some/package &amp;ndash;prefer-source &amp;ndash;no-scripts
+ For dev versions (dev-master) it&amp;rsquo;s simpler:     rm -rf
+    vendor/some/package &amp;amp;&amp;amp; composer update some/package
+    &amp;ndash;no-scripts
+ Now, when you go to vendor/some/package dir it&amp;rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&amp;rsquo;t forgot run &lt;code&gt;composer update&lt;/code&gt; before commit main repo, becouse there is still .git dir in package! ### Disadvantages&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Large VCS repository size and diffs when you update code.&lt;/li&gt;
+&lt;li&gt;Duplication of the history of all your dependencies in your own VCS.&lt;/li&gt;
+&lt;li&gt;There can be conflicts in commits especially when you work in larger team.&lt;/li&gt;
+&lt;li&gt;Still &lt;strong&gt;not avoid commit .git directory&lt;/strong&gt; after running composer with &lt;code&gt;--no-scripts&lt;/code&gt; param.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;#composer #git #php&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/list-all-mounted-drives-on-mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/list-all-mounted-drives-on-mac/</guid>
+      <description>
+
+&lt;p&gt;title: List all mounted drives on mac
+date: 11.3.2013 09:25:01
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: mac, terminal
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;list-all-mounted-drives-on-mac&#34;&gt;List all mounted drives on mac&lt;/h1&gt;
+
+&lt;p&gt;It&amp;rsquo;s simple: &lt;code&gt;df -h&lt;/code&gt; #mac #terminal&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/make-wordpress-globals-more-accessible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/make-wordpress-globals-more-accessible/</guid>
+      <description>
+
+&lt;p&gt;title: Make WordPress globals more accessible
+date: 8.2.2013 17:30:52
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: en, hack, PHP, wordpress
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;make-wordpress-globals-more-accessible&#34;&gt;Make WordPress globals more accessible&lt;/h1&gt;
+
+&lt;p&gt;Wordpress using a lot &lt;a href=&#34;http://codex.wordpress.org/Global_Variables&#34;&gt;globals variables&lt;/a&gt;. These variables are used throughout WordPress code for various reasons. Great example is database connection object &lt;a href=&#34;http://codex.wordpress.org/Class_Reference/wpdb&#34;&gt;wpdb&lt;/a&gt;. Here is common example how to use &lt;strong&gt;wpdb&lt;/strong&gt; in some function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function something() { 
+ global $wpdb;
+ /** @var wpdb $wpdb */
+ $wpdb-&amp;gt;query(&#39;SQL...&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: &lt;a href=&#34;https://gist.github.com/OzzyCzech/4737518&#34;&gt;https://gist.github.com/OzzyCzech/4737518&lt;/a&gt; (PHP 5.3+ only)
+    function something() {
+     Globals::wpdb()-&amp;gt;query(&amp;lsquo;SQL&amp;hellip;&amp;rsquo;);
+    }&lt;/p&gt;
+
+&lt;p&gt;#wordpress #hack #php #en&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/run-ftp-server-on-mac-os-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/run-ftp-server-on-mac-os-x/</guid>
+      <description>
+
+&lt;p&gt;title: Run FTP server on Mac OS X
+date: 28.11.2013 13:21:22
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: ftp, mac, protip
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;run-ftp-server-on-mac-os-x&#34;&gt;Run FTP server on Mac OS X&lt;/h1&gt;
+
+&lt;p&gt;Setup everyhing: &lt;code&gt;sudo subl /etc/ftpd.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# match umask from Mac OS X Server ftpd
+umask all 022
+chroot GUEST /Users/roman/ftp
+modify guest off
+umask  guest 0707
+upload guest on
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Start FTP server
+    sudo launchctl load /System/Library/LaunchDaemons/ftp.plist&lt;/p&gt;
+
+&lt;p&gt;And stop again:
+&lt;code&gt;sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist&lt;/code&gt;
+ #mac #protip #ftp&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/run-iphone-simulator-without-xcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/run-iphone-simulator-without-xcode/</guid>
+      <description>
+
+&lt;p&gt;title: Run iPhone simulator without XCode
+date: 31.1.2013 18:35:11
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: en, iPhone, mac, xcode
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;run-iphone-simulator-without-xcode&#34;&gt;Run iPhone simulator without XCode&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt; open -a &amp;quot;iPhone Simulator&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#mac #iphone #xcode #en&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/setup-email-sending-from-php-on-mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/setup-email-sending-from-php-on-mac/</guid>
+      <description>
+
+&lt;p&gt;title: Setup email sending from PHP on Mac
+date: 14.5.2013 15:18:22
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: email, mac, PHP
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;setup-email-sending-from-php-on-mac&#34;&gt;Setup email sending from PHP on Mac&lt;/h1&gt;
+
+&lt;p&gt;First write in terminal: &lt;code&gt;which sendmail&lt;/code&gt; wlll return path to sendmail app (in my case &lt;code&gt;/usr/sbin/sendmail&lt;/code&gt;). Then open &lt;code&gt;php.ini&lt;/code&gt; file and setup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sendmail_path = /usr/sbin/sendmail -t -i
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create necessary folder and setup postfix permissions:
+    sudo mkdir -p /Library/Server/Mail/Data/spool
+    sudo /usr/sbin/postfix set-permissions
+    sudo /usr/sbin/postfix start&lt;/p&gt;
+
+&lt;p&gt;And check if emails will come:
+    php -r &amp;ldquo;mail(&amp;lsquo;youremail@domain.com&amp;rsquo;, &amp;lsquo;subject&amp;rsquo;, &amp;lsquo;message&amp;rsquo;, &amp;lsquo;From: &lt;a href=&#34;mailto:youremail@domain.com&#34;&gt;youremail@domain.com&lt;/a&gt;&amp;rsquo; . PHP_EOL);&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;#php #email #mac&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/toggle-hidden-files-in-finder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/toggle-hidden-files-in-finder/</guid>
+      <description>
+
+&lt;p&gt;title: Toggle Hidden Files in Finder
+date: 26.3.2013 09:47:26
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: automator, mac, osx, shell
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;toggle-hidden-files-in-finder&#34;&gt;Toggle Hidden Files in Finder&lt;/h1&gt;
+
+&lt;p&gt;Run &lt;a href=&#34;http://en.wikipedia.org/wiki/Automator_(software)&#34;&gt;Automator&lt;/a&gt; and create new Application. Add task &lt;strong&gt;Run Shell script&lt;/strong&gt; and paste follow code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;STATUS=`defaults read com.apple.finder AppleShowAllFiles`
+if [ $STATUS == YES ]; 
+then
+    defaults write com.apple.finder AppleShowAllFiles NO
+else
+    defaults write com.apple.finder AppleShowAllFiles YES
+fi
+killall Finder
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Save application. From now can Tooggle #mac #shell #osx #automator&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/upgrade-all-npm-packages-to-latest-versions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/upgrade-all-npm-packages-to-latest-versions/</guid>
+      <description>
+
+&lt;p&gt;title: Upgrade all npm packages to latest versions
+date: 30.12.2013 15:36:31
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: nodejs, npm, tip
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;upgrade-all-npm-packages-to-latest-versions&#34;&gt;Upgrade all npm packages to latest versions&lt;/h1&gt;
+
+&lt;p&gt;Install follow package &lt;a href=&#34;https://npmjs.org/package/npm-check-updates&#34;&gt;npm-check-updates&lt;/a&gt; by&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -g npm-check-updates
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and run
+    npm-check-updates -u&lt;/p&gt;
+
+&lt;p&gt;for upgrade package.json #npm #nodejs #tip&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/wodpress-constants-for-human-readable-intervals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/wodpress-constants-for-human-readable-intervals/</guid>
+      <description>
+
+&lt;p&gt;title: Wodpress constants for human-readable intervals
+date: 20.2.2013 12:26:32
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: wordpress
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;wodpress-constants-for-human-readable-intervals&#34;&gt;Wodpress constants for human-readable intervals&lt;/h1&gt;
+
+&lt;p&gt;Constants for expressing human-readable intervals in new #Wordpress are very useful:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;define( &#39;MINUTE_IN_SECONDS&#39;, 60 );
+define( &#39;HOUR_IN_SECONDS&#39;,   60 * MINUTE_IN_SECONDS );
+define( &#39;DAY_IN_SECONDS&#39;,    24 * HOUR_IN_SECONDS   );
+define( &#39;WEEK_IN_SECONDS&#39;,    7 * DAY_IN_SECONDS    );
+define( &#39;YEAR_IN_SECONDS&#39;,  365 * DAY_IN_SECONDS    );
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example:
+    wp_cache_add($key, $data, &amp;lsquo;default, 5 * DAY_IN_SECONDS);&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/wordpress-get-post-excerpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/wordpress-get-post-excerpt/</guid>
+      <description>
+
+&lt;p&gt;title: Wordpress: get post excerpt
+date: 2.12.2013 15:01:51
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: excerpt, wordpress
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;wordpress-get-post-excerpt&#34;&gt;Wordpress: get post excerpt&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;$excerpt = apply_filters(&#39;the_excerpt&#39;, get_post_field(&#39;post_excerpt&#39;, $post_id));&lt;/code&gt;
+ #wordpress #excerpt&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/wordpress-how-to-get-user-by-metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2013/wordpress-how-to-get-user-by-metadata/</guid>
+      <description>
+
+&lt;p&gt;title: Wordpress: How to get user by metadata
+date: 16.4.2013 16:31:18
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: meta, user, wordpress
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;wordpress-how-to-get-user-by-metadata&#34;&gt;Wordpress: How to get user by metadata&lt;/h1&gt;
+
+&lt;p&gt;Getting user by field name is easy, #Wordpress have function for that &lt;a href=&#34;http://codex.wordpress.org/Function_Reference/get_user_by&#34;&gt;get_user_by&lt;/a&gt;. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to &lt;strong&gt;get user by metadata&lt;/strong&gt; using &lt;a href=&#34;https://codex.wordpress.org/Class_Reference/WP_Query&#34;&gt;WP_Query&lt;/a&gt; object. Forget about them! You need prepare correct meta query as array or string and call &lt;code&gt;get_users&lt;/code&gt;. Thats all!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+ * Get user by his metadata
+ * @author Roman Ozana &amp;lt;ozana@omdesign.cz&amp;gt;
+ * @param $meta_key
+ * @param $meta_value
+ * @return mixed
+ */
+function get_user_by_meta($meta_key, $meta_value) {
+ return reset(
+  get_users(
+   array(
+    &#39;meta_key&#39; =&amp;gt; $meta_key,
+    &#39;meta_value&#39; =&amp;gt; $meta_value,
+    &#39;number&#39; =&amp;gt; 1,
+    &#39;count_total&#39; =&amp;gt; false
+   )
+  )
+ );
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#wordpress #user #meta&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

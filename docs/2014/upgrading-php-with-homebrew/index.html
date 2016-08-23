@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> -- nabito.net</title>
+
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ozzyczech.github.io/nabito.net/">nabito.net</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                  </ul>
+            </div>
+           
+
+          </div>
+    </nav>
+
+
+
+<p>title: Upgrading PHP with Homebrew
+date: 14.4.2014 10:29:51
+author: Roman Ožana <a href="mailto:ozana@omdesign.cz">ozana@omdesign.cz</a>
+tags: brew, mac, osx, PHP
+&ndash;&gt;</p>
+
+<h1 id="upgrading-php-with-homebrew">Upgrading PHP with Homebrew</h1>
+
+<p>Are you using <a href="https://github.com/josegonzalez/homebrew-php">josegonzalez brew repository</a> according my <a href="http://www.nabito.net/hot-to-install-nginx-php-fpm-5-5-6-mongo-and-mysql-on-mac-with-homebrew/"> previous blog post</a>? You will need switch your brew to an <a href="https://github.com/Homebrew/homebrew-php">official PHP repository</a>.</p>
+
+<pre><code>brew untap josegonzalez/homebrew-php
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+</code></pre>
+
+<p>Then you can exec upgrade everything:
+<code>brew update &amp;&amp; brew upgrade</code>
+ Do not forgot change your shortcut in your <a href="https://github.com/OzzyCzech/dotfiles/blob/master/.bash_profile">bash profile</a>:
+    alias php-start=&ldquo;sudo launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist&rdquo;
+    alias php-stop=&ldquo;sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php55.plist&rdquo;
+    alias php-restart=&ldquo;php-stop &amp;&amp; php-start&rdquo;</p>
+
+<p>You can also getting an error <strong>Dubious ownership on file&hellip;</strong> then change *.<em>plists</em> rights:
+    sudo chown root ~/Library/LaunchAgents/*
+    sudo chmod 644 ~/Library/LaunchAgents/*</p>
+
+<p>#brew #php #osx #mac</p>
+
+
+    <footer>
+
+    </footer>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/jquery.min.js"></script>
+
+    
+    <script src="https://ozzyczech.github.io/nabito.net//js/bootstrap.min.js"></script>
+
+
+    
+
+</body>
+
+</html>
+

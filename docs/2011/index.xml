@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2011s on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/2011/</link>
+    <description>Recent content in 2011s on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/2011/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/case-insensitive-in_array-v-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2011/case-insensitive-in_array-v-php/</guid>
+      <description>
+
+&lt;p&gt;title: Case insensitive in_array v PHP
+date: 20.6.2011 18:28:44
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: PHP
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;case-insensitive-in-array-v-php&#34;&gt;Case insensitive in_array v PHP&lt;/h1&gt;
+
+&lt;p&gt;PHP funkce &lt;a href=&#34;http://php.net/manual/en/function.in-array.php&#34;&gt;in_array&lt;/a&gt; je case sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a nezáleží Vám na velikosti písmen u jeho prvků:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$array = array(&#39;a&#39;, &#39;B&#39;, &#39;cE&#39;);
+
+function inArrayCaseInsensitive($needle, $array) {
+ return (bool) preg_grep(&#39;/^&#39; . preg_quote($needle, &#39;/&#39;) . &#39;$/i&#39;, $array);
+}
+
+inArrayCaseInsensitive(&#39;a&#39;, $array); // true
+inArrayCaseInsensitive(&#39;A&#39;, $array); // true
+inArrayCaseInsensitive(&#39;ce&#39;, $array); // true
+inArrayCaseInsensitive(&#39;be&#39;, $array); // false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Funkce &lt;a href=&#34;http://php.net/manual/en/function.preg-grep.php&#34;&gt;preg_grep&lt;/a&gt; má ještě zajímavý přepínač PREG_GREP_INVERT. Tímto přepínačem odfiltrujete všechny hodnoty v poli, které neodpovídají zadanému &lt;strong&gt;regulárnímu výrazu&lt;/strong&gt;. Filtrace zachovává klíče pole.
+    $array = array(&amp;lsquo;a&amp;rsquo;, &amp;lsquo;A&amp;rsquo;, &amp;lsquo;cE&amp;rsquo;);&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function filterArrayValues($needle, $array) {
+ return preg_grep(&#39;/^&#39; . preg_quote($needle, &#39;/&#39;) . &#39;$/i&#39;, $array, PREG_GREP_INVERT);
+}
+
+print_r(filterArrayValues(&#39;a&#39;, $array)); // vypíše jen cE
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/jak-okopirovat-adresar-s-celym-obsahem-v-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2011/jak-okopirovat-adresar-s-celym-obsahem-v-php/</guid>
+      <description>
+
+&lt;p&gt;title: Jak okopírovat adresář s celým obsahem v PHP
+date: 15.10.2011 07:35:25
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: PHP, recursive copy of directory, Recursive Copy Of Folder
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;jak-okopírovat-adresář-s-celým-obsahem-v-php&#34;&gt;Jak okopírovat adresář s celým obsahem v PHP&lt;/h1&gt;
+
+&lt;p&gt;Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí &lt;a href=&#34;http://cz.php.net/manual/en/spl.iterators.php&#34;&gt;PHP iterátoru&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$source = &amp;quot;/foo/bar/dir&amp;quot;;
+$dest= &amp;quot;/dest/dir&amp;quot;;
+
+foreach (
+ $iterator = new RecursiveIteratorIterator(
+  new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS),
+  RecursiveIteratorIterator::SELF_FIRST) as $item
+) {
+  if ($item-&amp;gt;isDir()) {
+    mkdir($dest . DIRECTORY_SEPARATOR . $iterator-&amp;gt;getSubPathName());
+  } else {
+    copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&amp;gt;getSubPathName());
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/odstraneni-odkazu-z-admin-menu-wordpress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2011/odstraneni-odkazu-z-admin-menu-wordpress/</guid>
+      <description>
+
+&lt;p&gt;title: Odstranění odkazů z admin menu Wordpress
+date: 11.9.2011 22:06:48
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: wordpress
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;odstranění-odkazů-z-admin-menu-wordpress&#34;&gt;Odstranění odkazů z admin menu Wordpress&lt;/h1&gt;
+
+&lt;p&gt;Pro &lt;a href=&#34;http://codex.wordpress.org/Links_Manager&#34;&gt;manažer odkazů&lt;/a&gt; #wordpress jsem nenašel nikdy &lt;strong&gt;smysluplné využití&lt;/strong&gt;. Proč ho rovnou z menu neodstranit? Stejně tam jen zavazí:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;add_action(&#39;admin_menu&#39;, function(){
+  remove_menu_page(&#39;link-manager.php&#39;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obdobně je možné odstranit cokoliv dalšího např. &lt;code&gt;remove_menu_page(&#39;edit-comments.php&#39;);&lt;/code&gt; - odstraní odkaz na komentáře.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/snadne-pripojeni-k-ftp-pomoci-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2011/snadne-pripojeni-k-ftp-pomoci-php/</guid>
+      <description>
+
+&lt;p&gt;title: Snadné připojení k FTP pomocí PHP
+date: 13.4.2011 22:57:15
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: PHP
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;snadné-připojení-k-ftp-pomocí-php&#34;&gt;Snadné připojení k FTP pomocí PHP&lt;/h1&gt;
+
+&lt;p&gt;Mám v oblibě &lt;a href=&#34;http://en.wikipedia.org/wiki/File_Transfer_Protocol&#34;&gt;zkrácený zápis&lt;/a&gt; připojení k FTP. PHP tento &lt;a href=&#34;http://php.net/manual/en/function.ftp-connect.php&#34;&gt;způsob zápisu připojení&lt;/a&gt; bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+ * Vraci ID FTP pripojeni na zaklade zadane URL
+ * ftp://username:password@sld.domain.tld:21/path1/path2/
+ */
+function getFtpConnection($uri) 
+{  
+  preg_match(&amp;quot;/(?P&amp;lt;protocol&amp;gt;ftps?:\/\/)(?P&amp;lt;username&amp;gt;.*?):(?P&amp;lt;password&amp;gt;.*?)@(?P&amp;lt;url&amp;gt;.*?):?(?P&amp;lt;port&amp;gt;[1-9]+)?(?&amp;lt;dir&amp;gt;\/.*)/i&amp;quot;, $uri, $match);
+  $conn = ftp_connect($match[&#39;url&#39;], empty($match[&#39;port&#39;]) ? 21 : (int)$match[&#39;port&#39;]) or die(&amp;quot;Couldn&#39;t connect to &amp;quot; . $match[&#39;url&#39;]);
+  if (ftp_login($conn, $match[&#39;username&#39;], $match[&#39;password&#39;])) { 
+    ftp_chdir($conn, $match[&#39;dir&#39;]); 
+    return $conn; 
+  }
+
+  return null; 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Výstupem funkce je samozřejmě ID připojení, se kterým pak můžete &lt;a href=&#34;http://www.php.net/manual/en/ref.ftp.php&#34;&gt;normálně pracovat&lt;/a&gt; dál. Funkci najdete také zde: &lt;a href=&#34;https://gist.github.com/998091&#34;&gt;https://gist.github.com/998091&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/snadne-vlozene-youtube-videa-pomoci-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2011/snadne-vlozene-youtube-videa-pomoci-php/</guid>
+      <description>
+
+&lt;p&gt;title: Snadné vložené YouTube videa pomocí PHP
+date: 27.3.2011 23:49:51
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: PHP, YouTube
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;snadné-vložené-youtube-videa-pomocí-php&#34;&gt;Snadné vložené YouTube videa pomocí PHP&lt;/h1&gt;
+
+&lt;p&gt;Následující PHP kód zamění jakýkoliv odkazu na &lt;a href=&#34;http://www.youtube.com/&#34;&gt;YouTube&lt;/a&gt; video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function youtube($string)
+{
+  return preg_replace(
+    &#39;#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&amp;amp;?.*?#i&#39;,
+    &#39;&amp;lt;iframe title=&amp;quot;YouTube video player&amp;quot; width=&amp;quot;480&amp;quot; height=&amp;quot;390&amp;quot; src=&amp;quot;http://www.youtube.com/embed/$4&amp;quot; frameborder=&amp;quot;0&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&#39;,
+    $string
+  );
+}
+
+echo youtube(&#39;http://www.youtube.com/watch?v=VWsjWCt1PsQ&#39;);
+echo youtube(&#39;http://youtube.com/watch?v=VWsjWCt1PsQ&#39;);
+echo youtube(&#39;http://youtube.com/v/VWsjWCt1PsQ&#39;);
+echo youtube(&#39;http://www.youtube.com/v/VWsjWCt1PsQ&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/vypocet-hash-objektu-v-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ozzyczech.github.io/nabito.net/2011/vypocet-hash-objektu-v-php/</guid>
+      <description>
+
+&lt;p&gt;title: Výpočet hash objektu v PHP
+date: 25.9.2011 08:31:20
+author: Roman Ožana &lt;a href=&#34;mailto:ozana@omdesign.cz&#34;&gt;ozana@omdesign.cz&lt;/a&gt;
+tags: Hash object PHP, PHP
+&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;výpočet-hash-objektu-v-php&#34;&gt;Výpočet hash objektu v PHP&lt;/h1&gt;
+
+&lt;p&gt;Funkce &lt;a href=&#34;http://php.net/manual/en/function.spl-object-hash.php&#34;&gt;spl_object_hash()&lt;/a&gt; má jednu &lt;strong&gt;nevýhodu&lt;/strong&gt;, její výsledek se v čase mění. Pokud objekt naplníte stejnými hodnotami, dostanete při dvou requestech dva různé výsledky. Což nemusí být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeho vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat například takto:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Foo {
+ private $p;
+ public function setProperty($p) {
+  $this-&amp;gt;p = $p;
+ }
+ // vypocita hash objektu na zaklade hodnot jeho propert
+ public function __toString() {
+  return md5(http_build_query(get_object_vars($this)));
+ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Pro vypsání/získání hash pak stačí:
+    $bar = new Foo();
+    $bar-&amp;gt;setProperty(&amp;lsquo;25&amp;rsquo;);
+    echo $bar;
+    $hash = (string) $bar;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
