@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<section class="container">
+	{{ .Render "article"}}
+</section>
+
+<div class="text-center">
+	<a href="{{ .Site.BaseURL  }}" class="btn btn-default">Back</a>
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,14 @@
+baseurl = "https://ozzyczech.github.io/nabito.net/"
+contentdir = "./content"
+languageCode = "cs-cz"
+title = "nabito.net"
+publishdir = "./docs"
+canonifyurls = true
+googleAnalytics = "UA-123-45"
+
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+enableEmoji = true
+
+[permalinks]
+post = "/:title/"
