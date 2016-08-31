@@ -1,6 +1,6 @@
-# Content backup of nabito.net blog
+# Personal blog
 
-This is markdown backup of my old blog (www.nabito.net)
+This is markdown backup of my old blog (blog.omdesign.cz)
 
 ## Contact
 
