@@ -19,5 +19,3 @@ function getLatestTagUrl($repository, $default = 'master') {
 echo getLatestTagUrl('OzzyCzech/vestibulum');
 // will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip
 ```
-
- #php #github #tip

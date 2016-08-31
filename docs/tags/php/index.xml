@@ -111,8 +111,6 @@ stop propagation. It&amp;rsquo;s even simpler then my previous version &lt;a hr
 echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
 // will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;#php #github #tip&lt;/p&gt;
 </description>
     </item>
     
