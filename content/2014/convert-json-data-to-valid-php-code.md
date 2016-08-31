@@ -1,10 +1,8 @@
 ---
 title: Convert JSON data to valid PHP code
-date: 2014-01-19 18:30:01
-author: Roman Ožana <ozana@omdesign.cz>
-tags: 
+date: 2014-01-19
+tags: js, json, php
 ---
-
 
 # Convert JSON data to valid PHP code
 
@@ -12,39 +10,45 @@ Do you need **convert JSON data to valid PHP** code without pain? I've got a sho
 
 Take a closer look at example data. I have here [currency.json](https://gist.github.com/Fluidbyte/2973986) - PHP code should look something like this:
 
-    <?php
-     return array (
-      'USD' => 
-      (object)(array(
-         'symbol' => '$',
-         'name' => 'US Dollar',
-         'symbol_native' => '$',
-         'decimal_digits' => 2,
-         'rounding' => 0,
-         'code' => 'USD',
-         'name' => 'US dollars',
-      )),
-      'CAD' => 
-      //...
-    );
+```
+<?php
+ return array (
+  'USD' =>
+  (object)(array(
+     'symbol' => '$',
+     'name' => 'US Dollar',
+     'symbol_native' => '$',
+     'decimal_digits' => 2,
+     'rounding' => 0,
+     'code' => 'USD',
+     'name' => 'US dollars',
+  )),
+  'CAD' =>
+  //...
+);
+```
 
- It's can be done in only four lines of PHP code: 
-    $data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
-    $code = var_export((array)$data, true);
-    $code = "<?php\n return " . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
-    file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+It's can be done in only four lines of PHP code:
 
- If you need call some function (like [gettext](http://www.php.net/manual/en/book.gettext.php)) above the variable, just add more regular expression: 
-    $data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
-    $code = var_export((array)$data, true);
-    
-    // add gettext function call
-    $code = preg_replace("/'name' => '(.+)'/", "'name' => __('$1')", $code);
-    $code = preg_replace("/'name_plural' => '(.+)'/", "'name' => __('$1')", $code);
-    
-    // save PHP code
-    $code = "<?php\n return " . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
-    file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+```
+$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+$code = "<?php\n return " . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+```
 
+If you need call some function (like [gettext](http://www.php.net/manual/en/book.gettext.php)) above the variable, just add more regular expression:
 
+```
+$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+
+// add gettext function call
+$code = preg_replace("/'name' => '(.+)'/", "'name' => __('$1')", $code);
+$code = preg_replace("/'name_plural' => '(.+)'/", "'name' => __('$1')", $code);
+
+// save PHP code
+$code = "<?php\n return " . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+```
   

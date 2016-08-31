@@ -1,8 +1,7 @@
 ---
 title: Twitter Bootstrap Feedback Button
-date: 3.2.2015 11:32:41
-author: Roman Ožana <ozana@omdesign.cz>
-tags: 
+date: 2015-02-03
+tags:
 ---
 
 

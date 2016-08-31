@@ -1,7 +1,6 @@
 ---
 title: Hash tags pro Wordpress
-date: 15.9.2012 07:30:00
-author: Roman Ožana <ozana@omdesign.cz>
+date: 2012-09-15
 tags: hash, PHP, plugin, wordpress
 ---
 
@@ -20,9 +19,9 @@ Napsal jsem velmi jednoduchý plugin, který přidává do #wordpress podporu pr
     Author URI: http://www.omdesign.cz/
     */
     class Hashs {
-    
+
       const PATTERN = '/\B#([^\s\W#]+)/i';
-    
+
       /**
        * @param string $content
        * @return string mixed
@@ -30,7 +29,7 @@ Napsal jsem velmi jednoduchý plugin, který přidává do #wordpress podporu pr
       public static function processContent($content) {
         return preg_replace(Hashs::PATTERN, '<a href="' . get_home_url(null, '/tag/$1') . '" class="tag">#$1</a> ', $content);
       }
-    
+
       /**
        * Auto hash tags
        *
@@ -44,7 +43,7 @@ Napsal jsem velmi jednoduchý plugin, který přidává do #wordpress podporu pr
         wp_set_object_terms($post_id, $matches[1], 'post_tag', false); // replace
       }
     }
-    
+
     add_filter('the_content', array('Hashs', 'processContent'), 1);
     add_action('save_post', array('Hashs', 'addAutoTags'));
 

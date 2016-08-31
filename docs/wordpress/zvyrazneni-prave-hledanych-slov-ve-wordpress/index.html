@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Zvýraznění právě hledaných slov ve Wordpress - nabito.net</title>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="zvýraznění-právě-hledaných-slov-ve-wordpress">Zvýraznění právě hledaných slov ve Wordpress</h1>
+
+<p>Několik následujících řádků kódu <strong>obalí</strong> všechna právě vyhledávaná <strong>klíčová slova</strong> do značky STRONG (class search-keyword). Kód je možné vložit do <em>function.php</em> ve Vašem template. Nebo jej můžete vložit rovnou do <em>search.php</em> někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí <a href="http://codex.wordpress.org/Function_Reference/get_search_form">Wordpress</a>.</p>
+
+<pre><code>function omSearchHeighlight($text)
+{
+$keys = explode(&quot; &quot;, get_search_query());
+$text = preg_replace('/('.implode('|', $keys) .')/iu', '&lt;strong class=&quot;search-keyword&quot;&gt;\0&lt;/strong&gt;', $text);
+return $text;
+}
+
+add_filter('the_title','omSearchHeighlight');
+add_filter('the_content','omSearchHeighlight');
+add_filter('the_excerpt','omSearchHeighlight');
+
+// nezapomeňte strong element nastylovat např.
+// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
+</code></pre>
+
+<p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
+
+
+	<ul id="tags">
+		
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/css">CSS</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/php"> PHP</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/wordpress"> wordpress</a> </li>
+	  
+	</ul>
+
+
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-default">Back</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+
+    
+
+
+</body>
+</html>
+

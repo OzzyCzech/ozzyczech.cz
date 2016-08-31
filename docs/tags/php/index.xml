@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/php/</link>
+    <description>Recent content in Php on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Mon, 20 Jun 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Case insensitive in_array v PHP</title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/case-insensitive-in_array-v-php/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2011/case-insensitive-in_array-v-php/</guid>
+      <description>
+
+&lt;h1 id=&#34;case-insensitive-in-array-v-php&#34;&gt;Case insensitive in_array v PHP&lt;/h1&gt;
+
+&lt;p&gt;PHP funkce &lt;a href=&#34;http://php.net/manual/en/function.in-array.php&#34;&gt;in_array&lt;/a&gt; je case
+sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a
+nezáleží Vám na velikosti písmen u jeho prvků:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$array = array(&#39;a&#39;, &#39;B&#39;, &#39;cE&#39;);
+
+function inArrayCaseInsensitive($needle, $array) {
+ return (bool) preg_grep(&#39;/^&#39; . preg_quote($needle, &#39;/&#39;) . &#39;$/i&#39;, $array);
+}
+
+inArrayCaseInsensitive(&#39;a&#39;, $array); // true
+inArrayCaseInsensitive(&#39;A&#39;, $array); // true
+inArrayCaseInsensitive(&#39;ce&#39;, $array); // true
+inArrayCaseInsensitive(&#39;be&#39;, $array); // false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Funkce &lt;a href=&#34;http://php.net/manual/en/function.preg-grep.php&#34;&gt;preg_grep&lt;/a&gt; má ještě
+zajímavý přepínač PREG_GREP_INVERT. Tímto přepínačem odfiltrujete všechny
+hodnoty v poli, které neodpovídají zadanému &lt;strong&gt;regulárnímu výrazu&lt;/strong&gt;.
+Filtrace zachovává klíče pole.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$array = array(&#39;a&#39;, &#39;A&#39;, &#39;cE&#39;);
+
+function filterArrayValues($needle, $array) {
+ return preg_grep(&#39;/^&#39; . preg_quote($needle, &#39;/&#39;) . &#39;$/i&#39;, $array, PREG_GREP_INVERT);
+}
+
+print_r(filterArrayValues(&#39;a&#39;, $array)); // vypíše jen cE
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Snadné připojení k FTP pomocí PHP</title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/snadne-pripojeni-k-ftp-pomoci-php/</link>
+      <pubDate>Wed, 13 Apr 2011 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2011/snadne-pripojeni-k-ftp-pomoci-php/</guid>
+      <description>
+
+&lt;h1 id=&#34;snadné-připojení-k-ftp-pomocí-php&#34;&gt;Snadné připojení k FTP pomocí PHP&lt;/h1&gt;
+
+&lt;p&gt;Mám v oblibě &lt;a href=&#34;http://en.wikipedia.org/wiki/File_Transfer_Protocol&#34;&gt;zkrácený zápis&lt;/a&gt; připojení k FTP.
+PHP tento &lt;a href=&#34;http://php.net/manual/en/function.ftp-connect.php&#34;&gt;způsob zápisu připojení&lt;/a&gt;
+bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere
+zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+ * Vraci ID FTP pripojeni na zaklade zadane URL
+ * ftp://username:password@sld.domain.tld:21/path1/path2/
+ */
+function getFtpConnection($uri)
+{  
+  preg_match(&amp;quot;/(?P&amp;lt;protocol&amp;gt;ftps?:\/\/)(?P&amp;lt;username&amp;gt;.*?):(?P&amp;lt;password&amp;gt;.*?)@(?P&amp;lt;url&amp;gt;.*?):?(?P&amp;lt;port&amp;gt;[1-9]+)?(?&amp;lt;dir&amp;gt;\/.*)/i&amp;quot;, $uri, $match);
+  $conn = ftp_connect($match[&#39;url&#39;], empty($match[&#39;port&#39;]) ? 21 : (int)$match[&#39;port&#39;]) or die(&amp;quot;Couldn&#39;t connect to &amp;quot; . $match[&#39;url&#39;]);
+  if (ftp_login($conn, $match[&#39;username&#39;], $match[&#39;password&#39;])) {
+    ftp_chdir($conn, $match[&#39;dir&#39;]);
+    return $conn;
+  }
+
+  return null;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Výstupem funkce je samozřejmě ID připojení, se kterým pak můžete &lt;a href=&#34;http://www.php.net/manual/en/ref.ftp.php&#34;&gt;normálně pracovat&lt;/a&gt; dál. Funkci najdete také zde: &lt;a href=&#34;https://gist.github.com/998091&#34;&gt;https://gist.github.com/998091&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

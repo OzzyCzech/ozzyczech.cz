@@ -1,7 +1,6 @@
 ---
 title: Parkinsonův zákon
-date: 2008-12-5
-author: Roman Ožana <ozana@omdesign.cz>
+date: 2008-12-05
 tags: how-to, zajimavosti
 ---
 

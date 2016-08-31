@@ -1,7 +1,7 @@
 ---
 title: Jak okopírovat adresář s celým obsahem v PHP
-date: 15.10.2011 07:35:25
-author: Roman Ožana <ozana@omdesign.cz>
+date: 2011-10-15
+
 tags: PHP, recursive copy of directory, Recursive Copy Of Folder
 ---
 
@@ -13,7 +13,7 @@ Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů
 
     $source = "/foo/bar/dir";
     $dest= "/dest/dir";
-    
+
     foreach (
      $iterator = new RecursiveIteratorIterator(
       new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS),

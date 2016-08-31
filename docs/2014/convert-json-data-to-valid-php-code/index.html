@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Convert JSON data to valid PHP code - nabito.net</title>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="convert-json-data-to-valid-php-code">Convert JSON data to valid PHP code</h1>
+
+<p>Do you need <strong>convert JSON data to valid PHP</strong> code without pain? I&rsquo;ve got a short script for that! My simple solution used <a href="http://www.php.net/manual/en/function.var-export.php">var_export()</a> function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace <code>stdClass::__set_state/</code> with <code>(object)</code>.</p>
+
+<p>Take a closer look at example data. I have here <a href="https://gist.github.com/Fluidbyte/2973986">currency.json</a> - PHP code should look something like this:</p>
+
+<pre><code>&lt;?php
+ return array (
+  'USD' =&gt;
+  (object)(array(
+     'symbol' =&gt; '$',
+     'name' =&gt; 'US Dollar',
+     'symbol_native' =&gt; '$',
+     'decimal_digits' =&gt; 2,
+     'rounding' =&gt; 0,
+     'code' =&gt; 'USD',
+     'name' =&gt; 'US dollars',
+  )),
+  'CAD' =&gt;
+  //...
+);
+</code></pre>
+
+<p>It&rsquo;s can be done in only four lines of PHP code:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p>If you need call some function (like <a href="http://www.php.net/manual/en/book.gettext.php">gettext</a>) above the variable, just add more regular expression:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+
+// add gettext function call
+$code = preg_replace(&quot;/'name' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+$code = preg_replace(&quot;/'name_plural' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+
+// save PHP code
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p> </p>
+
+
+	<ul id="tags">
+		
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/js">js</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/json"> json</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/php"> php</a> </li>
+	  
+	</ul>
+
+
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-default">Back</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+
+    
+
+
+</body>
+</html>
+

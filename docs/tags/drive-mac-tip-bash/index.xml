@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drive Mac Tip Bash on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/drive-mac-tip-bash/</link>
+    <description>Recent content in Drive Mac Tip Bash on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Sat, 21 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/drive-mac-tip-bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to clean flash drive before unmount on Mac</title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/how-to-clean-flash-drive-before-unmount-on-mac/</link>
+      <pubDate>Sat, 21 Dec 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2013/how-to-clean-flash-drive-before-unmount-on-mac/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-to-clean-flash-drive-before-unmount-on-mac&#34;&gt;How to clean flash drive before unmount on Mac&lt;/h1&gt;
+
+&lt;p&gt;How to &lt;strong&gt;clean flash drive&lt;/strong&gt; and delete all hidden (dot) files on mac before unmount? It&amp;rsquo;s simple, save follow commands as &lt;code&gt;flash&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+if [ -n &amp;quot;$1&amp;quot; ]; then
+  read -r -p &amp;quot;Clean /Volumes/$1/ and unmount? [y/N] &amp;quot; response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then      
+    find /Volumes/$1/ -name &#39;._*&#39; -type f -delete
+    rm -rf /Volumes/$1/.Spotlight-V100/
+    rm -rf /Volumes/$1/.Trashes/
+    diskutil unmount /Volumes/$1/
+    echo &amp;quot;Done...&amp;quot;
+  fi
+else
+  echo &amp;quot;Flash drive name missing&amp;quot;
+fi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then change the access mode of a file &lt;code&gt;chmod +x flash&lt;/code&gt;. To unmount a clean flash drive just run
+&lt;code&gt;./flash Flashka&lt;/code&gt; (Flashka is name od drive).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

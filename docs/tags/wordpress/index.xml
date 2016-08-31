@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/wordpress/</link>
+    <description>Recent content in Wordpress on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Wed, 20 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wodpress constants for human-readable intervals</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/wodpress-constants-for-human-readable-intervals/</link>
+      <pubDate>Wed, 20 Feb 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wodpress-constants-for-human-readable-intervals/</guid>
+      <description>
+
+&lt;h1 id=&#34;wodpress-constants-for-human-readable-intervals&#34;&gt;Wodpress constants for human-readable intervals&lt;/h1&gt;
+
+&lt;p&gt;Constants for expressing human-readable intervals in new #Wordpress are very useful:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;define( &#39;MINUTE_IN_SECONDS&#39;, 60 );
+define( &#39;HOUR_IN_SECONDS&#39;,   60 * MINUTE_IN_SECONDS );
+define( &#39;DAY_IN_SECONDS&#39;,    24 * HOUR_IN_SECONDS   );
+define( &#39;WEEK_IN_SECONDS&#39;,    7 * DAY_IN_SECONDS    );
+define( &#39;YEAR_IN_SECONDS&#39;,  365 * DAY_IN_SECONDS    );
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wp_cache_add($key, $data, &#39;default, 5 * DAY_IN_SECONDS);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Odstranění odkazů z admin menu Wordpress</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</link>
+      <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</guid>
+      <description>
+
+&lt;h1 id=&#34;odstranění-odkazů-z-admin-menu-wordpress&#34;&gt;Odstranění odkazů z admin menu Wordpress&lt;/h1&gt;
+
+&lt;p&gt;Pro &lt;a href=&#34;http://codex.wordpress.org/Links_Manager&#34;&gt;manažer odkazů&lt;/a&gt; #wordpress jsem nenašel nikdy &lt;strong&gt;smysluplné využití&lt;/strong&gt;. Proč ho rovnou z menu neodstranit? Stejně tam jen zavazí:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;add_action(&#39;admin_menu&#39;, function(){
+  remove_menu_page(&#39;link-manager.php&#39;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obdobně je možné odstranit cokoliv dalšího např. &lt;code&gt;remove_menu_page(&#39;edit-comments.php&#39;);&lt;/code&gt; - odstraní odkaz na komentáře.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

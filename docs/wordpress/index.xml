@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpresses on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/wordpress/</link>
+    <description>Recent content in Wordpresses on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Mon, 02 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wordpress -  get post excerpt</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-get-post-excerpt/</link>
+      <pubDate>Mon, 02 Dec 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-get-post-excerpt/</guid>
+      <description>
+
+&lt;h1 id=&#34;wordpress-get-post-excerpt&#34;&gt;Wordpress: get post excerpt&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;$excerpt = apply_filters(&#39;the_excerpt&#39;, get_post_field(&#39;post_excerpt&#39;, $post_id));&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wordpress - How to get user by metadata</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-how-to-get-user-by-metadata/</link>
+      <pubDate>Tue, 16 Apr 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-how-to-get-user-by-metadata/</guid>
+      <description>
+
+&lt;h1 id=&#34;wordpress-how-to-get-user-by-metadata&#34;&gt;Wordpress - How to get user by metadata&lt;/h1&gt;
+
+&lt;p&gt;Getting user by field name is easy, #Wordpress have function for that &lt;a href=&#34;http://codex.wordpress.org/Function_Reference/get_user_by&#34;&gt;get_user_by&lt;/a&gt;. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to &lt;strong&gt;get user by metadata&lt;/strong&gt; using &lt;a href=&#34;https://codex.wordpress.org/Class_Reference/WP_Query&#34;&gt;WP_Query&lt;/a&gt; object. Forget about them! You need prepare correct meta query as array or string and call &lt;code&gt;get_users&lt;/code&gt;. Thats all!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+ * Get user by his metadata
+ * @author Roman Ozana &amp;lt;ozana@omdesign.cz&amp;gt;
+ * @param $meta_key
+ * @param $meta_value
+ * @return mixed
+ */
+function get_user_by_meta($meta_key, $meta_value) {
+ return reset(
+  get_users(
+   array(
+    &#39;meta_key&#39; =&amp;gt; $meta_key,
+    &#39;meta_value&#39; =&amp;gt; $meta_value,
+    &#39;number&#39; =&amp;gt; 1,
+    &#39;count_total&#39; =&amp;gt; false
+   )
+  )
+ );
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wodpress constants for human-readable intervals</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/wodpress-constants-for-human-readable-intervals/</link>
+      <pubDate>Wed, 20 Feb 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wodpress-constants-for-human-readable-intervals/</guid>
+      <description>
+
+&lt;h1 id=&#34;wodpress-constants-for-human-readable-intervals&#34;&gt;Wodpress constants for human-readable intervals&lt;/h1&gt;
+
+&lt;p&gt;Constants for expressing human-readable intervals in new #Wordpress are very useful:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;define( &#39;MINUTE_IN_SECONDS&#39;, 60 );
+define( &#39;HOUR_IN_SECONDS&#39;,   60 * MINUTE_IN_SECONDS );
+define( &#39;DAY_IN_SECONDS&#39;,    24 * HOUR_IN_SECONDS   );
+define( &#39;WEEK_IN_SECONDS&#39;,    7 * DAY_IN_SECONDS    );
+define( &#39;YEAR_IN_SECONDS&#39;,  365 * DAY_IN_SECONDS    );
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wp_cache_add($key, $data, &#39;default, 5 * DAY_IN_SECONDS);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wordpress - register and setup witgets from PHP code</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/</link>
+      <pubDate>Tue, 29 Jan 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/</guid>
+      <description>
+
+&lt;h1 id=&#34;wordpress-register-and-setup-witgets-from-php-code&#34;&gt;Wordpress: register and setup witgets from PHP code&lt;/h1&gt;
+
+&lt;p&gt;PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Widgets {
+
+ private $widgets = array();
+ private $options = array();
+
+ public function __construct() {
+  $this-&amp;gt;options = wp_get_sidebars_widgets();
+ }
+
+ public function unregisterAllWidgets() {
+  foreach ($this-&amp;gt;options as $name =&amp;gt; $values)
+   $this-&amp;gt;options[$name] = array();
+ }
+
+ public function cleanWidgetSettings($type, $multi = null) {
+  $this-&amp;gt;widgets[$type] = array();
+  if ($multi !== null) $this-&amp;gt;widgets[$type][&#39;_multiwidget&#39;] = (int)(bool)$multi;
+ }
+
+ public function setMultiWidget($type, $val = 1) {
+  $this-&amp;gt;widgets[$type][&#39;_multiwidget&#39;] = $val;
+ }
+
+ public function add($type, array $options, $area = null) {
+  $this-&amp;gt;widgets[$type][] = $options;
+  if ($area !== null) {
+   if (array_key_exists($area, $this-&amp;gt;options) === false) {
+    throw new Exception(&#39;Widget area &#39; . $area . &#39; not exists.&#39;);
+   }
+   end($this-&amp;gt;widgets[$type]);
+   $this-&amp;gt;options[$area][] = $type . &#39;-&#39; . key($this-&amp;gt;widgets[$type]);
+  }
+ }
+
+ public function __destruct() {
+  foreach ($this-&amp;gt;widgets as $name =&amp;gt; $settings) {
+   if (!array_key_exists(&#39;_multiwidget&#39;, $settings)) $settings[&#39;_multiwidget&#39;] = 1;
+   update_option(&#39;widget_&#39; . $name, $settings);
+  }
+  wp_set_sidebars_widgets($this-&amp;gt;options);
+ }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Following code is an example how to use &lt;code&gt;class Witgets&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$widgets = new Widgets();
+$widgets-&amp;gt;unregisterAllWidgets();
+
+$widgets-&amp;gt;add(
+ &#39;text&#39;,
+ array(
+  &#39;title&#39; =&amp;gt; &#39;About us&#39;,
+  &#39;text&#39; =&amp;gt; &#39;Simple text about us&#39;,
+  &#39;filter&#39; =&amp;gt; true,
+  &#39;classes&#39; =&amp;gt; &#39;&#39;,
+  &#39;ids&#39; =&amp;gt; null,
+ ),
+ &#39;footer-1&#39;
+);
+
+// ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code need to be call only once. Put your code to &lt;code&gt;function.php&lt;/code&gt; to &lt;code&gt;after_switch_theme&lt;/code&gt; action:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;add_action(
+ &#39;after_switch_theme&#39;, function () {
+  $widgets = new Widgets();
+  $widgets-&amp;gt;unregisterAllWidgets();
+  // ...
+ }
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/4663766/&#34;&gt;https://gist.github.com/4663766/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Odstranění odkazů z admin menu Wordpress</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</link>
+      <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</guid>
+      <description>
+
+&lt;h1 id=&#34;odstranění-odkazů-z-admin-menu-wordpress&#34;&gt;Odstranění odkazů z admin menu Wordpress&lt;/h1&gt;
+
+&lt;p&gt;Pro &lt;a href=&#34;http://codex.wordpress.org/Links_Manager&#34;&gt;manažer odkazů&lt;/a&gt; #wordpress jsem nenašel nikdy &lt;strong&gt;smysluplné využití&lt;/strong&gt;. Proč ho rovnou z menu neodstranit? Stejně tam jen zavazí:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;add_action(&#39;admin_menu&#39;, function(){
+  remove_menu_page(&#39;link-manager.php&#39;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obdobně je možné odstranit cokoliv dalšího např. &lt;code&gt;remove_menu_page(&#39;edit-comments.php&#39;);&lt;/code&gt; - odstraní odkaz na komentáře.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zvýraznění právě hledaných slov ve Wordpress</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/</link>
+      <pubDate>Mon, 15 Nov 2010 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/</guid>
+      <description>
+
+&lt;h1 id=&#34;zvýraznění-právě-hledaných-slov-ve-wordpress&#34;&gt;Zvýraznění právě hledaných slov ve Wordpress&lt;/h1&gt;
+
+&lt;p&gt;Několik následujících řádků kódu &lt;strong&gt;obalí&lt;/strong&gt; všechna právě vyhledávaná &lt;strong&gt;klíčová slova&lt;/strong&gt; do značky STRONG (class search-keyword). Kód je možné vložit do &lt;em&gt;function.php&lt;/em&gt; ve Vašem template. Nebo jej můžete vložit rovnou do &lt;em&gt;search.php&lt;/em&gt; někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí &lt;a href=&#34;http://codex.wordpress.org/Function_Reference/get_search_form&#34;&gt;Wordpress&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function omSearchHeighlight($text)
+{
+$keys = explode(&amp;quot; &amp;quot;, get_search_query());
+$text = preg_replace(&#39;/(&#39;.implode(&#39;|&#39;, $keys) .&#39;)/iu&#39;, &#39;&amp;lt;strong class=&amp;quot;search-keyword&amp;quot;&amp;gt;\0&amp;lt;/strong&amp;gt;&#39;, $text);
+return $text;
+}
+
+add_filter(&#39;the_title&#39;,&#39;omSearchHeighlight&#39;);
+add_filter(&#39;the_content&#39;,&#39;omSearchHeighlight&#39;);
+add_filter(&#39;the_excerpt&#39;,&#39;omSearchHeighlight&#39;);
+
+// nezapomeňte strong element nastylovat např.
+// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

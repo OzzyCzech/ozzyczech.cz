@@ -10,5 +10,9 @@ disableHugoGeneratorInject = true
 enableRobotsTXT = true
 enableEmoji = true
 
+[author]
+name = "Roman Ožana"
+email = "ozana@omdesign.cz"
+
 [permalinks]
 post = "/:title/"

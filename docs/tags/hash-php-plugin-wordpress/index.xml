@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hash Php Plugin Wordpress on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/hash-php-plugin-wordpress/</link>
+    <description>Recent content in Hash Php Plugin Wordpress on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Sat, 15 Sep 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/hash-php-plugin-wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hash tags pro Wordpress</title>
+      <link>https://ozzyczech.github.io/nabito.net/2012/hash-tags-pro-wordpress/</link>
+      <pubDate>Sat, 15 Sep 2012 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2012/hash-tags-pro-wordpress/</guid>
+      <description>
+
+&lt;h1 id=&#34;hash-tags-pro-wordpress&#34;&gt;Hash tags pro Wordpress&lt;/h1&gt;
+
+&lt;p&gt;Napsal jsem velmi jednoduchý plugin, který přidává do #wordpress podporu pro #hash tagy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+/*
+Plugin Name: Hashs
+Description: Twitter like hash for Wordpress
+Version: 1.0
+Author: Roman Ozana &amp;lt;ozana@omdesign.cz&amp;gt;
+Author URI: http://www.omdesign.cz/
+*/
+class Hashs {
+
+  const PATTERN = &#39;/\B#([^\s\W#]+)/i&#39;;
+
+  /**
+   * @param string $content
+   * @return string mixed
+   */
+  public static function processContent($content) {
+    return preg_replace(Hashs::PATTERN, &#39;&amp;lt;a href=&amp;quot;&#39; . get_home_url(null, &#39;/tag/$1&#39;) . &#39;&amp;quot; class=&amp;quot;tag&amp;quot;&amp;gt;#$1&amp;lt;/a&amp;gt; &#39;, $content);
+  }
+
+  /**
+   * Auto hash tags
+   *
+   * @param $post_id
+   * @return bool
+   */
+  public static function addAutoTags($post_id) {
+    $post = get_post($post_id);
+    preg_match_all(Hashs::PATTERN, $post-&amp;gt;post_content, $matches);
+    if (!isset($matches[1])) return;
+    wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); // replace
+  }
+}
+
+add_filter(&#39;the_content&#39;, array(&#39;Hashs&#39;, &#39;processContent&#39;), 1);
+add_action(&#39;save_post&#39;, array(&#39;Hashs&#39;, &#39;addAutoTags&#39;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Povšimněte si zejména řádku     wp_set_object_terms($post_id,
+    $matches[1], &amp;lsquo;post_tag&amp;rsquo;, false);
+ ten totiž ukládá nalezené tagy k postu. Pokud je poslední hodnota &lt;code&gt;true&lt;/code&gt;, provede append (přidání ke stávajícím tagům). Pokud je &lt;code&gt;false&lt;/code&gt;, provede nahrazení všech tagů u postu nalezenými hashtagy. Zdrojový kód ke stažení zde: &lt;a href=&#34;https://bitbucket.org/OzzyCzech/omhashtag&#34;&gt;https://bitbucket.org/OzzyCzech/omhashtag&lt;/a&gt; #php #plugin #hash&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

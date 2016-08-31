@@ -1,8 +1,7 @@
 ---
 title: Tik v oku
 date: 2008-08-12
-author: Roman Ožana <ozana@omdesign.cz>
-tags: 
+tags:
 ---
 
 

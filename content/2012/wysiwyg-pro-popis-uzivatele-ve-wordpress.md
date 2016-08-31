@@ -1,7 +1,6 @@
 ---
 title: WYSIWYG pro popis uživatele ve Wordpress
-date: 29.10.2012 13:33:04
-author: Roman Ožana <ozana@omdesign.cz>
+date: 2012-10-29
 tags: PHP, wordpress, WYSIWYG
 ---
 
@@ -18,7 +17,7 @@ Následující kratičký kód zobrazí #WYSIWYG editor u popisu autora u uživa
      * @author Roman Ozana <ozana@omdesign.cz>
      */
     class CustomUserProfile {
-    
+
       /** @var array */
       private $tinymceOptions = array(
         'teeny' => true,
@@ -32,12 +31,12 @@ Následující kratičký kód zobrazí #WYSIWYG editor u popisu autora u uživa
           'theme_advanced_buttons4' => '',
         ),
       );
-    
+
       public function __construct() {
         add_action('show_user_profile', array($this, 'initDescriptionWysywig'));
         add_action('edit_user_profile', array($this, 'initDescriptionWysywig'));
       }
-    
+
       /**
        * Wysywig editor take pro description
        *
@@ -46,12 +45,12 @@ Následující kratičký kód zobrazí #WYSIWYG editor u popisu autora u uživa
       public function initDescriptionWysywig($options) {
         if ( ! class_exists('_WP_Editors' ) )
           require_once( ABSPATH . WPINC . '/class-wp-editor.php' );
-    
+
         $options = _WP_Editors::parse_settings('description', $this->tinymceOptions);
         _WP_Editors::editor_settings('description', $options);
         wp_print_styles('editor-buttons');
       }
-    
+
     }
     new CustomUserProfile();
 

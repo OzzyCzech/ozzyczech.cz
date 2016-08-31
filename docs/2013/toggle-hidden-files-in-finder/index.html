@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Toggle Hidden Files in Finder - nabito.net</title>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="toggle-hidden-files-in-finder">Toggle Hidden Files in Finder</h1>
+
+<p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
+
+<pre><code>STATUS=`defaults read com.apple.finder AppleShowAllFiles`
+if [ $STATUS == YES ];
+then
+    defaults write com.apple.finder AppleShowAllFiles NO
+else
+    defaults write com.apple.finder AppleShowAllFiles YES
+fi
+killall Finder
+</code></pre>
+
+<p>Save application. From now can Tooggle</p>
+
+
+	<ul id="tags">
+		
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/automator">automator</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/mac"> mac</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/osx"> osx</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/shell"> shell</a> </li>
+	  
+	</ul>
+
+
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-default">Back</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+
+    
+
+
+</body>
+</html>
+

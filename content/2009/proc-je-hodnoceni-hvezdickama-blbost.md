@@ -1,7 +1,6 @@
 ---
 title: Proč je hodnocení hvězdičkama blbost
-date: 2009-02-16 14:50:53
-author: Roman Ožana <ozana@omdesign.cz>
+date: 2009-02-16
 tags: webdesign
 ---
 

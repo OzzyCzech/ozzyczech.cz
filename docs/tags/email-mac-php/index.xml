@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email Mac Php on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/email-mac-php/</link>
+    <description>Recent content in Email Mac Php on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Tue, 14 May 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/email-mac-php/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Setup email sending from PHP on Mac</title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/setup-email-sending-from-php-on-mac/</link>
+      <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2013/setup-email-sending-from-php-on-mac/</guid>
+      <description>
+
+&lt;h1 id=&#34;setup-email-sending-from-php-on-mac&#34;&gt;Setup email sending from PHP on Mac&lt;/h1&gt;
+
+&lt;p&gt;First write in terminal: &lt;code&gt;which sendmail&lt;/code&gt; wlll return path to sendmail app (in my case &lt;code&gt;/usr/sbin/sendmail&lt;/code&gt;). Then open &lt;code&gt;php.ini&lt;/code&gt; file and setup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sendmail_path = /usr/sbin/sendmail -t -i
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create necessary folder and setup postfix permissions:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mkdir -p /Library/Server/Mail/Data/spool
+sudo /usr/sbin/postfix set-permissions
+sudo /usr/sbin/postfix start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And check if emails will come:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;php -r &amp;quot;mail(&#39;youremail@domain.com&#39;, &#39;subject&#39;, &#39;message&#39;, &#39;From: &amp;lt;youremail@domain.com&amp;gt;&#39; . PHP_EOL);&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

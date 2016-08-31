@@ -1,7 +1,6 @@
 ---
 title: Význam barev
-date: 2009-04-16 17:38:27
-author: Roman Ožana <ozana@omdesign.cz>
+date: 2009-04-16
 tags: webdesign
 ---
 

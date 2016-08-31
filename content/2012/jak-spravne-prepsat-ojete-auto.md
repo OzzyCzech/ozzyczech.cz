@@ -1,7 +1,6 @@
 ---
 title: Jak správně přepsat ojeté auto
-date: 14.6.2012 23:05:37
-author: Roman Ožana <ozana@omdesign.cz>
+date: 2012-06-14
 tags: auto, how, posta, registrace
 ---
 

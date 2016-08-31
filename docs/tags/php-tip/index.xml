@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php Tip on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/php-tip/</link>
+    <description>Recent content in Php Tip on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Wed, 05 Sep 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/php-tip/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Zjištění práv k souboru nebo adresáři v PHP</title>
+      <link>https://ozzyczech.github.io/nabito.net/2012/zjisteni-prav-k-souboru-nebo-adresari-v-php/</link>
+      <pubDate>Wed, 05 Sep 2012 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2012/zjisteni-prav-k-souboru-nebo-adresari-v-php/</guid>
+      <description>
+
+&lt;h1 id=&#34;zjištění-práv-k-souboru-nebo-adresáři-v-php&#34;&gt;Zjištění práv k souboru nebo adresáři v PHP&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;function getPermisions($file) {
+  return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : &#39;0000&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nebo pro kontrolu, zda jsou práva dostatečná:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function hasPermisions($path, $permission = 777) {
+  $current = substr(decoct(fileperms($path)), $permission &amp;gt; 1000 ? -4 : -3);
+  return ($current &amp;gt; $permission);
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

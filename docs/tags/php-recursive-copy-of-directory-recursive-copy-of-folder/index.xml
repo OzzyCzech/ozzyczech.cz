@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php Recursive Copy Of Directory Recursive Copy Of Folder on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/php-recursive-copy-of-directory-recursive-copy-of-folder/</link>
+    <description>Recent content in Php Recursive Copy Of Directory Recursive Copy Of Folder on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Sat, 15 Oct 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/php-recursive-copy-of-directory-recursive-copy-of-folder/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jak okopírovat adresář s celým obsahem v PHP</title>
+      <link>https://ozzyczech.github.io/nabito.net/2011/jak-okopirovat-adresar-s-celym-obsahem-v-php/</link>
+      <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2011/jak-okopirovat-adresar-s-celym-obsahem-v-php/</guid>
+      <description>
+
+&lt;h1 id=&#34;jak-okopírovat-adresář-s-celým-obsahem-v-php&#34;&gt;Jak okopírovat adresář s celým obsahem v PHP&lt;/h1&gt;
+
+&lt;p&gt;Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí &lt;a href=&#34;http://cz.php.net/manual/en/spl.iterators.php&#34;&gt;PHP iterátoru&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$source = &amp;quot;/foo/bar/dir&amp;quot;;
+$dest= &amp;quot;/dest/dir&amp;quot;;
+
+foreach (
+ $iterator = new RecursiveIteratorIterator(
+  new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS),
+  RecursiveIteratorIterator::SELF_FIRST) as $item
+) {
+  if ($item-&amp;gt;isDir()) {
+    mkdir($dest . DIRECTORY_SEPARATOR . $iterator-&amp;gt;getSubPathName());
+  } else {
+    copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&amp;gt;getSubPathName());
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

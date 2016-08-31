@@ -1,3 +1,11 @@
 <article>
 	{{ .Content }}
+
+	<ul id="tags">
+		{{range split .Params.tags ","}}
+	    <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+	  {{ end }}
+	</ul>
+
+
 </article>

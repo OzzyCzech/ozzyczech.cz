@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Wodpress constants for human-readable intervals - nabito.net</title>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="wodpress-constants-for-human-readable-intervals">Wodpress constants for human-readable intervals</h1>
+
+<p>Constants for expressing human-readable intervals in new #Wordpress are very useful:</p>
+
+<pre><code>define( 'MINUTE_IN_SECONDS', 60 );
+define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
+define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );
+define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );
+define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
+</code></pre>
+
+<p>Example:</p>
+
+<pre><code>wp_cache_add($key, $data, 'default, 5 * DAY_IN_SECONDS);
+</code></pre>
+
+
+	<ul id="tags">
+		
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">wordpress</a> </li>
+	  
+	</ul>
+
+
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-default">Back</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+
+    
+
+
+</body>
+</html>
+

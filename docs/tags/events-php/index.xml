@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events Php on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/events-php/</link>
+    <description>Recent content in Events Php on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Sun, 05 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/events-php/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hardcore Simple Events Dispatcher for PHP</title>
+      <link>https://ozzyczech.github.io/nabito.net/2014/hardcore-simple-events-dispatcher-for-php/</link>
+      <pubDate>Sun, 05 Oct 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2014/hardcore-simple-events-dispatcher-for-php/</guid>
+      <description>
+
+&lt;h1 id=&#34;hardcore-simple-events-dispatcher-for-php&#34;&gt;Hardcore Simple Events Dispatcher for PHP&lt;/h1&gt;
+
+&lt;p&gt;Events is simple pure functional &lt;strong&gt;event dispatching library&lt;/strong&gt; for PHP 5.5+ and
+have nice and clear interface with function &lt;code&gt;on()&lt;/code&gt;, &lt;code&gt;one()&lt;/code&gt;, &lt;code&gt;off()&lt;/code&gt;, &lt;code&gt;trigger()&lt;/code&gt;,
+&lt;code&gt;filter()&lt;/code&gt;, &lt;code&gt;ensure()&lt;/code&gt;, &lt;code&gt;listeners()&lt;/code&gt;, &lt;code&gt;events()&lt;/code&gt; - that&amp;rsquo;s all!&lt;/p&gt;
+
+&lt;p&gt;With &lt;strong&gt;sphido/events&lt;/strong&gt; can:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;listeners prioritization&lt;/li&gt;
+&lt;li&gt;add/remove listeners&lt;/li&gt;
+&lt;li&gt;filter values by functions&lt;/li&gt;
+&lt;li&gt;stop propagation in function chain&lt;/li&gt;
+&lt;li&gt;and have event default handler&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;trigger-event&#34;&gt;Trigger event&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;on(&#39;event&#39;, function () {
+  echo &amp;quot;wow it&#39;s works yeah!&amp;quot;;
+});
+
+trigger(&#39;event&#39;); // print wow it&#39;s works yeah!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hardcore simple events for PHP with filter, prioritizing, removing handlers and
+stop propagation. It&amp;rsquo;s even simpler then my previous version &lt;a href=&#34;https://github.com/sphido/events&#34;&gt;https://github.com/sphido/events&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>How to safely commit vendor dir with php Composer - nabito.net</title>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="how-to-safely-commit-vendor-dir-with-php-composer">How to safely commit vendor dir with php Composer</h1>
+
+<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
+- I will work on application and my packages together.
+- I need a simple way how to commit and publish new version of packages.
+- Workflow need to be simple (mimimum of commands)</p>
+
+<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
+
+<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
+
+<pre><code>&quot;scripts&quot;: {
+ &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
+ &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
+},
+</code></pre>
+
+<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
+
+<p>When you are using tagged releases (no dev versions) of package then run:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
+</code></pre>
+
+<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
+</code></pre>
+
+<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+
+<ul>
+<li>Large VCS repository size and diffs when you update code.</li>
+<li>Duplication of the history of all your dependencies in your own VCS.</li>
+<li>There can be conflicts in commits especially when you work in larger team.</li>
+<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+</ul>
+
+
+	<ul id="tags">
+		
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/composer">composer</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/git"> git</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/php"> PHP</a> </li>
+	  
+	</ul>
+
+
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-default">Back</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+
+    
+
+
+</body>
+</html>
+

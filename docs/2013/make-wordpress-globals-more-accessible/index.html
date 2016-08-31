@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Make WordPress globals more accessible - nabito.net</title>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="make-wordpress-globals-more-accessible">Make WordPress globals more accessible</h1>
+
+<p>Wordpress using a lot <a href="http://codex.wordpress.org/Global_Variables">globals variables</a>. These variables are used throughout WordPress code for various reasons. Great example is database connection object <a href="http://codex.wordpress.org/Class_Reference/wpdb">wpdb</a>. Here is common example how to use <strong>wpdb</strong> in some function:</p>
+
+<pre><code>function something() {
+  global $wpdb;
+  /** @var wpdb $wpdb */
+  $wpdb-&gt;query('SQL...');
+}
+</code></pre>
+
+<p>It&rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: <a href="https://gist.github.com/OzzyCzech/4737518">https://gist.github.com/OzzyCzech/4737518</a> (PHP 5.3+ only)</p>
+
+<pre><code>function something() {
+  Globals::wpdb()-&gt;query('SQL...');
+}
+</code></pre>
+
+
+	<ul id="tags">
+		
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/en">en</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/hack"> hack</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/php"> PHP</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/wordpress"> wordpress</a> </li>
+	  
+	</ul>
+
+
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-default">Back</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+
+    
+
+
+</body>
+</html>
+

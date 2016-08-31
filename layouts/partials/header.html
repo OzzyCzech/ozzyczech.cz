@@ -6,13 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>{{ .Title }} -- {{ .Site.Title }}</title>
-
+	<title>{{ .Title }} - {{ .Site.Title }}</title>
 	{{ if .RSSlink }}
 	<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
 	<link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
 	{{ end }}
-
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="{{ .Site.BaseURL }}/css/clean-blog.min.css" rel="stylesheet">
@@ -20,11 +18,8 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-
 <body>
 
 <header class="text-center">
 	<a href="{{ .Site.BaseURL  }}" style="text-decoration: none;color: #555"><h1>{{ .Site.Title }}</h1></a>
 </header>
-
-

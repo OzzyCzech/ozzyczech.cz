@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>AngularJS $http not sending X-Requested-With header - nabito.net</title>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://ozzyczech.github.io/nabito.net//css/clean-blog.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="angularjs-http-not-sending-x-requested-with-header">AngularJS $http not sending X-Requested-With header</h1>
+
+<p>Angular <a href="https://docs.angularjs.org/api/ng/service/$http">$http</a> isn’t appending the header <code>X-Requested-With</code> = <code>XMLHttpRequest</code> since Angular 1.3.0.</p>
+
+<blockquote>
+<p>X-Requested-With header is rarely used in practice and by using it all the time we are riggering preflight checks for crossdomain requests. See <a href="https://github.com/angular/angular.js/commit/3a75b1124d062f64093a90b26630938558909e8d"> commit message</a></p>
+</blockquote>
+
+<p>That can cause some problems on PHP side. If you need somehow differentiate XHR and common requests. For example Zend Framework and lot of others PHP frameworks use follow code:</p>
+
+<pre><code>function isXmlHttpRequest() {
+ return !empty($_SERVER['HTTP_X_REQUESTED_WITH']) &amp;&amp;
+  $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
+}
+</code></pre>
+
+<p>You can easily add  on Angular side by following code:</p>
+
+<pre><code>myAppModule.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.headers.common[&quot;X-Requested-With&quot;] = 'XMLHttpRequest';
+}]);
+
+</code></pre>
+
+
+	<ul id="tags">
+		
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/ajax">AJAX</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/angular"> angular</a> </li>
+	  
+	    <li><a href="https://ozzyczech.github.io/nabito.net/tags/js"> js</a> </li>
+	  
+	</ul>
+
+
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-default">Back</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+
+    
+
+
+</body>
+</html>
+

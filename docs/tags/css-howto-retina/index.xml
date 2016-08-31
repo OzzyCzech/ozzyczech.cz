@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css Howto Retina on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/css-howto-retina/</link>
+    <description>Recent content in Css Howto Retina on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Wed, 27 Mar 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/css-howto-retina/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to detect Retina display in CSS?</title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/how-to-detect-retina-display-in-css/</link>
+      <pubDate>Wed, 27 Mar 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2013/how-to-detect-retina-display-in-css/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-to-detect-retina-display-in-css&#34;&gt;How to detect Retina display in CSS?&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+  /* it&#39;s retina yeah! */
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

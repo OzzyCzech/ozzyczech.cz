@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>En Hack Php Wordpress on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/en-hack-php-wordpress/</link>
+    <description>Recent content in En Hack Php Wordpress on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Fri, 08 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/en-hack-php-wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Make WordPress globals more accessible</title>
+      <link>https://ozzyczech.github.io/nabito.net/2013/make-wordpress-globals-more-accessible/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/2013/make-wordpress-globals-more-accessible/</guid>
+      <description>
+
+&lt;h1 id=&#34;make-wordpress-globals-more-accessible&#34;&gt;Make WordPress globals more accessible&lt;/h1&gt;
+
+&lt;p&gt;Wordpress using a lot &lt;a href=&#34;http://codex.wordpress.org/Global_Variables&#34;&gt;globals variables&lt;/a&gt;. These variables are used throughout WordPress code for various reasons. Great example is database connection object &lt;a href=&#34;http://codex.wordpress.org/Class_Reference/wpdb&#34;&gt;wpdb&lt;/a&gt;. Here is common example how to use &lt;strong&gt;wpdb&lt;/strong&gt; in some function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function something() {
+  global $wpdb;
+  /** @var wpdb $wpdb */
+  $wpdb-&amp;gt;query(&#39;SQL...&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: &lt;a href=&#34;https://gist.github.com/OzzyCzech/4737518&#34;&gt;https://gist.github.com/OzzyCzech/4737518&lt;/a&gt; (PHP 5.3+ only)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function something() {
+  Globals::wpdb()-&amp;gt;query(&#39;SQL...&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
