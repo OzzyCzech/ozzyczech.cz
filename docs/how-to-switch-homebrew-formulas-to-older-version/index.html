@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>How to switch Homebrew formulas to older version - nabito.net</title>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="how-to-switch-homebrew-formulas-to-older-version">How to switch Homebrew formulas to older version</h1>
+
+<p>Sometimes you just won’t be able install latest version of any program and need
+some older (e.g. PHP 5.6.1 won’t work and you need install at least 5.6.0 and
+getting your work done). As you know all brew formulas are GIT repos, you
+can swith to older version easly:</p>
+
+<pre><code>$ cd /usr/local/Library/Taps/homebrew/homebrew-php/Formula
+$ git log --pretty=&quot;%h - %s&quot; -10
+</code></pre>
+
+<pre><code>71b2069 - Update to PHP 5.5.18
+b8aeb54 - Use homebrew's openssl for IMAP
+f0d721a - php56: improve phpdbg logic
+0dc3f1c - Update to PHP 5.6.1
+908fedd - Update to Blitz 0.8.12
+4801697 - Updates formula for WP CLI  to version 0.17.0
+00560f3 - Upgrade php*-swoole to 1.7.5
+8cbd369 - Updated PHP_CodeSniffer
+a81eba6 - update pecl_http to 2.1.2
+6a88856 - Add HEAD url for composer
+</code></pre>
+
+<p>Then just switch</p>
+
+<pre><code>$ git checkout 908fedd
+</code></pre>
+
+<p>And then run <code>brew install php56</code> and older version PHP will be installed. Procedure can be used for any formulas.</p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/brew">#brew</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/osx">#osx</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#php</a>
+	
+	<time datetime="18106-08-1018 180:00&#43;0000">18. 10. 2014</time>
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
+		Back to Homepage</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

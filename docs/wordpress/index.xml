@@ -87,7 +87,35 @@ define( &#39;YEAR_IN_SECONDS&#39;,  365 * DAY_IN_SECONDS    );
     </item>
     
     <item>
-      <title>Wordpress - register and setup witgets from PHP code</title>
+      <title>Make WordPress globals more accessible</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</guid>
+      <description>
+
+&lt;h1 id=&#34;make-wordpress-globals-more-accessible&#34;&gt;Make WordPress globals more accessible&lt;/h1&gt;
+
+&lt;p&gt;Wordpress using a lot &lt;a href=&#34;http://codex.wordpress.org/Global_Variables&#34;&gt;globals variables&lt;/a&gt;. These variables are used throughout WordPress code for various reasons. Great example is database connection object &lt;a href=&#34;http://codex.wordpress.org/Class_Reference/wpdb&#34;&gt;wpdb&lt;/a&gt;. Here is common example how to use &lt;strong&gt;wpdb&lt;/strong&gt; in some function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function something() {
+  global $wpdb;
+  /** @var wpdb $wpdb */
+  $wpdb-&amp;gt;query(&#39;SQL...&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: &lt;a href=&#34;https://gist.github.com/OzzyCzech/4737518&#34;&gt;https://gist.github.com/OzzyCzech/4737518&lt;/a&gt; (PHP 5.3+ only)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function something() {
+  Globals::wpdb()-&amp;gt;query(&#39;SQL...&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wordpress - register and setup widgets from PHP code</title>
       <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/</link>
       <pubDate>Tue, 29 Jan 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
@@ -175,6 +203,91 @@ $widgets-&amp;gt;add(
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://gist.github.com/4663766/&#34;&gt;https://gist.github.com/4663766/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Made in China - Paranoidní povídka na dobrou noc</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/made-in-china-paranoidni-povidka-na-dobrou-noc/</link>
+      <pubDate>Sun, 09 Dec 2012 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/made-in-china-paranoidni-povidka-na-dobrou-noc/</guid>
+      <description>
+
+&lt;h1 id=&#34;made-in-china-paranoidní-povídka-na-dobrou-noc&#34;&gt;Made in China - Paranoidní povídka na dobrou noc&lt;/h1&gt;
+
+&lt;p&gt;China právě vyhlásila jednostranné embargo na vývoz výrobku vyrobených na jejich
+území. USA a prakticky celá Evropa se potýká s akutním nedostatkem výrobků
+určených k běžné spotřebě. Chybí zejména elektronika, plastové a kovové výrobky
+a léků. Díky embargu došlo k ohrožení ekonomické stability řady firem.
+Na hranici bankrotu se pohybují firmy jako Apple, IKEA nebo Mattel. Ty se
+překotně snaží alespoň o částečnou obnovu výroby. Rovněž se pokoušejí
+přesunout výrobu do svých domovských států. Potýkají se se zoufalým nedostatkem
+odborníků a extrémní finanční náročností nechtěného stěhování. Prezident USA se
+tento týden sejde s představiteli Evropské Unie. Společně se pokusí dohodnout
+alespoň částečnou obnovu exportu výrobků vyrobených na území Chiny. Cílem je
+vyhnou se celosvětovému ekonomickému kolapsu. A zamezení chaosu do kterého se
+postupně propadají jednotlivé státy. O dalším vývoji situace Vás budeme
+průběžně informovat.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hash tags pro Wordpress</title>
+      <link>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</link>
+      <pubDate>Sat, 15 Sep 2012 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</guid>
+      <description>
+
+&lt;h1 id=&#34;hash-tags-pro-wordpress&#34;&gt;Hash tags pro Wordpress&lt;/h1&gt;
+
+&lt;p&gt;Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+/*
+Plugin Name: Hashs
+Description: Twitter like hash for Wordpress
+Version: 1.0
+Author: Roman Ozana &amp;lt;ozana@omdesign.cz&amp;gt;
+Author URI: http://www.omdesign.cz/
+*/
+class Hashs {
+
+  const PATTERN = &#39;/\B#([^\s\W#]+)/i&#39;;
+
+  /**
+   * @param string $content
+   * @return string mixed
+   */
+  public static function processContent($content) {
+    return preg_replace(Hashs::PATTERN, &#39;&amp;lt;a href=&amp;quot;&#39; . get_home_url(null, &#39;/tag/$1&#39;) . &#39;&amp;quot; class=&amp;quot;tag&amp;quot;&amp;gt;#$1&amp;lt;/a&amp;gt; &#39;, $content);
+  }
+
+  /**
+   * Auto hash tags
+   *
+   * @param $post_id
+   * @return bool
+   */
+  public static function addAutoTags($post_id) {
+    $post = get_post($post_id);
+    preg_match_all(Hashs::PATTERN, $post-&amp;gt;post_content, $matches);
+    if (!isset($matches[1])) return;
+    wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); // replace
+  }
+}
+
+add_filter(&#39;the_content&#39;, array(&#39;Hashs&#39;, &#39;processContent&#39;), 1);
+add_action(&#39;save_post&#39;, array(&#39;Hashs&#39;, &#39;addAutoTags&#39;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Povšimněte si zejména řádku  &lt;code&gt;wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false);&lt;/code&gt;
+ten totiž ukládá nalezené tagy k postu. Pokud je poslední hodnota &lt;code&gt;true&lt;/code&gt;,
+provede append (přidání ke stávajícím tagům). Pokud je &lt;code&gt;false&lt;/code&gt;, provede
+nahrazení všech tagů u postu nalezenými hashtagy.&lt;/p&gt;
+
+&lt;p&gt;Zdrojový kód ke stažení zde: &lt;a href=&#34;https://bitbucket.org/OzzyCzech/omhashtag&#34;&gt;https://bitbucket.org/OzzyCzech/omhashtag&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Snadné vložené YouTube videa pomocí PHP - nabito.net</title>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="snadné-vložené-youtube-videa-pomocí-php">Snadné vložené YouTube videa pomocí PHP</h1>
+
+<p>Následující PHP kód zamění jakýkoliv odkazu na <a href="http://www.youtube.com/">YouTube</a> video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.</p>
+
+<pre><code>function youtube($string)
+{
+  return preg_replace(
+    '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&amp;?.*?#i',
+    '&lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/$4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;',
+    $string
+  );
+}
+
+echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
+echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
+</code></pre>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#PHP</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/youtube">#YouTube</a>
+	
+	<time datetime="27036-08-327 270:00&#43;0000">27. 3. 2011</time>
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
+		Back to Homepage</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

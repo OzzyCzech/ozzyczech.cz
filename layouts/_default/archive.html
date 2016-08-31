@@ -1,0 +1,6 @@
+<section class="container">
+	<article>
+		<h1><a href="{{ .Permalink }}"><div>{{ .Title }}</div></a></h1>
+		{{ .Content | replaceRE "<h1.*?>(.|\n)*?</h1>" "" | safeHTML }}
+	</article>
+</section>

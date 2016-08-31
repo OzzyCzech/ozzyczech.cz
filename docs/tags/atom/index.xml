@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atom on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/atom/</link>
+    <description>Recent content in Atom on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Mon, 08 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/atom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to Auto indent code in Atom editor</title>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-auto-indent-code-in-atom-editor/</link>
+      <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-auto-indent-code-in-atom-editor/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-to-auto-indent-code-in-atom-editor&#34;&gt;How to Auto indent code in Atom editor&lt;/h1&gt;
+
+&lt;p&gt;Auto indent it&amp;rsquo;s hidden function is hidden in menu &lt;code&gt;Ediror &amp;gt; Lines &amp;gt; Auto Indent&lt;/code&gt; but shortcut missing :-(&lt;/p&gt;
+
+&lt;p&gt;Press &lt;code&gt;cmd + shift + p&lt;/code&gt; then type &lt;code&gt;keymap&lt;/code&gt; and hit enter &lt;strong&gt;Open Your Keymap&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ozzyczech.github.io/nabito.net/posts/atom-keymap.png&#34; alt=&#34;Open Your Keymap&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and add follow code there&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;atom-text-editor&#39;:
+  &#39;cmd-alt-l&#39;: &#39;editor:auto-indent&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now your Atom edit can Auto Indent with &lt;code&gt;cmd + alt + l&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

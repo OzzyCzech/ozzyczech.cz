@@ -1,9 +1,16 @@
 {{ partial "header.html" . }}
 
+
 <section class="container">
-	{{ range .Data.Pages }}
-	<h1><a href="{{ .Permalink }}"><div>{{ .Title }}</div></a></h1>
+	{{ $paginator := .Paginate .Data.Pages }}
+	{{ range $paginator.Pages }}
+	<article>
+		<h1><a href="{{ .Permalink }}"><div>{{ .Title }}</div></a></h1>
+		{{ .Content | replaceRE "<h1.*?>(.|\n)*?</h1>" "" | safeHTML }}
+	</article>
 	{{ end }}
+	{{ template "_internal/pagination.html" . }}
 </section>
 
+{{ partial "tags.html" . }}
 {{ partial "footer.html" . }}

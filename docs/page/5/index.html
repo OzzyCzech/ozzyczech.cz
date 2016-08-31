@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>nabito.net - nabito.net</title>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="alternate" type="application/rss+xml" title="nabito.net"/>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="feed" type="application/rss+xml" title="nabito.net"/>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+
+<section class="container">
+	
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/v%C3%BDpo%C4%8Det-hash-objektu-v-php/"><div>Výpočet hash objektu v PHP</div></a></h1>
+		
+
+
+
+<p>Funkce <a href="http://php.net/manual/en/function.spl-object-hash.php">spl_object_hash()</a>
+má jednu <strong>nevýhodu</strong>, její výsledek se v čase mění. Pokud objekt naplníte
+stejnými hodnotami, dostanete při dvou requestech dva různé výsledky. Což nemusí
+být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeho
+vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat
+například takto:</p>
+
+<pre><code>class Foo {
+ private $p;
+ public function setProperty($p) {
+  $this-&gt;p = $p;
+ }
+ // vypocita hash objektu na zaklade hodnot jeho propert
+ public function __toString() {
+  return md5(http_build_query(get_object_vars($this)));
+ }
+}
+</code></pre>
+
+<p>Pro vypsání/získání hash pak stačí:</p>
+
+<pre><code>$bar = new Foo();
+$bar-&gt;setProperty('25');
+echo $bar;
+$hash = (string) $bar;
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/"><div>Odstranění odkazů z admin menu Wordpress</div></a></h1>
+		
+
+
+
+<p>Pro <a href="http://codex.wordpress.org/Links_Manager">manažer odkazů</a> #wordpress jsem nenašel nikdy <strong>smysluplné využití</strong>. Proč ho rovnou z menu neodstranit? Stejně tam jen zavazí:</p>
+
+<pre><code>add_action('admin_menu', function(){
+  remove_menu_page('link-manager.php');
+});
+</code></pre>
+
+<p>Obdobně je možné odstranit cokoliv dalšího např. <code>remove_menu_page('edit-comments.php');</code> - odstraní odkaz na komentáře.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/case-insensitive-in_array-v-php/"><div>Case insensitive in_array v PHP</div></a></h1>
+		
+
+
+
+<p>PHP funkce <a href="http://php.net/manual/en/function.in-array.php">in_array</a> je case
+sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a
+nezáleží Vám na velikosti písmen u jeho prvků:</p>
+
+<pre><code>$array = array('a', 'B', 'cE');
+
+function inArrayCaseInsensitive($needle, $array) {
+ return (bool) preg_grep('/^' . preg_quote($needle, '/') . '$/i', $array);
+}
+
+inArrayCaseInsensitive('a', $array); // true
+inArrayCaseInsensitive('A', $array); // true
+inArrayCaseInsensitive('ce', $array); // true
+inArrayCaseInsensitive('be', $array); // false
+</code></pre>
+
+<p>Funkce <a href="http://php.net/manual/en/function.preg-grep.php">preg_grep</a> má ještě
+zajímavý přepínač PREG_GREP_INVERT. Tímto přepínačem odfiltrujete všechny
+hodnoty v poli, které neodpovídají zadanému <strong>regulárnímu výrazu</strong>.
+Filtrace zachovává klíče pole.</p>
+
+<pre><code>$array = array('a', 'A', 'cE');
+
+function filterArrayValues($needle, $array) {
+ return preg_grep('/^' . preg_quote($needle, '/') . '$/i', $array, PREG_GREP_INVERT);
+}
+
+print_r(filterArrayValues('a', $array)); // vypíše jen cE
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/snadn%C3%A9-p%C5%99ipojen%C3%AD-k-ftp-pomoc%C3%AD-php/"><div>Snadné připojení k FTP pomocí PHP</div></a></h1>
+		
+
+
+
+<p>Mám v oblibě <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">zkrácený zápis</a> připojení k FTP.
+PHP tento <a href="http://php.net/manual/en/function.ftp-connect.php">způsob zápisu připojení</a>
+bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere
+zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu.</p>
+
+<pre><code>/**
+ * Vraci ID FTP pripojeni na zaklade zadane URL
+ * ftp://username:password@sld.domain.tld:21/path1/path2/
+ */
+function getFtpConnection($uri)
+{  
+  preg_match(&quot;/(?P&lt;protocol&gt;ftps?:\/\/)(?P&lt;username&gt;.*?):(?P&lt;password&gt;.*?)@(?P&lt;url&gt;.*?):?(?P&lt;port&gt;[1-9]+)?(?&lt;dir&gt;\/.*)/i&quot;, $uri, $match);
+  $conn = ftp_connect($match['url'], empty($match['port']) ? 21 : (int)$match['port']) or die(&quot;Couldn't connect to &quot; . $match['url']);
+  if (ftp_login($conn, $match['username'], $match['password'])) {
+    ftp_chdir($conn, $match['dir']);
+    return $conn;
+  }
+
+  return null;
+}
+</code></pre>
+
+<p>Výstupem funkce je samozřejmě ID připojení, se kterým pak můžete <a href="http://www.php.net/manual/en/ref.ftp.php">normálně pracovat</a> dál. Funkci najdete také zde: <a href="https://gist.github.com/998091">https://gist.github.com/998091</a></p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/"><div>Snadné vložené YouTube videa pomocí PHP</div></a></h1>
+		
+
+
+
+<p>Následující PHP kód zamění jakýkoliv odkazu na <a href="http://www.youtube.com/">YouTube</a> video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.</p>
+
+<pre><code>function youtube($string)
+{
+  return preg_replace(
+    '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&amp;?.*?#i',
+    '&lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/$4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;',
+    $string
+  );
+}
+
+echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
+echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/"><div>Zvýraznění právě hledaných slov ve Wordpress</div></a></h1>
+		
+
+
+
+<p>Několik následujících řádků kódu <strong>obalí</strong> všechna právě vyhledávaná <strong>klíčová slova</strong> do značky STRONG (class search-keyword). Kód je možné vložit do <em>function.php</em> ve Vašem template. Nebo jej můžete vložit rovnou do <em>search.php</em> někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí <a href="http://codex.wordpress.org/Function_Reference/get_search_form">Wordpress</a>.</p>
+
+<pre><code>function omSearchHeighlight($text)
+{
+$keys = explode(&quot; &quot;, get_search_query());
+$text = preg_replace('/('.implode('|', $keys) .')/iu', '&lt;strong class=&quot;search-keyword&quot;&gt;\0&lt;/strong&gt;', $text);
+return $text;
+}
+
+add_filter('the_title','omSearchHeighlight');
+add_filter('the_content','omSearchHeighlight');
+add_filter('the_excerpt','omSearchHeighlight');
+
+// nezapomeňte strong element nastylovat např.
+// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
+</code></pre>
+
+<p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/v%C3%BDznam-barev/"><div>Význam barev</div></a></h1>
+		
+
+
+
+<p>Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete <a href="http://www.omdesign.cz" title="Internetové stránky">internetové stránky</a>, je na to potřeba pamatovat dvojnásob. Barva dokáže návštěvníka oslovit a navodit ten správný pocit. Barvy se obecně dělí na barvy teplé, studené a neutrální. <strong>Teplé barvy</strong> jsou založené na odstínech žluté, hnědé, zeleno žluté a oranžové. Teplé barvy svoji podstatou vzrušují, mají tendenci upoutat pozornost. Na pomezí mezi teplou a studenou barvou je možné přiřadit odstíny zelené a fialové. Záleží jak moc obsahují červené nebo modré (RGB). <strong>Studené barvy</strong> jsou založeny na odstínech modré, zelené, fialové, modro-zelené, modro-červené. Tyto barvy mají tendenci uklidňovat, tišit. Na rozdíl od teplých barev, se dají barvy studené celkem úspěšně aplikovat na velké plochy. Mezi <strong>neutrální barvy</strong> patří bílá, šedá a černá. Pak celá řada barev, které obsahují velké množství šedé (barvy tmav0). Neutrální barvy dokáží zvýšit atraktivitu teplých barev. Velké množství barev je znepokojující (vezměte si např. kolotoče). Pro webové stránky je <strong>lepší použít nižší množství</strong> barev (ideálně 3-4). Barvy jsou často a právem spojovány s konkrétními vlastnostmi (<a href="http://www.webdesign.org/web/web-design-basics/color-theory/color-psychology-quick-reference-cards.13826.html" title="Barvy a jejich význam">Psychologie barev</a>):</p>
+
+<ul>
+<li><strong>Červená</strong>: síla, zastavit, chyba, upozornění, láska, pálí, vášeň, cílevědomost, krev</li>
+<li><strong>Růžová</strong>: roztomilé, naivní, dětské, sladké, něha</li>
+<li><strong>Oranžová</strong>: hřejivá, podzimní, kreativita, radost, moudrost, extravagance, energie</li>
+<li><strong>Žlutá</strong>: teplo, štěstí, slunce, fascinace, povzbuzení</li>
+<li><strong>Černá</strong>: temnota, smutek, zloba, noc, smrt, rafinovanost, elegance</li>
+<li><strong>Šedá</strong>: trudomyslnost, nevýraznost, neutralita</li>
+<li><strong>Bílá</strong>: čistota, nevinnost, zima, dokonalost, zvětšuje prostor, chladí</li>
+<li><strong>Hnědá</strong>: podzim, hlína, špína, země, příroda, zdravý rozum</li>
+<li><strong>Zelená</strong>: peníze, závist, příroda, ekologie, náklonnost, soucit, klid, jaro</li>
+<li><strong>Modrá</strong>: pokoj, klid, stabilita, voda, nebe, stálost, jednota, důvěra</li>
+<li><strong>Fialová</strong>: luxus, mystika, pokora, inspirace, šlechta</li>
+</ul>
+
+<p>Modrá se tak logicky stává nejoblíbenější barvou firem (důvěra, klid, stabilita). Různé barvy se hodí k různým účelům. Například bílá je skvělá na pozadí, černá se zase používá pro text. Modrá dokáže dodat hloubku, červená dokáže upozornit atd. Všechno tohle mějte v hlavě (nebo na blogu :-)) pokud začínáte navrhovat web, komponujete mapu, připravujete reklamní letáky nebo se chystáte vymalovat byt.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/pro%C4%8D-je-hodnocen%C3%AD-hv%C4%9Bzdi%C4%8Dkama-blbost/"><div>Proč je hodnocení hvězdičkama blbost</div></a></h1>
+		
+
+
+
+<p><img src="http://grafikdesign.files.wordpress.com/2008/01/rating-sample.gif" alt="Star Rating" title="star-rating.gif" /></p>
+
+<p>Většina současných moderních webů používá tzv. hodnocení obsahu <strong>pomocí hvězdiček</strong>
+(<em>star rating</em>). Na tom by nebylo nic špatného, je dobré znát názory
+ostatních, často Vám to pomůže v rozhodování.</p>
+
+<p>Jenže hvězdičkový koncept, tak jak je dneska používán,
+je postaven na velmi <strong>zavádějících datech</strong>.</p>
+
+<p>Hned uvedu příklad, jak to myslím: Deset uživatelů zahlasuje <strong>5 hvězdičkami</strong>,
+pro svůj oblíbený například Terminátor. A pro jiný film, například Forest Gump
+zahlasuje celkem 5000 osob, v průměru 4.5 hvězdy. Který film je favoritem?</p>
+
+<p>Podle čistého hvězdičkového hodnocení, tak jak jej dnes používá většina současných serverů<strong>, je to Terminátor</strong>.
+Jenže to je špatně! Terminátor zaujal jen 10 lidí natolik, aby pro něj hlasovali, zatímco Forest Gump zaujal 5000 lidí.
+Proto by měl být Forest Gump v žebříčku na prvním místě. Mnohem <strong>průkažnější</strong> by bylo,
+kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
+
+<p>Tento špatný koncept používá například: <a href="http://www.opensourcecms.com/">http://www.opensourcecms.com/</a>.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/parkinson%C5%AFv-z%C3%A1kon/"><div>Parkinsonův zákon</div></a></h1>
+		
+
+
+
+<p>Parkinsonův zákon, nebo spíš zákony byly poprvé vydán v roce 1957. Jejich autorem je anglický profesor <a href="http://en.wikipedia.org/wiki/C._Northcote_Parkinson" title="C. Northcote Parkinson">Cyril Northcote Parkinson</a>. Tři nejpovedenější zákony praví:</p>
+
+<ol>
+<li><strong>Práce roste úměrně s časem, který je na ni možno vynaložit</strong>; to, co je třeba udělat, nabývá na důležitosti a komplikovanosti v přímé proporci k vyhrazenému času.</li>
+<li>Výdaje rostou úměrně k příjmům.</li>
+<li>Rozrůstání plodí složitost a složitost plodí zánik.</li>
+</ol>
+
+<p>Nejvíce se mi samozřejmě líbí zákon první. V překladu to znamená, že pokud na něco dostanete týden, budete to dělat týden. Pokud na to dostanete měsíc, budete to dělat přesně měsíc. Dalo by se to popsat, něco jako rozpínavost práce. Navíc čím více času něčemu věnujete, stává se to komplikovanějším a mnohdy také nepoužitelným. Pro příklady nemusíte chodit daleko, zkuste si vyplnit některé formuláře státní správy. Další oblast kde tento zákon bezezbytku platí je IT. Překlad těchto zákonů můžete <a href="http://www.kosmas.cz/knihy/108453/zakony-profesora-parkinsona/ &quot;Kupte si jej :">sehnat i u nás</a>&rdquo;).</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/tik-v-oku/"><div>Tik v oku</div></a></h1>
+		
+
+
+
+<p>Projevuje se jemným, ale častým a intenzivním, <strong>škubáním ve víčku oka</strong>. Způsobuje ho nejčastěji <strong>přepracování</strong>, nevyspání, <strong>nepřiměřený stres</strong> (nervy) nebo konzumace lehkých drog. Já k tomu přidávám, nevhodný monitor, nevhodné osvětlení, vnější rušivé elementy (hluk atd.) a častá práce u počítače. Trvání tohoto problému je různé, odhadem je to <strong>od 2 do 8 týdnů</strong>. Jak s tím bojovat:</p>
+
+<ul>
+<li>Vysadit - zbavit se stresu (můžete zkusit <a href="http://www.bdc.cz/" title="Budhizmus Diamantové Cesty">třebas meditovat</a>)</li>
+<li>Pořádně se vyspat</li>
+<li><a href="http://www.celostnimedicina.cz/oci-=-cviceni-zraku-pro-zdravou-dlouhovekost.htm" title="Oční cviky"> Cvičit oči</a></li>
+<li>Odstranit veškeré rušivé elementy</li>
+<li>A hlavně nasadit vitamíny</li>
+</ul>
+
+<p>Nejlepším <strong>vitamínem je B12</strong> - k dostání v lékárně v podobě B-Komplex (Forte). Můžete konzumovat od 1 do 3 tablet denně. Výhodou B-komplex je to že neobsahuje jen B12 ale celou skupinu vitamínů B. Vitamín B12 také najdete v rybím tuku a nebo pivovarnických kvasnicích. Dalším vitamínem, který pomáhá je <strong>magnézium (hořčík)</strong>. Pozor ať se nepředávkujete, působí to totiž i na srdce. Můžete si jej koupit v lékárně, ale mnohdy stačí i vhodná minerálka nebo banány. Když nic z toho nepomůže, bude asi lepší zajít za doktorem. Většinou to ale zmizí stejně rychle jak to příjde. Máte osobní <strong>zkušenost s tímto problémem</strong>?.</p>
+
+	</article>
+	
+	
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/page/4/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/">1</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/2/">2</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/3/">3</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/4/">4</a></li>
+        
+        <li
+        class="active"><a href="https://ozzyczech.github.io/nabito.net/page/5/">5</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/6/">6</a></li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/page/6/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+</section>
+
+<div class="container">
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ajax">#ajax</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/angular">#angular</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/antispam">#antispam</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/archive">#archive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/atom">#atom</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/auto">#auto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/automator">#automator</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/barvy">#barvy</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/bash">#bash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/boostrap">#boostrap</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/brew">#brew</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/canvas">#canvas</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/composer">#composer</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/css">#css</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/diplomka">#diplomka</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/drive">#drive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/email">#email</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/excerpt">#excerpt</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ftp">#ftp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/git">#git</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/github">#github</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/gulp">#gulp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hack">#hack</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hash">#hash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/heartbleed">#heartbleed</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hermel%C3%ADn">#hermelín</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/how-to">#how-to</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/howto">#howto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html">#html</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html5">#html5</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/internet">#internet</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ios">#ios</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/iphone">#iphone</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/js">#js</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/json">#json</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/lifehacker">#lifehacker</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/mac">#mac</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/meta">#meta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/movies">#movies</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/nodejs">#nodejs</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/npm">#npm</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oauth">#oauth</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oko">#oko</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/openssl">#openssl</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/osx">#osx</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/parkinsons-law">#parkinsons-law</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/pear">#pear</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#php</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/plugin">#plugin</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/protip">#protip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/p%C5%99epis-auta">#přepis-auta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/rebase">#rebase</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/recepty">#recepty</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/retina">#retina</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/shell">#shell</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/student">#student</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/svg">#svg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/terminal">#terminal</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/tip">#tip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/todo">#todo</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ty%C4%8Dinky">#tyčinky</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/user">#user</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ux">#ux</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/webdesign">#webdesign</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wysiwyg">#wysiwyg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/xcode">#xcode</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/youtube">#youtube</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zamy%C5%A1len%C3%AD">#zamyšlení</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zdrav%C3%AD">#zdraví</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zip">#zip</a>
+	
+</div>
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

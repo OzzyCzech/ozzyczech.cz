@@ -1,7 +1,7 @@
 ---
 title: Schůze, porady, meetingy a briefing
 date: 2008-01-21
-tags: how-to
+tags: [how-to]
 ---
 
 
@@ -13,31 +13,38 @@ Všichni to určitě znáte, ráno přijdete do práce a kolega Vám povídá: *
 
 Faktem je, že **99 procent z nás porady nebo schůze nenávidí**. Dalším faktem je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami se to má takto:
 
-**Jsou příliš drahé  
-** Představte si, že každý účastník stojí firmu 150 Kč za hodinu - hodinové setkání 10 lidí Vás bude stát 1500 Kč. Je dobré si uvědomit, že někteří výše postavení pracovníci samozřejmě berou více. Možná ten vyšší plat souvisí s tím, že musí na více porad :-).
+### Jsou příliš drahé  
 
-**Jsou obvykle delší, než je potřeba  
-** Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se Vás netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je **12 minut z hodiny**, se řeší otázky, které skutečně stojí za to, aby se sešlo například oněch 10 lidí a společně je řešili.
+* Představte si, že každý účastník stojí firmu 150 Kč za hodinu - hodinové setkání 10 lidí Vás bude stát 1500 Kč. Je dobré si uvědomit, že někteří výše postavení pracovníci samozřejmě berou více. Možná ten vyšší plat souvisí s tím, že musí na více porad :-).
 
-**Setkávání se pro setkávání**  
- Některé porady slouží pouze pro utužení sociálních vazeb v rámci organizace. Je důležité si uvědomit, že cílem porady není samotné setkání. Každá porada by měla mít *topic* - tedy hlavní téma, které by se mnělo probírat.  
-**  
- Jsou neupřímné  
-** Na poradách je obvykle těžší říct svůj názor. Většina lidí mlčí, prostě si to odsedí a to podstatné probere na after party (viz níže). S neupřímností je spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada - manažer (šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale odpovídají za ní všichni účastníci.
+### Jsou obvykle delší, než je potřeba  
 
-**After party po poradě  
-** Odborně se to tuším nazývá *after meeting syndrom (AMS)*. To je doba, kterou účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často probírají také přínosy porady a to jak je to tam nebavilo.
+* Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se Vás netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je **12 minut z hodiny**, se řeší otázky, které skutečně stojí za to, aby se sešlo například oněch 10 lidí a společně je řešili.
 
-**Porady vedou k dalším poradám  
-** Obvykle po tom, co porada skončí, je naplánována nějaká další. Často má jedna schůze na svědomí celou řadu dalších setkání, porad a podobně. Někde se musí přeci probrat výsledky té první porady!
+### Setkávání se pro setkávání
+  
+* Některé porady slouží pouze pro utužení sociálních vazeb v rámci organizace. Je důležité si uvědomit, že cílem porady není samotné setkání. Každá porada by měla mít *topic* - tedy hlavní téma, které by se mnělo probírat.  
 
-**Proč se radit?  
-** Proč se vlastně pořádají? Těžko říct, ale tím pravým důvodem by mělo být to, že něco **nefunguje tak jak má a nikdo neví, co má dělat**! Něco je špatně a věci se musí napravit. Je potřeba rozhodnutí managementu.
+### Jsou neupřímné  
+
+* Na poradách je obvykle těžší říct svůj názor. Většina lidí mlčí, prostě si to odsedí a to podstatné probere na after party (viz níže). S neupřímností je spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada - manažer (šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale odpovídají za ní všichni účastníci.
+
+### After party po poradě
+  
+* Odborně se to tuším nazývá *after meeting syndrom (AMS)*. To je doba, kterou účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často probírají také přínosy porady a to jak je to tam nebavilo.
+
+### Porady vedou k dalším poradám
+  
+* Obvykle po tom, co porada skončí, je naplánována nějaká další. Často má jedna schůze na svědomí celou řadu dalších setkání, porad a podobně. Někde se musí přeci probrat výsledky té první porady!
+
+### Proč se radit?  
+
+* Proč se vlastně pořádají? Těžko říct, ale tím pravým důvodem by mělo být to, že něco **nefunguje tak jak má a nikdo neví, co má dělat**! Něco je špatně a věci se musí napravit. Je potřeba rozhodnutí managementu.
 
 Na závěr ve zkratce několik zásad:
 
-- Aby bylo setkávání efektivní, musí být všichni účastníci připraveni
-- Vždy **mluví jen jeden** přesně stanovenou dobu (2 minuty maximálně)
-- Návrhy, které nejsou k tématu se zapíší - budou se **řešit později**
-- Nikdo nechodí pozdě, netelefonuje, neodchází během jednání
-- Věci se řeší **jedna po druhé** - ne najednou
+* Aby bylo setkávání efektivní, musí být všichni účastníci připraveni
+* Vždy **mluví jen jeden** přesně stanovenou dobu (2 minuty maximálně)
+* Návrhy, které nejsou k tématu se zapíší - budou se **řešit později**
+* Nikdo nechodí pozdě, netelefonuje, neodchází během jednání
+* Věci se řeší **jedna po druhé** - ne najednou

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>nabito.net - nabito.net</title>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="alternate" type="application/rss+xml" title="nabito.net"/>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="feed" type="application/rss+xml" title="nabito.net"/>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+
+<section class="container">
+	
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/"><div>Wordpress - register and setup widgets from PHP code</div></a></h1>
+		
+
+
+
+<p>PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:</p>
+
+<pre><code>class Widgets {
+
+ private $widgets = array();
+ private $options = array();
+
+ public function __construct() {
+  $this-&gt;options = wp_get_sidebars_widgets();
+ }
+
+ public function unregisterAllWidgets() {
+  foreach ($this-&gt;options as $name =&gt; $values)
+   $this-&gt;options[$name] = array();
+ }
+
+ public function cleanWidgetSettings($type, $multi = null) {
+  $this-&gt;widgets[$type] = array();
+  if ($multi !== null) $this-&gt;widgets[$type]['_multiwidget'] = (int)(bool)$multi;
+ }
+
+ public function setMultiWidget($type, $val = 1) {
+  $this-&gt;widgets[$type]['_multiwidget'] = $val;
+ }
+
+ public function add($type, array $options, $area = null) {
+  $this-&gt;widgets[$type][] = $options;
+  if ($area !== null) {
+   if (array_key_exists($area, $this-&gt;options) === false) {
+    throw new Exception('Widget area ' . $area . ' not exists.');
+   }
+   end($this-&gt;widgets[$type]);
+   $this-&gt;options[$area][] = $type . '-' . key($this-&gt;widgets[$type]);
+  }
+ }
+
+ public function __destruct() {
+  foreach ($this-&gt;widgets as $name =&gt; $settings) {
+   if (!array_key_exists('_multiwidget', $settings)) $settings['_multiwidget'] = 1;
+   update_option('widget_' . $name, $settings);
+  }
+  wp_set_sidebars_widgets($this-&gt;options);
+ }
+
+}
+</code></pre>
+
+<p>Following code is an example how to use <code>class Witgets</code>:</p>
+
+<pre><code>$widgets = new Widgets();
+$widgets-&gt;unregisterAllWidgets();
+
+$widgets-&gt;add(
+ 'text',
+ array(
+  'title' =&gt; 'About us',
+  'text' =&gt; 'Simple text about us',
+  'filter' =&gt; true,
+  'classes' =&gt; '',
+  'ids' =&gt; null,
+ ),
+ 'footer-1'
+);
+
+// ...
+</code></pre>
+
+<p>This code need to be call only once. Put your code to <code>function.php</code> to <code>after_switch_theme</code> action:</p>
+
+<pre><code>add_action(
+ 'after_switch_theme', function () {
+  $widgets = new Widgets();
+  $widgets-&gt;unregisterAllWidgets();
+  // ...
+ }
+);
+</code></pre>
+
+<p><a href="https://gist.github.com/4663766/">https://gist.github.com/4663766/</a></p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/seznam-v%C4%9Bc%C3%AD-kter%C3%A9-internet-zabil/"><div>Seznam věcí které Internet zabil</div></a></h1>
+		
+
+
+
+<p>Co všechno Internet zabil nebo zabíjí?</p>
+
+<ol>
+<li>Hudební průmysl</li>
+<li>Filmový průmysl</li>
+<li>Porno průmysl</li>
+<li>Zásilkové služby (Quelle, Neckermann atd.)</li>
+<li>Pohledy a dopisy psané rukou</li>
+<li>Anonymitu (ta postupně mizí)</li>
+<li>DVD a videopůjčovny</li>
+<li>Časopisy noviny a poctivou novinařinu</li>
+<li>Televizi</li>
+<li>Encyklopedie</li>
+<li>MMS, SMS</li>
+<li>Tištěné mapy</li>
+</ol>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/made-in-china-paranoidni-povidka-na-dobrou-noc/"><div>Made in China - Paranoidní povídka na dobrou noc</div></a></h1>
+		
+
+
+
+<p>China právě vyhlásila jednostranné embargo na vývoz výrobku vyrobených na jejich
+území. USA a prakticky celá Evropa se potýká s akutním nedostatkem výrobků
+určených k běžné spotřebě. Chybí zejména elektronika, plastové a kovové výrobky
+a léků. Díky embargu došlo k ohrožení ekonomické stability řady firem.
+Na hranici bankrotu se pohybují firmy jako Apple, IKEA nebo Mattel. Ty se
+překotně snaží alespoň o částečnou obnovu výroby. Rovněž se pokoušejí
+přesunout výrobu do svých domovských států. Potýkají se se zoufalým nedostatkem
+odborníků a extrémní finanční náročností nechtěného stěhování. Prezident USA se
+tento týden sejde s představiteli Evropské Unie. Společně se pokusí dohodnout
+alespoň částečnou obnovu exportu výrobků vyrobených na území Chiny. Cílem je
+vyhnou se celosvětovému ekonomickému kolapsu. A zamezení chaosu do kterého se
+postupně propadají jednotlivé státy. O dalším vývoji situace Vás budeme
+průběžně informovat.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/recepty/zdroj%C3%A1k-na-dom%C3%A1c%C3%AD-s%C3%BDrov%C3%A9-ty%C4%8Dinky/"><div>Zdroják na domácí sýrové tyčinky</div></a></h1>
+		
+
+
+
+<p>Upozornění: nečíst dál, recept může způsobit dlouhodobou závislosti na domácích sýrových tyčinkách :-)</p>
+
+<h3 id="co-budete-potřebovat">Co budete potřebovat?</h3>
+
+<p>Suroviny na 1 dávku (která vám stejně nebude stačit):</p>
+
+<ul>
+<li>160 g hladké mouky</li>
+<li>100 g Hery nebo másla</li>
+<li>100 g jemně strouhaného sýra (Eidam, Gran Moravia, Provolone piccante)</li>
+<li>10 g droždí (¼ kostky)</li>
+<li>4 lžíce mléka
+– žloutek na potření</li>
+</ul>
+
+<h3 id="postup">Postup</h3>
+
+<p>Těsto se nenechává kynout! Rovnou se vyvaluje na cca 3 mm a krájí na tyčinky
+(5 až 7 krát 1 cm tyčinky) - nakrájené tyčinky na závěr potíráme rozšlehaným vejcem
+(kvůli lesku). Klademe vedle sebe na plech na pečící papír.</p>
+
+<p>Než tyčinky šoupnete do trouby tak je pořádně osolte hrubou solí.
+Pečeme na 120 cca 12 minut do růžova.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/"><div>WYSIWYG pro popis uživatele ve Wordpress</div></a></h1>
+		
+
+
+
+<p>Následující kratičký kód zobrazí #WYSIWYG editor u popisu autora u uživatelského profilu: Kód stačí přidat do <code>function.php</code> ve vašem template:</p>
+
+<pre><code>&lt;?php
+/**
+ * WYSIWYG pro uzivatelsky profil Wordpress
+ *
+ * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
+ */
+class CustomUserProfile {
+
+  /** @var array */
+  private $tinymceOptions = array(
+    'teeny' =&gt; true,
+    'quicktags' =&gt; false,
+    'media_buttons' =&gt; false, 'textarea_rows' =&gt; 8,
+    'wpautop' =&gt; false,
+    'tinymce' =&gt; array(
+      'theme_advanced_buttons1' =&gt; 'p, bold, italic, ul, |,link,unlink,code',
+      'theme_advanced_buttons2' =&gt; '',
+      'theme_advanced_buttons3' =&gt; '',
+      'theme_advanced_buttons4' =&gt; '',
+    ),
+  );
+
+  public function __construct() {
+    add_action('show_user_profile', array($this, 'initDescriptionWysywig'));
+    add_action('edit_user_profile', array($this, 'initDescriptionWysywig'));
+  }
+
+  /**
+   * Wysywig editor take pro description
+   *
+   * @param $options
+   */
+  public function initDescriptionWysywig($options) {
+    if ( ! class_exists('_WP_Editors' ) )
+      require_once( ABSPATH . WPINC . '/class-wp-editor.php' );
+
+    $options = _WP_Editors::parse_settings('description', $this-&gt;tinymceOptions);
+    _WP_Editors::editor_settings('description', $options);
+    wp_print_styles('editor-buttons');
+  }
+
+}
+new CustomUserProfile();
+</code></pre>
+
+<p>#wordpress #php</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/"><div>Hash tags pro Wordpress</div></a></h1>
+		
+
+
+
+<p>Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy:</p>
+
+<pre><code>&lt;?php
+/*
+Plugin Name: Hashs
+Description: Twitter like hash for Wordpress
+Version: 1.0
+Author: Roman Ozana &lt;ozana@omdesign.cz&gt;
+Author URI: http://www.omdesign.cz/
+*/
+class Hashs {
+
+  const PATTERN = '/\B#([^\s\W#]+)/i';
+
+  /**
+   * @param string $content
+   * @return string mixed
+   */
+  public static function processContent($content) {
+    return preg_replace(Hashs::PATTERN, '&lt;a href=&quot;' . get_home_url(null, '/tag/$1') . '&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; ', $content);
+  }
+
+  /**
+   * Auto hash tags
+   *
+   * @param $post_id
+   * @return bool
+   */
+  public static function addAutoTags($post_id) {
+    $post = get_post($post_id);
+    preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches);
+    if (!isset($matches[1])) return;
+    wp_set_object_terms($post_id, $matches[1], 'post_tag', false); // replace
+  }
+}
+
+add_filter('the_content', array('Hashs', 'processContent'), 1);
+add_action('save_post', array('Hashs', 'addAutoTags'));
+</code></pre>
+
+<p>Povšimněte si zejména řádku  <code>wp_set_object_terms($post_id, $matches[1], 'post_tag', false);</code>
+ten totiž ukládá nalezené tagy k postu. Pokud je poslední hodnota <code>true</code>,
+provede append (přidání ke stávajícím tagům). Pokud je <code>false</code>, provede
+nahrazení všech tagů u postu nalezenými hashtagy.</p>
+
+<p>Zdrojový kód ke stažení zde: <a href="https://bitbucket.org/OzzyCzech/omhashtag">https://bitbucket.org/OzzyCzech/omhashtag</a></p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/"><div>Zjištění práv k souboru nebo adresáři v PHP</div></a></h1>
+		
+
+
+
+<pre><code>function getPermisions($file) {
+  return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : '0000';
+}
+</code></pre>
+
+<p>Nebo pro kontrolu, zda jsou práva dostatečná:</p>
+
+<pre><code>function hasPermisions($path, $permission = 777) {
+  $current = substr(decoct(fileperms($path)), $permission &gt; 1000 ? -4 : -3);
+  return ($current &gt; $permission);
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/jak-spr%C3%A1vn%C4%9B-p%C5%99epsat-ojet%C3%A9-auto/"><div>Jak správně přepsat ojeté auto</div></a></h1>
+		
+
+
+
+<p>Popíšu jak to probíhalo u mě. Kupoval jsem ojeté auto přímo od majitele. Platil jsem hotově bez úvěru. Auto má platnou technickou prohlídku a emise do roku 2015.</p>
+
+<ol>
+<li>uzavřeli jsme s majitelem kupní smlouvu, kde byl uveden VIN kód auta</li>
+<li>poslal jsme mu peníze na účet</li>
+<li>původní majitel <strong>odhlásil auto</strong> na spádovém dopravním inspektorátu (Praha)</li>
+<li><strong>prostřihli</strong> mu tam malý TP</li>
+<li>do velkého TP mě jménem uvedl jako <strong>budoucího nového majitele</strong> (ušetří se tím plná moc v budoucnu)</li>
+<li>na <strong>VIN</strong> jsem si uzavřel s pojišťovnou <strong>povinné ručení</strong></li>
+<li>původní majitel si teď už mohl své povinné ručení zrušit</li>
+</ol>
+
+<p>S prostřiženým malým TP je možné jezdit <strong>bez úhony 10 dní</strong>, pak už se jedná o přestupek. Ale nikdy nesmíte vyjet na cestu s nepojištěným autem - proto povinné ručení. Je to dokonce tak přísné, že na smlouvě o povinném ručení je uvedena i hodina uzavření. Zelenou kartu tedy musíte mít v ruce už při převzetí auta od původního majitele. Rovněž auto nesmí na silnici pokud nemá platnou STK. To si jej pak musíte nechat odtáhnout rovnou na stanici STK a pokusit se ji obnovit. Pokud chcete s autem jezdit, musíte do 10 dní dokončit úplný přepis na sebe. Což provedete na svém spádovém dopravním inspektorátu. V mém případě to je Ostrava - podle trvalého bydliště. Jedná se tedy o <strong>přepis mezi dvěma kraji</strong>. Což znamená automaticky nutnost <strong>výměny registračních značek vozidla</strong>. Pokud se jedná pouze o přepis v rámci kraje, není výměna značek povinná. Záleží na novém majiteli, zda nové značky chce a připlatí si za ně. Pro dokončení přepisu budete potřebovat spoustu papírů: - <strong>občanku</strong> (doklad totožnosti)
+- <strong>doklad o způsobu nabytí vozidla</strong> (u mě kupní smlouva)
+- původní (staré) <strong>registrační značky</strong> vozidla
+- osvědčení o registraci vozidla část II (tzv. <strong>velký technický průkaz</strong>)
+- osvědčení o registraci vozidla část I (tzv. <strong>malý technický průkaz</strong> - ten prostřižený)
+- plnou moc k přepisu vozidla, pokud Vás majitel neuvedl jako <strong>budoucího majitele</strong> při odhlášení auta (což mě uvedl, takže jsem nepotřeboval)
+- doklad o <strong>technické prohlídce</strong> (zápis o platné pravidelné technické prohlídce v technickém průkazu nebo protokol o pravidelné technické prohlídce vystavený STK)
+- doklad o sjednání pojištění odpovědnosti z provozu vozidla (tzv. <strong>povinné ručení</strong>) tzv. zelená karta
+- <strong>žádost o přepis vozidla</strong> (dostanete a vyplníte na inspektorátu)
+- <strong>protokol o evidenční kontrole silničního motorového</strong> (viz. níže)</p>
+
+<p>Pro úspěšný přepis auta potřebujete tzv. <em>protokol o evidenční kontrole silničního motorového vozidla</em> - ten získáte na <strong>jakékoliv stanici STK</strong> v ČR. K získání protokolu je nutné: - ukázat občanku
+- malý a velký technický průkaz
+- a auto.</p>
+
+<p>Celkově záležitost na 5 minut. Pracovník STK zkontroloval VIN, barvu vozidla, stav tachometru a číslo motoru. Stálo to kolem 200 Kč. Platnost protokolu je opět 10 dní. Po předložení všech náležitostí jsem na inspektorátu dostal nové ostravské značky a nový neprostřižený malý technický průkaz. Všechno byla záležitost cca na 10 minut. Stálo to na správních poplatcích 800 Kč. Kopii velkého technického průkazu jsem pak ještě poslal na pojišťovnu a ta mi obratem poslala novou zelenou kartu, kde je uvedena moje nová registrační značka. Ještě malý dodatek. Pokud je v autě na skle nalepená <strong>dálniční známka</strong>, zneplatní se výměnou značek. Dálniční známku si prý můžete nechat vyměnit na jakékoliv větší poště. Stačí k tomu původní známka a nový technický průkaz. Ještě jsem to nestihl udělat, takže přesně nevím.Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty se při výměně značky dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)</p>
+
+<p>Popis výměny dálniční známky najdete na stránkách <a href="http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm">České Pošty</a>. #posta #auto #how-to #registrace</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/jak-spo%C4%8D%C3%ADtat-po%C4%8Det-%C5%99%C3%A1dk%C5%AF-k%C3%B3du/"><div>Jak spočítat počet řádků kódu?</div></a></h1>
+		
+
+
+
+<p>V mém příkladu počítám počet řádků PHP kódu:</p>
+
+<pre><code>grep -v '^ *$' `find . -iname &quot;*.php&quot;` | wc -l
+</code></pre>
+
+<p>Pro zajímavost takový Wordpress má více jak 250 000 řádků PHP.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/jak-okop%C3%ADrovat-adres%C3%A1%C5%99-s-cel%C3%BDm-obsahem-v-php/"><div>Jak okopírovat adresář s celým obsahem v PHP</div></a></h1>
+		
+
+
+
+<p>Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí <a href="http://cz.php.net/manual/en/spl.iterators.php">PHP iterátoru</a>:</p>
+
+<pre><code>$source = &quot;/foo/bar/dir&quot;;
+$dest= &quot;/dest/dir&quot;;
+
+foreach (
+ $iterator = new RecursiveIteratorIterator(
+  new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS),
+  RecursiveIteratorIterator::SELF_FIRST) as $item
+) {
+  if ($item-&gt;isDir()) {
+    mkdir($dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName());
+  } else {
+    copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName());
+  }
+}
+</code></pre>
+
+	</article>
+	
+	
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/page/3/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/">1</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/2/">2</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/3/">3</a></li>
+        
+        <li
+        class="active"><a href="https://ozzyczech.github.io/nabito.net/page/4/">4</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/5/">5</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/6/">6</a></li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/page/5/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+</section>
+
+<div class="container">
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ajax">#ajax</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/angular">#angular</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/antispam">#antispam</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/archive">#archive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/atom">#atom</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/auto">#auto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/automator">#automator</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/barvy">#barvy</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/bash">#bash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/boostrap">#boostrap</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/brew">#brew</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/canvas">#canvas</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/composer">#composer</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/css">#css</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/diplomka">#diplomka</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/drive">#drive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/email">#email</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/excerpt">#excerpt</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ftp">#ftp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/git">#git</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/github">#github</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/gulp">#gulp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hack">#hack</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hash">#hash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/heartbleed">#heartbleed</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hermel%C3%ADn">#hermelín</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/how-to">#how-to</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/howto">#howto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html">#html</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html5">#html5</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/internet">#internet</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ios">#ios</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/iphone">#iphone</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/js">#js</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/json">#json</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/lifehacker">#lifehacker</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/mac">#mac</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/meta">#meta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/movies">#movies</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/nodejs">#nodejs</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/npm">#npm</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oauth">#oauth</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oko">#oko</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/openssl">#openssl</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/osx">#osx</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/parkinsons-law">#parkinsons-law</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/pear">#pear</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#php</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/plugin">#plugin</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/protip">#protip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/p%C5%99epis-auta">#přepis-auta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/rebase">#rebase</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/recepty">#recepty</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/retina">#retina</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/shell">#shell</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/student">#student</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/svg">#svg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/terminal">#terminal</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/tip">#tip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/todo">#todo</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ty%C4%8Dinky">#tyčinky</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/user">#user</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ux">#ux</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/webdesign">#webdesign</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wysiwyg">#wysiwyg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/xcode">#xcode</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/youtube">#youtube</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zamy%C5%A1len%C3%AD">#zamyšlení</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zdrav%C3%AD">#zdraví</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zip">#zip</a>
+	
+</div>
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

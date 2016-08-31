@@ -1,7 +1,7 @@
 ---
-title: Wordpress - register and setup witgets from PHP code
+title: Wordpress - register and setup widgets from PHP code
 date: 2013-01-29
-tags: en, PHP, Widgets, wordpress
+tags: [PHP, wordpress]
 ---
 
 # Wordpress: register and setup witgets from PHP code

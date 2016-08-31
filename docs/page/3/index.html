@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>nabito.net - nabito.net</title>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="alternate" type="application/rss+xml" title="nabito.net"/>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="feed" type="application/rss+xml" title="nabito.net"/>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+
+<section class="container">
+	
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
+		
+
+
+
+<pre><code>{
+ &quot;repositories&quot;: [
+  {
+   &quot;type&quot;: &quot;pear&quot;,
+   &quot;url&quot;: &quot;http://pear.php.net&quot;
+  }
+ ],
+ &quot;require&quot;: {
+  &quot;pear-pear/Mail&quot;: &quot;&gt;=1.2.0&quot;
+ }
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
+		
+
+
+
+<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
+- I will work on application and my packages together.
+- I need a simple way how to commit and publish new version of packages.
+- Workflow need to be simple (mimimum of commands)</p>
+
+<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
+
+<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
+
+<pre><code>&quot;scripts&quot;: {
+ &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
+ &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
+},
+</code></pre>
+
+<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
+
+<p>When you are using tagged releases (no dev versions) of package then run:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
+</code></pre>
+
+<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
+</code></pre>
+
+<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+
+<ul>
+<li>Large VCS repository size and diffs when you update code.</li>
+<li>Duplication of the history of all your dependencies in your own VCS.</li>
+<li>There can be conflicts in commits especially when you work in larger team.</li>
+<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+</ul>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/setup-email-sending-from-php-on-mac/"><div>Setup email sending from PHP on Mac</div></a></h1>
+		
+
+
+
+<p>First write in terminal: <code>which sendmail</code> wlll return path to sendmail app (in my case <code>/usr/sbin/sendmail</code>). Then open <code>php.ini</code> file and setup:</p>
+
+<pre><code>sendmail_path = /usr/sbin/sendmail -t -i
+</code></pre>
+
+<p>Create necessary folder and setup postfix permissions:</p>
+
+<pre><code>sudo mkdir -p /Library/Server/Mail/Data/spool
+sudo /usr/sbin/postfix set-permissions
+sudo /usr/sbin/postfix start
+</code></pre>
+
+<p>And check if emails will come:</p>
+
+<pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/wordpress-how-to-get-user-by-metadata/"><div>Wordpress - How to get user by metadata</div></a></h1>
+		
+
+
+
+<p>Getting user by field name is easy, #Wordpress have function for that <a href="http://codex.wordpress.org/Function_Reference/get_user_by">get_user_by</a>. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to <strong>get user by metadata</strong> using <a href="https://codex.wordpress.org/Class_Reference/WP_Query">WP_Query</a> object. Forget about them! You need prepare correct meta query as array or string and call <code>get_users</code>. Thats all!</p>
+
+<pre><code>/**
+ * Get user by his metadata
+ * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
+ * @param $meta_key
+ * @param $meta_value
+ * @return mixed
+ */
+function get_user_by_meta($meta_key, $meta_value) {
+ return reset(
+  get_users(
+   array(
+    'meta_key' =&gt; $meta_key,
+    'meta_value' =&gt; $meta_value,
+    'number' =&gt; 1,
+    'count_total' =&gt; false
+   )
+  )
+ );
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
+		
+
+
+
+<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+  /* it's retina yeah! */
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/toggle-hidden-files-in-finder/"><div>Toggle Hidden Files in Finder</div></a></h1>
+		
+
+
+
+<p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
+
+<pre><code>STATUS=`defaults read com.apple.finder AppleShowAllFiles`
+if [ $STATUS == YES ];
+then
+    defaults write com.apple.finder AppleShowAllFiles NO
+else
+    defaults write com.apple.finder AppleShowAllFiles YES
+fi
+killall Finder
+</code></pre>
+
+<p>Save application. From now can Tooggle</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/list-all-mounted-drives-on-mac/"><div>List all mounted drives on mac</div></a></h1>
+		
+
+
+
+<p>It&rsquo;s simple: <code>df -h</code></p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/wodpress-constants-for-human-readable-intervals/"><div>Wodpress constants for human-readable intervals</div></a></h1>
+		
+
+
+
+<p>Constants for expressing human-readable intervals in new #Wordpress are very useful:</p>
+
+<pre><code>define( 'MINUTE_IN_SECONDS', 60 );
+define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
+define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );
+define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );
+define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
+</code></pre>
+
+<p>Example:</p>
+
+<pre><code>wp_cache_add($key, $data, 'default, 5 * DAY_IN_SECONDS);
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/"><div>Make WordPress globals more accessible</div></a></h1>
+		
+
+
+
+<p>Wordpress using a lot <a href="http://codex.wordpress.org/Global_Variables">globals variables</a>. These variables are used throughout WordPress code for various reasons. Great example is database connection object <a href="http://codex.wordpress.org/Class_Reference/wpdb">wpdb</a>. Here is common example how to use <strong>wpdb</strong> in some function:</p>
+
+<pre><code>function something() {
+  global $wpdb;
+  /** @var wpdb $wpdb */
+  $wpdb-&gt;query('SQL...');
+}
+</code></pre>
+
+<p>It&rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: <a href="https://gist.github.com/OzzyCzech/4737518">https://gist.github.com/OzzyCzech/4737518</a> (PHP 5.3+ only)</p>
+
+<pre><code>function something() {
+  Globals::wpdb()-&gt;query('SQL...');
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/run-iphone-simulator-without-xcode/"><div>Run iPhone simulator without XCode</div></a></h1>
+		
+
+
+
+<pre><code>open -a &quot;iPhone Simulator&quot;
+</code></pre>
+
+	</article>
+	
+	
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/page/2/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/">1</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/2/">2</a></li>
+        
+        <li
+        class="active"><a href="https://ozzyczech.github.io/nabito.net/page/3/">3</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/4/">4</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/5/">5</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/6/">6</a></li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/page/4/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+</section>
+
+<div class="container">
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ajax">#ajax</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/angular">#angular</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/antispam">#antispam</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/archive">#archive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/atom">#atom</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/auto">#auto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/automator">#automator</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/barvy">#barvy</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/bash">#bash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/boostrap">#boostrap</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/brew">#brew</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/canvas">#canvas</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/composer">#composer</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/css">#css</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/diplomka">#diplomka</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/drive">#drive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/email">#email</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/excerpt">#excerpt</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ftp">#ftp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/git">#git</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/github">#github</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/gulp">#gulp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hack">#hack</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hash">#hash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/heartbleed">#heartbleed</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hermel%C3%ADn">#hermelín</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/how-to">#how-to</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/howto">#howto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html">#html</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html5">#html5</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/internet">#internet</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ios">#ios</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/iphone">#iphone</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/js">#js</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/json">#json</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/lifehacker">#lifehacker</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/mac">#mac</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/meta">#meta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/movies">#movies</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/nodejs">#nodejs</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/npm">#npm</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oauth">#oauth</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oko">#oko</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/openssl">#openssl</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/osx">#osx</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/parkinsons-law">#parkinsons-law</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/pear">#pear</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#php</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/plugin">#plugin</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/protip">#protip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/p%C5%99epis-auta">#přepis-auta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/rebase">#rebase</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/recepty">#recepty</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/retina">#retina</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/shell">#shell</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/student">#student</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/svg">#svg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/terminal">#terminal</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/tip">#tip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/todo">#todo</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ty%C4%8Dinky">#tyčinky</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/user">#user</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ux">#ux</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/webdesign">#webdesign</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wysiwyg">#wysiwyg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/xcode">#xcode</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/youtube">#youtube</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zamy%C5%A1len%C3%AD">#zamyšlení</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zdrav%C3%AD">#zdraví</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zip">#zip</a>
+	
+</div>
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

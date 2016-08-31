@@ -1,7 +1,7 @@
 ---
 title: Wordpress -  get post excerpt
 date: 2013-12-02
-tags: excerpt, wordpress
+tags: [excerpt, wordpress]
 ---
 
 # Wordpress: get post excerpt

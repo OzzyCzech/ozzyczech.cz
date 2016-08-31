@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>How to fix “Shell Shock” bash bug on OS X - nabito.net</title>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="how-to-fix-shell-shock-bash-bug-on-os-x">How to fix “Shell Shock” bash bug on OS X</h1>
+
+<p>First try if your bash version it’s vulnerable. Go to terminal and run:</p>
+
+<pre><code>$ env x='() { :;}; echo vulnerable' bash -c 'echo hello'
+</code></pre>
+
+<p>Follow output is an example of a non-vulnerable bash version.</p>
+
+<pre><code>bash: warning: x: ignoring function definition attempt
+bash: error importing function definition for `x'
+hello
+</code></pre>
+
+<p>If you see the word <strong>vulnerable</strong> in the output of that command your bash is <strong>vulnerable</strong> and you <strong>should update</strong>. ### How to update bash with Homebrew</p>
+
+<p>First check your bash version:</p>
+
+<pre><code>$ bash --version    
+GNU bash, version 4.3.18(1)-release (x86_64-apple-darwin13.3.0)
+Copyright (C) 2013 Free Software Foundation, Inc.
+</code></pre>
+
+<p>Then find your bash directory (full path can be usefull later):</p>
+
+<pre><code>$ ls -la /usr/local/bin/bash
+/usr/local/bin/bash -&gt; ../Cellar/bash/4.3.25/bin/bash
+</code></pre>
+
+<p>Then upgrade bash:</p>
+
+<pre><code>$ brew update
+$ brew upgrade bash
+</code></pre>
+
+<p>If your terminal starts returning weird error like:</p>
+
+<pre><code>dyld: Library not loaded: @@HOMEBREW_PREFIX@@/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /usr/local/bin/bash
+  Reason: image not found
+</code></pre>
+
+<p>You will need upgrade also readline with follow commands:</p>
+
+<pre><code>$ brew rm -f readline
+$ brew install readline
+$ brew link readline --force
+</code></pre>
+
+<p><strong>Tip</strong>: If you accidentally close <strong>Terminal</strong> before getting above errors and your bash just stop working at all. Go to Terminal preferences<code>⌘+,</code> and change bash version to older e.g.<code>/usr/local/Cellar/bash/4.3.18/bin/bash</code> then quit Terminal <code>⌘+Q</code>. Upgrade readline and change path back to <code>/usr/local/bin/bash</code> and restart Terminal again.</p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/bash">#bash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/brew">#brew</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/shell">#shell</a>
+	
+	<time datetime="25096-08-925 250:00&#43;0000">25. 9. 2014</time>
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
+		Back to Homepage</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

@@ -8,8 +8,83 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Mon, 21 Jan 2008 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ozzyczech.github.io/nabito.net/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Find all unnecessary images without link from code</title>
+      <link>https://ozzyczech.github.io/nabito.net/find-all-unnecessary-images-without-link-from-code/</link>
+      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/find-all-unnecessary-images-without-link-from-code/</guid>
+      <description>
+
+&lt;h1 id=&#34;find-all-unnecessary-images-without-link-from-code&#34;&gt;Find all unnecessary images without link from code&lt;/h1&gt;
+
+&lt;p&gt;How to find all unnecessary images in your website project?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find public/images -type f|while read line ; do printf &amp;quot;$(basename $line) &amp;gt; &amp;quot; &amp;amp;&amp;amp; ack --nofilter -l -c &amp;quot;$(basename $line)&amp;quot; | wc -l; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Output will be:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sprite.gif &amp;gt; 0
+ajax-loader-bg-f9.gif &amp;gt; 2
+ajax-loader-bg-trans.gif &amp;gt; 3
+ajax-loader-static-bg-trans.gif &amp;gt; 2
+bg_about.png &amp;gt; 2
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want output filenames not just marches count remove&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| wc -l
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jak správně přepsat ojeté auto</title>
+      <link>https://ozzyczech.github.io/nabito.net/jak-spr%C3%A1vn%C4%9B-p%C5%99epsat-ojet%C3%A9-auto/</link>
+      <pubDate>Thu, 14 Jun 2012 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/jak-spr%C3%A1vn%C4%9B-p%C5%99epsat-ojet%C3%A9-auto/</guid>
+      <description>
+
+&lt;h1 id=&#34;jak-správně-přepsat-ojeté-auto&#34;&gt;Jak správně přepsat ojeté auto&lt;/h1&gt;
+
+&lt;p&gt;Popíšu jak to probíhalo u mě. Kupoval jsem ojeté auto přímo od majitele. Platil jsem hotově bez úvěru. Auto má platnou technickou prohlídku a emise do roku 2015.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;uzavřeli jsme s majitelem kupní smlouvu, kde byl uveden VIN kód auta&lt;/li&gt;
+&lt;li&gt;poslal jsme mu peníze na účet&lt;/li&gt;
+&lt;li&gt;původní majitel &lt;strong&gt;odhlásil auto&lt;/strong&gt; na spádovém dopravním inspektorátu (Praha)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;prostřihli&lt;/strong&gt; mu tam malý TP&lt;/li&gt;
+&lt;li&gt;do velkého TP mě jménem uvedl jako &lt;strong&gt;budoucího nového majitele&lt;/strong&gt; (ušetří se tím plná moc v budoucnu)&lt;/li&gt;
+&lt;li&gt;na &lt;strong&gt;VIN&lt;/strong&gt; jsem si uzavřel s pojišťovnou &lt;strong&gt;povinné ručení&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;původní majitel si teď už mohl své povinné ručení zrušit&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;S prostřiženým malým TP je možné jezdit &lt;strong&gt;bez úhony 10 dní&lt;/strong&gt;, pak už se jedná o přestupek. Ale nikdy nesmíte vyjet na cestu s nepojištěným autem - proto povinné ručení. Je to dokonce tak přísné, že na smlouvě o povinném ručení je uvedena i hodina uzavření. Zelenou kartu tedy musíte mít v ruce už při převzetí auta od původního majitele. Rovněž auto nesmí na silnici pokud nemá platnou STK. To si jej pak musíte nechat odtáhnout rovnou na stanici STK a pokusit se ji obnovit. Pokud chcete s autem jezdit, musíte do 10 dní dokončit úplný přepis na sebe. Což provedete na svém spádovém dopravním inspektorátu. V mém případě to je Ostrava - podle trvalého bydliště. Jedná se tedy o &lt;strong&gt;přepis mezi dvěma kraji&lt;/strong&gt;. Což znamená automaticky nutnost &lt;strong&gt;výměny registračních značek vozidla&lt;/strong&gt;. Pokud se jedná pouze o přepis v rámci kraje, není výměna značek povinná. Záleží na novém majiteli, zda nové značky chce a připlatí si za ně. Pro dokončení přepisu budete potřebovat spoustu papírů: - &lt;strong&gt;občanku&lt;/strong&gt; (doklad totožnosti)
+- &lt;strong&gt;doklad o způsobu nabytí vozidla&lt;/strong&gt; (u mě kupní smlouva)
+- původní (staré) &lt;strong&gt;registrační značky&lt;/strong&gt; vozidla
+- osvědčení o registraci vozidla část II (tzv. &lt;strong&gt;velký technický průkaz&lt;/strong&gt;)
+- osvědčení o registraci vozidla část I (tzv. &lt;strong&gt;malý technický průkaz&lt;/strong&gt; - ten prostřižený)
+- plnou moc k přepisu vozidla, pokud Vás majitel neuvedl jako &lt;strong&gt;budoucího majitele&lt;/strong&gt; při odhlášení auta (což mě uvedl, takže jsem nepotřeboval)
+- doklad o &lt;strong&gt;technické prohlídce&lt;/strong&gt; (zápis o platné pravidelné technické prohlídce v technickém průkazu nebo protokol o pravidelné technické prohlídce vystavený STK)
+- doklad o sjednání pojištění odpovědnosti z provozu vozidla (tzv. &lt;strong&gt;povinné ručení&lt;/strong&gt;) tzv. zelená karta
+- &lt;strong&gt;žádost o přepis vozidla&lt;/strong&gt; (dostanete a vyplníte na inspektorátu)
+- &lt;strong&gt;protokol o evidenční kontrole silničního motorového&lt;/strong&gt; (viz. níže)&lt;/p&gt;
+
+&lt;p&gt;Pro úspěšný přepis auta potřebujete tzv. &lt;em&gt;protokol o evidenční kontrole silničního motorového vozidla&lt;/em&gt; - ten získáte na &lt;strong&gt;jakékoliv stanici STK&lt;/strong&gt; v ČR. K získání protokolu je nutné: - ukázat občanku
+- malý a velký technický průkaz
+- a auto.&lt;/p&gt;
+
+&lt;p&gt;Celkově záležitost na 5 minut. Pracovník STK zkontroloval VIN, barvu vozidla, stav tachometru a číslo motoru. Stálo to kolem 200 Kč. Platnost protokolu je opět 10 dní. Po předložení všech náležitostí jsem na inspektorátu dostal nové ostravské značky a nový neprostřižený malý technický průkaz. Všechno byla záležitost cca na 10 minut. Stálo to na správních poplatcích 800 Kč. Kopii velkého technického průkazu jsem pak ještě poslal na pojišťovnu a ta mi obratem poslala novou zelenou kartu, kde je uvedena moje nová registrační značka. Ještě malý dodatek. Pokud je v autě na skle nalepená &lt;strong&gt;dálniční známka&lt;/strong&gt;, zneplatní se výměnou značek. Dálniční známku si prý můžete nechat vyměnit na jakékoliv větší poště. Stačí k tomu původní známka a nový technický průkaz. Ještě jsem to nestihl udělat, takže přesně nevím.Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty se při výměně značky dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)&lt;/p&gt;
+
+&lt;p&gt;Popis výměny dálniční známky najdete na stránkách &lt;a href=&#34;http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm&#34;&gt;České Pošty&lt;/a&gt;. #posta #auto #how-to #registrace&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Schůze, porady, meetingy a briefing</title>
@@ -27,26 +102,47 @@
 
 &lt;p&gt;Faktem je, že &lt;strong&gt;99 procent z nás porady nebo schůze nenávidí&lt;/strong&gt;. Dalším faktem je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami se to má takto:&lt;/p&gt;
 
-&lt;p&gt;**Jsou příliš drahé&lt;br /&gt;
-** Představte si, že každý účastník stojí firmu 150 Kč za hodinu - hodinové setkání 10 lidí Vás bude stát 1500 Kč. Je dobré si uvědomit, že někteří výše postavení pracovníci samozřejmě berou více. Možná ten vyšší plat souvisí s tím, že musí na více porad :-).&lt;/p&gt;
+&lt;h3 id=&#34;jsou-příliš-drahé&#34;&gt;Jsou příliš drahé&lt;/h3&gt;
 
-&lt;p&gt;**Jsou obvykle delší, než je potřeba&lt;br /&gt;
-** Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se Vás netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je &lt;strong&gt;12 minut z hodiny&lt;/strong&gt;, se řeší otázky, které skutečně stojí za to, aby se sešlo například oněch 10 lidí a společně je řešili.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Představte si, že každý účastník stojí firmu 150 Kč za hodinu - hodinové setkání 10 lidí Vás bude stát 1500 Kč. Je dobré si uvědomit, že někteří výše postavení pracovníci samozřejmě berou více. Možná ten vyšší plat souvisí s tím, že musí na více porad :-).&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Setkávání se pro setkávání&lt;/strong&gt;&lt;br /&gt;
- Některé porady slouží pouze pro utužení sociálních vazeb v rámci organizace. Je důležité si uvědomit, že cílem porady není samotné setkání. Každá porada by měla mít &lt;em&gt;topic&lt;/em&gt; - tedy hlavní téma, které by se mnělo probírat.&lt;br /&gt;
-**&lt;br /&gt;
- Jsou neupřímné&lt;br /&gt;
-** Na poradách je obvykle těžší říct svůj názor. Většina lidí mlčí, prostě si to odsedí a to podstatné probere na after party (viz níže). S neupřímností je spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada - manažer (šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale odpovídají za ní všichni účastníci.&lt;/p&gt;
+&lt;h3 id=&#34;jsou-obvykle-delší-než-je-potřeba&#34;&gt;Jsou obvykle delší, než je potřeba&lt;/h3&gt;
 
-&lt;p&gt;**After party po poradě&lt;br /&gt;
-** Odborně se to tuším nazývá &lt;em&gt;after meeting syndrom (AMS)&lt;/em&gt;. To je doba, kterou účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často probírají také přínosy porady a to jak je to tam nebavilo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se Vás netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je &lt;strong&gt;12 minut z hodiny&lt;/strong&gt;, se řeší otázky, které skutečně stojí za to, aby se sešlo například oněch 10 lidí a společně je řešili.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;**Porady vedou k dalším poradám&lt;br /&gt;
-** Obvykle po tom, co porada skončí, je naplánována nějaká další. Často má jedna schůze na svědomí celou řadu dalších setkání, porad a podobně. Někde se musí přeci probrat výsledky té první porady!&lt;/p&gt;
+&lt;h3 id=&#34;setkávání-se-pro-setkávání&#34;&gt;Setkávání se pro setkávání&lt;/h3&gt;
 
-&lt;p&gt;**Proč se radit?&lt;br /&gt;
-** Proč se vlastně pořádají? Těžko říct, ale tím pravým důvodem by mělo být to, že něco &lt;strong&gt;nefunguje tak jak má a nikdo neví, co má dělat&lt;/strong&gt;! Něco je špatně a věci se musí napravit. Je potřeba rozhodnutí managementu.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Některé porady slouží pouze pro utužení sociálních vazeb v rámci organizace. Je důležité si uvědomit, že cílem porady není samotné setkání. Každá porada by měla mít &lt;em&gt;topic&lt;/em&gt; - tedy hlavní téma, které by se mnělo probírat.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;jsou-neupřímné&#34;&gt;Jsou neupřímné&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Na poradách je obvykle těžší říct svůj názor. Většina lidí mlčí, prostě si to odsedí a to podstatné probere na after party (viz níže). S neupřímností je spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada - manažer (šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale odpovídají za ní všichni účastníci.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;after-party-po-poradě&#34;&gt;After party po poradě&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Odborně se to tuším nazývá &lt;em&gt;after meeting syndrom (AMS)&lt;/em&gt;. To je doba, kterou účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často probírají také přínosy porady a to jak je to tam nebavilo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;porady-vedou-k-dalším-poradám&#34;&gt;Porady vedou k dalším poradám&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Obvykle po tom, co porada skončí, je naplánována nějaká další. Často má jedna schůze na svědomí celou řadu dalších setkání, porad a podobně. Někde se musí přeci probrat výsledky té první porady!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;proč-se-radit&#34;&gt;Proč se radit?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Proč se vlastně pořádají? Těžko říct, ale tím pravým důvodem by mělo být to, že něco &lt;strong&gt;nefunguje tak jak má a nikdo neví, co má dělat&lt;/strong&gt;! Něco je špatně a věci se musí napravit. Je potřeba rozhodnutí managementu.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Na závěr ve zkratce několik zásad:&lt;/p&gt;
 

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Wordpresses - nabito.net</title>
+	<link href="https://ozzyczech.github.io/nabito.net/wordpress/index.xml" rel="alternate" type="application/rss+xml" title="nabito.net"/>
+	<link href="https://ozzyczech.github.io/nabito.net/wordpress/index.xml" rel="feed" type="application/rss+xml" title="nabito.net"/>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+			<article>
+	
+
+<h1 id="wordpress-get-post-excerpt">Wordpress: get post excerpt</h1>
+
+<p><code>$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post_id));</code></p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/excerpt">#excerpt</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="2126-08-122 20:00&#43;0000">2. 12. 2013</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="wordpress-how-to-get-user-by-metadata">Wordpress - How to get user by metadata</h1>
+
+<p>Getting user by field name is easy, #Wordpress have function for that <a href="http://codex.wordpress.org/Function_Reference/get_user_by">get_user_by</a>. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to <strong>get user by metadata</strong> using <a href="https://codex.wordpress.org/Class_Reference/WP_Query">WP_Query</a> object. Forget about them! You need prepare correct meta query as array or string and call <code>get_users</code>. Thats all!</p>
+
+<pre><code>/**
+ * Get user by his metadata
+ * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
+ * @param $meta_key
+ * @param $meta_value
+ * @return mixed
+ */
+function get_user_by_meta($meta_key, $meta_value) {
+ return reset(
+  get_users(
+   array(
+    'meta_key' =&gt; $meta_key,
+    'meta_value' =&gt; $meta_value,
+    'number' =&gt; 1,
+    'count_total' =&gt; false
+   )
+  )
+ );
+}
+</code></pre>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/meta">#meta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/user">#user</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="16046-08-416 160:00&#43;0000">16. 4. 2013</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="wodpress-constants-for-human-readable-intervals">Wodpress constants for human-readable intervals</h1>
+
+<p>Constants for expressing human-readable intervals in new #Wordpress are very useful:</p>
+
+<pre><code>define( 'MINUTE_IN_SECONDS', 60 );
+define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
+define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );
+define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );
+define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
+</code></pre>
+
+<p>Example:</p>
+
+<pre><code>wp_cache_add($key, $data, 'default, 5 * DAY_IN_SECONDS);
+</code></pre>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="20026-08-220 200:00&#43;0000">20. 2. 2013</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="make-wordpress-globals-more-accessible">Make WordPress globals more accessible</h1>
+
+<p>Wordpress using a lot <a href="http://codex.wordpress.org/Global_Variables">globals variables</a>. These variables are used throughout WordPress code for various reasons. Great example is database connection object <a href="http://codex.wordpress.org/Class_Reference/wpdb">wpdb</a>. Here is common example how to use <strong>wpdb</strong> in some function:</p>
+
+<pre><code>function something() {
+  global $wpdb;
+  /** @var wpdb $wpdb */
+  $wpdb-&gt;query('SQL...');
+}
+</code></pre>
+
+<p>It&rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: <a href="https://gist.github.com/OzzyCzech/4737518">https://gist.github.com/OzzyCzech/4737518</a> (PHP 5.3+ only)</p>
+
+<pre><code>function something() {
+  Globals::wpdb()-&gt;query('SQL...');
+}
+</code></pre>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hack">#hack</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#PHP</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="8026-08-28 80:00&#43;0000">8. 2. 2013</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="wordpress-register-and-setup-witgets-from-php-code">Wordpress: register and setup witgets from PHP code</h1>
+
+<p>PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:</p>
+
+<pre><code>class Widgets {
+
+ private $widgets = array();
+ private $options = array();
+
+ public function __construct() {
+  $this-&gt;options = wp_get_sidebars_widgets();
+ }
+
+ public function unregisterAllWidgets() {
+  foreach ($this-&gt;options as $name =&gt; $values)
+   $this-&gt;options[$name] = array();
+ }
+
+ public function cleanWidgetSettings($type, $multi = null) {
+  $this-&gt;widgets[$type] = array();
+  if ($multi !== null) $this-&gt;widgets[$type]['_multiwidget'] = (int)(bool)$multi;
+ }
+
+ public function setMultiWidget($type, $val = 1) {
+  $this-&gt;widgets[$type]['_multiwidget'] = $val;
+ }
+
+ public function add($type, array $options, $area = null) {
+  $this-&gt;widgets[$type][] = $options;
+  if ($area !== null) {
+   if (array_key_exists($area, $this-&gt;options) === false) {
+    throw new Exception('Widget area ' . $area . ' not exists.');
+   }
+   end($this-&gt;widgets[$type]);
+   $this-&gt;options[$area][] = $type . '-' . key($this-&gt;widgets[$type]);
+  }
+ }
+
+ public function __destruct() {
+  foreach ($this-&gt;widgets as $name =&gt; $settings) {
+   if (!array_key_exists('_multiwidget', $settings)) $settings['_multiwidget'] = 1;
+   update_option('widget_' . $name, $settings);
+  }
+  wp_set_sidebars_widgets($this-&gt;options);
+ }
+
+}
+</code></pre>
+
+<p>Following code is an example how to use <code>class Witgets</code>:</p>
+
+<pre><code>$widgets = new Widgets();
+$widgets-&gt;unregisterAllWidgets();
+
+$widgets-&gt;add(
+ 'text',
+ array(
+  'title' =&gt; 'About us',
+  'text' =&gt; 'Simple text about us',
+  'filter' =&gt; true,
+  'classes' =&gt; '',
+  'ids' =&gt; null,
+ ),
+ 'footer-1'
+);
+
+// ...
+</code></pre>
+
+<p>This code need to be call only once. Put your code to <code>function.php</code> to <code>after_switch_theme</code> action:</p>
+
+<pre><code>add_action(
+ 'after_switch_theme', function () {
+  $widgets = new Widgets();
+  $widgets-&gt;unregisterAllWidgets();
+  // ...
+ }
+);
+</code></pre>
+
+<p><a href="https://gist.github.com/4663766/">https://gist.github.com/4663766/</a></p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#PHP</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="29016-08-129 290:00&#43;0000">29. 1. 2013</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="made-in-china-paranoidní-povídka-na-dobrou-noc">Made in China - Paranoidní povídka na dobrou noc</h1>
+
+<p>China právě vyhlásila jednostranné embargo na vývoz výrobku vyrobených na jejich
+území. USA a prakticky celá Evropa se potýká s akutním nedostatkem výrobků
+určených k běžné spotřebě. Chybí zejména elektronika, plastové a kovové výrobky
+a léků. Díky embargu došlo k ohrožení ekonomické stability řady firem.
+Na hranici bankrotu se pohybují firmy jako Apple, IKEA nebo Mattel. Ty se
+překotně snaží alespoň o částečnou obnovu výroby. Rovněž se pokoušejí
+přesunout výrobu do svých domovských států. Potýkají se se zoufalým nedostatkem
+odborníků a extrémní finanční náročností nechtěného stěhování. Prezident USA se
+tento týden sejde s představiteli Evropské Unie. Společně se pokusí dohodnout
+alespoň částečnou obnovu exportu výrobků vyrobených na území Chiny. Cílem je
+vyhnou se celosvětovému ekonomickému kolapsu. A zamezení chaosu do kterého se
+postupně propadají jednotlivé státy. O dalším vývoji situace Vás budeme
+průběžně informovat.</p>
+
+	
+	<time datetime="9126-08-129 90:00&#43;0000">9. 12. 2012</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="hash-tags-pro-wordpress">Hash tags pro Wordpress</h1>
+
+<p>Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy:</p>
+
+<pre><code>&lt;?php
+/*
+Plugin Name: Hashs
+Description: Twitter like hash for Wordpress
+Version: 1.0
+Author: Roman Ozana &lt;ozana@omdesign.cz&gt;
+Author URI: http://www.omdesign.cz/
+*/
+class Hashs {
+
+  const PATTERN = '/\B#([^\s\W#]+)/i';
+
+  /**
+   * @param string $content
+   * @return string mixed
+   */
+  public static function processContent($content) {
+    return preg_replace(Hashs::PATTERN, '&lt;a href=&quot;' . get_home_url(null, '/tag/$1') . '&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; ', $content);
+  }
+
+  /**
+   * Auto hash tags
+   *
+   * @param $post_id
+   * @return bool
+   */
+  public static function addAutoTags($post_id) {
+    $post = get_post($post_id);
+    preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches);
+    if (!isset($matches[1])) return;
+    wp_set_object_terms($post_id, $matches[1], 'post_tag', false); // replace
+  }
+}
+
+add_filter('the_content', array('Hashs', 'processContent'), 1);
+add_action('save_post', array('Hashs', 'addAutoTags'));
+</code></pre>
+
+<p>Povšimněte si zejména řádku  <code>wp_set_object_terms($post_id, $matches[1], 'post_tag', false);</code>
+ten totiž ukládá nalezené tagy k postu. Pokud je poslední hodnota <code>true</code>,
+provede append (přidání ke stávajícím tagům). Pokud je <code>false</code>, provede
+nahrazení všech tagů u postu nalezenými hashtagy.</p>
+
+<p>Zdrojový kód ke stažení zde: <a href="https://bitbucket.org/OzzyCzech/omhashtag">https://bitbucket.org/OzzyCzech/omhashtag</a></p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hash">#hash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#PHP</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/plugin">#plugin</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="15096-08-915 150:00&#43;0000">15. 9. 2012</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="odstranění-odkazů-z-admin-menu-wordpress">Odstranění odkazů z admin menu Wordpress</h1>
+
+<p>Pro <a href="http://codex.wordpress.org/Links_Manager">manažer odkazů</a> #wordpress jsem nenašel nikdy <strong>smysluplné využití</strong>. Proč ho rovnou z menu neodstranit? Stejně tam jen zavazí:</p>
+
+<pre><code>add_action('admin_menu', function(){
+  remove_menu_page('link-manager.php');
+});
+</code></pre>
+
+<p>Obdobně je možné odstranit cokoliv dalšího např. <code>remove_menu_page('edit-comments.php');</code> - odstraní odkaz na komentáře.</p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="11096-08-911 110:00&#43;0000">11. 9. 2011</time>
+</article>
+
+			
+			<article>
+	
+
+<h1 id="zvýraznění-právě-hledaných-slov-ve-wordpress">Zvýraznění právě hledaných slov ve Wordpress</h1>
+
+<p>Několik následujících řádků kódu <strong>obalí</strong> všechna právě vyhledávaná <strong>klíčová slova</strong> do značky STRONG (class search-keyword). Kód je možné vložit do <em>function.php</em> ve Vašem template. Nebo jej můžete vložit rovnou do <em>search.php</em> někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí <a href="http://codex.wordpress.org/Function_Reference/get_search_form">Wordpress</a>.</p>
+
+<pre><code>function omSearchHeighlight($text)
+{
+$keys = explode(&quot; &quot;, get_search_query());
+$text = preg_replace('/('.implode('|', $keys) .')/iu', '&lt;strong class=&quot;search-keyword&quot;&gt;\0&lt;/strong&gt;', $text);
+return $text;
+}
+
+add_filter('the_title','omSearchHeighlight');
+add_filter('the_content','omSearchHeighlight');
+add_filter('the_excerpt','omSearchHeighlight');
+
+// nezapomeňte strong element nastylovat např.
+// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
+</code></pre>
+
+<p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/css">#CSS</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#PHP</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<time datetime="15116-08-1115 150:00&#43;0000">15. 11. 2010</time>
+</article>
+
+			
+			
+    
+		</div>
+	</div>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>

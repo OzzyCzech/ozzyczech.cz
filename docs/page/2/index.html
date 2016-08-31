@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>nabito.net - nabito.net</title>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="alternate" type="application/rss+xml" title="nabito.net"/>
+	<link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="feed" type="application/rss+xml" title="nabito.net"/>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+
+<section class="container">
+	
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/how-to-keep-directory-structure-with-gulp-zip/"><div>How to keep directory structure with gulp-zip</div></a></h1>
+		
+
+
+
+<p>Here is a simple way, how to keep directory structure with <a href="https://github.com/sindresorhus/gulp-zip">gulp-zip</a>. You just need add <code>{base: &quot;.&quot;}</code> to src:</p>
+
+<pre><code>var gulp = require(&quot;gulp&quot;);
+var zip = require(&quot;gulp-zip&quot;);
+path = require('path');
+
+gulp.task(&quot;zip&quot;, function () {
+ return gulp.src([
+   'css/*',
+   'img/*',
+   'js/*',
+   'manifest.json',
+   'popup.html',
+  ], {base: &quot;.&quot;})
+  .pipe(zip('archive.zip'))
+  .pipe(gulp.dest('dist'));
+});
+
+gulp.task(&quot;default&quot;, [&quot;zip&quot;]);
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/"><div>How to protect your emails with PHP and Javascript</div></a></h1>
+		
+
+
+
+<p>Working with or without javascript it&rsquo;s combine two technique for email protection <a href="http://en.wikipedia.org/wiki/ROT13">ROT13</a> and CSS</p>
+
+<pre><code>function mail($email, $text = null) {
+ return '&lt;script type=&quot;text/javascript&quot;&gt;document.write(&quot;' .
+ addslashes(
+  str_rot13(
+   '&lt;a href=&quot;mailto:' . $email . '&quot; rel=&quot;nofollow&quot;&gt;' . ($text ? : $email) . '&lt;/a&gt;'
+  )
+ ) . '&quot;.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c&lt;=&quot;Z&quot;?90:122)&gt;=(c=c.charCodeAt(0)+13)?c:c-26);}));&lt;/script&gt;' .
+ '&lt;noscript&gt;&lt;span style=&quot;unicode-bidi: bidi-override; direction: rtl;&quot;&gt;' . strrev($email) . '&lt;/span&gt;&lt;/noscript&gt;';
+}
+</code></pre>
+
+<p>Sources: - <a href="http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/"> Nine ways to obfuscate e-mail addresses compared</a>
+- and <a href="http://perishablepress.com/best-method-for-email-obfuscation/">Best Method for Email Obfuscation?</a></p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/"><div>Prevent Heartbleed - upgrade openssl with brew on your mac</div></a></h1>
+		
+
+
+
+<p>The <a href="http://heartbleed.com/">Heartbleed Bug</a> is a serious vulnerability in the
+popular OpenSSL cryptographic software library. Follow <a href="http://brew.sh/">brew</a>
+command will upgrade your openssl library:</p>
+
+<p><code>brew install openssl &amp;&amp; brew link openssl --force</code></p>
+
+<p>Relaunch your Terminal (has to be hard quit ⌘ + Q) and check your openssl version:</p>
+
+<p><code>openssl version</code></p>
+
+<p>Now you shall have <code>OpenSSL 1.0.1g 7 Apr 2014</code> or newer.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/"><div>How to keep GitHub Fork Updated (no merge - the right way)</div></a></h1>
+		
+
+
+
+<p>Here is solution how to keep your forks updated <a href="https://help.github.com/articles/syncing-a-fork">without merge</a> and clean history</p>
+
+<pre><code>git clone git@github.com:[username]/[repo].git
+git remote add upstream git@github.com:[username2]/[repo].git
+</code></pre>
+
+<p>When something change in forked repo</p>
+
+<pre><code>git fetch upstream
+git checkout [branch]
+git rebase upstream/[branch]
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/"><div>Convert JSON data to valid PHP code</div></a></h1>
+		
+
+
+
+<p>Do you need <strong>convert JSON data to valid PHP</strong> code without pain? I&rsquo;ve got a short script for that! My simple solution used <a href="http://www.php.net/manual/en/function.var-export.php">var_export()</a> function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace <code>stdClass::__set_state/</code> with <code>(object)</code>.</p>
+
+<p>Take a closer look at example data. I have here <a href="https://gist.github.com/Fluidbyte/2973986">currency.json</a> - PHP code should look something like this:</p>
+
+<pre><code>&lt;?php
+ return array (
+  'USD' =&gt;
+  (object)(array(
+     'symbol' =&gt; '$',
+     'name' =&gt; 'US Dollar',
+     'symbol_native' =&gt; '$',
+     'decimal_digits' =&gt; 2,
+     'rounding' =&gt; 0,
+     'code' =&gt; 'USD',
+     'name' =&gt; 'US dollars',
+  )),
+  'CAD' =&gt;
+  //...
+);
+</code></pre>
+
+<p>It&rsquo;s can be done in only four lines of PHP code:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p>If you need call some function (like <a href="http://www.php.net/manual/en/book.gettext.php">gettext</a>) above the variable, just add more regular expression:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+
+// add gettext function call
+$code = preg_replace(&quot;/'name' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+$code = preg_replace(&quot;/'name_plural' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+
+// save PHP code
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p> </p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/find-all-unnecessary-images-without-link-from-code/"><div>Find all unnecessary images without link from code</div></a></h1>
+		
+
+
+
+<p>How to find all unnecessary images in your website project?</p>
+
+<pre><code>find public/images -type f|while read line ; do printf &quot;$(basename $line) &gt; &quot; &amp;&amp; ack --nofilter -l -c &quot;$(basename $line)&quot; | wc -l; done
+</code></pre>
+
+<p>Output will be:</p>
+
+<pre><code>sprite.gif &gt; 0
+ajax-loader-bg-f9.gif &gt; 2
+ajax-loader-bg-trans.gif &gt; 3
+ajax-loader-static-bg-trans.gif &gt; 2
+bg_about.png &gt; 2
+...
+</code></pre>
+
+<p>If you want output filenames not just marches count remove</p>
+
+<pre><code>| wc -l
+</code></pre>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/upgrade-all-npm-packages-to-latest-versions/"><div>Upgrade all npm packages to latest versions</div></a></h1>
+		
+
+
+
+<p>Install follow package <a href="https://npmjs.org/package/npm-check-updates">npm-check-updates</a> by</p>
+
+<pre><code>npm install -g npm-check-updates
+</code></pre>
+
+<p>and run <code>ncu -a</code> for upgrade <code>package.json</code> versions.</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/how-to-clean-flash-drive-before-unmount-on-mac/"><div>How to clean flash drive before unmount on Mac</div></a></h1>
+		
+
+
+
+<p>How to <strong>clean flash drive</strong> and delete all hidden (dot) files on mac before unmount? It&rsquo;s simple, save follow commands as <code>flash</code>:</p>
+
+<pre><code>#!/bin/bash
+
+if [ -n &quot;$1&quot; ]; then
+  read -r -p &quot;Clean /Volumes/$1/ and unmount? [y/N] &quot; response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then      
+    find /Volumes/$1/ -name '._*' -type f -delete
+    rm -rf /Volumes/$1/.Spotlight-V100/
+    rm -rf /Volumes/$1/.Trashes/
+    diskutil unmount /Volumes/$1/
+    echo &quot;Done...&quot;
+  fi
+else
+  echo &quot;Flash drive name missing&quot;
+fi
+</code></pre>
+
+<p>Then change the access mode of a file <code>chmod +x flash</code>. To unmount a clean flash drive just run
+<code>./flash Flashka</code> (Flashka is name od drive).</p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/wordpress/wordpress-get-post-excerpt/"><div>Wordpress -  get post excerpt</div></a></h1>
+		
+
+
+
+<p><code>$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post_id));</code></p>
+
+	</article>
+	
+	<article>
+		<h1><a href="https://ozzyczech.github.io/nabito.net/run-ftp-server-on-mac-os-x/"><div>Run FTP server on Mac OS X</div></a></h1>
+		
+
+
+
+<p>Setup everyhing: <code>sudo subl /etc/ftpd.conf</code></p>
+
+<pre><code># match umask from Mac OS X Server ftpd
+umask all 022
+chroot GUEST /Users/roman/ftp
+modify guest off
+umask  guest 0707
+upload guest on
+</code></pre>
+
+<p>Start FTP server</p>
+
+<pre><code>sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
+</code></pre>
+
+<p>And stop again:</p>
+
+<p><code>sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist</code></p>
+
+	</article>
+	
+	
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/">1</a></li>
+        
+        <li
+        class="active"><a href="https://ozzyczech.github.io/nabito.net/page/2/">2</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/3/">3</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/4/">4</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/5/">5</a></li>
+        
+        <li
+        ><a href="https://ozzyczech.github.io/nabito.net/page/6/">6</a></li>
+        
+        <li
+        >
+        <a href="https://ozzyczech.github.io/nabito.net/page/3/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="https://ozzyczech.github.io/nabito.net/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+</section>
+
+<div class="container">
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ajax">#ajax</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/angular">#angular</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/antispam">#antispam</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/archive">#archive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/atom">#atom</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/auto">#auto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/automator">#automator</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/barvy">#barvy</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/bash">#bash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/boostrap">#boostrap</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/brew">#brew</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/canvas">#canvas</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/composer">#composer</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/css">#css</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/diplomka">#diplomka</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/drive">#drive</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/email">#email</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/excerpt">#excerpt</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ftp">#ftp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/git">#git</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/github">#github</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/gulp">#gulp</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hack">#hack</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hash">#hash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/heartbleed">#heartbleed</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hermel%C3%ADn">#hermelín</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/how-to">#how-to</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/howto">#howto</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html">#html</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html5">#html5</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/internet">#internet</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ios">#ios</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/iphone">#iphone</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/js">#js</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/json">#json</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/lifehacker">#lifehacker</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/mac">#mac</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/meta">#meta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/movies">#movies</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/nodejs">#nodejs</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/npm">#npm</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oauth">#oauth</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/oko">#oko</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/openssl">#openssl</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/osx">#osx</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/parkinsons-law">#parkinsons-law</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/pear">#pear</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#php</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/plugin">#plugin</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/protip">#protip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/p%C5%99epis-auta">#přepis-auta</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/rebase">#rebase</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/recepty">#recepty</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/retina">#retina</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/shell">#shell</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/student">#student</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/svg">#svg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/terminal">#terminal</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/tip">#tip</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/todo">#todo</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ty%C4%8Dinky">#tyčinky</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/user">#user</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/ux">#ux</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/webdesign">#webdesign</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wordpress">#wordpress</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/wysiwyg">#wysiwyg</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/xcode">#xcode</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/youtube">#youtube</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zamy%C5%A1len%C3%AD">#zamyšlení</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zdrav%C3%AD">#zdraví</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/zip">#zip</a>
+	
+</div>
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

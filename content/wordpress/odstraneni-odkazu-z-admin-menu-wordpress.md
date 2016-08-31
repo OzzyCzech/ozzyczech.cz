@@ -1,7 +1,7 @@
 ---
 title: Odstranění odkazů z admin menu Wordpress
 date: 2011-09-11
-tags: wordpress
+tags: [wordpress]
 ---
 
 

@@ -6,6 +6,7 @@ publishdir = "./docs"
 canonifyurls = true
 googleAnalytics = "UA-123-45"
 
+ignoreFiles = [ "readme.md" ]
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -14,5 +15,10 @@ enableEmoji = true
 name = "Roman Ožana"
 email = "ozana@omdesign.cz"
 
+[taxonomies]
+tag = "tags"
+
 [permalinks]
-post = "/:title/"
+posts = "/:slug/"
+pages = "/:slug/"
+recepty = "/:section/:slug/"

@@ -1,11 +1,7 @@
 <article>
 	{{ .Content }}
-
-	<ul id="tags">
-		{{range split .Params.tags ","}}
-	    <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
-	  {{ end }}
-	</ul>
-
-
+	{{ range .Params.tags }}
+	<a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
+	{{ end }}
+	<time datetime="{{ .Date.Format "2016-08-12 20:00-0700" }}">{{ .Date.Format "2. 1. 2006" }}</time>
 </article>

@@ -1,7 +1,6 @@
 ---
 title: Jak poznat Gisáka
 date: 2006-11-22
-tags: mix
 ---
 
 # Jak poznat Gisáka

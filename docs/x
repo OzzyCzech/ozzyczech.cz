@@ -1,19 +1,12 @@
+Generuje seznam H1 - H6
 
-
-    {{ $headers := findRE "<h2.*?>(.|\n)*?</h2>" .Content }}
-    {{ if ge (len $headers) 1 }}
-    <ul>
-    {{ range $headers }}
-        <li>
-            <a href="#{{ . | plainify | urlize }}">{{ . | plainify }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    {{ end }}
-
-
-    <ul id="tags">
-{{ range .Params.tags }}
-  <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
-{{ end }}
+{{ $headers := findRE "<h2.*?>(.|\n)*?</h2>" .Content }}
+{{ if ge (len $headers) 1 }}
+<ul>
+	{{ range $headers }}
+	<li>
+		<a href="#{{ . | plainify | urlize }}">{{ . | plainify }}</a>
+	</li>
+	{{ end }}
 </ul>
+{{ end }}

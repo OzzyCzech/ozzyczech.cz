@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Json on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/json/</link>
+    <description>Recent content in Json on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Sun, 19 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Convert JSON data to valid PHP code</title>
+      <link>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</link>
+      <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</guid>
+      <description>
+
+&lt;h1 id=&#34;convert-json-data-to-valid-php-code&#34;&gt;Convert JSON data to valid PHP code&lt;/h1&gt;
+
+&lt;p&gt;Do you need &lt;strong&gt;convert JSON data to valid PHP&lt;/strong&gt; code without pain? I&amp;rsquo;ve got a short script for that! My simple solution used &lt;a href=&#34;http://www.php.net/manual/en/function.var-export.php&#34;&gt;var_export()&lt;/a&gt; function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace &lt;code&gt;stdClass::__set_state/&lt;/code&gt; with &lt;code&gt;(object)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Take a closer look at example data. I have here &lt;a href=&#34;https://gist.github.com/Fluidbyte/2973986&#34;&gt;currency.json&lt;/a&gt; - PHP code should look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+ return array (
+  &#39;USD&#39; =&amp;gt;
+  (object)(array(
+     &#39;symbol&#39; =&amp;gt; &#39;$&#39;,
+     &#39;name&#39; =&amp;gt; &#39;US Dollar&#39;,
+     &#39;symbol_native&#39; =&amp;gt; &#39;$&#39;,
+     &#39;decimal_digits&#39; =&amp;gt; 2,
+     &#39;rounding&#39; =&amp;gt; 0,
+     &#39;code&#39; =&amp;gt; &#39;USD&#39;,
+     &#39;name&#39; =&amp;gt; &#39;US dollars&#39;,
+  )),
+  &#39;CAD&#39; =&amp;gt;
+  //...
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s can be done in only four lines of PHP code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$data = json_decode(file_get_contents(__DIR__ . &#39;/currency.json&#39;));
+$code = var_export((array)$data, true);
+$code = &amp;quot;&amp;lt;?php\n return &amp;quot; . preg_replace(&#39;/stdClass::__set_state/&#39;, &#39;(object)&#39;, $code) . &#39;;&#39;;
+file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you need call some function (like &lt;a href=&#34;http://www.php.net/manual/en/book.gettext.php&#34;&gt;gettext&lt;/a&gt;) above the variable, just add more regular expression:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$data = json_decode(file_get_contents(__DIR__ . &#39;/currency.json&#39;));
+$code = var_export((array)$data, true);
+
+// add gettext function call
+$code = preg_replace(&amp;quot;/&#39;name&#39; =&amp;gt; &#39;(.+)&#39;/&amp;quot;, &amp;quot;&#39;name&#39; =&amp;gt; __(&#39;$1&#39;)&amp;quot;, $code);
+$code = preg_replace(&amp;quot;/&#39;name_plural&#39; =&amp;gt; &#39;(.+)&#39;/&amp;quot;, &amp;quot;&#39;name&#39; =&amp;gt; __(&#39;$1&#39;)&amp;quot;, $code);
+
+// save PHP code
+$code = &amp;quot;&amp;lt;?php\n return &amp;quot; . preg_replace(&#39;/stdClass::__set_state/&#39;, &#39;(object)&#39;, $code) . &#39;;&#39;;
+file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

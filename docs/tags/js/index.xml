@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Js on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/js/</link>
+    <description>Recent content in Js on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Tue, 03 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitter Bootstrap Feedback Button</title>
+      <link>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</link>
+      <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</guid>
+      <description>
+
+&lt;h1 id=&#34;twitter-bootstrap-feedback-button&#34;&gt;Twitter Bootstrap Feedback Button&lt;/h1&gt;
+
+&lt;p&gt;Follow code add orange &lt;strong&gt;Feedback button&lt;/strong&gt; similar to the UserEcho button allow users send you feedback from any page. It&amp;rsquo;s based on Twitter Boostrap modal window.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Transparent SVG Feedback text&lt;/li&gt;
+&lt;li&gt;Pure CSS animation and positioning&lt;/li&gt;
+&lt;li&gt;jQuery for Ajax form submit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/gogmfazc/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>AngularJS $http not sending X-Requested-With header</title>
+      <link>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</link>
+      <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</guid>
+      <description>
+
+&lt;h1 id=&#34;angularjs-http-not-sending-x-requested-with-header&#34;&gt;AngularJS $http not sending X-Requested-With header&lt;/h1&gt;
+
+&lt;p&gt;Angular &lt;a href=&#34;https://docs.angularjs.org/api/ng/service/$http&#34;&gt;$http&lt;/a&gt; isn’t appending the header &lt;code&gt;X-Requested-With&lt;/code&gt; = &lt;code&gt;XMLHttpRequest&lt;/code&gt; since Angular 1.3.0.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;X-Requested-With header is rarely used in practice and by using it all the time we are riggering preflight checks for crossdomain requests. See &lt;a href=&#34;https://github.com/angular/angular.js/commit/3a75b1124d062f64093a90b26630938558909e8d&#34;&gt; commit message&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That can cause some problems on PHP side. If you need somehow differentiate XHR and common requests. For example Zend Framework and lot of others PHP frameworks use follow code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function isXmlHttpRequest() {
+ return !empty($_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;]) &amp;amp;&amp;amp;
+  $_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;] === &#39;XMLHttpRequest&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can easily add  on Angular side by following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;myAppModule.config([&#39;$httpProvider&#39;, function($httpProvider) {
+    $httpProvider.defaults.headers.common[&amp;quot;X-Requested-With&amp;quot;] = &#39;XMLHttpRequest&#39;;
+}]);
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple pie chart progress bar in canvas element</title>
+      <link>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</link>
+      <pubDate>Wed, 09 Jul 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</guid>
+      <description>&lt;h1&gt;Simple pie chart progress bar in canvas element&lt;/h1&gt;
+
+&lt;style type=&#34;text/css&#34;&gt;
+	div.chart {
+		position: relative;
+		margin: 80px auto;
+		width: 220px;
+		height: 220px;
+	}
+
+	div.chart canvas {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	div.chart span {
+		color: #555;
+		display: block;
+		line-height: 220px;
+		text-align: center;
+		width: 220px;
+		font-family: sans-serif;
+		font-size: 40px;
+		font-weight: 100;
+		margin-left: 5px;
+	}
+&lt;/style&gt;
+
+&lt;div class=&#34;chart&#34; id=&#34;graph&#34; data-percent=&#34;88&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+	var el = document.getElementById(&#39;graph&#39;); // get canvas
+
+	var options = {
+		percent: el.getAttribute(&#39;data-percent&#39;) || 25,
+		size: el.getAttribute(&#39;data-size&#39;) || 220,
+		lineWidth: el.getAttribute(&#39;data-line&#39;) || 15,
+		rotate: el.getAttribute(&#39;data-rotate&#39;) || 0
+	}
+
+	var canvas = document.createElement(&#39;canvas&#39;);
+	var span = document.createElement(&#39;span&#39;);
+	span.textContent = options.percent + &#39;%&#39;;
+
+	if (typeof(G_vmlCanvasManager) !== &#39;undefined&#39;) {
+		G_vmlCanvasManager.initElement(canvas);
+	}
+
+	var ctx = canvas.getContext(&#39;2d&#39;);
+	canvas.width = canvas.height = options.size;
+
+	el.appendChild(span);
+	el.appendChild(canvas);
+
+	ctx.translate(options.size / 2, options.size / 2); // change center
+	ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+
+	//imd = ctx.getImageData(0, 0, 240, 240);
+	var radius = (options.size - options.lineWidth) / 2;
+
+	var drawCircle = function (color, lineWidth, percent) {
+		percent = Math.min(Math.max(0, percent || 1), 1);
+		ctx.beginPath();
+		ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+		ctx.strokeStyle = color;
+		ctx.lineCap = &#39;round&#39;; // butt, round or square
+		ctx.lineWidth = lineWidth
+		ctx.stroke();
+	};
+
+	drawCircle(&#39;#efefef&#39;, options.lineWidth, 100 / 100);
+	drawCircle(&#39;#555555&#39;, options.lineWidth, options.percent / 100);
+&lt;/script&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zky35zt7/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;
+	Basic code was taken from Simple PIE Chart
+	&lt;a href=&#34;http://rendro.github.io/easy-pie-chart/&#34;&gt;http://rendro.github.io/easy-pie-chart/ &lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to protect your emails with PHP and Javascript</title>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</link>
+      <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-to-protect-your-emails-with-php-and-javascript&#34;&gt;How to protect your emails with PHP and Javascript&lt;/h1&gt;
+
+&lt;p&gt;Working with or without javascript it&amp;rsquo;s combine two technique for email protection &lt;a href=&#34;http://en.wikipedia.org/wiki/ROT13&#34;&gt;ROT13&lt;/a&gt; and CSS&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function mail($email, $text = null) {
+ return &#39;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;document.write(&amp;quot;&#39; .
+ addslashes(
+  str_rot13(
+   &#39;&amp;lt;a href=&amp;quot;mailto:&#39; . $email . &#39;&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;&#39; . ($text ? : $email) . &#39;&amp;lt;/a&amp;gt;&#39;
+  )
+ ) . &#39;&amp;quot;.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c&amp;lt;=&amp;quot;Z&amp;quot;?90:122)&amp;gt;=(c=c.charCodeAt(0)+13)?c:c-26);}));&amp;lt;/script&amp;gt;&#39; .
+ &#39;&amp;lt;noscript&amp;gt;&amp;lt;span style=&amp;quot;unicode-bidi: bidi-override; direction: rtl;&amp;quot;&amp;gt;&#39; . strrev($email) . &#39;&amp;lt;/span&amp;gt;&amp;lt;/noscript&amp;gt;&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sources: - &lt;a href=&#34;http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/&#34;&gt; Nine ways to obfuscate e-mail addresses compared&lt;/a&gt;
+- and &lt;a href=&#34;http://perishablepress.com/best-method-for-email-obfuscation/&#34;&gt;Best Method for Email Obfuscation?&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convert JSON data to valid PHP code</title>
+      <link>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</link>
+      <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</guid>
+      <description>
+
+&lt;h1 id=&#34;convert-json-data-to-valid-php-code&#34;&gt;Convert JSON data to valid PHP code&lt;/h1&gt;
+
+&lt;p&gt;Do you need &lt;strong&gt;convert JSON data to valid PHP&lt;/strong&gt; code without pain? I&amp;rsquo;ve got a short script for that! My simple solution used &lt;a href=&#34;http://www.php.net/manual/en/function.var-export.php&#34;&gt;var_export()&lt;/a&gt; function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace &lt;code&gt;stdClass::__set_state/&lt;/code&gt; with &lt;code&gt;(object)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Take a closer look at example data. I have here &lt;a href=&#34;https://gist.github.com/Fluidbyte/2973986&#34;&gt;currency.json&lt;/a&gt; - PHP code should look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+ return array (
+  &#39;USD&#39; =&amp;gt;
+  (object)(array(
+     &#39;symbol&#39; =&amp;gt; &#39;$&#39;,
+     &#39;name&#39; =&amp;gt; &#39;US Dollar&#39;,
+     &#39;symbol_native&#39; =&amp;gt; &#39;$&#39;,
+     &#39;decimal_digits&#39; =&amp;gt; 2,
+     &#39;rounding&#39; =&amp;gt; 0,
+     &#39;code&#39; =&amp;gt; &#39;USD&#39;,
+     &#39;name&#39; =&amp;gt; &#39;US dollars&#39;,
+  )),
+  &#39;CAD&#39; =&amp;gt;
+  //...
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s can be done in only four lines of PHP code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$data = json_decode(file_get_contents(__DIR__ . &#39;/currency.json&#39;));
+$code = var_export((array)$data, true);
+$code = &amp;quot;&amp;lt;?php\n return &amp;quot; . preg_replace(&#39;/stdClass::__set_state/&#39;, &#39;(object)&#39;, $code) . &#39;;&#39;;
+file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you need call some function (like &lt;a href=&#34;http://www.php.net/manual/en/book.gettext.php&#34;&gt;gettext&lt;/a&gt;) above the variable, just add more regular expression:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$data = json_decode(file_get_contents(__DIR__ . &#39;/currency.json&#39;));
+$code = var_export((array)$data, true);
+
+// add gettext function call
+$code = preg_replace(&amp;quot;/&#39;name&#39; =&amp;gt; &#39;(.+)&#39;/&amp;quot;, &amp;quot;&#39;name&#39; =&amp;gt; __(&#39;$1&#39;)&amp;quot;, $code);
+$code = preg_replace(&amp;quot;/&#39;name_plural&#39; =&amp;gt; &#39;(.+)&#39;/&amp;quot;, &amp;quot;&#39;name&#39; =&amp;gt; __(&#39;$1&#39;)&amp;quot;, $code);
+
+// save PHP code
+$code = &amp;quot;&amp;lt;?php\n return &amp;quot; . preg_replace(&#39;/stdClass::__set_state/&#39;, &#39;(object)&#39;, $code) . &#39;;&#39;;
+file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

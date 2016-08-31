@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+<section class="container">
+	{{ range .Data.Pages }}
+	<h1><a href="{{ .Permalink }}"><div>{{ .Title }}</div></a></h1>
+	{{ end }}
+</section>
+
+
+{{ partial "tags.html" . }}
+{{ partial "footer.html" . }}

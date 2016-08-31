@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Simple pie chart progress bar in canvas element - nabito.net</title>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	<h1>Simple pie chart progress bar in canvas element</h1>
+
+<style type="text/css">
+	div.chart {
+		position: relative;
+		margin: 80px auto;
+		width: 220px;
+		height: 220px;
+	}
+
+	div.chart canvas {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	div.chart span {
+		color: #555;
+		display: block;
+		line-height: 220px;
+		text-align: center;
+		width: 220px;
+		font-family: sans-serif;
+		font-size: 40px;
+		font-weight: 100;
+		margin-left: 5px;
+	}
+</style>
+
+<div class="chart" id="graph" data-percent="88"></div>
+
+<script>
+	var el = document.getElementById('graph'); // get canvas
+
+	var options = {
+		percent: el.getAttribute('data-percent') || 25,
+		size: el.getAttribute('data-size') || 220,
+		lineWidth: el.getAttribute('data-line') || 15,
+		rotate: el.getAttribute('data-rotate') || 0
+	}
+
+	var canvas = document.createElement('canvas');
+	var span = document.createElement('span');
+	span.textContent = options.percent + '%';
+
+	if (typeof(G_vmlCanvasManager) !== 'undefined') {
+		G_vmlCanvasManager.initElement(canvas);
+	}
+
+	var ctx = canvas.getContext('2d');
+	canvas.width = canvas.height = options.size;
+
+	el.appendChild(span);
+	el.appendChild(canvas);
+
+	ctx.translate(options.size / 2, options.size / 2); // change center
+	ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+
+	//imd = ctx.getImageData(0, 0, 240, 240);
+	var radius = (options.size - options.lineWidth) / 2;
+
+	var drawCircle = function (color, lineWidth, percent) {
+		percent = Math.min(Math.max(0, percent || 1), 1);
+		ctx.beginPath();
+		ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+		ctx.strokeStyle = color;
+		ctx.lineCap = 'round'; // butt, round or square
+		ctx.lineWidth = lineWidth
+		ctx.stroke();
+	};
+
+	drawCircle('#efefef', options.lineWidth, 100 / 100);
+	drawCircle('#555555', options.lineWidth, options.percent / 100);
+</script>
+
+<iframe width="100%" height="300" src="//jsfiddle.net/zky35zt7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+<p>
+	Basic code was taken from Simple PIE Chart
+	<a href="http://rendro.github.io/easy-pie-chart/">http://rendro.github.io/easy-pie-chart/ </a>
+</p>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/canvas">#canvas</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/css">#CSS</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/html5">#HTML5</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/js">#js</a>
+	
+	<time datetime="9076-08-79 90:00&#43;0000">9. 7. 2014</time>
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
+		Back to Homepage</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

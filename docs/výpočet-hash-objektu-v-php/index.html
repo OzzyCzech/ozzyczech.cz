@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Výpočet hash objektu v PHP - nabito.net</title>
+
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ozzyczech.github.io/nabito.net//js/app.js"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+	
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<link href="https://ozzyczech.github.io/nabito.net//css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" style="text-decoration: none;color: #555"><h1>nabito.net</h1></a>
+</header>
+
+
+<section class="container">
+	<article>
+	
+
+<h1 id="výpočet-hash-objektu-v-php">Výpočet hash objektu v PHP</h1>
+
+<p>Funkce <a href="http://php.net/manual/en/function.spl-object-hash.php">spl_object_hash()</a>
+má jednu <strong>nevýhodu</strong>, její výsledek se v čase mění. Pokud objekt naplníte
+stejnými hodnotami, dostanete při dvou requestech dva různé výsledky. Což nemusí
+být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeho
+vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat
+například takto:</p>
+
+<pre><code>class Foo {
+ private $p;
+ public function setProperty($p) {
+  $this-&gt;p = $p;
+ }
+ // vypocita hash objektu na zaklade hodnot jeho propert
+ public function __toString() {
+  return md5(http_build_query(get_object_vars($this)));
+ }
+}
+</code></pre>
+
+<p>Pro vypsání/získání hash pak stačí:</p>
+
+<pre><code>$bar = new Foo();
+$bar-&gt;setProperty('25');
+echo $bar;
+$hash = (string) $bar;
+</code></pre>
+
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/hash">#hash</a>
+	
+	<a href="https://ozzyczech.github.io/nabito.net/tags/php">#PHP</a>
+	
+	<time datetime="25096-08-925 250:00&#43;0000">25. 9. 2011</time>
+</article>
+
+</section>
+
+<div class="text-center">
+	<a href="https://ozzyczech.github.io/nabito.net/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
+		Back to Homepage</a>
+</div>
+
+
+    <footer>
+
+    </footer>
+
+    
+
+</body>
+</html>
+

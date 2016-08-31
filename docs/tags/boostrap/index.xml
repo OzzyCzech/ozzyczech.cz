@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boostrap on nabito.net</title>
+    <link>https://ozzyczech.github.io/nabito.net/tags/boostrap/</link>
+    <description>Recent content in Boostrap on nabito.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Tue, 03 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/boostrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitter Bootstrap Feedback Button</title>
+      <link>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</link>
+      <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</guid>
+      <description>
+
+&lt;h1 id=&#34;twitter-bootstrap-feedback-button&#34;&gt;Twitter Bootstrap Feedback Button&lt;/h1&gt;
+
+&lt;p&gt;Follow code add orange &lt;strong&gt;Feedback button&lt;/strong&gt; similar to the UserEcho button allow users send you feedback from any page. It&amp;rsquo;s based on Twitter Boostrap modal window.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Transparent SVG Feedback text&lt;/li&gt;
+&lt;li&gt;Pure CSS animation and positioning&lt;/li&gt;
+&lt;li&gt;jQuery for Ajax form submit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/gogmfazc/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

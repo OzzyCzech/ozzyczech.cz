@@ -13,10 +13,10 @@
     
     <item>
       <title>How to Auto indent code in Atom editor</title>
-      <link>https://ozzyczech.github.io/nabito.net/2016/auto-indent-code-in-atom-editor/</link>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-auto-indent-code-in-atom-editor/</link>
       <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2016/auto-indent-code-in-atom-editor/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-auto-indent-code-in-atom-editor/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-auto-indent-code-in-atom-editor&#34;&gt;How to Auto indent code in Atom editor&lt;/h1&gt;
@@ -25,7 +25,7 @@
 
 &lt;p&gt;Press &lt;code&gt;cmd + shift + p&lt;/code&gt; then type &lt;code&gt;keymap&lt;/code&gt; and hit enter &lt;strong&gt;Open Your Keymap&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;./atom-keymap.png&#34; alt=&#34;Open Your Keymap&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ozzyczech.github.io/nabito.net/posts/atom-keymap.png&#34; alt=&#34;Open Your Keymap&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;and add follow code there&lt;/p&gt;
 
@@ -34,17 +34,15 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now your Atom edit can Auto Indent with &lt;code&gt;cmd + alt + l&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;tags: atom, editor, keymap, tips&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Twitter Bootstrap Feedback Button</title>
-      <link>https://ozzyczech.github.io/nabito.net/2015/twitter-bootstrap-feedback-button/</link>
+      <link>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</link>
       <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2015/twitter-bootstrap-feedback-button/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</guid>
       <description>
 
 &lt;h1 id=&#34;twitter-bootstrap-feedback-button&#34;&gt;Twitter Bootstrap Feedback Button&lt;/h1&gt;
@@ -57,16 +55,159 @@
 &lt;li&gt;jQuery for Ajax form submit&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Download source code here &lt;a href=&#34;http://jsfiddle.net/gogmfazc/&#34; title=&#34;http://jsfiddle.net/gogmfazc/&#34;&gt;http://jsfiddle.net/gogmfazc/&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/gogmfazc/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Login With Social Buttons</title>
+      <link>https://ozzyczech.github.io/nabito.net/login-with-social-buttons/</link>
+      <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>https://ozzyczech.github.io/nabito.net/login-with-social-buttons/</guid>
+      <description>&lt;style type=&#34;text/css&#34;&gt;
+	.btn-login {
+		font-size: 20px;
+		color: #fff;
+		margin: 20px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.btn-login:hover {
+		color: #fff;
+	}
+
+	.btn-login svg {
+		vertical-align: middle;
+		width: 24px;
+		height: 24px;
+		fill: #fff;
+		margin-right: 10px;
+		display: inline-block;
+	}
+&lt;/style&gt;
+
+&lt;h1&gt;Login With Social Buttons&lt;/h1&gt;
+
+&lt;div class=&#34;btn btn-lg btn-login twitter&#34; style=&#34;background: #55acee&#34;&gt;
+	&lt;svg version=&#34;1.1&#34; id=&#34;Layer_1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; x=&#34;0px&#34; y=&#34;0px&#34; width=&#34;64px&#34; height=&#34;64px&#34; viewBox=&#34;0 0 64 64&#34; enable-background=&#34;new 0 0 64 64&#34; xml:space=&#34;preserve&#34;&gt;
+				&lt;g&gt;
+					&lt;path d=&#34;M55.975,13.846c2.854-1.751,4.743-4.144,5.668-7.185c-2.775,1.473-5.54,2.483-8.302,3.041
+					c-2.485-2.67-5.628-4.027-9.397-4.027c-3.685,0-6.797,1.293-9.335,3.808c-2.526,2.532-3.802,5.609-3.802,9.201
+					c0,1.092,0.139,2.066,0.414,2.894C20.356,21.207,11.363,16.699,4.276,8.025c-1.2,2.123-1.801,4.284-1.801,6.52
+					c0,4.596,1.94,8.237,5.811,10.911c-2.208-0.187-4.154-0.745-5.811-1.66c0,3.281,0.965,6.021,2.896,8.435
+					c1.94,2.389,4.43,3.91,7.472,4.56c-1.103,0.283-2.264,0.418-3.458,0.418c-1.102,0-1.882-0.092-2.345-0.293
+					c0.813,2.673,2.345,4.842,4.561,6.502c2.207,1.667,4.746,2.546,7.6,2.624c-4.705,3.692-10.084,5.517-16.171,5.517
+					c-1.49,0-2.546-0.021-3.186-0.133c5.995,3.893,12.667,5.824,20.049,5.824c7.555,0,14.231-1.915,20.042-5.743
+					c5.812-3.807,10.1-8.505,12.854-14.036c2.77-5.525,4.14-11.276,4.14-17.28v-1.653c2.678-2.014,4.843-4.282,6.499-6.786
+					C61.025,12.786,58.541,13.489,55.975,13.846z&#34;/&gt;
+				&lt;/g&gt;
+				&lt;/svg&gt;
+	Login with Twitter
+&lt;/div&gt;
+
+
+&lt;div class=&#34;btn btn-lg btn-login facebook&#34; style=&#34;background: #3b5998&#34;&gt;
+	&lt;svg version=&#34;1.1&#34; id=&#34;Icons&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; x=&#34;0px&#34; y=&#34;0px&#34;
+					 width=&#34;64px&#34; height=&#34;64px&#34; viewBox=&#34;0 0 100 100&#34; style=&#34;enable-background:new 0 0 100 100;&#34; xml:space=&#34;preserve&#34;&gt;
+				&lt;path class=&#34;facebook social-icon&#34; id=&#34;Facebook&#34; d=&#34;M38.078,22.431c0,2.268,0,12.391,0,12.391H29v15.152h9.078V95h18.649V49.975h12.513
+					c0,0,1.172-7.265,1.74-15.209c-1.629,0-14.183,0-14.183,0s0-8.815,0-10.36c0-1.548,2.033-3.631,4.043-3.631c2.006,0,6.239,0,10.16,0
+					c0-2.063,0-9.191,0-15.774c-5.235,0-11.189,0-13.814,0C37.617,5,38.078,20.167,38.078,22.431z&#34;/&gt;
+				&lt;/svg&gt;
+	Login with Facebook
+&lt;/div&gt;
+
+
+&lt;div class=&#34;btn btn-lg btn-login google&#34; style=&#34;background: #999999&#34;&gt;
+	&lt;svg version=&#34;1.1&#34; id=&#34;Capa_1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; x=&#34;0px&#34; y=&#34;0px&#34;
+					 width=&#34;64px&#34; height=&#34;64px&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;enable-background:new 0 0 512 512;&#34; xml:space=&#34;preserve&#34;&gt;
+				&lt;g&gt;
+					&lt;path d=&#34;M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M408.027,408.027
+						c-19.76,19.759-42.756,35.267-68.354,46.094c-6.502,2.75-13.105,5.164-19.801,7.246V423c0-20.167-6.916-35-20.75-44.5
+						c8.668-0.833,16.625-2,23.875-3.5s14.918-3.667,23-6.5c8.084-2.833,15.334-6.208,21.75-10.125c6.418-3.917,12.584-9,18.5-15.25
+						c5.918-6.25,10.875-13.333,14.875-21.25s7.168-17.417,9.5-28.5c2.334-11.083,3.5-23.292,3.5-36.625c0-25.833-8.416-47.833-25.25-66
+						c7.668-20,6.834-41.75-2.5-65.25l-6.25-0.75c-4.332-0.5-12.125,1.333-23.375,5.5s-23.875,11-37.875,20.5
+						c-19.832-5.5-40.416-8.25-61.749-8.25c-21.5,0-42,2.75-61.5,8.25c-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8
+						s-9.167-2.292-13.25-2.625s-6.708-0.417-7.875-0.25s-2,0.333-2.5,0.5c-9.333,23.667-10.167,45.417-2.5,65.25
+						c-16.833,18.167-25.25,40.167-25.25,66c0,13.333,1.167,25.542,3.5,36.625s5.5,20.583,9.5,28.5s8.958,15,14.875,21.25
+						s12.083,11.333,18.5,15.25s13.667,7.292,21.75,10.125s15.75,5,23,6.5s15.208,2.667,23.875,3.5c-13.667,9.333-20.5,24.167-20.5,44.5
+						v39.115c-7.549-2.247-14.99-4.902-22.3-7.994c-25.597-10.827-48.594-26.335-68.353-46.094
+						c-19.758-19.758-35.267-42.756-46.093-68.354C46.679,313.195,41,285.043,41,256s5.679-57.195,16.879-83.675
+						c10.827-25.597,26.335-48.594,46.093-68.353c19.758-19.759,42.756-35.267,68.353-46.093C198.805,46.679,226.957,41,256,41
+						s57.195,5.679,83.676,16.879c25.598,10.827,48.594,26.335,68.354,46.093c19.758,19.758,35.266,42.756,46.092,68.353
+						C465.32,198.805,471,226.957,471,256s-5.68,57.195-16.879,83.675C443.295,365.271,427.785,388.27,408.027,408.027z&#34;/&gt;
+				&lt;/g&gt;
+				&lt;/svg&gt;
+
+	Login with Github
+&lt;/div&gt;
+
+
+&lt;div class=&#34;btn btn-lg btn-login google&#34; style=&#34;background: #0976b4&#34;&gt;
+	&lt;svg version=&#34;1.1&#34; id=&#34;Capa_1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; x=&#34;0px&#34; y=&#34;0px&#34;
+					 width=&#34;64px&#34; height=&#34;64px&#34; viewBox=&#34;0 0 430.117 430.118&#34; style=&#34;enable-background:new 0 0 430.117 430.118;&#34;
+					 xml:space=&#34;preserve&#34;&gt;
+				&lt;g&gt;
+					&lt;path id=&#34;LinkedIn__x28_alt_x29_&#34; d=&#34;M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
+						c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
+						 M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
+						c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
+						 M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
+						c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
+						c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
+						c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z&#34;/&gt;
+				&lt;/g&gt;
+				&lt;/svg&gt;
+	Login with Linkedin
+&lt;/div&gt;
+
+
+&lt;div class=&#34;btn btn-lg btn-login google&#34; style=&#34;background: #fe7a15&#34;&gt;
+	&lt;svg version=&#34;1.1&#34; id=&#34;Layer_1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; x=&#34;0px&#34; y=&#34;0px&#34;	 width=&#34;64px&#34; height=&#34;64px&#34; viewBox=&#34;0 0 64 64&#34; enable-background=&#34;new 0 0 64 64&#34; xml:space=&#34;preserve&#34;&gt;
+	&lt;g&gt;
+			&lt;path id=&#34;path2830&#34; d=&#34;M10.207,36.963l4.401,0.044l-0.153,19.599h29.292V37.078h4.638v24.287H10.183L10.207,36.963L10.207,36.963z&#34;/&gt;
+			&lt;rect id=&#34;rect3604&#34; x=&#34;17.384&#34; y=&#34;48.55&#34; width=&#34;22.944&#34; height=&#34;4.882&#34;/&gt;
+			&lt;rect id=&#34;rect3606&#34; x=&#34;17.627&#34; y=&#34;40.861&#34; transform=&#34;matrix(-0.9954 -0.0961 0.0961 -0.9954 54.0215 89.3262)&#34; width=&#34;23.067&#34; height=&#34;5.004&#34;/&gt;
+			&lt;rect id=&#34;rect3606-1&#34; x=&#34;18.909&#34; y=&#34;32.867&#34; transform=&#34;matrix(-0.9624 -0.2716 0.2716 -0.9624 50.1342 77.6775)&#34; width=&#34;23.067&#34; height=&#34;5.005&#34;/&gt;
+			&lt;rect id=&#34;rect3606-1-3&#34; x=&#34;22.448&#34; y=&#34;24.201&#34; transform=&#34;matrix(-0.856 -0.517 0.517 -0.856 49.264 67.1307)&#34; width=&#34;23.067&#34; height=&#34;5.005&#34;/&gt;
+			&lt;rect id=&#34;rect3606-1-3-7&#34; x=&#34;29.785&#34; y=&#34;16.295&#34; transform=&#34;matrix(-0.5824 -0.8129 0.8129 -0.5824 50.1031 63.3325)&#34; width=&#34;23.067&#34; height=&#34;5.004&#34;/&gt;
+			&lt;rect id=&#34;rect3606-1-3-7-6&#34; x=&#34;40.14&#34; y=&#34;12.153&#34; transform=&#34;matrix(-0.1649 -0.9863 0.9863 -0.1649 45.7383 68.0375)&#34; width=&#34;23.067&#34; height=&#34;5.004&#34;/&gt;
+	&lt;/g&gt;
+	&lt;/svg&gt;
+	Login with StackOverflow
+&lt;/div&gt;
+
+
+&lt;div class=&#34;btn btn-lg btn-login google&#34; style=&#34;background: #dd4b39&#34;&gt;
+	&lt;svg version=&#34;1.1&#34; id=&#34;Layer_1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; x=&#34;0px&#34; y=&#34;0px&#34;
+	 width=&#34;64px&#34; height=&#34;64px&#34; viewBox=&#34;0 0 100 100&#34; enable-background=&#34;new 0 0 100 100&#34; xml:space=&#34;preserve&#34;&gt;
+	&lt;g&gt;
+		&lt;path class=&#34;google social-icon&#34; d=&#34;M53.267,56.855l-4.533-3.522c-1.38-1.144-3.27-2.656-3.27-5.422c0-2.778,1.889-4.544,3.527-6.18
+			c5.28-4.157,10.557-8.581,10.557-17.903c0-9.586-6.031-14.629-8.923-17.022h7.795l8.181-5.14H41.816
+			c-6.801,0-16.603,1.608-23.779,7.533c-5.408,4.666-8.046,11.099-8.046,16.892c0,9.831,7.548,19.798,20.88,19.798
+			c1.259,0,2.636-0.124,4.022-0.252c-0.623,1.515-1.252,2.777-1.252,4.917c0,3.905,2.006,6.299,3.774,8.567
+			c-5.663,0.39-16.237,1.018-24.033,5.809c-7.424,4.415-9.684,10.84-9.684,15.376c0,9.335,8.8,18.029,27.045,18.029
+			c21.636,0,33.089-11.971,33.089-23.823C63.834,65.804,58.803,61.519,53.267,56.855z M36.788,42.357
+			c-10.824,0-15.727-13.992-15.727-22.434c0-3.288,0.623-6.682,2.763-9.333c2.019-2.524,5.533-4.162,8.814-4.162
+			c10.434,0,15.846,14.118,15.846,23.197c0,2.271-0.251,6.296-3.144,9.207C43.317,40.853,39.931,42.357,36.788,42.357z
+			 M36.912,93.053c-13.46,0-22.139-6.438-22.139-15.392c0-8.949,8.048-11.977,10.816-12.979c5.281-1.778,12.076-2.025,13.21-2.025
+			c1.258,0,1.887,0,2.889,0.126c9.568,6.81,13.721,10.203,13.721,16.65C55.41,87.239,48.992,93.053,36.912,93.053z&#34;/&gt;
+		&lt;polygon class=&#34;google social-icon&#34; points=&#34;85.036,42.165 85.036,29.56 78.811,29.56 78.811,42.165 66.226,42.165 66.226,48.459 78.811,48.459 78.811,61.142
+			85.036,61.142 85.036,48.459 97.684,48.459 97.684,42.165 	&#34;/&gt;
+	&lt;/g&gt;
+	&lt;/svg&gt;
+	Login with Google Plus
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>How to switch Homebrew formulas to older version</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/how-to-switch-homebrew-formulas-to-older-version/</link>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</link>
       <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/how-to-switch-homebrew-formulas-to-older-version/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-switch-homebrew-formulas-to-older-version&#34;&gt;How to switch Homebrew formulas to older version&lt;/h1&gt;
@@ -103,10 +244,10 @@ a81eba6 - update pecl_http to 2.1.2
     
     <item>
       <title>Hardcore Simple Events Dispatcher for PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/hardcore-simple-events-dispatcher-for-php/</link>
+      <link>https://ozzyczech.github.io/nabito.net/hardcore-simple-events-dispatcher-for-php/</link>
       <pubDate>Sun, 05 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/hardcore-simple-events-dispatcher-for-php/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/hardcore-simple-events-dispatcher-for-php/</guid>
       <description>
 
 &lt;h1 id=&#34;hardcore-simple-events-dispatcher-for-php&#34;&gt;Hardcore Simple Events Dispatcher for PHP&lt;/h1&gt;
@@ -141,10 +282,10 @@ stop propagation. It&amp;rsquo;s even simpler then my previous version &lt;a hr
     
     <item>
       <title>Getting GitHub latest release URL</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/getting-github-latest-release-url/</link>
+      <link>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/getting-github-latest-release-url/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-github-latest-release-url&#34;&gt;Getting GitHub latest release URL&lt;/h1&gt;
@@ -168,10 +309,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>How to fix “Shell Shock” bash bug on OS X</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/how-to-fix-shell-shock-bash-bug-on-os-x/</link>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-fix-shell-shock-bash-bug-on-os-x/</link>
       <pubDate>Thu, 25 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/how-to-fix-shell-shock-bash-bug-on-os-x/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-fix-shell-shock-bash-bug-on-os-x/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-fix-shell-shock-bash-bug-on-os-x&#34;&gt;How to fix “Shell Shock” bash bug on OS X&lt;/h1&gt;
@@ -229,10 +370,10 @@ $ brew link readline --force
     
     <item>
       <title>AngularJS $http not sending X-Requested-With header</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/angularjs-http-not-sending-x-requested-with-header/</link>
+      <link>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</link>
       <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/angularjs-http-not-sending-x-requested-with-header/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</guid>
       <description>
 
 &lt;h1 id=&#34;angularjs-http-not-sending-x-requested-with-header&#34;&gt;AngularJS $http not sending X-Requested-With header&lt;/h1&gt;
@@ -263,10 +404,10 @@ $ brew link readline --force
     
     <item>
       <title>How to add all custom post type to main Wordpress archive.php</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/how-to-add-all-custom-post-type-to-main-wordpress-archive-php/</link>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
       <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/how-to-add-all-custom-post-type-to-main-wordpress-archive-php/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-add-all-custom-post-type-to-main-wordpress-archive-php&#34;&gt;How to add all custom post type to main Wordpress archive.php&lt;/h1&gt;
@@ -297,101 +438,102 @@ $ brew link readline --force
     
     <item>
       <title>Simple pie chart progress bar in canvas element</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/simple-pie-chart-progress-bar-in-canvas-element/</link>
+      <link>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</link>
       <pubDate>Wed, 09 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/simple-pie-chart-progress-bar-in-canvas-element/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</guid>
       <description>&lt;h1&gt;Simple pie chart progress bar in canvas element&lt;/h1&gt;
 
 &lt;style type=&#34;text/css&#34;&gt;
-div.chart {
-    position:relative;
-    margin:80px;
-    width:220px; height:220px;
-}
-div.chart canvas {
-    display: block;
-    position:absolute;
-    top:0;
-    left:0;
-}
-div.chart span {
-    color:#555;
-    display:block;
-    line-height:220px;
-    text-align:center;
-    width:220px;
-    font-family:sans-serif;
-    font-size:40px;
-    font-weight:100;
-    margin-left:5px;
-}
+	div.chart {
+		position: relative;
+		margin: 80px auto;
+		width: 220px;
+		height: 220px;
+	}
+
+	div.chart canvas {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	div.chart span {
+		color: #555;
+		display: block;
+		line-height: 220px;
+		text-align: center;
+		width: 220px;
+		font-family: sans-serif;
+		font-size: 40px;
+		font-weight: 100;
+		margin-left: 5px;
+	}
 &lt;/style&gt;
 
-&lt;div class=&#34;text-center&#34; style=&#34;padding:30px&#34;&gt;
 &lt;div class=&#34;chart&#34; id=&#34;graph&#34; data-percent=&#34;88&#34;&gt;&lt;/div&gt;
-&lt;/div&gt;
 
 &lt;script&gt;
-var el = document.getElementById(&#39;graph&#39;); // get canvas
+	var el = document.getElementById(&#39;graph&#39;); // get canvas
 
-var options = {
- percent: el.getAttribute(&#39;data-percent&#39;) || 25,
- size: el.getAttribute(&#39;data-size&#39;) || 220,
- lineWidth: el.getAttribute(&#39;data-line&#39;) || 15,
- rotate: el.getAttribute(&#39;data-rotate&#39;) || 0
-}
+	var options = {
+		percent: el.getAttribute(&#39;data-percent&#39;) || 25,
+		size: el.getAttribute(&#39;data-size&#39;) || 220,
+		lineWidth: el.getAttribute(&#39;data-line&#39;) || 15,
+		rotate: el.getAttribute(&#39;data-rotate&#39;) || 0
+	}
 
-var canvas = document.createElement(&#39;canvas&#39;);
-var span = document.createElement(&#39;span&#39;);
-span.textContent = options.percent + &#39;%&#39;;
+	var canvas = document.createElement(&#39;canvas&#39;);
+	var span = document.createElement(&#39;span&#39;);
+	span.textContent = options.percent + &#39;%&#39;;
 
-if (typeof(G_vmlCanvasManager) !== &#39;undefined&#39;) {
- G_vmlCanvasManager.initElement(canvas);
-}
+	if (typeof(G_vmlCanvasManager) !== &#39;undefined&#39;) {
+		G_vmlCanvasManager.initElement(canvas);
+	}
 
-var ctx = canvas.getContext(&#39;2d&#39;);
-canvas.width = canvas.height = options.size;
+	var ctx = canvas.getContext(&#39;2d&#39;);
+	canvas.width = canvas.height = options.size;
 
-el.appendChild(span);
-el.appendChild(canvas);
+	el.appendChild(span);
+	el.appendChild(canvas);
 
-ctx.translate(options.size / 2, options.size / 2); // change center
-ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+	ctx.translate(options.size / 2, options.size / 2); // change center
+	ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
 
-//imd = ctx.getImageData(0, 0, 240, 240);
-var radius = (options.size - options.lineWidth) / 2;
+	//imd = ctx.getImageData(0, 0, 240, 240);
+	var radius = (options.size - options.lineWidth) / 2;
 
-var drawCircle = function(color, lineWidth, percent) {
- percent = Math.min(Math.max(0, percent || 1), 1);
- ctx.beginPath();
- ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
- ctx.strokeStyle = color;
- ctx.lineCap = &#39;round&#39;; // butt, round or square
- ctx.lineWidth = lineWidth
- ctx.stroke();
-};
+	var drawCircle = function (color, lineWidth, percent) {
+		percent = Math.min(Math.max(0, percent || 1), 1);
+		ctx.beginPath();
+		ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+		ctx.strokeStyle = color;
+		ctx.lineCap = &#39;round&#39;; // butt, round or square
+		ctx.lineWidth = lineWidth
+		ctx.stroke();
+	};
 
-drawCircle(&#39;#efefef&#39;, options.lineWidth, 100 / 100);
-drawCircle(&#39;#555555&#39;, options.lineWidth, options.percent / 100);
+	drawCircle(&#39;#efefef&#39;, options.lineWidth, 100 / 100);
+	drawCircle(&#39;#555555&#39;, options.lineWidth, options.percent / 100);
 &lt;/script&gt;
 
 &lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zky35zt7/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 
 &lt;p&gt;
-  Basic code was taken from Simple PIE Chart
-  &lt;a href=&#34;http://rendro.github.io/easy-pie-chart/&#34;&gt;http://rendro.github.io/easy-pie-chart/  &lt;/a&gt;
+	Basic code was taken from Simple PIE Chart
+	&lt;a href=&#34;http://rendro.github.io/easy-pie-chart/&#34;&gt;http://rendro.github.io/easy-pie-chart/ &lt;/a&gt;
 &lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>How to keep directory structure with gulp-zip</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/how-to-keep-directory-structure-with-gulp-zip/</link>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-keep-directory-structure-with-gulp-zip/</link>
       <pubDate>Tue, 27 May 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/how-to-keep-directory-structure-with-gulp-zip/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-keep-directory-structure-with-gulp-zip/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-keep-directory-structure-with-gulp-zip&#34;&gt;How to keep directory structure with gulp-zip&lt;/h1&gt;
@@ -421,10 +563,10 @@ gulp.task(&amp;quot;default&amp;quot;, [&amp;quot;zip&amp;quot;]);
     
     <item>
       <title>How to protect your emails with PHP and Javascript</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/how-to-protect-your-emails-with-php-and-javascript/</link>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/how-to-protect-your-emails-with-php-and-javascript/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-protect-your-emails-with-php-and-javascript&#34;&gt;How to protect your emails with PHP and Javascript&lt;/h1&gt;
@@ -449,10 +591,10 @@ gulp.task(&amp;quot;default&amp;quot;, [&amp;quot;zip&amp;quot;]);
     
     <item>
       <title>Prevent Heartbleed - upgrade openssl with brew on your mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/prevent-heartbleed-upgrade-openssl-with-brew-on-your-mac/</link>
+      <link>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</link>
       <pubDate>Mon, 14 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/prevent-heartbleed-upgrade-openssl-with-brew-on-your-mac/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;prevent-heartbleed-upgrade-openssl-with-brew-on-your-mac&#34;&gt;Prevent Heartbleed: upgrade openssl with brew on your mac&lt;/h1&gt;
@@ -473,10 +615,10 @@ command will upgrade your openssl library:&lt;/p&gt;
     
     <item>
       <title>How to keep GitHub Fork Updated (no merge - the right way)</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/how-to-keep-github-fork-updated-no-merge-the-right-way/</link>
+      <link>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
       <pubDate>Tue, 11 Feb 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/how-to-keep-github-fork-updated-no-merge-the-right-way/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-keep-github-fork-updated-no-merge-the-right-way&#34;&gt;How to keep GitHub Fork Updated (no merge - the right way)&lt;/h1&gt;
@@ -498,10 +640,10 @@ git rebase upstream/[branch]
     
     <item>
       <title>Convert JSON data to valid PHP code</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/convert-json-data-to-valid-php-code/</link>
+      <link>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</link>
       <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/convert-json-data-to-valid-php-code/</guid>
+      <guid>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</guid>
       <description>
 
 &lt;h1 id=&#34;convert-json-data-to-valid-php-code&#34;&gt;Convert JSON data to valid PHP code&lt;/h1&gt;
@@ -550,38 +692,6 @@ file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt; &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Find all unnecessary images without link from code</title>
-      <link>https://ozzyczech.github.io/nabito.net/2014/find-all-unnecessary-images-without-link-from-code/</link>
-      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/2014/find-all-unnecessary-images-without-link-from-code/</guid>
-      <description>
-
-&lt;h1 id=&#34;find-all-unnecessary-images-without-link-from-code&#34;&gt;Find all unnecessary images without link from code&lt;/h1&gt;
-
-&lt;p&gt;How to find all unnecessary images in your website project?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;find public/images -type f|while read line ; do printf &amp;quot;$(basename $line) &amp;gt; &amp;quot; &amp;amp;&amp;amp; ack --nofilter -l -c &amp;quot;$(basename $line)&amp;quot; | wc -l; done
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Output will be:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sprite.gif &amp;gt; 0
-ajax-loader-bg-f9.gif &amp;gt; 2
-ajax-loader-bg-trans.gif &amp;gt; 3
-ajax-loader-static-bg-trans.gif &amp;gt; 2
-bg_about.png &amp;gt; 2
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you want output filenames not just marches count remove&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;| wc -l
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
