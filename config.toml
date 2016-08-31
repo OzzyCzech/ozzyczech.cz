@@ -4,9 +4,7 @@ languageCode = "cs-cz"
 title = "Blog"
 publishdir = "./docs"
 canonifyurls = true
-googleAnalytics = "UA-123-45"
-
-ignoreFiles = [ "readme.md" ]
+googleAnalytics = "UA-5420131-1"
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
 enableEmoji = true
