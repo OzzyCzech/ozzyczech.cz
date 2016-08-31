@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tip on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/tip/</link>
-    <description>Recent content in Tip on nabito.net</description>
+    <title>Tip on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/tip/</link>
+    <description>Recent content in Tip on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/tip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/tip/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Getting GitHub latest release URL</title>
-      <link>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</link>
+      <link>http://blog.omdesign.cz/getting-github-latest-release-url/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</guid>
+      <guid>http://blog.omdesign.cz/getting-github-latest-release-url/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-github-latest-release-url&#34;&gt;Getting GitHub latest release URL&lt;/h1&gt;
@@ -40,10 +40,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>Upgrade all npm packages to latest versions</title>
-      <link>https://ozzyczech.github.io/nabito.net/upgrade-all-npm-packages-to-latest-versions/</link>
+      <link>http://blog.omdesign.cz/upgrade-all-npm-packages-to-latest-versions/</link>
       <pubDate>Mon, 30 Dec 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/upgrade-all-npm-packages-to-latest-versions/</guid>
+      <guid>http://blog.omdesign.cz/upgrade-all-npm-packages-to-latest-versions/</guid>
       <description>
 
 &lt;h1 id=&#34;upgrade-all-npm-packages-to-latest-versions&#34;&gt;Upgrade all npm packages to latest versions&lt;/h1&gt;
@@ -59,10 +59,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>How to clean flash drive before unmount on Mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-clean-flash-drive-before-unmount-on-mac/</link>
+      <link>http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/</link>
       <pubDate>Sat, 21 Dec 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-clean-flash-drive-before-unmount-on-mac/</guid>
+      <guid>http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-clean-flash-drive-before-unmount-on-mac&#34;&gt;How to clean flash drive before unmount on Mac&lt;/h1&gt;
@@ -92,10 +92,10 @@ fi
     
     <item>
       <title>Composer require PEAR package</title>
-      <link>https://ozzyczech.github.io/nabito.net/composer-require-pear-package/</link>
+      <link>http://blog.omdesign.cz/composer-require-pear-package/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/composer-require-pear-package/</guid>
+      <guid>http://blog.omdesign.cz/composer-require-pear-package/</guid>
       <description>
 
 &lt;h1 id=&#34;composer-require-pear-package&#34;&gt;Composer require PEAR package&lt;/h1&gt;
@@ -117,10 +117,10 @@ fi
     
     <item>
       <title>Zjištění práv k souboru nebo adresáři v PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</link>
+      <link>http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</link>
       <pubDate>Wed, 05 Sep 2012 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</guid>
+      <guid>http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</guid>
       <description>
 
 &lt;h1 id=&#34;zjištění-práv-k-souboru-nebo-adresáři-v-php&#34;&gt;Zjištění práv k souboru nebo adresáři v PHP&lt;/h1&gt;

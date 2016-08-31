@@ -1,7 +1,7 @@
-baseurl = "https://ozzyczech.github.io/nabito.net/"
+baseurl = "http://blog.omdesign.cz/"
 contentdir = "./content"
 languageCode = "cs-cz"
-title = "nabito.net"
+title = "blog.omdesign.cz"
 publishdir = "./docs"
 canonifyurls = true
 googleAnalytics = "UA-123-45"

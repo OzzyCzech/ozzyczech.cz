@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brew on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/brew/</link>
-    <description>Recent content in Brew on nabito.net</description>
+    <title>Brew on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/brew/</link>
+    <description>Recent content in Brew on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Sat, 18 Oct 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/brew/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/brew/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to switch Homebrew formulas to older version</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</link>
+      <link>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</link>
       <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</guid>
+      <guid>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-switch-homebrew-formulas-to-older-version&#34;&gt;How to switch Homebrew formulas to older version&lt;/h1&gt;
@@ -53,10 +53,10 @@ a81eba6 - update pecl_http to 2.1.2
     
     <item>
       <title>How to fix “Shell Shock” bash bug on OS X</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-fix-shell-shock-bash-bug-on-os-x/</link>
+      <link>http://blog.omdesign.cz/how-to-fix-shell-shock-bash-bug-on-os-x/</link>
       <pubDate>Thu, 25 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-fix-shell-shock-bash-bug-on-os-x/</guid>
+      <guid>http://blog.omdesign.cz/how-to-fix-shell-shock-bash-bug-on-os-x/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-fix-shell-shock-bash-bug-on-os-x&#34;&gt;How to fix “Shell Shock” bash bug on OS X&lt;/h1&gt;
@@ -114,10 +114,10 @@ $ brew link readline --force
     
     <item>
       <title>Prevent Heartbleed - upgrade openssl with brew on your mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</link>
+      <link>http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</link>
       <pubDate>Mon, 14 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</guid>
+      <guid>http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;prevent-heartbleed-upgrade-openssl-with-brew-on-your-mac&#34;&gt;Prevent Heartbleed: upgrade openssl with brew on your mac&lt;/h1&gt;

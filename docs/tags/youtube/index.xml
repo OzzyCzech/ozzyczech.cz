@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Youtube on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/youtube/</link>
-    <description>Recent content in Youtube on nabito.net</description>
+    <title>Youtube on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/youtube/</link>
+    <description>Recent content in Youtube on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Sun, 27 Mar 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Snadné vložené YouTube videa pomocí PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/</link>
+      <link>http://blog.omdesign.cz/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/</link>
       <pubDate>Sun, 27 Mar 2011 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/</guid>
+      <guid>http://blog.omdesign.cz/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/</guid>
       <description>
 
 &lt;h1 id=&#34;snadné-vložené-youtube-videa-pomocí-php&#34;&gt;Snadné vložené YouTube videa pomocí PHP&lt;/h1&gt;

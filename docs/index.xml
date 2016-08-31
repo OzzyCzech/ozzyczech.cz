@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/</link>
-    <description>Recent content on nabito.net</description>
+    <title>blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/</link>
+    <description>Recent content on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Mon, 08 Aug 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to Auto indent code in Atom editor</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-auto-indent-code-in-atom-editor/</link>
+      <link>http://blog.omdesign.cz/how-to-auto-indent-code-in-atom-editor/</link>
       <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-auto-indent-code-in-atom-editor/</guid>
+      <guid>http://blog.omdesign.cz/how-to-auto-indent-code-in-atom-editor/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-auto-indent-code-in-atom-editor&#34;&gt;How to Auto indent code in Atom editor&lt;/h1&gt;
@@ -25,7 +25,7 @@
 
 &lt;p&gt;Press &lt;code&gt;cmd + shift + p&lt;/code&gt; then type &lt;code&gt;keymap&lt;/code&gt; and hit enter &lt;strong&gt;Open Your Keymap&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://ozzyczech.github.io/nabito.net/posts/atom-keymap.png&#34; alt=&#34;Open Your Keymap&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.omdesign.cz/posts/atom-keymap.png&#34; alt=&#34;Open Your Keymap&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;and add follow code there&lt;/p&gt;
 
@@ -39,10 +39,10 @@
     
     <item>
       <title>Twitter Bootstrap Feedback Button</title>
-      <link>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</link>
+      <link>http://blog.omdesign.cz/twitter-bootstrap-feedback-button/</link>
       <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</guid>
+      <guid>http://blog.omdesign.cz/twitter-bootstrap-feedback-button/</guid>
       <description>
 
 &lt;h1 id=&#34;twitter-bootstrap-feedback-button&#34;&gt;Twitter Bootstrap Feedback Button&lt;/h1&gt;
@@ -62,10 +62,10 @@
     
     <item>
       <title>Login With Social Buttons</title>
-      <link>https://ozzyczech.github.io/nabito.net/login-with-social-buttons/</link>
+      <link>http://blog.omdesign.cz/login-with-social-buttons/</link>
       <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/login-with-social-buttons/</guid>
+      <guid>http://blog.omdesign.cz/login-with-social-buttons/</guid>
       <description>&lt;style type=&#34;text/css&#34;&gt;
 	.btn-login {
 		font-size: 20px;
@@ -204,10 +204,10 @@
     
     <item>
       <title>How to switch Homebrew formulas to older version</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</link>
+      <link>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</link>
       <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</guid>
+      <guid>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-switch-homebrew-formulas-to-older-version&#34;&gt;How to switch Homebrew formulas to older version&lt;/h1&gt;
@@ -244,10 +244,10 @@ a81eba6 - update pecl_http to 2.1.2
     
     <item>
       <title>Hardcore Simple Events Dispatcher for PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/hardcore-simple-events-dispatcher-for-php/</link>
+      <link>http://blog.omdesign.cz/hardcore-simple-events-dispatcher-for-php/</link>
       <pubDate>Sun, 05 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/hardcore-simple-events-dispatcher-for-php/</guid>
+      <guid>http://blog.omdesign.cz/hardcore-simple-events-dispatcher-for-php/</guid>
       <description>
 
 &lt;h1 id=&#34;hardcore-simple-events-dispatcher-for-php&#34;&gt;Hardcore Simple Events Dispatcher for PHP&lt;/h1&gt;
@@ -282,10 +282,10 @@ stop propagation. It&amp;rsquo;s even simpler then my previous version &lt;a hr
     
     <item>
       <title>Getting GitHub latest release URL</title>
-      <link>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</link>
+      <link>http://blog.omdesign.cz/getting-github-latest-release-url/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</guid>
+      <guid>http://blog.omdesign.cz/getting-github-latest-release-url/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-github-latest-release-url&#34;&gt;Getting GitHub latest release URL&lt;/h1&gt;
@@ -309,10 +309,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>How to fix “Shell Shock” bash bug on OS X</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-fix-shell-shock-bash-bug-on-os-x/</link>
+      <link>http://blog.omdesign.cz/how-to-fix-shell-shock-bash-bug-on-os-x/</link>
       <pubDate>Thu, 25 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-fix-shell-shock-bash-bug-on-os-x/</guid>
+      <guid>http://blog.omdesign.cz/how-to-fix-shell-shock-bash-bug-on-os-x/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-fix-shell-shock-bash-bug-on-os-x&#34;&gt;How to fix “Shell Shock” bash bug on OS X&lt;/h1&gt;
@@ -370,10 +370,10 @@ $ brew link readline --force
     
     <item>
       <title>AngularJS $http not sending X-Requested-With header</title>
-      <link>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</link>
+      <link>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</link>
       <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</guid>
+      <guid>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</guid>
       <description>
 
 &lt;h1 id=&#34;angularjs-http-not-sending-x-requested-with-header&#34;&gt;AngularJS $http not sending X-Requested-With header&lt;/h1&gt;
@@ -404,10 +404,10 @@ $ brew link readline --force
     
     <item>
       <title>How to add all custom post type to main Wordpress archive.php</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
+      <link>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
       <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
+      <guid>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-add-all-custom-post-type-to-main-wordpress-archive-php&#34;&gt;How to add all custom post type to main Wordpress archive.php&lt;/h1&gt;
@@ -438,10 +438,10 @@ $ brew link readline --force
     
     <item>
       <title>Simple pie chart progress bar in canvas element</title>
-      <link>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</link>
+      <link>http://blog.omdesign.cz/simple-pie-chart-progress-bar-in-canvas-element/</link>
       <pubDate>Wed, 09 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</guid>
+      <guid>http://blog.omdesign.cz/simple-pie-chart-progress-bar-in-canvas-element/</guid>
       <description>&lt;h1&gt;Simple pie chart progress bar in canvas element&lt;/h1&gt;
 
 &lt;style type=&#34;text/css&#34;&gt;
@@ -530,10 +530,10 @@ $ brew link readline --force
     
     <item>
       <title>How to keep directory structure with gulp-zip</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-keep-directory-structure-with-gulp-zip/</link>
+      <link>http://blog.omdesign.cz/how-to-keep-directory-structure-with-gulp-zip/</link>
       <pubDate>Tue, 27 May 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-keep-directory-structure-with-gulp-zip/</guid>
+      <guid>http://blog.omdesign.cz/how-to-keep-directory-structure-with-gulp-zip/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-keep-directory-structure-with-gulp-zip&#34;&gt;How to keep directory structure with gulp-zip&lt;/h1&gt;
@@ -563,10 +563,10 @@ gulp.task(&amp;quot;default&amp;quot;, [&amp;quot;zip&amp;quot;]);
     
     <item>
       <title>How to protect your emails with PHP and Javascript</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</link>
+      <link>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</guid>
+      <guid>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-protect-your-emails-with-php-and-javascript&#34;&gt;How to protect your emails with PHP and Javascript&lt;/h1&gt;
@@ -591,10 +591,10 @@ gulp.task(&amp;quot;default&amp;quot;, [&amp;quot;zip&amp;quot;]);
     
     <item>
       <title>Prevent Heartbleed - upgrade openssl with brew on your mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</link>
+      <link>http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</link>
       <pubDate>Mon, 14 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</guid>
+      <guid>http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;prevent-heartbleed-upgrade-openssl-with-brew-on-your-mac&#34;&gt;Prevent Heartbleed: upgrade openssl with brew on your mac&lt;/h1&gt;
@@ -615,10 +615,10 @@ command will upgrade your openssl library:&lt;/p&gt;
     
     <item>
       <title>How to keep GitHub Fork Updated (no merge - the right way)</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
+      <link>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
       <pubDate>Tue, 11 Feb 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
+      <guid>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-keep-github-fork-updated-no-merge-the-right-way&#34;&gt;How to keep GitHub Fork Updated (no merge - the right way)&lt;/h1&gt;
@@ -640,10 +640,10 @@ git rebase upstream/[branch]
     
     <item>
       <title>Convert JSON data to valid PHP code</title>
-      <link>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</link>
+      <link>http://blog.omdesign.cz/convert-json-data-to-valid-php-code/</link>
       <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</guid>
+      <guid>http://blog.omdesign.cz/convert-json-data-to-valid-php-code/</guid>
       <description>
 
 &lt;h1 id=&#34;convert-json-data-to-valid-php-code&#34;&gt;Convert JSON data to valid PHP code&lt;/h1&gt;

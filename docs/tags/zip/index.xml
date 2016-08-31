@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zip on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/zip/</link>
-    <description>Recent content in Zip on nabito.net</description>
+    <title>Zip on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/zip/</link>
+    <description>Recent content in Zip on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Tue, 27 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/zip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/zip/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to keep directory structure with gulp-zip</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-keep-directory-structure-with-gulp-zip/</link>
+      <link>http://blog.omdesign.cz/how-to-keep-directory-structure-with-gulp-zip/</link>
       <pubDate>Tue, 27 May 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-keep-directory-structure-with-gulp-zip/</guid>
+      <guid>http://blog.omdesign.cz/how-to-keep-directory-structure-with-gulp-zip/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-keep-directory-structure-with-gulp-zip&#34;&gt;How to keep directory structure with gulp-zip&lt;/h1&gt;

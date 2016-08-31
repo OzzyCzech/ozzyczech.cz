@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/pages/</link>
-    <description>Recent content in Pages on nabito.net</description>
+    <title>Pages on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/pages/</link>
+    <description>Recent content in Pages on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/pages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>https://ozzyczech.github.io/nabito.net</link>
+      <link>http://blog.omdesign.cz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net</guid>
+      <guid>http://blog.omdesign.cz/</guid>
       <description>
 
 &lt;h1 id=&#34;quotes&#34;&gt;Quotes&lt;/h1&gt;
@@ -30,10 +30,10 @@ we hire smart people so they can tell us what to do.
     
     <item>
       <title>Movies list</title>
-      <link>https://ozzyczech.github.io/nabito.net/movies-list/</link>
+      <link>http://blog.omdesign.cz/movies-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/movies-list/</guid>
+      <guid>http://blog.omdesign.cz/movies-list/</guid>
       <description>
 
 &lt;h1 id=&#34;movies&#34;&gt;Movies&lt;/h1&gt;

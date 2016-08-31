@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plugin on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/plugin/</link>
-    <description>Recent content in Plugin on nabito.net</description>
+    <title>Plugin on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/plugin/</link>
+    <description>Recent content in Plugin on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Sat, 15 Sep 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hash tags pro Wordpress</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</link>
+      <link>http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/</link>
       <pubDate>Sat, 15 Sep 2012 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/</guid>
       <description>
 
 &lt;h1 id=&#34;hash-tags-pro-wordpress&#34;&gt;Hash tags pro Wordpress&lt;/h1&gt;

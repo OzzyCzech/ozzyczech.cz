@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/github/</link>
-    <description>Recent content in Github on nabito.net</description>
+    <title>Github on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/github/</link>
+    <description>Recent content in Github on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Getting GitHub latest release URL</title>
-      <link>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</link>
+      <link>http://blog.omdesign.cz/getting-github-latest-release-url/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</guid>
+      <guid>http://blog.omdesign.cz/getting-github-latest-release-url/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-github-latest-release-url&#34;&gt;Getting GitHub latest release URL&lt;/h1&gt;
@@ -40,10 +40,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>How to keep GitHub Fork Updated (no merge - the right way)</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
+      <link>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
       <pubDate>Tue, 11 Feb 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
+      <guid>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-keep-github-fork-updated-no-merge-the-right-way&#34;&gt;How to keep GitHub Fork Updated (no merge - the right way)&lt;/h1&gt;

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wordpress on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/wordpress/</link>
-    <description>Recent content in Wordpress on nabito.net</description>
+    <title>Wordpress on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/wordpress/</link>
+    <description>Recent content in Wordpress on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Thu, 24 Jul 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to add all custom post type to main Wordpress archive.php</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
+      <link>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
       <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
+      <guid>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-add-all-custom-post-type-to-main-wordpress-archive-php&#34;&gt;How to add all custom post type to main Wordpress archive.php&lt;/h1&gt;
@@ -47,10 +47,10 @@
     
     <item>
       <title>Wordpress -  get post excerpt</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-get-post-excerpt/</link>
+      <link>http://blog.omdesign.cz/wordpress/wordpress-get-post-excerpt/</link>
       <pubDate>Mon, 02 Dec 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-get-post-excerpt/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/wordpress-get-post-excerpt/</guid>
       <description>
 
 &lt;h1 id=&#34;wordpress-get-post-excerpt&#34;&gt;Wordpress: get post excerpt&lt;/h1&gt;
@@ -61,10 +61,10 @@
     
     <item>
       <title>Wordpress - How to get user by metadata</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-how-to-get-user-by-metadata/</link>
+      <link>http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/</link>
       <pubDate>Tue, 16 Apr 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-how-to-get-user-by-metadata/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/</guid>
       <description>
 
 &lt;h1 id=&#34;wordpress-how-to-get-user-by-metadata&#34;&gt;Wordpress - How to get user by metadata&lt;/h1&gt;
@@ -96,10 +96,10 @@ function get_user_by_meta($meta_key, $meta_value) {
     
     <item>
       <title>Wodpress constants for human-readable intervals</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/wodpress-constants-for-human-readable-intervals/</link>
+      <link>http://blog.omdesign.cz/wordpress/wodpress-constants-for-human-readable-intervals/</link>
       <pubDate>Wed, 20 Feb 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wodpress-constants-for-human-readable-intervals/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/wodpress-constants-for-human-readable-intervals/</guid>
       <description>
 
 &lt;h1 id=&#34;wodpress-constants-for-human-readable-intervals&#34;&gt;Wodpress constants for human-readable intervals&lt;/h1&gt;
@@ -122,10 +122,10 @@ define( &#39;YEAR_IN_SECONDS&#39;,  365 * DAY_IN_SECONDS    );
     
     <item>
       <title>Make WordPress globals more accessible</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</link>
+      <link>http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/</guid>
       <description>
 
 &lt;h1 id=&#34;make-wordpress-globals-more-accessible&#34;&gt;Make WordPress globals more accessible&lt;/h1&gt;
@@ -150,10 +150,10 @@ define( &#39;YEAR_IN_SECONDS&#39;,  365 * DAY_IN_SECONDS    );
     
     <item>
       <title>Wordpress - register and setup widgets from PHP code</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/</link>
+      <link>http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/</link>
       <pubDate>Tue, 29 Jan 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/</guid>
       <description>
 
 &lt;h1 id=&#34;wordpress-register-and-setup-witgets-from-php-code&#34;&gt;Wordpress: register and setup witgets from PHP code&lt;/h1&gt;
@@ -242,10 +242,10 @@ $widgets-&amp;gt;add(
     
     <item>
       <title>WYSIWYG pro popis uživatele ve Wordpress</title>
-      <link>https://ozzyczech.github.io/nabito.net/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</link>
+      <link>http://blog.omdesign.cz/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</link>
       <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</guid>
+      <guid>http://blog.omdesign.cz/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</guid>
       <description>
 
 &lt;h1 id=&#34;wysiwyg-pro-popis-uživatele-ve-wordpress&#34;&gt;WYSIWYG pro popis uživatele ve Wordpress&lt;/h1&gt;
@@ -303,10 +303,10 @@ new CustomUserProfile();
     
     <item>
       <title>Hash tags pro Wordpress</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</link>
+      <link>http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/</link>
       <pubDate>Sat, 15 Sep 2012 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/</guid>
       <description>
 
 &lt;h1 id=&#34;hash-tags-pro-wordpress&#34;&gt;Hash tags pro Wordpress&lt;/h1&gt;
@@ -362,10 +362,10 @@ nahrazení všech tagů u postu nalezenými hashtagy.&lt;/p&gt;
     
     <item>
       <title>Odstranění odkazů z admin menu Wordpress</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</link>
+      <link>http://blog.omdesign.cz/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</link>
       <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</guid>
       <description>
 
 &lt;h1 id=&#34;odstranění-odkazů-z-admin-menu-wordpress&#34;&gt;Odstranění odkazů z admin menu Wordpress&lt;/h1&gt;
@@ -383,10 +383,10 @@ nahrazení všech tagů u postu nalezenými hashtagy.&lt;/p&gt;
     
     <item>
       <title>Zvýraznění právě hledaných slov ve Wordpress</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/</link>
+      <link>http://blog.omdesign.cz/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/</link>
       <pubDate>Mon, 15 Nov 2010 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/</guid>
       <description>
 
 &lt;h1 id=&#34;zvýraznění-právě-hledaných-slov-ve-wordpress&#34;&gt;Zvýraznění právě hledaných slov ve Wordpress&lt;/h1&gt;

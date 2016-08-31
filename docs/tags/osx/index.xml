@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Osx on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/osx/</link>
-    <description>Recent content in Osx on nabito.net</description>
+    <title>Osx on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/osx/</link>
+    <description>Recent content in Osx on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Sat, 18 Oct 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/osx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/osx/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to switch Homebrew formulas to older version</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</link>
+      <link>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</link>
       <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</guid>
+      <guid>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-switch-homebrew-formulas-to-older-version&#34;&gt;How to switch Homebrew formulas to older version&lt;/h1&gt;
@@ -53,10 +53,10 @@ a81eba6 - update pecl_http to 2.1.2
     
     <item>
       <title>Toggle Hidden Files in Finder</title>
-      <link>https://ozzyczech.github.io/nabito.net/toggle-hidden-files-in-finder/</link>
+      <link>http://blog.omdesign.cz/toggle-hidden-files-in-finder/</link>
       <pubDate>Tue, 26 Mar 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/toggle-hidden-files-in-finder/</guid>
+      <guid>http://blog.omdesign.cz/toggle-hidden-files-in-finder/</guid>
       <description>
 
 &lt;h1 id=&#34;toggle-hidden-files-in-finder&#34;&gt;Toggle Hidden Files in Finder&lt;/h1&gt;
@@ -79,10 +79,10 @@ killall Finder
     
     <item>
       <title>Run iPhone simulator without XCode</title>
-      <link>https://ozzyczech.github.io/nabito.net/run-iphone-simulator-without-xcode/</link>
+      <link>http://blog.omdesign.cz/run-iphone-simulator-without-xcode/</link>
       <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/run-iphone-simulator-without-xcode/</guid>
+      <guid>http://blog.omdesign.cz/run-iphone-simulator-without-xcode/</guid>
       <description>
 
 &lt;h1 id=&#34;run-iphone-simulator-without-xcode&#34;&gt;Run iPhone simulator without XCode&lt;/h1&gt;

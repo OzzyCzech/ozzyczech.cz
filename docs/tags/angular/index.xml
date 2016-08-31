@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Angular on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/angular/</link>
-    <description>Recent content in Angular on nabito.net</description>
+    <title>Angular on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/angular/</link>
+    <description>Recent content in Angular on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Wed, 24 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/angular/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>AngularJS $http not sending X-Requested-With header</title>
-      <link>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</link>
+      <link>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</link>
       <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</guid>
+      <guid>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</guid>
       <description>
 
 &lt;h1 id=&#34;angularjs-http-not-sending-x-requested-with-header&#34;&gt;AngularJS $http not sending X-Requested-With header&lt;/h1&gt;

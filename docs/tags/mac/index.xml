@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mac on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/mac/</link>
-    <description>Recent content in Mac on nabito.net</description>
+    <title>Mac on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/mac/</link>
+    <description>Recent content in Mac on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Mon, 14 Apr 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Prevent Heartbleed - upgrade openssl with brew on your mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</link>
+      <link>http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</link>
       <pubDate>Mon, 14 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</guid>
+      <guid>http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;prevent-heartbleed-upgrade-openssl-with-brew-on-your-mac&#34;&gt;Prevent Heartbleed: upgrade openssl with brew on your mac&lt;/h1&gt;
@@ -37,10 +37,10 @@ command will upgrade your openssl library:&lt;/p&gt;
     
     <item>
       <title>How to clean flash drive before unmount on Mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-clean-flash-drive-before-unmount-on-mac/</link>
+      <link>http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/</link>
       <pubDate>Sat, 21 Dec 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-clean-flash-drive-before-unmount-on-mac/</guid>
+      <guid>http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-clean-flash-drive-before-unmount-on-mac&#34;&gt;How to clean flash drive before unmount on Mac&lt;/h1&gt;
@@ -70,10 +70,10 @@ fi
     
     <item>
       <title>Run FTP server on Mac OS X</title>
-      <link>https://ozzyczech.github.io/nabito.net/run-ftp-server-on-mac-os-x/</link>
+      <link>http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/</link>
       <pubDate>Thu, 28 Nov 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/run-ftp-server-on-mac-os-x/</guid>
+      <guid>http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/</guid>
       <description>
 
 &lt;h1 id=&#34;run-ftp-server-on-mac-os-x&#34;&gt;Run FTP server on Mac OS X&lt;/h1&gt;
@@ -101,10 +101,10 @@ upload guest on
     
     <item>
       <title>Setup email sending from PHP on Mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/setup-email-sending-from-php-on-mac/</link>
+      <link>http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/</link>
       <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/setup-email-sending-from-php-on-mac/</guid>
+      <guid>http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;setup-email-sending-from-php-on-mac&#34;&gt;Setup email sending from PHP on Mac&lt;/h1&gt;
@@ -130,10 +130,10 @@ sudo /usr/sbin/postfix start
     
     <item>
       <title>Toggle Hidden Files in Finder</title>
-      <link>https://ozzyczech.github.io/nabito.net/toggle-hidden-files-in-finder/</link>
+      <link>http://blog.omdesign.cz/toggle-hidden-files-in-finder/</link>
       <pubDate>Tue, 26 Mar 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/toggle-hidden-files-in-finder/</guid>
+      <guid>http://blog.omdesign.cz/toggle-hidden-files-in-finder/</guid>
       <description>
 
 &lt;h1 id=&#34;toggle-hidden-files-in-finder&#34;&gt;Toggle Hidden Files in Finder&lt;/h1&gt;
@@ -156,10 +156,10 @@ killall Finder
     
     <item>
       <title>List all mounted drives on mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/list-all-mounted-drives-on-mac/</link>
+      <link>http://blog.omdesign.cz/list-all-mounted-drives-on-mac/</link>
       <pubDate>Mon, 11 Mar 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/list-all-mounted-drives-on-mac/</guid>
+      <guid>http://blog.omdesign.cz/list-all-mounted-drives-on-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;list-all-mounted-drives-on-mac&#34;&gt;List all mounted drives on mac&lt;/h1&gt;
@@ -170,10 +170,10 @@ killall Finder
     
     <item>
       <title>Run iPhone simulator without XCode</title>
-      <link>https://ozzyczech.github.io/nabito.net/run-iphone-simulator-without-xcode/</link>
+      <link>http://blog.omdesign.cz/run-iphone-simulator-without-xcode/</link>
       <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/run-iphone-simulator-without-xcode/</guid>
+      <guid>http://blog.omdesign.cz/run-iphone-simulator-without-xcode/</guid>
       <description>
 
 &lt;h1 id=&#34;run-iphone-simulator-without-xcode&#34;&gt;Run iPhone simulator without XCode&lt;/h1&gt;

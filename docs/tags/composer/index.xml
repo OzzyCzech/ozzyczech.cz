@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Composer on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/composer/</link>
-    <description>Recent content in Composer on nabito.net</description>
+    <title>Composer on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/composer/</link>
+    <description>Recent content in Composer on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Wed, 25 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/composer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Composer require PEAR package</title>
-      <link>https://ozzyczech.github.io/nabito.net/composer-require-pear-package/</link>
+      <link>http://blog.omdesign.cz/composer-require-pear-package/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/composer-require-pear-package/</guid>
+      <guid>http://blog.omdesign.cz/composer-require-pear-package/</guid>
       <description>
 
 &lt;h1 id=&#34;composer-require-pear-package&#34;&gt;Composer require PEAR package&lt;/h1&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>How to safely commit vendor dir with php Composer</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-safely-commit-vendor-dir-with-php-composer/</link>
+      <link>http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/</link>
       <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-safely-commit-vendor-dir-with-php-composer/</guid>
+      <guid>http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-safely-commit-vendor-dir-with-php-composer&#34;&gt;How to safely commit vendor dir with php Composer&lt;/h1&gt;

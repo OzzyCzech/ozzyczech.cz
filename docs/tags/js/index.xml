@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Js on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/js/</link>
-    <description>Recent content in Js on nabito.net</description>
+    <title>Js on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/js/</link>
+    <description>Recent content in Js on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Tue, 03 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Twitter Bootstrap Feedback Button</title>
-      <link>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</link>
+      <link>http://blog.omdesign.cz/twitter-bootstrap-feedback-button/</link>
       <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</guid>
+      <guid>http://blog.omdesign.cz/twitter-bootstrap-feedback-button/</guid>
       <description>
 
 &lt;h1 id=&#34;twitter-bootstrap-feedback-button&#34;&gt;Twitter Bootstrap Feedback Button&lt;/h1&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>AngularJS $http not sending X-Requested-With header</title>
-      <link>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</link>
+      <link>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</link>
       <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/angularjs-http-not-sending-x-requested-with-header/</guid>
+      <guid>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</guid>
       <description>
 
 &lt;h1 id=&#34;angularjs-http-not-sending-x-requested-with-header&#34;&gt;AngularJS $http not sending X-Requested-With header&lt;/h1&gt;
@@ -70,10 +70,10 @@
     
     <item>
       <title>Simple pie chart progress bar in canvas element</title>
-      <link>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</link>
+      <link>http://blog.omdesign.cz/simple-pie-chart-progress-bar-in-canvas-element/</link>
       <pubDate>Wed, 09 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/simple-pie-chart-progress-bar-in-canvas-element/</guid>
+      <guid>http://blog.omdesign.cz/simple-pie-chart-progress-bar-in-canvas-element/</guid>
       <description>&lt;h1&gt;Simple pie chart progress bar in canvas element&lt;/h1&gt;
 
 &lt;style type=&#34;text/css&#34;&gt;
@@ -162,10 +162,10 @@
     
     <item>
       <title>How to protect your emails with PHP and Javascript</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</link>
+      <link>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</guid>
+      <guid>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-protect-your-emails-with-php-and-javascript&#34;&gt;How to protect your emails with PHP and Javascript&lt;/h1&gt;
@@ -190,10 +190,10 @@
     
     <item>
       <title>Convert JSON data to valid PHP code</title>
-      <link>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</link>
+      <link>http://blog.omdesign.cz/convert-json-data-to-valid-php-code/</link>
       <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</guid>
+      <guid>http://blog.omdesign.cz/convert-json-data-to-valid-php-code/</guid>
       <description>
 
 &lt;h1 id=&#34;convert-json-data-to-valid-php-code&#34;&gt;Convert JSON data to valid PHP code&lt;/h1&gt;

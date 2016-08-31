@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/git/</link>
-    <description>Recent content in Git on nabito.net</description>
+    <title>Git on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/git/</link>
+    <description>Recent content in Git on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Tue, 11 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to keep GitHub Fork Updated (no merge - the right way)</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
+      <link>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
       <pubDate>Tue, 11 Feb 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
+      <guid>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-keep-github-fork-updated-no-merge-the-right-way&#34;&gt;How to keep GitHub Fork Updated (no merge - the right way)&lt;/h1&gt;
@@ -38,10 +38,10 @@ git rebase upstream/[branch]
     
     <item>
       <title>How to safely commit vendor dir with php Composer</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-safely-commit-vendor-dir-with-php-composer/</link>
+      <link>http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/</link>
       <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-safely-commit-vendor-dir-with-php-composer/</guid>
+      <guid>http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-safely-commit-vendor-dir-with-php-composer&#34;&gt;How to safely commit vendor dir with php Composer&lt;/h1&gt;

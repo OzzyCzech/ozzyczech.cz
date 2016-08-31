@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Excerpt on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/excerpt/</link>
-    <description>Recent content in Excerpt on nabito.net</description>
+    <title>Excerpt on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/excerpt/</link>
+    <description>Recent content in Excerpt on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Mon, 02 Dec 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/excerpt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/excerpt/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Wordpress -  get post excerpt</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-get-post-excerpt/</link>
+      <link>http://blog.omdesign.cz/wordpress/wordpress-get-post-excerpt/</link>
       <pubDate>Mon, 02 Dec 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-get-post-excerpt/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/wordpress-get-post-excerpt/</guid>
       <description>
 
 &lt;h1 id=&#34;wordpress-get-post-excerpt&#34;&gt;Wordpress: get post excerpt&lt;/h1&gt;

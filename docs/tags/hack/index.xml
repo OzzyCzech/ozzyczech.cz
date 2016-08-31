@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hack on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/hack/</link>
-    <description>Recent content in Hack on nabito.net</description>
+    <title>Hack on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/hack/</link>
+    <description>Recent content in Hack on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Thu, 24 Jul 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/hack/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/hack/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to add all custom post type to main Wordpress archive.php</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
+      <link>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
       <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
+      <guid>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-add-all-custom-post-type-to-main-wordpress-archive-php&#34;&gt;How to add all custom post type to main Wordpress archive.php&lt;/h1&gt;
@@ -47,10 +47,10 @@
     
     <item>
       <title>Make WordPress globals more accessible</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</link>
+      <link>http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/</guid>
       <description>
 
 &lt;h1 id=&#34;make-wordpress-globals-more-accessible&#34;&gt;Make WordPress globals more accessible&lt;/h1&gt;

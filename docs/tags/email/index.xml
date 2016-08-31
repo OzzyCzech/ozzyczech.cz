@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Email on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/email/</link>
-    <description>Recent content in Email on nabito.net</description>
+    <title>Email on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/email/</link>
+    <description>Recent content in Email on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Tue, 22 Apr 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/email/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to protect your emails with PHP and Javascript</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</link>
+      <link>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</guid>
+      <guid>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-protect-your-emails-with-php-and-javascript&#34;&gt;How to protect your emails with PHP and Javascript&lt;/h1&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>Setup email sending from PHP on Mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/setup-email-sending-from-php-on-mac/</link>
+      <link>http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/</link>
       <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/setup-email-sending-from-php-on-mac/</guid>
+      <guid>http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;setup-email-sending-from-php-on-mac&#34;&gt;Setup email sending from PHP on Mac&lt;/h1&gt;

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Boostrap on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/boostrap/</link>
-    <description>Recent content in Boostrap on nabito.net</description>
+    <title>Boostrap on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/boostrap/</link>
+    <description>Recent content in Boostrap on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Tue, 03 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/boostrap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/boostrap/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Twitter Bootstrap Feedback Button</title>
-      <link>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</link>
+      <link>http://blog.omdesign.cz/twitter-bootstrap-feedback-button/</link>
       <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/twitter-bootstrap-feedback-button/</guid>
+      <guid>http://blog.omdesign.cz/twitter-bootstrap-feedback-button/</guid>
       <description>
 
 &lt;h1 id=&#34;twitter-bootstrap-feedback-button&#34;&gt;Twitter Bootstrap Feedback Button&lt;/h1&gt;

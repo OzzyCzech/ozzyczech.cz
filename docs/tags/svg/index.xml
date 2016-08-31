@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Svg on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/svg/</link>
-    <description>Recent content in Svg on nabito.net</description>
+    <title>Svg on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/svg/</link>
+    <description>Recent content in Svg on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Fri, 02 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/svg/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/svg/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Login With Social Buttons</title>
-      <link>https://ozzyczech.github.io/nabito.net/login-with-social-buttons/</link>
+      <link>http://blog.omdesign.cz/login-with-social-buttons/</link>
       <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/login-with-social-buttons/</guid>
+      <guid>http://blog.omdesign.cz/login-with-social-buttons/</guid>
       <description>&lt;style type=&#34;text/css&#34;&gt;
 	.btn-login {
 		font-size: 20px;

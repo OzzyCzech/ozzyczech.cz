@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Php on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/php/</link>
-    <description>Recent content in Php on nabito.net</description>
+    <title>Php on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/php/</link>
+    <description>Recent content in Php on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Sat, 18 Oct 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to switch Homebrew formulas to older version</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</link>
+      <link>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</link>
       <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-switch-homebrew-formulas-to-older-version/</guid>
+      <guid>http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-switch-homebrew-formulas-to-older-version&#34;&gt;How to switch Homebrew formulas to older version&lt;/h1&gt;
@@ -53,10 +53,10 @@ a81eba6 - update pecl_http to 2.1.2
     
     <item>
       <title>Hardcore Simple Events Dispatcher for PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/hardcore-simple-events-dispatcher-for-php/</link>
+      <link>http://blog.omdesign.cz/hardcore-simple-events-dispatcher-for-php/</link>
       <pubDate>Sun, 05 Oct 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/hardcore-simple-events-dispatcher-for-php/</guid>
+      <guid>http://blog.omdesign.cz/hardcore-simple-events-dispatcher-for-php/</guid>
       <description>
 
 &lt;h1 id=&#34;hardcore-simple-events-dispatcher-for-php&#34;&gt;Hardcore Simple Events Dispatcher for PHP&lt;/h1&gt;
@@ -91,10 +91,10 @@ stop propagation. It&amp;rsquo;s even simpler then my previous version &lt;a hr
     
     <item>
       <title>Getting GitHub latest release URL</title>
-      <link>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</link>
+      <link>http://blog.omdesign.cz/getting-github-latest-release-url/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/getting-github-latest-release-url/</guid>
+      <guid>http://blog.omdesign.cz/getting-github-latest-release-url/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-github-latest-release-url&#34;&gt;Getting GitHub latest release URL&lt;/h1&gt;
@@ -118,10 +118,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>How to add all custom post type to main Wordpress archive.php</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
+      <link>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</link>
       <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
+      <guid>http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-add-all-custom-post-type-to-main-wordpress-archive-php&#34;&gt;How to add all custom post type to main Wordpress archive.php&lt;/h1&gt;
@@ -152,10 +152,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>How to protect your emails with PHP and Javascript</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</link>
+      <link>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-protect-your-emails-with-php-and-javascript/</guid>
+      <guid>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-protect-your-emails-with-php-and-javascript&#34;&gt;How to protect your emails with PHP and Javascript&lt;/h1&gt;
@@ -180,10 +180,10 @@ echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;);
     
     <item>
       <title>Convert JSON data to valid PHP code</title>
-      <link>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</link>
+      <link>http://blog.omdesign.cz/convert-json-data-to-valid-php-code/</link>
       <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/convert-json-data-to-valid-php-code/</guid>
+      <guid>http://blog.omdesign.cz/convert-json-data-to-valid-php-code/</guid>
       <description>
 
 &lt;h1 id=&#34;convert-json-data-to-valid-php-code&#34;&gt;Convert JSON data to valid PHP code&lt;/h1&gt;
@@ -237,10 +237,10 @@ file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
     
     <item>
       <title>How to safely commit vendor dir with php Composer</title>
-      <link>https://ozzyczech.github.io/nabito.net/how-to-safely-commit-vendor-dir-with-php-composer/</link>
+      <link>http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/</link>
       <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/how-to-safely-commit-vendor-dir-with-php-composer/</guid>
+      <guid>http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-safely-commit-vendor-dir-with-php-composer&#34;&gt;How to safely commit vendor dir with php Composer&lt;/h1&gt;
@@ -285,10 +285,10 @@ file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
     
     <item>
       <title>Setup email sending from PHP on Mac</title>
-      <link>https://ozzyczech.github.io/nabito.net/setup-email-sending-from-php-on-mac/</link>
+      <link>http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/</link>
       <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/setup-email-sending-from-php-on-mac/</guid>
+      <guid>http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;setup-email-sending-from-php-on-mac&#34;&gt;Setup email sending from PHP on Mac&lt;/h1&gt;
@@ -314,10 +314,10 @@ sudo /usr/sbin/postfix start
     
     <item>
       <title>Make WordPress globals more accessible</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</link>
+      <link>http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/make-wordpress-globals-more-accessible/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/</guid>
       <description>
 
 &lt;h1 id=&#34;make-wordpress-globals-more-accessible&#34;&gt;Make WordPress globals more accessible&lt;/h1&gt;
@@ -342,10 +342,10 @@ sudo /usr/sbin/postfix start
     
     <item>
       <title>Wordpress - register and setup widgets from PHP code</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/</link>
+      <link>http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/</link>
       <pubDate>Tue, 29 Jan 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/wordpress-register-and-setup-witgets-from-php-code/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/</guid>
       <description>
 
 &lt;h1 id=&#34;wordpress-register-and-setup-witgets-from-php-code&#34;&gt;Wordpress: register and setup witgets from PHP code&lt;/h1&gt;
@@ -434,10 +434,10 @@ $widgets-&amp;gt;add(
     
     <item>
       <title>WYSIWYG pro popis uživatele ve Wordpress</title>
-      <link>https://ozzyczech.github.io/nabito.net/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</link>
+      <link>http://blog.omdesign.cz/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</link>
       <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</guid>
+      <guid>http://blog.omdesign.cz/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/</guid>
       <description>
 
 &lt;h1 id=&#34;wysiwyg-pro-popis-uživatele-ve-wordpress&#34;&gt;WYSIWYG pro popis uživatele ve Wordpress&lt;/h1&gt;
@@ -495,10 +495,10 @@ new CustomUserProfile();
     
     <item>
       <title>Hash tags pro Wordpress</title>
-      <link>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</link>
+      <link>http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/</link>
       <pubDate>Sat, 15 Sep 2012 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/wordpress/hash-tags-pro-wordpress/</guid>
+      <guid>http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/</guid>
       <description>
 
 &lt;h1 id=&#34;hash-tags-pro-wordpress&#34;&gt;Hash tags pro Wordpress&lt;/h1&gt;
@@ -554,10 +554,10 @@ nahrazení všech tagů u postu nalezenými hashtagy.&lt;/p&gt;
     
     <item>
       <title>Zjištění práv k souboru nebo adresáři v PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</link>
+      <link>http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</link>
       <pubDate>Wed, 05 Sep 2012 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</guid>
+      <guid>http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/</guid>
       <description>
 
 &lt;h1 id=&#34;zjištění-práv-k-souboru-nebo-adresáři-v-php&#34;&gt;Zjištění práv k souboru nebo adresáři v PHP&lt;/h1&gt;
@@ -579,10 +579,10 @@ nahrazení všech tagů u postu nalezenými hashtagy.&lt;/p&gt;
     
     <item>
       <title>Jak okopírovat adresář s celým obsahem v PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/jak-okop%C3%ADrovat-adres%C3%A1%C5%99-s-cel%C3%BDm-obsahem-v-php/</link>
+      <link>http://blog.omdesign.cz/jak-okop%C3%ADrovat-adres%C3%A1%C5%99-s-cel%C3%BDm-obsahem-v-php/</link>
       <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/jak-okop%C3%ADrovat-adres%C3%A1%C5%99-s-cel%C3%BDm-obsahem-v-php/</guid>
+      <guid>http://blog.omdesign.cz/jak-okop%C3%ADrovat-adres%C3%A1%C5%99-s-cel%C3%BDm-obsahem-v-php/</guid>
       <description>
 
 &lt;h1 id=&#34;jak-okopírovat-adresář-s-celým-obsahem-v-php&#34;&gt;Jak okopírovat adresář s celým obsahem v PHP&lt;/h1&gt;
@@ -609,10 +609,10 @@ foreach (
     
     <item>
       <title>Výpočet hash objektu v PHP</title>
-      <link>https://ozzyczech.github.io/nabito.net/v%C3%BDpo%C4%8Det-hash-objektu-v-php/</link>
+      <link>http://blog.omdesign.cz/v%C3%BDpo%C4%8Det-hash-objektu-v-php/</link>
       <pubDate>Sun, 25 Sep 2011 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/v%C3%BDpo%C4%8Det-hash-objektu-v-php/</guid>
+      <guid>http://blog.omdesign.cz/v%C3%BDpo%C4%8Det-hash-objektu-v-php/</guid>
       <description>
 
 &lt;h1 id=&#34;výpočet-hash-objektu-v-php&#34;&gt;Výpočet hash objektu v PHP&lt;/h1&gt;

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Automator on nabito.net</title>
-    <link>https://ozzyczech.github.io/nabito.net/tags/automator/</link>
-    <description>Recent content in Automator on nabito.net</description>
+    <title>Automator on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/automator/</link>
+    <description>Recent content in Automator on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
     <lastBuildDate>Tue, 26 Mar 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ozzyczech.github.io/nabito.net/tags/automator/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.omdesign.cz/tags/automator/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Toggle Hidden Files in Finder</title>
-      <link>https://ozzyczech.github.io/nabito.net/toggle-hidden-files-in-finder/</link>
+      <link>http://blog.omdesign.cz/toggle-hidden-files-in-finder/</link>
       <pubDate>Tue, 26 Mar 2013 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>https://ozzyczech.github.io/nabito.net/toggle-hidden-files-in-finder/</guid>
+      <guid>http://blog.omdesign.cz/toggle-hidden-files-in-finder/</guid>
       <description>
 
 &lt;h1 id=&#34;toggle-hidden-files-in-finder&#34;&gt;Toggle Hidden Files in Finder&lt;/h1&gt;
