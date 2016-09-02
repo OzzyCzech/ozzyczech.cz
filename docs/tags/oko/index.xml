@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oko on Blog</title>
+    <title>Oko on blog.omdesign.cz</title>
     <link>http://blog.omdesign.cz/tags/oko/</link>
-    <description>Recent content in Oko on Blog</description>
+    <description>Recent content in Oko on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>

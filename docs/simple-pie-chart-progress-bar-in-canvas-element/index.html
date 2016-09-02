@@ -5,24 +5,45 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>Simple pie chart progress bar in canvas element</title>
-
+	<meta name="author" content="Roman Ožana">
+	<title>Simple pie chart progress bar in canvas element</title>	
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:title" content="Simple pie chart progress bar in canvas element"/>
+	<meta name="twitter:description" content="Simple pie chart progress bar in canvas element div.chart { position: relative; margin: 80px auto; width: 220px; height: 220px; } div.chart canvas { display: block; position: absolute; top: 0; left: 0; } div.chart span { color: #555; display: block; line-height: 220px; text-align: center; width: 220px; font-family: sans-serif; font-size: 40px; font-weight: 100; margin-left: 5px; } var el = document.getElementById(&#39;graph&#39;); // get canvas var options = { percent: el.getAttribute(&#39;data-percent&#39;) || 25, size:"/>
+	<meta name="twitter:site" content="@OzzyCzech"/>
+	<meta name="twitter:domain" content="http://blog.omdesign.cz/"/>
+	<meta name="twitter:creator" content="@OzzyCzech"/>
+	<meta property="og:title" content="Simple pie chart progress bar in canvas element" />
+	<meta property="og:description" content="Simple pie chart progress bar in canvas element div.chart { position: relative; margin: 80px auto; width: 220px; height: 220px; } div.chart canvas { display: block; position: absolute; top: 0; left: 0; } div.chart span { color: #555; display: block; line-height: 220px; text-align: center; width: 220px; font-family: sans-serif; font-size: 40px; font-weight: 100; margin-left: 5px; } var el = document.getElementById(&#39;graph&#39;); // get canvas var options = { percent: el.getAttribute(&#39;data-percent&#39;) || 25, size:" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://blog.omdesign.cz/simple-pie-chart-progress-bar-in-canvas-element/" />
+	<meta property="og:updated_time" content="2014-07-09 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:site_name" content="blog.omdesign.cz" />
+	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-07-09 00:00:00 &#43;0000 UTC" />
+	<meta property="article:section" content="posts" />
+	<meta property="article:tag" content="canvas" />
+	<meta property="article:tag" content="CSS" />
+	<meta property="article:tag" content="HTML5" />
+	<meta property="article:tag" content="js" />
+	<meta itemprop="name" content="Simple pie chart progress bar in canvas element">
+	<meta itemprop="description" content="Simple pie chart progress bar in canvas element div.chart { position: relative; margin: 80px auto; width: 220px; height: 220px; } div.chart canvas { display: block; position: absolute; top: 0; left: 0; } div.chart span { color: #555; display: block; line-height: 220px; text-align: center; width: 220px; font-family: sans-serif; font-size: 40px; font-weight: 100; margin-left: 5px; } var el = document.getElementById(&#39;graph&#39;); // get canvas var options = { percent: el.getAttribute(&#39;data-percent&#39;) || 25, size:">
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="wordCount" content="210">
+<!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz//js/app.js"></script>
-	
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+	<!-- Twitter boostrap -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	
-	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- Google code prettify -->
+	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -129,8 +150,8 @@
 </section>
 
 <div class="text-center">
-	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
-		Back to Homepage</a>
+	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
+		Go back</a>
 </div>
 
 

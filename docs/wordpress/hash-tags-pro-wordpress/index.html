@@ -5,24 +5,45 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>Hash tags pro Wordpress</title>
-
+	<meta name="author" content="Roman Ožana">
+	<title>Hash tags pro Wordpress</title>	
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:title" content="Hash tags pro Wordpress"/>
+	<meta name="twitter:description" content="Hash tags pro Wordpress Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy: &lt;?php /* Plugin Name: Hashs Description: Twitter like hash for Wordpress Version: 1.0 Author: Roman Ozana &lt;ozana@omdesign.cz&gt; Author URI: http://www.omdesign.cz/ */ class Hashs { const PATTERN = &#39;/\B#([^\s\W#]&#43;)/i&#39;; /** * @param string $content * @return string mixed */ public static function processContent($content) { return preg_replace(Hashs::PATTERN, &#39;&lt;a href=&quot;&#39; . get_home_url(null, &#39;/tag/$1&#39;) . &#39;&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; &#39;, $content); } /** * Auto hash tags * * @param $post_id * @return bool */ public static function addAutoTags($post_id) { $post = get_post($post_id); preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches); if (!isset($matches[1])) return; wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); // replace } } add_filter(&#39;the_content&#39;, array(&#39;Hashs&#39;, &#39;processContent&#39;), 1); add_action(&#39;save_post&#39;, array(&#39;Hashs&#39;, &#39;addAutoTags&#39;)); Povšimněte si zejména řádku wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); ten totiž ukládá nalezené tagy k postu."/>
+	<meta name="twitter:site" content="@OzzyCzech"/>
+	<meta name="twitter:domain" content="http://blog.omdesign.cz/"/>
+	<meta name="twitter:creator" content="@OzzyCzech"/>
+	<meta property="og:title" content="Hash tags pro Wordpress" />
+	<meta property="og:description" content="Hash tags pro Wordpress Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy: &lt;?php /* Plugin Name: Hashs Description: Twitter like hash for Wordpress Version: 1.0 Author: Roman Ozana &lt;ozana@omdesign.cz&gt; Author URI: http://www.omdesign.cz/ */ class Hashs { const PATTERN = &#39;/\B#([^\s\W#]&#43;)/i&#39;; /** * @param string $content * @return string mixed */ public static function processContent($content) { return preg_replace(Hashs::PATTERN, &#39;&lt;a href=&quot;&#39; . get_home_url(null, &#39;/tag/$1&#39;) . &#39;&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; &#39;, $content); } /** * Auto hash tags * * @param $post_id * @return bool */ public static function addAutoTags($post_id) { $post = get_post($post_id); preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches); if (!isset($matches[1])) return; wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); // replace } } add_filter(&#39;the_content&#39;, array(&#39;Hashs&#39;, &#39;processContent&#39;), 1); add_action(&#39;save_post&#39;, array(&#39;Hashs&#39;, &#39;addAutoTags&#39;)); Povšimněte si zejména řádku wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); ten totiž ukládá nalezené tagy k postu." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/" />
+	<meta property="og:updated_time" content="2012-09-15 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:site_name" content="blog.omdesign.cz" />
+	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2012-09-15 00:00:00 &#43;0000 UTC" />
+	<meta property="article:section" content="wordpress" />
+	<meta property="article:tag" content="hash" />
+	<meta property="article:tag" content="PHP" />
+	<meta property="article:tag" content="plugin" />
+	<meta property="article:tag" content="wordpress" />
+	<meta itemprop="name" content="Hash tags pro Wordpress">
+	<meta itemprop="description" content="Hash tags pro Wordpress Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy: &lt;?php /* Plugin Name: Hashs Description: Twitter like hash for Wordpress Version: 1.0 Author: Roman Ozana &lt;ozana@omdesign.cz&gt; Author URI: http://www.omdesign.cz/ */ class Hashs { const PATTERN = &#39;/\B#([^\s\W#]&#43;)/i&#39;; /** * @param string $content * @return string mixed */ public static function processContent($content) { return preg_replace(Hashs::PATTERN, &#39;&lt;a href=&quot;&#39; . get_home_url(null, &#39;/tag/$1&#39;) . &#39;&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; &#39;, $content); } /** * Auto hash tags * * @param $post_id * @return bool */ public static function addAutoTags($post_id) { $post = get_post($post_id); preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches); if (!isset($matches[1])) return; wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); // replace } } add_filter(&#39;the_content&#39;, array(&#39;Hashs&#39;, &#39;processContent&#39;), 1); add_action(&#39;save_post&#39;, array(&#39;Hashs&#39;, &#39;addAutoTags&#39;)); Povšimněte si zejména řádku wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); ten totiž ukládá nalezené tagy k postu.">
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="wordCount" content="158">
+<!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz//js/app.js"></script>
-	
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+	<!-- Twitter boostrap -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	
-	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- Google code prettify -->
+	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -96,8 +117,8 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 </section>
 
 <div class="text-center">
-	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
-		Back to Homepage</a>
+	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
+		Go back</a>
 </div>
 
 

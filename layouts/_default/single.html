@@ -1,12 +1,12 @@
 {{ partial "header.html" . }}
 
 <section class="container">
-	{{ .Render "article"}}
+	{{ .Render "article" }}
 </section>
 
 <div class="text-center">
-	<a href="{{ .Site.BaseURL  }}" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
-		Back to Homepage</a>
+	<a href="{{ .Site.BaseURL  }}" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
+		Go back</a>
 </div>
 
 {{ partial "footer.html" . }}

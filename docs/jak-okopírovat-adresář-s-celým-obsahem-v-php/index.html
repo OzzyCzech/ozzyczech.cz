@@ -5,24 +5,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>Jak okopírovat adresář s celým obsahem v PHP</title>
-
+	<meta name="author" content="Roman Ožana">
+	<title>Jak okopírovat adresář s celým obsahem v PHP</title>	
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:title" content="Jak okopírovat adresář s celým obsahem v PHP"/>
+	<meta name="twitter:description" content="Jak okopírovat adresář s celým obsahem v PHP Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí PHP iterátoru: $source = &quot;/foo/bar/dir&quot;; $dest= &quot;/dest/dir&quot;; foreach ( $iterator = new RecursiveIteratorIterator( new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST) as $item ) { if ($item-&gt;isDir()) { mkdir($dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName()); } else { copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName());"/>
+	<meta name="twitter:site" content="@OzzyCzech"/>
+	<meta name="twitter:domain" content="http://blog.omdesign.cz/"/>
+	<meta name="twitter:creator" content="@OzzyCzech"/>
+	<meta property="og:title" content="Jak okopírovat adresář s celým obsahem v PHP" />
+	<meta property="og:description" content="Jak okopírovat adresář s celým obsahem v PHP Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí PHP iterátoru: $source = &quot;/foo/bar/dir&quot;; $dest= &quot;/dest/dir&quot;; foreach ( $iterator = new RecursiveIteratorIterator( new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST) as $item ) { if ($item-&gt;isDir()) { mkdir($dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName()); } else { copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName());" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://blog.omdesign.cz/jak-okop%C3%ADrovat-adres%C3%A1%C5%99-s-cel%C3%BDm-obsahem-v-php/" />
+	<meta property="og:updated_time" content="2011-10-15 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:site_name" content="blog.omdesign.cz" />
+	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2011-10-15 00:00:00 &#43;0000 UTC" />
+	<meta property="article:section" content="posts" />
+	<meta property="article:tag" content="PHP" />
+	<meta itemprop="name" content="Jak okopírovat adresář s celým obsahem v PHP">
+	<meta itemprop="description" content="Jak okopírovat adresář s celým obsahem v PHP Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí PHP iterátoru: $source = &quot;/foo/bar/dir&quot;; $dest= &quot;/dest/dir&quot;; foreach ( $iterator = new RecursiveIteratorIterator( new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST) as $item ) { if ($item-&gt;isDir()) { mkdir($dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName()); } else { copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName());">
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="wordCount" content="72">
+<!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz//js/app.js"></script>
-	
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+	<!-- Twitter boostrap -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	
-	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- Google code prettify -->
+	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -61,8 +79,8 @@ foreach (
 </section>
 
 <div class="text-center">
-	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-chevron-left"></i>
-		Back to Homepage</a>
+	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
+		Go back</a>
 </div>
 
 
