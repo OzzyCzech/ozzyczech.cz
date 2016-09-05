@@ -1,14 +1,16 @@
 {{ partial "header.html" . }}
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{{ range .Paginator.Pages }}
-			{{ .Render "article" }}
-			{{ end }}
-			{{ template "_internal/pagination.html" . }}
-		</div>
-	</div>
-</div>
+<section class="container">
+	{{ $paginator := .Paginate .Data.Pages }}
+	{{ range $paginator.Pages }}
+	<article>
+		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Day }}. {{ index .Site.Params.Months (sub .Date.Month 1) }} {{ .Date.Year }}</time>
+		<h1><a href="{{ .Permalink }}"><div>{{ .Title }}</div></a></h1>
+		{{ .Content | replaceRE "<h1.*?>(.|\n)*?</h1>" "" | safeHTML }}
+	</article>
+	{{ end }}
+	{{ template "_internal/pagination.html" . }}
+</section>
 
+{{ partial "tags.html" . }}
 {{ partial "footer.html" . }}

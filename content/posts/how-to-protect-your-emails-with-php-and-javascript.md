@@ -20,5 +20,5 @@ function mail($email, $text = null) {
 }
 ```
 
- Sources: - [ Nine ways to obfuscate e-mail addresses compared](http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/)
-- and [Best Method for Email Obfuscation?](http://perishablepress.com/best-method-for-email-obfuscation/)
+- [Nine ways to obfuscate e-mail addresses compared](http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/)
+- [Best Method for Email Obfuscation?](http://perishablepress.com/best-method-for-email-obfuscation/)

@@ -17,16 +17,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2012-01-07 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2011-10-15 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2012-01-07 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2011-10-15 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/posts/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/posts/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -42,37 +42,20 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-			<article>
+<section class="container">
 	
-
-<h1 id="jak-spočítat-počet-řádků-kódu">Jak spočítat počet řádků kódu?</h1>
-
-<p>V mém příkladu počítám počet řádků PHP kódu:</p>
-
-<pre><code>grep -v '^ *$' `find . -iname &quot;*.php&quot;` | wc -l
-</code></pre>
-
-<p>Pro zajímavost takový Wordpress má více jak 250 000 řádků PHP.</p>
-
 	
-	<a href="http://blog.omdesign.cz/tags/bash">#bash</a>
-	
-	<time datetime="7016-08-17 70:00&#43;0000">7. 1. 2012</time>
-</article>
+	<article>
+		<time datetime="2011-10-15T00:00:00Z">15. Říjen 2011</time>
+		<h1><a href="http://blog.omdesign.cz/jak-okop%C3%ADrovat-adres%C3%A1%C5%99-s-cel%C3%BDm-obsahem-v-php/"><div>Jak okopírovat adresář s celým obsahem v PHP</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="jak-okopírovat-adresář-s-celým-obsahem-v-php">Jak okopírovat adresář s celým obsahem v PHP</h1>
 
 <p>Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí <a href="http://cz.php.net/manual/en/spl.iterators.php">PHP iterátoru</a>:</p>
 
@@ -92,17 +75,14 @@ foreach (
 }
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<time datetime="15106-08-1015 150:00&#43;0000">15. 10. 2011</time>
-</article>
+	<article>
+		<time datetime="2011-09-25T00:00:00Z">25. Září 2011</time>
+		<h1><a href="http://blog.omdesign.cz/v%C3%BDpo%C4%8Det-hash-objektu-v-php/"><div>Výpočet hash objektu v PHP</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="výpočet-hash-objektu-v-php">Výpočet hash objektu v PHP</h1>
 
 <p>Funkce <a href="http://php.net/manual/en/function.spl-object-hash.php">spl_object_hash()</a>
 má jednu <strong>nevýhodu</strong>, její výsledek se v čase mění. Pokud objekt naplníte
@@ -131,19 +111,14 @@ echo $bar;
 $hash = (string) $bar;
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/hash">#hash</a>
-	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<time datetime="25096-08-925 250:00&#43;0000">25. 9. 2011</time>
-</article>
+	<article>
+		<time datetime="2011-06-20T00:00:00Z">20. Červen 2011</time>
+		<h1><a href="http://blog.omdesign.cz/case-insensitive-in_array-v-php/"><div>Case insensitive in_array v PHP</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="case-insensitive-in-array-v-php">Case insensitive in_array v PHP</h1>
 
 <p>PHP funkce <a href="http://php.net/manual/en/function.in-array.php">in_array</a> je case
 sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a
@@ -175,17 +150,14 @@ function filterArrayValues($needle, $array) {
 print_r(filterArrayValues('a', $array)); // vypíše jen cE
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<time datetime="20066-08-620 200:00&#43;0000">20. 6. 2011</time>
-</article>
+	<article>
+		<time datetime="2011-04-13T00:00:00Z">13. Duben 2011</time>
+		<h1><a href="http://blog.omdesign.cz/snadn%C3%A9-p%C5%99ipojen%C3%AD-k-ftp-pomoc%C3%AD-php/"><div>Snadné připojení k FTP pomocí PHP</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="snadné-připojení-k-ftp-pomocí-php">Snadné připojení k FTP pomocí PHP</h1>
 
 <p>Mám v oblibě <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">zkrácený zápis</a> připojení k FTP.
 PHP tento <a href="http://php.net/manual/en/function.ftp-connect.php">způsob zápisu připojení</a>
@@ -211,17 +183,14 @@ function getFtpConnection($uri)
 
 <p>Výstupem funkce je samozřejmě ID připojení, se kterým pak můžete <a href="http://www.php.net/manual/en/ref.ftp.php">normálně pracovat</a> dál. Funkci najdete také zde: <a href="https://gist.github.com/998091">https://gist.github.com/998091</a></p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<time datetime="13046-08-413 130:00&#43;0000">13. 4. 2011</time>
-</article>
+	<article>
+		<time datetime="2011-03-27T00:00:00Z">27. Březen 2011</time>
+		<h1><a href="http://blog.omdesign.cz/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/"><div>Snadné vložené YouTube videa pomocí PHP</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="snadné-vložené-youtube-videa-pomocí-php">Snadné vložené YouTube videa pomocí PHP</h1>
 
 <p>Následující PHP kód zamění jakýkoliv odkazu na <a href="http://www.youtube.com/">YouTube</a> video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.</p>
 
@@ -240,19 +209,14 @@ echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
 echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<a href="http://blog.omdesign.cz/tags/youtube">#YouTube</a>
-	
-	<time datetime="27036-08-327 270:00&#43;0000">27. 3. 2011</time>
-</article>
+	<article>
+		<time datetime="2009-04-16T00:00:00Z">16. Duben 2009</time>
+		<h1><a href="http://blog.omdesign.cz/v%C3%BDznam-barev/"><div>Význam barev</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="význam-barev">Význam barev</h1>
 
 <p>Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete <a href="http://www.omdesign.cz" title="Internetové stránky">internetové stránky</a>, je na to potřeba pamatovat dvojnásob. Barva dokáže návštěvníka oslovit a navodit ten správný pocit. Barvy se obecně dělí na barvy teplé, studené a neutrální. <strong>Teplé barvy</strong> jsou založené na odstínech žluté, hnědé, zeleno žluté a oranžové. Teplé barvy svoji podstatou vzrušují, mají tendenci upoutat pozornost. Na pomezí mezi teplou a studenou barvou je možné přiřadit odstíny zelené a fialové. Záleží jak moc obsahují červené nebo modré (RGB). <strong>Studené barvy</strong> jsou založeny na odstínech modré, zelené, fialové, modro-zelené, modro-červené. Tyto barvy mají tendenci uklidňovat, tišit. Na rozdíl od teplých barev, se dají barvy studené celkem úspěšně aplikovat na velké plochy. Mezi <strong>neutrální barvy</strong> patří bílá, šedá a černá. Pak celá řada barev, které obsahují velké množství šedé (barvy tmav0). Neutrální barvy dokáží zvýšit atraktivitu teplých barev. Velké množství barev je znepokojující (vezměte si např. kolotoče). Pro webové stránky je <strong>lepší použít nižší množství</strong> barev (ideálně 3-4). Barvy jsou často a právem spojovány s konkrétními vlastnostmi (<a href="http://www.webdesign.org/web/web-design-basics/color-theory/color-psychology-quick-reference-cards.13826.html" title="Barvy a jejich význam">Psychologie barev</a>):</p>
 
@@ -272,19 +236,14 @@ echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
 
 <p>Modrá se tak logicky stává nejoblíbenější barvou firem (důvěra, klid, stabilita). Různé barvy se hodí k různým účelům. Například bílá je skvělá na pozadí, černá se zase používá pro text. Modrá dokáže dodat hloubku, červená dokáže upozornit atd. Všechno tohle mějte v hlavě (nebo na blogu :-)) pokud začínáte navrhovat web, komponujete mapu, připravujete reklamní letáky nebo se chystáte vymalovat byt.</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/webdesign">#webdesign</a>
-	
-	<a href="http://blog.omdesign.cz/tags/barvy">#barvy</a>
-	
-	<time datetime="16046-08-416 160:00&#43;0000">16. 4. 2009</time>
-</article>
+	<article>
+		<time datetime="2009-02-16T00:00:00Z">16. Únor 2009</time>
+		<h1><a href="http://blog.omdesign.cz/pro%C4%8D-je-hodnocen%C3%AD-hv%C4%9Bzdi%C4%8Dkama-blbost/"><div>Proč je hodnocení hvězdičkama blbost</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="proč-je-hodnocení-hvězdičkama-blbost">Proč je hodnocení hvězdičkama blbost</h1>
 
 <p><img src="http://grafikdesign.files.wordpress.com/2008/01/rating-sample.gif" alt="Star Rating" title="star-rating.gif" /></p>
 
@@ -306,19 +265,14 @@ kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
 
 <p>Tento špatný koncept používá například: <a href="http://www.opensourcecms.com/">http://www.opensourcecms.com/</a>.</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/webdesign">#webdesign</a>
-	
-	<a href="http://blog.omdesign.cz/tags/ux">#ux</a>
-	
-	<time datetime="16026-08-216 160:00&#43;0000">16. 2. 2009</time>
-</article>
+	<article>
+		<time datetime="2008-12-05T00:00:00Z">5. Prosinec 2008</time>
+		<h1><a href="http://blog.omdesign.cz/parkinson%C5%AFv-z%C3%A1kon/"><div>Parkinsonův zákon</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="parkinsonův-zákon">Parkinsonův zákon</h1>
 
 <p>Parkinsonův zákon, nebo spíš zákony byly poprvé vydán v roce 1957. Jejich autorem je anglický profesor <a href="http://en.wikipedia.org/wiki/C._Northcote_Parkinson" title="C. Northcote Parkinson">Cyril Northcote Parkinson</a>. Tři nejpovedenější zákony praví:</p>
 
@@ -330,19 +284,14 @@ kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
 
 <p>Nejvíce se mi samozřejmě líbí zákon první. V překladu to znamená, že pokud na něco dostanete týden, budete to dělat týden. Pokud na to dostanete měsíc, budete to dělat přesně měsíc. Dalo by se to popsat, něco jako rozpínavost práce. Navíc čím více času něčemu věnujete, stává se to komplikovanějším a mnohdy také nepoužitelným. Pro příklady nemusíte chodit daleko, zkuste si vyplnit některé formuláře státní správy. Další oblast kde tento zákon bezezbytku platí je IT. Překlad těchto zákonů můžete <a href="http://www.kosmas.cz/knihy/108453/zakony-profesora-parkinsona/ &quot;Kupte si jej :">sehnat i u nás</a>&rdquo;).</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/parkinsons-law">#parkinsons-law</a>
-	
-	<a href="http://blog.omdesign.cz/tags/lifehacker">#lifehacker</a>
-	
-	<time datetime="5126-08-125 50:00&#43;0000">5. 12. 2008</time>
-</article>
+	<article>
+		<time datetime="2008-08-12T00:00:00Z">12. Srpen 2008</time>
+		<h1><a href="http://blog.omdesign.cz/tik-v-oku/"><div>Tik v oku</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="tik-v-oku">Tik v oku</h1>
 
 <p>Projevuje se jemným, ale častým a intenzivním, <strong>škubáním ve víčku oka</strong>. Způsobuje ho nejčastěji <strong>přepracování</strong>, nevyspání, <strong>nepřiměřený stres</strong> (nervy) nebo konzumace lehkých drog. Já k tomu přidávám, nevhodný monitor, nevhodné osvětlení, vnější rušivé elementy (hluk atd.) a častá práce u počítače. Trvání tohoto problému je různé, odhadem je to <strong>od 2 do 8 týdnů</strong>. Jak s tím bojovat:</p>
 
@@ -356,16 +305,9 @@ kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
 
 <p>Nejlepším <strong>vitamínem je B12</strong> - k dostání v lékárně v podobě B-Komplex (Forte). Můžete konzumovat od 1 do 3 tablet denně. Výhodou B-komplex je to že neobsahuje jen B12 ale celou skupinu vitamínů B. Vitamín B12 také najdete v rybím tuku a nebo pivovarnických kvasnicích. Dalším vitamínem, který pomáhá je <strong>magnézium (hořčík)</strong>. Pozor ať se nepředávkujete, působí to totiž i na srdce. Můžete si jej koupit v lékárně, ale mnohdy stačí i vhodná minerálka nebo banány. Když nic z toho nepomůže, bude asi lepší zajít za doktorem. Většinou to ale zmizí stejně rychle jak to příjde. Máte osobní <strong>zkušenost s tímto problémem</strong>?.</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/zdrav%C3%AD">#zdraví</a>
 	
-	<a href="http://blog.omdesign.cz/tags/oko">#oko</a>
-	
-	<time datetime="12086-08-812 120:00&#43;0000">12. 8. 2008</time>
-</article>
-
-			
-			
     
     <ul class="pagination">
         
@@ -401,8 +343,148 @@ kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
         
     </ul>
     
-		</div>
-	</div>
+</section>
+
+<div class="container tags">
+	
+	<a href="http://blog.omdesign.cz/tags/ajax" class="tag">#ajax</a>
+	
+	<a href="http://blog.omdesign.cz/tags/angular" class="tag">#angular</a>
+	
+	<a href="http://blog.omdesign.cz/tags/antispam" class="tag">#antispam</a>
+	
+	<a href="http://blog.omdesign.cz/tags/archive" class="tag">#archive</a>
+	
+	<a href="http://blog.omdesign.cz/tags/atom" class="tag">#atom</a>
+	
+	<a href="http://blog.omdesign.cz/tags/auto" class="tag">#auto</a>
+	
+	<a href="http://blog.omdesign.cz/tags/automator" class="tag">#automator</a>
+	
+	<a href="http://blog.omdesign.cz/tags/barvy" class="tag">#barvy</a>
+	
+	<a href="http://blog.omdesign.cz/tags/bash" class="tag">#bash</a>
+	
+	<a href="http://blog.omdesign.cz/tags/boostrap" class="tag">#boostrap</a>
+	
+	<a href="http://blog.omdesign.cz/tags/brew" class="tag">#brew</a>
+	
+	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
+	
+	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
+	
+	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
+	
+	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
+	
+	<a href="http://blog.omdesign.cz/tags/drive" class="tag">#drive</a>
+	
+	<a href="http://blog.omdesign.cz/tags/email" class="tag">#email</a>
+	
+	<a href="http://blog.omdesign.cz/tags/excerpt" class="tag">#excerpt</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ftp" class="tag">#ftp</a>
+	
+	<a href="http://blog.omdesign.cz/tags/git" class="tag">#git</a>
+	
+	<a href="http://blog.omdesign.cz/tags/github" class="tag">#github</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hack" class="tag">#hack</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hash" class="tag">#hash</a>
+	
+	<a href="http://blog.omdesign.cz/tags/heartbleed" class="tag">#heartbleed</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hermel%C3%ADn" class="tag">#hermelín</a>
+	
+	<a href="http://blog.omdesign.cz/tags/how-to" class="tag">#how-to</a>
+	
+	<a href="http://blog.omdesign.cz/tags/howto" class="tag">#howto</a>
+	
+	<a href="http://blog.omdesign.cz/tags/html" class="tag">#html</a>
+	
+	<a href="http://blog.omdesign.cz/tags/html5" class="tag">#html5</a>
+	
+	<a href="http://blog.omdesign.cz/tags/internet" class="tag">#internet</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ios" class="tag">#ios</a>
+	
+	<a href="http://blog.omdesign.cz/tags/iphone" class="tag">#iphone</a>
+	
+	<a href="http://blog.omdesign.cz/tags/js" class="tag">#js</a>
+	
+	<a href="http://blog.omdesign.cz/tags/json" class="tag">#json</a>
+	
+	<a href="http://blog.omdesign.cz/tags/lifehacker" class="tag">#lifehacker</a>
+	
+	<a href="http://blog.omdesign.cz/tags/mac" class="tag">#mac</a>
+	
+	<a href="http://blog.omdesign.cz/tags/meta" class="tag">#meta</a>
+	
+	<a href="http://blog.omdesign.cz/tags/movies" class="tag">#movies</a>
+	
+	<a href="http://blog.omdesign.cz/tags/nodejs" class="tag">#nodejs</a>
+	
+	<a href="http://blog.omdesign.cz/tags/npm" class="tag">#npm</a>
+	
+	<a href="http://blog.omdesign.cz/tags/oauth" class="tag">#oauth</a>
+	
+	<a href="http://blog.omdesign.cz/tags/oko" class="tag">#oko</a>
+	
+	<a href="http://blog.omdesign.cz/tags/openssl" class="tag">#openssl</a>
+	
+	<a href="http://blog.omdesign.cz/tags/osx" class="tag">#osx</a>
+	
+	<a href="http://blog.omdesign.cz/tags/parkinsons-law" class="tag">#parkinsons-law</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pear" class="tag">#pear</a>
+	
+	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
+	
+	<a href="http://blog.omdesign.cz/tags/plugin" class="tag">#plugin</a>
+	
+	<a href="http://blog.omdesign.cz/tags/protip" class="tag">#protip</a>
+	
+	<a href="http://blog.omdesign.cz/tags/p%C5%99epis-auta" class="tag">#přepis-auta</a>
+	
+	<a href="http://blog.omdesign.cz/tags/rebase" class="tag">#rebase</a>
+	
+	<a href="http://blog.omdesign.cz/tags/recepty" class="tag">#recepty</a>
+	
+	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
+	
+	<a href="http://blog.omdesign.cz/tags/shell" class="tag">#shell</a>
+	
+	<a href="http://blog.omdesign.cz/tags/student" class="tag">#student</a>
+	
+	<a href="http://blog.omdesign.cz/tags/svg" class="tag">#svg</a>
+	
+	<a href="http://blog.omdesign.cz/tags/terminal" class="tag">#terminal</a>
+	
+	<a href="http://blog.omdesign.cz/tags/tip" class="tag">#tip</a>
+	
+	<a href="http://blog.omdesign.cz/tags/todo" class="tag">#todo</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ty%C4%8Dinky" class="tag">#tyčinky</a>
+	
+	<a href="http://blog.omdesign.cz/tags/user" class="tag">#user</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ux" class="tag">#ux</a>
+	
+	<a href="http://blog.omdesign.cz/tags/webdesign" class="tag">#webdesign</a>
+	
+	<a href="http://blog.omdesign.cz/tags/wordpress" class="tag">#wordpress</a>
+	
+	<a href="http://blog.omdesign.cz/tags/wysiwyg" class="tag">#wysiwyg</a>
+	
+	<a href="http://blog.omdesign.cz/tags/xcode" class="tag">#xcode</a>
+	
+	<a href="http://blog.omdesign.cz/tags/youtube" class="tag">#youtube</a>
+	
+	<a href="http://blog.omdesign.cz/tags/zamy%C5%A1len%C3%AD" class="tag">#zamyšlení</a>
+	
+	<a href="http://blog.omdesign.cz/tags/zdrav%C3%AD" class="tag">#zdraví</a>
+	
 </div>
 
 
@@ -418,3 +500,4 @@ kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
 
 </body>
 </html>
+

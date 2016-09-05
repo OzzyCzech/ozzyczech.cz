@@ -30,7 +30,7 @@
 	<meta property="article:tag" content="bash" />
 	<meta itemprop="name" content="How to clean flash drive before unmount on Mac">
 	<meta itemprop="description" content="How to clean flash drive before unmount on Mac How to clean flash drive and delete all hidden (dot) files on mac before unmount? It&rsquo;s simple, save follow commands as flash: #!/bin/bash if [ -n &quot;$1&quot; ]; then read -r -p &quot;Clean /Volumes/$1/ and unmount? [y/N] &quot; response if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then find /Volumes/$1/ -name &#39;._*&#39; -type f -delete rm -rf /Volumes/$1/.Spotlight-V100/ rm -rf /Volumes/$1/.Trashes/ diskutil unmount /Volumes/$1/ echo &quot;Done...&quot; fi else echo &quot;Flash drive name missing&quot; fi Then change the access mode of a file chmod &#43;x flash.">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="107">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -45,12 +45,14 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
 <section class="container">
 	<article>
+	<time datetime="2013-12-21T00:00:00Z">21. Prosinec 2013</time>
 	
 
 <h1 id="how-to-clean-flash-drive-before-unmount-on-mac">How to clean flash drive before unmount on Mac</h1>
@@ -76,16 +78,17 @@ fi
 <p>Then change the access mode of a file <code>chmod +x flash</code>. To unmount a clean flash drive just run
 <code>./flash Flashka</code> (Flashka is name od drive).</p>
 
+	<div class="tags">
 	
-	<a href="http://blog.omdesign.cz/tags/drive">#drive</a>
+		<a href="http://blog.omdesign.cz/tags/drive" class="tag">#drive</a>
 	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
+		<a href="http://blog.omdesign.cz/tags/mac" class="tag">#mac</a>
 	
-	<a href="http://blog.omdesign.cz/tags/tip">#tip</a>
+		<a href="http://blog.omdesign.cz/tags/tip" class="tag">#tip</a>
 	
-	<a href="http://blog.omdesign.cz/tags/bash">#bash</a>
+		<a href="http://blog.omdesign.cz/tags/bash" class="tag">#bash</a>
 	
-	<time datetime="21126-08-1221 210:00&#43;0000">21. 12. 2013</time>
+	</div>
 </article>
 
 </section>

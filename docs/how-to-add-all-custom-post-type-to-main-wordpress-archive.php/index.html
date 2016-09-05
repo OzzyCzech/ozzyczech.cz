@@ -30,7 +30,7 @@
 	<meta property="article:tag" content="wordpress" />
 	<meta itemprop="name" content="How to add all custom post type to main Wordpress archive.php">
 	<meta itemprop="description" content="How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts );">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="75">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -45,12 +45,14 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
 <section class="container">
 	<article>
+	<time datetime="2014-07-24T00:00:00Z">24. Červenec 2014</time>
 	
 
 <h1 id="how-to-add-all-custom-post-type-to-main-wordpress-archive-php">How to add all custom post type to main Wordpress archive.php</h1>
@@ -77,16 +79,17 @@
 );
 </code></pre>
 
+	<div class="tags">
 	
-	<a href="http://blog.omdesign.cz/tags/archive">#archive</a>
+		<a href="http://blog.omdesign.cz/tags/archive" class="tag">#archive</a>
 	
-	<a href="http://blog.omdesign.cz/tags/hack">#hack</a>
+		<a href="http://blog.omdesign.cz/tags/hack" class="tag">#hack</a>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
+		<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
 	
-	<a href="http://blog.omdesign.cz/tags/wordpress">#wordpress</a>
+		<a href="http://blog.omdesign.cz/tags/wordpress" class="tag">#wordpress</a>
 	
-	<time datetime="24076-08-724 240:00&#43;0000">24. 7. 2014</time>
+	</div>
 </article>
 
 </section>

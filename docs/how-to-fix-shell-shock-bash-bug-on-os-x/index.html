@@ -29,7 +29,7 @@
 	<meta property="article:tag" content="shell" />
 	<meta itemprop="name" content="How to fix “Shell Shock” bash bug on OS X">
 	<meta itemprop="description" content="How to fix “Shell Shock” bash bug on OS X First try if your bash version it’s vulnerable. Go to terminal and run: $ env x=&#39;() { :;}; echo vulnerable&#39; bash -c &#39;echo hello&#39; Follow output is an example of a non-vulnerable bash version. bash: warning: x: ignoring function definition attempt bash: error importing function definition for `x&#39; hello If you see the word vulnerable in the output of that command your bash is vulnerable and you should update.">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="222">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -44,12 +44,14 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
 <section class="container">
 	<article>
+	<time datetime="2014-09-25T00:00:00Z">25. Září 2014</time>
 	
 
 <h1 id="how-to-fix-shell-shock-bash-bug-on-os-x">How to fix “Shell Shock” bash bug on OS X</h1>
@@ -103,14 +105,15 @@ $ brew link readline --force
 
 <p><strong>Tip</strong>: If you accidentally close <strong>Terminal</strong> before getting above errors and your bash just stop working at all. Go to Terminal preferences<code>⌘+,</code> and change bash version to older e.g.<code>/usr/local/Cellar/bash/4.3.18/bin/bash</code> then quit Terminal <code>⌘+Q</code>. Upgrade readline and change path back to <code>/usr/local/bin/bash</code> and restart Terminal again.</p>
 
+	<div class="tags">
 	
-	<a href="http://blog.omdesign.cz/tags/bash">#bash</a>
+		<a href="http://blog.omdesign.cz/tags/bash" class="tag">#bash</a>
 	
-	<a href="http://blog.omdesign.cz/tags/brew">#brew</a>
+		<a href="http://blog.omdesign.cz/tags/brew" class="tag">#brew</a>
 	
-	<a href="http://blog.omdesign.cz/tags/shell">#shell</a>
+		<a href="http://blog.omdesign.cz/tags/shell" class="tag">#shell</a>
 	
-	<time datetime="25096-08-925 250:00&#43;0000">25. 9. 2014</time>
+	</div>
 </article>
 
 </section>

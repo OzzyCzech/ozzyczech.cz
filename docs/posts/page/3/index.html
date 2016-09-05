@@ -17,16 +17,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2013-07-24 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-05-14 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-07-24 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-05-14 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/posts/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/posts/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -42,70 +42,20 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-			<article>
+<section class="container">
 	
-
-<h1 id="how-to-safely-commit-vendor-dir-with-php-composer">How to safely commit vendor dir with php Composer</h1>
-
-<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
-- I will work on application and my packages together.
-- I need a simple way how to commit and publish new version of packages.
-- Workflow need to be simple (mimimum of commands)</p>
-
-<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
-
-<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
-
-<pre><code>&quot;scripts&quot;: {
- &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
- &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
-},
-</code></pre>
-
-<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
-
-<p>When you are using tagged releases (no dev versions) of package then run:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
-</code></pre>
-
-<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
-</code></pre>
-
-<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
-
-<ul>
-<li>Large VCS repository size and diffs when you update code.</li>
-<li>Duplication of the history of all your dependencies in your own VCS.</li>
-<li>There can be conflicts in commits especially when you work in larger team.</li>
-<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
-</ul>
-
 	
-	<a href="http://blog.omdesign.cz/tags/composer">#composer</a>
-	
-	<a href="http://blog.omdesign.cz/tags/git">#git</a>
-	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<time datetime="24076-08-724 240:00&#43;0000">24. 7. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-05-14T00:00:00Z">14. Květen 2013</time>
+		<h1><a href="http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/"><div>Setup email sending from PHP on Mac</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="setup-email-sending-from-php-on-mac">Setup email sending from PHP on Mac</h1>
 
 <p>First write in terminal: <code>which sendmail</code> wlll return path to sendmail app (in my case <code>/usr/sbin/sendmail</code>). Then open <code>php.ini</code> file and setup:</p>
 
@@ -124,42 +74,28 @@ sudo /usr/sbin/postfix start
 <pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/email">#email</a>
-	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
-	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<time datetime="14056-08-514 140:00&#43;0000">14. 5. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
+		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="how-to-detect-retina-display-in-css">How to detect Retina display in CSS?</h1>
 
 <pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
   /* it's retina yeah! */
 }
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/css">#CSS</a>
-	
-	<a href="http://blog.omdesign.cz/tags/howto">#howto</a>
-	
-	<a href="http://blog.omdesign.cz/tags/retina">#retina</a>
-	
-	<time datetime="27036-08-327 270:00&#43;0000">27. 3. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-03-26T00:00:00Z">26. Březen 2013</time>
+		<h1><a href="http://blog.omdesign.cz/toggle-hidden-files-in-finder/"><div>Toggle Hidden Files in Finder</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="toggle-hidden-files-in-finder">Toggle Hidden Files in Finder</h1>
 
 <p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
 
@@ -175,62 +111,37 @@ killall Finder
 
 <p>Save application. From now can Tooggle</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/automator">#automator</a>
-	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
-	
-	<a href="http://blog.omdesign.cz/tags/osx">#osx</a>
-	
-	<a href="http://blog.omdesign.cz/tags/shell">#shell</a>
-	
-	<time datetime="26036-08-326 260:00&#43;0000">26. 3. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-03-11T00:00:00Z">11. Březen 2013</time>
+		<h1><a href="http://blog.omdesign.cz/list-all-mounted-drives-on-mac/"><div>List all mounted drives on mac</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="list-all-mounted-drives-on-mac">List all mounted drives on mac</h1>
 
 <p>It&rsquo;s simple: <code>df -h</code></p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
-	
-	<a href="http://blog.omdesign.cz/tags/terminal">#terminal</a>
-	
-	<time datetime="11036-08-311 110:00&#43;0000">11. 3. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-01-31T00:00:00Z">31. Leden 2013</time>
+		<h1><a href="http://blog.omdesign.cz/run-iphone-simulator-without-xcode/"><div>Run iPhone simulator without XCode</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="run-iphone-simulator-without-xcode">Run iPhone simulator without XCode</h1>
 
 <pre><code>open -a &quot;iPhone Simulator&quot;
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/ios">#ios</a>
-	
-	<a href="http://blog.omdesign.cz/tags/osx">#osx</a>
-	
-	<a href="http://blog.omdesign.cz/tags/iphone">#iPhone</a>
-	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
-	
-	<a href="http://blog.omdesign.cz/tags/xcode">#xcode</a>
-	
-	<time datetime="31016-08-131 310:00&#43;0000">31. 1. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-01-08T00:00:00Z">8. Leden 2013</time>
+		<h1><a href="http://blog.omdesign.cz/seznam-v%C4%9Bc%C3%AD-kter%C3%A9-internet-zabil/"><div>Seznam věcí které Internet zabil</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="seznam-věcí-které-internet-zabil">Seznam věcí které Internet zabil</h1>
 
 <p>Co všechno Internet zabil nebo zabíjí?</p>
 
@@ -249,19 +160,14 @@ killall Finder
 <li>Tištěné mapy</li>
 </ol>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/internet">#internet</a>
-	
-	<a href="http://blog.omdesign.cz/tags/zamy%C5%A1len%C3%AD">#zamyšlení</a>
-	
-	<time datetime="8016-08-18 80:00&#43;0000">8. 1. 2013</time>
-</article>
+	<article>
+		<time datetime="2012-10-29T00:00:00Z">29. Říjen 2012</time>
+		<h1><a href="http://blog.omdesign.cz/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/"><div>WYSIWYG pro popis uživatele ve Wordpress</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="wysiwyg-pro-popis-uživatele-ve-wordpress">WYSIWYG pro popis uživatele ve Wordpress</h1>
 
 <p>Následující kratičký kód zobrazí #WYSIWYG editor u popisu autora u uživatelského profilu: Kód stačí přidat do <code>function.php</code> ve vašem template:</p>
 
@@ -312,21 +218,14 @@ new CustomUserProfile();
 
 <p>#wordpress #php</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<a href="http://blog.omdesign.cz/tags/wordpress">#wordpress</a>
-	
-	<a href="http://blog.omdesign.cz/tags/wysiwyg">#WYSIWYG</a>
-	
-	<time datetime="29106-08-1029 290:00&#43;0000">29. 10. 2012</time>
-</article>
+	<article>
+		<time datetime="2012-09-05T00:00:00Z">5. Září 2012</time>
+		<h1><a href="http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/"><div>Zjištění práv k souboru nebo adresáři v PHP</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="zjištění-práv-k-souboru-nebo-adresáři-v-php">Zjištění práv k souboru nebo adresáři v PHP</h1>
 
 <pre><code>function getPermisions($file) {
   return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : '0000';
@@ -341,19 +240,14 @@ new CustomUserProfile();
 }
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<a href="http://blog.omdesign.cz/tags/tip">#tip</a>
-	
-	<time datetime="5096-08-95 50:00&#43;0000">5. 9. 2012</time>
-</article>
+	<article>
+		<time datetime="2012-06-14T00:00:00Z">14. Červen 2012</time>
+		<h1><a href="http://blog.omdesign.cz/jak-spr%C3%A1vn%C4%9B-p%C5%99epsat-ojet%C3%A9-auto/"><div>Jak správně přepsat ojeté auto</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="jak-správně-přepsat-ojeté-auto">Jak správně přepsat ojeté auto</h1>
 
 <p>Popíšu jak to probíhalo u mě. Kupoval jsem ojeté auto přímo od majitele. Platil jsem hotově bez úvěru. Auto má platnou technickou prohlídku a emise do roku 2015.</p>
 
@@ -386,20 +280,25 @@ new CustomUserProfile();
 
 <p>Popis výměny dálniční známky najdete na stránkách <a href="http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm">České Pošty</a>. #posta #auto #how-to #registrace</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/auto">#auto</a>
-	
-	<a href="http://blog.omdesign.cz/tags/how-to">#how-to</a>
-	
-	<a href="http://blog.omdesign.cz/tags/p%C5%99epis-auta">#přepis-auta</a>
-	
-	<a href="http://blog.omdesign.cz/tags/lifehacker">#lifehacker</a>
-	
-	<time datetime="14066-08-614 140:00&#43;0000">14. 6. 2012</time>
-</article>
+	<article>
+		<time datetime="2012-01-07T00:00:00Z">7. Leden 2012</time>
+		<h1><a href="http://blog.omdesign.cz/jak-spo%C4%8D%C3%ADtat-po%C4%8Det-%C5%99%C3%A1dk%C5%AF-k%C3%B3du/"><div>Jak spočítat počet řádků kódu?</div></a></h1>
+		
 
-			
-			
+
+
+<p>V mém příkladu počítám počet řádků PHP kódu:</p>
+
+<pre><code>grep -v '^ *$' `find . -iname &quot;*.php&quot;` | wc -l
+</code></pre>
+
+<p>Pro zajímavost takový Wordpress má více jak 250 000 řádků PHP.</p>
+
+	</article>
+	
+	
     
     <ul class="pagination">
         
@@ -435,8 +334,148 @@ new CustomUserProfile();
         
     </ul>
     
-		</div>
-	</div>
+</section>
+
+<div class="container tags">
+	
+	<a href="http://blog.omdesign.cz/tags/ajax" class="tag">#ajax</a>
+	
+	<a href="http://blog.omdesign.cz/tags/angular" class="tag">#angular</a>
+	
+	<a href="http://blog.omdesign.cz/tags/antispam" class="tag">#antispam</a>
+	
+	<a href="http://blog.omdesign.cz/tags/archive" class="tag">#archive</a>
+	
+	<a href="http://blog.omdesign.cz/tags/atom" class="tag">#atom</a>
+	
+	<a href="http://blog.omdesign.cz/tags/auto" class="tag">#auto</a>
+	
+	<a href="http://blog.omdesign.cz/tags/automator" class="tag">#automator</a>
+	
+	<a href="http://blog.omdesign.cz/tags/barvy" class="tag">#barvy</a>
+	
+	<a href="http://blog.omdesign.cz/tags/bash" class="tag">#bash</a>
+	
+	<a href="http://blog.omdesign.cz/tags/boostrap" class="tag">#boostrap</a>
+	
+	<a href="http://blog.omdesign.cz/tags/brew" class="tag">#brew</a>
+	
+	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
+	
+	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
+	
+	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
+	
+	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
+	
+	<a href="http://blog.omdesign.cz/tags/drive" class="tag">#drive</a>
+	
+	<a href="http://blog.omdesign.cz/tags/email" class="tag">#email</a>
+	
+	<a href="http://blog.omdesign.cz/tags/excerpt" class="tag">#excerpt</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ftp" class="tag">#ftp</a>
+	
+	<a href="http://blog.omdesign.cz/tags/git" class="tag">#git</a>
+	
+	<a href="http://blog.omdesign.cz/tags/github" class="tag">#github</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hack" class="tag">#hack</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hash" class="tag">#hash</a>
+	
+	<a href="http://blog.omdesign.cz/tags/heartbleed" class="tag">#heartbleed</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hermel%C3%ADn" class="tag">#hermelín</a>
+	
+	<a href="http://blog.omdesign.cz/tags/how-to" class="tag">#how-to</a>
+	
+	<a href="http://blog.omdesign.cz/tags/howto" class="tag">#howto</a>
+	
+	<a href="http://blog.omdesign.cz/tags/html" class="tag">#html</a>
+	
+	<a href="http://blog.omdesign.cz/tags/html5" class="tag">#html5</a>
+	
+	<a href="http://blog.omdesign.cz/tags/internet" class="tag">#internet</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ios" class="tag">#ios</a>
+	
+	<a href="http://blog.omdesign.cz/tags/iphone" class="tag">#iphone</a>
+	
+	<a href="http://blog.omdesign.cz/tags/js" class="tag">#js</a>
+	
+	<a href="http://blog.omdesign.cz/tags/json" class="tag">#json</a>
+	
+	<a href="http://blog.omdesign.cz/tags/lifehacker" class="tag">#lifehacker</a>
+	
+	<a href="http://blog.omdesign.cz/tags/mac" class="tag">#mac</a>
+	
+	<a href="http://blog.omdesign.cz/tags/meta" class="tag">#meta</a>
+	
+	<a href="http://blog.omdesign.cz/tags/movies" class="tag">#movies</a>
+	
+	<a href="http://blog.omdesign.cz/tags/nodejs" class="tag">#nodejs</a>
+	
+	<a href="http://blog.omdesign.cz/tags/npm" class="tag">#npm</a>
+	
+	<a href="http://blog.omdesign.cz/tags/oauth" class="tag">#oauth</a>
+	
+	<a href="http://blog.omdesign.cz/tags/oko" class="tag">#oko</a>
+	
+	<a href="http://blog.omdesign.cz/tags/openssl" class="tag">#openssl</a>
+	
+	<a href="http://blog.omdesign.cz/tags/osx" class="tag">#osx</a>
+	
+	<a href="http://blog.omdesign.cz/tags/parkinsons-law" class="tag">#parkinsons-law</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pear" class="tag">#pear</a>
+	
+	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
+	
+	<a href="http://blog.omdesign.cz/tags/plugin" class="tag">#plugin</a>
+	
+	<a href="http://blog.omdesign.cz/tags/protip" class="tag">#protip</a>
+	
+	<a href="http://blog.omdesign.cz/tags/p%C5%99epis-auta" class="tag">#přepis-auta</a>
+	
+	<a href="http://blog.omdesign.cz/tags/rebase" class="tag">#rebase</a>
+	
+	<a href="http://blog.omdesign.cz/tags/recepty" class="tag">#recepty</a>
+	
+	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
+	
+	<a href="http://blog.omdesign.cz/tags/shell" class="tag">#shell</a>
+	
+	<a href="http://blog.omdesign.cz/tags/student" class="tag">#student</a>
+	
+	<a href="http://blog.omdesign.cz/tags/svg" class="tag">#svg</a>
+	
+	<a href="http://blog.omdesign.cz/tags/terminal" class="tag">#terminal</a>
+	
+	<a href="http://blog.omdesign.cz/tags/tip" class="tag">#tip</a>
+	
+	<a href="http://blog.omdesign.cz/tags/todo" class="tag">#todo</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ty%C4%8Dinky" class="tag">#tyčinky</a>
+	
+	<a href="http://blog.omdesign.cz/tags/user" class="tag">#user</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ux" class="tag">#ux</a>
+	
+	<a href="http://blog.omdesign.cz/tags/webdesign" class="tag">#webdesign</a>
+	
+	<a href="http://blog.omdesign.cz/tags/wordpress" class="tag">#wordpress</a>
+	
+	<a href="http://blog.omdesign.cz/tags/wysiwyg" class="tag">#wysiwyg</a>
+	
+	<a href="http://blog.omdesign.cz/tags/xcode" class="tag">#xcode</a>
+	
+	<a href="http://blog.omdesign.cz/tags/youtube" class="tag">#youtube</a>
+	
+	<a href="http://blog.omdesign.cz/tags/zamy%C5%A1len%C3%AD" class="tag">#zamyšlení</a>
+	
+	<a href="http://blog.omdesign.cz/tags/zdrav%C3%AD" class="tag">#zdraví</a>
+	
 </div>
 
 
@@ -452,3 +491,4 @@ new CustomUserProfile();
 
 </body>
 </html>
+

@@ -28,7 +28,7 @@
 	<meta property="article:tag" content="PHP" />
 	<meta itemprop="name" content="Výpočet hash objektu v PHP">
 	<meta itemprop="description" content="Výpočet hash objektu v PHP Funkce spl_object_hash() má jednu nevýhodu, její výsledek se v čase mění. Pokud objekt naplníte stejnými hodnotami, dostanete při dvou requestech dva různé výsledky. Což nemusí být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeho vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat například takto: class Foo { private $p; public function setProperty($p) { $this-&gt;p = $p; } // vypocita hash objektu na">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="98">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -43,12 +43,14 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
 <section class="container">
 	<article>
+	<time datetime="2011-09-25T00:00:00Z">25. Září 2011</time>
 	
 
 <h1 id="výpočet-hash-objektu-v-php">Výpočet hash objektu v PHP</h1>
@@ -80,12 +82,13 @@ echo $bar;
 $hash = (string) $bar;
 </code></pre>
 
+	<div class="tags">
 	
-	<a href="http://blog.omdesign.cz/tags/hash">#hash</a>
+		<a href="http://blog.omdesign.cz/tags/hash" class="tag">#hash</a>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
+		<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
 	
-	<time datetime="25096-08-925 250:00&#43;0000">25. 9. 2011</time>
+	</div>
 </article>
 
 </section>

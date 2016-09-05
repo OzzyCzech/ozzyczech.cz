@@ -1,7 +1,9 @@
 <article>
+	<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Day }}. {{ index .Site.Params.Months (sub .Date.Month 1) }} {{ .Date.Year }}</time>
 	{{ .Content }}
+	<div class="tags">
 	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
+		<a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">#{{ . }}</a>
 	{{ end }}
-	<time datetime="{{ .Date.Format "2016-08-12 20:00-0700" }}">{{ .Date.Format "2. 1. 2006" }}</time>
+	</div>
 </article>

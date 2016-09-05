@@ -17,16 +17,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2014-05-27 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-04-22 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-05-27 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-04-22 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/posts/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/posts/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -42,53 +42,20 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-			<article>
+<section class="container">
 	
-
-<h1 id="how-to-keep-directory-structure-with-gulp-zip">How to keep directory structure with gulp-zip</h1>
-
-<p>Here is a simple way, how to keep directory structure with <a href="https://github.com/sindresorhus/gulp-zip">gulp-zip</a>. You just need add <code>{base: &quot;.&quot;}</code> to src:</p>
-
-<pre><code>var gulp = require(&quot;gulp&quot;);
-var zip = require(&quot;gulp-zip&quot;);
-path = require('path');
-
-gulp.task(&quot;zip&quot;, function () {
- return gulp.src([
-   'css/*',
-   'img/*',
-   'js/*',
-   'manifest.json',
-   'popup.html',
-  ], {base: &quot;.&quot;})
-  .pipe(zip('archive.zip'))
-  .pipe(gulp.dest('dist'));
-});
-
-gulp.task(&quot;default&quot;, [&quot;zip&quot;]);
-</code></pre>
-
 	
-	<a href="http://blog.omdesign.cz/tags/gulp">#gulp</a>
-	
-	<a href="http://blog.omdesign.cz/tags/zip">#zip</a>
-	
-	<time datetime="27056-08-527 270:00&#43;0000">27. 5. 2014</time>
-</article>
+	<article>
+		<time datetime="2014-04-22T00:00:00Z">22. Duben 2014</time>
+		<h1><a href="http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/"><div>How to protect your emails with PHP and Javascript</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="how-to-protect-your-emails-with-php-and-javascript">How to protect your emails with PHP and Javascript</h1>
 
 <p>Working with or without javascript it&rsquo;s combine two technique for email protection <a href="http://en.wikipedia.org/wiki/ROT13">ROT13</a> and CSS</p>
 
@@ -103,26 +70,19 @@ gulp.task(&quot;default&quot;, [&quot;zip&quot;]);
 }
 </code></pre>
 
-<p>Sources: - <a href="http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/"> Nine ways to obfuscate e-mail addresses compared</a>
-- and <a href="http://perishablepress.com/best-method-for-email-obfuscation/">Best Method for Email Obfuscation?</a></p>
+<ul>
+<li><a href="http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/">Nine ways to obfuscate e-mail addresses compared</a></li>
+<li><a href="http://perishablepress.com/best-method-for-email-obfuscation/">Best Method for Email Obfuscation?</a></li>
+</ul>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/email">#email</a>
-	
-	<a href="http://blog.omdesign.cz/tags/js">#js</a>
-	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
-	
-	<a href="http://blog.omdesign.cz/tags/antispam">#antispam</a>
-	
-	<time datetime="22046-08-422 220:00&#43;0000">22. 4. 2014</time>
-</article>
+	<article>
+		<time datetime="2014-04-14T00:00:00Z">14. Duben 2014</time>
+		<h1><a href="http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/"><div>Prevent Heartbleed - upgrade openssl with brew on your mac</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="prevent-heartbleed-upgrade-openssl-with-brew-on-your-mac">Prevent Heartbleed: upgrade openssl with brew on your mac</h1>
 
 <p>The <a href="http://heartbleed.com/">Heartbleed Bug</a> is a serious vulnerability in the
 popular OpenSSL cryptographic software library. Follow <a href="http://brew.sh/">brew</a>
@@ -136,23 +96,14 @@ command will upgrade your openssl library:</p>
 
 <p>Now you shall have <code>OpenSSL 1.0.1g 7 Apr 2014</code> or newer.</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/brew">#brew</a>
-	
-	<a href="http://blog.omdesign.cz/tags/heartbleed">#heartbleed</a>
-	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
-	
-	<a href="http://blog.omdesign.cz/tags/openssl">#openssl</a>
-	
-	<time datetime="14046-08-414 140:00&#43;0000">14. 4. 2014</time>
-</article>
+	<article>
+		<time datetime="2014-02-11T00:00:00Z">11. Únor 2014</time>
+		<h1><a href="http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/"><div>How to keep GitHub Fork Updated (no merge - the right way)</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="how-to-keep-github-fork-updated-no-merge-the-right-way">How to keep GitHub Fork Updated (no merge - the right way)</h1>
 
 <p>Here is solution how to keep your forks updated <a href="https://help.github.com/articles/syncing-a-fork">without merge</a> and clean history</p>
 
@@ -167,21 +118,14 @@ git checkout [branch]
 git rebase upstream/[branch]
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/git">#git</a>
-	
-	<a href="http://blog.omdesign.cz/tags/github">#github</a>
-	
-	<a href="http://blog.omdesign.cz/tags/rebase">#rebase</a>
-	
-	<time datetime="11026-08-211 110:00&#43;0000">11. 2. 2014</time>
-</article>
+	<article>
+		<time datetime="2014-01-19T00:00:00Z">19. Leden 2014</time>
+		<h1><a href="http://blog.omdesign.cz/convert-json-data-to-valid-php-code/"><div>Convert JSON data to valid PHP code</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="convert-json-data-to-valid-php-code">Convert JSON data to valid PHP code</h1>
 
 <p>Do you need <strong>convert JSON data to valid PHP</strong> code without pain? I&rsquo;ve got a short script for that! My simple solution used <a href="http://www.php.net/manual/en/function.var-export.php">var_export()</a> function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace <code>stdClass::__set_state/</code> with <code>(object)</code>.</p>
 
@@ -228,21 +172,14 @@ file_put_contents(__DIR__ . '/currencies.locale.php', $code);
 
 <p> </p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/js">#js</a>
-	
-	<a href="http://blog.omdesign.cz/tags/json">#json</a>
-	
-	<a href="http://blog.omdesign.cz/tags/php">#php</a>
-	
-	<time datetime="19016-08-119 190:00&#43;0000">19. 1. 2014</time>
-</article>
+	<article>
+		<time datetime="2014-01-17T00:00:00Z">17. Leden 2014</time>
+		<h1><a href="http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/"><div>Find all unnecessary images without link from code</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="find-all-unnecessary-images-without-link-from-code">Find all unnecessary images without link from code</h1>
 
 <p>How to find all unnecessary images in your website project?</p>
 
@@ -264,17 +201,14 @@ bg_about.png &gt; 2
 <pre><code>| wc -l
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/how-to">#how-to</a>
-	
-	<time datetime="17016-08-117 170:00&#43;0000">17. 1. 2014</time>
-</article>
+	<article>
+		<time datetime="2013-12-30T00:00:00Z">30. Prosinec 2013</time>
+		<h1><a href="http://blog.omdesign.cz/upgrade-all-npm-packages-to-latest-versions/"><div>Upgrade all npm packages to latest versions</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="upgrade-all-npm-packages-to-latest-versions">Upgrade all npm packages to latest versions</h1>
 
 <p>Install follow package <a href="https://npmjs.org/package/npm-check-updates">npm-check-updates</a> by</p>
 
@@ -283,21 +217,14 @@ bg_about.png &gt; 2
 
 <p>and run <code>ncu -a</code> for upgrade <code>package.json</code> versions.</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/nodejs">#nodejs</a>
-	
-	<a href="http://blog.omdesign.cz/tags/npm">#npm</a>
-	
-	<a href="http://blog.omdesign.cz/tags/tip">#tip</a>
-	
-	<time datetime="30126-08-1230 300:00&#43;0000">30. 12. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-12-21T00:00:00Z">21. Prosinec 2013</time>
+		<h1><a href="http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/"><div>How to clean flash drive before unmount on Mac</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="how-to-clean-flash-drive-before-unmount-on-mac">How to clean flash drive before unmount on Mac</h1>
 
 <p>How to <strong>clean flash drive</strong> and delete all hidden (dot) files on mac before unmount? It&rsquo;s simple, save follow commands as <code>flash</code>:</p>
 
@@ -320,23 +247,14 @@ fi
 <p>Then change the access mode of a file <code>chmod +x flash</code>. To unmount a clean flash drive just run
 <code>./flash Flashka</code> (Flashka is name od drive).</p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/drive">#drive</a>
-	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
-	
-	<a href="http://blog.omdesign.cz/tags/tip">#tip</a>
-	
-	<a href="http://blog.omdesign.cz/tags/bash">#bash</a>
-	
-	<time datetime="21126-08-1221 210:00&#43;0000">21. 12. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-11-28T00:00:00Z">28. Listopad 2013</time>
+		<h1><a href="http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/"><div>Run FTP server on Mac OS X</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="run-ftp-server-on-mac-os-x">Run FTP server on Mac OS X</h1>
 
 <p>Setup everyhing: <code>sudo subl /etc/ftpd.conf</code></p>
 
@@ -357,21 +275,14 @@ upload guest on
 
 <p><code>sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist</code></p>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/ftp">#ftp</a>
-	
-	<a href="http://blog.omdesign.cz/tags/mac">#mac</a>
-	
-	<a href="http://blog.omdesign.cz/tags/protip">#protip</a>
-	
-	<time datetime="28116-08-1128 280:00&#43;0000">28. 11. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-09-25T00:00:00Z">25. Září 2013</time>
+		<h1><a href="http://blog.omdesign.cz/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
+		
 
-			
-			<article>
-	
 
-<h1 id="composer-require-pear-package">Composer require PEAR package</h1>
 
 <pre><code>{
  &quot;repositories&quot;: [
@@ -386,18 +297,54 @@ upload guest on
 }
 </code></pre>
 
+	</article>
 	
-	<a href="http://blog.omdesign.cz/tags/composer">#composer</a>
-	
-	<a href="http://blog.omdesign.cz/tags/pear">#pear</a>
-	
-	<a href="http://blog.omdesign.cz/tags/tip">#tip</a>
-	
-	<time datetime="25096-08-925 250:00&#43;0000">25. 9. 2013</time>
-</article>
+	<article>
+		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
+		<h1><a href="http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
+		
 
-			
-			
+
+
+<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
+- I will work on application and my packages together.
+- I need a simple way how to commit and publish new version of packages.
+- Workflow need to be simple (mimimum of commands)</p>
+
+<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
+
+<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
+
+<pre><code>&quot;scripts&quot;: {
+ &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
+ &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
+},
+</code></pre>
+
+<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
+
+<p>When you are using tagged releases (no dev versions) of package then run:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
+</code></pre>
+
+<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
+</code></pre>
+
+<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+
+<ul>
+<li>Large VCS repository size and diffs when you update code.</li>
+<li>Duplication of the history of all your dependencies in your own VCS.</li>
+<li>There can be conflicts in commits especially when you work in larger team.</li>
+<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+</ul>
+
+	</article>
+	
+	
     
     <ul class="pagination">
         
@@ -433,8 +380,148 @@ upload guest on
         
     </ul>
     
-		</div>
-	</div>
+</section>
+
+<div class="container tags">
+	
+	<a href="http://blog.omdesign.cz/tags/ajax" class="tag">#ajax</a>
+	
+	<a href="http://blog.omdesign.cz/tags/angular" class="tag">#angular</a>
+	
+	<a href="http://blog.omdesign.cz/tags/antispam" class="tag">#antispam</a>
+	
+	<a href="http://blog.omdesign.cz/tags/archive" class="tag">#archive</a>
+	
+	<a href="http://blog.omdesign.cz/tags/atom" class="tag">#atom</a>
+	
+	<a href="http://blog.omdesign.cz/tags/auto" class="tag">#auto</a>
+	
+	<a href="http://blog.omdesign.cz/tags/automator" class="tag">#automator</a>
+	
+	<a href="http://blog.omdesign.cz/tags/barvy" class="tag">#barvy</a>
+	
+	<a href="http://blog.omdesign.cz/tags/bash" class="tag">#bash</a>
+	
+	<a href="http://blog.omdesign.cz/tags/boostrap" class="tag">#boostrap</a>
+	
+	<a href="http://blog.omdesign.cz/tags/brew" class="tag">#brew</a>
+	
+	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
+	
+	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
+	
+	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
+	
+	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
+	
+	<a href="http://blog.omdesign.cz/tags/drive" class="tag">#drive</a>
+	
+	<a href="http://blog.omdesign.cz/tags/email" class="tag">#email</a>
+	
+	<a href="http://blog.omdesign.cz/tags/excerpt" class="tag">#excerpt</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ftp" class="tag">#ftp</a>
+	
+	<a href="http://blog.omdesign.cz/tags/git" class="tag">#git</a>
+	
+	<a href="http://blog.omdesign.cz/tags/github" class="tag">#github</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hack" class="tag">#hack</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hash" class="tag">#hash</a>
+	
+	<a href="http://blog.omdesign.cz/tags/heartbleed" class="tag">#heartbleed</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hermel%C3%ADn" class="tag">#hermelín</a>
+	
+	<a href="http://blog.omdesign.cz/tags/how-to" class="tag">#how-to</a>
+	
+	<a href="http://blog.omdesign.cz/tags/howto" class="tag">#howto</a>
+	
+	<a href="http://blog.omdesign.cz/tags/html" class="tag">#html</a>
+	
+	<a href="http://blog.omdesign.cz/tags/html5" class="tag">#html5</a>
+	
+	<a href="http://blog.omdesign.cz/tags/internet" class="tag">#internet</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ios" class="tag">#ios</a>
+	
+	<a href="http://blog.omdesign.cz/tags/iphone" class="tag">#iphone</a>
+	
+	<a href="http://blog.omdesign.cz/tags/js" class="tag">#js</a>
+	
+	<a href="http://blog.omdesign.cz/tags/json" class="tag">#json</a>
+	
+	<a href="http://blog.omdesign.cz/tags/lifehacker" class="tag">#lifehacker</a>
+	
+	<a href="http://blog.omdesign.cz/tags/mac" class="tag">#mac</a>
+	
+	<a href="http://blog.omdesign.cz/tags/meta" class="tag">#meta</a>
+	
+	<a href="http://blog.omdesign.cz/tags/movies" class="tag">#movies</a>
+	
+	<a href="http://blog.omdesign.cz/tags/nodejs" class="tag">#nodejs</a>
+	
+	<a href="http://blog.omdesign.cz/tags/npm" class="tag">#npm</a>
+	
+	<a href="http://blog.omdesign.cz/tags/oauth" class="tag">#oauth</a>
+	
+	<a href="http://blog.omdesign.cz/tags/oko" class="tag">#oko</a>
+	
+	<a href="http://blog.omdesign.cz/tags/openssl" class="tag">#openssl</a>
+	
+	<a href="http://blog.omdesign.cz/tags/osx" class="tag">#osx</a>
+	
+	<a href="http://blog.omdesign.cz/tags/parkinsons-law" class="tag">#parkinsons-law</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pear" class="tag">#pear</a>
+	
+	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
+	
+	<a href="http://blog.omdesign.cz/tags/plugin" class="tag">#plugin</a>
+	
+	<a href="http://blog.omdesign.cz/tags/protip" class="tag">#protip</a>
+	
+	<a href="http://blog.omdesign.cz/tags/p%C5%99epis-auta" class="tag">#přepis-auta</a>
+	
+	<a href="http://blog.omdesign.cz/tags/rebase" class="tag">#rebase</a>
+	
+	<a href="http://blog.omdesign.cz/tags/recepty" class="tag">#recepty</a>
+	
+	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
+	
+	<a href="http://blog.omdesign.cz/tags/shell" class="tag">#shell</a>
+	
+	<a href="http://blog.omdesign.cz/tags/student" class="tag">#student</a>
+	
+	<a href="http://blog.omdesign.cz/tags/svg" class="tag">#svg</a>
+	
+	<a href="http://blog.omdesign.cz/tags/terminal" class="tag">#terminal</a>
+	
+	<a href="http://blog.omdesign.cz/tags/tip" class="tag">#tip</a>
+	
+	<a href="http://blog.omdesign.cz/tags/todo" class="tag">#todo</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ty%C4%8Dinky" class="tag">#tyčinky</a>
+	
+	<a href="http://blog.omdesign.cz/tags/user" class="tag">#user</a>
+	
+	<a href="http://blog.omdesign.cz/tags/ux" class="tag">#ux</a>
+	
+	<a href="http://blog.omdesign.cz/tags/webdesign" class="tag">#webdesign</a>
+	
+	<a href="http://blog.omdesign.cz/tags/wordpress" class="tag">#wordpress</a>
+	
+	<a href="http://blog.omdesign.cz/tags/wysiwyg" class="tag">#wysiwyg</a>
+	
+	<a href="http://blog.omdesign.cz/tags/xcode" class="tag">#xcode</a>
+	
+	<a href="http://blog.omdesign.cz/tags/youtube" class="tag">#youtube</a>
+	
+	<a href="http://blog.omdesign.cz/tags/zamy%C5%A1len%C3%AD" class="tag">#zamyšlení</a>
+	
+	<a href="http://blog.omdesign.cz/tags/zdrav%C3%AD" class="tag">#zdraví</a>
+	
 </div>
 
 
@@ -450,3 +537,4 @@ upload guest on
 
 </body>
 </html>
+

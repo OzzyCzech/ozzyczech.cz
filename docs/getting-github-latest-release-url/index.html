@@ -29,7 +29,7 @@
 	<meta property="article:tag" content="tip" />
 	<meta itemprop="name" content="Getting GitHub latest release URL">
 	<meta itemprop="description" content="Getting GitHub latest release URL Do you need Download Latest Version button? Try follow PHP code: function getLatestTagUrl($repository, $default = &#39;master&#39;) { $file = @json_decode(@file_get_contents(&quot;https://api.github.com/repos/$repository/tags&quot;, false, stream_context_create([&#39;http&#39; =&gt; [&#39;header&#39; =&gt; &quot;User-Agent: Vestibulum\r\n&quot;]]) )); return sprintf(&quot;https://github.com/$repository/archive/%s.zip&quot;, $file ? reset($file)-&gt;name : $default); } echo getLatestTagUrl(&#39;OzzyCzech/vestibulum&#39;); // will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="47">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -44,12 +44,14 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
 <section class="container">
 	<article>
+	<time datetime="2014-09-28T00:00:00Z">28. Září 2014</time>
 	
 
 <h1 id="getting-github-latest-release-url">Getting GitHub latest release URL</h1>
@@ -67,14 +69,15 @@ echo getLatestTagUrl('OzzyCzech/vestibulum');
 // will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip
 </code></pre>
 
+	<div class="tags">
 	
-	<a href="http://blog.omdesign.cz/tags/github">#github</a>
+		<a href="http://blog.omdesign.cz/tags/github" class="tag">#github</a>
 	
-	<a href="http://blog.omdesign.cz/tags/php">#PHP</a>
+		<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
 	
-	<a href="http://blog.omdesign.cz/tags/tip">#tip</a>
+		<a href="http://blog.omdesign.cz/tags/tip" class="tag">#tip</a>
 	
-	<time datetime="28096-08-928 280:00&#43;0000">28. 9. 2014</time>
+	</div>
 </article>
 
 </section>

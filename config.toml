@@ -10,7 +10,8 @@ enableRobotsTXT = true
 enableEmoji = true
 
 [params]
-Description = "aaa"
+Description = "This is page description"
+Months = ["Leden", "Únor", "Březen", "Duben", "Květen", "Červen", "Červenec" ,"Srpen" ,"Září" , "Říjen" , "Listopad" , "Prosinec"]
 
 [author]
 name = "Roman Ožana"

@@ -27,7 +27,7 @@
 	<meta property="article:tag" content="how-to" />
 	<meta itemprop="name" content="Find all unnecessary images without link from code">
 	<meta itemprop="description" content="Find all unnecessary images without link from code How to find all unnecessary images in your website project? find public/images -type f|while read line ; do printf &quot;$(basename $line) &gt; &quot; &amp;&amp; ack --nofilter -l -c &quot;$(basename $line)&quot; | wc -l; done Output will be: sprite.gif &gt; 0 ajax-loader-bg-f9.gif &gt; 2 ajax-loader-bg-trans.gif &gt; 3 ajax-loader-static-bg-trans.gif &gt; 2 bg_about.png &gt; 2 ... If you want output filenames not just marches count">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,gulp,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví,zip," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="74">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -42,12 +42,14 @@
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
 	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
 
 <section class="container">
 	<article>
+	<time datetime="2014-01-17T00:00:00Z">17. Leden 2014</time>
 	
 
 <h1 id="find-all-unnecessary-images-without-link-from-code">Find all unnecessary images without link from code</h1>
@@ -72,10 +74,11 @@ bg_about.png &gt; 2
 <pre><code>| wc -l
 </code></pre>
 
+	<div class="tags">
 	
-	<a href="http://blog.omdesign.cz/tags/how-to">#how-to</a>
+		<a href="http://blog.omdesign.cz/tags/how-to" class="tag">#how-to</a>
 	
-	<time datetime="17016-08-117 170:00&#43;0000">17. 1. 2014</time>
+	</div>
 </article>
 
 </section>
