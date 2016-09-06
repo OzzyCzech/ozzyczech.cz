@@ -30,7 +30,6 @@ together causes users to click the wrong button.
 | [Medium](https://medium.com/) | Sign up | Sign in
 | [eBay](http://www.ebay.co.uk/) | Register | Sign in
 | [Spotify](https://www.spotify.com/uk/) | Sign up | Log In
-| Winner | Call to action | 60% Sign In
 
 Overall winner is **Sign In** - almost 60% pages are using this sentence.
 For new users is better using something else then **Sign up** (read [Stop Asking Me to “Sign Up”](http://www.gkogan.co/blog/stop-asking-me-to-sign-up/))
