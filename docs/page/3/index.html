@@ -17,12 +17,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-07-24 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-09-25 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-07-24 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-09-25 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -49,6 +49,28 @@
 
 <section class="container">
 	
+	
+	<article>
+		<time datetime="2013-09-25T00:00:00Z">25. Září 2013</time>
+		<h1><a href="http://blog.omdesign.cz/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
+		
+
+
+
+<pre><code>{
+ &quot;repositories&quot;: [
+  {
+   &quot;type&quot;: &quot;pear&quot;,
+   &quot;url&quot;: &quot;http://pear.php.net&quot;
+  }
+ ],
+ &quot;require&quot;: {
+  &quot;pear-pear/Mail&quot;: &quot;&gt;=1.2.0&quot;
+ }
+}
+</code></pre>
+
+	</article>
 	
 	<article>
 		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
@@ -258,95 +280,6 @@ define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
 
 <pre><code>open -a &quot;iPhone Simulator&quot;
 </code></pre>
-
-	</article>
-	
-	<article>
-		<time datetime="2013-01-29T00:00:00Z">29. Leden 2013</time>
-		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/"><div>Wordpress - register and setup widgets from PHP code</div></a></h1>
-		
-
-
-
-<p>PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:</p>
-
-<pre><code>class Widgets {
-
- private $widgets = array();
- private $options = array();
-
- public function __construct() {
-  $this-&gt;options = wp_get_sidebars_widgets();
- }
-
- public function unregisterAllWidgets() {
-  foreach ($this-&gt;options as $name =&gt; $values)
-   $this-&gt;options[$name] = array();
- }
-
- public function cleanWidgetSettings($type, $multi = null) {
-  $this-&gt;widgets[$type] = array();
-  if ($multi !== null) $this-&gt;widgets[$type]['_multiwidget'] = (int)(bool)$multi;
- }
-
- public function setMultiWidget($type, $val = 1) {
-  $this-&gt;widgets[$type]['_multiwidget'] = $val;
- }
-
- public function add($type, array $options, $area = null) {
-  $this-&gt;widgets[$type][] = $options;
-  if ($area !== null) {
-   if (array_key_exists($area, $this-&gt;options) === false) {
-    throw new Exception('Widget area ' . $area . ' not exists.');
-   }
-   end($this-&gt;widgets[$type]);
-   $this-&gt;options[$area][] = $type . '-' . key($this-&gt;widgets[$type]);
-  }
- }
-
- public function __destruct() {
-  foreach ($this-&gt;widgets as $name =&gt; $settings) {
-   if (!array_key_exists('_multiwidget', $settings)) $settings['_multiwidget'] = 1;
-   update_option('widget_' . $name, $settings);
-  }
-  wp_set_sidebars_widgets($this-&gt;options);
- }
-
-}
-</code></pre>
-
-<p>Following code is an example how to use <code>class Witgets</code>:</p>
-
-<pre><code>$widgets = new Widgets();
-$widgets-&gt;unregisterAllWidgets();
-
-$widgets-&gt;add(
- 'text',
- array(
-  'title' =&gt; 'About us',
-  'text' =&gt; 'Simple text about us',
-  'filter' =&gt; true,
-  'classes' =&gt; '',
-  'ids' =&gt; null,
- ),
- 'footer-1'
-);
-
-// ...
-</code></pre>
-
-<p>This code need to be call only once. Put your code to <code>function.php</code> to <code>after_switch_theme</code> action:</p>
-
-<pre><code>add_action(
- 'after_switch_theme', function () {
-  $widgets = new Widgets();
-  $widgets-&gt;unregisterAllWidgets();
-  // ...
- }
-);
-</code></pre>
-
-<p><a href="https://gist.github.com/4663766/">https://gist.github.com/4663766/</a></p>
 
 	</article>
 	

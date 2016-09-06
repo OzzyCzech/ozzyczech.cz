@@ -17,12 +17,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2011-09-11 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2011-09-25 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2011-09-11 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2011-09-25 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -49,6 +49,42 @@
 
 <section class="container">
 	
+	
+	<article>
+		<time datetime="2011-09-25T00:00:00Z">25. Září 2011</time>
+		<h1><a href="http://blog.omdesign.cz/v%C3%BDpo%C4%8Det-hash-objektu-v-php/"><div>Výpočet hash objektu v PHP</div></a></h1>
+		
+
+
+
+<p>Funkce <a href="http://php.net/manual/en/function.spl-object-hash.php">spl_object_hash()</a>
+má jednu <strong>nevýhodu</strong>, její výsledek se v čase mění. Pokud objekt naplníte
+stejnými hodnotami, dostanete při dvou requestech dva různé výsledky. Což nemusí
+být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeho
+vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat
+například takto:</p>
+
+<pre><code>class Foo {
+ private $p;
+ public function setProperty($p) {
+  $this-&gt;p = $p;
+ }
+ // vypocita hash objektu na zaklade hodnot jeho propert
+ public function __toString() {
+  return md5(http_build_query(get_object_vars($this)));
+ }
+}
+</code></pre>
+
+<p>Pro vypsání/získání hash pak stačí:</p>
+
+<pre><code>$bar = new Foo();
+$bar-&gt;setProperty('25');
+echo $bar;
+$hash = (string) $bar;
+</code></pre>
+
+	</article>
 	
 	<article>
 		<time datetime="2011-09-11T00:00:00Z">11. Září 2011</time>
@@ -287,73 +323,6 @@ kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
 </ul>
 
 <p>Nejlepším <strong>vitamínem je B12</strong> - k dostání v lékárně v podobě B-Komplex (Forte). Můžete konzumovat od 1 do 3 tablet denně. Výhodou B-komplex je to že neobsahuje jen B12 ale celou skupinu vitamínů B. Vitamín B12 také najdete v rybím tuku a nebo pivovarnických kvasnicích. Dalším vitamínem, který pomáhá je <strong>magnézium (hořčík)</strong>. Pozor ať se nepředávkujete, působí to totiž i na srdce. Můžete si jej koupit v lékárně, ale mnohdy stačí i vhodná minerálka nebo banány. Když nic z toho nepomůže, bude asi lepší zajít za doktorem. Většinou to ale zmizí stejně rychle jak to příjde. Máte osobní <strong>zkušenost s tímto problémem</strong>?.</p>
-
-	</article>
-	
-	<article>
-		<time datetime="2008-01-21T00:00:00Z">21. Leden 2008</time>
-		<h1><a href="http://blog.omdesign.cz/povidky/schuze-porady-meetingy-a-briefing/"><div>Schůze, porady, meetingy a briefing</div></a></h1>
-		
-
-
-
-<p>Začal bych tím, co to vlastně schůze, porada, meeting nebo briefing je. Někteří je definují takto: <strong>nedobrovolná setkání nevhodných lidí, za účelem dohody o něčem, co není potřeba řešit</strong>. Četl jsem, že člověk stráví za svou pracovní kariéru na poradách něco kolem 6000 hodin, slouží obvykle pro výměnu informací v rámci organizace (firmy či podniku).</p>
-
-<p>Všichni to určitě znáte, ráno přijdete do práce a kolega Vám povídá: <em>Dneska je porada, nezapomeň na to!</em> Doslova vidím, jak Vás tahle informace potěšila.</p>
-
-<p>Faktem je, že <strong>99 procent z nás porady nebo schůze nenávidí</strong>. Dalším faktem je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami se to má takto:</p>
-
-<h3 id="jsou-příliš-drahé">Jsou příliš drahé</h3>
-
-<ul>
-<li>Představte si, že každý účastník stojí firmu 150 Kč za hodinu - hodinové setkání 10 lidí Vás bude stát 1500 Kč. Je dobré si uvědomit, že někteří výše postavení pracovníci samozřejmě berou více. Možná ten vyšší plat souvisí s tím, že musí na více porad :-).</li>
-</ul>
-
-<h3 id="jsou-obvykle-delší-než-je-potřeba">Jsou obvykle delší, než je potřeba</h3>
-
-<ul>
-<li>Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se Vás netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je <strong>12 minut z hodiny</strong>, se řeší otázky, které skutečně stojí za to, aby se sešlo například oněch 10 lidí a společně je řešili.</li>
-</ul>
-
-<h3 id="setkávání-se-pro-setkávání">Setkávání se pro setkávání</h3>
-
-<ul>
-<li>Některé porady slouží pouze pro utužení sociálních vazeb v rámci organizace. Je důležité si uvědomit, že cílem porady není samotné setkání. Každá porada by měla mít <em>topic</em> - tedy hlavní téma, které by se mnělo probírat.<br /></li>
-</ul>
-
-<h3 id="jsou-neupřímné">Jsou neupřímné</h3>
-
-<ul>
-<li>Na poradách je obvykle těžší říct svůj názor. Většina lidí mlčí, prostě si to odsedí a to podstatné probere na after party (viz níže). S neupřímností je spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada - manažer (šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale odpovídají za ní všichni účastníci.</li>
-</ul>
-
-<h3 id="after-party-po-poradě">After party po poradě</h3>
-
-<ul>
-<li>Odborně se to tuším nazývá <em>after meeting syndrom (AMS)</em>. To je doba, kterou účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často probírají také přínosy porady a to jak je to tam nebavilo.</li>
-</ul>
-
-<h3 id="porady-vedou-k-dalším-poradám">Porady vedou k dalším poradám</h3>
-
-<ul>
-<li>Obvykle po tom, co porada skončí, je naplánována nějaká další. Často má jedna schůze na svědomí celou řadu dalších setkání, porad a podobně. Někde se musí přeci probrat výsledky té první porady!</li>
-</ul>
-
-<h3 id="proč-se-radit">Proč se radit?</h3>
-
-<ul>
-<li>Proč se vlastně pořádají? Těžko říct, ale tím pravým důvodem by mělo být to, že něco <strong>nefunguje tak jak má a nikdo neví, co má dělat</strong>! Něco je špatně a věci se musí napravit. Je potřeba rozhodnutí managementu.</li>
-</ul>
-
-<p>Na závěr ve zkratce několik zásad:</p>
-
-<ul>
-<li>Aby bylo setkávání efektivní, musí být všichni účastníci připraveni</li>
-<li>Vždy <strong>mluví jen jeden</strong> přesně stanovenou dobu (2 minuty maximálně)</li>
-<li>Návrhy, které nejsou k tématu se zapíší - budou se <strong>řešit později</strong></li>
-<li>Nikdo nechodí pozdě, netelefonuje, neodchází během jednání</li>
-<li>Věci se řeší <strong>jedna po druhé</strong> - ne najednou</li>
-</ul>
 
 	</article>
 	

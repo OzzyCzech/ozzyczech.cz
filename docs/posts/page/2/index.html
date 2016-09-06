@@ -17,12 +17,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2014-04-22 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-07-09 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-04-22 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-07-09 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -49,6 +49,95 @@
 
 <section class="container">
 	
+	
+	<article>
+		<time datetime="2014-07-09T00:00:00Z">9. Červenec 2014</time>
+		<h1><a href="http://blog.omdesign.cz/simple-pie-chart-progress-bar-in-canvas-element/"><div>Simple pie chart progress bar in canvas element</div></a></h1>
+		
+
+<style type="text/css">
+	div.chart {
+		position: relative;
+		margin: 80px auto;
+		width: 220px;
+		height: 220px;
+	}
+
+	div.chart canvas {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	div.chart span {
+		color: #555;
+		display: block;
+		line-height: 220px;
+		text-align: center;
+		width: 220px;
+		font-family: sans-serif;
+		font-size: 40px;
+		font-weight: 100;
+		margin-left: 5px;
+	}
+</style>
+
+<div class="chart" id="graph" data-percent="88"></div>
+
+<script>
+	var el = document.getElementById('graph'); // get canvas
+
+	var options = {
+		percent: el.getAttribute('data-percent') || 25,
+		size: el.getAttribute('data-size') || 220,
+		lineWidth: el.getAttribute('data-line') || 15,
+		rotate: el.getAttribute('data-rotate') || 0
+	}
+
+	var canvas = document.createElement('canvas');
+	var span = document.createElement('span');
+	span.textContent = options.percent + '%';
+
+	if (typeof(G_vmlCanvasManager) !== 'undefined') {
+		G_vmlCanvasManager.initElement(canvas);
+	}
+
+	var ctx = canvas.getContext('2d');
+	canvas.width = canvas.height = options.size;
+
+	el.appendChild(span);
+	el.appendChild(canvas);
+
+	ctx.translate(options.size / 2, options.size / 2); // change center
+	ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+
+	//imd = ctx.getImageData(0, 0, 240, 240);
+	var radius = (options.size - options.lineWidth) / 2;
+
+	var drawCircle = function (color, lineWidth, percent) {
+		percent = Math.min(Math.max(0, percent || 1), 1);
+		ctx.beginPath();
+		ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+		ctx.strokeStyle = color;
+		ctx.lineCap = 'round'; // butt, round or square
+		ctx.lineWidth = lineWidth
+		ctx.stroke();
+	};
+
+	drawCircle('#efefef', options.lineWidth, 100 / 100);
+	drawCircle('#555555', options.lineWidth, options.percent / 100);
+</script>
+
+<iframe width="100%" height="300" src="//jsfiddle.net/zky35zt7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+<p>
+	Basic code was taken from Simple PIE Chart
+	<a href="http://rendro.github.io/easy-pie-chart/">http://rendro.github.io/easy-pie-chart/ </a>
+</p>
+
+	</article>
 	
 	<article>
 		<time datetime="2014-04-22T00:00:00Z">22. Duben 2014</time>
@@ -296,51 +385,6 @@ upload guest on
  }
 }
 </code></pre>
-
-	</article>
-	
-	<article>
-		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
-		<h1><a href="http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
-		
-
-
-
-<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
-- I will work on application and my packages together.
-- I need a simple way how to commit and publish new version of packages.
-- Workflow need to be simple (mimimum of commands)</p>
-
-<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
-
-<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
-
-<pre><code>&quot;scripts&quot;: {
- &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
- &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
-},
-</code></pre>
-
-<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
-
-<p>When you are using tagged releases (no dev versions) of package then run:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
-</code></pre>
-
-<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
-</code></pre>
-
-<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
-
-<ul>
-<li>Large VCS repository size and diffs when you update code.</li>
-<li>Duplication of the history of all your dependencies in your own VCS.</li>
-<li>There can be conflicts in commits especially when you work in larger team.</li>
-<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
-</ul>
 
 	</article>
 	

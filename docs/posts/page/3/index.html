@@ -17,12 +17,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2013-05-14 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-07-24 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-05-14 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-07-24 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -49,6 +49,51 @@
 
 <section class="container">
 	
+	
+	<article>
+		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
+		<h1><a href="http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
+		
+
+
+
+<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
+- I will work on application and my packages together.
+- I need a simple way how to commit and publish new version of packages.
+- Workflow need to be simple (mimimum of commands)</p>
+
+<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
+
+<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
+
+<pre><code>&quot;scripts&quot;: {
+ &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
+ &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
+},
+</code></pre>
+
+<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
+
+<p>When you are using tagged releases (no dev versions) of package then run:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
+</code></pre>
+
+<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
+</code></pre>
+
+<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+
+<ul>
+<li>Large VCS repository size and diffs when you update code.</li>
+<li>Duplication of the history of all your dependencies in your own VCS.</li>
+<li>There can be conflicts in commits especially when you work in larger team.</li>
+<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+</ul>
+
+	</article>
 	
 	<article>
 		<time datetime="2013-05-14T00:00:00Z">14. Květen 2013</time>
@@ -279,22 +324,6 @@ new CustomUserProfile();
 <p>Celkově záležitost na 5 minut. Pracovník STK zkontroloval VIN, barvu vozidla, stav tachometru a číslo motoru. Stálo to kolem 200 Kč. Platnost protokolu je opět 10 dní. Po předložení všech náležitostí jsem na inspektorátu dostal nové ostravské značky a nový neprostřižený malý technický průkaz. Všechno byla záležitost cca na 10 minut. Stálo to na správních poplatcích 800 Kč. Kopii velkého technického průkazu jsem pak ještě poslal na pojišťovnu a ta mi obratem poslala novou zelenou kartu, kde je uvedena moje nová registrační značka. Ještě malý dodatek. Pokud je v autě na skle nalepená <strong>dálniční známka</strong>, zneplatní se výměnou značek. Dálniční známku si prý můžete nechat vyměnit na jakékoliv větší poště. Stačí k tomu původní známka a nový technický průkaz. Ještě jsem to nestihl udělat, takže přesně nevím.Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty se při výměně značky dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)</p>
 
 <p>Popis výměny dálniční známky najdete na stránkách <a href="http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm">České Pošty</a>. #posta #auto #how-to #registrace</p>
-
-	</article>
-	
-	<article>
-		<time datetime="2012-01-07T00:00:00Z">7. Leden 2012</time>
-		<h1><a href="http://blog.omdesign.cz/jak-spo%C4%8D%C3%ADtat-po%C4%8Det-%C5%99%C3%A1dk%C5%AF-k%C3%B3du/"><div>Jak spočítat počet řádků kódu?</div></a></h1>
-		
-
-
-
-<p>V mém příkladu počítám počet řádků PHP kódu:</p>
-
-<pre><code>grep -v '^ *$' `find . -iname &quot;*.php&quot;` | wc -l
-</code></pre>
-
-<p>Pro zajímavost takový Wordpress má více jak 250 000 řádků PHP.</p>
 
 	</article>
 	

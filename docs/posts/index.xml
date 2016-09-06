@@ -8,8 +8,153 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Mon, 08 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sign Up, Sign In, Log in, Join, Register or Create Account?</title>
+      <link>http://blog.omdesign.cz/sign-up-sign-in-log-in-join-register-or-create-account/</link>
+      <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/sign-up-sign-in-log-in-join-register-or-create-account/</guid>
+      <description>
+
+&lt;h1 id=&#34;sign-up-log-in-join-register-or-create-account&#34;&gt;Sign Up, Log in, Join, Register or Create Account&lt;/h1&gt;
+
+&lt;p&gt;How fast can you spot the difference between &lt;strong&gt;Sign up&lt;/strong&gt; and &lt;strong&gt;Sign In&lt;/strong&gt;?
+&lt;strong&gt;Sign in&lt;/strong&gt; and &lt;strong&gt;Sign up&lt;/strong&gt; are are quite close together. Using these button labels
+together causes users to click the wrong button.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Site&lt;/th&gt;
+&lt;th&gt;New users&lt;/th&gt;
+&lt;th&gt;Existing users&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.last.fm&#34;&gt;Last.fm&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Join&lt;/td&gt;
+&lt;td&gt;Login&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.flickr.com/&#34;&gt;Flicker&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Sign Up&lt;/td&gt;
+&lt;td&gt;Sign In&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.instagram.com/&#34;&gt;Instagram&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Register&lt;/td&gt;
+&lt;td&gt;Log in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://twitter.com/&#34;&gt;Twiitter&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Sign Up&lt;/td&gt;
+&lt;td&gt;Log in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Join now&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://mailchimp.com/&#34;&gt;Mailchimp&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Sign Up Free&lt;/td&gt;
+&lt;td&gt;Log in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://vimeo.com/&#34;&gt;Vimeo&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Join&lt;/td&gt;
+&lt;td&gt;Log in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.youtube.com/&#34;&gt;YouTube&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Upload&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.com/&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Start here&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.live.com&#34;&gt;Microsoft Live&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Create one!&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://netflix.com&#34;&gt;Netflix&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Join Free for a Month&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://apple.com/&#34;&gt;Apple&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Don&amp;rsquo;t have an Apple ID? Create one now.&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Sign up&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.intercom.io/&#34;&gt;Intercom&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Get Started&lt;/td&gt;
+&lt;td&gt;Log in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://wordpress.com/&#34;&gt;Wordpress&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Sign Up&lt;/td&gt;
+&lt;td&gt;Log In&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://medium.com/&#34;&gt;Medium&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Sign up&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.ebay.co.uk/&#34;&gt;eBay&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Register&lt;/td&gt;
+&lt;td&gt;Sign in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.spotify.com/uk/&#34;&gt;Spotify&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Sign up&lt;/td&gt;
+&lt;td&gt;Log In&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Winner&lt;/td&gt;
+&lt;td&gt;Call to action&lt;/td&gt;
+&lt;td&gt;60% Sign In&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Overall winner is &lt;strong&gt;Sign In&lt;/strong&gt; - almost 60% pages are using this sentence.
+For new users is better using something else then &lt;strong&gt;Sign up&lt;/strong&gt; (read &lt;a href=&#34;http://www.gkogan.co/blog/stop-asking-me-to-sign-up/&#34;&gt;Stop Asking Me to “Sign Up”&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How to Auto indent code in Atom editor</title>
@@ -659,38 +804,6 @@ file_put_contents(__DIR__ . &#39;/currencies.locale.php&#39;, $code);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt; &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Find all unnecessary images without link from code</title>
-      <link>http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/</link>
-      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/</guid>
-      <description>
-
-&lt;h1 id=&#34;find-all-unnecessary-images-without-link-from-code&#34;&gt;Find all unnecessary images without link from code&lt;/h1&gt;
-
-&lt;p&gt;How to find all unnecessary images in your website project?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;find public/images -type f|while read line ; do printf &amp;quot;$(basename $line) &amp;gt; &amp;quot; &amp;amp;&amp;amp; ack --nofilter -l -c &amp;quot;$(basename $line)&amp;quot; | wc -l; done
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Output will be:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sprite.gif &amp;gt; 0
-ajax-loader-bg-f9.gif &amp;gt; 2
-ajax-loader-bg-trans.gif &amp;gt; 3
-ajax-loader-static-bg-trans.gif &amp;gt; 2
-bg_about.png &amp;gt; 2
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you want output filenames not just marches count remove&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;| wc -l
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
