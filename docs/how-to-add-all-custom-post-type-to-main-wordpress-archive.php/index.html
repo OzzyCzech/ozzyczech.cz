@@ -5,14 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<link rel="shortcut icon" href="http://blog.omdesign.cz//favicon.ico">
+	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
 	<title>How to add all custom post type to main Wordpress archive.php</title>	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="How to add all custom post type to main Wordpress archive.php"/>
 	<meta name="twitter:description" content="How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts );"/>
 	<meta name="twitter:site" content="@OzzyCzech"/>
-	<meta name="twitter:domain" content="http://blog.omdesign.cz/"/>
+	<meta name="twitter:domain" content="http://blog.omdesign.cz"/>
 	<meta name="twitter:creator" content="@OzzyCzech"/>
 	<meta property="og:title" content="How to add all custom post type to main Wordpress archive.php" />
 	<meta property="og:description" content="How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts );" />
@@ -36,7 +36,7 @@
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://blog.omdesign.cz//js/app.js"></script>
+	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -45,8 +45,8 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
-	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
@@ -96,7 +96,7 @@
 </section>
 
 <div class="text-center">
-	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
+	<a href="http://blog.omdesign.cz" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
 		Go back</a>
 </div>
 

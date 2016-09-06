@@ -5,14 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<link rel="shortcut icon" href="http://blog.omdesign.cz//favicon.ico">
+	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
 	<title>Snadné připojení k FTP pomocí PHP</title>	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Snadné připojení k FTP pomocí PHP"/>
 	<meta name="twitter:description" content="Snadné připojení k FTP pomocí PHP Mám v oblibě zkrácený zápis připojení k FTP. PHP tento způsob zápisu připojení bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu. /** * Vraci ID FTP pripojeni na zaklade zadane URL * ftp://username:password@sld.domain.tld:21/path1/path2/ */ function getFtpConnection($uri) { preg_match(&quot;/(?P&lt;protocol&gt;ftps?:\/\/)(?P&lt;username&gt;.*?):(?P&lt;password&gt;.*?)@(?P&lt;url&gt;.*?):?(?P&lt;port&gt;[1-9]&#43;)?(?&lt;dir&gt;\/.*)/i&quot;, $uri, $match); $conn = ftp_connect($match[&#39;url&#39;], empty($match[&#39;port&#39;]) ? 21 : (int)$match[&#39;port&#39;]) or die(&quot;Couldn&#39;t connect to &quot; ."/>
 	<meta name="twitter:site" content="@OzzyCzech"/>
-	<meta name="twitter:domain" content="http://blog.omdesign.cz/"/>
+	<meta name="twitter:domain" content="http://blog.omdesign.cz"/>
 	<meta name="twitter:creator" content="@OzzyCzech"/>
 	<meta property="og:title" content="Snadné připojení k FTP pomocí PHP" />
 	<meta property="og:description" content="Snadné připojení k FTP pomocí PHP Mám v oblibě zkrácený zápis připojení k FTP. PHP tento způsob zápisu připojení bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu. /** * Vraci ID FTP pripojeni na zaklade zadane URL * ftp://username:password@sld.domain.tld:21/path1/path2/ */ function getFtpConnection($uri) { preg_match(&quot;/(?P&lt;protocol&gt;ftps?:\/\/)(?P&lt;username&gt;.*?):(?P&lt;password&gt;.*?)@(?P&lt;url&gt;.*?):?(?P&lt;port&gt;[1-9]&#43;)?(?&lt;dir&gt;\/.*)/i&quot;, $uri, $match); $conn = ftp_connect($match[&#39;url&#39;], empty($match[&#39;port&#39;]) ? 21 : (int)$match[&#39;port&#39;]) or die(&quot;Couldn&#39;t connect to &quot; ." />
@@ -33,7 +33,7 @@
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://blog.omdesign.cz//js/app.js"></script>
+	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -42,8 +42,8 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<!-- Google code prettify -->
 	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
-	<link href="http://blog.omdesign.cz//css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz//css/prettyprint.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
+	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
@@ -89,7 +89,7 @@ function getFtpConnection($uri)
 </section>
 
 <div class="text-center">
-	<a href="http://blog.omdesign.cz/" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
+	<a href="http://blog.omdesign.cz" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
 		Go back</a>
 </div>
 

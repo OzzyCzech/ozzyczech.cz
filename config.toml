@@ -1,10 +1,9 @@
-baseurl = "http://blog.omdesign.cz/"
+baseurl = "http://blog.omdesign.cz"
 contentdir = "./content"
 languageCode = "cs-cz"
 title = "blog.omdesign.cz"
 publishdir = "./docs"
 canonifyurls = true
-googleAnalytics = "UA-5420131-1"
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
 enableEmoji = true
