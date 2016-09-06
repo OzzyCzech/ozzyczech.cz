@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
@@ -7,7 +8,8 @@
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
-	<title>Convert JSON data to valid PHP code</title>	
+	<title>Convert JSON data to valid PHP code</title>
+	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Convert JSON data to valid PHP code"/>
 	<meta name="twitter:description" content="Convert JSON data to valid PHP code Do you need convert JSON data to valid PHP code without pain? I&rsquo;ve got a short script for that! My simple solution used var_export() function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace stdClass::__set_state/ with (object). Take a closer look at example data. I have here currency.json - PHP code should look something like this: &lt;?php return array ( &#39;USD&#39; =&gt; (object)(array( &#39;symbol&#39; =&gt; &#39;$&#39;, &#39;name&#39; =&gt; &#39;US Dollar&#39;, &#39;symbol_native&#39; =&gt; &#39;$&#39;, &#39;decimal_digits&#39; =&gt; 2, &#39;rounding&#39; =&gt; 0, &#39;code&#39; =&gt; &#39;USD&#39;, &#39;name&#39; =&gt; &#39;US dollars&#39;, )), &#39;CAD&#39; =&gt; //..."/>
@@ -37,15 +39,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!-- Google code prettify -->
-	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 

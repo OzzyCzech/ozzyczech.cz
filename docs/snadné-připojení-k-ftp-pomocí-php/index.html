@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
@@ -7,7 +8,8 @@
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
-	<title>Snadné připojení k FTP pomocí PHP</title>	
+	<title>Snadné připojení k FTP pomocí PHP</title>
+	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Snadné připojení k FTP pomocí PHP"/>
 	<meta name="twitter:description" content="Snadné připojení k FTP pomocí PHP Mám v oblibě zkrácený zápis připojení k FTP. PHP tento způsob zápisu připojení bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu. /** * Vraci ID FTP pripojeni na zaklade zadane URL * ftp://username:password@sld.domain.tld:21/path1/path2/ */ function getFtpConnection($uri) { preg_match(&quot;/(?P&lt;protocol&gt;ftps?:\/\/)(?P&lt;username&gt;.*?):(?P&lt;password&gt;.*?)@(?P&lt;url&gt;.*?):?(?P&lt;port&gt;[1-9]&#43;)?(?&lt;dir&gt;\/.*)/i&quot;, $uri, $match); $conn = ftp_connect($match[&#39;url&#39;], empty($match[&#39;port&#39;]) ? 21 : (int)$match[&#39;port&#39;]) or die(&quot;Couldn&#39;t connect to &quot; ."/>
@@ -35,15 +37,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!-- Google code prettify -->
-	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 

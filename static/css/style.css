@@ -196,3 +196,9 @@ img::-moz-selection {
 	color: #fff;
 	background: 0 0
 }
+
+pre {
+	background: #23241f;
+	border-radius: 2px;
+	border: 0;
+}

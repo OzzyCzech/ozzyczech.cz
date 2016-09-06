@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
@@ -7,7 +8,8 @@
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
-	<title>Wordpress - register and setup widgets from PHP code</title>	
+	<title>Wordpress - register and setup widgets from PHP code</title>
+	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Wordpress - register and setup widgets from PHP code"/>
 	<meta name="twitter:description" content="Wordpress: register and setup witgets from PHP code PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it: class Widgets { private $widgets = array(); private $options = array(); public function __construct() { $this-&gt;options = wp_get_sidebars_widgets(); } public function unregisterAllWidgets() { foreach ($this-&gt;options as $name =&gt; $values) $this-&gt;options[$name] = array(); } public function cleanWidgetSettings($type, $multi = null) { $this-&gt;widgets[$type] = array(); if ($multi !== null) $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = (int)(bool)$multi; } public function setMultiWidget($type, $val = 1) { $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = $val; } public function add($type, array $options, $area = null) { $this-&gt;widgets[$type][] = $options; if ($area !== null) { if (array_key_exists($area, $this-&gt;options) === false) { throw new Exception(&#39;Widget area &#39; ."/>
@@ -36,15 +38,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!-- Google code prettify -->
-	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 

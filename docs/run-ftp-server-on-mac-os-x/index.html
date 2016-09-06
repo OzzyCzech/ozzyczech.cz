@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
@@ -7,7 +8,8 @@
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
-	<title>Run FTP server on Mac OS X</title>	
+	<title>Run FTP server on Mac OS X</title>
+	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Run FTP server on Mac OS X"/>
 	<meta name="twitter:description" content="Run FTP server on Mac OS X Setup everyhing: sudo subl /etc/ftpd.conf # match umask from Mac OS X Server ftpd umask all 022 chroot GUEST /Users/roman/ftp modify guest off umask guest 0707 upload guest on Start FTP server sudo launchctl load /System/Library/LaunchDaemons/ftp.plist And stop again: sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist"/>
@@ -37,15 +39,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!-- Google code prettify -->
-	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 

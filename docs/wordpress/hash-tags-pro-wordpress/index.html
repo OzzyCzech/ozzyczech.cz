@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
@@ -7,7 +8,8 @@
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
-	<title>Hash tags pro Wordpress</title>	
+	<title>Hash tags pro Wordpress</title>
+	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Hash tags pro Wordpress"/>
 	<meta name="twitter:description" content="Hash tags pro Wordpress Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy: &lt;?php /* Plugin Name: Hashs Description: Twitter like hash for Wordpress Version: 1.0 Author: Roman Ozana &lt;ozana@omdesign.cz&gt; Author URI: http://www.omdesign.cz/ */ class Hashs { const PATTERN = &#39;/\B#([^\s\W#]&#43;)/i&#39;; /** * @param string $content * @return string mixed */ public static function processContent($content) { return preg_replace(Hashs::PATTERN, &#39;&lt;a href=&quot;&#39; . get_home_url(null, &#39;/tag/$1&#39;) . &#39;&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; &#39;, $content); } /** * Auto hash tags * * @param $post_id * @return bool */ public static function addAutoTags($post_id) { $post = get_post($post_id); preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches); if (!isset($matches[1])) return; wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); // replace } } add_filter(&#39;the_content&#39;, array(&#39;Hashs&#39;, &#39;processContent&#39;), 1); add_action(&#39;save_post&#39;, array(&#39;Hashs&#39;, &#39;addAutoTags&#39;)); Povšimněte si zejména řádku wp_set_object_terms($post_id, $matches[1], &#39;post_tag&#39;, false); ten totiž ukládá nalezené tagy k postu."/>
@@ -38,15 +40,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!-- Google code prettify -->
-	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 

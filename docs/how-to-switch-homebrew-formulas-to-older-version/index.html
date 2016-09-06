@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
@@ -7,7 +8,8 @@
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
-	<title>How to switch Homebrew formulas to older version</title>	
+	<title>How to switch Homebrew formulas to older version</title>
+	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="How to switch Homebrew formulas to older version"/>
 	<meta name="twitter:description" content="How to switch Homebrew formulas to older version Sometimes you just won’t be able install latest version of any program and need some older (e.g. PHP 5.6.1 won’t work and you need install at least 5.6.0 and getting your work done). As you know all brew formulas are GIT repos, you can swith to older version easly: $ cd /usr/local/Library/Taps/homebrew/homebrew-php/Formula $ git log --pretty=&quot;%h - %s&quot; -10 71b2069 - Update to PHP 5.5.18 b8aeb54 - Use homebrew&#39;s openssl for IMAP f0d721a - php56: improve phpdbg logic 0dc3f1c - Update to PHP 5.6.1 908fedd - Update to Blitz 0.8.12 4801697 - Updates formula for WP CLI to version 0.17.0 00560f3 - Upgrade php*-swoole to 1.7.5 8cbd369 - Updated PHP_CodeSniffer a81eba6 - update pecl_http to 2.1.2 6a88856 - Add HEAD url for composer Then just switch $ git checkout 908fedd And then run brew install php56 and older version PHP will be installed."/>
@@ -37,15 +39,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!-- Google code prettify -->
-	<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true"></script>
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
-	<link href="http://blog.omdesign.cz/css/prettyprint.css" rel="stylesheet">
 </head>
 <body>
 
