@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2016-09-06 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2016-09-07 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2016-09-06 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2016-09-07 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -51,6 +51,20 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2016-09-07T00:00:00Z">7. Září 2016</time>
+		
+		<h1><a href="http://blog.omdesign.cz/show/hide-password-button-pure-js/"><div>Show/hide Password button (pure JS)</div></a></h1>
+		
+
+
+
+<iframe width="100%" height="300" src="//jsfiddle.net/33j1gkos/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+	</article>
 	
 	<article>
 		
@@ -571,39 +585,6 @@ $ brew link readline --force
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2014-07-24T00:00:00Z">24. Červenec 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/"><div>How to add all custom post type to main Wordpress archive.php</div></a></h1>
-		
-
-
-
-<p>Default archive shows only <code>post</code> type if you need show all post types just add follow code to <code>function.php</code></p>
-
-<pre><code>add_filter(
-'pre_get_posts', function ($query) {
-        if (
-            $query-&gt;is_main_query() &amp;&amp;
-            !is_admin() &amp;&amp;
-            (is_category() || is_tag())
-            &amp;&amp; empty($query-&gt;query_vars['suppress_filters'])
-        ) {
-            $posts = array_diff(
-                get_post_types(['public' =&gt; true]), ['page', 'attachment', 'revision', 'forum', 'reply', 'topic'] /* array of ignored types*/
-            );
-            $query-&gt;set(
-                'post_type', $posts
-            );
-            return $query;
-        }
-    }
-);
-</code></pre>
-
-	</article>
-	
 	
     
     <ul class="pagination">
@@ -630,12 +611,15 @@ $ brew link readline --force
         ><a href="http://blog.omdesign.cz/posts/page/4/">4</a></li>
         
         <li
+        ><a href="http://blog.omdesign.cz/posts/page/5/">5</a></li>
+        
+        <li
         >
         <a href="http://blog.omdesign.cz/posts/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>
-            <a href="http://blog.omdesign.cz/posts/page/4/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+            <a href="http://blog.omdesign.cz/posts/page/5/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
         </li>
         
     </ul>

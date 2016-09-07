@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-09-25 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-11-28 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-09-25 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-11-28 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -51,6 +51,36 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2013-11-28T00:00:00Z">28. Listopad 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/"><div>Run FTP server on Mac OS X</div></a></h1>
+		
+
+
+
+<p>Setup everyhing: <code>sudo subl /etc/ftpd.conf</code></p>
+
+<pre><code># match umask from Mac OS X Server ftpd
+umask all 022
+chroot GUEST /Users/roman/ftp
+modify guest off
+umask  guest 0707
+upload guest on
+</code></pre>
+
+<p>Start FTP server</p>
+
+<pre><code>sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
+</code></pre>
+
+<p>And stop again:</p>
+
+<p><code>sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist</code></p>
+
+	</article>
 	
 	<article>
 		
@@ -287,20 +317,6 @@ define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
 <pre><code>function something() {
   Globals::wpdb()-&gt;query('SQL...');
 }
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-31T00:00:00Z">31. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/run-iphone-simulator-without-xcode/"><div>Run iPhone simulator without XCode</div></a></h1>
-		
-
-
-
-<pre><code>open -a &quot;iPhone Simulator&quot;
 </code></pre>
 
 	</article>

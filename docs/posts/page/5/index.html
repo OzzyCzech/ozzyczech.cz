@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2013-09-25 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2008-08-12 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-09-25 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2008-08-12 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -54,280 +54,24 @@
 	
 	<article>
 		
-		<time datetime="2013-09-25T00:00:00Z">25. Září 2013</time>
+		<time datetime="2008-08-12T00:00:00Z">12. Srpen 2008</time>
 		
-		<h1><a href="http://blog.omdesign.cz/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
-		
-
-
-
-<pre><code>{
- &quot;repositories&quot;: [
-  {
-   &quot;type&quot;: &quot;pear&quot;,
-   &quot;url&quot;: &quot;http://pear.php.net&quot;
-  }
- ],
- &quot;require&quot;: {
-  &quot;pear-pear/Mail&quot;: &quot;&gt;=1.2.0&quot;
- }
-}
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
+		<h1><a href="http://blog.omdesign.cz/tik-v-oku/"><div>Tik v oku</div></a></h1>
 		
 
 
 
-<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
-- I will work on application and my packages together.
-- I need a simple way how to commit and publish new version of packages.
-- Workflow need to be simple (mimimum of commands)</p>
-
-<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
-
-<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
-
-<pre><code>&quot;scripts&quot;: {
- &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
- &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
-},
-</code></pre>
-
-<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
-
-<p>When you are using tagged releases (no dev versions) of package then run:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
-</code></pre>
-
-<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
-</code></pre>
-
-<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+<p>Projevuje se jemným, ale častým a intenzivním, <strong>škubáním ve víčku oka</strong>. Způsobuje ho nejčastěji <strong>přepracování</strong>, nevyspání, <strong>nepřiměřený stres</strong> (nervy) nebo konzumace lehkých drog. Já k tomu přidávám, nevhodný monitor, nevhodné osvětlení, vnější rušivé elementy (hluk atd.) a častá práce u počítače. Trvání tohoto problému je různé, odhadem je to <strong>od 2 do 8 týdnů</strong>. Jak s tím bojovat:</p>
 
 <ul>
-<li>Large VCS repository size and diffs when you update code.</li>
-<li>Duplication of the history of all your dependencies in your own VCS.</li>
-<li>There can be conflicts in commits especially when you work in larger team.</li>
-<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+<li>Vysadit - zbavit se stresu (můžete zkusit <a href="http://www.bdc.cz/" title="Budhizmus Diamantové Cesty">třebas meditovat</a>)</li>
+<li>Pořádně se vyspat</li>
+<li><a href="http://www.celostnimedicina.cz/oci-=-cviceni-zraku-pro-zdravou-dlouhovekost.htm" title="Oční cviky"> Cvičit oči</a></li>
+<li>Odstranit veškeré rušivé elementy</li>
+<li>A hlavně nasadit vitamíny</li>
 </ul>
 
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-05-14T00:00:00Z">14. Květen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/"><div>Setup email sending from PHP on Mac</div></a></h1>
-		
-
-
-
-<p>First write in terminal: <code>which sendmail</code> wlll return path to sendmail app (in my case <code>/usr/sbin/sendmail</code>). Then open <code>php.ini</code> file and setup:</p>
-
-<pre><code>sendmail_path = /usr/sbin/sendmail -t -i
-</code></pre>
-
-<p>Create necessary folder and setup postfix permissions:</p>
-
-<pre><code>sudo mkdir -p /Library/Server/Mail/Data/spool
-sudo /usr/sbin/postfix set-permissions
-sudo /usr/sbin/postfix start
-</code></pre>
-
-<p>And check if emails will come:</p>
-
-<pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
-		
-
-
-
-<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-  /* it's retina yeah! */
-}
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-26T00:00:00Z">26. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/toggle-hidden-files-in-finder/"><div>Toggle Hidden Files in Finder</div></a></h1>
-		
-
-
-
-<p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
-
-<pre><code>STATUS=`defaults read com.apple.finder AppleShowAllFiles`
-if [ $STATUS == YES ];
-then
-    defaults write com.apple.finder AppleShowAllFiles NO
-else
-    defaults write com.apple.finder AppleShowAllFiles YES
-fi
-killall Finder
-</code></pre>
-
-<p>Save application. From now can Tooggle</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-11T00:00:00Z">11. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/list-all-mounted-drives-on-mac/"><div>List all mounted drives on mac</div></a></h1>
-		
-
-
-
-<p>It&rsquo;s simple: <code>df -h</code></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-31T00:00:00Z">31. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/run-iphone-simulator-without-xcode/"><div>Run iPhone simulator without XCode</div></a></h1>
-		
-
-
-
-<pre><code>open -a &quot;iPhone Simulator&quot;
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-08T00:00:00Z">8. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/seznam-v%C4%9Bc%C3%AD-kter%C3%A9-internet-zabil/"><div>Seznam věcí které Internet zabil</div></a></h1>
-		
-
-
-
-<p>Co všechno Internet zabil nebo zabíjí?</p>
-
-<ol>
-<li>Hudební průmysl</li>
-<li>Filmový průmysl</li>
-<li>Porno průmysl</li>
-<li>Zásilkové služby (Quelle, Neckermann atd.)</li>
-<li>Pohledy a dopisy psané rukou</li>
-<li>Anonymitu (ta postupně mizí)</li>
-<li>DVD a videopůjčovny</li>
-<li>Časopisy noviny a poctivou novinařinu</li>
-<li>Televizi</li>
-<li>Encyklopedie</li>
-<li>MMS, SMS</li>
-<li>Tištěné mapy</li>
-</ol>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-10-29T00:00:00Z">29. Říjen 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/"><div>WYSIWYG pro popis uživatele ve Wordpress</div></a></h1>
-		
-
-
-
-<p>Následující kratičký kód zobrazí #WYSIWYG editor u popisu autora u uživatelského profilu: Kód stačí přidat do <code>function.php</code> ve vašem template:</p>
-
-<pre><code>&lt;?php
-/**
- * WYSIWYG pro uzivatelsky profil Wordpress
- *
- * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
- */
-class CustomUserProfile {
-
-  /** @var array */
-  private $tinymceOptions = array(
-    'teeny' =&gt; true,
-    'quicktags' =&gt; false,
-    'media_buttons' =&gt; false, 'textarea_rows' =&gt; 8,
-    'wpautop' =&gt; false,
-    'tinymce' =&gt; array(
-      'theme_advanced_buttons1' =&gt; 'p, bold, italic, ul, |,link,unlink,code',
-      'theme_advanced_buttons2' =&gt; '',
-      'theme_advanced_buttons3' =&gt; '',
-      'theme_advanced_buttons4' =&gt; '',
-    ),
-  );
-
-  public function __construct() {
-    add_action('show_user_profile', array($this, 'initDescriptionWysywig'));
-    add_action('edit_user_profile', array($this, 'initDescriptionWysywig'));
-  }
-
-  /**
-   * Wysywig editor take pro description
-   *
-   * @param $options
-   */
-  public function initDescriptionWysywig($options) {
-    if ( ! class_exists('_WP_Editors' ) )
-      require_once( ABSPATH . WPINC . '/class-wp-editor.php' );
-
-    $options = _WP_Editors::parse_settings('description', $this-&gt;tinymceOptions);
-    _WP_Editors::editor_settings('description', $options);
-    wp_print_styles('editor-buttons');
-  }
-
-}
-new CustomUserProfile();
-</code></pre>
-
-<p>#wordpress #php</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-09-05T00:00:00Z">5. Září 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/"><div>Zjištění práv k souboru nebo adresáři v PHP</div></a></h1>
-		
-
-
-
-<pre><code>function getPermisions($file) {
-  return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : '0000';
-}
-</code></pre>
-
-<p>Nebo pro kontrolu, zda jsou práva dostatečná:</p>
-
-<pre><code>function hasPermisions($path, $permission = 777) {
-  $current = substr(decoct(fileperms($path)), $permission &gt; 1000 ? -4 : -3);
-  return ($current &gt; $permission);
-}
-</code></pre>
+<p>Nejlepším <strong>vitamínem je B12</strong> - k dostání v lékárně v podobě B-Komplex (Forte). Můžete konzumovat od 1 do 3 tablet denně. Výhodou B-komplex je to že neobsahuje jen B12 ale celou skupinu vitamínů B. Vitamín B12 také najdete v rybím tuku a nebo pivovarnických kvasnicích. Dalším vitamínem, který pomáhá je <strong>magnézium (hořčík)</strong>. Pozor ať se nepředávkujete, působí to totiž i na srdce. Můžete si jej koupit v lékárně, ale mnohdy stačí i vhodná minerálka nebo banány. Když nic z toho nepomůže, bude asi lepší zajít za doktorem. Většinou to ale zmizí stejně rychle jak to příjde. Máte osobní <strong>zkušenost s tímto problémem</strong>?.</p>
 
 	</article>
 	
@@ -341,7 +85,7 @@ new CustomUserProfile();
         
         <li
         >
-        <a href="http://blog.omdesign.cz/posts/page/2/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        <a href="http://blog.omdesign.cz/posts/page/4/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
         </li>
         
         <li
@@ -351,17 +95,17 @@ new CustomUserProfile();
         ><a href="http://blog.omdesign.cz/posts/page/2/">2</a></li>
         
         <li
-        class="active"><a href="http://blog.omdesign.cz/posts/page/3/">3</a></li>
+        ><a href="http://blog.omdesign.cz/posts/page/3/">3</a></li>
         
         <li
         ><a href="http://blog.omdesign.cz/posts/page/4/">4</a></li>
         
         <li
-        ><a href="http://blog.omdesign.cz/posts/page/5/">5</a></li>
+        class="active"><a href="http://blog.omdesign.cz/posts/page/5/">5</a></li>
         
         <li
-        >
-        <a href="http://blog.omdesign.cz/posts/page/4/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        class="disabled">
+        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>

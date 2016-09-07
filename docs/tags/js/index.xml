@@ -8,8 +8,23 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Tue, 03 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Show/hide Password button (pure JS)</title>
+      <link>http://blog.omdesign.cz/show/hide-password-button-pure-js/</link>
+      <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/show/hide-password-button-pure-js/</guid>
+      <description>
+
+&lt;h1 id=&#34;show-hide-password-button-pure-js&#34;&gt;Show/hide Password button (pure JS)&lt;/h1&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/33j1gkos/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Twitter Bootstrap Feedback Button</title>

@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2014-07-09 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-07-24 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-07-09 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-07-24 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -51,6 +51,39 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2014-07-24T00:00:00Z">24. Červenec 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/"><div>How to add all custom post type to main Wordpress archive.php</div></a></h1>
+		
+
+
+
+<p>Default archive shows only <code>post</code> type if you need show all post types just add follow code to <code>function.php</code></p>
+
+<pre><code>add_filter(
+'pre_get_posts', function ($query) {
+        if (
+            $query-&gt;is_main_query() &amp;&amp;
+            !is_admin() &amp;&amp;
+            (is_category() || is_tag())
+            &amp;&amp; empty($query-&gt;query_vars['suppress_filters'])
+        ) {
+            $posts = array_diff(
+                get_post_types(['public' =&gt; true]), ['page', 'attachment', 'revision', 'forum', 'reply', 'topic'] /* array of ignored types*/
+            );
+            $query-&gt;set(
+                'post_type', $posts
+            );
+            return $query;
+        }
+    }
+);
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -386,30 +419,6 @@ upload guest on
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2013-09-25T00:00:00Z">25. Září 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
-		
-
-
-
-<pre><code>{
- &quot;repositories&quot;: [
-  {
-   &quot;type&quot;: &quot;pear&quot;,
-   &quot;url&quot;: &quot;http://pear.php.net&quot;
-  }
- ],
- &quot;require&quot;: {
-  &quot;pear-pear/Mail&quot;: &quot;&gt;=1.2.0&quot;
- }
-}
-</code></pre>
-
-	</article>
-	
 	
     
     <ul class="pagination">
@@ -436,12 +445,15 @@ upload guest on
         ><a href="http://blog.omdesign.cz/posts/page/4/">4</a></li>
         
         <li
+        ><a href="http://blog.omdesign.cz/posts/page/5/">5</a></li>
+        
+        <li
         >
         <a href="http://blog.omdesign.cz/posts/page/3/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>
-            <a href="http://blog.omdesign.cz/posts/page/4/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+            <a href="http://blog.omdesign.cz/posts/page/5/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
         </li>
         
     </ul>

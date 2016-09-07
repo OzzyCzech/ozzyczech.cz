@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2014-07-09 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-07-24 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-07-09 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-07-24 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -51,6 +51,39 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2014-07-24T00:00:00Z">24. Červenec 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/"><div>How to add all custom post type to main Wordpress archive.php</div></a></h1>
+		
+
+
+
+<p>Default archive shows only <code>post</code> type if you need show all post types just add follow code to <code>function.php</code></p>
+
+<pre><code>add_filter(
+'pre_get_posts', function ($query) {
+        if (
+            $query-&gt;is_main_query() &amp;&amp;
+            !is_admin() &amp;&amp;
+            (is_category() || is_tag())
+            &amp;&amp; empty($query-&gt;query_vars['suppress_filters'])
+        ) {
+            $posts = array_diff(
+                get_post_types(['public' =&gt; true]), ['page', 'attachment', 'revision', 'forum', 'reply', 'topic'] /* array of ignored types*/
+            );
+            $query-&gt;set(
+                'post_type', $posts
+            );
+            return $query;
+        }
+    }
+);
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -366,36 +399,6 @@ fi
 
 
 <p><code>$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post_id));</code></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-11-28T00:00:00Z">28. Listopad 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/"><div>Run FTP server on Mac OS X</div></a></h1>
-		
-
-
-
-<p>Setup everyhing: <code>sudo subl /etc/ftpd.conf</code></p>
-
-<pre><code># match umask from Mac OS X Server ftpd
-umask all 022
-chroot GUEST /Users/roman/ftp
-modify guest off
-umask  guest 0707
-upload guest on
-</code></pre>
-
-<p>Start FTP server</p>
-
-<pre><code>sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
-</code></pre>
-
-<p>And stop again:</p>
-
-<p><code>sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist</code></p>
 
 	</article>
 	
