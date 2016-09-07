@@ -8,7 +8,41 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <lastBuildDate>Wed, 07 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Webdesign resources</title>
+      <link>http://blog.omdesign.cz/webdesign-resources/</link>
+      <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/webdesign-resources/</guid>
+      <description>
+
+&lt;h1 id=&#34;webdesign-resources&#34;&gt;Webdesign resources&lt;/h1&gt;
+
+&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://flaticon.com&#34;&gt;https://flaticon.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;free-images&#34;&gt;Free Images&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://unsplash.com/&#34;&gt;https://unsplash.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stocksnap.io/&#34;&gt;https://stocksnap.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;wordpress-themes&#34;&gt;Wordpress Themes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://themetrust.com/themes/&#34;&gt;http://themetrust.com/themes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wordpress.org/themes/&#34;&gt;https://wordpress.org/themes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://themeforest.net/category/wordpress/corporate&#34;&gt;https://themeforest.net/category/wordpress/corporate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
