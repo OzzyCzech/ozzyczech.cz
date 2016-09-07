@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
@@ -32,7 +32,7 @@
 	<meta property="article:tag" content="wordpress" />
 	<meta itemprop="name" content="Zvýraznění právě hledaných slov ve Wordpress">
 	<meta itemprop="description" content="Zvýraznění právě hledaných slov ve Wordpress Několik následujících řádků kódu obalí všechna právě vyhledávaná klíčová slova do značky STRONG (class search-keyword). Kód je možné vložit do function.php ve Vašem template. Nebo jej můžete vložit rovnou do search.php někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí Wordpress. function omSearchHeighlight($text) { $keys = explode(&quot; &quot;, get_search_query()); $text = preg_replace(&#39;/(&#39;.implode(&#39;|&#39;, $keys) .&#39;)/iu&#39;, &#39;&lt;strong class=&quot;search-keyword&quot;&gt;\0&lt;/strong&gt;&#39;, $text); return $text; } add_filter(&#39;the_title&#39;,&#39;omSearchHeighlight&#39;); add_filter(&#39;the_content&#39;,&#39;omSearchHeighlight&#39;); add_filter(&#39;the_excerpt&#39;,&#39;omSearchHeighlight&#39;); // nezapomeňte strong element nastylovat např.">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,quotes,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="110">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -53,8 +53,10 @@
 
 <section class="container">
 	<article>
-	<time datetime="2010-11-15T00:00:00Z">15. Listopad 2010</time>
-	
+		
+		<time datetime="2010-11-15T00:00:00Z">15. Listopad 2010</time>
+		
+		
 
 <h1 id="zvýraznění-právě-hledaných-slov-ve-wordpress">Zvýraznění právě hledaných slov ve Wordpress</h1>
 
@@ -77,17 +79,16 @@ add_filter('the_excerpt','omSearchHeighlight');
 
 <p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
 
-	<div class="tags">
-	
-		<a href="http://blog.omdesign.cz/tags/css" class="tag">#CSS</a>
-	
-		<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
-	
-		<a href="http://blog.omdesign.cz/tags/wordpress" class="tag">#wordpress</a>
-	
-	</div>
-</article>
-
+		<div class="tags">
+		
+			<a href="http://blog.omdesign.cz/tags/css" class="tag">#CSS</a>
+		
+			<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
+		
+			<a href="http://blog.omdesign.cz/tags/wordpress" class="tag">#wordpress</a>
+		
+		</div>
+	</article>
 </section>
 
 <div class="text-center">

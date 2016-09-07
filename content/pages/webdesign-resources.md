@@ -1,6 +1,5 @@
 ---
 title: Webdesign resources
-date: 2016-09-07
 tags: [webdesign, images]
 ---
 

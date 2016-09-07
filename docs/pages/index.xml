@@ -8,59 +8,7 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Wed, 07 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/pages/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Webdesign resources</title>
-      <link>http://blog.omdesign.cz/webdesign-resources/</link>
-      <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/webdesign-resources/</guid>
-      <description>
-
-&lt;h1 id=&#34;webdesign-resources&#34;&gt;Webdesign resources&lt;/h1&gt;
-
-&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://flaticon.com&#34;&gt;https://flaticon.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;free-images&#34;&gt;Free Images&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://unsplash.com/&#34;&gt;https://unsplash.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stocksnap.io/&#34;&gt;https://stocksnap.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;wordpress-themes&#34;&gt;Wordpress Themes&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://themetrust.com/themes/&#34;&gt;http://themetrust.com/themes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wordpress.org/themes/&#34;&gt;https://wordpress.org/themes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://themeforest.net/category/wordpress/corporate&#34;&gt;https://themeforest.net/category/wordpress/corporate&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://blog.omdesign.cz</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz</guid>
-      <description>
-
-&lt;h1 id=&#34;quotes&#34;&gt;Quotes&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It doesn’t make sense to hire smart people and then tell them what to do;
-we hire smart people so they can tell us what to do.
-&lt;em&gt;Steve Jobs&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
     
     <item>
       <title>Movies list</title>
@@ -91,6 +39,103 @@ ale v současnosti se dávají znovu dohromady a život se do nich pomalu ale ji
 	&lt;/iframe&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Quotes</title>
+      <link>http://blog.omdesign.cz/quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/quotes/</guid>
+      <description>
+
+&lt;h1 id=&#34;quotes&#34;&gt;Quotes&lt;/h1&gt;
+
+&lt;p&gt;It doesn’t make sense to hire smart people and then tell them what to do;
+we hire smart people so they can tell us what to do. &lt;em&gt;Steve Jobs&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Neházej všechno do jednoho pytle, nezdvihneš ho.
+&lt;em&gt;(anglické)&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Nejdůležitější informace se nacházejí na té části mapy, která je utržená.
+&lt;em&gt;(Kellyho zákon navigace)&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Na každý komplexní problém existuje jednoduchá odpověď, která je zpravidla špatná.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Kulturnost je jenom nátěr, který je velmi lehce rozpustný v alkoholu.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Když potřebuješ vyprášit čepici nedělej to o ženu.
+&lt;em&gt;(arabské)&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Jedinou konstantou dneška je změna.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Co nezměníš ty nezmění nikdo na světě.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Kdo má prachy, bude i v pekle lízat zmrzlinu
+&lt;em&gt;(arabské)&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Co tě nezabije, to se tě pokusí zabít znova.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Nikdy nepřemýšlím o budoucnosti, protože přichází přiliš rychle.
+&lt;em&gt;(Albert Einstein)&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Webdesign resources</title>
+      <link>http://blog.omdesign.cz/webdesign-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/webdesign-resources/</guid>
+      <description>
+
+&lt;h1 id=&#34;webdesign-resources&#34;&gt;Webdesign resources&lt;/h1&gt;
+
+&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://flaticon.com&#34;&gt;https://flaticon.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;free-images&#34;&gt;Free Images&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://unsplash.com/&#34;&gt;https://unsplash.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stocksnap.io/&#34;&gt;https://stocksnap.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;wordpress-themes&#34;&gt;Wordpress Themes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://themetrust.com/themes/&#34;&gt;http://themetrust.com/themes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wordpress.org/themes/&#34;&gt;https://wordpress.org/themes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://themeforest.net/category/wordpress/corporate&#34;&gt;https://themeforest.net/category/wordpress/corporate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

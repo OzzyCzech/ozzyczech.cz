@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
 	<meta name="author" content="Roman Ožana">
@@ -30,7 +30,7 @@
 	<meta property="article:tag" content="PHP" />
 	<meta itemprop="name" content="Jak okopírovat adresář s celým obsahem v PHP">
 	<meta itemprop="description" content="Jak okopírovat adresář s celým obsahem v PHP Složitých a ošklivých funkcí pro kopírování adresářů a podadresářů vč. jejich obsahu jsem viděl několik. Tahle celkem běžná úloha jde vyřešit i jednoduše pomocí PHP iterátoru: $source = &quot;/foo/bar/dir&quot;; $dest= &quot;/dest/dir&quot;; foreach ( $iterator = new RecursiveIteratorIterator( new RecursiveDirectoryIterator($source, RecursiveDirectoryIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST) as $item ) { if ($item-&gt;isDir()) { mkdir($dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName()); } else { copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName());">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,how-to,howto,html,html5,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,protip,přepis-auta,quotes,rebase,recepty,retina,shell,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="72">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -51,8 +51,10 @@
 
 <section class="container">
 	<article>
-	<time datetime="2011-10-15T00:00:00Z">15. Říjen 2011</time>
-	
+		
+		<time datetime="2011-10-15T00:00:00Z">15. Říjen 2011</time>
+		
+		
 
 <h1 id="jak-okopírovat-adresář-s-celým-obsahem-v-php">Jak okopírovat adresář s celým obsahem v PHP</h1>
 
@@ -74,13 +76,12 @@ foreach (
 }
 </code></pre>
 
-	<div class="tags">
-	
-		<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
-	
-	</div>
-</article>
-
+		<div class="tags">
+		
+			<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
+		
+		</div>
+	</article>
 </section>
 
 <div class="text-center">

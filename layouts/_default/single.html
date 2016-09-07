@@ -1,7 +1,17 @@
 {{ partial "header.html" . }}
 
 <section class="container">
-	{{ .Render "article" }}
+	<article>
+		{{ if not .Date.IsZero }}
+		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Day }}. {{ index .Site.Params.Months (sub .Date.Month 1) }} {{ .Date.Year }}</time>
+		{{ end }}
+		{{ .Content }}
+		<div class="tags">
+		{{ range .Params.tags }}
+			<a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">#{{ . }}</a>
+		{{ end }}
+		</div>
+	</article>
 </section>
 
 <div class="text-center">

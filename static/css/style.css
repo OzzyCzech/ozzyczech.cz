@@ -42,6 +42,10 @@ a img:hover, a img:focus {
 blockquote {
 	color: gray;
 	font-style: italic
+	margin-bottom:5px!important;
+}
+blockquote p {
+	margin: 0 auto;
 }
 
 hr.small {
