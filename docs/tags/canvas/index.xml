@@ -93,7 +93,7 @@
 	drawCircle(&#39;#555555&#39;, options.lineWidth, options.percent / 100);
 &lt;/script&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zky35zt7/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zky35zt7/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 
 &lt;p&gt;

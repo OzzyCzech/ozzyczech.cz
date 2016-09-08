@@ -1,5 +1,5 @@
 ---
-title: Show/hide Password button pure Javascript
+title: Show Password button pure Javascript
 date: 2016-09-07
 tags: [js, ux, webdesign]
 ---

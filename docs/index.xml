@@ -12,18 +12,18 @@
     <atom:link href="http://blog.omdesign.cz/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Show/hide Password button pure Javascript</title>
-      <link>http://blog.omdesign.cz/show/hide-password-button-pure-javascript/</link>
+      <title>Show Password button pure Javascript</title>
+      <link>http://blog.omdesign.cz/show-password-button-pure-javascript/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/show/hide-password-button-pure-javascript/</guid>
+      <guid>http://blog.omdesign.cz/show-password-button-pure-javascript/</guid>
       <description>
 
 &lt;h1 id=&#34;show-hide-password-button-pure-javascript&#34;&gt;Show/hide Password button pure Javascript&lt;/h1&gt;
 
 &lt;p&gt;Pure Javascript solution for show/hide password button near to password input:&lt;/p&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zbse23mf/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zbse23mf/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 </description>
     </item>
@@ -211,7 +211,7 @@ For new users is better using something else then &lt;strong&gt;Sign up&lt;/stro
 &lt;li&gt;jQuery for Ajax form submit&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/gogmfazc/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/gogmfazc/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 </description>
     </item>
@@ -672,7 +672,7 @@ $ brew link readline --force
 	drawCircle(&#39;#555555&#39;, options.lineWidth, options.percent / 100);
 &lt;/script&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zky35zt7/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zky35zt7/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 
 &lt;p&gt;
