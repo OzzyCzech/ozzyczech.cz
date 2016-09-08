@@ -23,4 +23,6 @@ tags: [webdesign, images]
 
 ### JS Libs
 
+* https://alertifyjs.org/
 * https://github.com/t4t5/sweetalert
+* https://github.com/HubSpot/messenger
