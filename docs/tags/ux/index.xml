@@ -12,16 +12,18 @@
     <atom:link href="http://blog.omdesign.cz/tags/ux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Show/hide Password button (pure JS)</title>
-      <link>http://blog.omdesign.cz/show/hide-password-button-pure-js/</link>
+      <title>Show/hide Password button pure Javascript</title>
+      <link>http://blog.omdesign.cz/show/hide-password-button-pure-javascript/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/show/hide-password-button-pure-js/</guid>
+      <guid>http://blog.omdesign.cz/show/hide-password-button-pure-javascript/</guid>
       <description>
 
-&lt;h1 id=&#34;show-hide-password-button-pure-js&#34;&gt;Show/hide Password button (pure JS)&lt;/h1&gt;
+&lt;h1 id=&#34;show-hide-password-button-pure-javascript&#34;&gt;Show/hide Password button pure Javascript&lt;/h1&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/33j1gkos/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Pure Javascript solution for show/hide password button near to password input:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zbse23mf/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 </description>
     </item>
