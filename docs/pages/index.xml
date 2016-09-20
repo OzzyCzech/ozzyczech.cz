@@ -52,35 +52,37 @@ ale v současnosti se dávají znovu dohromady a život se do nich pomalu ale ji
 
 &lt;h1 id=&#34;quotes&#34;&gt;Quotes&lt;/h1&gt;
 
+&lt;p&gt;Jakkoli krásnou máte strategii, měli byste se občas podívat i na její výsledky.
+&lt;br&gt;&lt;em&gt;Winston Churchill&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;It doesn’t make sense to hire smart people and then tell them what to do;
-we hire smart people so they can tell us what to do. &lt;em&gt;Steve Jobs&lt;/em&gt;&lt;/p&gt;
+we hire smart people so they can tell us what to do.
+&lt;br&gt;&lt;em&gt;Steve Jobs&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;Neházej všechno do jednoho pytle, nezdvihneš ho.
-&lt;em&gt;(anglické)&lt;/em&gt;&lt;/p&gt;
+&lt;br&gt;&lt;em&gt;anglické&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;Nejdůležitější informace se nacházejí na té části mapy, která je utržená.
-&lt;em&gt;(Kellyho zákon navigace)&lt;/em&gt;&lt;/p&gt;
+&lt;br&gt;&lt;em&gt;Kellyho zákon navigace&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;blockquote&gt;
 &lt;p&gt;Na každý komplexní problém existuje jednoduchá odpověď, která je zpravidla špatná.&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;hr /&gt;
 
-&lt;blockquote&gt;
 &lt;p&gt;Kulturnost je jenom nátěr, který je velmi lehce rozpustný v alkoholu.&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;Když potřebuješ vyprášit čepici nedělej to o ženu.
-&lt;em&gt;(arabské)&lt;/em&gt;&lt;/p&gt;
+&lt;br&gt;&lt;em&gt;arabské&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -93,7 +95,7 @@ we hire smart people so they can tell us what to do. &lt;em&gt;Steve Jobs&lt;/em
 &lt;hr /&gt;
 
 &lt;p&gt;Kdo má prachy, bude i v pekle lízat zmrzlinu
-&lt;em&gt;(arabské)&lt;/em&gt;&lt;/p&gt;
+&lt;br&gt;&lt;em&gt;arabské&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -102,7 +104,7 @@ we hire smart people so they can tell us what to do. &lt;em&gt;Steve Jobs&lt;/em
 &lt;hr /&gt;
 
 &lt;p&gt;Nikdy nepřemýšlím o budoucnosti, protože přichází přiliš rychle.
-&lt;em&gt;(Albert Einstein)&lt;/em&gt;&lt;/p&gt;
+&lt;br&gt;&lt;em&gt;Albert Einstein&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -140,7 +142,9 @@ we hire smart people so they can tell us what to do. &lt;em&gt;Steve Jobs&lt;/em
 &lt;h3 id=&#34;js-libs&#34;&gt;JS Libs&lt;/h3&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://alertifyjs.org/&#34;&gt;https://alertifyjs.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/t4t5/sweetalert&#34;&gt;https://github.com/t4t5/sweetalert&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HubSpot/messenger&#34;&gt;https://github.com/HubSpot/messenger&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

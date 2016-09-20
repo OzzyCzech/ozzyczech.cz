@@ -356,6 +356,73 @@ bojovat - snažte se veškeré <strong>rovné povrchy udržovat čisté</strong>
 	
 	<article>
 		
+		<h1><a href="http://blog.omdesign.cz"><div></div></a></h1>
+		
+
+
+
+<pre><code>var express = require('express');
+var phantom = require('phantom');
+var app = express()
+
+app.use(express.static(__dirname + '/public'));
+
+// setup express
+//app.use(express.compress());
+//app.use(express.static(public_dir));
+//app.use(express.json());
+//app.use(express.urlencoded());
+
+app.get('/', function (req, res) {
+
+	var url = 'https://www.google.com/';
+
+	var sitepage = null;
+	var phInstance = null;
+
+
+	phantom.create(['--ignore-ssl-errors=yes', '--ssl-protocol=any', '--load-images=yes', '--local-to-remote-url-access=yes'], {logLevel: 'error'})
+			.then(instance =&gt; {
+				phInstance = instance;
+				return instance.createPage();
+			})
+			// Configure page
+			.then(page =&gt; {
+				sitepage = page;
+				sitepage.setting('paperSize', {format: &quot;A4&quot;, orientation: 'portrait', margin: '1cm', width: 795, height: 1125});
+				sitepage.property('viewportSize', {width: 1280, height: 1020});
+				return page.open(url);
+			})
+			.then(status =&gt; {
+				if (status === 'success') {
+					return sitepage.render(__dirname + '/public/output.png');
+				}
+			})
+			.then(rendered =&gt; {
+				if (rendered === true) {
+					res.download(__dirname + '/public/output.png');
+				} else {
+					res.status(404).json({error:true, message: &quot;404 Not Found&quot;});
+				}
+
+				sitepage.close();
+				phInstance.exit()
+			})
+			.catch(error =&gt; {
+				res.status(404).json({error: true, message: error});
+				phInstance.exit();
+			});
+
+});
+
+app.listen(process.env.PORT || 3030);
+
+</code></pre>
+
+	</article>
+	
+	<article>
+		
 		<h1><a href="http://blog.omdesign.cz/movies-list/"><div>Movies list</div></a></h1>
 		
 
@@ -390,35 +457,37 @@ ale v současnosti se dávají znovu dohromady a život se do nich pomalu ale ji
 
 
 
+<p>Jakkoli krásnou máte strategii, měli byste se občas podívat i na její výsledky.
+<br><em>Winston Churchill</em></p>
+
+<hr />
+
 <p>It doesn’t make sense to hire smart people and then tell them what to do;
-we hire smart people so they can tell us what to do. <em>Steve Jobs</em></p>
+we hire smart people so they can tell us what to do.
+<br><em>Steve Jobs</em></p>
 
 <hr />
 
 <p>Neházej všechno do jednoho pytle, nezdvihneš ho.
-<em>(anglické)</em></p>
+<br><em>anglické</em></p>
 
 <hr />
 
 <p>Nejdůležitější informace se nacházejí na té části mapy, která je utržená.
-<em>(Kellyho zákon navigace)</em></p>
+<br><em>Kellyho zákon navigace</em></p>
 
 <hr />
 
-<blockquote>
 <p>Na každý komplexní problém existuje jednoduchá odpověď, která je zpravidla špatná.</p>
-</blockquote>
 
 <hr />
 
-<blockquote>
 <p>Kulturnost je jenom nátěr, který je velmi lehce rozpustný v alkoholu.</p>
-</blockquote>
 
 <hr />
 
 <p>Když potřebuješ vyprášit čepici nedělej to o ženu.
-<em>(arabské)</em></p>
+<br><em>arabské</em></p>
 
 <hr />
 
@@ -431,7 +500,7 @@ we hire smart people so they can tell us what to do. <em>Steve Jobs</em></p>
 <hr />
 
 <p>Kdo má prachy, bude i v pekle lízat zmrzlinu
-<em>(arabské)</em></p>
+<br><em>arabské</em></p>
 
 <hr />
 
@@ -440,43 +509,7 @@ we hire smart people so they can tell us what to do. <em>Steve Jobs</em></p>
 <hr />
 
 <p>Nikdy nepřemýšlím o budoucnosti, protože přichází přiliš rychle.
-<em>(Albert Einstein)</em></p>
-
-	</article>
-	
-	<article>
-		
-		<h1><a href="http://blog.omdesign.cz/webdesign-resources/"><div>Webdesign resources</div></a></h1>
-		
-
-
-
-<h3 id="icons">Icons</h3>
-
-<ul>
-<li><a href="https://flaticon.com">https://flaticon.com</a></li>
-</ul>
-
-<h3 id="free-images">Free Images</h3>
-
-<ul>
-<li><a href="https://unsplash.com/">https://unsplash.com/</a></li>
-<li><a href="https://stocksnap.io/">https://stocksnap.io/</a></li>
-</ul>
-
-<h3 id="wordpress-themes">Wordpress Themes</h3>
-
-<ul>
-<li><a href="http://themetrust.com/themes/">http://themetrust.com/themes/</a></li>
-<li><a href="https://wordpress.org/themes/">https://wordpress.org/themes/</a></li>
-<li><a href="https://themeforest.net/category/wordpress/corporate">https://themeforest.net/category/wordpress/corporate</a></li>
-</ul>
-
-<h3 id="js-libs">JS Libs</h3>
-
-<ul>
-<li><a href="https://github.com/t4t5/sweetalert">https://github.com/t4t5/sweetalert</a></li>
-</ul>
+<br><em>Albert Einstein</em></p>
 
 	</article>
 	
@@ -512,12 +545,15 @@ we hire smart people so they can tell us what to do. <em>Steve Jobs</em></p>
         class="active"><a href="http://blog.omdesign.cz/page/6/">6</a></li>
         
         <li
-        class="disabled">
-        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        ><a href="http://blog.omdesign.cz/page/7/">7</a></li>
+        
+        <li
+        >
+        <a href="http://blog.omdesign.cz/page/7/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>
-            <a href="http://blog.omdesign.cz/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+            <a href="http://blog.omdesign.cz/page/7/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
         </li>
         
     </ul>

@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-11-28 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="0001-01-01 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-11-28 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -54,270 +54,39 @@
 	
 	<article>
 		
-		<time datetime="2013-11-28T00:00:00Z">28. Listopad 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/"><div>Run FTP server on Mac OS X</div></a></h1>
+		<h1><a href="http://blog.omdesign.cz/webdesign-resources/"><div>Webdesign resources</div></a></h1>
 		
 
 
 
-<p>Setup everyhing: <code>sudo subl /etc/ftpd.conf</code></p>
-
-<pre><code># match umask from Mac OS X Server ftpd
-umask all 022
-chroot GUEST /Users/roman/ftp
-modify guest off
-umask  guest 0707
-upload guest on
-</code></pre>
-
-<p>Start FTP server</p>
-
-<pre><code>sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
-</code></pre>
-
-<p>And stop again:</p>
-
-<p><code>sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist</code></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-09-25T00:00:00Z">25. Září 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
-		
-
-
-
-<pre><code>{
- &quot;repositories&quot;: [
-  {
-   &quot;type&quot;: &quot;pear&quot;,
-   &quot;url&quot;: &quot;http://pear.php.net&quot;
-  }
- ],
- &quot;require&quot;: {
-  &quot;pear-pear/Mail&quot;: &quot;&gt;=1.2.0&quot;
- }
-}
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
-		
-
-
-
-<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
-- I will work on application and my packages together.
-- I need a simple way how to commit and publish new version of packages.
-- Workflow need to be simple (mimimum of commands)</p>
-
-<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
-
-<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
-
-<pre><code>&quot;scripts&quot;: {
- &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
- &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
-},
-</code></pre>
-
-<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
-
-<p>When you are using tagged releases (no dev versions) of package then run:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
-</code></pre>
-
-<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
-
-<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
-</code></pre>
-
-<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+<h3 id="icons">Icons</h3>
 
 <ul>
-<li>Large VCS repository size and diffs when you update code.</li>
-<li>Duplication of the history of all your dependencies in your own VCS.</li>
-<li>There can be conflicts in commits especially when you work in larger team.</li>
-<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+<li><a href="https://flaticon.com">https://flaticon.com</a></li>
 </ul>
 
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-05-14T00:00:00Z">14. Květen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/"><div>Setup email sending from PHP on Mac</div></a></h1>
-		
+<h3 id="free-images">Free Images</h3>
 
+<ul>
+<li><a href="https://unsplash.com/">https://unsplash.com/</a></li>
+<li><a href="https://stocksnap.io/">https://stocksnap.io/</a></li>
+</ul>
 
+<h3 id="wordpress-themes">Wordpress Themes</h3>
 
-<p>First write in terminal: <code>which sendmail</code> wlll return path to sendmail app (in my case <code>/usr/sbin/sendmail</code>). Then open <code>php.ini</code> file and setup:</p>
+<ul>
+<li><a href="http://themetrust.com/themes/">http://themetrust.com/themes/</a></li>
+<li><a href="https://wordpress.org/themes/">https://wordpress.org/themes/</a></li>
+<li><a href="https://themeforest.net/category/wordpress/corporate">https://themeforest.net/category/wordpress/corporate</a></li>
+</ul>
 
-<pre><code>sendmail_path = /usr/sbin/sendmail -t -i
-</code></pre>
+<h3 id="js-libs">JS Libs</h3>
 
-<p>Create necessary folder and setup postfix permissions:</p>
-
-<pre><code>sudo mkdir -p /Library/Server/Mail/Data/spool
-sudo /usr/sbin/postfix set-permissions
-sudo /usr/sbin/postfix start
-</code></pre>
-
-<p>And check if emails will come:</p>
-
-<pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-04-16T00:00:00Z">16. Duben 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/"><div>Wordpress - How to get user by metadata</div></a></h1>
-		
-
-
-
-<p>Getting user by field name is easy, #Wordpress have function for that <a href="http://codex.wordpress.org/Function_Reference/get_user_by">get_user_by</a>. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to <strong>get user by metadata</strong> using <a href="https://codex.wordpress.org/Class_Reference/WP_Query">WP_Query</a> object. Forget about them! You need prepare correct meta query as array or string and call <code>get_users</code>. Thats all!</p>
-
-<pre><code>/**
- * Get user by his metadata
- * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
- * @param $meta_key
- * @param $meta_value
- * @return mixed
- */
-function get_user_by_meta($meta_key, $meta_value) {
- return reset(
-  get_users(
-   array(
-    'meta_key' =&gt; $meta_key,
-    'meta_value' =&gt; $meta_value,
-    'number' =&gt; 1,
-    'count_total' =&gt; false
-   )
-  )
- );
-}
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
-		
-
-
-
-<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-  /* it's retina yeah! */
-}
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-26T00:00:00Z">26. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/toggle-hidden-files-in-finder/"><div>Toggle Hidden Files in Finder</div></a></h1>
-		
-
-
-
-<p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
-
-<pre><code>STATUS=`defaults read com.apple.finder AppleShowAllFiles`
-if [ $STATUS == YES ];
-then
-    defaults write com.apple.finder AppleShowAllFiles NO
-else
-    defaults write com.apple.finder AppleShowAllFiles YES
-fi
-killall Finder
-</code></pre>
-
-<p>Save application. From now can Tooggle</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-11T00:00:00Z">11. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/list-all-mounted-drives-on-mac/"><div>List all mounted drives on mac</div></a></h1>
-		
-
-
-
-<p>It&rsquo;s simple: <code>df -h</code></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-02-20T00:00:00Z">20. Únor 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wodpress-constants-for-human-readable-intervals/"><div>Wodpress constants for human-readable intervals</div></a></h1>
-		
-
-
-
-<p>Constants for expressing human-readable intervals in new #Wordpress are very useful:</p>
-
-<pre><code>define( 'MINUTE_IN_SECONDS', 60 );
-define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
-define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );
-define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );
-define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
-</code></pre>
-
-<p>Example:</p>
-
-<pre><code>wp_cache_add($key, $data, 'default, 5 * DAY_IN_SECONDS);
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-02-08T00:00:00Z">8. Únor 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/"><div>Make WordPress globals more accessible</div></a></h1>
-		
-
-
-
-<p>Wordpress using a lot <a href="http://codex.wordpress.org/Global_Variables">globals variables</a>. These variables are used throughout WordPress code for various reasons. Great example is database connection object <a href="http://codex.wordpress.org/Class_Reference/wpdb">wpdb</a>. Here is common example how to use <strong>wpdb</strong> in some function:</p>
-
-<pre><code>function something() {
-  global $wpdb;
-  /** @var wpdb $wpdb */
-  $wpdb-&gt;query('SQL...');
-}
-</code></pre>
-
-<p>It&rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: <a href="https://gist.github.com/OzzyCzech/4737518">https://gist.github.com/OzzyCzech/4737518</a> (PHP 5.3+ only)</p>
-
-<pre><code>function something() {
-  Globals::wpdb()-&gt;query('SQL...');
-}
-</code></pre>
+<ul>
+<li><a href="https://alertifyjs.org/">https://alertifyjs.org/</a></li>
+<li><a href="https://github.com/t4t5/sweetalert">https://github.com/t4t5/sweetalert</a></li>
+<li><a href="https://github.com/HubSpot/messenger">https://github.com/HubSpot/messenger</a></li>
+</ul>
 
 	</article>
 	
@@ -331,7 +100,7 @@ define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
         
         <li
         >
-        <a href="http://blog.omdesign.cz/page/2/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        <a href="http://blog.omdesign.cz/page/6/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
         </li>
         
         <li
@@ -341,7 +110,7 @@ define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
         ><a href="http://blog.omdesign.cz/page/2/">2</a></li>
         
         <li
-        class="active"><a href="http://blog.omdesign.cz/page/3/">3</a></li>
+        ><a href="http://blog.omdesign.cz/page/3/">3</a></li>
         
         <li
         ><a href="http://blog.omdesign.cz/page/4/">4</a></li>
@@ -353,11 +122,11 @@ define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
         ><a href="http://blog.omdesign.cz/page/6/">6</a></li>
         
         <li
-        ><a href="http://blog.omdesign.cz/page/7/">7</a></li>
+        class="active"><a href="http://blog.omdesign.cz/page/7/">7</a></li>
         
         <li
-        >
-        <a href="http://blog.omdesign.cz/page/4/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        class="disabled">
+        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>
