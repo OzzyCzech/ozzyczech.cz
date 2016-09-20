@@ -1,7 +1,7 @@
 ---
 title: Jak správně přepsat ojeté auto
 date: 2012-06-14
-tags: [auto, how-to, přepis-auta, lifehacker]
+tags: [auto, howto, přepis-auta, lifehacker]
 ---
 
 

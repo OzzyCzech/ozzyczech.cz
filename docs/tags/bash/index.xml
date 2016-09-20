@@ -73,6 +73,38 @@ $ brew link readline --force
     </item>
     
     <item>
+      <title>Find all unnecessary images without link from code</title>
+      <link>http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/</link>
+      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/</guid>
+      <description>
+
+&lt;h1 id=&#34;find-all-unnecessary-images-without-link-from-code&#34;&gt;Find all unnecessary images without link from code&lt;/h1&gt;
+
+&lt;p&gt;How to find all unnecessary images in your website project?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find public/images -type f|while read line ; do printf &amp;quot;$(basename $line) &amp;gt; &amp;quot; &amp;amp;&amp;amp; ack --nofilter -l -c &amp;quot;$(basename $line)&amp;quot; | wc -l; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Output will be:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sprite.gif &amp;gt; 0
+ajax-loader-bg-f9.gif &amp;gt; 2
+ajax-loader-bg-trans.gif &amp;gt; 3
+ajax-loader-static-bg-trans.gif &amp;gt; 2
+bg_about.png &amp;gt; 2
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want output filenames not just marches count remove&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| wc -l
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to clean flash drive before unmount on Mac</title>
       <link>http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/</link>
       <pubDate>Sat, 21 Dec 2013 00:00:00 +0000</pubDate>

@@ -1,7 +1,7 @@
 ---
 title: Find all unnecessary images without link from code
 date: 2014-01-17
-tags: [how-to]
+tags: [bash, howto]
 ---
 
 # Find all unnecessary images without link from code
