@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2014-07-24 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-09-24 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-07-24 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-09-24 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -51,6 +51,39 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2014-09-24T00:00:00Z">24. Září 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/"><div>AngularJS $http not sending X-Requested-With header</div></a></h1>
+		
+
+
+
+<p>Angular <a href="https://docs.angularjs.org/api/ng/service/$http">$http</a> isn’t appending the header <code>X-Requested-With</code> = <code>XMLHttpRequest</code> since Angular 1.3.0.</p>
+
+<blockquote>
+<p>X-Requested-With header is rarely used in practice and by using it all the time we are riggering preflight checks for crossdomain requests. See <a href="https://github.com/angular/angular.js/commit/3a75b1124d062f64093a90b26630938558909e8d"> commit message</a></p>
+</blockquote>
+
+<p>That can cause some problems on PHP side. If you need somehow differentiate XHR and common requests. For example Zend Framework and lot of others PHP frameworks use follow code:</p>
+
+<pre><code>function isXmlHttpRequest() {
+ return !empty($_SERVER['HTTP_X_REQUESTED_WITH']) &amp;&amp;
+  $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
+}
+</code></pre>
+
+<p>You can easily add  on Angular side by following code:</p>
+
+<pre><code>myAppModule.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.headers.common[&quot;X-Requested-With&quot;] = 'XMLHttpRequest';
+}]);
+
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -386,19 +419,6 @@ fi
 
 <p>Then change the access mode of a file <code>chmod +x flash</code>. To unmount a clean flash drive just run
 <code>./flash Flashka</code> (Flashka is name od drive).</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-12-02T00:00:00Z">2. Prosinec 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-get-post-excerpt/"><div>Wordpress -  get post excerpt</div></a></h1>
-		
-
-
-
-<p><code>$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post_id));</code></p>
 
 	</article>
 	

@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2012-06-14 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2012-09-05 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2012-06-14 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2012-09-05 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -51,6 +51,30 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2012-09-05T00:00:00Z">5. Září 2012</time>
+		
+		<h1><a href="http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/"><div>Zjištění práv k souboru nebo adresáři v PHP</div></a></h1>
+		
+
+
+
+<pre><code>function getPermisions($file) {
+  return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : '0000';
+}
+</code></pre>
+
+<p>Nebo pro kontrolu, zda jsou práva dostatečná:</p>
+
+<pre><code>function hasPermisions($path, $permission = 777) {
+  $current = substr(decoct(fileperms($path)), $permission &gt; 1000 ? -4 : -3);
+  return ($current &gt; $permission);
+}
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -340,27 +364,6 @@ Proto by měl být Forest Gump v žebříčku na prvním místě. Mnohem <strong
 kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
 
 <p>Tento špatný koncept používá například: <a href="http://www.opensourcecms.com/">http://www.opensourcecms.com/</a>.</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2008-12-05T00:00:00Z">5. Prosinec 2008</time>
-		
-		<h1><a href="http://blog.omdesign.cz/parkinson%C5%AFv-z%C3%A1kon/"><div>Parkinsonův zákon</div></a></h1>
-		
-
-
-
-<p>Parkinsonův zákon, nebo spíš zákony byly poprvé vydán v roce 1957. Jejich autorem je anglický profesor <a href="http://en.wikipedia.org/wiki/C._Northcote_Parkinson" title="C. Northcote Parkinson">Cyril Northcote Parkinson</a>. Tři nejpovedenější zákony praví:</p>
-
-<ol>
-<li><strong>Práce roste úměrně s časem, který je na ni možno vynaložit</strong>; to, co je třeba udělat, nabývá na důležitosti a komplikovanosti v přímé proporci k vyhrazenému času.</li>
-<li>Výdaje rostou úměrně k příjmům.</li>
-<li>Rozrůstání plodí složitost a složitost plodí zánik.</li>
-</ol>
-
-<p>Nejvíce se mi samozřejmě líbí zákon první. V překladu to znamená, že pokud na něco dostanete týden, budete to dělat týden. Pokud na to dostanete měsíc, budete to dělat přesně měsíc. Dalo by se to popsat, něco jako rozpínavost práce. Navíc čím více času něčemu věnujete, stává se to komplikovanějším a mnohdy také nepoužitelným. Pro příklady nemusíte chodit daleko, zkuste si vyplnit některé formuláře státní správy. Další oblast kde tento zákon bezezbytku platí je IT. Překlad těchto zákonů můžete <a href="http://www.kosmas.cz/knihy/108453/zakony-profesora-parkinsona/ &quot;Kupte si jej :">sehnat i u nás</a>&rdquo;).</p>
 
 	</article>
 	

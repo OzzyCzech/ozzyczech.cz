@@ -8,8 +8,25 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Wed, 07 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Loading Ace Editor from CDN</title>
+      <link>http://blog.omdesign.cz/loading-ace-editor-from-cdn/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/loading-ace-editor-from-cdn/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading-ace-editor-from-cdn&#34;&gt;Loading Ace Editor from CDN&lt;/h1&gt;
+
+&lt;p&gt;How to load Ace Editor from CDN and submit content with regular POST request:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/ze7L9ma8/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Show Password button pure Javascript</title>
@@ -733,31 +750,6 @@ command will upgrade your openssl library:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;openssl version&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you shall have &lt;code&gt;OpenSSL 1.0.1g 7 Apr 2014&lt;/code&gt; or newer.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to keep GitHub Fork Updated (no merge - the right way)</title>
-      <link>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</link>
-      <pubDate>Tue, 11 Feb 2014 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/</guid>
-      <description>
-
-&lt;h1 id=&#34;how-to-keep-github-fork-updated-no-merge-the-right-way&#34;&gt;How to keep GitHub Fork Updated (no merge - the right way)&lt;/h1&gt;
-
-&lt;p&gt;Here is solution how to keep your forks updated &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork&#34;&gt;without merge&lt;/a&gt; and clean history&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone git@github.com:[username]/[repo].git
-git remote add upstream git@github.com:[username2]/[repo].git
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When something change in forked repo&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git fetch upstream
-git checkout [branch]
-git rebase upstream/[branch]
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

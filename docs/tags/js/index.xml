@@ -8,8 +8,25 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Wed, 07 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Loading Ace Editor from CDN</title>
+      <link>http://blog.omdesign.cz/loading-ace-editor-from-cdn/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/loading-ace-editor-from-cdn/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading-ace-editor-from-cdn&#34;&gt;Loading Ace Editor from CDN&lt;/h1&gt;
+
+&lt;p&gt;How to load Ace Editor from CDN and submit content with regular POST request:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/ze7L9ma8/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Show Password button pure Javascript</title>
