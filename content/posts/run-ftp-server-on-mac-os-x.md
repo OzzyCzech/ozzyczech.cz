@@ -1,7 +1,7 @@
 ---
 title: Run FTP server on Mac OS X
 date: 2013-11-28
-tags: [ftp, mac, protip]
+tags: [ftp, mac, osx]
 ---
 
 # Run FTP server on Mac OS X
