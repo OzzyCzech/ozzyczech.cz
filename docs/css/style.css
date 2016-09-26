@@ -10,7 +10,28 @@ article {
 	margin-bottom: 2vmax;
 	border-radius: 2px;
 	background: #ffffff;
+	overflow: auto;
 }
+
+article img {
+	display: block;
+ 	max-width: 100%;
+ 	height: auto;
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+article img[alt$=">"] {
+	padding-left: 25px;
+  float:right;
+}
+
+article img[alt$="<"] {
+	padding-right: 25px;
+  float:left;
+}
+
 
 time {
 	font-size: 16px;
@@ -28,7 +49,8 @@ p a {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 800
+	font-weight: 800;
+	clear: both;
 }
 
 article h1 a {
@@ -58,6 +80,7 @@ hr.small {
 .tags {
 	text-align: justify;
 	margin: 20px auto;
+	clear: both;
 }
 
 .tags a {
