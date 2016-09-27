@@ -11,6 +11,43 @@
     <atom:link href="http://blog.omdesign.cz/pages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Knihy</title>
+      <link>http://blog.omdesign.cz/knihy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/knihy/</guid>
+      <description>
+
+&lt;h2 id=&#34;knihy-pro-děti&#34;&gt;Knihy pro děti&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kosmas.cz/knihy/203684/za-chvili-jsme-doma-jen-si-odskocime-do-afriky/&#34;&gt;Za chvíli jsme doma, jen si odskočíme do Afriky - Oliver Scherz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kosmas.cz/knihy/187917/no-jo-medved/&#34;&gt;No jo, medvěd! - Hubert Schirneck &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kosmas.cz/knihy/188752/mluvici-balik/&#34;&gt;Mluvící balík - Gerald Durrell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kosmas.cz/autor/49584/marcin-mortka/&#34;&gt;Tappi - Marcin Mortka&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kosmas.cz/knihy/202768/tri-banany/&#34;&gt;Tři banány - Zdeněk K. Slabý&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kosmas.cz/autor/47537/cressida-cowellova/&#34;&gt;Škyťák - Jak vycvičit draka&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kosmas.cz/knihy/189941/slon-a-mravenec/&#34;&gt;Slon a mravenec - Daisy Mrázková&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kosmas.cz/knihy/199609/nadherne-utery/&#34;&gt;Nádherné úterý - Daisy Mrázková&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kosmas.cz/knihy/208297/zirafi-mama-a-jine-prisery/&#34;&gt;Žirafí máma a jiné příšery - Alexandra Salmela&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.databazeknih.cz/knihy/rudy-zakon-240925&#34;&gt;Rudý zákon - Bill Browder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.databazeknih.cz/knihy/faktor-churchill-299200&#34;&gt;Faktor Churchill - Boris Johnson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.databazeknih.cz/knihy/rude-hvezdy-ve-vesmiru-aneb-pohled-do-zakulisi-sovetske-kosmonautiky-220823&#34;&gt;Rudé hvězdy ve vesmíru aneb Pohled do zákulisí sovětské kosmonautiky&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Movies list</title>
       <link>http://blog.omdesign.cz/movies-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
