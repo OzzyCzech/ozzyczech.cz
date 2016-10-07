@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2016-09-21 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2016-10-07 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2016-09-21 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2016-10-07 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -51,6 +51,64 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2016-10-07T00:00:00Z">7. Říjen 2016</time>
+		
+		<h1><a href="http://blog.omdesign.cz/get-currency-rates-from-%C4%8Dnb-in-php/"><div>Get currency rates from ČNB in PHP</div></a></h1>
+		
+
+
+
+<pre><code class="language-php">&lt;?php
+namespace testomato\invoice;
+
+/**
+ * Get currency rates from ČNB in PHP
+ *
+ * @author Roman Ožana &lt;ozana@omdesign.cz&gt;
+ */
+class ExchangeRates {
+
+  const URL = 'http://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt?date=';
+
+  private static $rates = [];
+
+  public function getRatesList(\DateTime $date = null) {
+    $date = $date ?: new \DateTime();;
+
+    if (!array_key_exists($key = $date-&gt;format('c'), self::$rates)) {
+
+      $data = file_get_contents(
+        self::URL . $date-&gt;format('d.m.Y'), null, stream_context_create(['http' =&gt; ['timeout' =&gt; 10]])
+      );
+
+      preg_match_all('/([\V]+)\|([\V]+)\|([\d]+)\|([A-Z]+)\|([\d]+),?([\d]*)/mi', $data, $matches, PREG_SET_ORDER);
+
+      foreach ($matches as $m) {
+        self::$rates[$key][$m[4]] = (object)[
+          'country' =&gt; $m[1],
+          'currency' =&gt; $m[2],
+          'code' =&gt; $m[4],
+          'amount' =&gt; intval($m[3]),
+          'rate' =&gt; floatval($m[5] . '.' . $m[6]),
+        ];
+      }
+    }
+
+    return self::$rates[$key];
+  }
+
+  public function toCZK($amount, $code = 'USD', \DateTime $date = null) {
+    $currency = self::getRatesList($date)[$code];
+    return floatval($amount * $currency-&gt;rate / $currency-&gt;amount);
+  }
+
+}
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -525,30 +583,6 @@ trigger('event'); // print wow it's works yeah!
 
 <p>Hardcore simple events for PHP with filter, prioritizing, removing handlers and
 stop propagation. It&rsquo;s even simpler then my previous version <a href="https://github.com/sphido/events">https://github.com/sphido/events</a>.</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2014-09-28T00:00:00Z">28. Září 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/getting-github-latest-release-url/"><div>Getting GitHub latest release URL</div></a></h1>
-		
-
-
-
-<p>Do you need <strong>Download Latest Version</strong> button? Try follow PHP code:</p>
-
-<pre><code>function getLatestTagUrl($repository, $default = 'master') {
-    $file = @json_decode(@file_get_contents(&quot;https://api.github.com/repos/$repository/tags&quot;, false,
-        stream_context_create(['http' =&gt; ['header' =&gt; &quot;User-Agent: Vestibulum\r\n&quot;]])
-    ));
-    return sprintf(&quot;https://github.com/$repository/archive/%s.zip&quot;, $file ? reset($file)-&gt;name : $default);
-}
-
-echo getLatestTagUrl('OzzyCzech/vestibulum');
-// will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip
-</code></pre>
 
 	</article>
 	

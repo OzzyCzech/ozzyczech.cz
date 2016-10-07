@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2012-06-14 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2012-09-05 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2012-06-14 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2012-09-05 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -51,6 +51,30 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2012-09-05T00:00:00Z">5. Září 2012</time>
+		
+		<h1><a href="http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/"><div>Zjištění práv k souboru nebo adresáři v PHP</div></a></h1>
+		
+
+
+
+<pre><code>function getPermisions($file) {
+  return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : '0000';
+}
+</code></pre>
+
+<p>Nebo pro kontrolu, zda jsou práva dostatečná:</p>
+
+<pre><code>function hasPermisions($path, $permission = 777) {
+  $current = substr(decoct(fileperms($path)), $permission &gt; 1000 ? -4 : -3);
+  return ($current &gt; $permission);
+}
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -330,35 +354,6 @@ add_filter('the_excerpt','omSearchHeighlight');
 </code></pre>
 
 <p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2009-04-16T00:00:00Z">16. Duben 2009</time>
-		
-		<h1><a href="http://blog.omdesign.cz/v%C3%BDznam-barev/"><div>Význam barev</div></a></h1>
-		
-
-
-
-<p>Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete <a href="http://www.omdesign.cz" title="Internetové stránky">internetové stránky</a>, je na to potřeba pamatovat dvojnásob. Barva dokáže návštěvníka oslovit a navodit ten správný pocit. Barvy se obecně dělí na barvy teplé, studené a neutrální. <strong>Teplé barvy</strong> jsou založené na odstínech žluté, hnědé, zeleno žluté a oranžové. Teplé barvy svoji podstatou vzrušují, mají tendenci upoutat pozornost. Na pomezí mezi teplou a studenou barvou je možné přiřadit odstíny zelené a fialové. Záleží jak moc obsahují červené nebo modré (RGB). <strong>Studené barvy</strong> jsou založeny na odstínech modré, zelené, fialové, modro-zelené, modro-červené. Tyto barvy mají tendenci uklidňovat, tišit. Na rozdíl od teplých barev, se dají barvy studené celkem úspěšně aplikovat na velké plochy. Mezi <strong>neutrální barvy</strong> patří bílá, šedá a černá. Pak celá řada barev, které obsahují velké množství šedé (barvy tmav0). Neutrální barvy dokáží zvýšit atraktivitu teplých barev. Velké množství barev je znepokojující (vezměte si např. kolotoče). Pro webové stránky je <strong>lepší použít nižší množství</strong> barev (ideálně 3-4). Barvy jsou často a právem spojovány s konkrétními vlastnostmi (<a href="http://www.webdesign.org/web/web-design-basics/color-theory/color-psychology-quick-reference-cards.13826.html" title="Barvy a jejich význam">Psychologie barev</a>):</p>
-
-<ul>
-<li><strong>Červená</strong>: síla, zastavit, chyba, upozornění, láska, pálí, vášeň, cílevědomost, krev</li>
-<li><strong>Růžová</strong>: roztomilé, naivní, dětské, sladké, něha</li>
-<li><strong>Oranžová</strong>: hřejivá, podzimní, kreativita, radost, moudrost, extravagance, energie</li>
-<li><strong>Žlutá</strong>: teplo, štěstí, slunce, fascinace, povzbuzení</li>
-<li><strong>Černá</strong>: temnota, smutek, zloba, noc, smrt, rafinovanost, elegance</li>
-<li><strong>Šedá</strong>: trudomyslnost, nevýraznost, neutralita</li>
-<li><strong>Bílá</strong>: čistota, nevinnost, zima, dokonalost, zvětšuje prostor, chladí</li>
-<li><strong>Hnědá</strong>: podzim, hlína, špína, země, příroda, zdravý rozum</li>
-<li><strong>Zelená</strong>: peníze, závist, příroda, ekologie, náklonnost, soucit, klid, jaro</li>
-<li><strong>Modrá</strong>: pokoj, klid, stabilita, voda, nebe, stálost, jednota, důvěra</li>
-<li><strong>Fialová</strong>: luxus, mystika, pokora, inspirace, šlechta</li>
-</ul>
-
-<p>Modrá se tak logicky stává nejoblíbenější barvou firem (důvěra, klid, stabilita). Různé barvy se hodí k různým účelům. Například bílá je skvělá na pozadí, černá se zase používá pro text. Modrá dokáže dodat hloubku, červená dokáže upozornit atd. Všechno tohle mějte v hlavě (nebo na blogu :-)) pokud začínáte navrhovat web, komponujete mapu, připravujete reklamní letáky nebo se chystáte vymalovat byt.</p>
 
 	</article>
 	

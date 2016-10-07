@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="http://blog.omdesign.cz/favicon.ico">
+	<meta name="author" content="Roman Ožana">
+	<title>Get currency rates from ČNB in PHP</title>
+	<link rel="canonical" href="https://blog.testomato.com/" />	
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:title" content="Get currency rates from ČNB in PHP"/>
+	<meta name="twitter:description" content="Get currency rates from ČNB in PHP &lt;?php namespace testomato\invoice; /** * Get currency rates from ČNB in PHP * * @author Roman Ožana &lt;ozana@omdesign.cz&gt; */ class ExchangeRates { const URL = &#39;http://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt?date=&#39;; private static $rates = []; public function getRatesList(\DateTime $date = null) { $date = $date ?: new \DateTime();; if (!array_key_exists($key = $date-&gt;format(&#39;c&#39;), self::$rates)) { $data = file_get_contents( self::URL . $date-&gt;format(&#39;d.m.Y&#39;), null, stream_context_create([&#39;http&#39; =&gt; [&#39;timeout&#39; =&gt; 10]]) ); preg_match_all(&#39;/([\V]&#43;)\|([\V]&#43;)\|([\d]&#43;)\|([A-Z]&#43;)\|([\d]&#43;),?([\d]*)/mi&#39;, $data, $matches, PREG_SET_ORDER); foreach ($matches as $m) { self::$rates[$key][$m[4]] = (object)[ &#39;country&#39; =&gt; $m[1], &#39;currency&#39; =&gt; $m[2], &#39;code&#39; =&gt; $m[4], &#39;amount&#39; =&gt; intval($m[3]), &#39;rate&#39; =&gt; floatval($m[5] ."/>
+	<meta name="twitter:site" content="@OzzyCzech"/>
+	<meta name="twitter:domain" content="http://blog.omdesign.cz"/>
+	<meta name="twitter:creator" content="@OzzyCzech"/>
+	<meta property="og:title" content="Get currency rates from ČNB in PHP" />
+	<meta property="og:description" content="Get currency rates from ČNB in PHP &lt;?php namespace testomato\invoice; /** * Get currency rates from ČNB in PHP * * @author Roman Ožana &lt;ozana@omdesign.cz&gt; */ class ExchangeRates { const URL = &#39;http://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt?date=&#39;; private static $rates = []; public function getRatesList(\DateTime $date = null) { $date = $date ?: new \DateTime();; if (!array_key_exists($key = $date-&gt;format(&#39;c&#39;), self::$rates)) { $data = file_get_contents( self::URL . $date-&gt;format(&#39;d.m.Y&#39;), null, stream_context_create([&#39;http&#39; =&gt; [&#39;timeout&#39; =&gt; 10]]) ); preg_match_all(&#39;/([\V]&#43;)\|([\V]&#43;)\|([\d]&#43;)\|([A-Z]&#43;)\|([\d]&#43;),?([\d]*)/mi&#39;, $data, $matches, PREG_SET_ORDER); foreach ($matches as $m) { self::$rates[$key][$m[4]] = (object)[ &#39;country&#39; =&gt; $m[1], &#39;currency&#39; =&gt; $m[2], &#39;code&#39; =&gt; $m[4], &#39;amount&#39; =&gt; intval($m[3]), &#39;rate&#39; =&gt; floatval($m[5] ." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://blog.omdesign.cz/get-currency-rates-from-%C4%8Dnb-in-php/" />
+	<meta property="og:updated_time" content="2016-10-07 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:site_name" content="blog.omdesign.cz" />
+	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
+	<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2016-10-07 00:00:00 &#43;0000 UTC" />
+	<meta property="article:section" content="posts" />
+	<meta property="article:tag" content="php" />
+	<meta itemprop="name" content="Get currency rates from ČNB in PHP">
+	<meta itemprop="description" content="Get currency rates from ČNB in PHP &lt;?php namespace testomato\invoice; /** * Get currency rates from ČNB in PHP * * @author Roman Ožana &lt;ozana@omdesign.cz&gt; */ class ExchangeRates { const URL = &#39;http://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt?date=&#39;; private static $rates = []; public function getRatesList(\DateTime $date = null) { $date = $date ?: new \DateTime();; if (!array_key_exists($key = $date-&gt;format(&#39;c&#39;), self::$rates)) { $data = file_get_contents( self::URL . $date-&gt;format(&#39;d.m.Y&#39;), null, stream_context_create([&#39;http&#39; =&gt; [&#39;timeout&#39; =&gt; 10]]) ); preg_match_all(&#39;/([\V]&#43;)\|([\V]&#43;)\|([\d]&#43;)\|([A-Z]&#43;)\|([\d]&#43;),?([\d]*)/mi&#39;, $data, $matches, PREG_SET_ORDER); foreach ($matches as $m) { self::$rates[$key][$m[4]] = (object)[ &#39;country&#39; =&gt; $m[1], &#39;currency&#39; =&gt; $m[2], &#39;code&#39; =&gt; $m[4], &#39;amount&#39; =&gt; intval($m[3]), &#39;rate&#39; =&gt; floatval($m[5] .">
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="wordCount" content="129">
+<!-- Fonts, jQuery and js -->
+	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://blog.omdesign.cz/js/app.js"></script>
+	<!-- Twitter boostrap -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<section class="container">
+	<article>
+		
+		<time datetime="2016-10-07T00:00:00Z">7. Říjen 2016</time>
+		
+		
+
+<h1 id="get-currency-rates-from-čnb-in-php">Get currency rates from ČNB in PHP</h1>
+
+<pre><code class="language-php">&lt;?php
+namespace testomato\invoice;
+
+/**
+ * Get currency rates from ČNB in PHP
+ *
+ * @author Roman Ožana &lt;ozana@omdesign.cz&gt;
+ */
+class ExchangeRates {
+
+  const URL = 'http://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt?date=';
+
+  private static $rates = [];
+
+  public function getRatesList(\DateTime $date = null) {
+    $date = $date ?: new \DateTime();;
+
+    if (!array_key_exists($key = $date-&gt;format('c'), self::$rates)) {
+
+      $data = file_get_contents(
+        self::URL . $date-&gt;format('d.m.Y'), null, stream_context_create(['http' =&gt; ['timeout' =&gt; 10]])
+      );
+
+      preg_match_all('/([\V]+)\|([\V]+)\|([\d]+)\|([A-Z]+)\|([\d]+),?([\d]*)/mi', $data, $matches, PREG_SET_ORDER);
+
+      foreach ($matches as $m) {
+        self::$rates[$key][$m[4]] = (object)[
+          'country' =&gt; $m[1],
+          'currency' =&gt; $m[2],
+          'code' =&gt; $m[4],
+          'amount' =&gt; intval($m[3]),
+          'rate' =&gt; floatval($m[5] . '.' . $m[6]),
+        ];
+      }
+    }
+
+    return self::$rates[$key];
+  }
+
+  public function toCZK($amount, $code = 'USD', \DateTime $date = null) {
+    $currency = self::getRatesList($date)[$code];
+    return floatval($amount * $currency-&gt;rate / $currency-&gt;amount);
+  }
+
+}
+</code></pre>
+
+		<div class="tags">
+		
+			<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
+		
+		</div>
+	</article>
+</section>
+
+<div class="text-center">
+	<a href="http://blog.omdesign.cz" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
+		Go back</a>
+</div>
+
+
+    <footer></footer>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-5420131-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

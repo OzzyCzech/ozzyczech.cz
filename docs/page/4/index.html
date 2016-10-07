@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-02-20 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-03-11 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-02-20 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-03-11 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -51,6 +51,19 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2013-03-11T00:00:00Z">11. Březen 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/list-all-mounted-drives-on-mac/"><div>List all mounted drives on mac</div></a></h1>
+		
+
+
+
+<p>It&rsquo;s simple: <code>df -h</code></p>
+
+	</article>
 	
 	<article>
 		
@@ -412,30 +425,6 @@ provede append (přidání ke stávajícím tagům). Pokud je <code>false</code>
 nahrazení všech tagů u postu nalezenými hashtagy.</p>
 
 <p>Zdrojový kód ke stažení zde: <a href="https://bitbucket.org/OzzyCzech/omhashtag">https://bitbucket.org/OzzyCzech/omhashtag</a></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-09-05T00:00:00Z">5. Září 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/"><div>Zjištění práv k souboru nebo adresáři v PHP</div></a></h1>
-		
-
-
-
-<pre><code>function getPermisions($file) {
-  return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : '0000';
-}
-</code></pre>
-
-<p>Nebo pro kontrolu, zda jsou práva dostatečná:</p>
-
-<pre><code>function hasPermisions($path, $permission = 777) {
-  $current = substr(decoct(fileperms($path)), $permission &gt; 1000 ? -4 : -3);
-  return ($current &gt; $permission);
-}
-</code></pre>
 
 	</article>
 	

@@ -8,8 +8,67 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Wed, 21 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Get currency rates from ČNB in PHP</title>
+      <link>http://blog.omdesign.cz/get-currency-rates-from-%C4%8Dnb-in-php/</link>
+      <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/get-currency-rates-from-%C4%8Dnb-in-php/</guid>
+      <description>
+
+&lt;h1 id=&#34;get-currency-rates-from-čnb-in-php&#34;&gt;Get currency rates from ČNB in PHP&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
+namespace testomato\invoice;
+
+/**
+ * Get currency rates from ČNB in PHP
+ *
+ * @author Roman Ožana &amp;lt;ozana@omdesign.cz&amp;gt;
+ */
+class ExchangeRates {
+
+  const URL = &#39;http://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt?date=&#39;;
+
+  private static $rates = [];
+
+  public function getRatesList(\DateTime $date = null) {
+    $date = $date ?: new \DateTime();;
+
+    if (!array_key_exists($key = $date-&amp;gt;format(&#39;c&#39;), self::$rates)) {
+
+      $data = file_get_contents(
+        self::URL . $date-&amp;gt;format(&#39;d.m.Y&#39;), null, stream_context_create([&#39;http&#39; =&amp;gt; [&#39;timeout&#39; =&amp;gt; 10]])
+      );
+
+      preg_match_all(&#39;/([\V]+)\|([\V]+)\|([\d]+)\|([A-Z]+)\|([\d]+),?([\d]*)/mi&#39;, $data, $matches, PREG_SET_ORDER);
+
+      foreach ($matches as $m) {
+        self::$rates[$key][$m[4]] = (object)[
+          &#39;country&#39; =&amp;gt; $m[1],
+          &#39;currency&#39; =&amp;gt; $m[2],
+          &#39;code&#39; =&amp;gt; $m[4],
+          &#39;amount&#39; =&amp;gt; intval($m[3]),
+          &#39;rate&#39; =&amp;gt; floatval($m[5] . &#39;.&#39; . $m[6]),
+        ];
+      }
+    }
+
+    return self::$rates[$key];
+  }
+
+  public function toCZK($amount, $code = &#39;USD&#39;, \DateTime $date = null) {
+    $currency = self::getRatesList($date)[$code];
+    return floatval($amount * $currency-&amp;gt;rate / $currency-&amp;gt;amount);
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Best wireless speakers of 2016</title>
@@ -739,36 +798,6 @@ $ brew link readline --force
 	Basic code was taken from Simple PIE Chart
 	&lt;a href=&#34;http://rendro.github.io/easy-pie-chart/&#34;&gt;http://rendro.github.io/easy-pie-chart/ &lt;/a&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to protect your emails with PHP and Javascript</title>
-      <link>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</link>
-      <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/how-to-protect-your-emails-with-php-and-javascript/</guid>
-      <description>
-
-&lt;h1 id=&#34;how-to-protect-your-emails-with-php-and-javascript&#34;&gt;How to protect your emails with PHP and Javascript&lt;/h1&gt;
-
-&lt;p&gt;Working with or without javascript it&amp;rsquo;s combine two technique for email protection &lt;a href=&#34;http://en.wikipedia.org/wiki/ROT13&#34;&gt;ROT13&lt;/a&gt; and CSS&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function mail($email, $text = null) {
- return &#39;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;document.write(&amp;quot;&#39; .
- addslashes(
-  str_rot13(
-   &#39;&amp;lt;a href=&amp;quot;mailto:&#39; . $email . &#39;&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;&#39; . ($text ? : $email) . &#39;&amp;lt;/a&amp;gt;&#39;
-  )
- ) . &#39;&amp;quot;.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c&amp;lt;=&amp;quot;Z&amp;quot;?90:122)&amp;gt;=(c=c.charCodeAt(0)+13)?c:c-26);}));&amp;lt;/script&amp;gt;&#39; .
- &#39;&amp;lt;noscript&amp;gt;&amp;lt;span style=&amp;quot;unicode-bidi: bidi-override; direction: rtl;&amp;quot;&amp;gt;&#39; . strrev($email) . &#39;&amp;lt;/span&amp;gt;&amp;lt;/noscript&amp;gt;&#39;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/&#34;&gt;Nine ways to obfuscate e-mail addresses compared&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://perishablepress.com/best-method-for-email-obfuscation/&#34;&gt;Best Method for Email Obfuscation?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

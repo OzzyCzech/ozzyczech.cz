@@ -8,8 +8,67 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Sat, 18 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Get currency rates from ČNB in PHP</title>
+      <link>http://blog.omdesign.cz/get-currency-rates-from-%C4%8Dnb-in-php/</link>
+      <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/get-currency-rates-from-%C4%8Dnb-in-php/</guid>
+      <description>
+
+&lt;h1 id=&#34;get-currency-rates-from-čnb-in-php&#34;&gt;Get currency rates from ČNB in PHP&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
+namespace testomato\invoice;
+
+/**
+ * Get currency rates from ČNB in PHP
+ *
+ * @author Roman Ožana &amp;lt;ozana@omdesign.cz&amp;gt;
+ */
+class ExchangeRates {
+
+  const URL = &#39;http://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt?date=&#39;;
+
+  private static $rates = [];
+
+  public function getRatesList(\DateTime $date = null) {
+    $date = $date ?: new \DateTime();;
+
+    if (!array_key_exists($key = $date-&amp;gt;format(&#39;c&#39;), self::$rates)) {
+
+      $data = file_get_contents(
+        self::URL . $date-&amp;gt;format(&#39;d.m.Y&#39;), null, stream_context_create([&#39;http&#39; =&amp;gt; [&#39;timeout&#39; =&amp;gt; 10]])
+      );
+
+      preg_match_all(&#39;/([\V]+)\|([\V]+)\|([\d]+)\|([A-Z]+)\|([\d]+),?([\d]*)/mi&#39;, $data, $matches, PREG_SET_ORDER);
+
+      foreach ($matches as $m) {
+        self::$rates[$key][$m[4]] = (object)[
+          &#39;country&#39; =&amp;gt; $m[1],
+          &#39;currency&#39; =&amp;gt; $m[2],
+          &#39;code&#39; =&amp;gt; $m[4],
+          &#39;amount&#39; =&amp;gt; intval($m[3]),
+          &#39;rate&#39; =&amp;gt; floatval($m[5] . &#39;.&#39; . $m[6]),
+        ];
+      }
+    }
+
+    return self::$rates[$key];
+  }
+
+  public function toCZK($amount, $code = &#39;USD&#39;, \DateTime $date = null) {
+    $currency = self::getRatesList($date)[$code];
+    return floatval($amount * $currency-&amp;gt;rate / $currency-&amp;gt;amount);
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>How to switch Homebrew formulas to older version</title>
@@ -603,45 +662,6 @@ foreach (
     copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&amp;gt;getSubPathName());
   }
 }
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Výpočet hash objektu v PHP</title>
-      <link>http://blog.omdesign.cz/v%C3%BDpo%C4%8Det-hash-objektu-v-php/</link>
-      <pubDate>Sun, 25 Sep 2011 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/v%C3%BDpo%C4%8Det-hash-objektu-v-php/</guid>
-      <description>
-
-&lt;h1 id=&#34;výpočet-hash-objektu-v-php&#34;&gt;Výpočet hash objektu v PHP&lt;/h1&gt;
-
-&lt;p&gt;Funkce &lt;a href=&#34;http://php.net/manual/en/function.spl-object-hash.php&#34;&gt;spl_object_hash()&lt;/a&gt;
-má jednu &lt;strong&gt;nevýhodu&lt;/strong&gt;, její výsledek se v čase mění. Pokud objekt naplníte
-stejnými hodnotami, dostanete při dvou requestech dva různé výsledky. Což nemusí
-být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeho
-vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat
-například takto:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class Foo {
- private $p;
- public function setProperty($p) {
-  $this-&amp;gt;p = $p;
- }
- // vypocita hash objektu na zaklade hodnot jeho propert
- public function __toString() {
-  return md5(http_build_query(get_object_vars($this)));
- }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Pro vypsání/získání hash pak stačí:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$bar = new Foo();
-$bar-&amp;gt;setProperty(&#39;25&#39;);
-echo $bar;
-$hash = (string) $bar;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
