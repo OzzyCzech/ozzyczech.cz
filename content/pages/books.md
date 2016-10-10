@@ -22,7 +22,5 @@ title: Knihy
 * [Rudý zákon - Bill Browder](http://www.databazeknih.cz/knihy/rudy-zakon-240925)
 * [Faktor Churchill - Boris Johnson](http://www.databazeknih.cz/knihy/faktor-churchill-299200)
 * [Rudé hvězdy ve vesmíru aneb Pohled do zákulisí sovětské kosmonautiky](http://www.databazeknih.cz/knihy/rude-hvezdy-ve-vesmiru-aneb-pohled-do-zakulisi-sovetske-kosmonautiky-220823)
-
-
 * [The World Beyond Your Head - Matthew Crawford](https://www.amazon.com/World-Beyond-Your-Head-Distraction/dp/0374535914)
 * [HLUBOKÁ PRÁCE - Cal Newport](https://www.melvil.cz/kniha-hluboka-prace/)
