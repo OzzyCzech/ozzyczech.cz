@@ -12,12 +12,14 @@
 	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="How to add all custom post type to main Wordpress archive.php"/>
-	<meta name="twitter:description" content="How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts );"/>
+	<meta name="twitter:description" content=" How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php
+add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts ); return $query; } } );  "/>
 	<meta name="twitter:site" content="@OzzyCzech"/>
 	<meta name="twitter:domain" content="http://blog.omdesign.cz"/>
 	<meta name="twitter:creator" content="@OzzyCzech"/>
 	<meta property="og:title" content="How to add all custom post type to main Wordpress archive.php" />
-	<meta property="og:description" content="How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts );" />
+	<meta property="og:description" content=" How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php
+add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts ); return $query; } } );  " />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/how-to-add-all-custom-post-type-to-main-wordpress-archive.php/" />
 	<meta property="og:updated_time" content="2014-07-24 00:00:00 &#43;0000 UTC"/>
@@ -32,7 +34,8 @@
 	<meta property="article:tag" content="PHP" />
 	<meta property="article:tag" content="wordpress" />
 	<meta itemprop="name" content="How to add all custom post type to main Wordpress archive.php">
-	<meta itemprop="description" content="How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts );">
+	<meta itemprop="description" content=" How to add all custom post type to main Wordpress archive.php Default archive shows only post type if you need show all post types just add follow code to function.php
+add_filter( &#39;pre_get_posts&#39;, function ($query) { if ( $query-&gt;is_main_query() &amp;&amp; !is_admin() &amp;&amp; (is_category() || is_tag()) &amp;&amp; empty($query-&gt;query_vars[&#39;suppress_filters&#39;]) ) { $posts = array_diff( get_post_types([&#39;public&#39; =&gt; true]), [&#39;page&#39;, &#39;attachment&#39;, &#39;revision&#39;, &#39;forum&#39;, &#39;reply&#39;, &#39;topic&#39;] /* array of ignored types*/ ); $query-&gt;set( &#39;post_type&#39;, $posts ); return $query; } } );  ">
 	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="75">
 <!-- Fonts, jQuery and js -->
@@ -48,6 +51,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
+	<meta name="msvalidate.01" content="3A844D439E786F7E8FA940D153567FD3" />
 </head>
 <body>
 

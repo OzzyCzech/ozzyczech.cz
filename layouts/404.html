@@ -4,8 +4,19 @@
     <div class="content">
       <div class="num">404</div>
       <div class="detail">Sorry, this page does not exist.</div>
-      <div class="suggestion"><a href="/">Visit home page</a></div>
+      <div class="suggestion"><a href="/" class="btn btn-default">Visit home page</a></div>
     </div>
   </div>
+
+  <form action="https://duckduckgo.com/" method="get">
+    <div class="input-group">
+      <input type="search" name="q" value="" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button type="submit">Search</button>
+      </span>
+    </div>
+    <input type="hidden" name="sites" value="blog.omdesign.cz,omdesign.cz">
+  </form>
+
 </section>
 {{ partial "footer.html" . }}

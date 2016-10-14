@@ -12,12 +12,14 @@
 	<link rel="canonical" href="https://blog.testomato.com/" />	
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Wordpress - register and setup widgets from PHP code"/>
-	<meta name="twitter:description" content="Wordpress: register and setup witgets from PHP code PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it: class Widgets { private $widgets = array(); private $options = array(); public function __construct() { $this-&gt;options = wp_get_sidebars_widgets(); } public function unregisterAllWidgets() { foreach ($this-&gt;options as $name =&gt; $values) $this-&gt;options[$name] = array(); } public function cleanWidgetSettings($type, $multi = null) { $this-&gt;widgets[$type] = array(); if ($multi !== null) $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = (int)(bool)$multi; } public function setMultiWidget($type, $val = 1) { $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = $val; } public function add($type, array $options, $area = null) { $this-&gt;widgets[$type][] = $options; if ($area !== null) { if (array_key_exists($area, $this-&gt;options) === false) { throw new Exception(&#39;Widget area &#39; ."/>
+	<meta name="twitter:description" content="Wordpress: register and setup witgets from PHP code PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:
+class Widgets { private $widgets = array(); private $options = array(); public function __construct() { $this-&gt;options = wp_get_sidebars_widgets(); } public function unregisterAllWidgets() { foreach ($this-&gt;options as $name =&gt; $values) $this-&gt;options[$name] = array(); } public function cleanWidgetSettings($type, $multi = null) { $this-&gt;widgets[$type] = array(); if ($multi !"/>
 	<meta name="twitter:site" content="@OzzyCzech"/>
 	<meta name="twitter:domain" content="http://blog.omdesign.cz"/>
 	<meta name="twitter:creator" content="@OzzyCzech"/>
 	<meta property="og:title" content="Wordpress - register and setup widgets from PHP code" />
-	<meta property="og:description" content="Wordpress: register and setup witgets from PHP code PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it: class Widgets { private $widgets = array(); private $options = array(); public function __construct() { $this-&gt;options = wp_get_sidebars_widgets(); } public function unregisterAllWidgets() { foreach ($this-&gt;options as $name =&gt; $values) $this-&gt;options[$name] = array(); } public function cleanWidgetSettings($type, $multi = null) { $this-&gt;widgets[$type] = array(); if ($multi !== null) $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = (int)(bool)$multi; } public function setMultiWidget($type, $val = 1) { $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = $val; } public function add($type, array $options, $area = null) { $this-&gt;widgets[$type][] = $options; if ($area !== null) { if (array_key_exists($area, $this-&gt;options) === false) { throw new Exception(&#39;Widget area &#39; ." />
+	<meta property="og:description" content="Wordpress: register and setup witgets from PHP code PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:
+class Widgets { private $widgets = array(); private $options = array(); public function __construct() { $this-&gt;options = wp_get_sidebars_widgets(); } public function unregisterAllWidgets() { foreach ($this-&gt;options as $name =&gt; $values) $this-&gt;options[$name] = array(); } public function cleanWidgetSettings($type, $multi = null) { $this-&gt;widgets[$type] = array(); if ($multi !" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/" />
 	<meta property="og:updated_time" content="2013-01-29 00:00:00 &#43;0000 UTC"/>
@@ -30,7 +32,8 @@
 	<meta property="article:tag" content="PHP" />
 	<meta property="article:tag" content="wordpress" />
 	<meta itemprop="name" content="Wordpress - register and setup widgets from PHP code">
-	<meta itemprop="description" content="Wordpress: register and setup witgets from PHP code PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it: class Widgets { private $widgets = array(); private $options = array(); public function __construct() { $this-&gt;options = wp_get_sidebars_widgets(); } public function unregisterAllWidgets() { foreach ($this-&gt;options as $name =&gt; $values) $this-&gt;options[$name] = array(); } public function cleanWidgetSettings($type, $multi = null) { $this-&gt;widgets[$type] = array(); if ($multi !== null) $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = (int)(bool)$multi; } public function setMultiWidget($type, $val = 1) { $this-&gt;widgets[$type][&#39;_multiwidget&#39;] = $val; } public function add($type, array $options, $area = null) { $this-&gt;widgets[$type][] = $options; if ($area !== null) { if (array_key_exists($area, $this-&gt;options) === false) { throw new Exception(&#39;Widget area &#39; .">
+	<meta itemprop="description" content="Wordpress: register and setup witgets from PHP code PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:
+class Widgets { private $widgets = array(); private $options = array(); public function __construct() { $this-&gt;options = wp_get_sidebars_widgets(); } public function unregisterAllWidgets() { foreach ($this-&gt;options as $name =&gt; $values) $this-&gt;options[$name] = array(); } public function cleanWidgetSettings($type, $multi = null) { $this-&gt;widgets[$type] = array(); if ($multi !">
 	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="233">
 <!-- Fonts, jQuery and js -->
@@ -46,6 +49,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 	<link href="http://blog.omdesign.cz/css/style.css" rel="stylesheet">
+	<meta name="msvalidate.01" content="3A844D439E786F7E8FA940D153567FD3" />
 </head>
 <body>
 

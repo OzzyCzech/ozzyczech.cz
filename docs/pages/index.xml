@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on blog.omdesign.cz</title>
-    <link>http://blog.omdesign.cz/pages/</link>
-    <description>Recent content in Pages on blog.omdesign.cz</description>
+    <title>Pages-rsses on blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/pages/index.xml</link>
+    <description>Recent content in Pages-rsses on blog.omdesign.cz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
@@ -17,6 +17,8 @@
       <author>ozana@omdesign.cz (Roman Ožana)</author>
       <guid>http://blog.omdesign.cz/knihy/</guid>
       <description>
+
+&lt;p&gt;##&lt;/p&gt;
 
 &lt;h2 id=&#34;knihy-pro-děti&#34;&gt;Knihy pro děti&lt;/h2&gt;
 
