@@ -1,5 +1,5 @@
 ---
-title: Webdesign resources
+title: Webdesign
 tags: [webdesign, images]
 ---
 
