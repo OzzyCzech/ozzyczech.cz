@@ -1,4 +1,4 @@
-<div class="container tags">
+<div class="container tags hidden-print">
 	{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
 	<a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" class="tag">#{{ $name }}</a>
 	{{ end }}

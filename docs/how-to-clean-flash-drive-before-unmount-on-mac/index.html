@@ -36,7 +36,7 @@
 	<meta itemprop="name" content="How to clean flash drive before unmount on Mac">
 	<meta itemprop="description" content="How to clean flash drive before unmount on Mac How to clean flash drive and delete all hidden (dot) files on mac before unmount? It&rsquo;s simple, save follow commands as flash:
 #!/bin/bash if [ -n &quot;$1&quot; ]; then read -r -p &quot;Clean /Volumes/$1/ and unmount? [y/N] &quot; response if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then find /Volumes/$1/ -name &#39;._*&#39; -type f -delete rm -rf /Volumes/$1/.Spotlight-V100/ rm -rf /Volumes/$1/.Trashes/ diskutil unmount /Volumes/$1/ echo &quot;Done.">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="107">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -103,7 +103,7 @@ fi
 <p>Then change the access mode of a file <code>chmod +x flash</code>. To unmount a clean flash drive just run
 <code>./flash Flashka</code> (Flashka is name od drive).</p>
 
-		<div class="tags">
+		<div class="tags hidden-print">
 		
 			<a href="http://blog.omdesign.cz/tags/drive" class="tag">#drive</a>
 		
@@ -117,7 +117,7 @@ fi
 	</article>
 </section>
 
-<div class="text-center">
+<div class="text-center hidden-print">
 	<a href="http://blog.omdesign.cz" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
 		Go back</a>
 </div>

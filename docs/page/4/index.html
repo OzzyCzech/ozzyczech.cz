@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-03-11 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-11-28 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-03-11 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-11-28 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -69,6 +69,210 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2013-11-28T00:00:00Z">28. Listopad 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/"><div>Run FTP server on Mac OS X</div></a></h1>
+		
+
+
+
+<p>Setup everyhing: <code>sudo subl /etc/ftpd.conf</code></p>
+
+<pre><code># match umask from Mac OS X Server ftpd
+umask all 022
+chroot GUEST /Users/roman/ftp
+modify guest off
+umask  guest 0707
+upload guest on
+</code></pre>
+
+<p>Start FTP server</p>
+
+<pre><code>sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
+</code></pre>
+
+<p>And stop again:</p>
+
+<p><code>sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist</code></p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-09-25T00:00:00Z">25. Září 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
+		
+
+
+
+<pre><code>{
+ &quot;repositories&quot;: [
+  {
+   &quot;type&quot;: &quot;pear&quot;,
+   &quot;url&quot;: &quot;http://pear.php.net&quot;
+  }
+ ],
+ &quot;require&quot;: {
+  &quot;pear-pear/Mail&quot;: &quot;&gt;=1.2.0&quot;
+ }
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
+		
+
+
+
+<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
+- I will work on application and my packages together.
+- I need a simple way how to commit and publish new version of packages.
+- Workflow need to be simple (mimimum of commands)</p>
+
+<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
+
+<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
+
+<pre><code>&quot;scripts&quot;: {
+ &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
+ &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
+},
+</code></pre>
+
+<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
+
+<p>When you are using tagged releases (no dev versions) of package then run:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
+</code></pre>
+
+<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
+</code></pre>
+
+<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+
+<ul>
+<li>Large VCS repository size and diffs when you update code.</li>
+<li>Duplication of the history of all your dependencies in your own VCS.</li>
+<li>There can be conflicts in commits especially when you work in larger team.</li>
+<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+</ul>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-05-14T00:00:00Z">14. Květen 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/"><div>Setup email sending from PHP on Mac</div></a></h1>
+		
+
+
+
+<p>First write in terminal: <code>which sendmail</code> wlll return path to sendmail app (in my case <code>/usr/sbin/sendmail</code>). Then open <code>php.ini</code> file and setup:</p>
+
+<pre><code>sendmail_path = /usr/sbin/sendmail -t -i
+</code></pre>
+
+<p>Create necessary folder and setup postfix permissions:</p>
+
+<pre><code>sudo mkdir -p /Library/Server/Mail/Data/spool
+sudo /usr/sbin/postfix set-permissions
+sudo /usr/sbin/postfix start
+</code></pre>
+
+<p>And check if emails will come:</p>
+
+<pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
+</code></pre>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-04-16T00:00:00Z">16. Duben 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/"><div>Wordpress - How to get user by metadata</div></a></h1>
+		
+
+
+
+<p>Getting user by field name is easy, #Wordpress have function for that <a href="http://codex.wordpress.org/Function_Reference/get_user_by">get_user_by</a>. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to <strong>get user by metadata</strong> using <a href="https://codex.wordpress.org/Class_Reference/WP_Query">WP_Query</a> object. Forget about them! You need prepare correct meta query as array or string and call <code>get_users</code>. Thats all!</p>
+
+<pre><code>/**
+ * Get user by his metadata
+ * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
+ * @param $meta_key
+ * @param $meta_value
+ * @return mixed
+ */
+function get_user_by_meta($meta_key, $meta_value) {
+ return reset(
+  get_users(
+   array(
+    'meta_key' =&gt; $meta_key,
+    'meta_value' =&gt; $meta_value,
+    'number' =&gt; 1,
+    'count_total' =&gt; false
+   )
+  )
+ );
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
+		
+
+
+
+<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+  /* it's retina yeah! */
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-03-26T00:00:00Z">26. Březen 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/toggle-hidden-files-in-finder/"><div>Toggle Hidden Files in Finder</div></a></h1>
+		
+
+
+
+<p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
+
+<pre><code>STATUS=`defaults read com.apple.finder AppleShowAllFiles`
+if [ $STATUS == YES ];
+then
+    defaults write com.apple.finder AppleShowAllFiles NO
+else
+    defaults write com.apple.finder AppleShowAllFiles YES
+fi
+killall Finder
+</code></pre>
+
+<p>Save application. From now can Tooggle</p>
+
+	</article>
 	
 	<article>
 		
@@ -135,317 +339,6 @@ define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2013-01-31T00:00:00Z">31. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/run-iphone-simulator-without-xcode/"><div>Run iPhone simulator without XCode</div></a></h1>
-		
-
-
-
-<pre><code>open -a &quot;iPhone Simulator&quot;
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-29T00:00:00Z">29. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/"><div>Wordpress - register and setup widgets from PHP code</div></a></h1>
-		
-
-
-
-<p>PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:</p>
-
-<pre><code>class Widgets {
-
- private $widgets = array();
- private $options = array();
-
- public function __construct() {
-  $this-&gt;options = wp_get_sidebars_widgets();
- }
-
- public function unregisterAllWidgets() {
-  foreach ($this-&gt;options as $name =&gt; $values)
-   $this-&gt;options[$name] = array();
- }
-
- public function cleanWidgetSettings($type, $multi = null) {
-  $this-&gt;widgets[$type] = array();
-  if ($multi !== null) $this-&gt;widgets[$type]['_multiwidget'] = (int)(bool)$multi;
- }
-
- public function setMultiWidget($type, $val = 1) {
-  $this-&gt;widgets[$type]['_multiwidget'] = $val;
- }
-
- public function add($type, array $options, $area = null) {
-  $this-&gt;widgets[$type][] = $options;
-  if ($area !== null) {
-   if (array_key_exists($area, $this-&gt;options) === false) {
-    throw new Exception('Widget area ' . $area . ' not exists.');
-   }
-   end($this-&gt;widgets[$type]);
-   $this-&gt;options[$area][] = $type . '-' . key($this-&gt;widgets[$type]);
-  }
- }
-
- public function __destruct() {
-  foreach ($this-&gt;widgets as $name =&gt; $settings) {
-   if (!array_key_exists('_multiwidget', $settings)) $settings['_multiwidget'] = 1;
-   update_option('widget_' . $name, $settings);
-  }
-  wp_set_sidebars_widgets($this-&gt;options);
- }
-
-}
-</code></pre>
-
-<p>Following code is an example how to use <code>class Witgets</code>:</p>
-
-<pre><code>$widgets = new Widgets();
-$widgets-&gt;unregisterAllWidgets();
-
-$widgets-&gt;add(
- 'text',
- array(
-  'title' =&gt; 'About us',
-  'text' =&gt; 'Simple text about us',
-  'filter' =&gt; true,
-  'classes' =&gt; '',
-  'ids' =&gt; null,
- ),
- 'footer-1'
-);
-
-// ...
-</code></pre>
-
-<p>This code need to be call only once. Put your code to <code>function.php</code> to <code>after_switch_theme</code> action:</p>
-
-<pre><code>add_action(
- 'after_switch_theme', function () {
-  $widgets = new Widgets();
-  $widgets-&gt;unregisterAllWidgets();
-  // ...
- }
-);
-</code></pre>
-
-<p><a href="https://gist.github.com/4663766/">https://gist.github.com/4663766/</a></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-08T00:00:00Z">8. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/seznam-v%C4%9Bc%C3%AD-kter%C3%A9-internet-zabil/"><div>Seznam věcí které Internet zabil</div></a></h1>
-		
-
-
-
-<p>Co všechno Internet zabil nebo zabíjí?</p>
-
-<ol>
-<li>Hudební průmysl</li>
-<li>Filmový průmysl</li>
-<li>Porno průmysl</li>
-<li>Zásilkové služby (Quelle, Neckermann atd.)</li>
-<li>Pohledy a dopisy psané rukou</li>
-<li>Anonymitu (ta postupně mizí)</li>
-<li>DVD a videopůjčovny</li>
-<li>Časopisy noviny a poctivou novinařinu</li>
-<li>Televizi</li>
-<li>Encyklopedie</li>
-<li>MMS, SMS</li>
-<li>Tištěné mapy</li>
-</ol>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-12-09T00:00:00Z">9. Prosinec 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/made-in-china-paranoidni-povidka-na-dobrou-noc/"><div>Made in China - Paranoidní povídka na dobrou noc</div></a></h1>
-		
-
-
-
-<p>China právě vyhlásila jednostranné embargo na vývoz výrobku vyrobených na jejich
-území. USA a prakticky celá Evropa se potýká s akutním nedostatkem výrobků
-určených k běžné spotřebě. Chybí zejména elektronika, plastové a kovové výrobky
-a léků. Díky embargu došlo k ohrožení ekonomické stability řady firem.
-Na hranici bankrotu se pohybují firmy jako Apple, IKEA nebo Mattel. Ty se
-překotně snaží alespoň o částečnou obnovu výroby. Rovněž se pokoušejí
-přesunout výrobu do svých domovských států. Potýkají se se zoufalým nedostatkem
-odborníků a extrémní finanční náročností nechtěného stěhování. Prezident USA se
-tento týden sejde s představiteli Evropské Unie. Společně se pokusí dohodnout
-alespoň částečnou obnovu exportu výrobků vyrobených na území Chiny. Cílem je
-vyhnou se celosvětovému ekonomickému kolapsu. A zamezení chaosu do kterého se
-postupně propadají jednotlivé státy. O dalším vývoji situace Vás budeme
-průběžně informovat.</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-12-05T00:00:00Z">5. Prosinec 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/recepty/zdroj%C3%A1k-na-dom%C3%A1c%C3%AD-s%C3%BDrov%C3%A9-ty%C4%8Dinky/"><div>Zdroják na domácí sýrové tyčinky</div></a></h1>
-		
-
-
-
-<p>Upozornění: nečíst dál, recept může způsobit dlouhodobou závislosti na domácích sýrových tyčinkách :-)</p>
-
-<h3 id="co-budete-potřebovat">Co budete potřebovat?</h3>
-
-<p>Suroviny na 1 dávku (která vám stejně nebude stačit):</p>
-
-<ul>
-<li>160 g hladké mouky</li>
-<li>100 g Hery nebo másla</li>
-<li>100 g jemně strouhaného sýra (Eidam, Gran Moravia, Provolone piccante)</li>
-<li>10 g droždí (¼ kostky)</li>
-<li>4 lžíce mléka
-– žloutek na potření</li>
-</ul>
-
-<h3 id="postup">Postup</h3>
-
-<p>Těsto se nenechává kynout! Rovnou se vyvaluje na cca 3 mm a krájí na tyčinky
-(5 až 7 krát 1 cm tyčinky) - nakrájené tyčinky na závěr potíráme rozšlehaným vejcem
-(kvůli lesku). Klademe vedle sebe na plech na pečící papír.</p>
-
-<p>Než tyčinky šoupnete do trouby tak je pořádně osolte hrubou solí.
-Pečeme na 120 cca 12 minut do růžova.</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-10-29T00:00:00Z">29. Říjen 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wysiwyg-pro-popis-u%C5%BEivatele-ve-wordpress/"><div>WYSIWYG pro popis uživatele ve Wordpress</div></a></h1>
-		
-
-
-
-<p>Následující kratičký kód zobrazí #WYSIWYG editor u popisu autora u uživatelského profilu: Kód stačí přidat do <code>function.php</code> ve vašem template:</p>
-
-<pre><code>&lt;?php
-/**
- * WYSIWYG pro uzivatelsky profil Wordpress
- *
- * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
- */
-class CustomUserProfile {
-
-  /** @var array */
-  private $tinymceOptions = array(
-    'teeny' =&gt; true,
-    'quicktags' =&gt; false,
-    'media_buttons' =&gt; false, 'textarea_rows' =&gt; 8,
-    'wpautop' =&gt; false,
-    'tinymce' =&gt; array(
-      'theme_advanced_buttons1' =&gt; 'p, bold, italic, ul, |,link,unlink,code',
-      'theme_advanced_buttons2' =&gt; '',
-      'theme_advanced_buttons3' =&gt; '',
-      'theme_advanced_buttons4' =&gt; '',
-    ),
-  );
-
-  public function __construct() {
-    add_action('show_user_profile', array($this, 'initDescriptionWysywig'));
-    add_action('edit_user_profile', array($this, 'initDescriptionWysywig'));
-  }
-
-  /**
-   * Wysywig editor take pro description
-   *
-   * @param $options
-   */
-  public function initDescriptionWysywig($options) {
-    if ( ! class_exists('_WP_Editors' ) )
-      require_once( ABSPATH . WPINC . '/class-wp-editor.php' );
-
-    $options = _WP_Editors::parse_settings('description', $this-&gt;tinymceOptions);
-    _WP_Editors::editor_settings('description', $options);
-    wp_print_styles('editor-buttons');
-  }
-
-}
-new CustomUserProfile();
-</code></pre>
-
-<p>#wordpress #php</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-09-15T00:00:00Z">15. Září 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/"><div>Hash tags pro Wordpress</div></a></h1>
-		
-
-
-
-<p>Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy:</p>
-
-<pre><code>&lt;?php
-/*
-Plugin Name: Hashs
-Description: Twitter like hash for Wordpress
-Version: 1.0
-Author: Roman Ozana &lt;ozana@omdesign.cz&gt;
-Author URI: http://www.omdesign.cz/
-*/
-class Hashs {
-
-  const PATTERN = '/\B#([^\s\W#]+)/i';
-
-  /**
-   * @param string $content
-   * @return string mixed
-   */
-  public static function processContent($content) {
-    return preg_replace(Hashs::PATTERN, '&lt;a href=&quot;' . get_home_url(null, '/tag/$1') . '&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; ', $content);
-  }
-
-  /**
-   * Auto hash tags
-   *
-   * @param $post_id
-   * @return bool
-   */
-  public static function addAutoTags($post_id) {
-    $post = get_post($post_id);
-    preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches);
-    if (!isset($matches[1])) return;
-    wp_set_object_terms($post_id, $matches[1], 'post_tag', false); // replace
-  }
-}
-
-add_filter('the_content', array('Hashs', 'processContent'), 1);
-add_action('save_post', array('Hashs', 'addAutoTags'));
-</code></pre>
-
-<p>Povšimněte si zejména řádku  <code>wp_set_object_terms($post_id, $matches[1], 'post_tag', false);</code>
-ten totiž ukládá nalezené tagy k postu. Pokud je poslední hodnota <code>true</code>,
-provede append (přidání ke stávajícím tagům). Pokud je <code>false</code>, provede
-nahrazení všech tagů u postu nalezenými hashtagy.</p>
-
-<p>Zdrojový kód ke stažení zde: <a href="https://bitbucket.org/OzzyCzech/omhashtag">https://bitbucket.org/OzzyCzech/omhashtag</a></p>
-
-	</article>
-	
 	
     
     <ul class="pagination">
@@ -481,19 +374,22 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
         ><a href="http://blog.omdesign.cz/page/7/">7</a></li>
         
         <li
+        ><a href="http://blog.omdesign.cz/page/8/">8</a></li>
+        
+        <li
         >
         <a href="http://blog.omdesign.cz/page/5/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>
-            <a href="http://blog.omdesign.cz/page/7/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+            <a href="http://blog.omdesign.cz/page/8/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
         </li>
         
     </ul>
     
 </section>
 
-<div class="container tags">
+<div class="container tags hidden-print">
 	
 	<a href="http://blog.omdesign.cz/tags/ajax" class="tag">#ajax</a>
 	
@@ -524,6 +420,8 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
 	
 	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
+	
+	<a href="http://blog.omdesign.cz/tags/cukrov%C3%AD" class="tag">#cukroví</a>
 	
 	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
 	
@@ -586,6 +484,8 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 	<a href="http://blog.omdesign.cz/tags/parkinsons-law" class="tag">#parkinsons-law</a>
 	
 	<a href="http://blog.omdesign.cz/tags/pear" class="tag">#pear</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pe%C4%8Den%C3%AD" class="tag">#pečení</a>
 	
 	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
 	

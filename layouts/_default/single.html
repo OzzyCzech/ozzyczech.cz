@@ -6,7 +6,7 @@
 		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Day }}. {{ index .Site.Params.Months (sub .Date.Month 1) }} {{ .Date.Year }}</time>
 		{{ end }}
 		{{ .Content }}
-		<div class="tags">
+		<div class="tags hidden-print">
 		{{ range .Params.tags }}
 			<a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">#{{ . }}</a>
 		{{ end }}
@@ -14,7 +14,7 @@
 	</article>
 </section>
 
-<div class="text-center">
+<div class="text-center hidden-print">
 	<a href="{{ .Site.BaseURL  }}" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
 		Go back</a>
 </div>

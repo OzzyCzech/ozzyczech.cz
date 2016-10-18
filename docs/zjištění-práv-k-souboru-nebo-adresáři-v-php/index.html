@@ -34,7 +34,7 @@ function hasPermisions($path, $permission = 777) { $current = substr(decoct(file
 	<meta itemprop="name" content="Zjištění práv k souboru nebo adresáři v PHP">
 	<meta itemprop="description" content=" Zjištění práv k souboru nebo adresáři v PHP function getPermisions($file) { return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : &#39;0000&#39;; }  Nebo pro kontrolu, zda jsou práva dostatečná:
 function hasPermisions($path, $permission = 777) { $current = substr(decoct(fileperms($path)), $permission &gt; 1000 ? -4 : -3); return ($current &gt; $permission); }  ">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	<meta itemprop="wordCount" content="49">
 <!-- Fonts, jQuery and js -->
 	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -93,7 +93,7 @@ function hasPermisions($path, $permission = 777) { $current = substr(decoct(file
 }
 </code></pre>
 
-		<div class="tags">
+		<div class="tags hidden-print">
 		
 			<a href="http://blog.omdesign.cz/tags/php" class="tag">#PHP</a>
 		
@@ -103,7 +103,7 @@ function hasPermisions($path, $permission = 777) { $current = substr(decoct(file
 	</article>
 </section>
 
-<div class="text-center">
+<div class="text-center hidden-print">
 	<a href="http://blog.omdesign.cz" class="btn btn-primary btn-lg" onclick="history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i>
 		Go back</a>
 </div>
