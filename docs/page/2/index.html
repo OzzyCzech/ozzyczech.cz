@@ -29,7 +29,7 @@
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -69,6 +69,70 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2015-10-18T00:00:00Z">18. Říjen 2015</time>
+		
+		<h1><a href="http://blog.omdesign.cz/recepty/pern%C3%AD%C4%8Dky/"><div>Perníčky</div></a></h1>
+		
+
+
+
+<h2 id="perníkové-těsto">Perníkové těsto</h2>
+
+<ul>
+<li>2 vejce</li>
+<li>200 - 250 g cukru moučky</li>
+<li>50 g másla</li>
+<li>3 lžíce medu - ideální je tmavý lesní med</li>
+<li>1 lžíce kaka - pokud chcete perníčky tmavší a nebo máte světlý med</li>
+<li>500 g hladké mouky</li>
+<li>1 lžičku sody</li>
+<li>Koření - umlít nebo rozdrtit v hmoždíři
+
+<ul>
+<li>hřebíček - cca 8 ks</li>
+<li>fenykl - cca lžičku</li>
+<li>skořice - cca lžičku</li>
+<li>badyán - cca 2-3 hvězdičky</li>
+<li>citronová kůra z ½ citronu</li>
+</ul></li>
+</ul>
+
+<p>Máslo a med společně rozpustit v teplé vodní lázni za stálého míchání. Těsto se
+díky tomu pak bude lépe zpracovávat. Vše pořádně promícháme až vznikne těsto.
+Konzistence těsta se odvíjí od použitého medu - pokud je těsto moc suché je
+možné přidat lžičku vody nebo trochu medu.</p>
+
+<p>V lednici zabalené ve folii <strong>nechat den odpočinout</strong>. Vyvalujeme cca na 3 mm
+(tlustší  těsto = měkké perníčky, tenčí těsto = křupavé a sušší perníčky).
+Pečeme ve vyhřáté troubě na <strong>180 °C asi 8 minut</strong>.</p>
+
+<p>Po upečení ještě horké perníčky <strong>potřít vajíčkem</strong> rozšlehaným s jednou
+lžičkou vody - pro lesk. Nechat zaschnout. Uložit do papírové bedny.
+Takže by se měly vyrábět cca 2-3 týdny před Vánoci.</p>
+
+<h2 id="poleva">Poleva</h2>
+
+<ul>
+<li>180 g moučkového cukru (dvakrát prosít)</li>
+<li>1 bílek</li>
+<li>pár kapek vody</li>
+<li>citrón</li>
+</ul>
+
+<p>Moučkový cukr <strong>dvakrát přesejeme</strong> přes jemné sítko (pokud důkladně cukr
+neprosejete, bude se vám ucpávat zdobící trubička) Přidáme bílek a mícháme tak
+dlouho, až se cukr rozpustí a vznikne jemná bílá poleva Pokud je poleva moc tuhá,
+přidáme pár kapek vody a naopak pokud je moc řídká, přidáme cukr. Polevu plníme
+do papírového kornoutu z pergamenového papíru nebo do speciálního zdobícího
+sáčku s plastovou trubičkou.</p>
+
+<p><em>Doporučení</em>: Do polevy můžeme přidat pár kapek citrónu, bude příjemně nakyslá.
+Lze obarvit potravinářským barvivem, můžeme zdobit i barevnými motivy.</p>
+
+	</article>
 	
 	<article>
 		
@@ -471,39 +535,6 @@ $ brew link readline --force
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2014-09-24T00:00:00Z">24. Září 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/"><div>AngularJS $http not sending X-Requested-With header</div></a></h1>
-		
-
-
-
-<p>Angular <a href="https://docs.angularjs.org/api/ng/service/$http">$http</a> isn’t appending the header <code>X-Requested-With</code> = <code>XMLHttpRequest</code> since Angular 1.3.0.</p>
-
-<blockquote>
-<p>X-Requested-With header is rarely used in practice and by using it all the time we are riggering preflight checks for crossdomain requests. See <a href="https://github.com/angular/angular.js/commit/3a75b1124d062f64093a90b26630938558909e8d"> commit message</a></p>
-</blockquote>
-
-<p>That can cause some problems on PHP side. If you need somehow differentiate XHR and common requests. For example Zend Framework and lot of others PHP frameworks use follow code:</p>
-
-<pre><code>function isXmlHttpRequest() {
- return !empty($_SERVER['HTTP_X_REQUESTED_WITH']) &amp;&amp;
-  $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
-}
-</code></pre>
-
-<p>You can easily add  on Angular side by following code:</p>
-
-<pre><code>myAppModule.config(['$httpProvider', function($httpProvider) {
-    $httpProvider.defaults.headers.common[&quot;X-Requested-With&quot;] = 'XMLHttpRequest';
-}]);
-
-</code></pre>
-
-	</article>
-	
 	
     
     <ul class="pagination">
@@ -649,6 +680,8 @@ $ brew link readline --force
 	<a href="http://blog.omdesign.cz/tags/parkinsons-law" class="tag">#parkinsons-law</a>
 	
 	<a href="http://blog.omdesign.cz/tags/pear" class="tag">#pear</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pern%C3%ADk" class="tag">#perník</a>
 	
 	<a href="http://blog.omdesign.cz/tags/pe%C4%8Den%C3%AD" class="tag">#pečení</a>
 	

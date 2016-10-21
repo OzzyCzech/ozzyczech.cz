@@ -1,31 +1,40 @@
 ---
 title: Hrníčkový perník
 date: 2015-10-18
-tags: [recepty, pečení]
+tags: [recepty, pečení, perník]
 ---
 
 # Hrníčkový perník
 
-* 1 hrnek cukr krupice
-* 1 lžička jedlá soda
-* 2 dl olej
-* 1 hrnek celozrnná mouka
-* 3 lžíce med
-* 1 hrnek mléko nebo voda
-* 1 balíček prášek do perníku
+<img src="/img/2016/10/pernik.jpg" width="350" class="right">
+
+* 2 lžíce med
+* 1 hrnek hnědého cukru
+* 1 hrnek mléka
+* 1 hrnek hladké mouky
+* 1 hrnek žitné mouky (nebo hladké pokud nemáte)
+* 1/2 hrnku oleje nebo rozpuštěného másla
 * 2 ks vejce
-* 1 hrnek polohrubá mouka
-* 2 lžíce kakao
+* 1 balíček prášek do perníku
+* 1 lžička jedlá soda
+* 2 lžíce kakaa
+* špatka soli
 
-Do mísy dáme 1 hrnek polohrubé mouky, 1 hrnek mouky celozrnné (možno použít
-špaldovou nebo žitnou), lžičku sody bicarbony, 2 lžíce kakaa, 2 vejce,
-3 lžíce medu (sirupu nebo marmelády), 2 dcl oleje nebo použijeme jiný tuk,
-který máme doma. Do hrnku vlažného mléka nasypeme hrnek cukru a rozpustíme.
-Pozor, mléko nesmí být moc teplé. Na závěr přidáme prášek do perníku a vše
-zamícháme. Pokud se nám těsto zdá příliš husté, můžeme přidat trochu vody.
-Hrníčkový perník pečeme na plechu s vyšším okrajem vyloženým pečícím papírem
-asi 35 minut (podle trouby). Hotový perník posypeme mletým cukrem nebo potřeme
-marmeládou.
+### Nepovinné vylepšováky do těsta
 
-Pro slavnostní příležitosti můžeme hrníčkový perník potřít
-citronovou nebo čokoládovou polevou.
+* citrónová kůra
+* čokoládové kousky
+* 3 lžíce povidel nebo marmelády
+* dvě strouhané jablka
+* panáka rumu
+* sekané ořechy
+* vanilkový extrakt nebo cukr
+* lžička skořice
+
+### Vylepšováky po dopečení
+
+* čokoládová nebo citrónová polevu
+* podélně rozpůlit namazat marmeládou a znovu slepit
+* kafíčko
+
+Pečeme na 150° asi 35 - 45 minut ve vymazaném plechu.

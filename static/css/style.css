@@ -74,16 +74,17 @@ article img {
 	padding-bottom: 15px;
 }
 
+article img.right,
 article img[alt$=">"] {
 	padding-left: 25px;
   float:right;
 }
 
+article img.left,
 article img[alt$="<"] {
 	padding-right: 25px;
   float:left;
 }
-
 
 time {
 	font-size: 16px;
