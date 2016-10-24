@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/bootstrap/index.xml</link>
+    <description>Recent content on blog.omdesign.cz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <atom:link href="http://blog.omdesign.cz/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitter Bootstrap compatible social login buttons</title>
+      <link>http://blog.omdesign.cz/twitter-bootstrap-compatible-social-login-buttons/</link>
+      <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/twitter-bootstrap-compatible-social-login-buttons/</guid>
+      <description>
+
+&lt;h1 id=&#34;twitter-bootstrap-compatible-login-with-buttons&#34;&gt;Twitter Bootstrap compatible Login with Buttons&lt;/h1&gt;
+
+&lt;p&gt;Login with Facebook, Twitter, Github, LinkedIn, StackOverflow or Google Plus buttons compatible with Twitter Bootstrap.&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/LsbusxLy/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
