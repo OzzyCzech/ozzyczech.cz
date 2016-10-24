@@ -22,7 +22,7 @@
 
 &lt;p&gt;How to load Ace Editor from CDN and submit content with regular POST request:&lt;/p&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/ze7L9ma8/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;https://jsfiddle.net/ze7L9ma8/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 </description>
     </item>
@@ -39,7 +39,7 @@
 
 &lt;p&gt;Login with Facebook, Twitter, Github, LinkedIn, StackOverflow or Google Plus buttons compatible with Twitter Bootstrap.&lt;/p&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/LsbusxLy/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;https://jsfiddle.net/LsbusxLy/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 </description>
     </item>
@@ -126,7 +126,7 @@
 	drawCircle(&#39;#555555&#39;, options.lineWidth, options.percent / 100);
 &lt;/script&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/zky35zt7/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;https://jsfiddle.net/zky35zt7/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 
 &lt;p&gt;

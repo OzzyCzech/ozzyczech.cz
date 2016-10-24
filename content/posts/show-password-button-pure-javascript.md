@@ -8,4 +8,4 @@ tags: [js, ux, webdesign]
 
 Pure Javascript solution for show/hide password button near to password input:
 
-{{< jsfiddle zbse23mf >}}
+{{<jsfiddle "https://jsfiddle.net/OzzyCzech/q35p9s7b/1/">}}

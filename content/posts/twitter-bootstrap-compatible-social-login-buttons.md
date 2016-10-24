@@ -8,4 +8,6 @@ tags: [HTML, svg, oauth, bootstrap]
 
 Login with Facebook, Twitter, Github, LinkedIn, StackOverflow or Google Plus buttons compatible with Twitter Bootstrap.
 
-{{< jsfiddle LsbusxLy >}}
+
+
+{{<jsfiddle "https://jsfiddle.net/LsbusxLy/">}}
