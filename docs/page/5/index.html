@@ -37,9 +37,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://blog.omdesign.cz/js/app.js"></script>
 	<!-- Twitter boostrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 	<!-- highlight.js -->
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
@@ -54,7 +52,7 @@
 			<li><a href="https://omdesign.cz/">Home</a></li>
 			<li><a href="https://omdesign.cz/work">Work</a></li>
 			<li><a href="https://omdesign.cz/resume">Resume</a></li>
-			<li class="active"><a href="http://blog.omdesign.cz">Blog</a></li>			
+			<li class="active"><a href="http://blog.omdesign.cz">Blog</a></li>
 			<li><a href="https://omdesign.cz/contact">Contact</a></li>
 			<li>
 <form action="https://google.com/search" method="get">
@@ -476,53 +474,64 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 	</article>
 	
 	
-    
-    <ul class="pagination">
-        
-        <li>
-            <a href="http://blog.omdesign.cz/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-        </li>
-        
-        <li
-        >
-        <a href="http://blog.omdesign.cz/page/4/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-        </li>
-        
-        <li
-        ><a href="http://blog.omdesign.cz/">1</a></li>
-        
-        <li
-        ><a href="http://blog.omdesign.cz/page/2/">2</a></li>
-        
-        <li
-        ><a href="http://blog.omdesign.cz/page/3/">3</a></li>
-        
-        <li
-        ><a href="http://blog.omdesign.cz/page/4/">4</a></li>
-        
-        <li
-        class="active"><a href="http://blog.omdesign.cz/page/5/">5</a></li>
-        
-        <li
-        ><a href="http://blog.omdesign.cz/page/6/">6</a></li>
-        
-        <li
-        ><a href="http://blog.omdesign.cz/page/7/">7</a></li>
-        
-        <li
-        ><a href="http://blog.omdesign.cz/page/8/">8</a></li>
-        
-        <li
-        >
-        <a href="http://blog.omdesign.cz/page/6/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-        </li>
-        
-        <li>
-            <a href="http://blog.omdesign.cz/page/8/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-        </li>
-        
-    </ul>
-    
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link "
+      aria-label="Previous"
+      href="http://blog.omdesign.cz/page/4/">
+      <span aria-hidden="true">&laquo;</span>
+      <span class="sr-only">Previous</span>
+    </a>
+  </li>
+
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/">1</a>
+  </li>
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/2/">2</a>
+  </li>
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/3/">3</a>
+  </li>
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/4/">4</a>
+  </li>
+  
+  <li class="page-item active">
+    <a class="page-link" href="http://blog.omdesign.cz/page/5/">5</a>
+  </li>
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/6/">6</a>
+  </li>
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/7/">7</a>
+  </li>
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/8/">8</a>
+  </li>
+  
+
+  <li class="page-item">
+    <a class="page-link "
+    aria-label="Next"
+    href="http://blog.omdesign.cz/page/6/">
+    <span aria-hidden="true">&raquo;</span>
+    <span class="sr-only">Next</span>
+  </a>
+  </li>
+
+</ul>
+</nav>
+
+
 </section>
 
 <div class="container tags hidden-print">

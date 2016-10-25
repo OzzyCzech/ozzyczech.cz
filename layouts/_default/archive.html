@@ -9,5 +9,5 @@
 		{{ .Content | replaceRE "<h1.*?>(.|\n)*?</h1>" "" | safeHTML }}
 	</article>
 	{{ end }}
-	{{ template "_internal/pagination.html" . }}
+	{{ partial "pagination.html" . }}
 </section>
