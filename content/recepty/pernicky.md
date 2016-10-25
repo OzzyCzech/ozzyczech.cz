@@ -6,7 +6,7 @@ tags: [recepty, cukroví]
 
 # Perníčky
 
-## Perníkové těsto
+#### Perníkové těsto
 
 * 2 vejce
 * 200 - 250 g cukru moučky
@@ -35,7 +35,7 @@ Po upečení ještě horké perníčky **potřít vajíčkem** rozšlehaným s j
 lžičkou vody - pro lesk. Nechat zaschnout. Uložit do papírové bedny.
 Takže by se měly vyrábět cca 2-3 týdny před Vánoci.
 
-## Poleva
+#### Poleva
 * 180 g moučkového cukru (dvakrát prosít)
 * 1 bílek
 * pár kapek vody

@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<section class="container">
+<section class="container articles">
 	{{ $paginator := .Paginate .Data.Pages }}
 	{{ range $paginator.Pages }}
 	<article>
@@ -11,8 +11,11 @@
 		{{ .Content | replaceRE "<h1.*?>(.|\n)*?</h1>" "" | safeHTML }}
 	</article>
 	{{ end }}
-	{{ partial "pagination.html" . }}
 </section>
 
-{{ partial "tags.html" . }}
+<footer class="container">
+	{{ partial "pagination.html" . }}
+	{{ partial "tags.html" . }}
+</footer>
+
 {{ partial "footer.html" . }}
