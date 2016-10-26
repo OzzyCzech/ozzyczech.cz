@@ -15,7 +15,7 @@ tags: [webdesign, images]
 * https://stocksnap.io/
 
 ### Payment
-
+* https://www.braintreepayments.com (1,9% + €0,30)
 
 ### Wordpress Themes
 
