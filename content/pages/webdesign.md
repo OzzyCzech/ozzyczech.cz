@@ -18,6 +18,11 @@ tags: [webdesign, images]
 ### Payment
 * https://www.braintreepayments.com (1,9% + €0,30)
 
+### Electron
+
+* http://electron.atom.io/ - Electron homepage
+* http://photonkit.com/ - CSS & HTMl kit for Electron
+
 ### Wordpress Themes
 
 * http://themetrust.com/themes/
