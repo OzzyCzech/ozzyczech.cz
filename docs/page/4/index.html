@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-12-02 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-12-21 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-12-02 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-12-21 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,38 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2013-12-21T00:00:00Z">21. Prosinec 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/"><div>How to clean flash drive before unmount on Mac</div></a></h1>
+		
+
+
+
+<p>How to <strong>clean flash drive</strong> and delete all hidden (dot) files on mac before unmount? It&rsquo;s simple, save follow commands as <code>flash</code>:</p>
+
+<pre><code>#!/bin/bash
+
+if [ -n &quot;$1&quot; ]; then
+  read -r -p &quot;Clean /Volumes/$1/ and unmount? [y/N] &quot; response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then      
+    find /Volumes/$1/ -name '._*' -type f -delete
+    rm -rf /Volumes/$1/.Spotlight-V100/
+    rm -rf /Volumes/$1/.Trashes/
+    diskutil unmount /Volumes/$1/
+    echo &quot;Done...&quot;
+  fi
+else
+  echo &quot;Flash drive name missing&quot;
+fi
+</code></pre>
+
+<p>Then change the access mode of a file <code>chmod +x flash</code>. To unmount a clean flash drive just run
+<code>./flash Flashka</code> (Flashka is name od drive).</p>
+
+	</article>
 	
 	<article>
 		
@@ -299,31 +331,6 @@ killall Finder
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2013-02-20T00:00:00Z">20. Únor 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wodpress-constants-for-human-readable-intervals/"><div>Wodpress constants for human-readable intervals</div></a></h1>
-		
-
-
-
-<p>Constants for expressing human-readable intervals in new #Wordpress are very useful:</p>
-
-<pre><code>define( 'MINUTE_IN_SECONDS', 60 );
-define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
-define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );
-define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );
-define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
-</code></pre>
-
-<p>Example:</p>
-
-<pre><code>wp_cache_add($key, $data, 'default, 5 * DAY_IN_SECONDS);
-</code></pre>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -416,11 +423,15 @@ define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
 	
 	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
 	
+	<a href="http://blog.omdesign.cz/tags/cloud" class="tag">#cloud</a>
+	
 	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
 	
 	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
 	
 	<a href="http://blog.omdesign.cz/tags/cukrov%C3%AD" class="tag">#cukroví</a>
+	
+	<a href="http://blog.omdesign.cz/tags/database" class="tag">#database</a>
 	
 	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
 	

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog.omdesign.cz</title>
+    <link>http://blog.omdesign.cz/tags/database/index.xml</link>
+    <description>Recent content on blog.omdesign.cz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
+    <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
+    <atom:link href="http://blog.omdesign.cz/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cloud Storages List</title>
+      <link>http://blog.omdesign.cz/cloud-storages-list/</link>
+      <pubDate>Fri, 02 Dec 2016 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/cloud-storages-list/</guid>
+      <description>
+
+&lt;h1 id=&#34;cloud-storages-list&#34;&gt;Cloud Storages List&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.firebase.com/&#34;&gt;https://www.firebase.com/&lt;/a&gt; - Firebase&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.apple.com/icloud/&#34;&gt;https://developer.apple.com/icloud/&lt;/a&gt; - Cloud Kit from Apple&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mlab.com/&#34;&gt;https://mlab.com/&lt;/a&gt; - Mongo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://parse.com/&#34;&gt;https://parse.com/&lt;/a&gt; - Parse Server&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://redislabs.com/&#34;&gt;https://redislabs.com/&lt;/a&gt; - Redis&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

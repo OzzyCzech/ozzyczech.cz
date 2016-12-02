@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2013-01-08 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-01-31 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-01-08 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-01-31 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/posts/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/posts/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,20 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2013-01-31T00:00:00Z">31. Leden 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/run-iphone-simulator-without-xcode/"><div>Run iPhone simulator without XCode</div></a></h1>
+		
+
+
+
+<pre><code>open -a &quot;iPhone Simulator&quot;
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -384,34 +398,6 @@ function getFtpConnection($uri)
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2011-03-27T00:00:00Z">27. Březen 2011</time>
-		
-		<h1><a href="http://blog.omdesign.cz/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/"><div>Snadné vložené YouTube videa pomocí PHP</div></a></h1>
-		
-
-
-
-<p>Následující PHP kód zamění jakýkoliv odkazu na <a href="http://www.youtube.com/">YouTube</a> video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.</p>
-
-<pre><code>function youtube($string)
-{
-  return preg_replace(
-    '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&amp;?.*?#i',
-    '&lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/$4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;',
-    $string
-  );
-}
-
-echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
-echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
-echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
-echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
-</code></pre>
-
-	</article>
-	
 
 	
 <nav aria-label="Page navigation">
@@ -492,11 +478,15 @@ echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
 	
 	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
 	
+	<a href="http://blog.omdesign.cz/tags/cloud" class="tag">#cloud</a>
+	
 	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
 	
 	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
 	
 	<a href="http://blog.omdesign.cz/tags/cukrov%C3%AD" class="tag">#cukroví</a>
+	
+	<a href="http://blog.omdesign.cz/tags/database" class="tag">#database</a>
 	
 	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
 	

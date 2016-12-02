@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2014-09-28 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-10-05 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-09-28 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-10-05 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/posts/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/posts/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,43 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2014-10-05T00:00:00Z">5. Říjen 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/hardcore-simple-events-dispatcher-for-php/"><div>Hardcore Simple Events Dispatcher for PHP</div></a></h1>
+		
+
+
+
+<p>Events is simple pure functional <strong>event dispatching library</strong> for PHP 5.5+ and
+have nice and clear interface with function <code>on()</code>, <code>one()</code>, <code>off()</code>, <code>trigger()</code>,
+<code>filter()</code>, <code>ensure()</code>, <code>listeners()</code>, <code>events()</code> - that&rsquo;s all!</p>
+
+<p>With <strong>sphido/events</strong> can:</p>
+
+<ul>
+<li>listeners prioritization</li>
+<li>add/remove listeners</li>
+<li>filter values by functions</li>
+<li>stop propagation in function chain</li>
+<li>and have event default handler</li>
+</ul>
+
+<h2 id="trigger-event">Trigger event</h2>
+
+<pre><code>on('event', function () {
+  echo &quot;wow it's works yeah!&quot;;
+});
+
+trigger('event'); // print wow it's works yeah!
+</code></pre>
+
+<p>Hardcore simple events for PHP with filter, prioritizing, removing handlers and
+stop propagation. It&rsquo;s even simpler then my previous version <a href="https://github.com/sphido/events">https://github.com/sphido/events</a>.</p>
+
+	</article>
 	
 	<article>
 		
@@ -442,37 +479,6 @@ file_put_contents(__DIR__ . '/currencies.locale.php', $code);
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2014-01-17T00:00:00Z">17. Leden 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/"><div>Find all unnecessary images without link from code</div></a></h1>
-		
-
-
-
-<p>How to find all unnecessary images in your website project?</p>
-
-<pre><code>find public/images -type f|while read line ; do printf &quot;$(basename $line) &gt; &quot; &amp;&amp; ack --nofilter -l -c &quot;$(basename $line)&quot; | wc -l; done
-</code></pre>
-
-<p>Output will be:</p>
-
-<pre><code>sprite.gif &gt; 0
-ajax-loader-bg-f9.gif &gt; 2
-ajax-loader-bg-trans.gif &gt; 3
-ajax-loader-static-bg-trans.gif &gt; 2
-bg_about.png &gt; 2
-...
-</code></pre>
-
-<p>If you want output filenames not just marches count remove</p>
-
-<pre><code>| wc -l
-</code></pre>
-
-	</article>
-	
 
 	
 <nav aria-label="Page navigation">
@@ -553,11 +559,15 @@ bg_about.png &gt; 2
 	
 	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
 	
+	<a href="http://blog.omdesign.cz/tags/cloud" class="tag">#cloud</a>
+	
 	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
 	
 	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
 	
 	<a href="http://blog.omdesign.cz/tags/cukrov%C3%AD" class="tag">#cukroví</a>
+	
+	<a href="http://blog.omdesign.cz/tags/database" class="tag">#database</a>
 	
 	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
 	

@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-02-08 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-02-20 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-02-08 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-02-20 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,31 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2013-02-20T00:00:00Z">20. Únor 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/wordpress/wodpress-constants-for-human-readable-intervals/"><div>Wodpress constants for human-readable intervals</div></a></h1>
+		
+
+
+
+<p>Constants for expressing human-readable intervals in new #Wordpress are very useful:</p>
+
+<pre><code>define( 'MINUTE_IN_SECONDS', 60 );
+define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
+define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );
+define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );
+define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
+</code></pre>
+
+<p>Example:</p>
+
+<pre><code>wp_cache_add($key, $data, 'default, 5 * DAY_IN_SECONDS);
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -431,48 +456,6 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2012-06-14T00:00:00Z">14. Červen 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/jak-spr%C3%A1vn%C4%9B-p%C5%99epsat-ojet%C3%A9-auto/"><div>Jak správně přepsat ojeté auto</div></a></h1>
-		
-
-
-
-<p>Popíšu jak to probíhalo u mě. Kupoval jsem ojeté auto přímo od majitele. Platil jsem hotově bez úvěru. Auto má platnou technickou prohlídku a emise do roku 2015.</p>
-
-<ol>
-<li>uzavřeli jsme s majitelem kupní smlouvu, kde byl uveden VIN kód auta</li>
-<li>poslal jsme mu peníze na účet</li>
-<li>původní majitel <strong>odhlásil auto</strong> na spádovém dopravním inspektorátu (Praha)</li>
-<li><strong>prostřihli</strong> mu tam malý TP</li>
-<li>do velkého TP mě jménem uvedl jako <strong>budoucího nového majitele</strong> (ušetří se tím plná moc v budoucnu)</li>
-<li>na <strong>VIN</strong> jsem si uzavřel s pojišťovnou <strong>povinné ručení</strong></li>
-<li>původní majitel si teď už mohl své povinné ručení zrušit</li>
-</ol>
-
-<p>S prostřiženým malým TP je možné jezdit <strong>bez úhony 10 dní</strong>, pak už se jedná o přestupek. Ale nikdy nesmíte vyjet na cestu s nepojištěným autem - proto povinné ručení. Je to dokonce tak přísné, že na smlouvě o povinném ručení je uvedena i hodina uzavření. Zelenou kartu tedy musíte mít v ruce už při převzetí auta od původního majitele. Rovněž auto nesmí na silnici pokud nemá platnou STK. To si jej pak musíte nechat odtáhnout rovnou na stanici STK a pokusit se ji obnovit. Pokud chcete s autem jezdit, musíte do 10 dní dokončit úplný přepis na sebe. Což provedete na svém spádovém dopravním inspektorátu. V mém případě to je Ostrava - podle trvalého bydliště. Jedná se tedy o <strong>přepis mezi dvěma kraji</strong>. Což znamená automaticky nutnost <strong>výměny registračních značek vozidla</strong>. Pokud se jedná pouze o přepis v rámci kraje, není výměna značek povinná. Záleží na novém majiteli, zda nové značky chce a připlatí si za ně. Pro dokončení přepisu budete potřebovat spoustu papírů: - <strong>občanku</strong> (doklad totožnosti)
-- <strong>doklad o způsobu nabytí vozidla</strong> (u mě kupní smlouva)
-- původní (staré) <strong>registrační značky</strong> vozidla
-- osvědčení o registraci vozidla část II (tzv. <strong>velký technický průkaz</strong>)
-- osvědčení o registraci vozidla část I (tzv. <strong>malý technický průkaz</strong> - ten prostřižený)
-- plnou moc k přepisu vozidla, pokud Vás majitel neuvedl jako <strong>budoucího majitele</strong> při odhlášení auta (což mě uvedl, takže jsem nepotřeboval)
-- doklad o <strong>technické prohlídce</strong> (zápis o platné pravidelné technické prohlídce v technickém průkazu nebo protokol o pravidelné technické prohlídce vystavený STK)
-- doklad o sjednání pojištění odpovědnosti z provozu vozidla (tzv. <strong>povinné ručení</strong>) tzv. zelená karta
-- <strong>žádost o přepis vozidla</strong> (dostanete a vyplníte na inspektorátu)
-- <strong>protokol o evidenční kontrole silničního motorového</strong> (viz. níže)</p>
-
-<p>Pro úspěšný přepis auta potřebujete tzv. <em>protokol o evidenční kontrole silničního motorového vozidla</em> - ten získáte na <strong>jakékoliv stanici STK</strong> v ČR. K získání protokolu je nutné: - ukázat občanku
-- malý a velký technický průkaz
-- a auto.</p>
-
-<p>Celkově záležitost na 5 minut. Pracovník STK zkontroloval VIN, barvu vozidla, stav tachometru a číslo motoru. Stálo to kolem 200 Kč. Platnost protokolu je opět 10 dní. Po předložení všech náležitostí jsem na inspektorátu dostal nové ostravské značky a nový neprostřižený malý technický průkaz. Všechno byla záležitost cca na 10 minut. Stálo to na správních poplatcích 800 Kč. Kopii velkého technického průkazu jsem pak ještě poslal na pojišťovnu a ta mi obratem poslala novou zelenou kartu, kde je uvedena moje nová registrační značka. Ještě malý dodatek. Pokud je v autě na skle nalepená <strong>dálniční známka</strong>, zneplatní se výměnou značek. Dálniční známku si prý můžete nechat vyměnit na jakékoliv větší poště. Stačí k tomu původní známka a nový technický průkaz. Ještě jsem to nestihl udělat, takže přesně nevím.Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty se při výměně značky dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)</p>
-
-<p>Popis výměny dálniční známky najdete na stránkách <a href="http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm">České Pošty</a>. #posta #auto #how-to #registrace</p>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -565,11 +548,15 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 	
 	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
 	
+	<a href="http://blog.omdesign.cz/tags/cloud" class="tag">#cloud</a>
+	
 	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
 	
 	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
 	
 	<a href="http://blog.omdesign.cz/tags/cukrov%C3%AD" class="tag">#cukroví</a>
+	
+	<a href="http://blog.omdesign.cz/tags/database" class="tag">#database</a>
 	
 	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
 	

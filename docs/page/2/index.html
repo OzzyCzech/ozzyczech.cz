@@ -29,7 +29,7 @@
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,composer,css,cukroví,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,26 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2015-10-18T00:00:00Z">18. Říjen 2015</time>
+		
+		<h1><a href="http://blog.omdesign.cz/recepty/lineck%C3%A9-t%C4%9Bsto/"><div>Linecké těsto</div></a></h1>
+		
+
+
+
+<ul>
+<li>500 g hladké mouky</li>
+<li>250 g másla</li>
+<li>100 g cukru moučka</li>
+<li>Vanilkový cukr / Vanilkový extrakt nebo Vanilka</li>
+<li>1 vejce (žloutek)</li>
+<li>Citronová kůra 1 citrónu</li>
+</ul>
+
+	</article>
 	
 	<article>
 		
@@ -349,66 +369,6 @@ echo getLatestTagUrl('OzzyCzech/vestibulum');
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2014-09-25T00:00:00Z">25. Září 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-fix-shell-shock-bash-bug-on-os-x/"><div>How to fix “Shell Shock” bash bug on OS X</div></a></h1>
-		
-
-
-
-<p>First try if your bash version it’s vulnerable. Go to terminal and run:</p>
-
-<pre><code>$ env x='() { :;}; echo vulnerable' bash -c 'echo hello'
-</code></pre>
-
-<p>Follow output is an example of a non-vulnerable bash version.</p>
-
-<pre><code>bash: warning: x: ignoring function definition attempt
-bash: error importing function definition for `x'
-hello
-</code></pre>
-
-<p>If you see the word <strong>vulnerable</strong> in the output of that command your bash is <strong>vulnerable</strong> and you <strong>should update</strong>. ### How to update bash with Homebrew</p>
-
-<p>First check your bash version:</p>
-
-<pre><code>$ bash --version    
-GNU bash, version 4.3.18(1)-release (x86_64-apple-darwin13.3.0)
-Copyright (C) 2013 Free Software Foundation, Inc.
-</code></pre>
-
-<p>Then find your bash directory (full path can be usefull later):</p>
-
-<pre><code>$ ls -la /usr/local/bin/bash
-/usr/local/bin/bash -&gt; ../Cellar/bash/4.3.25/bin/bash
-</code></pre>
-
-<p>Then upgrade bash:</p>
-
-<pre><code>$ brew update
-$ brew upgrade bash
-</code></pre>
-
-<p>If your terminal starts returning weird error like:</p>
-
-<pre><code>dyld: Library not loaded: @@HOMEBREW_PREFIX@@/opt/readline/lib/libreadline.6.dylib
-  Referenced from: /usr/local/bin/bash
-  Reason: image not found
-</code></pre>
-
-<p>You will need upgrade also readline with follow commands:</p>
-
-<pre><code>$ brew rm -f readline
-$ brew install readline
-$ brew link readline --force
-</code></pre>
-
-<p><strong>Tip</strong>: If you accidentally close <strong>Terminal</strong> before getting above errors and your bash just stop working at all. Go to Terminal preferences<code>⌘+,</code> and change bash version to older e.g.<code>/usr/local/Cellar/bash/4.3.18/bin/bash</code> then quit Terminal <code>⌘+Q</code>. Upgrade readline and change path back to <code>/usr/local/bin/bash</code> and restart Terminal again.</p>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -501,11 +461,15 @@ $ brew link readline --force
 	
 	<a href="http://blog.omdesign.cz/tags/canvas" class="tag">#canvas</a>
 	
+	<a href="http://blog.omdesign.cz/tags/cloud" class="tag">#cloud</a>
+	
 	<a href="http://blog.omdesign.cz/tags/composer" class="tag">#composer</a>
 	
 	<a href="http://blog.omdesign.cz/tags/css" class="tag">#css</a>
 	
 	<a href="http://blog.omdesign.cz/tags/cukrov%C3%AD" class="tag">#cukroví</a>
+	
+	<a href="http://blog.omdesign.cz/tags/database" class="tag">#database</a>
 	
 	<a href="http://blog.omdesign.cz/tags/diplomka" class="tag">#diplomka</a>
 	
