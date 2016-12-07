@@ -29,7 +29,7 @@
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,43 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2015-10-18T00:00:00Z">18. Říjen 2015</time>
+		
+		<h1><a href="http://blog.omdesign.cz/recepty/kynut%C3%BD-jahodov%C3%BD-kol%C3%A1%C4%8D/"><div>Kynutý jahodový koláč</div></a></h1>
+		
+
+
+
+<ul>
+<li>70 g cukr moučka</li>
+<li>1 špetka sůl</li>
+<li>150 ml mléko</li>
+<li>250 g tvaroh</li>
+<li>300 g polohrubá mouka</li>
+<li>1 k svejce</li>
+<li>1 balíček vanilkový cukr</li>
+<li>30 g droždí</li>
+<li>50 g cukr</li>
+<li>50 g máslo</li>
+</ul>
+
+<p>Mléko ohřejeme, aby bylo teplé. Přidáme do něj trochu cukru a droždí. Necháme
+vzejít kvásek. Mouku smícháme s cukrem, přidáme špetku soli, vejce, vykynutý
+kvásek a rozpuštěné máslo. Zaděláme těsto, které necháme na teplém místě
+necelou hodinu kynout. Tvaroh smícháme s cukrem, vanilkovým cukrem a vanilkovým pudinkem.</p>
+
+<p>Vykynuté těsto rozprostřeme na vymazaný a moukou vysypaný plech. Tvaroh můžeme
+nanést na celé těsto, nebo můžeme pomocí cukrářského sáčku udělat mřížky,
+mezi které naklademe jahody.</p>
+
+<p>Z kousku másla, cukru a mouky uděláme drobenku, kterou posypeme jahody.
+Jahodový kynutý koláč s tvarohem pečeme při 180 °C asi 35 minut.
+Jahodový kynutý koláč s tvarohem necháme vychladnout a můžeme podávat.</p>
+
+	</article>
 	
 	<article>
 		
@@ -345,30 +382,6 @@ stop propagation. It&rsquo;s even simpler then my previous version <a href="htt
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2014-09-28T00:00:00Z">28. Září 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/getting-github-latest-release-url/"><div>Getting GitHub latest release URL</div></a></h1>
-		
-
-
-
-<p>Do you need <strong>Download Latest Version</strong> button? Try follow PHP code:</p>
-
-<pre><code>function getLatestTagUrl($repository, $default = 'master') {
-    $file = @json_decode(@file_get_contents(&quot;https://api.github.com/repos/$repository/tags&quot;, false,
-        stream_context_create(['http' =&gt; ['header' =&gt; &quot;User-Agent: Vestibulum\r\n&quot;]])
-    ));
-    return sprintf(&quot;https://github.com/$repository/archive/%s.zip&quot;, $file ? reset($file)-&gt;name : $default);
-}
-
-echo getLatestTagUrl('OzzyCzech/vestibulum');
-// will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip
-</code></pre>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -479,6 +492,8 @@ echo getLatestTagUrl('OzzyCzech/vestibulum');
 	
 	<a href="http://blog.omdesign.cz/tags/excerpt" class="tag">#excerpt</a>
 	
+	<a href="http://blog.omdesign.cz/tags/flux" class="tag">#flux</a>
+	
 	<a href="http://blog.omdesign.cz/tags/ftp" class="tag">#ftp</a>
 	
 	<a href="http://blog.omdesign.cz/tags/git" class="tag">#git</a>
@@ -545,9 +560,13 @@ echo getLatestTagUrl('OzzyCzech/vestibulum');
 	
 	<a href="http://blog.omdesign.cz/tags/quotes" class="tag">#quotes</a>
 	
+	<a href="http://blog.omdesign.cz/tags/react" class="tag">#react</a>
+	
 	<a href="http://blog.omdesign.cz/tags/rebase" class="tag">#rebase</a>
 	
 	<a href="http://blog.omdesign.cz/tags/recepty" class="tag">#recepty</a>
+	
+	<a href="http://blog.omdesign.cz/tags/redux" class="tag">#redux</a>
 	
 	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
 	

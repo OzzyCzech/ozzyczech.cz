@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2011-03-27 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2011-04-13 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2011-03-27 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2011-04-13 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/posts/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/posts/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,41 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2011-04-13T00:00:00Z">13. Duben 2011</time>
+		
+		<h1><a href="http://blog.omdesign.cz/snadn%C3%A9-p%C5%99ipojen%C3%AD-k-ftp-pomoc%C3%AD-php/"><div>Snadné připojení k FTP pomocí PHP</div></a></h1>
+		
+
+
+
+<p>Mám v oblibě <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">zkrácený zápis</a> připojení k FTP.
+PHP tento <a href="http://php.net/manual/en/function.ftp-connect.php">způsob zápisu připojení</a>
+bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere
+zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu.</p>
+
+<pre><code>/**
+ * Vraci ID FTP pripojeni na zaklade zadane URL
+ * ftp://username:password@sld.domain.tld:21/path1/path2/
+ */
+function getFtpConnection($uri)
+{  
+  preg_match(&quot;/(?P&lt;protocol&gt;ftps?:\/\/)(?P&lt;username&gt;.*?):(?P&lt;password&gt;.*?)@(?P&lt;url&gt;.*?):?(?P&lt;port&gt;[1-9]+)?(?&lt;dir&gt;\/.*)/i&quot;, $uri, $match);
+  $conn = ftp_connect($match['url'], empty($match['port']) ? 21 : (int)$match['port']) or die(&quot;Couldn't connect to &quot; . $match['url']);
+  if (ftp_login($conn, $match['username'], $match['password'])) {
+    ftp_chdir($conn, $match['dir']);
+    return $conn;
+  }
+
+  return null;
+}
+</code></pre>
+
+<p>Výstupem funkce je samozřejmě ID připojení, se kterým pak můžete <a href="http://www.php.net/manual/en/ref.ftp.php">normálně pracovat</a> dál. Funkci najdete také zde: <a href="https://gist.github.com/998091">https://gist.github.com/998091</a></p>
+
+	</article>
 	
 	<article>
 		
@@ -366,6 +401,8 @@ app.listen(process.env.PORT || 3030);
 	
 	<a href="http://blog.omdesign.cz/tags/excerpt" class="tag">#excerpt</a>
 	
+	<a href="http://blog.omdesign.cz/tags/flux" class="tag">#flux</a>
+	
 	<a href="http://blog.omdesign.cz/tags/ftp" class="tag">#ftp</a>
 	
 	<a href="http://blog.omdesign.cz/tags/git" class="tag">#git</a>
@@ -432,9 +469,13 @@ app.listen(process.env.PORT || 3030);
 	
 	<a href="http://blog.omdesign.cz/tags/quotes" class="tag">#quotes</a>
 	
+	<a href="http://blog.omdesign.cz/tags/react" class="tag">#react</a>
+	
 	<a href="http://blog.omdesign.cz/tags/rebase" class="tag">#rebase</a>
 	
 	<a href="http://blog.omdesign.cz/tags/recepty" class="tag">#recepty</a>
+	
+	<a href="http://blog.omdesign.cz/tags/redux" class="tag">#redux</a>
 	
 	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
 	

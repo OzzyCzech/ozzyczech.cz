@@ -29,7 +29,7 @@
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,73 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<h1><a href="http://blog.omdesign.cz"><div></div></a></h1>
+		
+
+
+
+<pre><code>var express = require('express');
+var phantom = require('phantom');
+var app = express()
+
+app.use(express.static(__dirname + '/public'));
+
+// setup express
+//app.use(express.compress());
+//app.use(express.static(public_dir));
+//app.use(express.json());
+//app.use(express.urlencoded());
+
+app.get('/', function (req, res) {
+
+	var url = 'https://www.google.com/';
+
+	var sitepage = null;
+	var phInstance = null;
+
+
+	phantom.create(['--ignore-ssl-errors=yes', '--ssl-protocol=any', '--load-images=yes', '--local-to-remote-url-access=yes'], {logLevel: 'error'})
+			.then(instance =&gt; {
+				phInstance = instance;
+				return instance.createPage();
+			})
+			// Configure page
+			.then(page =&gt; {
+				sitepage = page;
+				sitepage.setting('paperSize', {format: &quot;A4&quot;, orientation: 'portrait', margin: '1cm', width: 795, height: 1125});
+				sitepage.property('viewportSize', {width: 1280, height: 1020});
+				return page.open(url);
+			})
+			.then(status =&gt; {
+				if (status === 'success') {
+					return sitepage.render(__dirname + '/public/output.png');
+				}
+			})
+			.then(rendered =&gt; {
+				if (rendered === true) {
+					res.download(__dirname + '/public/output.png');
+				} else {
+					res.status(404).json({error:true, message: &quot;404 Not Found&quot;});
+				}
+
+				sitepage.close();
+				phInstance.exit()
+			})
+			.catch(error =&gt; {
+				res.status(404).json({error: true, message: error});
+				phInstance.exit();
+			});
+
+});
+
+app.listen(process.env.PORT || 3030);
+
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -361,6 +428,8 @@ we hire smart people so they can tell us what to do.
 	
 	<a href="http://blog.omdesign.cz/tags/excerpt" class="tag">#excerpt</a>
 	
+	<a href="http://blog.omdesign.cz/tags/flux" class="tag">#flux</a>
+	
 	<a href="http://blog.omdesign.cz/tags/ftp" class="tag">#ftp</a>
 	
 	<a href="http://blog.omdesign.cz/tags/git" class="tag">#git</a>
@@ -427,9 +496,13 @@ we hire smart people so they can tell us what to do.
 	
 	<a href="http://blog.omdesign.cz/tags/quotes" class="tag">#quotes</a>
 	
+	<a href="http://blog.omdesign.cz/tags/react" class="tag">#react</a>
+	
 	<a href="http://blog.omdesign.cz/tags/rebase" class="tag">#rebase</a>
 	
 	<a href="http://blog.omdesign.cz/tags/recepty" class="tag">#recepty</a>
+	
+	<a href="http://blog.omdesign.cz/tags/redux" class="tag">#redux</a>
 	
 	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
 	

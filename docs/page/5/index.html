@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-02-20 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-03-11 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-02-20 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-03-11 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,rebase,recepty,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,19 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2013-03-11T00:00:00Z">11. Březen 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/list-all-mounted-drives-on-mac/"><div>List all mounted drives on mac</div></a></h1>
+		
+
+
+
+<p>It&rsquo;s simple: <code>df -h</code></p>
+
+	</article>
 	
 	<article>
 		
@@ -432,30 +445,6 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2012-09-05T00:00:00Z">5. Září 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/zji%C5%A1t%C4%9Bn%C3%AD-pr%C3%A1v-k-souboru-nebo-adres%C3%A1%C5%99i-v-php/"><div>Zjištění práv k souboru nebo adresáři v PHP</div></a></h1>
-		
-
-
-
-<pre><code>function getPermisions($file) {
-  return (is_dir($file) || is_file($file)) ? substr(decoct(fileperms($path)), -4) : '0000';
-}
-</code></pre>
-
-<p>Nebo pro kontrolu, zda jsou práva dostatečná:</p>
-
-<pre><code>function hasPermisions($path, $permission = 777) {
-  $current = substr(decoct(fileperms($path)), $permission &gt; 1000 ? -4 : -3);
-  return ($current &gt; $permission);
-}
-</code></pre>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -566,6 +555,8 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 	
 	<a href="http://blog.omdesign.cz/tags/excerpt" class="tag">#excerpt</a>
 	
+	<a href="http://blog.omdesign.cz/tags/flux" class="tag">#flux</a>
+	
 	<a href="http://blog.omdesign.cz/tags/ftp" class="tag">#ftp</a>
 	
 	<a href="http://blog.omdesign.cz/tags/git" class="tag">#git</a>
@@ -632,9 +623,13 @@ nahrazení všech tagů u postu nalezenými hashtagy.</p>
 	
 	<a href="http://blog.omdesign.cz/tags/quotes" class="tag">#quotes</a>
 	
+	<a href="http://blog.omdesign.cz/tags/react" class="tag">#react</a>
+	
 	<a href="http://blog.omdesign.cz/tags/rebase" class="tag">#rebase</a>
 	
 	<a href="http://blog.omdesign.cz/tags/recepty" class="tag">#recepty</a>
+	
+	<a href="http://blog.omdesign.cz/tags/redux" class="tag">#redux</a>
 	
 	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
 	

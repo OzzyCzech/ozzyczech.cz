@@ -77,22 +77,21 @@ section.articles {
 
 
 article img {
-	display: block;
  	max-width: 100%;
  	height: auto;
 	margin: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
 }
 
 article img.right,
 article img[alt$=">"] {
+	display: block;
 	padding-left: 25px;
   float:right;
 }
 
 article img.left,
 article img[alt$="<"] {
+	display: block;
 	padding-right: 25px;
   float:left;
 }
