@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2014-10-05 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-10-18 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-10-05 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-10-18 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,45 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2014-10-18T00:00:00Z">18. Říjen 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/"><div>How to switch Homebrew formulas to older version</div></a></h1>
+		
+
+
+
+<p>Sometimes you just won’t be able install latest version of any program and need
+some older (e.g. PHP 5.6.1 won’t work and you need install at least 5.6.0 and
+getting your work done). As you know all brew formulas are GIT repos, you
+can swith to older version easly:</p>
+
+<pre><code>$ cd /usr/local/Library/Taps/homebrew/homebrew-php/Formula
+$ git log --pretty=&quot;%h - %s&quot; -10
+</code></pre>
+
+<pre><code>71b2069 - Update to PHP 5.5.18
+b8aeb54 - Use homebrew's openssl for IMAP
+f0d721a - php56: improve phpdbg logic
+0dc3f1c - Update to PHP 5.6.1
+908fedd - Update to Blitz 0.8.12
+4801697 - Updates formula for WP CLI  to version 0.17.0
+00560f3 - Upgrade php*-swoole to 1.7.5
+8cbd369 - Updated PHP_CodeSniffer
+a81eba6 - update pecl_http to 2.1.2
+6a88856 - Add HEAD url for composer
+</code></pre>
+
+<p>Then just switch</p>
+
+<pre><code>$ git checkout 908fedd
+</code></pre>
+
+<p>And then run <code>brew install php56</code> and older version PHP will be installed. Procedure can be used for any formulas.</p>
+
+	</article>
 	
 	<article>
 		
@@ -423,62 +462,6 @@ git rebase upstream/[branch]
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2014-01-19T00:00:00Z">19. Leden 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/convert-json-data-to-valid-php-code/"><div>Convert JSON data to valid PHP code</div></a></h1>
-		
-
-
-
-<p>Do you need <strong>convert JSON data to valid PHP</strong> code without pain? I&rsquo;ve got a short script for that! My simple solution used <a href="http://www.php.net/manual/en/function.var-export.php">var_export()</a> function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace <code>stdClass::__set_state/</code> with <code>(object)</code>.</p>
-
-<p>Take a closer look at example data. I have here <a href="https://gist.github.com/Fluidbyte/2973986">currency.json</a> - PHP code should look something like this:</p>
-
-<pre><code>&lt;?php
- return array (
-  'USD' =&gt;
-  (object)(array(
-     'symbol' =&gt; '$',
-     'name' =&gt; 'US Dollar',
-     'symbol_native' =&gt; '$',
-     'decimal_digits' =&gt; 2,
-     'rounding' =&gt; 0,
-     'code' =&gt; 'USD',
-     'name' =&gt; 'US dollars',
-  )),
-  'CAD' =&gt;
-  //...
-);
-</code></pre>
-
-<p>It&rsquo;s can be done in only four lines of PHP code:</p>
-
-<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
-$code = var_export((array)$data, true);
-$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
-file_put_contents(__DIR__ . '/currencies.locale.php', $code);
-</code></pre>
-
-<p>If you need call some function (like <a href="http://www.php.net/manual/en/book.gettext.php">gettext</a>) above the variable, just add more regular expression:</p>
-
-<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
-$code = var_export((array)$data, true);
-
-// add gettext function call
-$code = preg_replace(&quot;/'name' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
-$code = preg_replace(&quot;/'name_plural' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
-
-// save PHP code
-$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
-file_put_contents(__DIR__ . '/currencies.locale.php', $code);
-</code></pre>
-
-<p> </p>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -604,6 +587,8 @@ file_put_contents(__DIR__ . '/currencies.locale.php', $code);
 	<a href="http://blog.omdesign.cz/tags/heartbleed" class="tag">#heartbleed</a>
 	
 	<a href="http://blog.omdesign.cz/tags/hermel%C3%ADn" class="tag">#hermelín</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hlavn%C3%AD-j%C3%ADdlo" class="tag">#hlavní-jídlo</a>
 	
 	<a href="http://blog.omdesign.cz/tags/howto" class="tag">#howto</a>
 	

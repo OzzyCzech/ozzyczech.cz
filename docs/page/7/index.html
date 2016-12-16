@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2010-11-15 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2011-03-27 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2010-11-15 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2011-03-27 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,34 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2011-03-27T00:00:00Z">27. Březen 2011</time>
+		
+		<h1><a href="http://blog.omdesign.cz/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/"><div>Snadné vložené YouTube videa pomocí PHP</div></a></h1>
+		
+
+
+
+<p>Následující PHP kód zamění jakýkoliv odkazu na <a href="http://www.youtube.com/">YouTube</a> video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.</p>
+
+<pre><code>function youtube($string)
+{
+  return preg_replace(
+    '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&amp;?.*?#i',
+    '&lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/$4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;',
+    $string
+  );
+}
+
+echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
+echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -427,55 +455,6 @@ bojovat - snažte se veškeré <strong>rovné povrchy udržovat čisté</strong>
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2006-11-25T00:00:00Z">25. Listopad 2006</time>
-		
-		<h1><a href="http://blog.omdesign.cz/recepty/nakl%C3%A1dan%C3%BD-hermel%C3%ADn/"><div>Nakládaný hermelín</div></a></h1>
-		
-
-
-
-<h2 id="co-budete-potřebovat">Co budete potřebovat?</h2>
-
-<ul>
-<li>Několik sklenic tzv. <strong>sedmiček</strong> (nebo 5 litrovou velkou sklenici od okurek)</li>
-<li><strong>Hermelíny</strong> - dle počtu osob, čím více tím lépe</li>
-<li>Kvalitní rostlinný Olej, nejlépe slunečnicový tak asi litr až dva podle množství herrmelínů</li>
-<li>Několik cibulí a česnek</li>
-<li>Nakládané feferonky (nebo chilli papričky)</li>
-<li>Koření: sladkou červenou papriku, bobkový list, kuličky nové koření, pepř kuličkový</li>
-</ul>
-
-<h2 id="jak-na-věc">Jak na věc?</h2>
-
-<ul>
-<li>Oloupejte a na proužky nakrájejte <strong>cibuli</strong>.</li>
-<li>Oloupejte si česnek a připravte feferony.</li>
-<li>Rozkrojte <strong>podélně hermelín</strong> (na dvě kolečka).</li>
-</ul>
-
-<h2 id="jdeme-plnit-do-sklenic">Jdeme plnit do sklenic</h2>
-
-<ul>
-<li>Obě poloviny hermelínu jemně <strong>posypejte červenou paprikou</strong>.</li>
-<li>Do sklenic pokládejte vždy nejprve hermelín, pak cibuli a (lisovaný) česnek a vše zakapejte olejem.</li>
-<li><strong>Feferonky</strong>, jak kdo snese. Ideální dvě až tři na láhev.</li>
-<li>Nahoru dle chuti přidávejte koření (cca 10 kuliček <strong>pepře</strong>, 5 kuliček <strong>nového koření</strong> a 3 <strong>bobkové listy</strong> na sedmičku).</li>
-<li>Až bude sklenice plná, stačí ji <strong>dolít olejem</strong> (tak 1 cm od vrchu nechtě volný).</li>
-<li>Sklenici <strong>uzavřete zlehka</strong> víčkem.</li>
-</ul>
-
-<h2 id="čekání-a-hlavně-konzumace">Čekání a hlavně konzumace!</h2>
-
-<ul>
-<li>Zrání může při pokojové teplotě trvat <strong>tak 7-14 dní</strong>. Záleží na tom, jak ho máte rádi.</li>
-<li>Hlavně ho nemějte na sluníčku a občas doporučuji povolit a zkontrolovat.</li>
-<li>Podávat s Pivem, čerstvým chlebem a hlavně vychutnávat!</li>
-</ul>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -601,6 +580,8 @@ bojovat - snažte se veškeré <strong>rovné povrchy udržovat čisté</strong>
 	<a href="http://blog.omdesign.cz/tags/heartbleed" class="tag">#heartbleed</a>
 	
 	<a href="http://blog.omdesign.cz/tags/hermel%C3%ADn" class="tag">#hermelín</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hlavn%C3%AD-j%C3%ADdlo" class="tag">#hlavní-jídlo</a>
 	
 	<a href="http://blog.omdesign.cz/tags/howto" class="tag">#howto</a>
 	

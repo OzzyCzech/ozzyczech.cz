@@ -29,7 +29,7 @@
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,51 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2015-10-18T00:00:00Z">18. Říjen 2015</time>
+		
+		<h1><a href="http://blog.omdesign.cz/recepty/bublanina/"><div>Bublanina</div></a></h1>
+		
+
+
+
+<ul>
+<li>300 g polohrubé mouky</li>
+<li>200 g mletého cukru</li>
+<li><sup>1</sup>&frasl;<sub>2</sub>-<sup>3</sup>&frasl;<sub>4</sub> sklenky rozpuštěného másla (nebo tuku nebo oleje)</li>
+<li><sup>1</sup>&frasl;<sub>2</sub>-1 prášku do pečiva</li>
+<li>4 vejce</li>
+<li>špetka soli</li>
+<li>vanilkový cukr</li>
+<li>cca 1 dl mléka nebo vody</li>
+<li>ovoce syrové nebo mražené nebo kompotované</li>
+
+<li><p>olej nebo rozpuštěný tuk na vymazání plechu</p></li>
+
+<li><p>strouhanka nebo kokos na vysypání plechu.</p></li>
+
+<li><p>ruční šlehač</p></li>
+
+<li><p>plech se zvýšenými okraji (uzavřený)</p></li>
+</ul>
+
+<p>Dle původního receptu se vše prostě smíchalo (nejlépe ručním šlehačem) a vylilo na vymazaný a vysypaný plech a upeklo.
+Když se ale přidá trošku práce navíc, výsledek je o třídu lepší. Bublanina bude obzvlášť nadýchaná.</p>
+
+<ol>
+<li>ušlehám bílky se špetkou soli a částí cukru</li>
+<li>v druhé míse vyšlehám žloutky s vanilkovým cukrem, zbytkem cukru a rozpuštěným máslem (v mikrovlnce).</li>
+<li>ke žloutkům přimíchám mouku s práškem do pečiva a dle potřeby přidám trochu mléka (jsou-li vejce velká, není potřeba).</li>
+<li>lehce přimíchám ušlehaný sníh.</li>
+</ol>
+
+<p>Těsto vyliji na plech a pokladu ovocem: rebarbora, meruňky, jahody, maliny, borůvky co je po ruce</p>
+
+<p>Pečeme na 170 st.C do růžova a až je zapíchnutá špejle suchá.</p>
+
+	</article>
 	
 	<article>
 		
@@ -356,45 +401,6 @@ Ještě teplé rohlíčky obalíme v moučkovém cukru. Rozležení alespoň 14 
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2014-10-18T00:00:00Z">18. Říjen 2014</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-switch-homebrew-formulas-to-older-version/"><div>How to switch Homebrew formulas to older version</div></a></h1>
-		
-
-
-
-<p>Sometimes you just won’t be able install latest version of any program and need
-some older (e.g. PHP 5.6.1 won’t work and you need install at least 5.6.0 and
-getting your work done). As you know all brew formulas are GIT repos, you
-can swith to older version easly:</p>
-
-<pre><code>$ cd /usr/local/Library/Taps/homebrew/homebrew-php/Formula
-$ git log --pretty=&quot;%h - %s&quot; -10
-</code></pre>
-
-<pre><code>71b2069 - Update to PHP 5.5.18
-b8aeb54 - Use homebrew's openssl for IMAP
-f0d721a - php56: improve phpdbg logic
-0dc3f1c - Update to PHP 5.6.1
-908fedd - Update to Blitz 0.8.12
-4801697 - Updates formula for WP CLI  to version 0.17.0
-00560f3 - Upgrade php*-swoole to 1.7.5
-8cbd369 - Updated PHP_CodeSniffer
-a81eba6 - update pecl_http to 2.1.2
-6a88856 - Add HEAD url for composer
-</code></pre>
-
-<p>Then just switch</p>
-
-<pre><code>$ git checkout 908fedd
-</code></pre>
-
-<p>And then run <code>brew install php56</code> and older version PHP will be installed. Procedure can be used for any formulas.</p>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -520,6 +526,8 @@ a81eba6 - update pecl_http to 2.1.2
 	<a href="http://blog.omdesign.cz/tags/heartbleed" class="tag">#heartbleed</a>
 	
 	<a href="http://blog.omdesign.cz/tags/hermel%C3%ADn" class="tag">#hermelín</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hlavn%C3%AD-j%C3%ADdlo" class="tag">#hlavní-jídlo</a>
 	
 	<a href="http://blog.omdesign.cz/tags/howto" class="tag">#howto</a>
 	

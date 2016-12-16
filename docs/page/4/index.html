@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2014-01-17 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-01-19 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-01-17 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-01-19 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,62 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2014-01-19T00:00:00Z">19. Leden 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/convert-json-data-to-valid-php-code/"><div>Convert JSON data to valid PHP code</div></a></h1>
+		
+
+
+
+<p>Do you need <strong>convert JSON data to valid PHP</strong> code without pain? I&rsquo;ve got a short script for that! My simple solution used <a href="http://www.php.net/manual/en/function.var-export.php">var_export()</a> function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace <code>stdClass::__set_state/</code> with <code>(object)</code>.</p>
+
+<p>Take a closer look at example data. I have here <a href="https://gist.github.com/Fluidbyte/2973986">currency.json</a> - PHP code should look something like this:</p>
+
+<pre><code>&lt;?php
+ return array (
+  'USD' =&gt;
+  (object)(array(
+     'symbol' =&gt; '$',
+     'name' =&gt; 'US Dollar',
+     'symbol_native' =&gt; '$',
+     'decimal_digits' =&gt; 2,
+     'rounding' =&gt; 0,
+     'code' =&gt; 'USD',
+     'name' =&gt; 'US dollars',
+  )),
+  'CAD' =&gt;
+  //...
+);
+</code></pre>
+
+<p>It&rsquo;s can be done in only four lines of PHP code:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p>If you need call some function (like <a href="http://www.php.net/manual/en/book.gettext.php">gettext</a>) above the variable, just add more regular expression:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+
+// add gettext function call
+$code = preg_replace(&quot;/'name' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+$code = preg_replace(&quot;/'name_plural' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+
+// save PHP code
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p> </p>
+
+	</article>
 	
 	<article>
 		
@@ -326,22 +382,6 @@ function get_user_by_meta($meta_key, $meta_value) {
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
-		
-
-
-
-<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-  /* it's retina yeah! */
-}
-</code></pre>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -467,6 +507,8 @@ function get_user_by_meta($meta_key, $meta_value) {
 	<a href="http://blog.omdesign.cz/tags/heartbleed" class="tag">#heartbleed</a>
 	
 	<a href="http://blog.omdesign.cz/tags/hermel%C3%ADn" class="tag">#hermelín</a>
+	
+	<a href="http://blog.omdesign.cz/tags/hlavn%C3%AD-j%C3%ADdlo" class="tag">#hlavní-jídlo</a>
 	
 	<a href="http://blog.omdesign.cz/tags/howto" class="tag">#howto</a>
 	
