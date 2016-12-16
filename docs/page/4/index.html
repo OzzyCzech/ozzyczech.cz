@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-12-30 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-01-17 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-12-30 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-01-17 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,37 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2014-01-17T00:00:00Z">17. Leden 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/"><div>Find all unnecessary images without link from code</div></a></h1>
+		
+
+
+
+<p>How to find all unnecessary images in your website project?</p>
+
+<pre><code>find public/images -type f|while read line ; do printf &quot;$(basename $line) &gt; &quot; &amp;&amp; ack --nofilter -l -c &quot;$(basename $line)&quot; | wc -l; done
+</code></pre>
+
+<p>Output will be:</p>
+
+<pre><code>sprite.gif &gt; 0
+ajax-loader-bg-f9.gif &gt; 2
+ajax-loader-bg-trans.gif &gt; 3
+ajax-loader-static-bg-trans.gif &gt; 2
+bg_about.png &gt; 2
+...
+</code></pre>
+
+<p>If you want output filenames not just marches count remove</p>
+
+<pre><code>| wc -l
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -311,31 +342,6 @@ function get_user_by_meta($meta_key, $meta_value) {
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2013-03-26T00:00:00Z">26. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/toggle-hidden-files-in-finder/"><div>Toggle Hidden Files in Finder</div></a></h1>
-		
-
-
-
-<p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
-
-<pre><code>STATUS=`defaults read com.apple.finder AppleShowAllFiles`
-if [ $STATUS == YES ];
-then
-    defaults write com.apple.finder AppleShowAllFiles NO
-else
-    defaults write com.apple.finder AppleShowAllFiles YES
-fi
-killall Finder
-</code></pre>
-
-<p>Save application. From now can Tooggle</p>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -509,6 +515,8 @@ killall Finder
 	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
 	
 	<a href="http://blog.omdesign.cz/tags/plugin" class="tag">#plugin</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pomaz%C3%A1nky" class="tag">#pomazánky</a>
 	
 	<a href="http://blog.omdesign.cz/tags/p%C5%99epis-auta" class="tag">#přepis-auta</a>
 	

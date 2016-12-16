@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2012-09-05 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2012-09-15 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2012-09-05 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2012-09-15 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,64 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2012-09-15T00:00:00Z">15. Září 2012</time>
+		
+		<h1><a href="http://blog.omdesign.cz/wordpress/hash-tags-pro-wordpress/"><div>Hash tags pro Wordpress</div></a></h1>
+		
+
+
+
+<p>Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy:</p>
+
+<pre><code>&lt;?php
+/*
+Plugin Name: Hashs
+Description: Twitter like hash for Wordpress
+Version: 1.0
+Author: Roman Ozana &lt;ozana@omdesign.cz&gt;
+Author URI: http://www.omdesign.cz/
+*/
+class Hashs {
+
+  const PATTERN = '/\B#([^\s\W#]+)/i';
+
+  /**
+   * @param string $content
+   * @return string mixed
+   */
+  public static function processContent($content) {
+    return preg_replace(Hashs::PATTERN, '&lt;a href=&quot;' . get_home_url(null, '/tag/$1') . '&quot; class=&quot;tag&quot;&gt;#$1&lt;/a&gt; ', $content);
+  }
+
+  /**
+   * Auto hash tags
+   *
+   * @param $post_id
+   * @return bool
+   */
+  public static function addAutoTags($post_id) {
+    $post = get_post($post_id);
+    preg_match_all(Hashs::PATTERN, $post-&gt;post_content, $matches);
+    if (!isset($matches[1])) return;
+    wp_set_object_terms($post_id, $matches[1], 'post_tag', false); // replace
+  }
+}
+
+add_filter('the_content', array('Hashs', 'processContent'), 1);
+add_action('save_post', array('Hashs', 'addAutoTags'));
+</code></pre>
+
+<p>Povšimněte si zejména řádku  <code>wp_set_object_terms($post_id, $matches[1], 'post_tag', false);</code>
+ten totiž ukládá nalezené tagy k postu. Pokud je poslední hodnota <code>true</code>,
+provede append (přidání ke stávajícím tagům). Pokud je <code>false</code>, provede
+nahrazení všech tagů u postu nalezenými hashtagy.</p>
+
+<p>Zdrojový kód ke stažení zde: <a href="https://bitbucket.org/OzzyCzech/omhashtag">https://bitbucket.org/OzzyCzech/omhashtag</a></p>
+
+	</article>
 	
 	<article>
 		
@@ -344,36 +402,6 @@ echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2010-11-15T00:00:00Z">15. Listopad 2010</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/"><div>Zvýraznění právě hledaných slov ve Wordpress</div></a></h1>
-		
-
-
-
-<p>Několik následujících řádků kódu <strong>obalí</strong> všechna právě vyhledávaná <strong>klíčová slova</strong> do značky STRONG (class search-keyword). Kód je možné vložit do <em>function.php</em> ve Vašem template. Nebo jej můžete vložit rovnou do <em>search.php</em> někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí <a href="http://codex.wordpress.org/Function_Reference/get_search_form">Wordpress</a>.</p>
-
-<pre><code>function omSearchHeighlight($text)
-{
-$keys = explode(&quot; &quot;, get_search_query());
-$text = preg_replace('/('.implode('|', $keys) .')/iu', '&lt;strong class=&quot;search-keyword&quot;&gt;\0&lt;/strong&gt;', $text);
-return $text;
-}
-
-add_filter('the_title','omSearchHeighlight');
-add_filter('the_content','omSearchHeighlight');
-add_filter('the_excerpt','omSearchHeighlight');
-
-// nezapomeňte strong element nastylovat např.
-// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
-</code></pre>
-
-<p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -547,6 +575,8 @@ add_filter('the_excerpt','omSearchHeighlight');
 	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
 	
 	<a href="http://blog.omdesign.cz/tags/plugin" class="tag">#plugin</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pomaz%C3%A1nky" class="tag">#pomazánky</a>
 	
 	<a href="http://blog.omdesign.cz/tags/p%C5%99epis-auta" class="tag">#přepis-auta</a>
 	
