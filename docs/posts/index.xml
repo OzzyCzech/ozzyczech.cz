@@ -8,8 +8,68 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Wed, 07 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>China shops list</title>
+      <link>http://blog.omdesign.cz/china-shops-list/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/china-shops-list/</guid>
+      <description>
+
+&lt;h1 id=&#34;china-shops-list&#34;&gt;China shops list&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gearbest.com/&#34;&gt;http://www.gearbest.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dx.com/&#34;&gt;http://www.dx.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.aliexpress.com&#34;&gt;https://www.aliexpress.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lightinthebox.com/&#34;&gt;http://www.lightinthebox.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.chinabuye.com/&#34;&gt;http://www.chinabuye.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dinodirect.com/&#34;&gt;http://www.dinodirect.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.eachbuyer.com/&#34;&gt;http://www.eachbuyer.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dhgate.com/&#34;&gt;http://www.dhgate.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.coolicool.com/&#34;&gt;http://www.coolicool.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ledshoppe.com/&#34;&gt;http://www.ledshoppe.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.everbuying.net/&#34;&gt;http://www.everbuying.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tomtop.com/&#34;&gt;http://www.tomtop.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.miniinthebox.com/&#34;&gt;http://www.miniinthebox.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sammydress.com/&#34;&gt;http://www.sammydress.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.banggood.com/&#34;&gt;http://www.banggood.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.focalprice.com/&#34;&gt;http://www.focalprice.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tmart.com/&#34;&gt;http://www.tmart.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cndirect.com/&#34;&gt;http://www.cndirect.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.highqualitybuy.com/&#34;&gt;http://www.highqualitybuy.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.geekbuying.com/&#34;&gt;http://www.geekbuying.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lightake.com/&#34;&gt;http://www.lightake.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tinydeal.com/&#34;&gt;https://www.tinydeal.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.newfrog.com/&#34;&gt;http://www.newfrog.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and&amp;hellip; :-)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>List of Flux Implementation</title>
@@ -609,40 +669,6 @@ $ brew link readline --force
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;: If you accidentally close &lt;strong&gt;Terminal&lt;/strong&gt; before getting above errors and your bash just stop working at all. Go to Terminal preferences&lt;code&gt;⌘+,&lt;/code&gt; and change bash version to older e.g.&lt;code&gt;/usr/local/Cellar/bash/4.3.18/bin/bash&lt;/code&gt; then quit Terminal &lt;code&gt;⌘+Q&lt;/code&gt;. Upgrade readline and change path back to &lt;code&gt;/usr/local/bin/bash&lt;/code&gt; and restart Terminal again.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>AngularJS $http not sending X-Requested-With header</title>
-      <link>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</link>
-      <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/angularjs-http-not-sending-x-requested-with-header/</guid>
-      <description>
-
-&lt;h1 id=&#34;angularjs-http-not-sending-x-requested-with-header&#34;&gt;AngularJS $http not sending X-Requested-With header&lt;/h1&gt;
-
-&lt;p&gt;Angular &lt;a href=&#34;https://docs.angularjs.org/api/ng/service/$http&#34;&gt;$http&lt;/a&gt; isn’t appending the header &lt;code&gt;X-Requested-With&lt;/code&gt; = &lt;code&gt;XMLHttpRequest&lt;/code&gt; since Angular 1.3.0.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;X-Requested-With header is rarely used in practice and by using it all the time we are riggering preflight checks for crossdomain requests. See &lt;a href=&#34;https://github.com/angular/angular.js/commit/3a75b1124d062f64093a90b26630938558909e8d&#34;&gt; commit message&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;That can cause some problems on PHP side. If you need somehow differentiate XHR and common requests. For example Zend Framework and lot of others PHP frameworks use follow code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function isXmlHttpRequest() {
- return !empty($_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;]) &amp;amp;&amp;amp;
-  $_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;] === &#39;XMLHttpRequest&#39;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can easily add  on Angular side by following code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;myAppModule.config([&#39;$httpProvider&#39;, function($httpProvider) {
-    $httpProvider.defaults.headers.common[&amp;quot;X-Requested-With&amp;quot;] = &#39;XMLHttpRequest&#39;;
-}]);
-
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

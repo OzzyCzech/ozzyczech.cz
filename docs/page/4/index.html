@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2014-01-19 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-02-11 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-01-19 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-02-11 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,shopping,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,30 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2014-02-11T00:00:00Z">11. Únor 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/"><div>How to keep GitHub Fork Updated (no merge - the right way)</div></a></h1>
+		
+
+
+
+<p>Here is solution how to keep your forks updated <a href="https://help.github.com/articles/syncing-a-fork">without merge</a> and clean history</p>
+
+<pre><code>git clone git@github.com:[username]/[repo].git
+git remote add upstream git@github.com:[username2]/[repo].git
+</code></pre>
+
+<p>When something change in forked repo</p>
+
+<pre><code>git fetch upstream
+git checkout [branch]
+git rebase upstream/[branch]
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -348,40 +372,6 @@ sudo /usr/sbin/postfix start
 
 	</article>
 	
-	<article>
-		
-		<time datetime="2013-04-16T00:00:00Z">16. Duben 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/"><div>Wordpress - How to get user by metadata</div></a></h1>
-		
-
-
-
-<p>Getting user by field name is easy, #Wordpress have function for that <a href="http://codex.wordpress.org/Function_Reference/get_user_by">get_user_by</a>. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to <strong>get user by metadata</strong> using <a href="https://codex.wordpress.org/Class_Reference/WP_Query">WP_Query</a> object. Forget about them! You need prepare correct meta query as array or string and call <code>get_users</code>. Thats all!</p>
-
-<pre><code>/**
- * Get user by his metadata
- * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
- * @param $meta_key
- * @param $meta_value
- * @return mixed
- */
-function get_user_by_meta($meta_key, $meta_value) {
- return reset(
-  get_users(
-   array(
-    'meta_key' =&gt; $meta_key,
-    'meta_value' =&gt; $meta_value,
-    'number' =&gt; 1,
-    'count_total' =&gt; false
-   )
-  )
- );
-}
-</code></pre>
-
-	</article>
-	
 </section>
 
 <footer class="container">
@@ -575,6 +565,8 @@ function get_user_by_meta($meta_key, $meta_value) {
 	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
 	
 	<a href="http://blog.omdesign.cz/tags/shell" class="tag">#shell</a>
+	
+	<a href="http://blog.omdesign.cz/tags/shopping" class="tag">#shopping</a>
 	
 	<a href="http://blog.omdesign.cz/tags/speakers" class="tag">#speakers</a>
 	

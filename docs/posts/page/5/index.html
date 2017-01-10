@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2011-04-13 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2011-06-20 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2011-04-13 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2011-06-20 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,shopping,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/posts/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/posts/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -68,6 +68,47 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2011-06-20T00:00:00Z">20. Červen 2011</time>
+		
+		<h1><a href="http://blog.omdesign.cz/case-insensitive-in_array-v-php/"><div>Case insensitive in_array v PHP</div></a></h1>
+		
+
+
+
+<p>PHP funkce <a href="http://php.net/manual/en/function.in-array.php">in_array</a> je case
+sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a
+nezáleží Vám na velikosti písmen u jeho prvků:</p>
+
+<pre><code>$array = array('a', 'B', 'cE');
+
+function inArrayCaseInsensitive($needle, $array) {
+ return (bool) preg_grep('/^' . preg_quote($needle, '/') . '$/i', $array);
+}
+
+inArrayCaseInsensitive('a', $array); // true
+inArrayCaseInsensitive('A', $array); // true
+inArrayCaseInsensitive('ce', $array); // true
+inArrayCaseInsensitive('be', $array); // false
+</code></pre>
+
+<p>Funkce <a href="http://php.net/manual/en/function.preg-grep.php">preg_grep</a> má ještě
+zajímavý přepínač PREG_GREP_INVERT. Tímto přepínačem odfiltrujete všechny
+hodnoty v poli, které neodpovídají zadanému <strong>regulárnímu výrazu</strong>.
+Filtrace zachovává klíče pole.</p>
+
+<pre><code>$array = array('a', 'A', 'cE');
+
+function filterArrayValues($needle, $array) {
+ return preg_grep('/^' . preg_quote($needle, '/') . '$/i', $array, PREG_GREP_INVERT);
+}
+
+print_r(filterArrayValues('a', $array)); // vypíše jen cE
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -484,6 +525,8 @@ app.listen(process.env.PORT || 3030);
 	<a href="http://blog.omdesign.cz/tags/retina" class="tag">#retina</a>
 	
 	<a href="http://blog.omdesign.cz/tags/shell" class="tag">#shell</a>
+	
+	<a href="http://blog.omdesign.cz/tags/shopping" class="tag">#shopping</a>
 	
 	<a href="http://blog.omdesign.cz/tags/speakers" class="tag">#speakers</a>
 	
