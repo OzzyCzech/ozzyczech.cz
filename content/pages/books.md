@@ -2,8 +2,6 @@
 title: Knihy
 ---
 
-##
-
 ## Knihy pro děti
 
 * [Za chvíli jsme doma, jen si odskočíme do Afriky - Oliver Scherz](https://www.kosmas.cz/knihy/203684/za-chvili-jsme-doma-jen-si-odskocime-do-afriky/)
