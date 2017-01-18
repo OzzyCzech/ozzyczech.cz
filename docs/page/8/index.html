@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2007-08-04 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2011-03-27 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2007-08-04 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2011-03-27 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,shopping,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,knedlíky,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,omáčky,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,polévky,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,shopping,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -71,6 +71,373 @@
 	
 	<article>
 		
+		<time datetime="2011-03-27T00:00:00Z">27. Březen 2011</time>
+		
+		<h1><a href="http://blog.omdesign.cz/snadn%C3%A9-vlo%C5%BEen%C3%A9-youtube-videa-pomoc%C3%AD-php/"><div>Snadné vložené YouTube videa pomocí PHP</div></a></h1>
+		
+
+
+
+<p>Následující PHP kód zamění jakýkoliv odkazu na <a href="http://www.youtube.com/">YouTube</a> video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.</p>
+
+<pre><code>function youtube($string)
+{
+  return preg_replace(
+    '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&amp;?.*?#i',
+    '&lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/$4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;',
+    $string
+  );
+}
+
+echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
+echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
+</code></pre>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2010-11-15T00:00:00Z">15. Listopad 2010</time>
+		
+		<h1><a href="http://blog.omdesign.cz/wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/"><div>Zvýraznění právě hledaných slov ve Wordpress</div></a></h1>
+		
+
+
+
+<p>Několik následujících řádků kódu <strong>obalí</strong> všechna právě vyhledávaná <strong>klíčová slova</strong> do značky STRONG (class search-keyword). Kód je možné vložit do <em>function.php</em> ve Vašem template. Nebo jej můžete vložit rovnou do <em>search.php</em> někde těsně za volání funkce get_header(). Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí <a href="http://codex.wordpress.org/Function_Reference/get_search_form">Wordpress</a>.</p>
+
+<pre><code>function omSearchHeighlight($text)
+{
+$keys = explode(&quot; &quot;, get_search_query());
+$text = preg_replace('/('.implode('|', $keys) .')/iu', '&lt;strong class=&quot;search-keyword&quot;&gt;\0&lt;/strong&gt;', $text);
+return $text;
+}
+
+add_filter('the_title','omSearchHeighlight');
+add_filter('the_content','omSearchHeighlight');
+add_filter('the_excerpt','omSearchHeighlight');
+
+// nezapomeňte strong element nastylovat např.
+// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
+</code></pre>
+
+<p>Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2009-04-16T00:00:00Z">16. Duben 2009</time>
+		
+		<h1><a href="http://blog.omdesign.cz/v%C3%BDznam-barev/"><div>Význam barev</div></a></h1>
+		
+
+
+
+<p>Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete <a href="http://www.omdesign.cz" title="Internetové stránky">internetové stránky</a>, je na to potřeba pamatovat dvojnásob. Barva dokáže návštěvníka oslovit a navodit ten správný pocit. Barvy se obecně dělí na barvy teplé, studené a neutrální. <strong>Teplé barvy</strong> jsou založené na odstínech žluté, hnědé, zeleno žluté a oranžové. Teplé barvy svoji podstatou vzrušují, mají tendenci upoutat pozornost. Na pomezí mezi teplou a studenou barvou je možné přiřadit odstíny zelené a fialové. Záleží jak moc obsahují červené nebo modré (RGB). <strong>Studené barvy</strong> jsou založeny na odstínech modré, zelené, fialové, modro-zelené, modro-červené. Tyto barvy mají tendenci uklidňovat, tišit. Na rozdíl od teplých barev, se dají barvy studené celkem úspěšně aplikovat na velké plochy. Mezi <strong>neutrální barvy</strong> patří bílá, šedá a černá. Pak celá řada barev, které obsahují velké množství šedé (barvy tmav0). Neutrální barvy dokáží zvýšit atraktivitu teplých barev. Velké množství barev je znepokojující (vezměte si např. kolotoče). Pro webové stránky je <strong>lepší použít nižší množství</strong> barev (ideálně 3-4). Barvy jsou často a právem spojovány s konkrétními vlastnostmi (<a href="http://www.webdesign.org/web/web-design-basics/color-theory/color-psychology-quick-reference-cards.13826.html" title="Barvy a jejich význam">Psychologie barev</a>):</p>
+
+<ul>
+<li><strong>Červená</strong>: síla, zastavit, chyba, upozornění, láska, pálí, vášeň, cílevědomost, krev</li>
+<li><strong>Růžová</strong>: roztomilé, naivní, dětské, sladké, něha</li>
+<li><strong>Oranžová</strong>: hřejivá, podzimní, kreativita, radost, moudrost, extravagance, energie</li>
+<li><strong>Žlutá</strong>: teplo, štěstí, slunce, fascinace, povzbuzení</li>
+<li><strong>Černá</strong>: temnota, smutek, zloba, noc, smrt, rafinovanost, elegance</li>
+<li><strong>Šedá</strong>: trudomyslnost, nevýraznost, neutralita</li>
+<li><strong>Bílá</strong>: čistota, nevinnost, zima, dokonalost, zvětšuje prostor, chladí</li>
+<li><strong>Hnědá</strong>: podzim, hlína, špína, země, příroda, zdravý rozum</li>
+<li><strong>Zelená</strong>: peníze, závist, příroda, ekologie, náklonnost, soucit, klid, jaro</li>
+<li><strong>Modrá</strong>: pokoj, klid, stabilita, voda, nebe, stálost, jednota, důvěra</li>
+<li><strong>Fialová</strong>: luxus, mystika, pokora, inspirace, šlechta</li>
+</ul>
+
+<p>Modrá se tak logicky stává nejoblíbenější barvou firem (důvěra, klid, stabilita). Různé barvy se hodí k různým účelům. Například bílá je skvělá na pozadí, černá se zase používá pro text. Modrá dokáže dodat hloubku, červená dokáže upozornit atd. Všechno tohle mějte v hlavě (nebo na blogu :-)) pokud začínáte navrhovat web, komponujete mapu, připravujete reklamní letáky nebo se chystáte vymalovat byt.</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2009-02-16T00:00:00Z">16. Únor 2009</time>
+		
+		<h1><a href="http://blog.omdesign.cz/pro%C4%8D-je-hodnocen%C3%AD-hv%C4%9Bzdi%C4%8Dkama-blbost/"><div>Proč je hodnocení hvězdičkama blbost</div></a></h1>
+		
+
+
+
+<p><img src="http://grafikdesign.files.wordpress.com/2008/01/rating-sample.gif" alt="Star Rating" title="star-rating.gif" /></p>
+
+<p>Většina současných moderních webů používá tzv. hodnocení obsahu <strong>pomocí hvězdiček</strong>
+(<em>star rating</em>). Na tom by nebylo nic špatného, je dobré znát názory
+ostatních, často Vám to pomůže v rozhodování.</p>
+
+<p>Jenže hvězdičkový koncept, tak jak je dneska používán,
+je postaven na velmi <strong>zavádějících datech</strong>.</p>
+
+<p>Hned uvedu příklad, jak to myslím: Deset uživatelů zahlasuje <strong>5 hvězdičkami</strong>,
+pro svůj oblíbený například Terminátor. A pro jiný film, například Forest Gump
+zahlasuje celkem 5000 osob, v průměru 4.5 hvězdy. Který film je favoritem?</p>
+
+<p>Podle čistého hvězdičkového hodnocení, tak jak jej dnes používá většina současných serverů<strong>, je to Terminátor</strong>.
+Jenže to je špatně! Terminátor zaujal jen 10 lidí natolik, aby pro něj hlasovali, zatímco Forest Gump zaujal 5000 lidí.
+Proto by měl být Forest Gump v žebříčku na prvním místě. Mnohem <strong>průkažnější</strong> by bylo,
+kdyby se do hodnocení promítl také <strong>počet hlasujících</strong>.</p>
+
+<p>Tento špatný koncept používá například: <a href="http://www.opensourcecms.com/">http://www.opensourcecms.com/</a>.</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2008-12-05T00:00:00Z">5. Prosinec 2008</time>
+		
+		<h1><a href="http://blog.omdesign.cz/parkinson%C5%AFv-z%C3%A1kon/"><div>Parkinsonův zákon</div></a></h1>
+		
+
+
+
+<p>Parkinsonův zákon, nebo spíš zákony byly poprvé vydán v roce 1957. Jejich autorem je anglický profesor <a href="http://en.wikipedia.org/wiki/C._Northcote_Parkinson" title="C. Northcote Parkinson">Cyril Northcote Parkinson</a>. Tři nejpovedenější zákony praví:</p>
+
+<ol>
+<li><strong>Práce roste úměrně s časem, který je na ni možno vynaložit</strong>; to, co je třeba udělat, nabývá na důležitosti a komplikovanosti v přímé proporci k vyhrazenému času.</li>
+<li>Výdaje rostou úměrně k příjmům.</li>
+<li>Rozrůstání plodí složitost a složitost plodí zánik.</li>
+</ol>
+
+<p>Nejvíce se mi samozřejmě líbí zákon první. V překladu to znamená, že pokud na něco dostanete týden, budete to dělat týden. Pokud na to dostanete měsíc, budete to dělat přesně měsíc. Dalo by se to popsat, něco jako rozpínavost práce. Navíc čím více času něčemu věnujete, stává se to komplikovanějším a mnohdy také nepoužitelným. Pro příklady nemusíte chodit daleko, zkuste si vyplnit některé formuláře státní správy. Další oblast kde tento zákon bezezbytku platí je IT. Překlad těchto zákonů můžete <a href="http://www.kosmas.cz/knihy/108453/zakony-profesora-parkinsona/ &quot;Kupte si jej :">sehnat i u nás</a>&rdquo;).</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2008-08-12T00:00:00Z">12. Srpen 2008</time>
+		
+		<h1><a href="http://blog.omdesign.cz/tik-v-oku/"><div>Tik v oku</div></a></h1>
+		
+
+
+
+<p>Projevuje se jemným, ale častým a intenzivním, <strong>škubáním ve víčku oka</strong>. Způsobuje ho nejčastěji <strong>přepracování</strong>, nevyspání, <strong>nepřiměřený stres</strong> (nervy) nebo konzumace lehkých drog. Já k tomu přidávám, nevhodný monitor, nevhodné osvětlení, vnější rušivé elementy (hluk atd.) a častá práce u počítače. Trvání tohoto problému je různé, odhadem je to <strong>od 2 do 8 týdnů</strong>. Jak s tím bojovat:</p>
+
+<ul>
+<li>Vysadit - zbavit se stresu (můžete zkusit <a href="http://www.bdc.cz/" title="Budhizmus Diamantové Cesty">třebas meditovat</a>)</li>
+<li>Pořádně se vyspat</li>
+<li><a href="http://www.celostnimedicina.cz/oci-=-cviceni-zraku-pro-zdravou-dlouhovekost.htm" title="Oční cviky"> Cvičit oči</a></li>
+<li>Odstranit veškeré rušivé elementy</li>
+<li>A hlavně nasadit vitamíny</li>
+</ul>
+
+<p>Nejlepším <strong>vitamínem je B12</strong> - k dostání v lékárně v podobě B-Komplex (Forte). Můžete konzumovat od 1 do 3 tablet denně. Výhodou B-komplex je to že neobsahuje jen B12 ale celou skupinu vitamínů B. Vitamín B12 také najdete v rybím tuku a nebo pivovarnických kvasnicích. Dalším vitamínem, který pomáhá je <strong>magnézium (hořčík)</strong>. Pozor ať se nepředávkujete, působí to totiž i na srdce. Můžete si jej koupit v lékárně, ale mnohdy stačí i vhodná minerálka nebo banány. Když nic z toho nepomůže, bude asi lepší zajít za doktorem. Většinou to ale zmizí stejně rychle jak to příjde. Máte osobní <strong>zkušenost s tímto problémem</strong>?.</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2008-01-21T00:00:00Z">21. Leden 2008</time>
+		
+		<h1><a href="http://blog.omdesign.cz/povidky/schuze-porady-meetingy-a-briefing/"><div>Schůze, porady, meetingy a briefing</div></a></h1>
+		
+
+
+
+<p>Začal bych tím, co to vlastně schůze, porada, meeting nebo briefing je. Někteří
+je definují takto: <strong>nedobrovolná setkání nevhodných lidí, za účelem dohody o
+něčem, co není potřeba řešit</strong>. Četl jsem, že člověk stráví za svou pracovní
+kariéru na poradách něco kolem 6000 hodin, slouží obvykle pro výměnu informací
+ v rámci organizace (firmy či podniku).</p>
+
+<p>Všichni to určitě znáte, ráno přijdete do práce a kolega Vám povídá:
+ <em>Dneska je porada, nezapomeň na to!</em> Doslova vidím, jak Vás tahle informace potěšila.</p>
+
+<p>Faktem je, že <strong>99 procent z nás porady nebo schůze nenávidí</strong>. Dalším faktem
+je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami se to má takto:</p>
+
+<h3 id="jsou-příliš-drahé">Jsou příliš drahé</h3>
+
+<ul>
+<li>Představte si, že každý účastník stojí firmu 150 Kč za hodinu - hodinové
+setkání 10 lidí Vás bude stát 1500 Kč. Je dobré si uvědomit, že někteří výše
+postavení pracovníci samozřejmě berou více. Možná ten vyšší plat souvisí s
+tím, že musí na více porad :-).</li>
+</ul>
+
+<h3 id="jsou-obvykle-delší-než-je-potřeba">Jsou obvykle delší, než je potřeba</h3>
+
+<ul>
+<li>Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se
+Vás netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je
+<strong>12 minut z hodiny</strong>, se řeší otázky, které skutečně stojí za to, aby se
+sešlo například oněch 10 lidí a společně je řešili.</li>
+</ul>
+
+<h3 id="setkávání-se-pro-setkávání">Setkávání se pro setkávání</h3>
+
+<ul>
+<li>Některé porady slouží pouze pro utužení sociálních vazeb v rámci organizace.
+Je důležité si uvědomit, že cílem porady není samotné setkání. Každá porada by
+měla mít <em>topic</em> - tedy hlavní téma, které by se mnělo probírat.<br /></li>
+</ul>
+
+<h3 id="jsou-neupřímné">Jsou neupřímné</h3>
+
+<ul>
+<li>Na poradách je obvykle těžší říct svůj názor. Většina lidí mlčí, prostě si to
+odsedí a to podstatné probere na after party (viz níže). S neupřímností je
+spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada - manažer
+(šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale
+odpovídají za ní všichni účastníci.</li>
+</ul>
+
+<h3 id="after-party-po-poradě">After party po poradě</h3>
+
+<ul>
+<li>Odborně se to tuším nazývá <em>after meeting syndrom (AMS)</em>. To je doba, kterou
+účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často probírají
+také přínosy porady a to jak je to tam nebavilo.</li>
+</ul>
+
+<h3 id="porady-vedou-k-dalším-poradám">Porady vedou k dalším poradám</h3>
+
+<ul>
+<li>Obvykle po tom, co porada skončí, je naplánována nějaká další. Často má jedna
+schůze na svědomí celou řadu dalších setkání, porad a podobně. Někde se musí
+přeci probrat výsledky té první porady!</li>
+</ul>
+
+<h3 id="proč-se-radit">Proč se radit?</h3>
+
+<ul>
+<li>Proč se vlastně pořádají? Těžko říct, ale tím pravým důvodem by mělo být to,
+že něco <strong>nefunguje tak jak má a nikdo neví, co má dělat</strong>! Něco je špatně a
+věci se musí napravit. Je potřeba rozhodnutí managementu.</li>
+</ul>
+
+<p>Na závěr ve zkratce několik zásad:</p>
+
+<ul>
+<li>Aby bylo setkávání efektivní, musí být všichni účastníci připraveni</li>
+<li>Vždy <strong>mluví jen jeden</strong> přesně stanovenou dobu (2 minuty maximálně)</li>
+<li>Návrhy, které nejsou k tématu se zapíší - budou se <strong>řešit později</strong></li>
+<li>Nikdo nechodí pozdě, netelefonuje, neodchází během jednání</li>
+<li>Věci se řeší <strong>jedna po druhé</strong> - ne najednou</li>
+</ul>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2008-01-16T00:00:00Z">16. Leden 2008</time>
+		
+		<h1><a href="http://blog.omdesign.cz/povidky/jste-hromadkar-nebo-ne/"><div>Jste hromádkář, nebo ne?</div></a></h1>
+		
+
+
+
+<p>Během svého života jsem pochopil jednu věc, že lidé se dělí na <strong>hromádkáře a nehromádkáře</strong>. Typický hromádkář se vyznačuje tím, že štosuje věci do různě vysokých nevzhledných hromádek. Nejčastěji jsou to například:</p>
+
+<ul>
+<li>knihy, skripta</li>
+<li>cédéčka, dévedéčka</li>
+<li>papíry různé důležitosti</li>
+<li>noviny, reklamní letáky nebo časopisy</li>
+</ul>
+
+<p>Tyto nevzhledné hromádky poté hromádkáři <strong>umísťují náhodně do prostoru.</strong> Je
+lhostejno zda se jedná o kancelář nebo o domácnost. Každý hromádkář mi dá
+jistě za pravdu, že jeho nejoblíbenějším místem je v obou případech pracovní stůl.
+Těžké případy hromádkářství pak umísťují své hromady <strong>dokonce na podlahu</strong>!
+Zvláště těžkými formami hromádkářství trpí většina <strong>příslušníků IT komunity</strong>.
+Ti zpravidla vrší cokoliv kamkoliv.  Oblíbeným materiálem k tvorbě hromádek bývá
+také oblečení. Hromádky tohoto typu jsou nejčastěji umísťovány na postel, židle
+nebo křesla. Specifikem některých hromádkářů je to, že <strong>nedodržují druhovou skladbu</strong> hromádek.
+Prostě vytváří nehomogenní směsici všeho možného. Většina hromádkářů se však
+snaží dodržovat alespoň minimální pravidla. Lehkou formou hromádkářství je tzv.
+<strong>skryté hromádkářství</strong> - postižení se snaží své hroádky skrýt před svým okolím
+do skříní, pod postele nebo kamkoliv jinak, kde není vidět. Několik rad jak s tím
+bojovat - snažte se veškeré <strong>rovné povrchy udržovat čisté</strong> (bez hromádek)</p>
+
+<ul>
+<li>hromádky odstraňujte postupně a hlavně průběžně</li>
+<li>vyhlaste <strong>STOP stav</strong> - tzn. od teď žádná další hromádka</li>
+<li>pořiďte si skartovačku, pořadače, přihrádky, šanony a podobně</li>
+<li>kupte si knihovnu, stojan na CD</li>
+<li>naplánujte si de-hromádkující den alespoň jednou za týden</li>
+</ul>
+
+<p>Uvědomte si, že <strong>cokoliv vyhodíte</strong>- nikdy už to nebudete muset uklízet</p>
+
+<ul>
+<li>už se to nevrátí, je prostě pryč</li>
+<li>nikdy už to nebude součástí žádné hromádky</li>
+<li>uvólní se Vám místo</li>
+</ul>
+
+<p>Není to skvělý pocit!!!</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2007-12-12T00:00:00Z">12. Prosinec 2007</time>
+		
+		<h1><a href="http://blog.omdesign.cz/povidky/jak-nenapsat-diplomku/"><div>Jak (ne)napsat diplomku</div></a></h1>
+		
+
+
+
+<p><strong>brzo ráno</strong>1. Posaďte se do svého velkého pohodlného křesla
+2. Než vaše PC naběhne, zkontrolujte, zda máte u křesla dobře nastaven režim houpání
+3. Po zapnutí se přihlaste na ICQ (Skype, Jabber, MSN, &hellip;) že máte nastaven stav <strong>Nerušit</strong> případně <strong>Nedostupný</strong> - to bezpečně každého odradí od toho, aby Vám psal
+4. Zkontrolujte email
+5. Otevřete si dokument s textem své diplomky</p>
+
+<p><strong>dopoledne</strong>1. Jděte si uvařit čaj - bude Vám to lépe myslet, když se čas od času napijete
+2. Po návratu do pokoje se opět usaďte do svého pohodlného křesla
+3. Spusťte <a href="http://www.mozilla-europe.org/cs/products/firefox/">internetový prohlížeč</a>, protože jistě budete potřebovat něco najít na internetu
+4. Když už jej máte spuštěn, podívejte se, jestli je něco nového na <a href="http://www.youtube.com/">YouTube</a>, <a href="http://news.google.cz/">Novinách</a> nebo v <a href="http://www.blesk.cz/">Bulváru</a> - nechcete přeci ztratit kontakt se světem
+5. Nezapomeňte si zajít na záchod (zadržování tekutin není zdravé)
+6. Zkontrolujte email a mobil jestli Vás někdo nehledal</p>
+
+<p><strong>těsně před polednem</strong>1. Přečtěte si zadání a ubezpečte se, že mu skutečně rozumíte
+2. Proberte se spolužáky po ICQ co budou dělat, až tady skončí (myšleno na škole)
+3. Pusťte si nějakou příjemnou hudbu, protože při té se vždy dobře pracuje
+4. Když už jste u té hudby, stáhněte si něco nového, rychlého a dynamického, aby se Vám dobře psalo
+5. A víte co, pusťte si tu novou hudbu, co ještě není tak nechutně ohraná
+6. Zkontrolujte email
+7. Neopomeňte si zajít na záchod (zadržování tekutin není zdravé)</p>
+
+<p><strong>zhruba kolem poledne</strong>1. Zavolejte svému kamarádovi na <a href="http://www.skype.com/">Skype</a> jestli už začal psát a kolik toho má
+2. Skočte si do bufetu nebo obchodu pro něco dobrého, to Vám pomůže - když už budete v tom obchodě, kupte si nějaký časopis
+3. Přečtěte si ty nejzajímavější články v časopisu
+4. Zkontrolujte email a mobil - někdo by Vás mohl potřebovat
+5. Nezapomeňte si zajít na záchod (zadržování tekutin není zdravé)</p>
+
+<p><strong>odpoledne</strong>1. Jděte si opět uvařit čaj - protože pitný režim se musí dodržovat
+2. A když už jste u toho, udělejte si něco na jídlo, s plným žaludkem to jde vždy lépe
+3. K jídlu si pusťte nějaký seriál - je to dobré na odreagování, uvolní to stres ze psaní diplomky
+4. Po jídle budete asi trošku utahaní - zahrajte si nějakou hru, to Vás probudí a povzbudí do dalšího psaní
+5. Pohrajte si se svým psem, kočkou (nebo jiným živočichem) opět to velmi dobře uvolňuje stres
+6. Přemýšlejte o tom, zda byste neměli rozesílat svůj životopis firmám - je dobré být připraven</p>
+
+<p><strong>v podvečer</strong>1. Podívejte se na večerní zprávy - musíte si dát přestávku od toho sezení u počítače
+2. Napište SMS některému ze spolužáků, který nemá internet, že celý den pilně píšete diplomku - potěší ho to
+3. Podívejte se z okna na krásný západ slunce, pomůže Vám to utříbit myšlenky
+4. Sedněte si opět k počítači do svého pohodlného křesla
+5. Pusťte si nějakou pomalejší pohodovou hudbu - přeci jen je večer
+6. Zkontrolujte email</p>
+
+<p><strong>noc</strong>1. Proberte s lidma co jsou ještě online svůj celý den - nezapomeňte se zmínit o tom, že celý den děláte na diplomce
+2. Pravděpodobně se Vám už začínají trošku klížit oči - není divu, byl to náročný den
+3. Uložte dokument své diplomky
+4. Vytvořte si záložní kopii dokumentu - bylo by hrozné přijít o celodenní práci
+5. Uleháte do postele spokojení se svou celodenní prací (malá ručička blíží číslu 2)</p>
+
+<p>Věřte mi, že místo psaní tohoto článku jsem taky měl dělat něco jiného :-). Budiž to poučením také pro mě.</p>
+
+	</article>
+	
+	<article>
+		
 		<time datetime="2007-08-04T00:00:00Z">4. Srpen 2007</time>
 		
 		<h1><a href="http://blog.omdesign.cz/povidky/me-bulharske-dobrodruzstvi/"><div>Mé Bulharské dobrodružství</div></a></h1>
@@ -85,334 +452,6 @@
 <p>Ta se nás doslova ujala, za což bych ji <strong>chtěl moc poděkovat</strong>. Konzulka si vyžádala po ministerstvu zahraničí ČR potvrzení námi nadiktovaných údajů (rodné číslo, místo trvalého pobytu atd.). Ministerstvo zahraničí nás potvrdilo jako občany ČR v rekordně krátkém čase (15 minut - běžně to trvá hodinu i déle - navíc byla sobota). Poté nám mohla vystavit tzv. <strong>emergency passport</strong> - útlou knížečku podobnou pasu celkem asi o sedmi stranách. Dále s náma zašla na bulharskou policii, kde v podstatě také zařídila (vypsala) vše za nás. Ve výsledku jsme stáli, s úžasem v očích, <strong>za dvě hodiny,</strong> s novými cestovními doklady, před hotelem Bulgaria.</p>
 
 <p>Odjezd z Burgasu byl naplánován na 0:30 - řidič a hosteska autobusu společnosti Etap měl pro naši situaci pochopení a nechal nás obsadit jediné dvě prázdné místa (řádně zaplacené) v autobuse do Sofie. V tu chvíli jsme najivně uvěřil, že už bude vše v pořádku. A jak se říká: <strong>Nejhorší je srážka s blbcem</strong>, když má ten blbec ještě moc, může napáchat škody děsně moc. Hovořím o velmi milé (ironie) paní v terminálu bulharské společnosti <a href="http://www.group-ood.com/">GROUP Company</a> (linka Praha-Brno-Sofie), která nám oznámila: <strong>No tikets, no bus</strong>. Přitom naše lístky byly vystaveny na jméno a řádně předem telefonicky rezervovány. Chyba tentokrát nebyla na našem přijímači, ale kdesi mezi stolem a židlí Sofii. Nebýt české strany (pobočka v Brně), tak se prostě přes tuhle osobu nedostaneme. Pán z brněnské pobočky této <a href="http://recepty.ekucharka.cz/bulharska-pomazanka/" title="Recept na podobně pálivou bulharku">velmi pálivé Bulharce</a> vysvětlil, že nás prostě má do toho autobusu pustit, a tak se naštěstí také stalo. Jsem rád, že mé dobrodružství happyendem - budiž poučením pro ostatní cestovatele.</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2006-11-25T00:00:00Z">25. Listopad 2006</time>
-		
-		<h1><a href="http://blog.omdesign.cz/recepty/nakl%C3%A1dan%C3%BD-hermel%C3%ADn/"><div>Nakládaný hermelín</div></a></h1>
-		
-
-
-
-<h2 id="co-budete-potřebovat">Co budete potřebovat?</h2>
-
-<ul>
-<li>Několik sklenic tzv. <strong>sedmiček</strong> (nebo 5 litrovou velkou sklenici od okurek)</li>
-<li><strong>Hermelíny</strong> - dle počtu osob, čím více tím lépe</li>
-<li>Kvalitní rostlinný Olej, nejlépe slunečnicový tak asi litr až dva podle množství herrmelínů</li>
-<li>Několik cibulí a česnek</li>
-<li>Nakládané feferonky (nebo chilli papričky)</li>
-<li>Koření: sladkou červenou papriku, bobkový list, kuličky nové koření, pepř kuličkový</li>
-</ul>
-
-<h2 id="jak-na-věc">Jak na věc?</h2>
-
-<ul>
-<li>Oloupejte a na proužky nakrájejte <strong>cibuli</strong>.</li>
-<li>Oloupejte si česnek a připravte feferony.</li>
-<li>Rozkrojte <strong>podélně hermelín</strong> (na dvě kolečka).</li>
-</ul>
-
-<h2 id="jdeme-plnit-do-sklenic">Jdeme plnit do sklenic</h2>
-
-<ul>
-<li>Obě poloviny hermelínu jemně <strong>posypejte červenou paprikou</strong>.</li>
-<li>Do sklenic pokládejte vždy nejprve hermelín, pak cibuli a (lisovaný) česnek a vše zakapejte olejem.</li>
-<li><strong>Feferonky</strong>, jak kdo snese. Ideální dvě až tři na láhev.</li>
-<li>Nahoru dle chuti přidávejte koření (cca 10 kuliček <strong>pepře</strong>, 5 kuliček <strong>nového koření</strong> a 3 <strong>bobkové listy</strong> na sedmičku).</li>
-<li>Až bude sklenice plná, stačí ji <strong>dolít olejem</strong> (tak 1 cm od vrchu nechtě volný).</li>
-<li>Sklenici <strong>uzavřete zlehka</strong> víčkem.</li>
-</ul>
-
-<h2 id="čekání-a-hlavně-konzumace">Čekání a hlavně konzumace!</h2>
-
-<ul>
-<li>Zrání může při pokojové teplotě trvat <strong>tak 7-14 dní</strong>. Záleží na tom, jak ho máte rádi.</li>
-<li>Hlavně ho nemějte na sluníčku a občas doporučuji povolit a zkontrolovat.</li>
-<li>Podávat s Pivem, čerstvým chlebem a hlavně vychutnávat!</li>
-</ul>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2006-11-22T00:00:00Z">22. Listopad 2006</time>
-		
-		<h1><a href="http://blog.omdesign.cz/povidky/jak-poznat-gisaka/"><div>Jak poznat Gisáka</div></a></h1>
-		
-
-
-
-<p>Nechal jsem se inspirovat jedním webem a sepsal jsem několik indicii jak bezpečně poznáte <strong>Gisáka na ulici</strong> :-)</p>
-
-<ul>
-<li><strong>Při</strong><strong>chůzi se zmateně motá</strong>, protože v podstatě se vší tou nadupanou navigační techikou vůbec <strong>netuší kde sakra je</strong></li>
-<li>Nosí rukavice, čepice, šálu a to i v případě, že je venku celkem teplo, <strong>zima je pěkná sviňa</strong></li>
-<li>Je-li spatřen s analogovou mapou <strong>může být i trochu nebezpečný</strong>, jelikož tato mapa <strong>nemá Zoom ani Pan</strong> a to ho přivádí do nepředvídatelného stavu</li>
-<li><strong>Nepozná</strong><strong>pravou ruku od levé</strong>, ale přesto je výborným navigátorem</li>
-<li>Nejčastěhji nosí <strong>sandály na drsno bez ponožek</strong></li>
-<li>Pokud má jednu ruku nahoře <strong>nesnaží se Vám něco naznačit</strong>, pravděpodobně <strong>chytá GPS signál</strong></li>
-<li>Není statné postavy, ale často kopíruje <strong>aerodinamický tvar kapky</strong>, hold to pivo dělá svoje :-)</li>
-<li><strong>Pravděpodobně bude mít brýle</strong>, protože příkazová řádka má defaultně dost malé písmo, taky ty 3D brýle dělají své</li>
-<li>Pokud vypadat velmi neupraveně znamená to, že je zapojen do <strong>nějakého náročném projektu</strong>, tomuto stavu se pak říká <strong>období Houmles</strong></li>
-<li>Oblíbená barva <strong>TopCon žluť</strong></li>
-<li>V batohu nosí minimálně další 3 Kg nepotřebného hardware, tzv. <strong>vybité těžítka</strong></li>
-<li><strong>80% veškerého jídla</strong> konzumuje nad klávesnicí</li>
-</ul>
-
-<p>Tento seznam samozdřejmě <strong>není kompletní</strong> takže pokud Vás napadne další poznávací znamení napište, rád to tu přidám.</p>
-
-	</article>
-	
-	<article>
-		
-		<h1><a href="http://blog.omdesign.cz"><div></div></a></h1>
-		
-
-
-
-<pre><code>var express = require('express');
-var phantom = require('phantom');
-var app = express()
-
-app.use(express.static(__dirname + '/public'));
-
-// setup express
-//app.use(express.compress());
-//app.use(express.static(public_dir));
-//app.use(express.json());
-//app.use(express.urlencoded());
-
-app.get('/', function (req, res) {
-
-	var url = 'https://www.google.com/';
-
-	var sitepage = null;
-	var phInstance = null;
-
-
-	phantom.create(['--ignore-ssl-errors=yes', '--ssl-protocol=any', '--load-images=yes', '--local-to-remote-url-access=yes'], {logLevel: 'error'})
-			.then(instance =&gt; {
-				phInstance = instance;
-				return instance.createPage();
-			})
-			// Configure page
-			.then(page =&gt; {
-				sitepage = page;
-				sitepage.setting('paperSize', {format: &quot;A4&quot;, orientation: 'portrait', margin: '1cm', width: 795, height: 1125});
-				sitepage.property('viewportSize', {width: 1280, height: 1020});
-				return page.open(url);
-			})
-			.then(status =&gt; {
-				if (status === 'success') {
-					return sitepage.render(__dirname + '/public/output.png');
-				}
-			})
-			.then(rendered =&gt; {
-				if (rendered === true) {
-					res.download(__dirname + '/public/output.png');
-				} else {
-					res.status(404).json({error:true, message: &quot;404 Not Found&quot;});
-				}
-
-				sitepage.close();
-				phInstance.exit()
-			})
-			.catch(error =&gt; {
-				res.status(404).json({error: true, message: error});
-				phInstance.exit();
-			});
-
-});
-
-app.listen(process.env.PORT || 3030);
-
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<h1><a href="http://blog.omdesign.cz/knihy/"><div>Knihy</div></a></h1>
-		
-
-<p>##</p>
-
-<h2 id="knihy-pro-děti">Knihy pro děti</h2>
-
-<ul>
-<li><a href="https://www.kosmas.cz/knihy/203684/za-chvili-jsme-doma-jen-si-odskocime-do-afriky/">Za chvíli jsme doma, jen si odskočíme do Afriky - Oliver Scherz</a></li>
-<li><a href="https://www.kosmas.cz/knihy/187917/no-jo-medved/">No jo, medvěd! - Hubert Schirneck </a></li>
-<li><a href="https://www.kosmas.cz/knihy/188752/mluvici-balik/">Mluvící balík - Gerald Durrell</a></li>
-<li><a href="https://www.kosmas.cz/autor/49584/marcin-mortka/">Tappi - Marcin Mortka</a></li>
-
-<li><p><a href="https://www.kosmas.cz/knihy/202768/tri-banany/">Tři banány - Zdeněk K. Slabý</a></p></li>
-
-<li><p><a href="https://www.kosmas.cz/autor/47537/cressida-cowellova/">Škyťák - Jak vycvičit draka</a></p></li>
-
-<li><p><a href="https://www.kosmas.cz/knihy/189941/slon-a-mravenec/">Slon a mravenec - Daisy Mrázková</a></p></li>
-
-<li><p><a href="https://www.kosmas.cz/knihy/199609/nadherne-utery/">Nádherné úterý - Daisy Mrázková</a></p></li>
-
-<li><p><a href="https://www.kosmas.cz/knihy/208297/zirafi-mama-a-jine-prisery/">Žirafí máma a jiné příšery - Alexandra Salmela</a></p></li>
-</ul>
-
-<h2 id="todo">TODO</h2>
-
-<ul>
-<li><a href="http://www.databazeknih.cz/knihy/rudy-zakon-240925">Rudý zákon - Bill Browder</a></li>
-<li><a href="http://www.databazeknih.cz/knihy/faktor-churchill-299200">Faktor Churchill - Boris Johnson</a></li>
-<li><a href="http://www.databazeknih.cz/knihy/rude-hvezdy-ve-vesmiru-aneb-pohled-do-zakulisi-sovetske-kosmonautiky-220823">Rudé hvězdy ve vesmíru aneb Pohled do zákulisí sovětské kosmonautiky</a></li>
-<li><a href="https://www.amazon.com/World-Beyond-Your-Head-Distraction/dp/0374535914">The World Beyond Your Head - Matthew Crawford</a></li>
-<li><a href="https://www.melvil.cz/kniha-hluboka-prace/">HLUBOKÁ PRÁCE - Cal Newport</a></li>
-</ul>
-
-	</article>
-	
-	<article>
-		
-		<h1><a href="http://blog.omdesign.cz/movies-list/"><div>Movies list</div></a></h1>
-		
-
-
-
-<h2 id="schmitke-http-www-csfd-cz-film-389075-schmitke-videa"><a href="http://www.csfd.cz/film/389075-schmitke/videa/">Schmitke</a></h2>
-
-<blockquote>
-<p>Příběh neotřele a originálně vyprávěného filmu se odehrává
-v současném Německu a Česku, jeho hlavní část pak na pomezí –
-v malém městečku uprostřed lesů na hřebenech Krušných hor.
-S lehkým komediálním nadhledem nabízí mix napínavé detektivní zápletky
-s místy až dokumentárně realistickým pohledem na dnešní Sudety.
-Hlavní postavou je stárnoucí inženýr Julius Schmitke. A také Krušné
-hory, které byly, stejně jako Schmitke, už téměř úplně prázdné a zničené,
-ale v současnosti se dávají znovu dohromady a život se do nich pomalu ale jistě vrací.</p>
-</blockquote>
-
-<div class="embed-responsive embed-responsive-16by9 text-center">
-	<iframe class="embed-responsive-item" type="text/html"
-	src="http://www.youtube.com/embed/4nykmr7Q628" allowfullscreen frameborder="0">
-	</iframe>
-</div>
-
-
-	</article>
-	
-	<article>
-		
-		<h1><a href="http://blog.omdesign.cz/quotes/"><div>Quotes</div></a></h1>
-		
-
-
-
-<p>Jakkoli krásnou máte strategii, měli byste se občas podívat i na její výsledky.
-<br><em>Winston Churchill</em></p>
-
-<hr />
-
-<p>It doesn’t make sense to hire smart people and then tell them what to do;
-we hire smart people so they can tell us what to do.
-<br><em>Steve Jobs</em></p>
-
-<hr />
-
-<p>Neházej všechno do jednoho pytle, nezdvihneš ho.
-<br><em>anglické</em></p>
-
-<hr />
-
-<p>Nejdůležitější informace se nacházejí na té části mapy, která je utržená.
-<br><em>Kellyho zákon navigace</em></p>
-
-<hr />
-
-<p>Na každý komplexní problém existuje jednoduchá odpověď, která je zpravidla špatná.</p>
-
-<hr />
-
-<p>Kulturnost je jenom nátěr, který je velmi lehce rozpustný v alkoholu.</p>
-
-<hr />
-
-<p>Když potřebuješ vyprášit čepici nedělej to o ženu.
-<br><em>arabské</em></p>
-
-<hr />
-
-<p>Jedinou konstantou dneška je změna.</p>
-
-<hr />
-
-<p>Co nezměníš ty nezmění nikdo na světě.</p>
-
-<hr />
-
-<p>Kdo má prachy, bude i v pekle lízat zmrzlinu
-<br><em>arabské</em></p>
-
-<hr />
-
-<p>Co tě nezabije, to se tě pokusí zabít znova.</p>
-
-<hr />
-
-<p>Nikdy nepřemýšlím o budoucnosti, protože přichází přiliš rychle.
-<br><em>Albert Einstein</em></p>
-
-	</article>
-	
-	<article>
-		
-		<h1><a href="http://blog.omdesign.cz/webdesign/"><div>Webdesign</div></a></h1>
-		
-
-
-
-<h3 id="icons">Icons</h3>
-
-<ul>
-<li><a href="https://flaticon.com">https://flaticon.com</a></li>
-</ul>
-
-<h3 id="free-images">Free Images</h3>
-
-<ul>
-<li><a href="https://unsplash.com/">https://unsplash.com/</a></li>
-<li><a href="https://stocksnap.io/">https://stocksnap.io/</a></li>
-<li><a href="https://www.pexels.com/">https://www.pexels.com/</a></li>
-</ul>
-
-<h3 id="payment">Payment</h3>
-
-<ul>
-<li><a href="https://www.braintreepayments.com">https://www.braintreepayments.com</a> (1,9% + €0,30)</li>
-</ul>
-
-<h3 id="electron">Electron</h3>
-
-<ul>
-<li><a href="http://electron.atom.io/">http://electron.atom.io/</a> - Electron homepage</li>
-<li><a href="http://photonkit.com/">http://photonkit.com/</a> - CSS &amp; HTMl kit for Electron</li>
-</ul>
-
-<h3 id="wordpress-themes">Wordpress Themes</h3>
-
-<ul>
-<li><a href="http://themetrust.com/themes/">http://themetrust.com/themes/</a></li>
-<li><a href="https://wordpress.org/themes/">https://wordpress.org/themes/</a></li>
-<li><a href="https://themeforest.net/category/wordpress/corporate">https://themeforest.net/category/wordpress/corporate</a></li>
-</ul>
-
-<h3 id="js-libs">JS Libs</h3>
-
-<ul>
-<li><a href="https://alertifyjs.org/">https://alertifyjs.org/</a></li>
-<li><a href="https://github.com/t4t5/sweetalert">https://github.com/t4t5/sweetalert</a></li>
-<li><a href="https://github.com/HubSpot/messenger">https://github.com/HubSpot/messenger</a></li>
-</ul>
 
 	</article>
 	
@@ -464,11 +503,15 @@ we hire smart people so they can tell us what to do.
     <a class="page-link" href="http://blog.omdesign.cz/page/8/">8</a>
   </li>
   
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/9/">9</a>
+  </li>
+  
 
   <li class="page-item">
-    <a class="page-link disabled"
+    <a class="page-link "
     aria-label="Next"
-    href="#">
+    href="http://blog.omdesign.cz/page/9/">
     <span aria-hidden="true">&raquo;</span>
     <span class="sr-only">Next</span>
   </a>
@@ -560,6 +603,8 @@ we hire smart people so they can tell us what to do.
 	
 	<a href="http://blog.omdesign.cz/tags/json" class="tag">#json</a>
 	
+	<a href="http://blog.omdesign.cz/tags/knedl%C3%ADky" class="tag">#knedlíky</a>
+	
 	<a href="http://blog.omdesign.cz/tags/lifehacker" class="tag">#lifehacker</a>
 	
 	<a href="http://blog.omdesign.cz/tags/mac" class="tag">#mac</a>
@@ -576,6 +621,8 @@ we hire smart people so they can tell us what to do.
 	
 	<a href="http://blog.omdesign.cz/tags/oko" class="tag">#oko</a>
 	
+	<a href="http://blog.omdesign.cz/tags/om%C3%A1%C4%8Dky" class="tag">#omáčky</a>
+	
 	<a href="http://blog.omdesign.cz/tags/openssl" class="tag">#openssl</a>
 	
 	<a href="http://blog.omdesign.cz/tags/osx" class="tag">#osx</a>
@@ -591,6 +638,8 @@ we hire smart people so they can tell us what to do.
 	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
 	
 	<a href="http://blog.omdesign.cz/tags/plugin" class="tag">#plugin</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pol%C3%A9vky" class="tag">#polévky</a>
 	
 	<a href="http://blog.omdesign.cz/tags/pomaz%C3%A1nky" class="tag">#pomazánky</a>
 	

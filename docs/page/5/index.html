@@ -20,16 +20,16 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-04-16 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-01-19 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-04-16 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-01-19 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
-	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,shopping,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
+	<meta itemprop="keywords" content="ajax,angular,antispam,archive,atom,auto,automator,barvy,bash,bluetooth,boostrap,bootstrap,brew,canvas,cloud,composer,css,cukroví,database,diplomka,drive,email,excerpt,flux,ftp,git,github,hack,hash,heartbleed,hermelín,hlavní-jídlo,howto,html,images,internet,ios,iphone,js,json,knedlíky,lifehacker,mac,meta,movies,nodejs,npm,oauth,oko,omáčky,openssl,osx,parkinsons-law,pear,perník,pečení,php,plugin,polévky,pomazánky,přepis-auta,quotes,react,rebase,recepty,redux,retina,shell,shopping,speakers,student,svg,terminal,tip,todo,tyčinky,user,ux,webdesign,wireless,wordpress,wysiwyg,xcode,youtube,zamyšlení,zdraví," />
 	
 <link href="http://blog.omdesign.cz/index.xml" rel="alternate" type="application/rss+xml" title="blog.omdesign.cz"/>
 	<link href="http://blog.omdesign.cz/index.xml" rel="feed" type="application/rss+xml" title="blog.omdesign.cz"/><!-- Fonts, jQuery and js -->
@@ -71,6 +71,285 @@
 	
 	<article>
 		
+		<time datetime="2014-01-19T00:00:00Z">19. Leden 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/convert-json-data-to-valid-php-code/"><div>Convert JSON data to valid PHP code</div></a></h1>
+		
+
+
+
+<p>Do you need <strong>convert JSON data to valid PHP</strong> code without pain? I&rsquo;ve got a short script for that! My simple solution used <a href="http://www.php.net/manual/en/function.var-export.php">var_export()</a> function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace <code>stdClass::__set_state/</code> with <code>(object)</code>.</p>
+
+<p>Take a closer look at example data. I have here <a href="https://gist.github.com/Fluidbyte/2973986">currency.json</a> - PHP code should look something like this:</p>
+
+<pre><code>&lt;?php
+ return array (
+  'USD' =&gt;
+  (object)(array(
+     'symbol' =&gt; '$',
+     'name' =&gt; 'US Dollar',
+     'symbol_native' =&gt; '$',
+     'decimal_digits' =&gt; 2,
+     'rounding' =&gt; 0,
+     'code' =&gt; 'USD',
+     'name' =&gt; 'US dollars',
+  )),
+  'CAD' =&gt;
+  //...
+);
+</code></pre>
+
+<p>It&rsquo;s can be done in only four lines of PHP code:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p>If you need call some function (like <a href="http://www.php.net/manual/en/book.gettext.php">gettext</a>) above the variable, just add more regular expression:</p>
+
+<pre><code>$data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
+$code = var_export((array)$data, true);
+
+// add gettext function call
+$code = preg_replace(&quot;/'name' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+$code = preg_replace(&quot;/'name_plural' =&gt; '(.+)'/&quot;, &quot;'name' =&gt; __('$1')&quot;, $code);
+
+// save PHP code
+$code = &quot;&lt;?php\n return &quot; . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
+file_put_contents(__DIR__ . '/currencies.locale.php', $code);
+</code></pre>
+
+<p> </p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2014-01-17T00:00:00Z">17. Leden 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/find-all-unnecessary-images-without-link-from-code/"><div>Find all unnecessary images without link from code</div></a></h1>
+		
+
+
+
+<p>How to find all unnecessary images in your website project?</p>
+
+<pre><code>find public/images -type f|while read line ; do printf &quot;$(basename $line) &gt; &quot; &amp;&amp; ack --nofilter -l -c &quot;$(basename $line)&quot; | wc -l; done
+</code></pre>
+
+<p>Output will be:</p>
+
+<pre><code>sprite.gif &gt; 0
+ajax-loader-bg-f9.gif &gt; 2
+ajax-loader-bg-trans.gif &gt; 3
+ajax-loader-static-bg-trans.gif &gt; 2
+bg_about.png &gt; 2
+...
+</code></pre>
+
+<p>If you want output filenames not just marches count remove</p>
+
+<pre><code>| wc -l
+</code></pre>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-12-30T00:00:00Z">30. Prosinec 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/upgrade-all-npm-packages-to-latest-versions/"><div>Upgrade all npm packages to latest versions</div></a></h1>
+		
+
+
+
+<p>Install follow package <a href="https://npmjs.org/package/npm-check-updates">npm-check-updates</a> by</p>
+
+<pre><code>npm install -g npm-check-updates
+</code></pre>
+
+<p>and run <code>ncu -a</code> for upgrade <code>package.json</code> versions.</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-12-21T00:00:00Z">21. Prosinec 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-clean-flash-drive-before-unmount-on-mac/"><div>How to clean flash drive before unmount on Mac</div></a></h1>
+		
+
+
+
+<p>How to <strong>clean flash drive</strong> and delete all hidden (dot) files on mac before unmount? It&rsquo;s simple, save follow commands as <code>flash</code>:</p>
+
+<pre><code>#!/bin/bash
+
+if [ -n &quot;$1&quot; ]; then
+  read -r -p &quot;Clean /Volumes/$1/ and unmount? [y/N] &quot; response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then      
+    find /Volumes/$1/ -name '._*' -type f -delete
+    rm -rf /Volumes/$1/.Spotlight-V100/
+    rm -rf /Volumes/$1/.Trashes/
+    diskutil unmount /Volumes/$1/
+    echo &quot;Done...&quot;
+  fi
+else
+  echo &quot;Flash drive name missing&quot;
+fi
+</code></pre>
+
+<p>Then change the access mode of a file <code>chmod +x flash</code>. To unmount a clean flash drive just run
+<code>./flash Flashka</code> (Flashka is name od drive).</p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-12-02T00:00:00Z">2. Prosinec 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-get-post-excerpt/"><div>Wordpress -  get post excerpt</div></a></h1>
+		
+
+
+
+<p><code>$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post_id));</code></p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-11-28T00:00:00Z">28. Listopad 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/run-ftp-server-on-mac-os-x/"><div>Run FTP server on Mac OS X</div></a></h1>
+		
+
+
+
+<p>Setup everyhing: <code>sudo subl /etc/ftpd.conf</code></p>
+
+<pre><code># match umask from Mac OS X Server ftpd
+umask all 022
+chroot GUEST /Users/roman/ftp
+modify guest off
+umask  guest 0707
+upload guest on
+</code></pre>
+
+<p>Start FTP server</p>
+
+<pre><code>sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
+</code></pre>
+
+<p>And stop again:</p>
+
+<p><code>sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist</code></p>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-09-25T00:00:00Z">25. Září 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/composer-require-pear-package/"><div>Composer require PEAR package</div></a></h1>
+		
+
+
+
+<pre><code>{
+ &quot;repositories&quot;: [
+  {
+   &quot;type&quot;: &quot;pear&quot;,
+   &quot;url&quot;: &quot;http://pear.php.net&quot;
+  }
+ ],
+ &quot;require&quot;: {
+  &quot;pear-pear/Mail&quot;: &quot;&gt;=1.2.0&quot;
+ }
+}
+</code></pre>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-07-24T00:00:00Z">24. Červenec 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-safely-commit-vendor-dir-with-php-composer/"><div>How to safely commit vendor dir with php Composer</div></a></h1>
+		
+
+
+
+<p><a href="http://getcomposer.org/">Composer</a> is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I <a href="http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md"> commit the dependencies</a> in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
+- I will work on application and my packages together.
+- I need a simple way how to commit and publish new version of packages.
+- Workflow need to be simple (mimimum of commands)</p>
+
+<h3 id="how-to-commit-vendor-dir">How to commit vendor dir?</h3>
+
+<p>Remove <code>vendor</code> dir from your <code>.gitignore</code> and add follow lines to root of <code>composer.json</code></p>
+
+<pre><code>&quot;scripts&quot;: {
+ &quot;post-update-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;],
+ &quot;post-install-cmd&quot;: [&quot;echo [WARNING] Delete all .git dirs&quot;, &quot;rm -rf vendor/**/**/.git&quot;]
+},
+</code></pre>
+
+<p>That&rsquo;s automatically remove the <code>.git</code> directory of every dependency after the installation or update. You can safely commit everything to your git repo and avoid mistakes with fake git &ldquo;submodules&rdquo;. Run: <code>composer update</code> and commit everything to your repo. ### How make changes in packages?</p>
+
+<p>When you are using tagged releases (no dev versions) of package then run:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --prefer-source --no-scripts
+</code></pre>
+
+<p>For dev versions (dev-master) it&rsquo;s simpler:</p>
+
+<pre><code>rm -rf vendor/some/package &amp;&amp; composer update some/package --no-scripts
+</code></pre>
+
+<p>Now, when you go to vendor/some/package dir it&rsquo;s common git repository - you can make changes, commit and publish new versions of package. But don&rsquo;t forgot run <code>composer update</code> before commit main repo, becouse there is still .git dir in package! ### Disadvantages</p>
+
+<ul>
+<li>Large VCS repository size and diffs when you update code.</li>
+<li>Duplication of the history of all your dependencies in your own VCS.</li>
+<li>There can be conflicts in commits especially when you work in larger team.</li>
+<li>Still <strong>not avoid commit .git directory</strong> after running composer with <code>--no-scripts</code> param.</li>
+</ul>
+
+	</article>
+	
+	<article>
+		
+		<time datetime="2013-05-14T00:00:00Z">14. Květen 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/setup-email-sending-from-php-on-mac/"><div>Setup email sending from PHP on Mac</div></a></h1>
+		
+
+
+
+<p>First write in terminal: <code>which sendmail</code> wlll return path to sendmail app (in my case <code>/usr/sbin/sendmail</code>). Then open <code>php.ini</code> file and setup:</p>
+
+<pre><code>sendmail_path = /usr/sbin/sendmail -t -i
+</code></pre>
+
+<p>Create necessary folder and setup postfix permissions:</p>
+
+<pre><code>sudo mkdir -p /Library/Server/Mail/Data/spool
+sudo /usr/sbin/postfix set-permissions
+sudo /usr/sbin/postfix start
+</code></pre>
+
+<p>And check if emails will come:</p>
+
+<pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
+</code></pre>
+
+	</article>
+	
+	<article>
+		
 		<time datetime="2013-04-16T00:00:00Z">16. Duben 2013</time>
 		
 		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/"><div>Wordpress - How to get user by metadata</div></a></h1>
@@ -100,270 +379,6 @@ function get_user_by_meta($meta_key, $meta_value) {
  );
 }
 </code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
-		
-
-
-
-<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-  /* it's retina yeah! */
-}
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-26T00:00:00Z">26. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/toggle-hidden-files-in-finder/"><div>Toggle Hidden Files in Finder</div></a></h1>
-		
-
-
-
-<p>Run <a href="http://en.wikipedia.org/wiki/Automator_(software)">Automator</a> and create new Application. Add task <strong>Run Shell script</strong> and paste follow code:</p>
-
-<pre><code>STATUS=`defaults read com.apple.finder AppleShowAllFiles`
-if [ $STATUS == YES ];
-then
-    defaults write com.apple.finder AppleShowAllFiles NO
-else
-    defaults write com.apple.finder AppleShowAllFiles YES
-fi
-killall Finder
-</code></pre>
-
-<p>Save application. From now can Tooggle</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-11T00:00:00Z">11. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/list-all-mounted-drives-on-mac/"><div>List all mounted drives on mac</div></a></h1>
-		
-
-
-
-<p>It&rsquo;s simple: <code>df -h</code></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-02-20T00:00:00Z">20. Únor 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wodpress-constants-for-human-readable-intervals/"><div>Wodpress constants for human-readable intervals</div></a></h1>
-		
-
-
-
-<p>Constants for expressing human-readable intervals in new #Wordpress are very useful:</p>
-
-<pre><code>define( 'MINUTE_IN_SECONDS', 60 );
-define( 'HOUR_IN_SECONDS',   60 * MINUTE_IN_SECONDS );
-define( 'DAY_IN_SECONDS',    24 * HOUR_IN_SECONDS   );
-define( 'WEEK_IN_SECONDS',    7 * DAY_IN_SECONDS    );
-define( 'YEAR_IN_SECONDS',  365 * DAY_IN_SECONDS    );
-</code></pre>
-
-<p>Example:</p>
-
-<pre><code>wp_cache_add($key, $data, 'default, 5 * DAY_IN_SECONDS);
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-02-08T00:00:00Z">8. Únor 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/make-wordpress-globals-more-accessible/"><div>Make WordPress globals more accessible</div></a></h1>
-		
-
-
-
-<p>Wordpress using a lot <a href="http://codex.wordpress.org/Global_Variables">globals variables</a>. These variables are used throughout WordPress code for various reasons. Great example is database connection object <a href="http://codex.wordpress.org/Class_Reference/wpdb">wpdb</a>. Here is common example how to use <strong>wpdb</strong> in some function:</p>
-
-<pre><code>function something() {
-  global $wpdb;
-  /** @var wpdb $wpdb */
-  $wpdb-&gt;query('SQL...');
-}
-</code></pre>
-
-<p>It&rsquo;s highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: <a href="https://gist.github.com/OzzyCzech/4737518">https://gist.github.com/OzzyCzech/4737518</a> (PHP 5.3+ only)</p>
-
-<pre><code>function something() {
-  Globals::wpdb()-&gt;query('SQL...');
-}
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-31T00:00:00Z">31. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/run-iphone-simulator-without-xcode/"><div>Run iPhone simulator without XCode</div></a></h1>
-		
-
-
-
-<pre><code>open -a &quot;iPhone Simulator&quot;
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-29T00:00:00Z">29. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-register-and-setup-witgets-from-php-code/"><div>Wordpress - register and setup widgets from PHP code</div></a></h1>
-		
-
-
-
-<p>PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:</p>
-
-<pre><code>class Widgets {
-
- private $widgets = array();
- private $options = array();
-
- public function __construct() {
-  $this-&gt;options = wp_get_sidebars_widgets();
- }
-
- public function unregisterAllWidgets() {
-  foreach ($this-&gt;options as $name =&gt; $values)
-   $this-&gt;options[$name] = array();
- }
-
- public function cleanWidgetSettings($type, $multi = null) {
-  $this-&gt;widgets[$type] = array();
-  if ($multi !== null) $this-&gt;widgets[$type]['_multiwidget'] = (int)(bool)$multi;
- }
-
- public function setMultiWidget($type, $val = 1) {
-  $this-&gt;widgets[$type]['_multiwidget'] = $val;
- }
-
- public function add($type, array $options, $area = null) {
-  $this-&gt;widgets[$type][] = $options;
-  if ($area !== null) {
-   if (array_key_exists($area, $this-&gt;options) === false) {
-    throw new Exception('Widget area ' . $area . ' not exists.');
-   }
-   end($this-&gt;widgets[$type]);
-   $this-&gt;options[$area][] = $type . '-' . key($this-&gt;widgets[$type]);
-  }
- }
-
- public function __destruct() {
-  foreach ($this-&gt;widgets as $name =&gt; $settings) {
-   if (!array_key_exists('_multiwidget', $settings)) $settings['_multiwidget'] = 1;
-   update_option('widget_' . $name, $settings);
-  }
-  wp_set_sidebars_widgets($this-&gt;options);
- }
-
-}
-</code></pre>
-
-<p>Following code is an example how to use <code>class Witgets</code>:</p>
-
-<pre><code>$widgets = new Widgets();
-$widgets-&gt;unregisterAllWidgets();
-
-$widgets-&gt;add(
- 'text',
- array(
-  'title' =&gt; 'About us',
-  'text' =&gt; 'Simple text about us',
-  'filter' =&gt; true,
-  'classes' =&gt; '',
-  'ids' =&gt; null,
- ),
- 'footer-1'
-);
-
-// ...
-</code></pre>
-
-<p>This code need to be call only once. Put your code to <code>function.php</code> to <code>after_switch_theme</code> action:</p>
-
-<pre><code>add_action(
- 'after_switch_theme', function () {
-  $widgets = new Widgets();
-  $widgets-&gt;unregisterAllWidgets();
-  // ...
- }
-);
-</code></pre>
-
-<p><a href="https://gist.github.com/4663766/">https://gist.github.com/4663766/</a></p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-01-08T00:00:00Z">8. Leden 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/seznam-v%C4%9Bc%C3%AD-kter%C3%A9-internet-zabil/"><div>Seznam věcí které Internet zabil</div></a></h1>
-		
-
-
-
-<p>Co všechno Internet zabil nebo zabíjí?</p>
-
-<ol>
-<li>Hudební průmysl</li>
-<li>Filmový průmysl</li>
-<li>Porno průmysl</li>
-<li>Zásilkové služby (Quelle, Neckermann atd.)</li>
-<li>Pohledy a dopisy psané rukou</li>
-<li>Anonymitu (ta postupně mizí)</li>
-<li>DVD a videopůjčovny</li>
-<li>Časopisy noviny a poctivou novinařinu</li>
-<li>Televizi</li>
-<li>Encyklopedie</li>
-<li>MMS, SMS</li>
-<li>Tištěné mapy</li>
-</ol>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-12-09T00:00:00Z">9. Prosinec 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/made-in-china-paranoidni-povidka-na-dobrou-noc/"><div>Made in China - Paranoidní povídka na dobrou noc</div></a></h1>
-		
-
-
-
-<p>China právě vyhlásila jednostranné embargo na vývoz výrobku vyrobených na jejich
-území. USA a prakticky celá Evropa se potýká s akutním nedostatkem výrobků
-určených k běžné spotřebě. Chybí zejména elektronika, plastové a kovové výrobky
-a léků. Díky embargu došlo k ohrožení ekonomické stability řady firem.
-Na hranici bankrotu se pohybují firmy jako Apple, IKEA nebo Mattel. Ty se
-překotně snaží alespoň o částečnou obnovu výroby. Rovněž se pokoušejí
-přesunout výrobu do svých domovských států. Potýkají se se zoufalým nedostatkem
-odborníků a extrémní finanční náročností nechtěného stěhování. Prezident USA se
-tento týden sejde s představiteli Evropské Unie. Společně se pokusí dohodnout
-alespoň částečnou obnovu exportu výrobků vyrobených na území Chiny. Cílem je
-vyhnou se celosvětovému ekonomickému kolapsu. A zamezení chaosu do kterého se
-postupně propadají jednotlivé státy. O dalším vývoji situace Vás budeme
-průběžně informovat.</p>
 
 	</article>
 	
@@ -413,6 +428,10 @@ průběžně informovat.</p>
   
   <li class="page-item ">
     <a class="page-link" href="http://blog.omdesign.cz/page/8/">8</a>
+  </li>
+  
+  <li class="page-item ">
+    <a class="page-link" href="http://blog.omdesign.cz/page/9/">9</a>
   </li>
   
 
@@ -511,6 +530,8 @@ průběžně informovat.</p>
 	
 	<a href="http://blog.omdesign.cz/tags/json" class="tag">#json</a>
 	
+	<a href="http://blog.omdesign.cz/tags/knedl%C3%ADky" class="tag">#knedlíky</a>
+	
 	<a href="http://blog.omdesign.cz/tags/lifehacker" class="tag">#lifehacker</a>
 	
 	<a href="http://blog.omdesign.cz/tags/mac" class="tag">#mac</a>
@@ -527,6 +548,8 @@ průběžně informovat.</p>
 	
 	<a href="http://blog.omdesign.cz/tags/oko" class="tag">#oko</a>
 	
+	<a href="http://blog.omdesign.cz/tags/om%C3%A1%C4%8Dky" class="tag">#omáčky</a>
+	
 	<a href="http://blog.omdesign.cz/tags/openssl" class="tag">#openssl</a>
 	
 	<a href="http://blog.omdesign.cz/tags/osx" class="tag">#osx</a>
@@ -542,6 +565,8 @@ průběžně informovat.</p>
 	<a href="http://blog.omdesign.cz/tags/php" class="tag">#php</a>
 	
 	<a href="http://blog.omdesign.cz/tags/plugin" class="tag">#plugin</a>
+	
+	<a href="http://blog.omdesign.cz/tags/pol%C3%A9vky" class="tag">#polévky</a>
 	
 	<a href="http://blog.omdesign.cz/tags/pomaz%C3%A1nky" class="tag">#pomazánky</a>
 	
