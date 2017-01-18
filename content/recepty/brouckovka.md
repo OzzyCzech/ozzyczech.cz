@@ -1,10 +1,10 @@
 ---
-title: Bublanina
+title: Pravá Valašská Kyselica (broučkovka)
 date: 2015-10-18
 tags: [recepty, polévky]
 ---
 
-# Pravá Valašská Kyselica
+# Pravá Valašská Kyselica (broučkovka)
 
 * 4-5 středních brambor
 * 2 hrsti hub (nemusí být)
