@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2014-01-19 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-02-11 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-01-19 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-02-11 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -68,6 +68,30 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2014-02-11T00:00:00Z">11. Únor 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-keep-github-fork-updated-no-merge---the-right-way/"><div>How to keep GitHub Fork Updated (no merge - the right way)</div></a></h1>
+		
+
+
+
+<p>Here is solution how to keep your forks updated <a href="https://help.github.com/articles/syncing-a-fork">without merge</a> and clean history</p>
+
+<pre><code>git clone git@github.com:[username]/[repo].git
+git remote add upstream git@github.com:[username2]/[repo].git
+</code></pre>
+
+<p>When something change in forked repo</p>
+
+<pre><code>git fetch upstream
+git checkout [branch]
+git rebase upstream/[branch]
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -344,40 +368,6 @@ sudo /usr/sbin/postfix start
 <p>And check if emails will come:</p>
 
 <pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-04-16T00:00:00Z">16. Duben 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/"><div>Wordpress - How to get user by metadata</div></a></h1>
-		
-
-
-
-<p>Getting user by field name is easy, #Wordpress have function for that <a href="http://codex.wordpress.org/Function_Reference/get_user_by">get_user_by</a>. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to <strong>get user by metadata</strong> using <a href="https://codex.wordpress.org/Class_Reference/WP_Query">WP_Query</a> object. Forget about them! You need prepare correct meta query as array or string and call <code>get_users</code>. Thats all!</p>
-
-<pre><code>/**
- * Get user by his metadata
- * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
- * @param $meta_key
- * @param $meta_value
- * @return mixed
- */
-function get_user_by_meta($meta_key, $meta_value) {
- return reset(
-  get_users(
-   array(
-    'meta_key' =&gt; $meta_key,
-    'meta_value' =&gt; $meta_value,
-    'number' =&gt; 1,
-    'count_total' =&gt; false
-   )
-  )
- );
-}
 </code></pre>
 
 	</article>

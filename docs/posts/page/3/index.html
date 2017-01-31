@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2014-02-11 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2014-04-14 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2014-02-11 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2014-04-14 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -68,6 +68,29 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2014-04-14T00:00:00Z">14. Duben 2014</time>
+		
+		<h1><a href="http://blog.omdesign.cz/prevent-heartbleed---upgrade-openssl-with-brew-on-your-mac/"><div>Prevent Heartbleed - upgrade openssl with brew on your mac</div></a></h1>
+		
+
+
+
+<p>The <a href="http://heartbleed.com/">Heartbleed Bug</a> is a serious vulnerability in the
+popular OpenSSL cryptographic software library. Follow <a href="http://brew.sh/">brew</a>
+command will upgrade your openssl library:</p>
+
+<p><code>brew install openssl &amp;&amp; brew link openssl --force</code></p>
+
+<p>Relaunch your Terminal (has to be hard quit ⌘ + Q) and check your openssl version:</p>
+
+<p><code>openssl version</code></p>
+
+<p>Now you shall have <code>OpenSSL 1.0.1g 7 Apr 2014</code> or newer.</p>
+
+	</article>
 	
 	<article>
 		
@@ -355,22 +378,6 @@ sudo /usr/sbin/postfix start
 <p>And check if emails will come:</p>
 
 <pre><code>php -r &quot;mail('youremail@domain.com', 'subject', 'message', 'From: &lt;youremail@domain.com&gt;' . PHP_EOL);&quot;
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
-		
-		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
-		
-
-
-
-<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-  /* it's retina yeah! */
-}
 </code></pre>
 
 	</article>

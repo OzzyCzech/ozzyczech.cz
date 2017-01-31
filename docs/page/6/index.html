@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2013-03-27 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-04-16 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-03-27 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-04-16 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -68,6 +68,40 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2013-04-16T00:00:00Z">16. Duben 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/wordpress/wordpress-how-to-get-user-by-metadata/"><div>Wordpress - How to get user by metadata</div></a></h1>
+		
+
+
+
+<p>Getting user by field name is easy, #Wordpress have function for that <a href="http://codex.wordpress.org/Function_Reference/get_user_by">get_user_by</a>. Getting user by his metadata is a little bit complicated. You can found on the Internet some complex procedures how to <strong>get user by metadata</strong> using <a href="https://codex.wordpress.org/Class_Reference/WP_Query">WP_Query</a> object. Forget about them! You need prepare correct meta query as array or string and call <code>get_users</code>. Thats all!</p>
+
+<pre><code>/**
+ * Get user by his metadata
+ * @author Roman Ozana &lt;ozana@omdesign.cz&gt;
+ * @param $meta_key
+ * @param $meta_value
+ * @return mixed
+ */
+function get_user_by_meta($meta_key, $meta_value) {
+ return reset(
+  get_users(
+   array(
+    'meta_key' =&gt; $meta_key,
+    'meta_value' =&gt; $meta_value,
+    'number' =&gt; 1,
+    'count_total' =&gt; false
+   )
+  )
+ );
+}
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -330,41 +364,6 @@ alespoň částečnou obnovu exportu výrobků vyrobených na území Chiny. Cí
 vyhnou se celosvětovému ekonomickému kolapsu. A zamezení chaosu do kterého se
 postupně propadají jednotlivé státy. O dalším vývoji situace Vás budeme
 průběžně informovat.</p>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2012-12-05T00:00:00Z">5. Prosinec 2012</time>
-		
-		<h1><a href="http://blog.omdesign.cz/recepty/s%C3%BDrov%C3%A9-ty%C4%8Dinky/"><div>Sýrové tyčinky</div></a></h1>
-		
-
-
-
-<h2 id="co-budete-potřebovat">Co budete potřebovat?</h2>
-
-<p><img src="http://blog.omdesign.cz/img/2012/12/syrove-tycinky.jpg" width="350" class="right"></p>
-
-<p>Suroviny na 1 dávku (která vám stejně nebude stačit):</p>
-
-<ul>
-<li>160 g hladké mouky</li>
-<li>100 g Hery nebo másla</li>
-<li>100 g jemně strouhaného sýra (Eidam, Gran Moravia, Provolone piccante)</li>
-<li>10 g droždí (¼ kostky)</li>
-<li>4 lžíce mléka
-– žloutek na potření</li>
-</ul>
-
-<h2 id="postup">Postup</h2>
-
-<p>Těsto se nenechává kynout! Rovnou se vyvaluje na cca 3 mm a krájí na tyčinky
-(5 až 7 krát 1 cm tyčinky) - nakrájené tyčinky na závěr potíráme rozšlehaným vejcem
-(kvůli lesku). Klademe vedle sebe na plech na pečící papír.</p>
-
-<p>Než tyčinky šoupnete do trouby tak je pořádně osolte hrubou solí.
-Pečeme na 120 cca 12 minut do růžova.</p>
 
 	</article>
 	

@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/" />
-	<meta property="og:updated_time" content="2012-10-29 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2012-12-05 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2012-10-29 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2012-12-05 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="blog.omdesign.cz">
 	<meta itemprop="description" content="">
@@ -68,6 +68,41 @@
 
 <section class="container articles">
 	
+	
+	<article>
+		
+		<time datetime="2012-12-05T00:00:00Z">5. Prosinec 2012</time>
+		
+		<h1><a href="http://blog.omdesign.cz/recepty/s%C3%BDrov%C3%A9-ty%C4%8Dinky/"><div>Sýrové tyčinky</div></a></h1>
+		
+
+
+
+<h2 id="co-budete-potřebovat">Co budete potřebovat?</h2>
+
+<p><img src="http://blog.omdesign.cz/img/2012/12/syrove-tycinky.jpg" width="350" class="right"></p>
+
+<p>Suroviny na 1 dávku (která vám stejně nebude stačit):</p>
+
+<ul>
+<li>160 g hladké mouky</li>
+<li>100 g Hery nebo másla</li>
+<li>100 g jemně strouhaného sýra (Eidam, Gran Moravia, Provolone piccante)</li>
+<li>10 g droždí (¼ kostky)</li>
+<li>4 lžíce mléka
+– žloutek na potření</li>
+</ul>
+
+<h2 id="postup">Postup</h2>
+
+<p>Těsto se nenechává kynout! Rovnou se vyvaluje na cca 3 mm a krájí na tyčinky
+(5 až 7 krát 1 cm tyčinky) - nakrájené tyčinky na závěr potíráme rozšlehaným vejcem
+(kvůli lesku). Klademe vedle sebe na plech na pečící papír.</p>
+
+<p>Než tyčinky šoupnete do trouby tak je pořádně osolte hrubou solí.
+Pečeme na 120 cca 12 minut do růžova.</p>
+
+	</article>
 	
 	<article>
 		
@@ -396,41 +431,6 @@ function filterArrayValues($needle, $array) {
 
 print_r(filterArrayValues('a', $array)); // vypíše jen cE
 </code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2011-04-13T00:00:00Z">13. Duben 2011</time>
-		
-		<h1><a href="http://blog.omdesign.cz/snadn%C3%A9-p%C5%99ipojen%C3%AD-k-ftp-pomoc%C3%AD-php/"><div>Snadné připojení k FTP pomocí PHP</div></a></h1>
-		
-
-
-
-<p>Mám v oblibě <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">zkrácený zápis</a> připojení k FTP.
-PHP tento <a href="http://php.net/manual/en/function.ftp-connect.php">způsob zápisu připojení</a>
-bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně rozebere
-zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu.</p>
-
-<pre><code>/**
- * Vraci ID FTP pripojeni na zaklade zadane URL
- * ftp://username:password@sld.domain.tld:21/path1/path2/
- */
-function getFtpConnection($uri)
-{  
-  preg_match(&quot;/(?P&lt;protocol&gt;ftps?:\/\/)(?P&lt;username&gt;.*?):(?P&lt;password&gt;.*?)@(?P&lt;url&gt;.*?):?(?P&lt;port&gt;[1-9]+)?(?&lt;dir&gt;\/.*)/i&quot;, $uri, $match);
-  $conn = ftp_connect($match['url'], empty($match['port']) ? 21 : (int)$match['port']) or die(&quot;Couldn't connect to &quot; . $match['url']);
-  if (ftp_login($conn, $match['username'], $match['password'])) {
-    ftp_chdir($conn, $match['dir']);
-    return $conn;
-  }
-
-  return null;
-}
-</code></pre>
-
-<p>Výstupem funkce je samozřejmě ID připojení, se kterým pak můžete <a href="http://www.php.net/manual/en/ref.ftp.php">normálně pracovat</a> dál. Funkci najdete také zde: <a href="https://gist.github.com/998091">https://gist.github.com/998091</a></p>
 
 	</article>
 	

@@ -11,6 +11,23 @@
     <atom:link href="http://blog.omdesign.cz/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Pure Javascript URL validation with LINK preload</title>
+      <link>http://blog.omdesign.cz/pure-javascript-url-validation-with-link-preload/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/pure-javascript-url-validation-with-link-preload/</guid>
+      <description>
+
+&lt;h1 id=&#34;pure-javascript-url-validation-with-link-preload&#34;&gt;Pure Javascript URL validation with LINK preload&lt;/h1&gt;
+
+&lt;p&gt;Use &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag to validate URL&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;https://jsfiddle.net/0t0rm6ce/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Loading Ace Editor from CDN</title>
       <link>http://blog.omdesign.cz/loading-ace-editor-from-cdn/</link>
       <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>

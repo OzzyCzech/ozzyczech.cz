@@ -20,12 +20,12 @@
 	<meta property="og:description" content="" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://blog.omdesign.cz/posts/" />
-	<meta property="og:updated_time" content="2013-03-26 00:00:00 &#43;0000 UTC"/>
+	<meta property="og:updated_time" content="2013-03-27 00:00:00 &#43;0000 UTC"/>
 	<meta property="og:site_name" content="blog.omdesign.cz" />
 	<meta property="article:author" content="https://www.facebook.com/roman.ozana" />
 	<meta property="article:publisher" content="https://www.facebook.com/roman.ozana" />
 	
-	<meta property="article:modified_time" content="2013-03-26 00:00:00 &#43;0000 UTC" />
+	<meta property="article:modified_time" content="2013-03-27 00:00:00 &#43;0000 UTC" />
 	<meta property="article:section" content="" />
 	<meta itemprop="name" content="Posts">
 	<meta itemprop="description" content="">
@@ -68,6 +68,22 @@
 
 <section class="container">
 	
+	
+	<article>
+		
+		<time datetime="2013-03-27T00:00:00Z">27. Březen 2013</time>
+		
+		<h1><a href="http://blog.omdesign.cz/how-to-detect-retina-display-in-css/"><div>How to detect Retina display in CSS?</div></a></h1>
+		
+
+
+
+<pre><code>@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+  /* it's retina yeah! */
+}
+</code></pre>
+
+	</article>
 	
 	<article>
 		
@@ -318,44 +334,6 @@ foreach (
     copy($item, $dest . DIRECTORY_SEPARATOR . $iterator-&gt;getSubPathName());
   }
 }
-</code></pre>
-
-	</article>
-	
-	<article>
-		
-		<time datetime="2011-09-25T00:00:00Z">25. Září 2011</time>
-		
-		<h1><a href="http://blog.omdesign.cz/v%C3%BDpo%C4%8Det-hash-objektu-v-php/"><div>Výpočet hash objektu v PHP</div></a></h1>
-		
-
-
-
-<p>Funkce <a href="http://php.net/manual/en/function.spl-object-hash.php">spl_object_hash()</a>
-má jednu <strong>nevýhodu</strong>, její výsledek se v čase mění. Pokud objekt naplníte
-stejnými hodnotami, dostanete při dvou requestech dva různé výsledky. Což nemusí
-být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeho
-vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat
-například takto:</p>
-
-<pre><code>class Foo {
- private $p;
- public function setProperty($p) {
-  $this-&gt;p = $p;
- }
- // vypocita hash objektu na zaklade hodnot jeho propert
- public function __toString() {
-  return md5(http_build_query(get_object_vars($this)));
- }
-}
-</code></pre>
-
-<p>Pro vypsání/získání hash pak stačí:</p>
-
-<pre><code>$bar = new Foo();
-$bar-&gt;setProperty('25');
-echo $bar;
-$hash = (string) $bar;
 </code></pre>
 
 	</article>

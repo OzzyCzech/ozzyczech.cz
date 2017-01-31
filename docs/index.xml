@@ -8,8 +8,25 @@
     <language>cs-cz</language>
     <managingEditor>ozana@omdesign.cz (Roman Ožana)</managingEditor>
     <webMaster>ozana@omdesign.cz (Roman Ožana)</webMaster>
-    <lastBuildDate>Tue, 10 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.omdesign.cz/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pure Javascript URL validation with LINK preload</title>
+      <link>http://blog.omdesign.cz/pure-javascript-url-validation-with-link-preload/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      <author>ozana@omdesign.cz (Roman Ožana)</author>
+      <guid>http://blog.omdesign.cz/pure-javascript-url-validation-with-link-preload/</guid>
+      <description>
+
+&lt;h1 id=&#34;pure-javascript-url-validation-with-link-preload&#34;&gt;Pure Javascript URL validation with LINK preload&lt;/h1&gt;
+
+&lt;p&gt;Use &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag to validate URL&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;https://jsfiddle.net/0t0rm6ce/embedded/result,html,js,css&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
     
     <item>
       <title>China shops list</title>
@@ -674,30 +691,6 @@ jak kdo chce. Na talíři zdobíme kysanou smetanou.&lt;/p&gt;
 Vše promícháme. Přidáme majoránku, česnek a sůl. Vypracujeme těsto. Pekáček
 vmažeme pouze máslem a pečeme na 150° C zhruba 30 minut. Na konci můžeme
 povrch trochu potřít olejem.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bramborové knedlíky</title>
-      <link>http://blog.omdesign.cz/recepty/bramborov%C3%A9-knedl%C3%ADky/</link>
-      <pubDate>Sun, 18 Oct 2015 00:00:00 +0000</pubDate>
-      <author>ozana@omdesign.cz (Roman Ožana)</author>
-      <guid>http://blog.omdesign.cz/recepty/bramborov%C3%A9-knedl%C3%ADky/</guid>
-      <description>
-
-&lt;h1 id=&#34;bramborové-knedlíky&#34;&gt;Bramborové knedlíky&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;800 g brambor vařených, strouhaných na jemno&lt;/li&gt;
-&lt;li&gt;200 g hrubé mouky&lt;/li&gt;
-&lt;li&gt;100 g krupice&lt;/li&gt;
-&lt;li&gt;2 vajíčka&lt;/li&gt;
-&lt;li&gt;2 lžíce octa&lt;/li&gt;
-&lt;li&gt;1 lžičku soli&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Promícháme a utvoříme úhledné šišky. 15 - 20 minut vaříme ve vroucí vodě.
-Ihned odpíchneme od dna. Rozkrojený nesmí lepit.&lt;/p&gt;
 </description>
     </item>
     
