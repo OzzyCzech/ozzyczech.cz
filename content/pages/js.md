@@ -1,5 +1,6 @@
 ---
 title: Javascript Watchlist
+tags: [js, dev]
 slug: js
 ---
 
