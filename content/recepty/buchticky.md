@@ -1,6 +1,5 @@
 ---
 title: Buchtičky s krémem
-date: 2016-12-16
 tags: [recepty, hlavní jídlo]
 ---
 
