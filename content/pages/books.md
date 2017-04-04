@@ -1,5 +1,6 @@
 ---
 title: Knihy
+slug: books
 ---
 
 ## Knihy pro děti

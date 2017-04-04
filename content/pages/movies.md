@@ -1,6 +1,7 @@
 ---
 title: Movies list
 tags: [todo, movies]
+slug: movies
 ---
 
 # Movies

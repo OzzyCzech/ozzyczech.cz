@@ -1,5 +1,6 @@
 ---
 title: JS
+slug: js
 ---
 
 ## JS Watchlist
