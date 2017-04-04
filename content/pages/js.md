@@ -1,5 +1,5 @@
 ---
-title: JS checklist
+title: JS
 ---
 
 ## JS Watchlist

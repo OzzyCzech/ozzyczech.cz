@@ -1,2 +1,2 @@
 default:
-	rm -rf public && hugo
+	hugo version && rm -rf public && hugo
