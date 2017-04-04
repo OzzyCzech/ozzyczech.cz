@@ -1,6 +1,5 @@
 ---
 title: Boloňská omáčka
-date: 2015-10-18
 tags: [recepty, omáčky]
 ---
 

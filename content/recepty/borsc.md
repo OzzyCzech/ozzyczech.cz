@@ -1,6 +1,5 @@
 ---
 title: Boršč
-date: 2015-10-18
 tags: [recepty, polévky]
 ---
 
