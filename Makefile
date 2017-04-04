@@ -1,2 +1,2 @@
 default:
-	rm -rf docs && hugo
+	rm -rf public && hugo
