@@ -1,9 +1,9 @@
 ---
-title: JS
+title: Javascript Watchlist
 slug: js
 ---
 
-## JS Watchlist
+## Javascript Watchlist
 
 ### Dev
 
