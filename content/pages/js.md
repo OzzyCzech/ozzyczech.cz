@@ -6,12 +6,13 @@ slug: js
 
 ## Javascript Watchlist
 
-### Dev
+### Devstack
 
 * [Next.js](https://github.com/zeit/next.js) - Next.js is a minimalistic framework for server-rendered React applications.
 * [Neutrino](https://github.com/mozilla-neutrino/neutrino-dev) - Create and build modern JavaScript applications with zero initial configuration. 
 
 ### Desktop
+
 * [Electron](https://electron.atom.io/) - Build cross platform desktop apps with JavaScript, HTML, and CSS
 
 ### Frameworks
