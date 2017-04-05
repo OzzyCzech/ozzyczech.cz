@@ -10,7 +10,7 @@ slug: js
 
 * [Next.js](https://github.com/zeit/next.js) - Next.js is a minimalistic framework for server-rendered React applications.
 * [Neutrino](https://github.com/mozilla-neutrino/neutrino-dev) - Create and build modern JavaScript applications with zero initial configuration. 
-* [create-react-app](https://github.com/facebookincubator/create-react-app)
+* [create-react-app](https://github.com/facebookincubator/create-react-app) - Create React apps with no build configuration.
 
 ### Desktop
 
