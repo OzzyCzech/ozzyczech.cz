@@ -1,6 +1,5 @@
 ---
 title: Sýrové tyčinky
-date: 2012-12-05
 tags: [recepty, tyčinky]
 ---
 

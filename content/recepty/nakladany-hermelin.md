@@ -1,6 +1,5 @@
 ---
 title: Nakládaný hermelín
-date: 2006-11-25
 tags: [recepty, hermelín]
 ---
 

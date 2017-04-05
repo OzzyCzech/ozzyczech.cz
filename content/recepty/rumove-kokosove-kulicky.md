@@ -1,6 +1,5 @@
 ---
 title: Rumové kokosové kuličky
-date: 2015-10-18
 tags: [recepty, cukroví]
 ---
 
