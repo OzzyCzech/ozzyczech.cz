@@ -42,3 +42,4 @@ slug: js
 ## Reading list
 
 * [Marko vs React: An In-depth Look](https://hackernoon.com/marko-vs-react-an-in-depth-look-767de0a5f9a6)
+* [Webpack and Rollup: the same but different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c)

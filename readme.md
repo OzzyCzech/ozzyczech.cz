@@ -1,6 +1,6 @@
 # Personal blog
 
-This is markdown backup of my old blog (blog.omdesign.cz)
+View: http://blog.omdesign.cz
 
 ## Contact
 
