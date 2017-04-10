@@ -1,6 +1,6 @@
 ---
 title: Javascript Watchlist
-tags: [js, dev]
+tags: [js, dev, react, webpack, rollup, neutrino, nextjs]
 slug: js
 ---
 
