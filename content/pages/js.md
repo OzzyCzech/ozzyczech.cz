@@ -1,10 +1,10 @@
 ---
-title: Javascript Watchlist
+title: JS Watchlist
 tags: [js, dev, react, webpack, rollup, neutrino, nextjs]
 slug: js
 ---
 
-## Javascript Watchlist
+## JS Watchlist
 
 ### Devstack
 
@@ -33,7 +33,7 @@ slug: js
 * [Express](https://expressjs.com/)
 * [Koa](http://koajs.com/) - next generation web framework for node.js
 
-### Apps & Tools & Libs
+### Libraries
 
 * [gocommerce](https://github.com/netlify/gocommerce) - A small go based API for static e-commerce sites.
 * [Simple MD](https://github.com/NextStepWebs/simplemde-markdown-editor) - A simple, beautiful, and embeddable JavaScript Markdown editor.
