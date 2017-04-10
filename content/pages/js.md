@@ -6,16 +6,35 @@ slug: js
 
 ## JS Watchlist
 
+<img src="/img/2017/universal-standard.png" class="center" >
+
 ### Devstack
 
 * [Next.js](https://github.com/zeit/next.js) - Next.js is a minimalistic framework for server-rendered React applications.
 * [Neutrino](https://github.com/mozilla-neutrino/neutrino-dev) - Create and build modern JavaScript applications with zero initial configuration. 
 * [create-react-app](https://github.com/facebookincubator/create-react-app) - Create React apps with no build configuration.
 
-### Building process
+### Editing
+
+* [Visual Studio Code](https://code.visualstudio.com/download) - Free and open source. Integrated Git, debugging and extensions.
+* [Atom](https://atom.io/) - A hackable text editor for the 21st Century
+
+### Building
 
 * [Webpack](https://webpack.js.org/) - Webpack is a module bundler for JavaScript 
 * [Rollup.js](https://rollupjs.org/) - Rollup is a module bundler for JavaScript which compiles small pieces of code into a something larger and more complex, such as a library or application.
+
+### Coding
+
+* [ESLint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX
+
+### Dependency management
+
+* [Yarn](https://yarnpkg.com/lang/en/) - Fast, reliable, and secure dependency management
+
+### Testing
+
+* 
 
 ### UI Frameworks
 
@@ -28,7 +47,7 @@ slug: js
 
 * [Electron](https://electron.atom.io/) - Build cross platform desktop apps with JavaScript, HTML, and CSS
 
-### Frameworks
+### Node.js frameworks
 
 * [Express](https://expressjs.com/)
 * [Koa](http://koajs.com/) - next generation web framework for node.js
