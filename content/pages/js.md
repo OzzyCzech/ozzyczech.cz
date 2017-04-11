@@ -1,10 +1,10 @@
 ---
-title: JS Watchlist
+title: JS List
 tags: [js, dev, react, webpack, rollup, neutrino, nextjs]
 slug: js
 ---
 
-## JS Watchlist
+## JS List
 
 <img src="/img/2017/universal-standard.png" class="center" >
 
@@ -19,22 +19,24 @@ slug: js
 * [Visual Studio Code](https://code.visualstudio.com/download) - Free and open source. Integrated Git, debugging and extensions.
 * [Atom](https://atom.io/) - A hackable text editor for the 21st Century
 
-### Building
+### Bundlers
 
 * [Webpack](https://webpack.js.org/) - Webpack is a module bundler for JavaScript 
 * [Rollup.js](https://rollupjs.org/) - Rollup is a module bundler for JavaScript which compiles small pieces of code into a something larger and more complex, such as a library or application.
 
-### Coding
+### QA Tools
 
-* [ESLint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX
+* [ESLint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in JavaScript.
 
 ### Dependency management
 
 * [Yarn](https://yarnpkg.com/lang/en/) - Fast, reliable, and secure dependency management
 
-### Testing
+### Testing Frameworks
 
-* 
+* [mocha](https://github.com/mochajs/mocha) - Simple, flexible, fun javascript test framework for node.js & the browser.
+* [jasmine](https://github.com/jasmine/jasmine) - DOM-less simple JavaScript testing framework.
+* [ava](https://github.com/avajs/ava) - 🚀 Futuristic JavaScript test runner
 
 ### UI Frameworks
 
@@ -62,3 +64,8 @@ slug: js
 
 * [Marko vs React: An In-depth Look](https://hackernoon.com/marko-vs-react-an-in-depth-look-767de0a5f9a6)
 * [Webpack and Rollup: the same but different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c)
+
+### List of lists
+
+* [Awesome Javascript List](https://github.com/sorrycc/awesome-javascript)
+* [Must-watch videos list](https://github.com/bolshchikov/js-must-watch)
