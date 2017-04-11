@@ -68,4 +68,3 @@ slug: js
 ### List of lists
 
 * [Awesome Javascript List](https://github.com/sorrycc/awesome-javascript)
-* [Must-watch videos list](https://github.com/bolshchikov/js-must-watch)
