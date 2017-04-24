@@ -69,6 +69,6 @@ slug: js
 
 * [Awesome Javascript List](https://github.com/sorrycc/awesome-javascript)
 
-### E-learning
+### E-learnings
 
 * [Survive JS: Webpack](https://survivejs.com/webpack)
