@@ -68,3 +68,7 @@ slug: js
 ### List of lists
 
 * [Awesome Javascript List](https://github.com/sorrycc/awesome-javascript)
+
+### E-learning
+
+* [Survive JS: Webpack](https://survivejs.com/webpack)
