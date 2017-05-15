@@ -1,6 +1,6 @@
 ---
 title: Webdesign list
-tags: [js, nodejs, list]
+tags: [js, webdesign, nodejs, list]
 slug: wdl
 ---
 
