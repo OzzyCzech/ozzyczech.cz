@@ -1,7 +1,7 @@
 ---
 title: Jak (ne)napsat diplomku
 date: 2007-12-12
-tags: [student, diplomka, lifehacker]
+tags: [lifehacker]
 ---
 
 

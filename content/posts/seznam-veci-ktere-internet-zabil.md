@@ -1,7 +1,7 @@
 ---
 title: Seznam věcí které Internet zabil
 date: 2013-01-08
-tags: [internet, zamyšlení]
+tags: [internet]
 ---
 
 

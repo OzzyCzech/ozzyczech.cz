@@ -13,34 +13,26 @@
 	{{- partial "seo/twitter_cards.html" . -}}
 	{{- partial "seo/open_graph.html" . -}}
 	{{- partial "seo/schema.html" . -}}
-	{{- if .RSSlink -}}
-	<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
-	<link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
-	{{- end -}}
-	{{ "<!-- Fonts, jQuery and js -->" | safeHTML }}
-	<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="{{ .Site.BaseURL }}/js/app.js"></script>
-	{{"<!-- Twitter boostrap -->" | safeHTML }}
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-	{{"<!-- highlight.js -->" | safeHTML }}
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+	{{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />{{ end }}		
+	<script src="{{ .Site.BaseURL }}/js/app.js"></script>		
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/monokai-sublime.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 	<link href="{{ .Site.BaseURL }}/css/style.css" rel="stylesheet">
 	<meta name="msvalidate.01" content="3A844D439E786F7E8FA940D153567FD3" />
 </head>
 <body>
 <header class="hidden-print">
-	<nav>
-		<ul>
-			<li><a href="https://omdesign.cz/">Home</a></li>
-			<li><a href="https://omdesign.cz/work">Work</a></li>
-			<li><a href="https://omdesign.cz/resume">Resume</a></li>
-			<li class="active"><a href="{{ .Site.BaseURL }}">Blog</a></li>
-			<li><a href="https://omdesign.cz/contact">Contact</a></li>
-			<li>{{ partial "search.html" . }}</li>
+	
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">		
+		<a class="navbar-brand" href="/">omBlog</a>	
+		<ul class="navbar-nav mr-auto">			
+			<li class="nav-item"><a href="/js" class="nav-link">Javascript</a></li>
+			<li class="nav-item"><a href="/recepty" class="nav-link">Recepty</a></li>
+			<li  class="nav-item"><a href="https://omdesign.cz" class="nav-link" title="Homepage">Contact</a></li>
 		</ul>
-	</nav>
+		{{ partial "search.html" . }}		 
+	</nav>	
 
 </header>

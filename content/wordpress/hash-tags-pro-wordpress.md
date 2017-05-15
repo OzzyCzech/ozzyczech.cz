@@ -1,7 +1,7 @@
 ---
 title: Hash tags pro Wordpress
 date: 2012-09-15
-tags: [hash, PHP, plugin, wordpress]
+tags: [PHP, wordpress]
 ---
 
 

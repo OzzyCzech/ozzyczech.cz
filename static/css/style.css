@@ -1,6 +1,6 @@
 @media not print {
 	body {
-		background: #eee;
+		background: #1e1e1e;		
 	}
 }
 
@@ -17,53 +17,17 @@ header input[type="search"]:focus {
 	color: #555;
 }
 
-header ul {
-	background:#1F1F21;
-	list-style-type: none;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:center;
-}
-
-header li.active a {
-	background: rgba(255, 255, 255, 0.1);
-}
-
-header ul li {
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-header ul li a,
-header ul li a:hover,
-header ul li a:focus,
-header ul li a:active,
-header ul li a:visited {
-	padding: 1.4rem 2.5rem;
-	font-size: 1.4rem;
-	color: #fff;
-	display: block;
-	text-decoration: none;
-	font-weight: 100;
-}
-
 section.articles {
 	display: flex;
 	flex-direction:column;
 }
 
 @media not print {
-	article {
-		background: #fff;
+	article {		
+		background:#fefefe;
 		margin: 2vmax auto;
-		width: 100%;
-		border: 1px solid #ddd;
-		padding: 3vmax 4vmax;
-		border-radius: 3px;
+		width: 100%;		
+		padding: 3vmax 4vmax;	
 	}
 
 	article h1:first-of-type {
@@ -100,11 +64,11 @@ article img[alt$="<"] {
 time {
 	font-size: 14px;
 	float: right;
-	color: #999;
+	color: #4c4c4c;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 800;
+	font-weight: 700;
 }
 
 article h1 a {
@@ -128,13 +92,14 @@ blockquote p {
 .tags {
 	text-align: justify;
 	padding: 2vh auto;
-	font-size: 22px;
+	font-size: 20px;
 	clear: both;
 }
 
 a.tag {
-	color: inherit;
+	color: #4c4c4c;
 }
+
 a:hover.tag  {
 	color:#014c8c;
 	text-decoration: underline;

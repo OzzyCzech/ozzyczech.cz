@@ -3,6 +3,7 @@
 <section class="container">
 	{{ $paginator := .Paginate .Data.Pages }}
 	{{ range $paginator.Pages }}
+
 	<article>
 		{{ if not .Date.IsZero }}
 		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Day }}. {{ index .Site.Params.Months (sub .Date.Month 1) }} {{ .Date.Year }}</time>
@@ -13,7 +14,8 @@
 	{{ end }}
 
 	{{ partial "pagination.html" . }}
-</section>
 
-{{ partial "tags.html" . }}
-{{ partial "footer.html" . }}
+	{{ partial "tags.html" . }}
+	
+	{{ partial "footer.html" . }}
+</section>

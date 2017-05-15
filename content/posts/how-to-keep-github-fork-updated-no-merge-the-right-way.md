@@ -1,7 +1,7 @@
 ---
 title: How to keep GitHub Fork Updated (no merge - the right way)
 date: 2014-02-11
-tags: [git, github, rebase]
+tags: [git, github]
 ---
 
 

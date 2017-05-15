@@ -1,6 +1,6 @@
 ---
 title: Quotes
-tags: [quotes]
+tags: []
 ---
 # Quotes
 

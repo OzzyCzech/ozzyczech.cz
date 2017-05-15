@@ -1,7 +1,7 @@
 ---
 title: Twitter Bootstrap compatible social login buttons
 date: 2015-01-02
-tags: [HTML, svg, oauth, bootstrap]
+tags: [HTML, svg, css, bootstrap]
 ---
 
 # Twitter Bootstrap compatible Login with Buttons
