@@ -1,10 +1,10 @@
 ---
-title: Webdesign list
+title: Webdesign digest list
 tags: [js, webdesign, nodejs, list]
 slug: wdl
 ---
 
-# Webdesign list
+# Webdesign digest list
 
 ## 05/2017
 
