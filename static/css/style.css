@@ -20,6 +20,7 @@ header input[type="search"]:focus {
 section.articles {
 	display: flex;
 	flex-direction:column;
+	margin:10px auto;
 }
 
 @media not print {
@@ -39,6 +40,9 @@ section.articles {
 	}
 }
 
+.btn-outline-secondary:hover {
+	color: #222;
+}
 
 article img {
  	max-width: 100%;

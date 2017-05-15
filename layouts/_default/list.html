@@ -2,7 +2,7 @@
 
 <section class="container">
 	{{ $paginator := .Paginate .Data.Pages }}
-	{{ range $paginator.Pages }}
+	{{ range $paginator.Pages }}	
 
 	<article>
 		{{ if not .Date.IsZero }}

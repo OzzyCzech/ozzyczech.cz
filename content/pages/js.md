@@ -1,10 +1,10 @@
 ---
-title: JS List
+title: JavaScript current state list!
 tags: [js, dev, react, webpack, rollup, neutrino, nextjs]
 slug: js
 ---
 
-## JS List
+## JavaScript current state list!
 
 <img src="/img/2017/universal-standard.png" class="center" >
 
