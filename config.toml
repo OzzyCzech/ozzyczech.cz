@@ -1,7 +1,7 @@
 baseurl = "http://blog.omdesign.cz"
 contentdir = "./content"
 languageCode = "cs-cz"
-title = "Blog omdesign.cz"
+title = "omBlog"
 publishdir = "./public"
 canonifyurls = true
 disableHugoGeneratorInject = true
