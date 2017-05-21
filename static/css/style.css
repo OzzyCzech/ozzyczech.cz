@@ -118,3 +118,31 @@ pre {
 	border-radius: 2px;
 	border: 0;
 }
+
+/* Pagination */
+
+.page-link {
+	background: rgba(0, 0, 0, .4);
+	border:0;
+	color: #fff;	
+}
+
+.page-link:focus, .page-link:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff;
+    background-color: #292b2c;    
+}
+
+.page-item.disabled .page-link {
+    color: inherit;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, .1);    
+}
+

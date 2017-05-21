@@ -23,17 +23,20 @@ tags: [backup]
 
 ### NAS Storages
 
-* WD My Cloud Mirror Gen 2
-* WD My Cloud EX2 Ultra
-* QNAP TS-251
-* QNAP TAS-168 - Android based NAS
+* WD My Cloud Mirror Gen 2 -  [Mac](http://mycloud.com/learn/?id=mycloudmirror#backup-mac), [Windows](http://mycloud.com/learn/?id=mycloudmirror#backup-windows)
+* WD My Cloud EX2 Ultra - [Mac](http://mycloud.com/learn/?id=MyCloudEX2Ultra#backup-mac), [Windows](http://mycloud.com/learn/?id=MyCloudEX2Ultra#backup-windows)
+* QNAP TS-251 - [Mac](https://www.qnap.com/en-us/how-to/tutorial/article/time-machine-support)
 
 ### Mobile
 
-* [iPhone](https://support.apple.com/en-us/HT203977)
+* [Backup iPhone](https://support.apple.com/en-us/HT203977)
 
 ### Desktop
 
-* [TimeMachine](https://support.apple.com/en-us/HT201250) on Mac
-* [Windows 10 Backup](https://support.microsoft.com/en-us/help/17143/windows-10-back-up-your-files)
-* [Crashplan](https://www.crashplan.com/en-us/)
+* [TimeMachine](https://support.apple.com/en-us/HT201250) - Mac only
+* [Windows 10 Backup](https://support.microsoft.com/en-us/help/17143/windows-10-back-up-your-files) - Windows only
+* [Crashplan](https://www.crashplan.com/en-us/) - multiplatform
+
+### Tools
+
+* [rclone](https://rclone.org/) - rclone is a command line program to sync files to cloud storages

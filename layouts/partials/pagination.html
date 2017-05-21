@@ -1,8 +1,8 @@
 {{ if gt .Paginator.TotalPages 1 }}
 <nav aria-label="Page navigation">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link {{ if not .Paginator.HasPrev }}disabled{{ end }}"
+  <ul class="pagination pagination-lg justify-content-center">
+    <li class="page-item {{ if not .Paginator.HasPrev }}disabled{{ end }}">
+      <a class="page-link"
       aria-label="Previous"
       href="{{ if .Paginator.HasPrev }}{{ .Paginator.Prev.URL }}{{ else }}#{{ end }}">
       <span aria-hidden="true">&laquo;</span>
@@ -16,15 +16,14 @@
   </li>
   {{ end }}
 
-  <li class="page-item">
-    <a class="page-link {{ if not .Paginator.HasNext }}disabled{{ end }}"
+  <li class="page-item {{ if not .Paginator.HasNext }}disabled{{ end }}">
+    <a class="page-link"
     aria-label="Next"
     href="{{ if .Paginator.HasNext }}{{ .Paginator.Next.URL }}{{ else }}#{{ end }}">
     <span aria-hidden="true">&raquo;</span>
     <span class="sr-only">Next</span>
   </a>
   </li>
-
 </ul>
 </nav>
 {{ end }}
