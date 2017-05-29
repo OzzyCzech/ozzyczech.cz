@@ -1,4 +1,4 @@
-baseurl = "http://blog.omdesign.cz"
+baseurl = "https://blog.omdesign.cz"
 contentdir = "./content"
 languageCode = "cs-cz"
 title = "omBlog"
