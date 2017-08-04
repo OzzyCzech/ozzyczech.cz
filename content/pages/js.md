@@ -68,6 +68,10 @@ slug: js
 * [gatsbyjs](https://www.gatsbyjs.org/) - Blazing-fast static site generator for React
 * [phenomic](https://phenomic.io/) - Modular website compiler
 
+## React related
+
+* [Glamorous](https://glamorous.rocks/) - Maintainable CSS with React
+
 ## Reading list
 
 * [Marko vs React: An In-depth Look](https://hackernoon.com/marko-vs-react-an-in-depth-look-767de0a5f9a6)
