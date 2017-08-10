@@ -9,7 +9,7 @@ tags: [automator, mac, osx, shell]
 
 Run [Automator](http://en.wikipedia.org/wiki/Automator_(software)) and create new Application. Add task **Run Shell script** and paste follow code:
 
-```
+```bash
 STATUS=`defaults read com.apple.finder AppleShowAllFiles`
 if [ $STATUS == YES ];
 then

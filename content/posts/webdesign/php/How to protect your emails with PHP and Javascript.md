@@ -8,7 +8,7 @@ tags: [email, js, PHP, antispam]
 
 Working with or without javascript it's combine two technique for email protection [ROT13](http://en.wikipedia.org/wiki/ROT13) and CSS
 
-```
+```php
 function mail($email, $text = null) {
  return '<script type="text/javascript">document.write("' .
  addslashes(

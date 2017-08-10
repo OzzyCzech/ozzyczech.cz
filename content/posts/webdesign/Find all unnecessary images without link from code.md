@@ -8,13 +8,13 @@ tags: [bash, howto]
 
 How to find all unnecessary images in your website project?
 
-```
+```bash
 find public/images -type f|while read line ; do printf "$(basename $line) > " && ack --nofilter -l -c "$(basename $line)" | wc -l; done
 ```
 
  Output will be:
 
-```
+```bash
 sprite.gif > 0
 ajax-loader-bg-f9.gif > 2
 ajax-loader-bg-trans.gif > 3

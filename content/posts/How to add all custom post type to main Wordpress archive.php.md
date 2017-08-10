@@ -8,7 +8,7 @@ tags: [wordpress, php]
 
 Default archive shows only `post` type if you need show all post types just add follow code to `function.php`
 
-```
+```php
 add_filter(
 'pre_get_posts', function ($query) {
         if (

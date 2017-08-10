@@ -14,7 +14,7 @@ tags: [backup]
 ### Commercial cloud storage
 
 * [Amazon Glacier](https://aws.amazon.com/glacier/) - Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup.
-* [Amazon Drive](https://www.amazon.com/clouddrive/home) - Unlimited Secure Storage from Amazon ($59.99 per year)
+* [Amazon Drive](https://www.amazon.com/clouddrive/home) - Secure Storage from Amazon (from $11 per year)
  
 ### Cold storage
 

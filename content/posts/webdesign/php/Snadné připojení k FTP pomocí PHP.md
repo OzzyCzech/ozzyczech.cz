@@ -12,7 +12,7 @@ bohužel nepodporuje. Proto jsem napsal jednoduchou funkci, která patřičně r
 zaslanou adresu, vytvoří nové připojení, přihlásí uživatele a změní cestu.
 
 
-```
+```php
 /**
  * Vraci ID FTP pripojeni na zaklade zadane URL
  * ftp://username:password@sld.domain.tld:21/path1/path2/

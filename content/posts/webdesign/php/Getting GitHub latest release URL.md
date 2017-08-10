@@ -8,7 +8,7 @@ tags: [github, PHP, tip]
 
 Do you need **Download Latest Version** button? Try follow PHP code:
 
-```
+```php
 function getLatestTagUrl($repository, $default = 'master') {
     $file = @json_decode(@file_get_contents("https://api.github.com/repos/$repository/tags", false,
         stream_context_create(['http' => ['header' => "User-Agent: Vestibulum\r\n"]])

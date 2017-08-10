@@ -8,7 +8,7 @@ tags: [nodejs, npm, tip]
 
 Install follow package [npm-check-updates](https://npmjs.org/package/npm-check-updates) by
 
-```
+```bash
 npm install -g npm-check-updates
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: Parkinsonův zákon
 date: 2008-12-05
-tags: [lifehacker]
+tags: [lifehack]
 ---
 
 # Parkinsonův zákon

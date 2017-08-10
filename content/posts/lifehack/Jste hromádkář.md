@@ -1,7 +1,7 @@
 ---
-title: Jste hromádkář, nebo ne?
+title: Jste hromádkář
 date: 2008-01-16
-tags: [lifehacker]
+tags: [lifehack]
 ---
 
 # Jste hromádkář, nebo ne?

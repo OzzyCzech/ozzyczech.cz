@@ -9,7 +9,7 @@ tags: [bash]
 
 V mém příkladu počítám počet řádků PHP kódu:
 
-```
+```bash
 grep -v '^ *$' `find . -iname "*.php"` | wc -l
 ```
 
