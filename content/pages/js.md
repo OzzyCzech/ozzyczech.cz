@@ -1,6 +1,6 @@
 ---
 title: JavaScript current state list!
-tags: [js, dev, react, webpack, rollup, neutrino, nextjs]
+tags: [js]
 slug: js
 ---
 
