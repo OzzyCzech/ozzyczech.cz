@@ -1,7 +1,7 @@
 ---
 title: List all mounted drives on mac
 date: 2013-03-11
-tags: [mac, terminal]
+tags: [mac, shell]
 ---
 
 
