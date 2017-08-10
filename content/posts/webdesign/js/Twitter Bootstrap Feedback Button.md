@@ -1,7 +1,7 @@
 ---
 title: Twitter Bootstrap Feedback Button
 date: 2015-02-03
-tags: [boostrap, js, webdesign]
+tags: [bootstrap, js, webdesign]
 ---
 
 # Twitter Bootstrap Feedback Button
