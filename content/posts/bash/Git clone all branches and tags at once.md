@@ -12,7 +12,7 @@ Follow script clone all branches and tags at once:
 ```bash
 #!/bin/bash
 git fetch --all --tags
-for branch in `git branch -r --format="%(refname:short)" | grep -v origin/master | grep -v origin/HEAD | sed 's/origin\///'`
+for branch in `git branch -r --format="%(refname:short)" | sed 's/origin\///'`
   do git branch -f --track "$branch" "origin/$branch"
 done
 ```
@@ -20,7 +20,7 @@ done
 Single line version:
 
 ```bash
-git fetch --all --tags; for branch in `git branch -r --format="%(refname:short)" | grep -v origin/master | grep -v origin/HEAD | sed 's/origin\///'`; do git branch -f --track "$branch" "origin/$branch" ; done ;
+git fetch --all --tags; for branch in `git branch -r --format="%(refname:short)" | sed 's/origin\///'`; do git branch -f --track "$branch" "origin/$branch" ; done ;
 ```
 
 
