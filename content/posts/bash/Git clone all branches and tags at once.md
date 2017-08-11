@@ -48,4 +48,3 @@ Push all changes to **alternative** remote
 git push alternative --all # push all braneches
 git push alternative --tags # push all tags
 ```
-Then you can for example add another remote `git remote add alt git@github.com:....git` and push whole branches and tags to this rem
