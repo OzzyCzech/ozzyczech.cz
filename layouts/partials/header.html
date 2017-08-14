@@ -14,8 +14,8 @@
 	{{- partial "seo/open_graph.html" . -}}
 	{{- partial "seo/schema.html" . -}}
 	{{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />{{ end }}		
-	<script src="{{ .Site.BaseURL }}/js/app.js"></script>		
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+	<script src="{{ .Site.BaseURL }}/js/app.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
@@ -25,7 +25,7 @@
 <body>
 <header class="hidden-print">
 	
-	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">		
+	<nav class="navbar navbar-expand-lg navbar-light navbar-dark">
 		<a class="navbar-brand" href="/">omBlog</a>	
 		<ul class="navbar-nav mr-auto">			
 			<li class="nav-item"><a href="/tags/js" class="nav-link">Js</a></li>
