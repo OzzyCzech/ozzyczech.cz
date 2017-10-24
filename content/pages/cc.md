@@ -15,7 +15,8 @@ slug: cc
 - https://evercoin.com/ - Cryptocurrency Exchange
 - https://coinmarketcap.com/ - CryptoCurrency Market Capitalizations
 - https://www.gdax.com/trade/BTC-USD - 
-
+- https://www.kraken.com/
+- https://bittrex.com/
 
 ## Resources
 
