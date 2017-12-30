@@ -22,4 +22,3 @@ tag = "tags"
 [permalinks]
 posts = "/:slug/"
 pages = "/:slug/"
-recepty = "/:section/:slug/"
