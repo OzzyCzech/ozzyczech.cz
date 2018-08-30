@@ -1,5 +1,0 @@
-<div class="tags hidden-print">
-	{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-	<a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" class="tag">#{{ $name }}</a>
-	{{ end }}
-</div>

@@ -1,6 +1,6 @@
 # Personal blog
 
-View: http://blog.omdesign.cz
+View: https://blog.omdesign.cz
 
 ## Contact
 
