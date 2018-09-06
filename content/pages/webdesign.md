@@ -31,6 +31,14 @@ tags: [webdesign, images]
 * https://themeforest.net/category/wordpress/corporate
 
 
+### Email sending
+
+* https://postmarkapp.com/
+* https://www.mailgun.com/
+* https://aws.amazon.com/ses/
+* https://sendgrid.com/
+* http://www.mandrill.com/
+
 ### JS Libs
 
 * https://alertifyjs.org/

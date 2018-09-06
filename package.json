@@ -1,5 +1,14 @@
 {
+  "bin": {
+    "processmd": "./cli.js"
+  },
   "dependencies": {
-    "processmd": "^4.2.1"
+    "@sindresorhus/slugify": "^0.3.0",
+    "globby": "^6.1.0",
+    "js-yaml": "^3.8.3",
+    "marked": "^0.5.0",
+    "mkdirp": "^0.5.1",
+    "processmd": "^4.2.1",
+    "yargs": "^7.1.0"
   }
 }
