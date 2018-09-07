@@ -1,253 +1,135 @@
-'use strict'
+'use strict';
 
+const {promisify, inspect} = require('util');
+
+const fs = require('fs-extra');
+const readFile = promisify(fs.readFile);
+const outputFile = promisify(fs.outputFile);
+const path = require('path');
+const marked = require('marked');
+const globby = require('globby');
 const slugify = require('@sindresorhus/slugify');
-const fs = require('fs')
-const path = require('path')
-const globby = require('globby')
-const marked = require('marked')
-const yaml = require('js-yaml')
-const mkdirp = require('mkdirp')
-const defaultOptions = require('./defaultOptions')
+const yaml = require('js-yaml');
 
-const EXTENSIONS = {
-	JSON: '.json',
-	MD: '.md',
-	YML: '.yml'
-}
+const ejsRenderFile = promisify(require('ejs').renderFile);
 
 
-// Main function
-function processmd(options, callback) {
-	options = Object.assign({}, defaultOptions, options)
+const mtime = async file => {
+	const stats = await fs.stat(file);
+	return new Date(inspect(stats.mtime));
+};
 
+/**
+ * Read single page from markdown
+ * @param file
+ * @returns {Promise<*>}
+ */
+const getPage = async (file) => {
+	let content = await readFile(file, 'utf8');
 
-	const globs = (options.files || []).concat(options._ || [])
-	if (globs.length === 0) {
-		throw new Error('You must pass file patterns in to be processed.')
+	let frontmatter = {};
+	if (content.indexOf('---') === 0) {
+		const meta = content.match(/^---([\s\S]+?)---/);
+		frontmatter = yaml.safeLoad(meta[1]);
+		content = content.substring(meta[0].length).trim()
 	}
 
-	const p = new Promise(function (resolve, reject) {
-		globby(globs).then(function (result) {
-			const commonDir = findCommonDir(result)
+	let page = Object.assign({}, frontmatter, {body: marked(content)});
 
-			options._commonDir = commonDir
+	page.title = page.title || page.body.match(/>(.*?)<\/h/i)[1];
+	page.slug = page.slug || slugify(page.title);
+	page.date = page.date || mtime(file);
+	page.output = page.output || page.slug + '.html';
+	// page.layout = page.layout || 'layout.html'; // TODO
 
-			if (options.watch) {
-				const d = debounce(
-						function () {
-							processOutput()
-						},
-						options.watchDebounce,
-						true
-				)
+	return page;
+};
 
-				// fs.watch isn't supported on linux.
-				try {
-					fs.watch(commonDir, {recursive: true}, function (event, filename) {
-						d()
-					})
-				} catch (e) {
-					console.log(e);
-				}
-			}
-
-			function processOutput() {
-				const summaryObj = {}
-				summaryObj.fileMap = {}
-				summaryObj.sourceFileArray = result
-				let finishCount = 0
-				result.forEach(function (file, i) {
-
-					processYamlAndMarkdown(file, options, function (newFile, content) {
-						finishCount++
-
-						// Replace backslashes with forward slashes to keep windows consistent.
-						const filename = replaceBackslashes(newFile)
-
-						// Remove body props from summary.
-						if (!options.includeBodyProps) {
-							content = removeBodyProps(content)
-						}
-
-						summaryObj.fileMap[filename] = JSON.parse(content);
-						summaryObj.fileMap[filename].omg = slugify(filename);
-
-						if (finishCount === result.length) {
-							if (options.summaryOutput) {
-								writeFileContent(options.summaryOutput, JSON.stringify(summaryObj, null, 2), function (e, d) {
-									resolve(summaryObj)
-								})
-							} else {
-								resolve(summaryObj)
-							}
-						}
-					})
-				})
-			}
-
-			processOutput()
-		})
-	})
-
-	// Enable callback support too.
-	if (callback) {
-		p.then(result => {
-			callback(null, result)
-		})
-	}
-
-	return p
-}
-
-function processYamlAndMarkdown(file, options, cb) {
-	readFileContent(file, (err, file, fileContent) => {
-		if (err) throw (err);
-
-		let content = fileContent.trim();
-		let frontmatter = {};
-		let jsonData = {};
-
-		if (fileContent.indexOf('---') === 0) {
-			const splitContent = fileContent.match(/^-{3}[\s\S]+?-{3}/);
-			frontmatter = yaml.safeLoad(splitContent[0].substring(3, splitContent[0].length - 3));
-			content = fileContent.substring(splitContent[0].length).trim()
-		}
-
-		jsonData = Object.assign({}, frontmatter, {
-			html: marked(content)
-		});
-
-		// Rename to the new file.
-		const baseFilename = file.replace(options._commonDir, '')
-		const parsedPath = path.parse(path.join(options.outputDir, baseFilename))
-		const sourceExt = parsedPath.ext
-		const sourceBase = parsedPath.base
-
-		jsonData.title = jsonData.title || jsonData.html.match(/>(.*?)<\//)[1]
-		jsonData.slug = slugify(jsonData.title);
-
-		const newPathObj = Object.assign({}, parsedPath, {
-			ext: EXTENSIONS.JSON,
-			base: jsonData.slug + EXTENSIONS.JSON
-		});
-		const newPath = path.format(newPathObj);
-
-		jsonData.dir = replaceBackslashes(path.dirname(newPath));
-		jsonData.base = path.basename(newPath);
-		jsonData.ext = EXTENSIONS.JSON
-		jsonData.sourceBase = sourceBase
-		jsonData.sourceExt = sourceExt
-
-		// TODO: make this a default callback
-		// 2 spaces indent for stringify.
-		writeFileContent(newPath, JSON.stringify(jsonData, null, 2), function (e, d) {
-			cb(newPath, JSON.stringify(jsonData))
-		})
-	})
-}
-
-
-// Read a file making sure that it is not a directory first.
-function readFileContent(file, cb) {
-	if (!file || fs.lstatSync(file).isDirectory()) {
-		return null
-	}
-	fs.readFile(file, (err, data) => {
-		cb(err, file, data && data.toString())
-	})
-}
-
-// Write a file making sure the directory exists first.
-function writeFileContent(file, content, cb) {
-	mkdirp(path.dirname(file), function (err) {
-		if (err) throw (err)
-		fs.writeFile(file, content, (e, data) => {
-			cb(e, data)
-		})
-	})
-}
-
-// Replace backslashes for windows paths.
-function replaceBackslashes(str) {
-	return str.split('\\').join('/')
-}
-
-// Determine if its data for a markdown file.
-function isMarkdown(data) {
-	return Boolean(data.bodyContent && data.bodyHtml)
-}
-
-// Find the common parent directory given an array of files.
-function findCommonDir(files) {
-	const path = files.reduce((path, file, fileIndex) => {
-		// If it's a file not in any directory then just skip it
-		// by assigning the previous value.
-		if (!file.includes('/')) {
-			return path
-		}
-
-		// No path set yet
-		if (!path && fileIndex === 0) {
-			return file.substr(0, file.lastIndexOf('/') + 1)
-		} else {
-			// Get index of last shared character
-			let sharedIndex = Array.from(path).findIndex((element, index) => {
-				if (file[index] !== element) {
-					return index - 1
-				}
+/**
+ * Read all pages at once...
+ * @param files
+ * @returns {Promise<Array>}
+ */
+const getPages = async (files) => {
+	return await Promise.all(
+			files.map(async file => {
+				return await getPage(file);
 			})
+	)
+};
 
-			// Round to nearest full directory
-			if (sharedIndex > -1) {
-				sharedIndex = path.substr(0, sharedIndex).lastIndexOf('/')
-			}
 
-			// Return shared directory path
-			if (sharedIndex > -1) {
-				return path.substr(0, sharedIndex + 1)
-			} else if (file.startsWith(path)) {
-				return path
-			}
+const paginate = (array, page_size, page_number) => {
+	--page_number; // because pages logically start with 1, but technically with 0
+	return array.slice(page_number * page_size, (page_number + 1) * page_size);
+};
 
-			// No shared directory path
-			return ''
-		}
-	}, '')
 
-	return path
-}
+/**
+ * TODO https://github.com/markedjs/marked/issues/362 YouTube and others
+ * @param options
+ * @returns {Promise<void>}
+ */
+const sphido = async (options) => {
 
-// Remove body props from summary.
-function removeBodyProps(content) {
+	// marked.setOptions(options.marked);
+
 	try {
-		const json = JSON.parse(content)
-		delete json.bodyContent
-		delete json.bodyHtml
-		return JSON.stringify(json)
-	} catch (e) {
-	}
-}
 
-// Debounce from: https://davidwalsh.name/function-debounce
-function debounce(func, wait, immediate) {
-	var timeout
-	return function () {
-		var context = this
-		var args = arguments
-		var later = function () {
-			timeout = null
-			if (!immediate) func.apply(context, args)
-		}
-		var callNow = immediate && !timeout
-		clearTimeout(timeout)
-		timeout = setTimeout(later, wait)
-		if (callNow) func.apply(context, args)
+		const files = await globby(options.input + '/**/*.md');
+		const pages = await getPages(files);
+
+
+		// sort pages by date
+		pages.sort(function (a, b) {
+			return new Date(b.date) - new Date(a.date);
+		});
+
+
+		// console.log(paginate(pages, 2, 1));
+
+		await files.forEach(async (file) => {
+
+			// read input file
+			let page = await getPage(file);
+			let out = path.join(options.output, path.dirname(file).replace(options.input, ''), page.slug + '.html');
+
+			// write output file
+			await outputFile(out, `<!DOCTYPE html>
+			<html lang="cs" dir="ltr">
+			<head>
+				<meta charset="UTF-8">
+				<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+				<title>` + page.title + ` | blog.omdesign.cz</title>
+			</head>
+			<body class="bg-dark"><div class="container"><main class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded">` + page.body + `</main></div></body></html>`
+			);
+
+		});
+
+		// index.html
+		let index = pages.reduce((articles, p) => articles + '<article class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded">' + p.body + '</article>', '');
+
+		await outputFile(path.join(options.output, 'index.html'),
+				`<!DOCTYPE html>
+			<html lang="cs" dir="ltr">
+			<head>
+				<meta charset="UTF-8">
+				<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+				</head><<body class="bg-dark"><div class="container">` + index + '</div></body></html>'
+		);
+
+
+		// TODO Render page/index.html page/1/index.html, page/2/index.html ...
+
+
+		// TODO Render tag/[tag]/index.html
+
+	} catch (e) {
+		console.error(e);
 	}
-}
+};
 
 module.exports = {
-	default: processmd,
-	_readFileContent: readFileContent, // for testing.
-	_writeFileContent: writeFileContent, // for testing.
-	_findCommonDir: findCommonDir // for testing.
-}
+	default: sphido,
+};

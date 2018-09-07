@@ -4,7 +4,6 @@ document.onreadystatechange = function () {
 	Array.from(tables).forEach(function(table) {
 		table.classList.add('table');
 		table.classList.add('table-striped');
-		table.classList.add('table-condensed');
 	});
   }
-}
+};
