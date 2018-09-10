@@ -10,9 +10,7 @@ const marked = require('marked');
 const globby = require('globby');
 const slugify = require('@sindresorhus/slugify');
 const yaml = require('js-yaml');
-
 const ejsRenderFile = promisify(require('ejs').renderFile);
-
 
 const mtime = async file => {
 	const stats = await fs.stat(file);
@@ -34,13 +32,14 @@ const getPage = async (file) => {
 		content = content.substring(meta[0].length).trim()
 	}
 
-	let page = Object.assign({}, frontmatter, {body: marked(content)});
+	let page = Object.assign({}, frontmatter, {
+		file: file,
+		body: marked(content)
+	});
 
 	page.title = page.title || page.body.match(/>(.*?)<\/h/i)[1];
 	page.slug = page.slug || slugify(page.title);
 	page.date = page.date || mtime(file);
-	page.output = page.output || page.slug + '.html';
-	// page.layout = page.layout || 'layout.html'; // TODO
 
 	return page;
 };
@@ -57,7 +56,6 @@ const getPages = async (files) => {
 			})
 	)
 };
-
 
 const paginate = (array, page_size, page_number) => {
 	--page_number; // because pages logically start with 1, but technically with 0
@@ -79,21 +77,12 @@ const sphido = async (options) => {
 		const files = await globby(options.input + '/**/*.md');
 		const pages = await getPages(files);
 
+		for await (const page of pages) {
+			page.output = path.join(options.output, path.dirname(page.file).replace(options.input, ''), page.slug + '.html');
 
-		// sort pages by date
-		pages.sort(function (a, b) {
-			return new Date(b.date) - new Date(a.date);
-		});
+			let layout = page.layout || options.layout || 'layout.ejs';
 
-
-		// console.log(paginate(pages, 2, 1));
-
-		await files.forEach(async (file) => {
-
-			// read input file
-			let page = await getPage(file);
-			let out = path.join(options.output, path.dirname(file).replace(options.input, ''), page.slug + '.html');
-
+			/*
 			// write output file
 			await outputFile(out, `<!DOCTYPE html>
 			<html lang="cs" dir="ltr">
@@ -104,8 +93,15 @@ const sphido = async (options) => {
 			</head>
 			<body class="bg-dark"><div class="container"><main class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded">` + page.body + `</main></div></body></html>`
 			);
+			*/
+		}
 
+		// sort pages by date
+		pages.sort(function (a, b) {
+			return new Date(b.date) - new Date(a.date);
 		});
+
+		console.log(pages);
 
 		// index.html
 		let index = pages.reduce((articles, p) => articles + '<article class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded">' + p.body + '</article>', '');
