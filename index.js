@@ -1,70 +1,12 @@
 'use strict';
 
-const {promisify, inspect} = require('util');
-
 const fs = require('fs-extra');
-const readFile = promisify(fs.readFile);
-const outputFile = promisify(fs.outputFile);
 const path = require('path');
-const marked = require('marked');
 const globby = require('globby');
-const slugify = require('@sindresorhus/slugify');
-const yaml = require('js-yaml');
-const ejsRenderFile = promisify(require('ejs').renderFile);
 
-const mtime = async file => {
-	const stats = await fs.stat(file);
-	return new Date(inspect(stats.mtime));
-};
+const {getPages, toFile, getTags} = require('./src');
 
 /**
- * Read single page from markdown
- * @param file
- * @returns {Promise<*>}
- */
-const getPage = async (file) => {
-	let content = await readFile(file, 'utf8');
-
-	let frontmatter = {};
-	if (content.indexOf('---') === 0) {
-		const meta = content.match(/^---([\s\S]+?)---/);
-		frontmatter = yaml.safeLoad(meta[1]);
-		content = content.substring(meta[0].length).trim()
-	}
-
-	let page = Object.assign({}, frontmatter, {
-		file: file,
-		body: marked(content)
-	});
-
-	page.title = page.title || page.body.match(/>(.*?)<\/h/i)[1];
-	page.slug = page.slug || slugify(page.title);
-	page.date = page.date || mtime(file);
-
-	return page;
-};
-
-/**
- * Read all pages at once...
- * @param files
- * @returns {Promise<Array>}
- */
-const getPages = async (files) => {
-	return await Promise.all(
-			files.map(async file => {
-				return await getPage(file);
-			})
-	)
-};
-
-const paginate = (array, page_size, page_number) => {
-	--page_number; // because pages logically start with 1, but technically with 0
-	return array.slice(page_number * page_size, (page_number + 1) * page_size);
-};
-
-
-/**
- * TODO https://github.com/markedjs/marked/issues/362 YouTube and others
  * @param options
  * @returns {Promise<void>}
  */
@@ -73,53 +15,41 @@ const sphido = async (options) => {
 	// marked.setOptions(options.marked);
 
 	try {
-
 		const files = await globby(options.input + '/**/*.md');
 		const pages = await getPages(files);
 
+		// create single pages
 		for await (const page of pages) {
 			page.output = path.join(options.output, path.dirname(page.file).replace(options.input, ''), page.slug + '.html');
-
-			let layout = page.layout || options.layout || 'layout.ejs';
-
-			/*
-			// write output file
-			await outputFile(out, `<!DOCTYPE html>
-			<html lang="cs" dir="ltr">
-			<head>
-				<meta charset="UTF-8">
-				<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-				<title>` + page.title + ` | blog.omdesign.cz</title>
-			</head>
-			<body class="bg-dark"><div class="container"><main class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded">` + page.body + `</main></div></body></html>`
-			);
-			*/
+			let template = page.template || options.template || 'index.html';
+			await toFile(page.output, template, {page: page});
 		}
+
+		/*
+
+		// TODO Render tag/[tag]/index.html
+		const tags = getTags(pages);
+		for (const tag in tags) {
+			tags[tag].output = path.join(options.output, tag, 'index.html');
+			await toFile(tags[tag].output, 'tag.html', {pages: tags[tag], tag: tag});
+		}
+		*/
+
+		// TODO Render page/index.html page/1/index.html, page/2/index.html ...
 
 		// sort pages by date
 		pages.sort(function (a, b) {
 			return new Date(b.date) - new Date(a.date);
 		});
 
-		console.log(pages);
-
-		// index.html
-		let index = pages.reduce((articles, p) => articles + '<article class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded">' + p.body + '</article>', '');
-
-		await outputFile(path.join(options.output, 'index.html'),
-				`<!DOCTYPE html>
-			<html lang="cs" dir="ltr">
-			<head>
-				<meta charset="UTF-8">
-				<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-				</head><<body class="bg-dark"><div class="container">` + index + '</div></body></html>'
-		);
-
-
-		// TODO Render page/index.html page/1/index.html, page/2/index.html ...
-
-
-		// TODO Render tag/[tag]/index.html
+		// TODO sync static files
+		/*
+		let sync = await globby('template/**');
+		console.log(sync);
+		for await (const file of sync) {
+			fs.copy(file, options.output + file);
+		}
+		*/
 
 	} catch (e) {
 		console.error(e);
