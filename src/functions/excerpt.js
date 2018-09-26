@@ -1,6 +1,5 @@
 module.exports = {
-
 	excerpt() {
-
+		// TODO...
 	}
 };

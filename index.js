@@ -18,7 +18,7 @@ const cms = async (options) => {
 			try {
 
 				// Get pages from directory
-				const pages = await Sphido.getPages(await globby('content/**/*.{md,html}'), Sphido.extenders);
+				const pages = await Sphido.getPages(await globby('content/**/*.{md,html}'), ...Sphido.extenders);
 
 				// Generate single pages...
 				for await (const page of pages) {
