@@ -1,9 +1,13 @@
 'use strict';
 
 module.exports = {
-	getPage: require('./getPage'),
 	getPages: require('./getPages'),
-	getTags: require('./getTags'),
-	toFile: require('./toFile'),
+	getPage: require('./getPage'),
+	extenders: Object.assign({},
+			require('./extenders/save')
+	),
 
+
+	getTags: require('./getTags'),
+	render: require('./render'),
 };

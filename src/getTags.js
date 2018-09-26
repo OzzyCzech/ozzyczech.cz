@@ -1,7 +1,6 @@
 const getPage = require('./getPage');
 const slugify = require('@sindresorhus/slugify');
 
-
 const getUniqueTag = (pages) => {
 	let tags = new Set();
 	for (const page of pages) {
@@ -9,7 +8,6 @@ const getUniqueTag = (pages) => {
 	}
 	return tags;
 };
-
 
 module.exports = (pages) => {
 	let structure = [];
@@ -22,7 +20,5 @@ module.exports = (pages) => {
 		});
 	}
 
-
 	return structure;
-
 };

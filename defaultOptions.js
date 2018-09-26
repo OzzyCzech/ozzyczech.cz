@@ -1,4 +1,4 @@
 module.exports = {
-	output: './public',
-	input: './content'
+	output: 'public',
+	input: 'content'
 };
