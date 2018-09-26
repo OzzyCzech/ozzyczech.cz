@@ -8,6 +8,6 @@ module.exports = {
 	 * @returns {Promise<*>}
 	 */
 	async save(...path) {
-		return await toFile(join(...path), this.template || 'page.html', {page: this})
+		return await toFile(join(...path), this.template || 'post.html', {page: this})
 	}
 };

@@ -4,12 +4,7 @@ module.exports = {
 	getPages: require('./getPages'),
 	getPage: require('./getPage'),
 
-
-	getTags: require('./getTags'),
-	render: require('./render'),
-	
 	extenders: [
-
 		// page filters
 		require('./filters/frontmatter'),
 		require('./filters/htmlize'),
@@ -20,4 +15,7 @@ module.exports = {
 				require('./functions/save')
 		)
 	],
+
+	getTags: require('./getTags'),
+	render: require('./render'),
 };
