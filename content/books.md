@@ -1,8 +1,6 @@
 ---
 title: Knihy
 slug: books
-methods:
-	- reverseMessage: function() { this.slug = }
 ---
 
 ## Knihy pro děti

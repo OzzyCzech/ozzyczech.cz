@@ -5,12 +5,16 @@
 	<meta charset="UTF-8">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="shortcut icon" href="/favicon.png"/>
+
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 <body class="bg-dark">
 
 <header>{% include "partials/navbar.html" %}</header>
-
-{{page.excerpt()}}
 
 <div class="container-fluid">
 	<main class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded mx-auto" style="width: 40%">

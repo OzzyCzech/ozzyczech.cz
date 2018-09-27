@@ -26,6 +26,8 @@ const cms = async (options) => {
 				// Sort by date
 				pages.sort((a, b) => new Date(b.date) - new Date(a.date));
 
+
+				// Generate pages
 				const postPerPage = 5;
 				const pagination = Sphido.pagination(pages.length, postPerPage);
 
@@ -39,21 +41,7 @@ const cms = async (options) => {
 								current: current,
 							}
 					);
-
 				}
-
-
-				// Copy static content
-
-
-				let files = await await globby(['template/**/*.*', 'content/**/*.*', '!**/*.{md,html}']);
-				for await (let file of files) {
-					await fs.copy(file, file.replace(/^[\w]+/, 'public'))
-				}
-
-
-				return;
-
 
 				// TODO Render tag/[tag]/index.html
 				/*
@@ -64,19 +52,11 @@ const cms = async (options) => {
 				}
 				*/
 
-				// TODO Render page/index.html page/1/index.html, page/2/index.html ...
-
-				// sort pages by date
-
-
-				// TODO sync static files
-				/*
-				let sync = await globby('template/**');
-				console.log(sync);
-				for await (const file of sync) {
-					fs.copy(file, options.output + file);
+				// Copy static content
+				let files = await await globby(['template/**/*.*', 'content/**/*.*', '!**/*.{md,html}']);
+				for await (let file of files) {
+					await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 				}
-				*/
 
 			} catch (e) {
 				console.error(e);
