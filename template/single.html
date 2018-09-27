@@ -7,16 +7,21 @@
 	<link rel="shortcut icon" href="/favicon.png"/>
 </head>
 <body class="bg-dark">
-<div class="container">
-	<main class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded">
-		<article>{{ page.body | trim | safe }}</article>
+
+<header>{% include "partials/navbar.html" %}</header>
+
+{{page.excerpt()}}
+
+<div class="container-fluid">
+	<main class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded mx-auto" style="width: 40%">
+		<article>{{ page.content | trim | safe }}</article>
 	</main>
 	<footer>
 		{% if page.tags %}
 		<ul class="list-inline">
 			{% for tag in page.tags %}
 			<li class="list-inline-item">
-				<a href="/tag/{{ tag | slug }}.html">#{{ tag }}</a>
+				<a href="/tag/{{ tag | slug }}">#{{ tag }}</a>
 			</li>
 			{% endfor %}
 		</ul>

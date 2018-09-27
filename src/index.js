@@ -1,8 +1,6 @@
 'use strict';
 
 module.exports = {
-	getPages: require('./getPages'),
-	getPage: require('./getPage'),
 
 	extenders: [
 		// page filters
@@ -12,10 +10,17 @@ module.exports = {
 
 		// page functions
 		Object.assign({},
-				require('./functions/save')
+				require('./functions/save'),
+				require('./functions/excerpt'),
+				require('./functions/url')
 		)
 	],
 
+	pagination: (total, perpage) => [...Array(Math.ceil(total / perpage)).keys()].map(i => ++i),
+
+	getPages: require('./getPages'),
+	getPage: require('./getPage'),
 	getTags: require('./getTags'),
+
 	render: require('./render'),
 };

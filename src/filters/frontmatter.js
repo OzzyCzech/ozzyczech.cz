@@ -17,8 +17,8 @@ module.exports = page => {
 		let meta = {};
 		page.content.replace(/^---([\s\S]+?)---/, (frontMatter, data) => {
 			meta = yaml.safeLoad(data.trim());
+			page = Object.assign(page, meta);
 			page.content = page.content.substring(frontMatter.length).trim();
 		});
-		return meta;
 	}
 };

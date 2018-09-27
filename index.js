@@ -1,15 +1,9 @@
 'use strict';
 
 const fs = require('fs-extra');
-const {join, resolve, dirname} = require('path');
+const url = require('url');
+const {join, resolve, format, dirname} = require('path');
 const globby = require('globby');
-
-
-const paginate = (array, perpage, page) => {
-	--page; // because pages logically start with 1, but technically with 0
-	return array.slice(page * perpage, (page + 1) * perpage);
-};
-
 
 const Sphido = require('./src');
 
@@ -19,8 +13,6 @@ const Sphido = require('./src');
  */
 const cms = async (options) => {
 
-			// marked.setOptions(options.marked);
-
 			try {
 
 				// Get pages from directory
@@ -28,26 +20,37 @@ const cms = async (options) => {
 
 				// Generate single pages...
 				for await (let page of pages) {
-					await page.save(page.dir.replace('content', 'public'), page.slug, 'index.html');
+					await page.save();
 				}
 
 				// Sort by date
 				pages.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-				// iterate over pages
+				const postPerPage = 5;
+				const pagination = Sphido.pagination(pages.length, postPerPage);
 
-				let p = Math.ceil(pages.length / 5);
-				for await (let current of [...Array(p).keys()]) {
+				for await (let current of pagination) {
 					await Sphido.render.toFile(
-							current === 0 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
-							'page.html',
+							current === 1 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
+							'pages.html',
 							{
-								pages: paginate(pages, 5, current + 1),
+								pages: pages.slice(postPerPage * (current - 1), current * postPerPage),
+								pagination: pagination,
 								current: current,
-								paginate: [...Array(p).keys()]
 							}
 					);
+
 				}
+
+
+				// Copy static content
+
+
+				let files = await await globby(['template/**/*.*', 'content/**/*.*', '!**/*.{md,html}']);
+				for await (let file of files) {
+					await fs.copy(file, file.replace(/^[\w]+/, 'public'))
+				}
+
 
 				return;
 

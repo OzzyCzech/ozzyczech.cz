@@ -4,9 +4,9 @@ tags: [js]
 slug: js
 ---
 
-## JavaScript current state list!
+# JavaScript current state list!
 
-<img src="/img/2017/universal-standard.png" class="center" >
+<img src="universal-standard.png" class="center" >
 
 ### Devstack
 

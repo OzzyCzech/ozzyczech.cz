@@ -1,7 +1,6 @@
 ---
 title: GitHub
 tags: [github]
-slug: github
 ---
 
 # GitHub

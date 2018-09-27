@@ -12,7 +12,6 @@ const nunjucks = require('nunjucks');
 const env = nunjucks.configure('./template', {autoescape: true});
 env.addFilter('slug', slugify);
 
-
 module.exports = {
 	env: env,
 	numjucks: nunjucks,

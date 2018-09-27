@@ -7,7 +7,10 @@ module.exports = {
 	 * @param path
 	 * @returns {Promise<*>}
 	 */
-	async save(...path) {
-		return await toFile(join(...path), this.template || 'post.html', {page: this})
+	async save() {
+		return await toFile(
+				join(this.dir.replace('content', 'public'), this.slug, 'index.html'),
+				this.template || 'single.html',
+				{page: this})
 	}
 };

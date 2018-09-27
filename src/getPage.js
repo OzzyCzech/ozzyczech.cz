@@ -21,8 +21,13 @@ module.exports = async (file, ...extenders) => {
 		content: content,
 	};
 
+
+	// callbacks
+	extenders.filter(f => typeof f === 'function').map(f => f(page));
+
+	// assign objects
 	return Object.assign(
 			page,
-			...extenders.map(f => typeof f === 'function' ? f(page) : f)
+			...extenders.filter(f => typeof f === 'object'),
 	);
 };

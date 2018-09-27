@@ -1,3 +1,8 @@
+---
+title: Photo
+date: 2018-09-27
+---
+
 # Photo resources
 
 ## Processing RAW
