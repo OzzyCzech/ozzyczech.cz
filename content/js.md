@@ -6,7 +6,7 @@ slug: js
 
 # JavaScript current state list!
 
-<img src="universal-standard.png" class="rounded mx-auto d-block m-3" />
+<img src="/img/universal-standard.png" class="rounded mx-auto d-block m-3" />
 
 ### Devstack
 
