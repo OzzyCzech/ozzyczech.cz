@@ -1,39 +1,21 @@
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
 <head>
-	<title>
-		blog.omdesign.cz
-		{% if current > 1 %} - page {{current}} of {{pagination.length}}{% endif %}
-	</title>
-	<meta charset="UTF-8">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="shortcut icon" href="/favicon.png"/>
-	<style>
-		article h1:first-of-type {
-			display: none;
-		}
-	</style>
-
-	<!-- highlight.js -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<title>blog.omdesign.cz {% if current > 1 %} - page {{current}} of {{pagination.length}}{% endif %}</title>
+	{% include "partials/head.html" %}
 </head>
 <body class="bg-dark">
 
 <header>{% include "partials/navbar.html" %}</header>
 
-<main class="mx-auto" style="width: 40%">
+<main class="mx-auto">
 	{% for page in pages %}
 	<article class="shadow p-3 p-lg-5 m-2 m-lg-3 rounded bg-white">
-		<p class="h1">
-			<a href="{{ page.url() }}">{{ page.title }}</a>
-		</p>
-		{{ page.content | safe }}
+		<a href="{{ page.url() }}" class="h1">{{ page.title }}</a>
+		{{ page.content | h1strip | safe }}
 	</article>
 	{% endfor %}
 </main>
-
 
 <footer>{% include "./partials/pagination.html" %}</footer>
 </body>

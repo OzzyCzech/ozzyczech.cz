@@ -1,10 +1,8 @@
 ---
-omg: wtf
+title: MacOS
 ---
 
-
 # MacOS
-
 
 ## Finder extensions
 

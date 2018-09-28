@@ -1,3 +1,5 @@
+'use strict';
+
 const getPage = require('./getPage');
 const slugify = require('@sindresorhus/slugify');
 

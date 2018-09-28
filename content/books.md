@@ -3,6 +3,14 @@ title: Knihy
 slug: books
 ---
 
+# Knihy
+
+* [Rudý zákon - Bill Browder](http://www.databazeknih.cz/knihy/rudy-zakon-240925)
+* [Faktor Churchill - Boris Johnson](http://www.databazeknih.cz/knihy/faktor-churchill-299200)
+* [Rudé hvězdy ve vesmíru aneb Pohled do zákulisí sovětské kosmonautiky](http://www.databazeknih.cz/knihy/rude-hvezdy-ve-vesmiru-aneb-pohled-do-zakulisi-sovetske-kosmonautiky-220823)
+* [The World Beyond Your Head - Matthew Crawford](https://www.amazon.com/World-Beyond-Your-Head-Distraction/dp/0374535914)
+* [HLUBOKÁ PRÁCE - Cal Newport](https://www.melvil.cz/kniha-hluboka-prace/)
+
 ## Knihy pro děti
 
 * [Za chvíli jsme doma, jen si odskočíme do Afriky - Oliver Scherz](https://www.kosmas.cz/knihy/203684/za-chvili-jsme-doma-jen-si-odskocime-do-afriky/)
@@ -15,11 +23,3 @@ slug: books
 * [Nádherné úterý - Daisy Mrázková](https://www.kosmas.cz/knihy/199609/nadherne-utery/)
 * [Žirafí máma a jiné příšery - Alexandra Salmela](https://www.kosmas.cz/knihy/208297/zirafi-mama-a-jine-prisery/)
 * [Pohoršovna](https://www.kosmas.cz/knihy/197879/pohorsovna/)
-
-## TODO
-
-* [Rudý zákon - Bill Browder](http://www.databazeknih.cz/knihy/rudy-zakon-240925)
-* [Faktor Churchill - Boris Johnson](http://www.databazeknih.cz/knihy/faktor-churchill-299200)
-* [Rudé hvězdy ve vesmíru aneb Pohled do zákulisí sovětské kosmonautiky](http://www.databazeknih.cz/knihy/rude-hvezdy-ve-vesmiru-aneb-pohled-do-zakulisi-sovetske-kosmonautiky-220823)
-* [The World Beyond Your Head - Matthew Crawford](https://www.amazon.com/World-Beyond-Your-Head-Distraction/dp/0374535914)
-* [HLUBOKÁ PRÁCE - Cal Newport](https://www.melvil.cz/kniha-hluboka-prace/)

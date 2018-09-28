@@ -1,3 +1,5 @@
+'use strict';
+
 const {statSync} = require('fs');
 const {inspect} = require('util');
 const slugify = require('@sindresorhus/slugify');

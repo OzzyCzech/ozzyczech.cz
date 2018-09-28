@@ -17,6 +17,7 @@ tags: [webdesign, images]
 * https://freephotos.cc/
 
 ### Payment
+
 * https://www.braintreepayments.com (1,9% + €0,30)
 
 ### Electron

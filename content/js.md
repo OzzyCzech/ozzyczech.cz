@@ -6,7 +6,7 @@ slug: js
 
 # JavaScript current state list!
 
-<img src="universal-standard.png" class="center" >
+<img src="universal-standard.png" class="rounded mx-auto d-block m-3" />
 
 ### Devstack
 
@@ -47,6 +47,10 @@ slug: js
 * [Preact](https://preactjs.com/) - Fast 3kB alternative to React with the same ES6 API.
 * [Marko](http://markojs.com/) - Simple, intuitive, performant UI components and templates 
 * [Relay](https://facebook.github.io/relay/) - A JavaScript framework for building data-driven React applications
+
+### Templating
+
+- [Nunjucks](https://mozilla.github.io/nunjucks/) - A rich and powerful templating language for JavaScript.
 
 ### Desktop apps
 

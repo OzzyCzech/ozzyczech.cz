@@ -15,7 +15,6 @@ sphido(options, (err, data) => {
 	}
 
 	if (options.stdout) {
-		// Indent JSON 2 spaces.
 		process.stdout.write(JSON.stringify(data, null, 2))
 	}
 });

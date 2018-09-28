@@ -1,3 +1,5 @@
+'use strict';
+
 let {striptags, truncate} = require('nunjucks/src/filters');
 
 module.exports = {
