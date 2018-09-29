@@ -3,7 +3,7 @@ title: JavaScript|&lt;src&gt;
 slug: js
 ---
 
-# JavaScript|&lt;src&gt;
+# 🥕 JavaScript|&lt;src&gt;
 
 <img src="/img/universal-standard.png" class="rounded mx-auto d-block m-3" />
 
