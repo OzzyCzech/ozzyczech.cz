@@ -6,7 +6,9 @@ tags: [lifehack]
 
 # Jste hromádkář, nebo ne?
 
-Během svého života jsem pochopil jednu věc, že lidé se dělí na **hromádkáře a nehromádkáře**. Typický hromádkář se vyznačuje tím, že štosuje věci do různě vysokých nevzhledných hromádek. Nejčastěji jsou to například:
+Během svého života jsem pochopil jednu věc, že lidé se dělí na **hromádkáře a nehromádkáře**. 
+Typický hromádkář se vyznačuje tím, že štosuje věci do různě vysokých nevzhledných hromádek.
+Nejčastěji jsou to například:
 
 - knihy, skripta
 - cédéčka, dévedéčka
@@ -39,4 +41,4 @@ Uvědomte si, že **cokoliv vyhodíte**- nikdy už to nebudete muset uklízet
 - nikdy už to nebude součástí žádné hromádky
 - uvólní se Vám místo
 
- Není to skvělý pocit!!!
+*Není to skvělý pocit!!!*

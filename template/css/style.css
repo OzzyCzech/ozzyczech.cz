@@ -3,9 +3,41 @@ blockquote {
 }
 
 img.emoji {
-	height: 16px;
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+	line-height: inherit;
 }
 
 body > footer {
 	padding-bottom: 10vh;
+}
+
+article h2.h1 a {
+	color: inherit;
+}
+
+.language-text {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: #23241f;
+	color: #f8f8f2;
+}
+
+img[alt$=">"] {
+	float: right;
+}
+
+img[alt$="<"] {
+	float: left;
+}
+
+img[alt$="<>"] {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	float: none !important;
 }

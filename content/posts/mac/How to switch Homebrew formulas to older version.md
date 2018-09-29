@@ -16,7 +16,7 @@ $ cd /usr/local/Library/Taps/homebrew/homebrew-php/Formula
 $ git log --pretty="%h - %s" -10
 ```
 
-```bash
+```text
 71b2069 - Update to PHP 5.5.18
 b8aeb54 - Use homebrew's openssl for IMAP
 f0d721a - php56: improve phpdbg logic

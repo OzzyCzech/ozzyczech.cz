@@ -8,4 +8,4 @@ tags: [js, html]
 
 How to load Ace Editor from CDN and submit content with regular POST request:
 
-<iframe src="https://jsfiddle.net/ze7L9ma8/embedded/"></iframe>
+<script async src="//jsfiddle.net/OzzyCzech/ze7L9ma8/embed/js,html,css,result/dark/"></script>

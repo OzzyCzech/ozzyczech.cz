@@ -14,7 +14,7 @@ Out there is multiple solution of iOS like on/off switch button, but:
 * they look slightly different then switch on iOS
 * they do not have labels on left side
 
-{{<jsfiddle "https://jsfiddle.net/1rmfho78/">}}
+<script async src="//jsfiddle.net/OzzyCzech/1rmfho78/embed/result,html,css/dark/"></script>
 
 #### HTML code
 

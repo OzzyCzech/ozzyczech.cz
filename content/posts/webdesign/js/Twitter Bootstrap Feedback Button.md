@@ -14,4 +14,4 @@ Follow code add orange **Feedback button** similar to the UserEcho button allow 
 
 
 
-{{<jsfiddle "https://jsfiddle.net/gogmfazc/">}}
+<script async src="//jsfiddle.net/OzzyCzech/gogmfazc/embed/js,html,css,result/dark/"></script>

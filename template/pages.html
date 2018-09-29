@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
 <head>
-	<title>blog.omdesign.cz {% if current > 1 %} - page {{current}} of {{pagination.length}}{% endif %}</title>
+	<title>om/blog {% if current > 1 %} - page {{current}} of {{pagination.length}}{% else %} by Roman Ožana{% endif %}</title>
 	{% include "template/partials/head.html" %}
 </head>
 <body class="bg-dark container">
@@ -11,7 +11,9 @@
 <main class="mx-auto">
 	{% for page in pages %}
 	<article class="shadow p-3 p-lg-5 my-2 my-lg-3 rounded bg-white {{page.slug}}">
-		<a href="{{ page.url() }}" class="h1">{{ page.title }}</a>
+		<h2 class="h1">
+			<a href="{{ page.url() }}">{{ page.title }}</a>
+		</h2>
 		{{ page.content | h1strip | safe }}
 	</article>
 	{% endfor %}

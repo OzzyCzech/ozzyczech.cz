@@ -1,10 +1,9 @@
 ---
-title: JavaScript current state list!
-tags: [js]
+title: JavaScript|&lt;src&gt;
 slug: js
 ---
 
-# JavaScript current state list!
+# JavaScript|&lt;src&gt;
 
 <img src="/img/universal-standard.png" class="rounded mx-auto d-block m-3" />
 

@@ -6,7 +6,8 @@ tags: [ios, html, css]
 
 # iMessage like Chat Bubbles with CSS and SVG
 
-{{<jsfiddle "https://jsfiddle.net/22qnqub5/">}}
+<script async src="//jsfiddle.net/OzzyCzech/22qnqub5/embed/result,css,html/dark/"></script>
+
 
 #### HTML code
 

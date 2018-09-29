@@ -7,7 +7,7 @@ tags: [composer, pear, tip]
 
 # Composer require PEAR package
 
-```
+```json
 {
  "repositories": [
   {

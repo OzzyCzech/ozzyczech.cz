@@ -10,4 +10,4 @@ Login with Facebook, Twitter, Github, LinkedIn, StackOverflow or Google Plus but
 
 
 
-{{<jsfiddle "https://jsfiddle.net/LsbusxLy/">}}
+<script async src="//jsfiddle.net/OzzyCzech/LsbusxLy/embed/result,html,css/dark/"></script>

@@ -2,7 +2,7 @@
 title: Quotes
 ---
 
-# Quotes
+# 🗣 Quotes
 
 
 > Jakkoli krásnou máte strategii, měli byste se občas podívat i na její výsledky.
@@ -15,7 +15,6 @@ title: Quotes
 > *Steve Jobs*
 
 ---
-
 
 > Neházej všechno do jednoho pytle, nezdvihneš ho.
 > *anglické*

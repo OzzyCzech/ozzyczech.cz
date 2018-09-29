@@ -17,19 +17,20 @@ const globby = require('globby');
 			await page.save(page.dir.replace('content', 'public'));
 		}
 
-		// Sort by date
-		pages.sort((a, b) => new Date(b.date) - new Date(a.date));
+		// Get sorted posts only
+		const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
+		posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 		// Generate pages
 		const postPerPage = 5;
-		const pagination = Sphido.pagination(pages.length, postPerPage);
+		const pagination = Sphido.pagination(posts.length, postPerPage);
 
 		for await (let current of pagination) {
 			await Sphido.render.toFile(
 					current === 1 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
 					'template/pages.html',
 					{
-						pages: pages.slice(postPerPage * (current - 1), current * postPerPage),
+						pages: posts.slice(postPerPage * (current - 1), current * postPerPage),
 						pagination: pagination,
 						current: current,
 					}
