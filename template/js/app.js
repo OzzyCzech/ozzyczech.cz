@@ -23,9 +23,5 @@ document.onreadystatechange = function () {
 		Array.from(blockquotesFooters).forEach(function (footer) {
 			footer.classList.add('blockquote-footer');
 		});
-
-
-		// emoji
-		twemoji.parse(document.body)
 	}
 };

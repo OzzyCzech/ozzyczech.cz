@@ -18,6 +18,13 @@ article h2.h1 a {
 	color: inherit;
 }
 
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+}
+
 .language-text {
 	display: block;
 	overflow-x: auto;

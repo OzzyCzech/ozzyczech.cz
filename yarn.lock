@@ -1428,6 +1428,10 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
+twemoji@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/twemoji/-/twemoji-11.0.1.tgz#e3c115a9795bb26cab6ea48d22821b0a4be08e5b"
+
 union-value@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.0.tgz#5c71c34cb5bad5dcebe3ea0cd08207ba5aa1aea4"

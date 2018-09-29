@@ -4,13 +4,18 @@ const Sphido = require('sphido');
 const fs = require('fs-extra');
 const {join, resolve, format, dirname} = require('path');
 const globby = require('globby');
+const twemoji = require('twemoji');
 
 (async () => {
 
 	try {
 
 		// Get pages from directory
-		const pages = await Sphido.getPages(await globby('content/**/*.{md,html}'), ...Sphido.extenders);
+		const pages = await Sphido.getPages(await globby('content/**/*.{md,html}'), ...Sphido.extenders,
+				(page) => {
+					page.content = twemoji.parse(page.content); // twemoji
+				}
+		);
 
 		// Generate single pages...
 		for await (let page of pages) {
