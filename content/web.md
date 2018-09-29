@@ -48,4 +48,8 @@ title: Web|src
 * https://sendgrid.com/
 * http://www.mandrill.com/
 
+#### Tools
+
+- https://httpbin.org/
+
 <a class="twitter-timeline" href="https://twitter.com/websrc">Tweets by websrc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -12,6 +12,4 @@ Follow code add orange **Feedback button** similar to the UserEcho button allow 
 - Pure CSS animation and positioning
 - jQuery for Ajax form submit
 
-
-
 <script async src="//jsfiddle.net/OzzyCzech/gogmfazc/embed/js,html,css,result/dark/"></script>
