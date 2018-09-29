@@ -4,7 +4,7 @@ title: Web|src
 
 # 🌍 Web|&lt;src&gt;
 
-<img class="img-fluid rounded m-3 shadow float-right" src="img/cat.webp" style="max-width:40%"/>
+<img class="img-fluid rounded m-3 shadow float-right" src="/img/cat.webp" style="max-width:40%"/>
 
 #### Icons & emoji
 
