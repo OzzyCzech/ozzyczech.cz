@@ -84,6 +84,7 @@ slug: js
 ### List of lists
 
 * [Awesome Javascript List](https://github.com/sorrycc/awesome-javascript)
+* [Delightful Node.js packages and resources](https://node.cool)
 
 ### E-learnings
 
