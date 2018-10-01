@@ -2,11 +2,11 @@
 <html lang="cs" dir="ltr">
 <head>
 	<title>om/blog {% if current > 1 %} - page {{current}} of {{pagination.length}}{% else %} by Roman Ožana{% endif %}</title>
-	{% include "template/partials/head.html" %}
+	{% include "theme/partials/head.html" %}
 </head>
 <body class="bg-dark container">
 
-<header>{% include "template/partials/navbar.html" %}</header>
+<header>{% include "theme/partials/navbar.html" %}</header>
 
 <main class="mx-auto">
 	{% for page in pages %}
@@ -19,6 +19,6 @@
 	{% endfor %}
 </main>
 
-<footer>{% include "template/partials/pagination.html" %}</footer>
+<footer>{% include "theme/partials/pagination.html" %}</footer>
 </body>
 </html>

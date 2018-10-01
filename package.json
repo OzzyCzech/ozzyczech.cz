@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "./index.js",
-    "watch": "watch './index.js' ./content ./template",
+    "watch": "watch './index.js' ./content ./theme",
     "server": "serve public"
   },
   "devDependencies": {

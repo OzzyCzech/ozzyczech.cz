@@ -33,7 +33,7 @@ const twemoji = require('twemoji');
 		for await (let current of pagination) {
 			await Sphido.template.toFile(
 					current === 1 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
-					'template/pages.html',
+					'theme/pages.html',
 					{
 						pages: posts.slice(postPerPage * (current - 1), current * postPerPage),
 						pagination: pagination,
@@ -52,7 +52,7 @@ const twemoji = require('twemoji');
 		*/
 
 		// Copy static content
-		let files = await await globby(['template/**/*.*', 'content/**/*.*', '!**/*.{md,html}']);
+		let files = await await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,html}']);
 		for await (let file of files) {
 			await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 		}

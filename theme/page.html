@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{ page.title | trim }} | om/blog</title>
-	{% include "template/partials/head.html" %}
+	{% include "theme/partials/head.html" %}
 </head>
 <body class="bg-dark {{page.slug}} container">
 
-<header>{% include "template/partials/navbar.html" %}</header>
+<header>{% include "theme/partials/navbar.html" %}</header>
 
 <main class="shadow p-3 p-lg-5 mt-2 mt-lg-3 bg-white rounded ">
 	<article>{{ page.content | trim | safe }}</article>
@@ -19,18 +19,5 @@
 		document.getElementsByTagName('footer')[0].innerHTML += date;
 	</script>
 </footer>
-
-<footer hidden>
-	{% if page.tags %}
-	<ul class="list-inline">
-		{% for tag in page.tags %}
-		<li class="list-inline-item">
-			<a href="/tag/{{ tag | slug }}">#{{ tag }}</a>
-		</li>
-		{% endfor %}
-	</ul>
-	{% endif %}
-</footer>
-
 </body>
 </html>
