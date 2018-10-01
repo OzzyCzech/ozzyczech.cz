@@ -31,7 +31,7 @@ const twemoji = require('twemoji');
 		const pagination = Sphido.pagination(posts.length, postPerPage);
 
 		for await (let current of pagination) {
-			await Sphido.render.toFile(
+			await Sphido.template.toFile(
 					current === 1 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
 					'template/pages.html',
 					{
