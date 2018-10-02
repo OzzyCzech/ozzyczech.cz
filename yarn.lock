@@ -1313,9 +1313,9 @@ source-map@^0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
-sphido@^0.0.3:
+sphido@sphido/sphido#master:
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/sphido/-/sphido-0.0.3.tgz#16f44204487e2e614360349e40c07e5c3b176125"
+  resolved "https://codeload.github.com/sphido/sphido/tar.gz/4a844f2a53e0b9b77f927d6d6ddf271ddd49597d"
   dependencies:
     "@sindresorhus/slugify" "^0.3.0"
     fs-extra "^7.0.0"

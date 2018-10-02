@@ -10,6 +10,6 @@
     "watch": "^1.0.2"
   },
   "dependencies": {
-    "sphido": "^0.0.3"
+    "sphido": "sphido/sphido#master"
   }
 }
