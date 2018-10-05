@@ -3,11 +3,7 @@ title: Web|src
 slug: web
 ---
 
-# 🌍 Web|&lt;src&gt;
-
 <a class="twitter-timeline" href="https://twitter.com/websrc">Tweets by websrc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<img class="img-fluid rounded m-3 shadow float-right" src="/img/cat.webp" style="max-width:40%"/>
 
 #### Icons & emoji
 
