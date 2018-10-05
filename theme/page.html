@@ -14,8 +14,9 @@
 </main>
 
 <footer class="my-2 text-secondary text-right">
+	{{page.date.toLocaleDateString("cs-CZ")}} |
 	<script>
-		var date = dateFns.format(new Date('{{page.date}}'), 'DD. MM. YYYY | ') + dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
+		var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
 		document.getElementsByTagName('footer')[0].innerHTML += date;
 	</script>
 </footer>

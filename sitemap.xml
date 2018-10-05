@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://blog.omdesign.cz/</loc>
+		<lastmod>2018-10-05T11:44:34.247Z</lastmod>
+		<priority>1.0</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/apple/</loc>
+		<lastmod>2018-09-29T08:55:40.809Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/books/</loc>
+		<lastmod>2018-09-29T09:38:56.094Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/cc/</loc>
+		<lastmod>2018-09-26T16:00:43.834Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/js/</loc>
+		<lastmod>2018-10-01T12:43:28.423Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/photo/</loc>
+		<lastmod>2018-09-27T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/take-screenshot-with-express-and-phantomjs/</loc>
+		<lastmod>2018-09-26T16:00:43.843Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/backup-plan/</loc>
+		<lastmod>2017-04-06T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/bash/git-clone-all-branches-at-once/</loc>
+		<lastmod>2017-08-11T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/bash/jak-spocitat-pocet-radku-kodu/</loc>
+		<lastmod>2012-01-07T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/china-shops-list/</loc>
+		<lastmod>2017-01-10T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/cloud-storages-list/</loc>
+		<lastmod>2016-12-02T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/how-to-add-all-custom-post-type-to-main-wordpress-archive-php/</loc>
+		<lastmod>2014-07-24T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/jak-spravne-prepsat-ojete-auto/</loc>
+		<lastmod>2012-06-14T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/lifehack/jste-hromadkar/</loc>
+		<lastmod>2008-01-16T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/lifehack/navod-na-zivot/</loc>
+		<lastmod>2017-08-10T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/lifehack/parkinsonuv-zakon/</loc>
+		<lastmod>2008-12-05T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/lifehack/pro-kazdy-den/</loc>
+		<lastmod>2017-08-10T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/list-all-mounted-drives-on-mac/</loc>
+		<lastmod>2013-03-11T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/loading-ace-editor-from-cdn/</loc>
+		<lastmod>2016-09-20T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/mac/how-to-clean-flash-drive-before-unmount-on-mac/</loc>
+		<lastmod>2013-12-21T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/mac/how-to-switch-homebrew-formulas-to-older-version/</loc>
+		<lastmod>2014-10-18T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/mac/how-to-transfer-drive-to-apfs/</loc>
+		<lastmod>2017-09-26T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/mac/how-to-fix-shell-shock-bash-bug-on-os-x/</loc>
+		<lastmod>2014-09-25T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/mac/toggle-hidden-files-in-finder/</loc>
+		<lastmod>2013-03-26T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/run-ftp-server-on-mac-os-x/</loc>
+		<lastmod>2013-11-28T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/setup-email-sending-from-php-on-mac/</loc>
+		<lastmod>2013-05-14T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/tik-v-oku/</loc>
+		<lastmod>2008-08-12T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/css/how-to-detect-retina-display-in-css/</loc>
+		<lastmod>2013-03-27T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/css/i-message-like-chat-bubbles-with-css-and-svg/</loc>
+		<lastmod>2017-12-15T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/css/i-os-like-on-off-switch-with-css-and-html/</loc>
+		<lastmod>2017-09-28T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/css/twitter-bootstrap-compatible-social-login-buttons/</loc>
+		<lastmod>2015-01-02T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/find-all-unnecessary-images-without-link-from-code/</loc>
+		<lastmod>2014-01-17T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/git/how-to-keep-git-hub-fork-updated-no-merge-the-right-way/</loc>
+		<lastmod>2014-02-11T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/js/angular-js-http-not-sending-x-requested-with-header/</loc>
+		<lastmod>2014-09-24T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/js/show-password-button-pure-javascript/</loc>
+		<lastmod>2016-09-07T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/js/twitter-bootstrap-feedback-button/</loc>
+		<lastmod>2015-02-03T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/js/upgrade-all-npm-packages-to-latest-versions/</loc>
+		<lastmod>2013-12-30T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/case-insensitive-in-array-v-php/</loc>
+		<lastmod>2011-06-20T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/composer-require-pear-package/</loc>
+		<lastmod>2013-09-25T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/convert-json-data-to-valid-php-code/</loc>
+		<lastmod>2014-01-19T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/get-currency-rates-from-cnb-in-php/</loc>
+		<lastmod>2016-10-07T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/getting-git-hub-latest-release-url/</loc>
+		<lastmod>2014-09-28T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/hardcore-simple-events-dispatcher-for-php/</loc>
+		<lastmod>2014-10-05T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/how-to-protect-your-emails-with-php-and-javascript/</loc>
+		<lastmod>2014-04-22T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/how-to-safely-commit-vendor-dir-with-php-composer/</loc>
+		<lastmod>2013-07-24T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/jak-okopirovat-adresar-s-celym-obsahem-v-php/</loc>
+		<lastmod>2011-10-15T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/snadne-pripojeni-k-ftp-pomoci-php/</loc>
+		<lastmod>2011-04-13T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/snadne-vlozene-you-tube-videa-pomoci-php/</loc>
+		<lastmod>2011-03-27T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/vypocet-hash-objektu-v-php/</loc>
+		<lastmod>2011-09-25T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/php/zjisteni-prav-k-souboru-nebo-adresari-v-php/</loc>
+		<lastmod>2012-09-05T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/proc-je-hodnoceni-hvezdickama-blbost/</loc>
+		<lastmod>2009-02-16T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/seznam-veci-ktere-internet-zabil/</loc>
+		<lastmod>2013-01-08T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//posts/webdesign/vyznam-barev/</loc>
+		<lastmod>2009-04-16T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//povidky/jak-ne-napsat-diplomku/</loc>
+		<lastmod>2007-12-12T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//povidky/jak-poznat-gisaka/</loc>
+		<lastmod>2006-11-22T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//povidky/made-in-china-paranoidni-povidka-na-dobrou-noc/</loc>
+		<lastmod>2012-12-09T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//povidky/me-bulharske-dobrodruzstvi/</loc>
+		<lastmod>2007-08-04T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//povidky/schuze-porady-meetingy-a-briefing/</loc>
+		<lastmod>2008-01-21T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/quotes/</loc>
+		<lastmod>2018-09-29T09:39:30.421Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/wdl/</loc>
+		<lastmod>2018-09-26T16:00:43.874Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//content/web/</loc>
+		<lastmod>2018-10-05T10:09:20.601Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/hash-tags-pro-wordpress/</loc>
+		<lastmod>2012-09-15T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/make-word-press-globals-more-accessible/</loc>
+		<lastmod>2013-02-08T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/odstraneni-odkazu-z-admin-menu-wordpress/</loc>
+		<lastmod>2011-09-11T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/wodpress-constants-for-human-readable-intervals/</loc>
+		<lastmod>2013-02-20T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/wordpress-get-post-excerpt/</loc>
+		<lastmod>2013-12-02T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/wordpress-how-to-get-user-by-metadata/</loc>
+		<lastmod>2013-04-16T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/wordpress-register-and-setup-widgets-from-php-code/</loc>
+		<lastmod>2013-01-29T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/wysiwyg-pro-popis-uzivatele-ve-wordpress/</loc>
+		<lastmod>2012-10-29T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>https://blog.omdesign.cz//wordpress/zvyrazneni-prave-hledanych-slov-ve-wordpress/</loc>
+		<lastmod>2010-11-15T00:00:00.000Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	
+</urlset>

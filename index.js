@@ -22,6 +22,14 @@ const twemoji = require('twemoji');
 			await page.save(page.dir.replace('content', 'public'));
 		}
 
+		// Generate sitemap
+
+		Sphido.template.toFile(
+				'public/sitemap.xml',
+				'theme/sitemap.xml',
+				{pages: pages,  domain: 'https://blog.omdesign.cz'}
+		);
+
 		// Get sorted posts only
 		const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
 		posts.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -52,7 +60,7 @@ const twemoji = require('twemoji');
 		*/
 
 		// Copy static content
-		let files = await await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,html}']);
+		let files = await await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}']);
 		for await (let file of files) {
 			await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 		}
