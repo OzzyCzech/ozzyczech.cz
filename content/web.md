@@ -1,5 +1,6 @@
 ---
 title: Web|src
+slug: web
 ---
 
 # 🌍 Web|&lt;src&gt;
