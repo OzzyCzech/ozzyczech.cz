@@ -22,8 +22,7 @@ const twemoji = require('twemoji');
 			await page.save(page.dir.replace('content', 'public'));
 		}
 
-		// Generate sitemap
-
+		// Generate sitemap.xml
 		Sphido.template.toFile(
 				'public/sitemap.xml',
 				'theme/sitemap.xml',
