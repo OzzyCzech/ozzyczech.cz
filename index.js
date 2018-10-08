@@ -26,7 +26,7 @@ const twemoji = require('twemoji');
 		Sphido.template.toFile(
 				'public/sitemap.xml',
 				'theme/sitemap.xml',
-				{pages: pages,  date: new Date().toISOString(), domain: 'https://blog.omdesign.cz'}
+				{pages: pages, domain: 'https://blog.omdesign.cz'}
 		);
 
 		// Get sorted posts only
