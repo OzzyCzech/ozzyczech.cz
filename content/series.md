@@ -13,3 +13,9 @@ title: Seriály
 - [Lost in space](https://www.csfd.cz/film/596681-lost-in-space/prehled/)
 - [Altered Carbon](https://www.csfd.cz/film/327118-altered-carbon/prehled/)
 - [The Expanse](https://www.csfd.cz/film/407858-the-expanse/prehled/)
+
+
+# TODO
+
+- [ ] The Staircase
+- [ ] Tabula Rasa - krimi Belgie
