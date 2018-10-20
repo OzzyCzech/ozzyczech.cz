@@ -1,5 +1,6 @@
 ---
 title: Seriály
+slug: series
 ---
 
 # 2018
