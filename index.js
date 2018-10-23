@@ -33,6 +33,19 @@ const twemoji = require('twemoji');
 		const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
 		posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
+
+		// Generate RSS
+		Sphido.template.toFile(
+			'public/rss.xml',
+			'theme/rss.xml',
+			{
+				title: 'om/blog',
+				description: 'Blog by Roman Ožana',
+				domain: 'https://blog.omdesign.cz',
+				pages: posts.slice(0, 10),
+			}
+		);
+
 		// Generate pages
 		const postPerPage = 5;
 		const pagination = Sphido.pagination(posts.length, postPerPage);
