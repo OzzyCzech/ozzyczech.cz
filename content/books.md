@@ -3,7 +3,7 @@ title: Knihy
 slug: books
 ---
 
-# 📖 Knihy
+# 📚 Knihy
 
 * [Rudý zákon - Bill Browder](http://www.databazeknih.cz/knihy/rudy-zakon-240925)
 * [Faktor Churchill - Boris Johnson](http://www.databazeknih.cz/knihy/faktor-churchill-299200)
@@ -14,7 +14,7 @@ slug: books
 * [Průmysl lži: Propaganda, konspirace, a dezinformační válka](https://www.kosmas.cz/knihy/238394/prumysl-lzi/)
 * [Faktomluva](https://www.melvil.cz/kniha-faktomluva/)
 
-## Knihy pro děti
+## 📚 Knihy pro děti
 
 * [Za chvíli jsme doma, jen si odskočíme do Afriky - Oliver Scherz](https://www.kosmas.cz/knihy/203684/za-chvili-jsme-doma-jen-si-odskocime-do-afriky/)
 * [No jo, medvěd! - Hubert Schirneck ](https://www.kosmas.cz/knihy/187917/no-jo-medved/)

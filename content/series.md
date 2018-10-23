@@ -15,8 +15,7 @@ slug: series
 - [Altered Carbon](https://www.csfd.cz/film/327118-altered-carbon/prehled/)
 - [The Expanse](https://www.csfd.cz/film/407858-the-expanse/prehled/)
 
-
 # TODO
 
-- [ ] The Staircase
-- [ ] Tabula Rasa - krimi Belgie
+- The Staircase
+- Tabula Rasa - krimi Belgie
