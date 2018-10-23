@@ -10,6 +10,9 @@ slug: books
 * [Rudé hvězdy ve vesmíru aneb Pohled do zákulisí sovětské kosmonautiky](http://www.databazeknih.cz/knihy/rude-hvezdy-ve-vesmiru-aneb-pohled-do-zakulisi-sovetske-kosmonautiky-220823)
 * [The World Beyond Your Head - Matthew Crawford](https://www.amazon.com/World-Beyond-Your-Head-Distraction/dp/0374535914)
 * [HLUBOKÁ PRÁCE - Cal Newport](https://www.melvil.cz/kniha-hluboka-prace/)
+* [Informační válka](https://www.kosmas.cz/knihy/238660/informacni-valka/)
+* [Průmysl lži: Propaganda, konspirace, a dezinformační válka](https://www.kosmas.cz/knihy/238394/prumysl-lzi/)
+* [Faktomluva](https://www.melvil.cz/kniha-faktomluva/)
 
 ## Knihy pro děti
 
