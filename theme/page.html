@@ -15,13 +15,9 @@
 
 <footer class="my-2 text-secondary text-right">
 	<a href="https://raw.githubusercontent.com/OzzyCzech/blog.omdesign.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a> 
-	
-	&bullet; 
-
-	{{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}}
-
 	| 
-
+	{{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}}
+	| 
 	<script>
 		var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
 		document.getElementsByTagName('footer')[0].innerHTML += date;
