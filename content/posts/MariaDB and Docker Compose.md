@@ -44,9 +44,9 @@ collation-server=utf8_czech_ci
 
 ## Initializing a fresh instance
 
-Most important are **env** - where are **MYSQL_ROOT_PASSWORD** and **MYSQL_DATABASE**.
-There is also **volumes** with dome mounts `init.sh`. When a container is started for the first 
-time it will execute files with extensions **.sh**, **.sql** and **.sql.gz** that are 
+Most important is **env** - with **MYSQL_ROOT_PASSWORD** and **MYSQL_DATABASE** variable.
+When a container is started for the first time it will execute
+files with extensions **.sh**, **.sql** and **.sql.gz** that are 
 found in `/docker-entrypoint-initdb.d`. Lets have follow `./etc/db/init.sh` script:
 
 ```bash
