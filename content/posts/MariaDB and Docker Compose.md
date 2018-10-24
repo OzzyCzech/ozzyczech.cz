@@ -8,9 +8,9 @@ date: 2018-10-24 17:30:00
 This is a short instructions how to run [MariaDB Docker](https://hub.docker.com/_/mariadb/) with 
 [docker compose](https://docs.docker.com/compose/) and have suitable developer env.
 
-Let's have follow `docker-compose.yml` and two folders `./etc/db`
+Let's have follow `docker-compose.yml` and two folders `./etc/db` and `./data`
 
-```yml
+```yaml
 version: '3.3'
 
 services:
@@ -45,12 +45,9 @@ collation-server=utf8_czech_ci
 ## Initializing a fresh instance
 
 Most important are **env** - where are **MYSQL_ROOT_PASSWORD** and **MYSQL_DATABASE**.
-
 There is also **volumes** with dome mounts `init.sh`. When a container is started for the first 
 time it will execute files with extensions **.sh**, **.sql** and **.sql.gz** that are 
-found in `/docker-entrypoint-initdb.d`.
-
-Lets have follow `./etc/db/init.sh` script:
+found in `/docker-entrypoint-initdb.d`. Lets have follow `./etc/db/init.sh` script:
 
 ```bash
 #!/bin/bash
