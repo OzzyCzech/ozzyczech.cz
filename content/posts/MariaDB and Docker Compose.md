@@ -65,18 +65,21 @@ Now it's time run `docker-compose up`
 ### Connect to database prompt
 
 ```bash
-docker-compose exec mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE'
+docker-compose exec \
+ mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE'
 ```
 ### Backup database to SQL file
 
 ```bash
-docker-compose exec mariadb bash -c 'mysqldump -u root --password=$MYSQL_ROOT_PASSWORD  $MYSQL_DATABASE > /db/$MYSQL_DATABASE.sql'
+docker-compose exec \
+ mariadb bash -c 'mysqldump -u root --password=$MYSQL_ROOT_PASSWORD  $MYSQL_DATABASE > /db/$MYSQL_DATABASE.sql'
 ```
 
 ### Restore database from SQL file
 
 ```bash
-docker-compose exec mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE < /db/$MYSQL_DATABASE.sql'
+docker-compose exec \
+ mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE < /db/$MYSQL_DATABASE.sql'
 ```
 
 ### Execute mysql_upgrade after upgrade
