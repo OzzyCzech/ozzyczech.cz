@@ -9,13 +9,13 @@ date: 2018-10-25
 
 Follow command tar folder by folder ro separate archive.
 
-## Compressed archive
+**Compressed archive**
 
 ```bash
 find . -type d -maxdepth 1 -mindepth 1 -exec tar zcvf {}.tar.gz {} \;
 ```
 
-## Un-coompressed archive
+**Un-coompressed archive**
 
 ```bash
 find . -type d -maxdepth 1 -mindepth 1 -exec tar cvf {}.tar {}  \;
