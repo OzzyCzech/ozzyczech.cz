@@ -6,7 +6,7 @@ date: 2018-10-25
 
 # Create tar from all folders
 
-Follow commands create tar archives folder by folder into their own tar so dir becomes *folder.tar*
+Follow commands create tar archives folder by folder into their own tar - so dir becomes *folder.tar*
 
 **Compressed archive**
 
