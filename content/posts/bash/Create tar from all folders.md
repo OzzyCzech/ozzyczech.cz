@@ -1,6 +1,7 @@
 ---
 title: Create tar from all folders
 date: 2018-10-25
+tags: [bash, tar]
 ---
 
 
