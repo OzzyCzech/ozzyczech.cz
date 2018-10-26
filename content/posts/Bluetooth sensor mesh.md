@@ -14,23 +14,20 @@ connected to hub.
 * [Home Mesh](https://www.homesmartmesh.com/) or [here](https://hackaday.io/project/20388-home-smart-mesh)
 
 
-
 ## Bluetooth buttons
 
 * [NRF51822 2V-3.3V Bluetooth 4.0 Wireless Module For iBeacon Base Station Intelligent Control System Beacon BLE Module 4MA](https://www.aliexpress.com/item/NRF51822-2V-3-3V-Bluetooth-4-0-Wireless-Module-For-iBeacon-Base-Station-Intelligent-Control-System/32920229385.html)
 * [Nordic nrf52832 Chip ble development board nRF52 iBeacon demo board](https://www.aliexpress.com/item/Nordic-nrf52832-Chip-ble-development-board-nRF52-iBeacon-demo-board/32862041727.html)
 
-
 ## Sensors
 
 * [New! NRF52832 Bluetooth wireless sensor acceleration sensor temperature and humidity sensor](https://www.aliexpress.com/item/New-NRF52832-Bluetooth-wireless-sensor-acceleration-sensor-temperature-and-humidity-sensor/32906662327.html) ~18$, BME280, CR2477
-* [NRF52 Recessed Vibration+Contact sensor for door/window](https://www.openhardware.io/view/434/NRF52-Recessed-VibrationContact-sensor-for-doorwindow) - DIY sensor proposal for window/doors
+* [NRF52 Recessed Vibration+Contact sensor for door/window](https://www.openhardware.io/view/434/NRF52-Recessed-VibrationContact-sensor-for-doorwindow) - DIY sensor proposal for window/doors* [Bluetooth otion sensor]()
 
 ## BEE280/BME680: Integrated environmental sensors
 
 * [BEE280/BME680 homepage](https://www.bosch-sensortec.com/bst/products/environmental/integrated_environmental_unit/overview_integratedenvironmentalunit)
 * [BME680 boards](https://www.aliexpress.com/af/BME680.html) and [BME280 boards](https://www.aliexpress.com/af/BME280.html) on Alliexpress
-
 
 ## nRF52 / nRF51 / Bluetooth
 
