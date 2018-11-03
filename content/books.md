@@ -26,3 +26,27 @@ slug: books
 * [Nádherné úterý - Daisy Mrázková](https://www.kosmas.cz/knihy/199609/nadherne-utery/)
 * [Žirafí máma a jiné příšery - Alexandra Salmela](https://www.kosmas.cz/knihy/208297/zirafi-mama-a-jine-prisery/)
 * [Pohoršovna](https://www.kosmas.cz/knihy/197879/pohorsovna/)
+
+
+<!--
+
+# Books
+
+- Neil Gaim- Karolína
+- Richard Dawkins - Příběh předka
+- Jonas Jonasson - Analfabetka, která uměla počítat
+- Olivier Truc - Poslední Laponec
+- Eric Abrahamson a David H. Freedman - Báječný chaos - Shrytý půvab nepořádku
+- Zamrzlá evoluce aneb je to jinak, pane Darwin - Flegr Jaroslav
+- Peter Thiel - Zero to One 
+
+# Logo types by @draplin
+- Alphabetical Designs (Trademarks and Symbols) - Yasaburo Kuwayama
+- Symbolical Designs (Trademarks and Symbols) - Yasaburo Kuwayama
+- Aaron Draplin - http://draplin.com/ @draplin
+- Aaron Draplin Takes On a Logo Design Challenge - http://vimeo.com/113751583
+- America Is F*cked.......(Graphically at least) - http://vimeo.com/1465284
+- David E. Carter is an entrepreneur and writer on graphic design, logo design, and corporate branding. He has written many trademark and logo books. http://logobooks.com/
+
+
+-->
