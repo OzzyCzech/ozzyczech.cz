@@ -3,7 +3,8 @@ all:
 	rm -rf ./public
 	yarn run build
 
-update: 
+autoupdate: 
 	git commit -a -m "autoupdate `date +%F-%T`"
 	git push
-PHONY: all update
+	
+PHONY: all autoupdate
