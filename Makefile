@@ -1,7 +1,7 @@
 all:
-	npm install # yarn install --dev --no-color
+	npm install
 	rm -rf ./public
-	npm run build #yarn run build
+	npm run build
 
 autoupdate: 
 	git commit -a -m "autoupdate `date +%F-%T`"
