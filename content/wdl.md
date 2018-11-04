@@ -6,6 +6,10 @@ slug: wdl
 
 # Webdesign digest list
 
+## 11/2018
+
+* [PALX Automatic UI Color Palette Generator](https://palx.jxnblk.com/)
+
 ## 05/2017
 
 * [A simple generalized drag-and-drop module that abstracts away most of the drag-and-drop APIs weirdness and surprises.](https://github.com/fresheneesz/drip-drop)
