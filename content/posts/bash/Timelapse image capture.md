@@ -1,9 +1,9 @@
 ---
-title: Interval image capture 
+title: Timelapse image capture 
 date: 2017-09-11
 ---
 
-# Interval image capture
+# Timelapse image capture
 
 Capture image from camera:
 
@@ -15,7 +15,7 @@ Capture image from camera:
 59  5-19 * * * tweet it...
 ```
 
-Generate video from all images:
+Generate timelapse video from all images:
 
 ````
 ffmpeg -framerate 30 -pattern_type glob -i 'images/*.jpeg' -vcodec libx264 video.mp4
