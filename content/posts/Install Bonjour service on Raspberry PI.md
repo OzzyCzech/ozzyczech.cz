@@ -6,7 +6,7 @@ tags: [raspberry, iot]
 
 # Install Bonjour on Raspberry PI
 
-```bash test
+```bash
 sudo apt-get update
 sudo apt-get install libnss-mdns
 ```
