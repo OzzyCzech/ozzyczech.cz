@@ -1,10 +1,10 @@
 ---
-title: Install Bonjour service on Raspberry PI
+title: Install Bonjour service on Raspberry
 date: 2018-11-16
 tags: [raspberry, iot]
 ---
 
-# Install Bonjour on Raspberry PI
+# Install Bonjour service on Raspberry
 
 ```bash
 sudo apt-get update
