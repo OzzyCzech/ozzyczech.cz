@@ -30,7 +30,7 @@ PING pi.local (192.168.0.75): 56 data bytes
 or just 
 
 ```bash
-ssh root@pi.local
+ssh pi@pi.local
 ```
 
 * https://support.apple.com/bonjour
