@@ -7,15 +7,15 @@ tags: [raspberry, iot]
 # Install Bonjour service on Raspberry
 
 ```bash
-sudo apt-get update
-sudo apt-get install libnss-mdns
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install avahi-daemon
 ```
 
-You can change hostname:
+You can also change hostname:
 
 ```
-echo "pi" > /etc/hostname 
-reboot
+sudo echo "pi" > /etc/hostname
+sudo reboot
 ```
 
 Then you can try ping `pi.local`
@@ -33,4 +33,5 @@ or just
 ssh pi@pi.local
 ```
 
+* http://www.avahi.org/
 * https://support.apple.com/bonjour
