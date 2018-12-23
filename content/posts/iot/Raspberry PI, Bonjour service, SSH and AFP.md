@@ -8,7 +8,7 @@ date: 2018-12-27
 ### Install clean Raspberry (withou desktop)
 
 1. Download **Raspbian Stretch Lite** https://www.raspberrypi.org/downloads/raspbian/
-2. [Install](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) with [etcher](https://www.balena.io/etcher/) to SD card
+2. [Install Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) with [etcher](https://www.balena.io/etcher/) to SD card
 3. Boot from SD card...
 
 ### Basic configuration and Wifi connection
