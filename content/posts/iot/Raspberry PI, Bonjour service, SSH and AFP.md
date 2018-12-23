@@ -5,7 +5,7 @@ date: 2018-12-27
 
 # Raspberry PI, Bonjour service, SSH and AFP
 
-### Install clean Raspberry (withou desktop)
+### Raspbian Stretch Lite (without desktop)
 
 1. Download **Raspbian Stretch Lite** https://www.raspberrypi.org/downloads/raspbian/
 2. [Install Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) with [etcher](https://www.balena.io/etcher/) to SD card
