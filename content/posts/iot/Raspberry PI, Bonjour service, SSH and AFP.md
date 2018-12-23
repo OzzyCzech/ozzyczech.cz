@@ -19,7 +19,7 @@ sudo raspi-config
 
 1. Change User Password :-) ([default user](https://www.raspberrypi.org/documentation/linux/usage/users.md) `pi` with password `raspberry`)
 2. Change *Localisation Options*
-3. enable SSH in *Interfacing Options*
+3. Enable SSH in *Interfacing Options*
 4. Configure WiFi in *Network Options* and change *Hostname* (in my case to **pi**)
 
 If you have Wifi with hidden SSID, you will need change `/etc/wpa_supplicant/wpa_supplicant.conf` file
