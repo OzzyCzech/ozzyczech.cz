@@ -5,13 +5,13 @@ date: 2018-12-27
 
 # Raspberry PI, Bonjour service, SSH and AFP
 
-## Install clean Raspberry (withou desktop)
+### Install clean Raspberry (withou desktop)
 
 1. Download **Raspbian Stretch Lite** https://www.raspberrypi.org/downloads/raspbian/
 2. [Install](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) with https://www.balena.io/etcher/
 3. Boot RPI
 
-# Basic configuration and Wifi connection
+### Basic configuration and Wifi connection
 
 ```bash
 sudo raspi-config
@@ -39,7 +39,7 @@ network={
 
 Reboot (`sudo reboot`) and then check with `iwgetid` if you are connected to your Wifi!
 
-## Install AFP and Bonjour service
+### Install AFP and Bonjour service
 
 Install [netatalk](http://netatalk.sourceforge.net/2.2/htmldocs/configuration.html) thats provide AppleTalk Filing Protocol (AFP) interface.
 
@@ -54,7 +54,7 @@ sudo apt install avahi-daemon avahi-utils
 sudo update-rc.d avahi-daemon defaults
 ```
 
-### Config AFPD with `/etc/avahi/services/afpd.service`
+#### Config AFPD with `/etc/avahi/services/afpd.service`
 
 ```xml
 <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
@@ -75,7 +75,7 @@ sudo update-rc.d avahi-daemon defaults
 
 PS: `RackMac` is define icon that will be shown in Finder (there is plenty other options e.g. `Windows`, `Macintosh`, `TimeCapsule` [and so on](https://www.google.com/?q=avahi%20icons))
 
-### Config SSH with `/etc/avahi/services/ssh.service`
+#### Config SSH with `/etc/avahi/services/ssh.service`
 
 ```xml
 <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
@@ -89,7 +89,7 @@ PS: `RackMac` is define icon that will be shown in Finder (there is plenty other
 </service-group>
 ```
 
-### Configure avahi daemon
+#### Configure avahi daemon
 
 Then in `/etc/avahi/avahi-daemon.conf` change two parametters `host-name` and `publish-workstation`:
 
@@ -104,7 +104,7 @@ publish-workstation=yes # this row
 # ...
 ```
 
-### Now Awvvaaaahhhhiii
+#### Now Awvvaaaahhhhiii
 
 Enable **afp** and **avahi**
 
@@ -130,7 +130,7 @@ avahi-browse -a | grep $(hostname)
 https://medium.com/@abjurato/using-raspberry-pi-as-an-apple-timemachine-d2fceecb6876
 -->
 
-## Links
+### Links
 
 * http://www.avahi.org/
 * https://support.apple.com/bonjour
