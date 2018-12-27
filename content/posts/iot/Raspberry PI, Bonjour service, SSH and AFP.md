@@ -7,7 +7,7 @@ date: 2018-12-27
 
 ### Raspbian Stretch Lite (without desktop)
 
-1. Download [**Raspbian Stretch Lite**](https://www.raspberrypi.org/downloads/raspbian/)
+1. Download [Raspbian Stretch Lite](https://downloads.raspberrypi.org/raspbian_lite_latest)
 2. [Install Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) with [etcher](https://www.balena.io/etcher/) to SD card
 3. Boot from SD card...
 
