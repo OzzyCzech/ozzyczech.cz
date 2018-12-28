@@ -127,10 +127,6 @@ now check if everything works well with
 avahi-browse -a | grep $(hostname)
 ```
 
-<!-- 
-https://medium.com/@abjurato/using-raspberry-pi-as-an-apple-timemachine-d2fceecb6876
--->
-
 ### Links
 
 * http://www.avahi.org/
