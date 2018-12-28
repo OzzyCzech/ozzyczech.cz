@@ -50,7 +50,8 @@ sudo apt install netatalk
 Install [avahi](https://www.avahi.org/)
 
 ```
-sudo apt install avahi-daemon avahi-utils
+sudo apt install avahi-daemon
+sudo apt install avahi-utils
 sudo update-rc.d avahi-daemon defaults
 ```
 
