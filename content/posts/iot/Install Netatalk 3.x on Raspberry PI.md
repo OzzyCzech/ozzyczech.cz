@@ -9,7 +9,7 @@ date: 2018-12-28
 
 Install required Packages
 
-```
+```bash
 sudo apt install build-essential \
 libevent-dev libssl-dev libgcrypt-dev libkrb5-dev libpam0g-dev \
 libwrap0-dev libdb-dev libtdb-dev libmariadbclient-dev \
@@ -19,22 +19,22 @@ libdbus-glib-1-dev libglib2.0-dev libio-socket-inet6-perl \
 tracker libtracker-sparql-1.0-dev libtracker-miner-1.0-dev
 ```
 
-Remove old version:
+Remove old version of netatalk:
 
-```
+```bash
 sudo apt remove netatalk
 ```
 
 then download and extract latest version
 
-```
+```bash
 wget http://prdownloads.sourceforge.net/netatalk/netatalk-3.1.12.tar.bz2 -qO - | tar -xj
 cd netatalk-3.1.12/
 ```
 
 Do configure!
 
-```
+```bash
 ./configure \
         --with-init-style=debian-systemd \
         --without-libevent \
@@ -47,16 +47,17 @@ Do configure!
         --with-tracker-pkgconfig-version=1.0
 ```
 
-```
+```bash
 make
 sudo make install
+sudo reboot
 ```
 
 Check features and paths, using `netatalk -V` and `afpd -V`.
 
 edit `/usr/local/etc/afp.conf`
 
-```
+```ini
 [Global]
 ; mimic model = RackMac
 
@@ -71,13 +72,13 @@ basedir regex = /home
 ;time machine = yes
 ```
 
-```
+```bash
 sudo systemctl enable avahi-daemon
 sudo systemctl enable netatalk
 sudo systemctl start avahi-daemon
 sudo systemctl start netatalk
 ```
 
-### Sources
+### Links
 
 * [Install Netatalk 3.1.12 on Debian 9 Stretch](http://netatalk.sourceforge.net/wiki/index.php/Install_Netatalk_3.1.12_on_Debian_9_Stretch)
