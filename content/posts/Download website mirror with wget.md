@@ -5,7 +5,7 @@ date: 2018-12-13
 
 # Download website mirror with wget
 
-```
+```bash
 wget --mirror \
      --convert-links \
      --adjust-extension \

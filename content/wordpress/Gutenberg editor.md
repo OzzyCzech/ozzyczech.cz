@@ -1,9 +1,9 @@
 ---
-title: Gutenberg
+title: Gutenberg editor
 date: 2018-11-30
 ---
 
-# Gutenberg
+# Gutenberg editor
 
 * [Source code](https://github.com/WordPress/gutenberg)
 * [Docs](https://wordpress.org/gutenberg/handbook/)
