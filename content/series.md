@@ -5,17 +5,20 @@ slug: series
 
 # 2018
 
-- [Fauda](https://www.csfd.cz/film/4287-fauda/prehled/)
-- [Legion](https://www.csfd.cz/film/448248-legion/prehled/)
-- [La casa de papel](https://www.csfd.cz/film/525549-la-casa-de-papel/prehled/)
-- [Le Bureau des Légendes](https://www.csfd.cz/film/24985-le-bureau-des-legendes/prehled/)
-- [Final space](https://www.csfd.cz/film/531684-final-space/komentare/)
-- [Star Trek: Discovery](https://www.csfd.cz/film/424901-star-trek-discovery/prehled/)
-- [Lost in space](https://www.csfd.cz/film/596681-lost-in-space/prehled/)
-- [Altered Carbon](https://www.csfd.cz/film/327118-altered-carbon/prehled/)
-- [The Expanse](https://www.csfd.cz/film/407858-the-expanse/prehled/)
+- [Legion](https://www.imdb.com/title/tt5114356/)
+- [La casa de papel](https://www.imdb.com/title/tt6468322)
+- [Le Bureau des Légendes](https://www.imdb.com/title/tt4063800/)
+- [Final space](https://www.imdb.com/title/tt6317068/)
+- [Star Trek: Discovery](https://www.imdb.com/title/tt5171438/)
+- [Lost in space](https://www.imdb.com/title/tt5232792)
+- [Altered Carbon](https://www.imdb.com/title/tt2261227/)
+- [The Expanse](https://www.imdb.com/title/tt3230854/)
+- [Fortitude](https://www.imdb.com/title/tt3498622/)
+- [Jordskott](https://www.imdb.com/title/tt2309405)
+- [Stranger Things](https://www.imdb.com/title/tt4574334/)
 
-# TODO
-
+# Watchlist
+- [Fauda](https://www.imdb.com/title/tt4565380/)
+- True Detective
 - The Staircase
 - Tabula Rasa - krimi Belgie
