@@ -26,7 +26,7 @@ const twemoji = require('twemoji');
 		Sphido.template.toFile(
 				'public/sitemap.xml',
 				'theme/sitemap.xml',
-				{pages: pages,  date: new Date().toISOString(), domain: 'https://blog.omdesign.cz'}
+				{pages: pages,  date: new Date().toISOString(), domain: 'https://ozzyczech.cz'}
 		);
 
 		// Get sorted posts only
@@ -41,7 +41,7 @@ const twemoji = require('twemoji');
 			{
 				title: 'om/blog',
 				description: 'Blog by Roman Ožana',
-				domain: 'https://blog.omdesign.cz',
+				domain: 'https://omdesign.cz',
 				pages: posts.slice(0, 10),
 			}
 		);
