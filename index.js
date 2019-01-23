@@ -13,10 +13,10 @@ const twemoji = require('twemoji');
 		// Get pages from directory
 		const pages = await Sphido.getPages(
 			await globby('content/**/*.{md,html}'),
-			...Sphido.extenders,
 			(page) => {
 				page.content = twemoji.parse(page.content); // twemoji
-			}
+			},
+			...Sphido.extenders
 		);
 
 		// Generate single pages...
