@@ -11,7 +11,9 @@ const twemoji = require('twemoji');
 	try {
 
 		// Get pages from directory
-		const pages = await Sphido.getPages(await globby('content/**/*.{md,html}'), ...Sphido.extenders,
+		const pages = await Sphido.getPages(
+			await globby('content/**/*.{md,html}'),
+			...Sphido.extenders,
 			(page) => {
 				page.content = twemoji.parse(page.content); // twemoji
 			}
@@ -77,7 +79,7 @@ const twemoji = require('twemoji');
 			await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 		}
 
-		await fs.copy('theme/404.html', 'public/404.html');
+		Sphido.template.toFile('public/404.html', 'theme/404.html');
 
 	} catch (e) {
 		console.error(e);
