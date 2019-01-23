@@ -41,7 +41,7 @@ const twemoji = require('twemoji');
 			'public/rss.xml',
 			'theme/rss.xml',
 			{
-				title: 'OzzyCzech/blog',
+				title: 'OzzyCzech',
 				description: 'Blog by Roman Ožana',
 				domain: 'https://omdesign.cz',
 				pages: posts.slice(0, 10),
