@@ -12,9 +12,9 @@ const twemoji = require('twemoji');
 
 		// Get pages from directory
 		const pages = await Sphido.getPages(await globby('content/**/*.{md,html}'), ...Sphido.extenders,
-				(page) => {
-					page.content = twemoji.parse(page.content); // twemoji
-				}
+			(page) => {
+				page.content = twemoji.parse(page.content); // twemoji
+			}
 		);
 
 		// Generate single pages...
@@ -24,9 +24,9 @@ const twemoji = require('twemoji');
 
 		// Generate sitemap.xml
 		Sphido.template.toFile(
-				'public/sitemap.xml',
-				'theme/sitemap.xml',
-				{pages: pages,  date: new Date().toISOString(), domain: 'https://ozzyczech.cz'}
+			'public/sitemap.xml',
+			'theme/sitemap.xml',
+			{pages: pages, date: new Date().toISOString(), domain: 'https://ozzyczech.cz'}
 		);
 
 		// Get sorted posts only
@@ -52,13 +52,13 @@ const twemoji = require('twemoji');
 
 		for await (let current of pagination) {
 			await Sphido.template.toFile(
-					current === 1 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
-					'theme/pages.html',
-					{
-						pages: posts.slice(postPerPage * (current - 1), current * postPerPage),
-						pagination: pagination,
-						current: current,
-					}
+				current === 1 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
+				'theme/pages.html',
+				{
+					pages: posts.slice(postPerPage * (current - 1), current * postPerPage),
+					pagination: pagination,
+					current: current,
+				}
 			);
 		}
 
@@ -76,6 +76,8 @@ const twemoji = require('twemoji');
 		for await (let file of files) {
 			await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 		}
+
+		await fs.copy('theme/404.html', 'public/404.html');
 
 	} catch (e) {
 		console.error(e);
