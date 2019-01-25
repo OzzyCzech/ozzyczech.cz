@@ -6,6 +6,12 @@
 - https://www.phpliveregex.com/
 - https://www.regexpal.com/
 
+
+### HTTPS Tools
+
+- [HTTPS certificates](https://transparencyreport.google.com/https/certificates)
+- [crt.sh](https://crt.sh) 
+
 ### Logs
 
 - [Filebeat](https://www.elastic.co/products/beats/filebeat)
