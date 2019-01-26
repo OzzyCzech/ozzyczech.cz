@@ -1,6 +1,6 @@
 ---
 title: Free stock photos
-data: 2018-10-29
+date: 2018-10-29
 ---
 
 # Free stock photos
