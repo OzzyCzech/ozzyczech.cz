@@ -1,11 +1,9 @@
 all:
 	yarn install --production --no-color
-	#rm -rf ./public
-	#mkdir -p log public
 	yarn run build
 
-autoupdate: 
-	git commit -a -m "autoupdate `date +%F-%T`"
+deploy: 
+	git commit --allow-empty -m "Deploy `date +%F-%T`"
 	git push
 	
-PHONY: all autoupdate
+PHONY: all deploy

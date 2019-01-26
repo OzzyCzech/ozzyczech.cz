@@ -2,14 +2,15 @@
   "scripts": {
     "build": "./index.js",
     "watch": "watch './index.js' ./content ./theme",
-    "server": "serve public"
+    "server": "serve public",
+    "dev": "yarn watch | yarn server"
   },
   "devDependencies": {
     "serve": "^10.0.2",
     "watch": "^1.0.2"
   },
   "dependencies": {
-    "twemoji": "^11.0.1",
-    "sphido": "sphido/sphido#master"
+    "sphido": "sphido/sphido#master",
+    "twemoji": "^11.0.1"
   }
 }
