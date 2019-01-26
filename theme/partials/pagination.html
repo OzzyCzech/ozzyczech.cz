@@ -3,7 +3,8 @@
 	<ul class="pagination justify-content-center d-flex flex-wrap">
 		{% for page in pagination %}
 		<li class="page-item my-2 {{'active' if page === current}}">
-			<a class="page-link" href="/{{'page/' + page if page > 1 }}">{{page}}</a></li>
+			<a class="page-link" href="/{{'page/' + page if page > 1 }}">{{page}}</a>
+		</li>
 		{% endfor %}
 	</ul>
 </nav>
