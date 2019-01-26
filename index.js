@@ -43,7 +43,7 @@ const twemoji = require('twemoji');
 			{
 				title: 'OzzyCzech',
 				description: 'Blog by Roman Ožana',
-				domain: 'https://omdesign.cz',
+				domain: 'https://ozzyczech.cz',
 				pages: posts.slice(0, 10),
 			}
 		);
