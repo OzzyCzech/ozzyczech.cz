@@ -1,7 +1,7 @@
 all:
-	yarn install --dev --no-color
-	rm -rf ./public
-	mkdir -p log public
+	yarn install --production --no-color
+	#rm -rf ./public
+	#mkdir -p log public
 	yarn run build
 
 autoupdate: 
