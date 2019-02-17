@@ -10,7 +10,7 @@ This is a short instructions how to run [MariaDB Docker](https://hub.docker.com/
 
 Let's have follow `docker-compose.yml` and two folders `./etc/db` and `./data`
 
-```
+```yml
 version: '3.3'
 
 services:
@@ -79,7 +79,7 @@ docker-compose exec \
 
 ```bash
 docker-compose exec \
- mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE < /db/$MYSQL_DATABASE.sql'
+mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE < /db/$MYSQL_DATABASE.sql'
 ```
 
 ### Execute mysql_upgrade after upgrade
@@ -87,4 +87,3 @@ docker-compose exec \
 ```bash
 docker-compose exec mariadb bash -c 'mysql_upgrade -uroot -proot'
 ```
-

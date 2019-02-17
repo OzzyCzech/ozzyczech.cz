@@ -21,20 +21,23 @@ const twemoji = require('twemoji');
 
 		// Generate single pages...
 		for await (let page of pages) {
-			await page.save(page.dir.replace('content', 'public'));
+			await page.save(
+				page.dir.replace('content', 'public'),
+				'theme/page.html' 
+			);
 		}
 
 		// Generate sitemap.xml
 		Sphido.template.toFile(
 			'public/sitemap.xml',
 			'theme/sitemap.xml',
-			{pages: pages, date: new Date().toISOString(), domain: 'https://ozzyczech.cz'}
+			{pages: pages, date: new Date().toISOString(), 
+			domain: 'https://ozzyczech.cz'}
 		);
 
 		// Get sorted posts only
 		const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
 		posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
 
 		// Generate RSS
 		Sphido.template.toFile(
@@ -44,7 +47,7 @@ const twemoji = require('twemoji');
 				title: 'OzzyCzech',
 				description: 'Blog by Roman Ožana',
 				domain: 'https://ozzyczech.cz',
-				pages: posts.slice(0, 10),
+				pages: posts.slice(0, 20),
 			}
 		);
 
@@ -74,13 +77,11 @@ const twemoji = require('twemoji');
 		*/
 
 		// Copy static content
-		let files = await await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}']);
+		let files = await await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'theme/404.html']);
 		for await (let file of files) {
 			await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 		}
-
-		Sphido.template.toFile('public/404.html', 'theme/404.html');
-
+		
 	} catch (e) {
 		console.error(e);
 	}

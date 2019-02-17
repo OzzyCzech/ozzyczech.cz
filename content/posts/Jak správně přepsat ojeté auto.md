@@ -57,4 +57,4 @@ Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty
 dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (
 Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)
 
- Popis výměny dálniční známky najdete na stránkách [České Pošty](http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm).
+Popis výměny dálniční známky najdete na stránkách [České Pošty](http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm).

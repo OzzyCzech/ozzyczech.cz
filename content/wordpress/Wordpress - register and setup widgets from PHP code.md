@@ -6,13 +6,13 @@ tags: [PHP, wordpress]
 
 # Wordpress: register and setup witgets from PHP code
 
-PHP driven registration of the #Widgets in #Wordpress can be quite confusing. There is my way how to handle it:
+PHP driven registration of the Widgets in Wordpress can be quite confusing. There is my way how to handle it:
 
-```
+```php
 class Widgets {
 
- private $widgets = array();
- private $options = array();
+ private $widgets = [];
+ private $options = [];
 
  public function __construct() {
   $this->options = wp_get_sidebars_widgets();
@@ -20,11 +20,11 @@ class Widgets {
 
  public function unregisterAllWidgets() {
   foreach ($this->options as $name => $values)
-   $this->options[$name] = array();
+   $this->options[$name] = [];
  }
 
  public function cleanWidgetSettings($type, $multi = null) {
-  $this->widgets[$type] = array();
+  $this->widgets[$type] = [];
   if ($multi !== null) $this->widgets[$type]['_multiwidget'] = (int)(bool)$multi;
  }
 
@@ -56,28 +56,27 @@ class Widgets {
 
 Following code is an example how to use `class Witgets`:
 
- ```
+```php
 $widgets = new Widgets();
 $widgets->unregisterAllWidgets();
 
-$widgets->add(
- 'text',
- array(
+$widgets->add('text', [
   'title' => 'About us',
   'text' => 'Simple text about us',
   'filter' => true,
   'classes' => '',
   'ids' => null,
- ),
+ ],
  'footer-1'
 );
 
 // ...
 ```
 
+
  This code need to be call only once. Put your code to `function.php` to `after_switch_theme` action:
 
-```
+```php
 add_action(
  'after_switch_theme', function () {
   $widgets = new Widgets();
@@ -87,4 +86,4 @@ add_action(
 );
 ```
 
- https://gist.github.com/4663766/
+https://gist.github.com/4663766/

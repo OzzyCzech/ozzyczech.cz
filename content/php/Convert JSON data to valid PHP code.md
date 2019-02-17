@@ -10,7 +10,7 @@ Do you need **convert JSON data to valid PHP** code without pain? I've got a sho
 
 Take a closer look at example data. I have here [currency.json](https://gist.github.com/Fluidbyte/2973986) - PHP code should look something like this:
 
-```
+```php
 <?php
  return array (
   'USD' =>
@@ -30,7 +30,7 @@ Take a closer look at example data. I have here [currency.json](https://gist.git
 
 It's can be done in only four lines of PHP code:
 
-```
+```php
 $data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
 $code = var_export((array)$data, true);
 $code = "<?php\n return " . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
@@ -39,7 +39,7 @@ file_put_contents(__DIR__ . '/currencies.locale.php', $code);
 
 If you need call some function (like [gettext](http://www.php.net/manual/en/book.gettext.php)) above the variable, just add more regular expression:
 
-```
+```php
 $data = json_decode(file_get_contents(__DIR__ . '/currency.json'));
 $code = var_export((array)$data, true);
 

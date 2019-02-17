@@ -9,7 +9,7 @@ tags: [PHP, wordpress]
 
 Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy:
 
-```
+```php
 <?php
 /*
 Plugin Name: Hashs
