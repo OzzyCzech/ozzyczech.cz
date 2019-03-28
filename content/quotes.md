@@ -39,3 +39,6 @@ title: Quotes
 
 > Nikdy nepřemýšlím o budoucnosti, protože přichází přiliš rychle.
 > *Albert Einstein*
+
+> Nejkrásnější věc, kterou můžeme objevit, je záhada.
+> *Albert Einstein*
