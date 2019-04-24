@@ -16,4 +16,5 @@ and much more https://github.com/OzzyCzech/dotfiles
 
 # iOS
 
+- [iCal Státní svátky ČR](webcal://www.google.com/calendar/ical/czech__cs%40holiday.calendar.google.com/public/basic.ics)
 - https://luma-touch.com/ - video editor tool
