@@ -17,7 +17,6 @@ tags: [backup]
  
 ### Cold storage
 
-
 * [Verbatim Ultra HD 4K External Slimline Blu-ray Writer](https://www.verbatim-europe.co.uk/en/prod/ultra-hd-4k-external-slimline-blu-ray-writer-43888/) - compatible with Blu-ray MDISC up to 100 GB MDISC
 * [Verbatim External Slimline Blu-ray Writer USB 3.1 GEN 1 with USB-C Connection](https://www.verbatim-europe.co.uk/en/prod/external-slimline-blu-ray-writer-usb-31-gen-1-with-usb-c-connection-43889/)
 * [Blu-ray M-DISC](http://www.verbatim-europe.co.uk/en/cat/mdisc-archival-media/) - lifetime archival storafe (up to 1000 years)
@@ -41,3 +40,7 @@ tags: [backup]
 
 * [ForkLift 3](https://binarynights.com/) - they have function called Synclet
 * [rclone](https://rclone.org/) - rclone is a command line program to sync files to cloud storages
+
+## Cloud
+
+* [Backblaze](https://www.backblaze.com/)
