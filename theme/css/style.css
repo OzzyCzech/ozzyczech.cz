@@ -1,13 +1,14 @@
 body {
 	display: grid;
-	grid-template-areas: "header header" "main aside" "footer aside";
+	grid-template-areas: "main aside" "footer aside";
 	grid-template-columns: 1fr 320px;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: 1fr auto;
 	max-width: 1280px;
-	margin: 0 auto;
 	width: 100%;
+	margin: 0 auto;
 	grid-gap: 1rem !important;
 	padding: 1rem !important;
+	box-sizing: border-box;
 }
 
 body > header {
@@ -18,8 +19,9 @@ body > footer {
 	grid-area: footer;
 }
 
-boby > main {
+body > main {
 	grid-area: main;
+	max-width: 912px;
 }
 
 body > aside {
@@ -29,14 +31,22 @@ body > aside {
 
 @media (max-width: 768px) {
 	body {
-		grid-template-areas: "header" "main" "footer" "aside";
+		grid-template-areas: "aside aside" "main main" "footer footer";
 		grid-template-columns: 1fr;
-		grid-template-rows: auto 1fr auto auto;
+		grid-auto-rows: auto auto auto;
 	}
 }
 
-body > footer {
-	padding-bottom: 5vh;
+@media print {
+	body {
+		grid-template-areas: "main" "footer";
+		grid-template-columns: 1fr;
+	}
+
+	.pagination, header, aside {
+		display: none;
+	}
+
 }
 
 body > main > article:first-child {
@@ -45,6 +55,8 @@ body > main > article:first-child {
 
 body > main > article:not(:last-child) {
 	border-bottom: 1px solid #dee2e6;
+	padding-bottom: 2rem !important;
+	margin-bottom: 2rem !important;
 }
 
 blockquote {

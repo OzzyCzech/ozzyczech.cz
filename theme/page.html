@@ -7,15 +7,13 @@
 </head>
 <body class="{{page.slug}}">
 
-<header>{% include "theme/partials/navbar.html" %}</header>
+<aside>{% include "theme/partials/aside.html" %}</aside>
 
 <main>
 	<article class="{{page.slug}}">
 		{{ page.content | trim | safe }}
 	</article>
 </main>
-
-<aside>{% include "theme/partials/aside.html" %}</aside>
 
 <footer class="text-secondary text-right">
 	<small>

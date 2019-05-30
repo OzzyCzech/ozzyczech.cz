@@ -29,6 +29,6 @@ you can also share every xxx image via twitter or something
 
 Generate timelapse video from all images:
 
-````
+```
 ffmpeg -framerate 30 -pattern_type glob -i 'images/*.jpeg' -vcodec libx264 video.mp4
 ```

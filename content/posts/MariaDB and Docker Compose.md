@@ -10,7 +10,7 @@ This is a short instructions how to run [MariaDB Docker](https://hub.docker.com/
 
 Let's have follow `docker-compose.yml` and two folders `./etc/db` and `./data`
 
-```yml
+```yaml
 version: '3.3'
 
 services:

@@ -6,11 +6,11 @@
     "dev": "yarn watch | yarn server"
   },
   "devDependencies": {
-    "serve": "^10.0.2",
+    "serve": "^11.0.1",
     "watch": "^1.0.2"
   },
   "dependencies": {
     "sphido": "sphido/sphido#master",
-    "twemoji": "^11.0.1"
+    "twemoji": "^12.0.4"
   }
 }
