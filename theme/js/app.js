@@ -12,6 +12,6 @@ document.onreadystatechange = function () {
 		var images = document.querySelectorAll("article img");
 		Array.from(images).forEach(function (img) {
 			img.classList.add('img-fluid');
-		});		
+		});
 	}
 };

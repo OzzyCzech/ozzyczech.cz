@@ -23,7 +23,7 @@ const twemoji = require('twemoji');
 		for await (let page of pages) {
 			await page.save(
 				page.dir.replace('content', 'public'),
-				'theme/page.html' 
+				'theme/page.html'
 			);
 		}
 
@@ -31,8 +31,10 @@ const twemoji = require('twemoji');
 		Sphido.template.toFile(
 			'public/sitemap.xml',
 			'theme/sitemap.xml',
-			{pages: pages, date: new Date().toISOString(), 
-			domain: 'https://ozzyczech.cz'}
+			{
+				pages: pages, date: new Date().toISOString(),
+				domain: 'https://ozzyczech.cz'
+			}
 		);
 
 		// Get sorted posts only
@@ -81,7 +83,7 @@ const twemoji = require('twemoji');
 		for await (let file of files) {
 			await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 		}
-		
+
 	} catch (e) {
 		console.error(e);
 	}
