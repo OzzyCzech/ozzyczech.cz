@@ -4,13 +4,13 @@
 	<title>OzzyCzech {% if current > 1 %} - Page {{current}} of {{pagination.length}}{% else %} by Roman Ožana{% endif %}</title>
 	{% include "theme/partials/head.html" %}
 </head>
-<body class="container-fluid">
+<body>
 
 <header>{% include "theme/partials/navbar.html" %}</header>
 
 <main>
 	{% for page in pages %}
-	<article class="py-5 px-3 {{page.slug}}">
+	<article class="{{page.slug}}">
 		<h2 class="h1">
 			<a href="{{ page.url() }}">{{ page.title }}</a>
 		</h2>
@@ -22,5 +22,6 @@
 <aside>{% include "theme/partials/aside.html" %}</aside>
 
 <footer>{% include "theme/partials/pagination.html" %}</footer>
+
 </body>
 </html>

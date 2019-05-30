@@ -1,11 +1,13 @@
 body {
 	display: grid;
-	grid-template-areas: "header header" "main aside" "footer footer";
-	grid-template-columns: 1fr 280px;
+	grid-template-areas: "header header" "main aside" "footer aside";
+	grid-template-columns: 1fr 320px;
 	grid-template-rows: auto 1fr auto;
-	grid-gap: 20px;
-	height: 100vh;
 	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+	grid-gap: 1rem !important;
+	padding: 1rem !important;
 }
 
 body > header {
@@ -26,11 +28,23 @@ body > aside {
 
 
 @media (max-width: 768px) {
-	.container {
-		grid-template-areas: "header" "main" "aside" "footer";
+	body {
+		grid-template-areas: "header" "main" "footer" "aside";
 		grid-template-columns: 1fr;
-		grid-template-rows: auto /* Header */ minmax(75px, auto) /* Content */ minmax(75px, auto) /* Sidebar */ auto;
+		grid-template-rows: auto 1fr auto auto;
 	}
+}
+
+body > footer {
+	padding-bottom: 5vh;
+}
+
+body > main > article:first-child {
+	padding-top: 0 !important;
+}
+
+body > main > article:not(:last-child) {
+	border-bottom: 1px solid #dee2e6;
 }
 
 blockquote {
@@ -62,10 +76,6 @@ img.emoji {
 	margin: 0 .05em 0 .1em;
 	vertical-align: -0.1em;
 	line-height: inherit;
-}
-
-body > footer {
-	padding-bottom: 10vh;
 }
 
 article h2.h1 a {
@@ -101,12 +111,4 @@ img[alt$="<>"] {
 	height: auto;
 	margin: auto;
 	float: none !important;
-}
-
-main > article:first-child {
-	padding-top: 0 !important;
-}
-
-main > article:not(:last-child) {
-	border-bottom: 1px solid #dee2e6;
 }

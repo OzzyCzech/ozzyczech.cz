@@ -5,28 +5,28 @@
 	<title>{{ page.title | trim }}</title>
 	{% include "theme/partials/head.html" %}
 </head>
-<body class="{{page.slug}} container-fluid">
+<body class="{{page.slug}}">
 
 <header>{% include "theme/partials/navbar.html" %}</header>
 
 <main>
-	<article class="px-3 {{page.slug}}">
+	<article class="{{page.slug}}">
 		{{ page.content | trim | safe }}
-
-		<footer class="text-secondary text-right">
-			<small>
-				<a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a>
-				| {{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}} |
-				<script>
-					var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
-					document.currentScript.insertAdjacentHTML("beforebegin", date);
-				</script>
-			</small>
-		</footer>
 	</article>
 </main>
 
 <aside>{% include "theme/partials/aside.html" %}</aside>
+
+<footer class="text-secondary text-right">
+	<small>
+		<a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a>
+		| {{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}} |
+		<script>
+			var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
+			document.currentScript.insertAdjacentHTML("beforebegin", date);
+		</script>
+	</small>
+</footer>
 
 </body>
 </html>
