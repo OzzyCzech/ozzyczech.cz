@@ -124,3 +124,12 @@ img[alt$="<>"] {
 	margin: auto;
 	float: none !important;
 }
+
+.social-media {
+	text-align: center;
+	padding: 1rem !important;
+}
+
+.social-media a {
+	color: inherit;
+}
