@@ -54,7 +54,7 @@ const twemoji = require('twemoji');
 		);
 
 		// Generate pages
-		const postPerPage = 5;
+		const postPerPage = 8;
 		const pagination = Sphido.pagination(posts.length, postPerPage);
 
 		for await (let current of pagination) {
