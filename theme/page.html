@@ -17,12 +17,14 @@
 
 <footer class="text-secondary text-right">
 	<small>
-		<a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a>
-		| {{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}} |
-		<script>
+		{{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}}
+		(<script>
 			var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
 			document.currentScript.insertAdjacentHTML("beforebegin", date);
-		</script>
+		</script>)
+		-
+		<a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a> |
+		<a href="https://github.com/OzzyCzech/ozzyczech.cz/edit/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">edit page</a>
 	</small>
 </footer>
 
