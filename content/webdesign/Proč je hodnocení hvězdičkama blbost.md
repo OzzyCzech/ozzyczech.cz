@@ -12,7 +12,7 @@ Většina současných moderních webů používá tzv. hodnocení obsahu **pomo
 ostatních, často Vám to pomůže v rozhodování.
 
 * ⭐️⭐️⭐️⭐️⭐️
-* ⭐️⭐️⭐️
+* ⭐️⭐️⭐️⭐️
 * ⭐️⭐️⭐️
 * ⭐
 
