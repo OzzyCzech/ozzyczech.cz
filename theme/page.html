@@ -11,20 +11,21 @@
 
 <main>
 	<article class="{{page.slug}}">
+
+		<small class="d-block float-right text-secondary">{{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}}</small>
+
 		{{ page.content | trim | safe }}
 	</article>
 </main>
 
 <footer class="text-secondary text-right">
 	<small>
-		{{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}}
-		(<script>
+		<script>
 			var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
 			document.currentScript.insertAdjacentHTML("beforebegin", date);
-		</script>)
-		-
-		<a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a> |
-		<a href="https://github.com/OzzyCzech/ozzyczech.cz/edit/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">edit page</a>
+		</script>
+		| <a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a>
+		| <a href="https://github.com/OzzyCzech/ozzyczech.cz/edit/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">edit page</a>
 	</small>
 </footer>
 

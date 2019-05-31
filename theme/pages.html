@@ -11,9 +11,11 @@
 <main>
 	{% for page in pages %}
 	<article class="{{page.slug}}">
+		<small class="d-block float-right text-secondary">{{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}}</small>
 		<h2 class="h1">
 			<a href="{{ page.url() }}">{{ page.title }}</a>
 		</h2>
+
 		{{ page.content | h1strip | safe }}
 	</article>
 	{% endfor %}
