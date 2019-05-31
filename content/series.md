@@ -17,6 +17,14 @@ slug: series
 - [Jordskott](https://www.imdb.com/title/tt2309405)
 - [Stranger Things](https://www.imdb.com/title/tt4574334/)
 
+# 2019
+
+- [Star Trek: Discovery](https://www.imdb.com/title/tt5171438/)
+- [Black Monday](https://www.imdb.com/title/tt7406334/)
+- [Chernobyl](https://www.imdb.com/title/tt7366338/)
+
+
+
 # Watchlist
 - [Fauda](https://www.imdb.com/title/tt4565380/)
 - True Detective
