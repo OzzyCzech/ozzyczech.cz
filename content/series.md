@@ -3,6 +3,12 @@ title: Seriály
 slug: series
 ---
 
+# 2019
+
+- [Black Monday](https://www.imdb.com/title/tt7406334/)
+- [Chernobyl](https://www.imdb.com/title/tt7366338/)
+- [Brickleberry](https://www.imdb.com/title/tt2022713/)
+
 # 2018
 
 - [Legion](https://www.imdb.com/title/tt5114356/)
@@ -16,17 +22,8 @@ slug: series
 - [Fortitude](https://www.imdb.com/title/tt3498622/)
 - [Jordskott](https://www.imdb.com/title/tt2309405)
 - [Stranger Things](https://www.imdb.com/title/tt4574334/)
-
-# 2019
-
-- [Star Trek: Discovery](https://www.imdb.com/title/tt5171438/)
-- [Black Monday](https://www.imdb.com/title/tt7406334/)
-- [Chernobyl](https://www.imdb.com/title/tt7366338/)
-
-
-
-# Watchlist
+- [True Detective](https://www.imdb.com/title/tt2356777/)
+- [The OA](https://www.imdb.com/title/tt4635282/)
 - [Fauda](https://www.imdb.com/title/tt4565380/)
-- True Detective
+- [Tabula Rasa](https://www.imdb.com/title/tt5197860/)
 - The Staircase
-- Tabula Rasa - krimi Belgie
