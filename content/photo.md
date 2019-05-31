@@ -33,3 +33,11 @@ date: 2018-09-27
 - [Google Photos](https://photos.google.com/)
 - [Apple Photos](https://support.apple.com/photos)
 - [Amazon Photos](https://www.amazon.com/Amazon-Photos/b?ie=UTF8&node=13234696011)
+
+
+## Cameras
+
+* Fuji X100F
+* Ricoh GR III
+* Fuji X-T3
+
