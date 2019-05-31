@@ -24,8 +24,9 @@
 			var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
 			document.currentScript.insertAdjacentHTML("beforebegin", date);
 		</script>
-		| <a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view source</a>
-		| <a href="https://github.com/OzzyCzech/ozzyczech.cz/edit/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">edit page</a>
+		| <a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">view</a>
+		| <a href="https://github.com/OzzyCzech/ozzyczech.cz/delete/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">delete</a>
+		| <a href="https://github.com/OzzyCzech/ozzyczech.cz/edit/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" class="text-secondary">edit</a>
 	</small>
 </footer>
 
