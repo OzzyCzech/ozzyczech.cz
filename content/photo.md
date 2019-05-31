@@ -11,7 +11,7 @@ date: 2018-09-27
 - [Capture One 12](https://www.captureone.com/en/)
 - [Picktorial](https://www.picktorial.com/)
 
-### All others RAW Processing
+#### Others RAW Processing
 
 - [Adobe Lightroom](https://lightroom.adobe.com/)
 - [Luminar](https://skylum.com/luminar)
