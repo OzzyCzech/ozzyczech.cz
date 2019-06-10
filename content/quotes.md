@@ -44,4 +44,4 @@ title: Quotes
 > *Albert Einstein*
 
 > Nezáleží na tom, jestli máte styl, pověst nebo peníze.Pokud nemáte dobré srdce, nemáte žádnou cenu.
-> Louis de Funès
+> *Louis de Funès*
