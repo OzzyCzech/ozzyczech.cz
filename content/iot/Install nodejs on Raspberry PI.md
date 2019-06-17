@@ -6,9 +6,16 @@ date: 2018-12-23
 # Install nodejs on Raspberry PI
 
 
+First download latest version of nodejs:
+
 ```bash
-wget -qO- http://nodejs.org/dist/latest-v11.x/node-v11.5.0-linux-armv6l.tar.xz | tar xvz -C ./nodejs
+wget -qO- http://nodejs.org/dist/latest/node-v12.4.0-linux-armv7l.tar.xz | tar xvz -C ./nodejs
 cd nodejs
+```
+
+Compile from sources:
+
+```bash
 sudo cp -R bin/* /usr/bin/
 sudo cp -R lib/* /usr/lib/
 sudo apt update && sudo apt upgrade
