@@ -3,13 +3,12 @@ title: Web|src
 slug: web
 ---
 
-<a class="twitter-timeline" href="https://twitter.com/websrc">Tweets by websrc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 #### Icons & emoji
 
 * https://flaticon.com
 * https://material.io/tools/icons/
 * https://twemoji.twitter.com/
+* https://thenounproject.com/
 
 #### Images
 
@@ -49,4 +48,5 @@ slug: web
 
 #### Tools
 
+- https://telegra.ph/
 - https://httpbin.org/
