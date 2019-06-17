@@ -1,5 +1,5 @@
 ---
-title: Web|src
+title: Web
 slug: web
 ---
 
