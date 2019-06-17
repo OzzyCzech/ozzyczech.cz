@@ -5,17 +5,22 @@ slug: web
 
 #### Icons & emoji
 
-* https://flaticon.com
-* https://material.io/tools/icons/
-* https://twemoji.twitter.com/
-* https://thenounproject.com/
+- https://flaticon.com
+- https://material.io/tools/icons/
+- https://twemoji.twitter.com/
+- https://thenounproject.com/
+
+#### Favicons
+
+- http://favicongrabber.com - free and opensource favicon grabber
+- https://www.google.com/s2/favicons?domain=ozzyczech.cz - Google favicon service from Chrome
 
 #### Images
 
-* https://unsplash.com/
-* https://stocksnap.io/
-* https://www.pexels.com/
-* https://freephotos.cc/
+- https://unsplash.com/
+- https://stocksnap.io/
+- https://www.pexels.com/
+- https://freephotos.cc/
 
 #### Payments
 
@@ -23,28 +28,28 @@ slug: web
 
 #### Electron
 
-* http://electron.atom.io
-* http://photonkit.com
+- http://electron.atom.io
+- http://photonkit.com
 
 #### Wordpress Themes
 
-* https://wordpress.org/themes/
-* http://themetrust.com/themes/
-* https://themeforest.net/category/wordpress
+- https://wordpress.org/themes/
+- http://themetrust.com/themes/
+- https://themeforest.net/category/wordpress
 
 #### Regex
 
-* https://www.regexpal.com/
-* https://regex101.com/
-* https://www.phpliveregex.com/
+- https://www.regexpal.com/
+- https://regex101.com/
+- https://www.phpliveregex.com/
 
 #### Emailing
 
-* https://www.mailgun.com/
-* https://postmarkapp.com/
-* https://aws.amazon.com/ses/
-* https://sendgrid.com/
-* http://www.mandrill.com/
+- https://www.mailgun.com/
+- https://postmarkapp.com/
+- https://aws.amazon.com/ses/
+- https://sendgrid.com/
+- http://www.mandrill.com/
 
 #### Tools
 
