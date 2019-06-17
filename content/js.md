@@ -1,5 +1,5 @@
 ---
-title: JavaScript|src
+title: JavaScript
 slug: js
 ---
 
