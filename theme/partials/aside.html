@@ -1,16 +1,59 @@
-<form class="form-inline my-3" method="get" action="https://www.google.com/search" target="_blank">
-	<input type="hidden" name="as_sitesearch" value="ozzyczech.cz">
-	<div class="input-group w-100">
-		<input class="form-control text-secondary" name="q" type="search" placeholder="Search&hellip;" aria-label="Search">
-		<div class="input-group-append">
-			<button class="btn border" type="submit">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-					<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#555"/>
-					<path d="M0 0h24v24H0z" fill="none"/>
-				</svg>
-			</button>
-		</div>
-	</div>
+<form class="form-inline my-3" method="get" id="search">
+		<input class="form-control text-secondary w-100" id="q" name="q" type="search" placeholder="Search&hellip;" aria-label="Search">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.5/fuse.min.js"></script>
+		<script>
+			(async () => {
+				const response = await fetch('/index.json');
+				const index = await response.json();
+
+				const fuse = new Fuse(index, {
+					shouldSort: true,
+					findAllMatches: true,
+					threshold: 0.5,
+					location: 0,
+					distance: 100,
+					maxPatternLength: 32,
+					minMatchCharLength: 1,
+					keys: [
+						{name: "title", weight: 0.8},
+						{name: "tags", weight: 0.6},
+						{name: "content", weight: 0.3}
+					]
+				});
+
+
+				const q = document.getElementById('q');
+				const main = document.getElementsByTagName("main")[0];
+				const mainBackup = main.innerHTML;
+
+				const search = (event) => {
+					let results = fuse.search(q.value);
+					if (q.value.length === 0) {
+						main.innerHTML = mainBackup;
+					} else {
+						main.innerHTML = '<h1>Search results:</h1>';
+					}
+
+					results.map((page) => {
+						main.insertAdjacentHTML("beforeend", `
+						<article>
+							<h2 class="h1">
+								<a href="${page.link}">${page.title}</a>
+							</h2>
+							<p class="text-secondary"><small>${page.content}</small></p>
+						</article>`);
+					});
+					event.preventDefault();
+				};
+
+				['keyup', 'change'].forEach((e) => {
+					q.addEventListener(e, (event) => {
+						search(event)
+					}, false)
+				});
+
+			})();
+		</script>
 </form>
 
 <section class="list-group">

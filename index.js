@@ -5,6 +5,7 @@ const fs = require('fs-extra');
 const {join, resolve, format, dirname} = require('path');
 const globby = require('globby');
 const twemoji = require('twemoji');
+const {striptags} = require('nunjucks/src/filters');
 
 (async () => {
 
@@ -36,6 +37,17 @@ const twemoji = require('twemoji');
 				domain: 'https://ozzyczech.cz'
 			}
 		);
+
+		// index.json for https://fusejs.io/
+		const index = pages.map(
+			page => ({
+				title: page.title,
+				content: striptags(page.content),
+				tags: page.tags,
+				link: 'https://ozzyczech.cz' + page.url()
+			})
+		);
+		fs.writeFileSync('public/index.json', JSON.stringify(index));
 
 		// Get sorted posts only
 		const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
