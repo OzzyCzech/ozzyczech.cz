@@ -37,7 +37,8 @@ date: 2018-09-27
 
 ## Cameras
 
-* Fuji X100F
+* Fujifilm X-T3
+* Fujifilm X100F
 * Ricoh GR III
-* Fuji X-T3
+
 
