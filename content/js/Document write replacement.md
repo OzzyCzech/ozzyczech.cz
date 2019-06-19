@@ -17,7 +17,7 @@ The `insertAdjacentHTML()` method of the Element interface parses the specified 
 
 The `Document.currentScript` property returns the `<script>` element whose script is currently being processed. Best position to add new HTML will be **beforebegin** - new HTML will be inserted before `<script>` itself.
 
-```js
+```html
 <script>
   document.currentScript.insertAdjacentHTML(
     'beforebegin', 
