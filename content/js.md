@@ -26,7 +26,8 @@ slug: js
 
 ### QA Tools
 
-* [ESLint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in JavaScript.
+- [xo](https://github.com/xojs/xo) - ❤️ JavaScript linter with great defaults
+- [ESLint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in JavaScript.
 
 ### Dependency management
 
