@@ -7,8 +7,8 @@ date: 2018-09-27
 
 ### Fuji RAW (best results)
 
-- [Fuji RAW file converter](http://www.fujifilm.com/support/digital_cameras/software/myfinepix_studio/rfc/)
 - [Capture One 12](https://www.captureone.com/en/)
+- [Fuji RAW file converter](http://www.fujifilm.com/support/digital_cameras/software/myfinepix_studio/rfc/)
 - [Picktorial](https://www.picktorial.com/)
 
 #### Others RAW Processing
