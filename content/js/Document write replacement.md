@@ -6,7 +6,7 @@ tags: [javascript]
 
 # Javascript document.write replacement
 
-Replacement of `document.write` can be combination of [insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) method and [document.currentScript](https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript) property.
+Replacement of `document.write` can be combination of [insertAdjacentHTML()](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) method and [document.currentScript](https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript) property.
 
 The `insertAdjacentHTML()` method of the Element interface parses the specified text as HTML or XML and inserts the resulting nodes into the DOM tree at a **specified position**: 
 
