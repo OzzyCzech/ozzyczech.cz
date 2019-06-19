@@ -15,7 +15,7 @@ The `insertAdjacentHTML()` method of the Element interface parses the specified 
  - 'beforeend': Just inside the element, after its last child.
  - 'afterend': After the element itself.
 
-The `Document.currentScript` property returns the `<script>` element whose script is currently being processed. Best position will be **beforebegin** - new HTML will be inserted before `<script>` itself.
+The `Document.currentScript` property returns the `<script>` element whose script is currently being processed. Best position to add new HTML will be **beforebegin** - new HTML will be inserted before `<script>` itself.
 
 ```html
 <scritp>
