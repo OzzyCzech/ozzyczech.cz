@@ -8,24 +8,24 @@ tags: [bash, photo, exiftool, exif]
 
 ## Organize images
 
-### Organize images by years/months
+Organize images by years/months
 
 ```bash
 exiftool -d "%Y/%m/%Y-%m-%d %H.%M.%S%%-c.%%le" "-filename<CreateDate" -r ./Photos
 ```
-### Download RAW files from SD card to current folder
+Download RAW files from SD card to current folder:
 
 ```bash
 exiftool -d "%Y/%m/%Y-%m-%d %H.%M.%S%%-c.%%le" "-filename<CreateDate" --ext raf -r /Volumes/SD
 ```
 
-### Move all Olympus images to directory Olympus
+Move all Olympus images to directory Olympus:
 
 ```bash
 exiftool -r '-directory=Olympus' -if '$make eq "OLYMPUS CORPORATION"' .
 ```
 
-### Rename files to datestamp
+Rename files to datestamp:
 
 *Filename looks like 2014-01-01 12:00:00.jpg and will append -NUM if DateTimeOriginal is the same for multiple files*
 
@@ -35,19 +35,19 @@ exiftool '-FileName<DateTimeOriginal' -d "%Y-%m-%d %H.%M.%S%%-c.%%e" .
 
 ## Date & time
 
-### Find images in a directory that don't have a DateTimeOriginal ###
+Find images in a directory that don't have a DateTimeOriginal:
 
 ```bash
 exiftool -filename -filemodifydate -createdate -r -if '(not $datetimeoriginal) and $filetype eq "JPEG"' .
 ```
 
-### Update any photo that doesn't have DateTimeOriginal to have it based on file modify date
+Update any photo that doesn't have DateTimeOriginal to have it based on file modify date:
 
 ```bash
 exiftool '-datetimeoriginal<filemodifydate' -if '(not $datetimeoriginal or ($datetimeoriginal eq "0000:00:00 00:00:00")) and ($filetype eq "JPEG")' .
 ```
 
-### Set date by filename
+Set date by filename:
 
 ```bash
 exiftool "-alldates<filename" $@
@@ -81,23 +81,7 @@ Remove all GPS metadata of `*.jpg` files in current directory:
 exiftool -gps:all= *.jpg
 ```
 
-## JSON
-
-Outputs a grouped collection of records as JSON in a directory:
-
-```bash
-exiftool -json -g /path > collectionprofile.json
-```
-
-## Extra
-
-## Check Shutter Count
-
-```bash
-exiftool -ImageCount [filename]
-```
-
-### Create KML from geotagged photos
+Create KML from geotagged photos:
 
 ```bash
 DESKTOP=$HOME/Desktop
@@ -105,8 +89,24 @@ cat $DESKTOP/kml-start.fmt > out.kml
 exiftool -n -r -q -p $DESKTOP/kml-placemark.fmt . >> out.kml
 cat $DESKTOP/kml-end.fmt >> out.kml
 ```
-### Create CSV of Geo Information
+Create CSV of Geo Information:
 
 ```bash
 exiftool -csv -filename -imagesize -gps:GPSLatitude -gps:GPSLongitude ./ > long.csv
+```
+
+## Extra
+
+Check Shutter Count:
+
+```bash
+exiftool -ImageCount [filename]
+```
+
+## JSON
+
+Outputs a grouped collection of records as JSON in a directory:
+
+```bash
+exiftool -json -g /path > collectionprofile.json
 ```
