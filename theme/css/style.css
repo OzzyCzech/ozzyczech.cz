@@ -90,6 +90,12 @@ article h2.h1 a {
 	color: inherit;
 }
 
+
+article img {
+	max-width: 100%;
+	height: auto;
+}
+
 img.emoji {
 	height: 1em;
 	width: 1em;
@@ -105,20 +111,24 @@ img.emoji {
 	color: #f8f8f2;
 }
 
+img[src*='#right'],
 img[alt$=">"] {
-	float: right;
+	float: right !important;
 }
 
+img[src*='#left'],
 img[alt$="<"] {
-	float: left;
+	float: left !important;
 }
 
-img[alt$="<>"] {
+img[src*='#center'],
+img[alt$="><"] {
 	display: block;
 	max-width: 100%;
 	height: auto;
 	margin: auto;
 	float: none !important;
+	padding: 1em;
 }
 
 .social-media {

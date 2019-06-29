@@ -5,7 +5,7 @@ slug: js
 
 # 🥕 JavaScript
 
-<img src="/js/universal-standard.png" class="rounded mx-auto d-block m-3" />
+![](js/universal-standard.png)
 
 ### Devstack
 
