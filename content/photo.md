@@ -34,6 +34,9 @@ date: 2018-09-27
 - [Apple Photos](https://support.apple.com/photos)
 - [Amazon Photos](https://www.amazon.com/Amazon-Photos/b?ie=UTF8&node=13234696011)
 
+### Image Managers
+
+- [Pixave](http://www.littlehj.com/mac/)
 
 ## Cameras
 
