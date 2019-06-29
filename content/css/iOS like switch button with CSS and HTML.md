@@ -27,7 +27,7 @@ Out there is multiple solution of iOS like on/off switch button, but:
 
 #### SCSS code
 
-```css
+```scss
 $size: 20px;
 
 div {

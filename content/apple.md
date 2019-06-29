@@ -19,6 +19,4 @@ slug: apple
 - [Luma Touch](https://luma-touch.com/) - video editor tool
 
 
-
-
 and much more here https://github.com/OzzyCzech/dotfiles
