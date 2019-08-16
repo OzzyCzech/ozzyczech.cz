@@ -8,6 +8,8 @@ slug: series
 - [Black Monday](https://www.imdb.com/title/tt7406334/)
 - [Chernobyl](https://www.imdb.com/title/tt7366338/)
 - [Brickleberry](https://www.imdb.com/title/tt2022713/)
+- [The Boys](https://www.imdb.com/title/tt1190634/)
+- [Years and Years](https://www.imdb.com/title/tt8694364/)
 
 # 2018
 
