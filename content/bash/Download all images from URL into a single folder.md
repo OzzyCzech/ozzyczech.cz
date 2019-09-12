@@ -34,7 +34,7 @@ Other useful download options:
 * `--random-wait`: This option causes the time between requests to vary between 0.5 and 1.5
 * `--wait 1.0`: Wait the specified number of seconds between the retrievals.
 * `--limit-rate=amount`: Limit the download speed to amount bytes per second
-* `-U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36`: Identify as agent-string to the HTTP server as Mozilla Firefox from Windows
+* `-U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"`: Identify as agent-string to the HTTP server as Mozilla Firefox from Windows
 
 
 Real world example: Download all [Homophones, Weakly](http://homophonesweakly.blogspot.com/) images since 2011
@@ -46,7 +46,7 @@ wget -nd -nc -np \
      --level=1 \
      --accept jpg,jpeg \
      -H --random-wait \
-     `-U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36` \
+     -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36" \
      http://homophonesweakly.blogspot.com/{2011..2019}
 ```
 
