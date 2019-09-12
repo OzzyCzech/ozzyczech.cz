@@ -7,6 +7,10 @@ tags: [bash, wget]
 
 # Download all images from URL into a single folder
 
+There is plenty options, but easiest one is use command line. 
+The **wget** is command line utility allows you to download whole web pages, files and images from the specific URL.
+
+Follow command works just fine: 
 
 ```bash
 wget -nd -nc -np \
@@ -14,8 +18,11 @@ wget -nd -nc -np \
      --recursive -p \
      --level=1 \
      --accept jpg,jpeg,png,gif \
-     [website url]
+     
+     [example.website.com]
 ```
+
+What's mean all that?
 
 * `-nd`, `--no-directories`: Do not create a hierarchy of directories when retrieving recursively.
 * `-nc`, `--no-clobber`: Do not overwrite existing files.
@@ -36,8 +43,11 @@ Other useful download options:
 * `--limit-rate=amount`: Limit the download speed to amount bytes per second
 * `-U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"`: Identify as agent-string to the HTTP server as Mozilla Firefox from Windows
 
+Read more on [wget manual page](https://www.gnu.org/software/wget/manual/wget.html).
 
-Real world example: Download all [Homophones, Weakly](http://homophonesweakly.blogspot.com/) images since 2011
+### Real world example
+
+Download all [Homophones, Weakly](http://homophonesweakly.blogspot.com/) images since 2011
 
 ```bash
 wget -nd -nc -np \
@@ -50,5 +60,3 @@ wget -nd -nc -np \
      http://homophonesweakly.blogspot.com/{2011..2019}
 ```
 
-
-Read more on [wget manual page](https://www.gnu.org/software/wget/manual/wget.html).
