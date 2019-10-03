@@ -44,6 +44,26 @@ You can also create nice alias in `.gitconfig` file:
 
 For more informtion view https://github.com/OzzyCzech/dotfiles
 
+
+## Backup whole GitHub account
+
+You can use [GitHub API](https://developer.github.com/v3/repos/) to get list of all [user repos](https://api.github.com/users/OzzyCzech/repos).
+Then you have to apply all your bash magic power to getting right names from that.
+
+```bash
+curl -s https://api.github.com/users/OzzyCzech/repos | json_pp | grep full_name | cut -d\" -f4
+```
+
+Or there are a number of tools specifically designed for the purpose of manipulating JSON from the command line. 
+One of the best seems to me [jq](https://stedolan.github.io/jq/)
+
+```bash
+for repo in $(curl -s https://api.github.com/users/OzzyCzech/repos | jq -r ".[].full_name")
+do  
+  git backup "git@github.com:$repo.git" /Volumes/Backup/git
+done;
+```
+
 ## Restore
 
 You can difectly clone repository from bundle file:
