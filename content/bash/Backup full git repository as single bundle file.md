@@ -58,9 +58,9 @@ Or there are a number of tools specifically designed for the purpose of manipula
 One of the best seems to me [jq](https://stedolan.github.io/jq/)
 
 ```bash
-for repo in $(curl -s https://api.github.com/users/OzzyCzech/repos | jq -r ".[].full_name")
+for repo in $(curl -s https://api.github.com/users/OzzyCzech/repos | jq -r ".[].ssh_url")
 do  
-  git backup "git@github.com:$repo.git" /Volumes/Backup/git
+  git backup $repo /Volumes/Backup/git
 done;
 ```
 
