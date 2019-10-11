@@ -10,5 +10,6 @@ If you get an error of the type **Error: Cask 'xxx' definition is invalid: inval
 where hex-fiend-beta can be any cask name, and :mountain_lion any macOS release name, run the following command:
 
 ```bash
-/usr/bin/find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' -print0 | /usr/bin/xargs -0 /usr/bin/perl -i -pe 's/depends_on macos: \[.*?\]//gsm;s/depends_on macos: .*//g'
+/usr/bin/find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' -print0 \
+| /usr/bin/xargs -0 /usr/bin/perl -i -pe 's/depends_on macos: \[.*?\]//gsm;s/depends_on macos: .*//g'
 ```
