@@ -15,19 +15,19 @@ dir=`realpath ${2-.}`
 pages=${3-1}
 
 printf "Download subreddit \e[1;31m/r/${subreddit}\e[m images to \e[1;31m${dir}\e[m\n"
-mkdir -p $dir
-curl -sS "https://www.reddit.com/r/${subreddit}.json?limit=100" -A 'random' -o ${dir}/${subreddit}.json
+mkdir -p ${dir}
+# curl -sS "https://www.reddit.com/r/${subreddit}.json?limit=100" -A 'random' > ${dir}/${subreddit}.json
 
 for i in $(seq ${pages});
 do
 
 	printf "\e[1;90mProcessing from ${dir}/${json}.json\e[m\n"
 
-	images=$(cat ${dir}/${json}.json | json_pp -json_opt utf8,pretty | grep "https://i.redd.it/" | cut -d\" -f4)
+	images=$(cat ${dir}/${json}.json | jq -r ".data.children[].data.url" | egrep '\.jpg$|\.png$|\.gif$')
 	for img in ${images}
 	do
 		file=$(basename ${img})
-	
+
 		if [[ ! -f "${dir}/${file}" ]]; then
 			echo "- ${img} => ${file}"
 			curl -sS -A 'random' ${img} -o ${dir}/${file}
@@ -35,7 +35,7 @@ do
 
 	done;
 
-	json=$(cat ${dir}/${json}.json | json_pp -json_opt utf8,pretty | grep "\"after\"" | cut -d\" -f4)
+	json=$(cat ${dir}/${json}.json | jq -r ".data.after")
 
 	if [[ ${json} == "" ]]; then
 		exit 0;
@@ -43,7 +43,7 @@ do
 
 	if [[ ! -f "${dir}/${json}.json" ]]; then
 		echo "DOWNLOAD : https://www.reddit.com/r/${subreddit}.json?after=${json}&limit=100"
-		curl -sS "https://www.reddit.com/r/${subreddit}.json?after=${json}&limit=100" -A 'random' -o ${dir}/${json}.json
+		curl -sS "https://www.reddit.com/r/${subreddit}.json?after=${json}&limit=100" -A 'random' > ${dir}/${json}.json
 	fi;
 
 done;
@@ -54,3 +54,4 @@ usage
 ```bash
 ./download.sh catpictures ~/Downloads/
 ```
+* https://stedolan.github.io/jq/
