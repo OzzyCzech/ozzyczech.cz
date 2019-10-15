@@ -16,7 +16,7 @@ pages=${3-1}
 
 printf "Download subreddit \e[1;31m/r/${subreddit}\e[m images to \e[1;31m${dir}\e[m\n"
 mkdir -p ${dir}
-# curl -sS "https://www.reddit.com/r/${subreddit}.json?limit=100" -A 'random' > ${dir}/${subreddit}.json
+curl -sS "https://www.reddit.com/r/${subreddit}.json?limit=100" -A 'random' > ${dir}/${subreddit}.json
 
 for i in $(seq ${pages});
 do
