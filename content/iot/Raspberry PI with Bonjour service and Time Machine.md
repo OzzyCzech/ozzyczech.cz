@@ -1,13 +1,13 @@
 ---
-title: Raspberry PI, Bonjour service, SSH and AFP
+title: Raspberry PI with Bonjour service and Time Machine
 date: 2018-12-27
 ---
 
-# Raspberry PI, Bonjour service, SSH and AFP
+# Raspberry PI with Bonjour service and Time Machine
 
-### Raspbian Stretch Lite (without desktop)
+### Raspbian Buster Lite (without desktop)
 
-1. [Download Raspbian Stretch Lite](https://downloads.raspberrypi.org/raspbian_lite_latest)
+1. [Download Raspbian Buster Lite](https://downloads.raspberrypi.org/raspbian_lite_latest)
 2. [Install Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) with [etcher](https://www.balena.io/etcher/) to SD card
 3. Boot from SD card...
 
@@ -39,9 +39,9 @@ network={
 
 Reboot (`sudo reboot`) and then check with `iwgetid` if you are connected to your Wifi!
 
-### Install Nettalk (AFP support)
+### Install AFP support: [netatalk](http://netatalk.sourceforge.net/)
 
-Install [netatalk](http://netatalk.sourceforge.net/) thats provide **AppleTalk Filing Protocol** (AFP) interface:
+Netatalk provide **AppleTalk Filing Protocol** (AFP) interface:
 
 ```bash
 sudo apt install netatalk
@@ -64,7 +64,7 @@ basedir regex = /home
 ;time machine = yes
 ```
 
-### Install [avahi](https://www.avahi.org/) (Bonjour support)
+### Install Bonjour support: [avahi](https://www.avahi.org/) )
 
 ```bash
 sudo apt install avahi-daemon avahi-utils
@@ -121,7 +121,7 @@ publish-workstation=yes # this row
 # ...
 ```
 
-#### Now Awvvaaaahhhhiii and Nettalk
+### Enable Avahi and Nettalk
 
 Enable **afp** and **avahi**
 
