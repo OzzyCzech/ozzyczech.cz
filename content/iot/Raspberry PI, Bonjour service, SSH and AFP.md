@@ -18,14 +18,14 @@ sudo raspi-config
 ```
 
 1. Change User Password :-) ([default user](https://www.raspberrypi.org/documentation/linux/usage/users.md) `pi` with password `raspberry`)
-2. Change *Localisation Options*
-3. Enable SSH in *Interfacing Options*
+2. Change *Localisation Options*...
+3. Enable SSH in *Interfacing Options*...
 4. Configure WiFi in *Network Options* and change *Hostname* (in my case to **pi**)
 
-If you have Wifi with hidden SSID, you will need change `/etc/wpa_supplicant/wpa_supplicant.conf` file
+If you have Wifi with hidden SSID, you will need change `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` file
 and add `scan_ssid=1`:
 
-```
+```bash
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=CZ
@@ -39,19 +39,35 @@ network={
 
 Reboot (`sudo reboot`) and then check with `iwgetid` if you are connected to your Wifi!
 
-### Install AFP and Bonjour service
+### Install Nettalk (AFP support)
 
-Install [netatalk](http://netatalk.sourceforge.net/2.2/htmldocs/configuration.html) thats provide AppleTalk Filing Protocol (AFP) interface.
+Install [netatalk](http://netatalk.sourceforge.net/) thats provide **AppleTalk Filing Protocol** (AFP) interface:
 
-```
+```bash
 sudo apt install netatalk
 ```
 
-Install [avahi](https://www.avahi.org/)
+edit `sudo nano /etc/netatalk/afp.conf`
 
+```ini
+[Global]
+; mimic model = RackMac
+
+[Homes]
+basedir regex = /home
+
+;[My AFP Volume]
+;path = /path/to/volume
+
+;[My Time Machine Volume]
+;path = /path/to/backup
+;time machine = yes
 ```
-sudo apt install avahi-daemon
-sudo apt install avahi-utils
+
+### Install [avahi](https://www.avahi.org/) (Bonjour support)
+
+```bash
+sudo apt install avahi-daemon avahi-utils
 sudo update-rc.d avahi-daemon defaults
 ```
 
@@ -105,25 +121,25 @@ publish-workstation=yes # this row
 # ...
 ```
 
-#### Now Awvvaaaahhhhiii
+#### Now Awvvaaaahhhhiii and Nettalk
 
 Enable **afp** and **avahi**
 
-```
+```bash
 sudo systemctl enable netatalk
 sudo systemctl enable avahi-daemon
 ```
 
 and start them
 
-```
+```bash
 sudo service avahi-daemon start
 sudo service netatalk start
 ```
 
 now check if everything works well with
 
-```
+```bash
 avahi-browse -a | grep $(hostname)
 ```
 
