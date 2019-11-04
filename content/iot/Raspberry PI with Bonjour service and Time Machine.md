@@ -44,7 +44,7 @@ Reboot (`sudo reboot`) and then check with `iwgetid` if you are connected to you
 Netatalk provide **AppleTalk Filing Protocol** (AFP) interface:
 
 ```bash
-sudo apt install netatalk
+sudo apt install netatalk -y
 ```
 
 edit `sudo nano /etc/netatalk/afp.conf`
@@ -67,7 +67,7 @@ basedir regex = /home
 ### Install Bonjour support: [avahi](https://www.avahi.org/) )
 
 ```bash
-sudo apt install avahi-daemon avahi-utils
+sudo apt install avahi-daemon avahi-utils -y
 sudo update-rc.d avahi-daemon defaults
 ```
 
