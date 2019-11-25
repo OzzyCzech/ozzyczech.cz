@@ -1,9 +1,9 @@
-{% if pagination %}
+{% if page.pages %}
 <nav>
 	<ul class="pagination justify-content-center d-flex flex-wrap">
-		{% for page in pagination %}
-		<li class="page-item my-2 {{'active' if page === current}}">
-			<a class="page-link" href="/{{'page/' + page if page > 1 }}">{{page}}</a>
+		{% for pageNumber in page.pages %}
+		<li class="page-item my-2 {{'active' if pageNumber === page.current}}">
+			<a class="page-link" href="/{{'page/' + pageNumber if pageNumber > 1 }}">{{pageNumber}}</a>
 		</li>
 		{% endfor %}
 	</ul>

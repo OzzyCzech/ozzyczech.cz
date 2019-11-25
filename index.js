@@ -1,102 +1,95 @@
 #!/usr/bin/env node
 
-const Sphido = require('sphido');
-const fs = require('fs-extra');
-const {join, resolve, format, dirname} = require('path');
+const {join} = require('path');
 const globby = require('globby');
-const twemoji = require('twemoji');
-const {striptags} = require('nunjucks/src/filters');
+const {getPages} = require('@sphido/core');
+const {outputFile, copy} = require('fs-extra');
+const pagination = require('@sphido/pagination');
+const {save, env, renderString, renderToFile} = require('@sphido/nunjucks');
+const {link} = require('@sphido/link');
+const feed = require('@sphido/feed');
+const sitemap = require('@sphido/sitemap');
+
 
 (async () => {
 
-	try {
+	// nunjucks setup
+	env.addFilter('h1strip', content => content.replace(/<h1.*>.*?<\/h1>/g, ''));
 
-		// Get pages from directory
-		const pages = await Sphido.getPages(
-			await globby('content/**/*.{md,html}'),
-			(page) => {
-				page.content = twemoji.parse(page.content); // twemoji
-			},
-			...Sphido.extenders
+	// Get pages from directory
+	const pages = await getPages(
+		await globby('content/**/*.{md,html}'),
+		...[
+			require('@sphido/frontmatter'),
+			require('@sphido/twemoji'),
+			require('@sphido/marked'),
+			require('@sphido/meta'),
+			{save, link},
+		]
+	);
+
+	// Generate single pages...
+	for await (let page of pages) {
+		await page.save(
+			page.dir.replace('content', 'public'),
+			'theme/page.html'
 		);
+	}
 
-		// Generate single pages...
-		for await (let page of pages) {
-			await page.save(
-				page.dir.replace('content', 'public'),
-				'theme/page.html'
-			);
-		}
+	// Get sorted posts only
+	const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
+	posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-		// Generate sitemap.xml
-		Sphido.template.toFile(
-			'public/sitemap.xml',
-			'theme/sitemap.xml',
-			{
-				pages: pages, date: new Date().toISOString(),
-				domain: 'https://ozzyczech.cz'
-			}
-		);
-
-		// index.json for https://fusejs.io/
-		const index = pages.map(
+	// index.json for https://fusejs.io/
+	const striptags = env.getFilter('striptags');
+	await outputFile('public/index.json', JSON.stringify(
+		posts.map(
 			page => ({
 				title: page.title,
 				content: striptags(page.content),
+				link: page.link('https://ozzyczech.cz/'),
 				tags: page.tags,
-				link: 'https://ozzyczech.cz' + page.url()
 			})
+		)
+	));
+
+	// Generate sitemap.xml
+	await outputFile('public/sitemap.xml', sitemap(posts, 'https://ozzyczech.cz'));
+
+	// Generate RSS
+	await outputFile(
+		'public/rss.xml',
+		feed(
+			posts.slice(0, 20),
+			{title: 'OzzyCzech.cz blog', description: 'Blog by Roman Ožana', link: 'https://ozzyczech.cz/',},
+			'https://ozzyczech.cz/rss.xml'
+		)
+	);
+
+
+	for await (const page of pagination(posts, 8)) {
+		await renderToFile(
+			page.current === 1 ? 'public/index.html' : join('public/page/', page.current.toString(), 'index.html'),
+			'theme/pages.html',
+			{page}
 		);
-		fs.writeFileSync('public/index.json', JSON.stringify(index));
-
-		// Get sorted posts only
-		const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
-		posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-		// Generate RSS
-		Sphido.template.toFile(
-			'public/rss.xml',
-			'theme/rss.xml',
-			{
-				title: 'OzzyCzech',
-				description: 'Blog by Roman Ožana',
-				domain: 'https://ozzyczech.cz',
-				pages: posts.slice(0, 20),
-			}
-		);
-
-		// Generate pages
-		const postPerPage = 8;
-		const pagination = Sphido.pagination(posts.length, postPerPage);
-
-		for await (let current of pagination) {
-			await Sphido.template.toFile(
-				current === 1 ? 'public/index.html' : join('public/page/', current.toString(), 'index.html'),
-				'theme/pages.html',
-				{
-					pages: posts.slice(postPerPage * (current - 1), current * postPerPage),
-					pagination: pagination,
-					current: current,
-				}
-			);
-		}
-
-		// TODO Render tag/[tag]/index.html
-		/*
-		const tags = sphido.getTags(pages);
-		for (const tag in tags) {
-			tags[tag].output = join(options.output, 'tag', tag, 'index.html');
-			await toFile(tags[tag].output, 'tag.html', {pages: tags[tag], tag: tag});
-		}
-		*/
-
-		// Copy static content
-		let files = await await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'theme/404.html']);
-		for await (let file of files) {
-			await fs.copy(file, file.replace(/^[\w]+/, 'public'))
-		}
-
-	} catch (e) {
-		console.error(e);
 	}
+
+	// TODO Render tag/[tag]/index.html
+
+	/*
+	const tags = sphido.getTags(pages);
+
+	for (const tag in tags) {
+		tags[tag].output = join(options.output, 'tag', tag, 'index.html');
+		await toFile(tags[tag].output, 'tag.html', {pages: tags[tag], tag: tag});
+	}
+	*/
+
+	// Copy static content
+	let files = await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'theme/404.html']);
+	for await (let file of files) {
+		await copy(file, file.replace(/^[\w]+/, 'public'))
+	}
+
 })();

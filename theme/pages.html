@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
 <head>
-	<title>OzzyCzech {% if current > 1 %} - Page {{current}} of {{pagination.length}}{% else %} by Roman Ožana{% endif %}</title>
+	<title>OzzyCzech {% if page.current > 1 %} - Page {{page.current}} of {{page.pages.length}}{% else %} by Roman Ožana{% endif %}</title>
 	{% include "theme/partials/head.html" %}
 </head>
 <body>
@@ -9,19 +9,17 @@
 <aside>{% include "theme/partials/aside.html" %}</aside>
 
 <main>
-	{% for page in pages %}
-	<article class="{{page.slug}}">
-		<small class="d-block float-right text-secondary">{{page.date.getDate()}}. {{page.date.getMonth() + 1}}. {{page.date.getFullYear()}}</small>
+	{% for post in page.posts %}
+	<article class="{{post.slug}}">
+		<small class="d-block float-right text-secondary">{{post.date.getDate()}}. {{post.date.getMonth() + 1}}. {{post.date.getFullYear()}}</small>
 		<h2 class="h1">
-			<a href="{{ page.url() }}">{{ page.title }}</a>
+			<a href="{{ post.link() }}">{{ post.title }}</a>
 		</h2>
 
-		{{ page.content | h1strip | safe }}
+		{{ post.content | h1strip | safe }}
 	</article>
 	{% endfor %}
 </main>
-
-
 
 <footer>{% include "theme/partials/pagination.html" %}</footer>
 

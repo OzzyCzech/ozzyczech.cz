@@ -1,16 +1,24 @@
 {
-  "scripts": {
-    "build": "./index.js",
-    "watch": "watch './index.js' ./content ./theme",
-    "server": "serve public",
-    "dev": "yarn watch | yarn server"
-  },
-  "devDependencies": {
-    "serve": "^11.0.1",
-    "watch": "^1.0.2"
-  },
-  "dependencies": {
-    "sphido": "sphido/sphido#master",
-    "twemoji": "^12.0.4"
-  }
+	"scripts": {
+		"build": "./index.js",
+		"dev": "watch './index.js' ./content ./theme | serve public"
+	},
+	"devDependencies": {
+		"serve": "^11.2.0",
+		"watch": "^1.0.2"
+	},
+	"dependencies": {
+		"@sphido/core": "^0.0.3",
+		"@sphido/feed": "^0.0.2",
+		"@sphido/frontmatter": "^0.0.1",
+		"@sphido/link": "^0.0.3",
+		"@sphido/marked": "^0.0.1",
+		"@sphido/meta": "^0.0.2",
+		"@sphido/nunjucks": "^0.0.2",
+		"@sphido/pagination": "^0.0.2",
+		"@sphido/sitemap": "^0.0.4",
+		"@sphido/twemoji": "^0.0.1",
+		"fs-extra": "^8.1.0",
+		"globby": "^10.0.1"
+	}
 }
