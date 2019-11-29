@@ -1,8 +1,10 @@
 ---
 title: Linecké těsto
+tags: [Pečení, Cukroví, Recepty, Vánoce]
+date: 2000-01-01
 ---
 
-# Linecké těsto
+# Linecké
 
 * 500 g hladké mouky
 * 250 g másla

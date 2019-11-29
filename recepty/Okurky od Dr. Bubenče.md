@@ -1,8 +1,10 @@
 ---
-title: Okurky Dr. Bubenče
+title: Okurky od Dr. Bubenče
+tags: [Recepty, Okurky, Zavařování]
+date: 2000-01-01
 ---
 
-# Okurky Dr. Bubenče
+# Okurky od Dr. Bubenče
 
 Vhodné pro 0.7l sklenice - bez vaření nálevu:
 

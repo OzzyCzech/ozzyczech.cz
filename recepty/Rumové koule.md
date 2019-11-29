@@ -1,5 +1,7 @@
 ---
 title: Rumové koule
+tags: [Pečení, Cukroví, Recepty, Vánoce]
+date: 2000-01-01
 ---
 
 # Rumové koule

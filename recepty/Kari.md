@@ -1,5 +1,7 @@
 ---
 title: Kari
+tags: [Recepty, Kari]
+date: 2000-01-01
 ---
 
 # Kari
