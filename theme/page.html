@@ -15,6 +15,9 @@
 		<small class="d-block float-right text-secondary">{{page.date.getDate()}}. {{page.date.getMonth()}}. {{page.date.getFullYear()}}</small>
 
 		{{ page.content | trim | safe }}
+
+		{% include "theme/partials/tags.html" %}
+
 	</article>
 </main>
 

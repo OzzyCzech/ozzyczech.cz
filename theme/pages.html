@@ -17,6 +17,9 @@
 		</h2>
 
 		{{ post.content | h1strip | safe }}
+
+		{% include "theme/partials/tags.html" %}
+
 	</article>
 	{% endfor %}
 </main>

@@ -8,6 +8,7 @@ const pagination = require('@sphido/pagination');
 const {save, env, renderString, renderToFile} = require('@sphido/nunjucks');
 const {link} = require('@sphido/link');
 const feed = require('@sphido/feed');
+const slugify = require('@sindresorhus/slugify');
 const sitemap = require('@sphido/sitemap');
 
 
@@ -15,6 +16,7 @@ const sitemap = require('@sphido/sitemap');
 
 	// nunjucks setup
 	env.addFilter('h1strip', content => content.replace(/<h1.*>.*?<\/h1>/g, ''));
+	env.addFilter('slugify', content => slugify(content));
 
 	// Get pages from directory
 	const pages = await getPages(
@@ -75,16 +77,26 @@ const sitemap = require('@sphido/sitemap');
 		);
 	}
 
-	// TODO Render tag/[tag]/index.html
+	// tags
 
-	/*
-	const tags = sphido.getTags(pages);
+	let tags = new Set();
+	posts.map((post) => {
+		post.tags.forEach((tag) => {
+			tags.add(tag)
+		});
+	});
 
-	for (const tag in tags) {
-		tags[tag].output = join(options.output, 'tag', tag, 'index.html');
-		await toFile(tags[tag].output, 'tag.html', {pages: tags[tag], tag: tag});
+	for (const tag of tags) {
+		await renderToFile(
+			join('public/tag', slugify(tag), 'index.html'),
+			'theme/tag.html',
+			{
+				tag: tag,
+				tags: [...tags],
+				posts: posts.filter((post => post.tags.has(tag)))
+			}
+		);
 	}
-	*/
 
 	// Copy static content
 	let files = await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'theme/404.html']);

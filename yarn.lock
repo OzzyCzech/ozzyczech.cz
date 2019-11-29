@@ -62,10 +62,10 @@
   dependencies:
     marked "^0.7.0"
 
-"@sphido/meta@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@sphido/meta/-/meta-0.0.2.tgz#aa918a32a8c4adbac8e3c08abf0f388848b5ea1f"
-  integrity sha512-Uv1uRIH4Osk6qfNjS6PDvZMaJ6EQGIUXmsHMe2M50sIrAtGVkZCHI5YIZIp81+3mmDkI6CzQPHqdAU56eCcPxQ==
+"@sphido/meta@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@sphido/meta/-/meta-0.0.3.tgz#87b8b12082bd8e28c0dc9503fa88a0a25222fc2b"
+  integrity sha512-lVBliVQ5Jj/Pgmmwao+WZrz08vr73O3SmHgpBPZK6fx5nHgiVkoB2QwEerzG6Mafp7AieAn0qogC0qMaBKF+Vw==
   dependencies:
     "@sindresorhus/slugify" "^0.9.1"
 
