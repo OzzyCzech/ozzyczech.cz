@@ -1,7 +1,7 @@
 ---
 title: Made in China - Paranoidní povídka na dobrou noc
 date: 2012-12-09
-tags:
+tags: [lifehack]
 ---
 
 

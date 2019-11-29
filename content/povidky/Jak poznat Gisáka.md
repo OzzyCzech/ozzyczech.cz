@@ -1,6 +1,7 @@
 ---
 title: Jak poznat Gisáka
 date: 2006-11-22
+tags:[lifehack]
 ---
 
 # Jak poznat Gisáka

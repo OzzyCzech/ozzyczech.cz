@@ -1,6 +1,7 @@
 ---
 title: Mé Bulharské dobrodružství
 date: 2007-08-04
+tags: [lifehack]
 ---
 
 
