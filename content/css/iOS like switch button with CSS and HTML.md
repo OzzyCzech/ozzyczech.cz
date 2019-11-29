@@ -1,7 +1,7 @@
 ---
 title: iOS like on/off switch with CSS and HTML
 date: 2017-09-28
-tags: [ios, html, css]
+tags: [iOS, CSS, HTML]
 ---
 
 # iOS like on/off switch button with CSS and HTML

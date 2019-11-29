@@ -1,7 +1,7 @@
 ---
 title: Exiftool tips & tricks
 date: 2019-06-24
-tags: [bash, photo, exiftool, exif]
+tags: [bash, exiftool, exif]
 ---
 
 # Exiftool tips & tricks

@@ -1,3 +1,9 @@
+---
+title: Rychlý perník s jablky
+tags: [Recepty, Pečení]
+date: 2000-01-01
+---
+
 # Rychlý perník s jablky
 
 * kypřící prášek do perníku

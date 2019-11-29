@@ -1,7 +1,7 @@
 ---
 title: Convert JSON data to valid PHP code
 date: 2014-01-19
-tags: [js, json, php]
+tags: [js, json, PHP]
 ---
 
 # Convert JSON data to valid PHP code

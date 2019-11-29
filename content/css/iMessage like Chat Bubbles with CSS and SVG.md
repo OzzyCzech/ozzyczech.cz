@@ -1,7 +1,7 @@
 ---
 title: iMessage like Chat Bubbles with CSS and SVG
 date: 2017-12-15
-tags: [ios, html, css]
+tags: [iOS, HTML, CSS]
 ---
 
 # iMessage like Chat Bubbles with CSS and SVG

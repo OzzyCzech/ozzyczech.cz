@@ -1,5 +1,7 @@
 ---
 title: Švestkový koláč
+tags: [Recepty, Pečení]
+date: 2000-01-01
 ---
 
 # Švestkový koláč

@@ -1,7 +1,7 @@
 ---
 title: Raspberry PI with Bonjour service and Time Machine
 date: 2018-12-27
-tags: [raspberry, iot]
+tags: [Raspberry, iot]
 ---
 
 # Raspberry PI with Bonjour service and Time Machine

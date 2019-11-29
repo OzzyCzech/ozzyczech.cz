@@ -1,7 +1,7 @@
 ---
 title: Toggle Hidden Files in Finder
 date: 2013-03-26
-tags: [mac, macOS, bash]
+tags: [macOS, bash]
 ---
 
 

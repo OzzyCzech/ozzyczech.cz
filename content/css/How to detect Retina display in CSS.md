@@ -1,7 +1,7 @@
 ---
 title: How to detect Retina display in CSS
 date: 2013-03-27
-tags: [css]
+tags: [CSS]
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 title: Buchtičky s krémem
-tags: [recepty, hlavní jídlo]
+tags: [Recepty]
+date: 2000-01-01
 ---
 
 # Buchtičky s krémem

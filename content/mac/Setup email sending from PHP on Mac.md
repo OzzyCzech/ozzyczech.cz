@@ -1,7 +1,7 @@
 ---
 title: Setup email sending from PHP on Mac
 date: 2013-05-14
-tags: [email, mac, PHP]
+tags: [email, macOS, PHP]
 ---
 
 # Setup email sending from PHP on Mac

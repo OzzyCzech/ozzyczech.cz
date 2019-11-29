@@ -1,7 +1,7 @@
 ---
 title: Make WordPress globals more accessible
 date: 2013-02-08
-tags: [wordpress]
+tags: [Wordpress]
 ---
 
 # Make WordPress globals more accessible

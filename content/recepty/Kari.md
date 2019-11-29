@@ -1,6 +1,6 @@
 ---
 title: Kari
-tags: [Recepty, Kari]
+tags: [Recepty, Vaření]
 date: 2000-01-01
 ---
 

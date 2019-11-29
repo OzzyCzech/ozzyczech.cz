@@ -1,7 +1,7 @@
 ---
 title: Wordpress - How to get user by metadata
 date: 2013-04-16
-tags: [meta, user, wordpress]
+tags: [Wordpress]
 ---
 
 

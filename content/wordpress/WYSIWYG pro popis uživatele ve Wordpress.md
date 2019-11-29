@@ -1,7 +1,7 @@
 ---
 title: WYSIWYG pro popis uživatele ve Wordpress
 date: 2012-10-29
-tags: [PHP, wordpress, WYSIWYG]
+tags: [PHP, Wordpress, WYSIWYG]
 ---
 
 

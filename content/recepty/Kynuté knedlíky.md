@@ -1,6 +1,7 @@
 ---
 title: Kynuté knedlíky
-tags: [recepty, knedlíky]
+tags: [Recepty, Vaření]
+date: 2000-01-01
 ---
 
 # Kynuté knedlíky

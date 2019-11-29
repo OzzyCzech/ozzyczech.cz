@@ -1,5 +1,6 @@
 ---
 title: Banánové mufiny
+tags: [Recepty, Pečení]
 date: 2018-11-02
 ---
 

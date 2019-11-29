@@ -1,7 +1,7 @@
 ---
 title: Get currency rates from ČNB in PHP
 date: 2016-10-07
-tags: [php]
+tags: [PHP]
 ---
 
 # Get currency rates from ČNB in PHP

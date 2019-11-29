@@ -1,7 +1,7 @@
 ---
 title: Composer require PEAR package
 date: 2013-09-25
-tags: [composer, pear, tip]
+tags: [composer, PHP]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Loading Ace Editor from CDN
 date: 2016-09-20
-tags: [js, html]
+tags: [js, HTML]
 ---
 
 # Loading Ace Editor from CDN

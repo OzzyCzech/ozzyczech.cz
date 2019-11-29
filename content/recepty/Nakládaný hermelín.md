@@ -1,7 +1,7 @@
 ---
 title: Nakládaný hermelín
 tags: [Recepty, Hermelín]
-date: 2011-01-01
+date: 2000-01-01
 ---
 
 # Nakládaný hermelín

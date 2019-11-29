@@ -1,7 +1,10 @@
 ---
 title: Pomazánky
-tags: [recepty, pomazánky]
+tags: [Recepty]
+date: 2000-01-01
 ---
+
+## Tvarůžková pomazánka
 
 ## Salámová pomazánka
 

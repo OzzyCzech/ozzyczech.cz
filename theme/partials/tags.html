@@ -1,0 +1,15 @@
+{% if post.tags %}
+	<p class="text-right">
+		{% for tag in post.tags %}
+		<a href="/tag/{{tag | slugify}}" class="text-dark">#{{tag}}</a>
+		{% endfor %}
+	</p>
+{% endif %}
+
+{% if page.tags %}
+<p class="text-right">
+	{% for tag in page.tags %}
+	<a href="/tag/{{tag | slugify}}" class="text-dark">#{{tag}}</a>
+	{% endfor %}
+</p>
+{% endif %}

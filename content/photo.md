@@ -1,6 +1,7 @@
 ---
 title: Photo
 date: 2018-09-27
+tags: [photo]
 ---
 
 # 📷 Photo

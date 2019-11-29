@@ -1,7 +1,7 @@
 ---
 title: Fix casks with depends_on that reference pre-Mavericks
 date: 2019-10-11
-tags: [macOS, Catalina, brew, cask]
+tags: [macOS, brew, Catalina]
 ---
 
 # Fix casks with depends_on that reference pre-Mavericks

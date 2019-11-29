@@ -1,5 +1,7 @@
 ---
 title: Bramborová buchta
+tags: [Recepty, Pečení]
+date: 2000-01-01
 ---
 
 # Bramborová buchta

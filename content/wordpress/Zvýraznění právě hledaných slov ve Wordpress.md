@@ -1,7 +1,7 @@
 ---
 title: Zvýraznění právě hledaných slov ve Wordpress
 date: 2010-11-15
-tags: [CSS, PHP, wordpress]
+tags: [CSS, PHP, Wordpress]
 ---
 
 # Zvýraznění právě hledaných slov ve Wordpress

@@ -1,7 +1,7 @@
 ---
 title: Remove link manager from Wordpress
 date: 2011-09-11
-tags: [wordpress]
+tags: [Wordpress]
 ---
 
 # Remove link manager from Wordpress

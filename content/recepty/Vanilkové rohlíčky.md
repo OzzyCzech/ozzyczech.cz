@@ -1,6 +1,6 @@
 ---
 title: Vanilkové rohlíčky
-tags: [Recepty, Cukroví, Perníčky, Vánoce]
+tags: [Recepty, Cukroví, Vánoce]
 date: 2000-01-01
 ---
 

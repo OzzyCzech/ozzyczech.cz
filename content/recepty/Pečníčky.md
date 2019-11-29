@@ -1,6 +1,6 @@
 ---
 title: Perníčky
-tags: [Recepty, Cukroví, Perníčky, Vánoce]
+tags: [Recepty, Cukroví, Pečení, Vánoce]
 date: 2000-01-01
 ---
 
