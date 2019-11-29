@@ -1,6 +1,7 @@
 ---
 title: Bluetooth sensor mesh
 date: 2018-10-28
+tags: [iot, bluetooth]
 ---
 
 # Bluetooth sensor mesh

@@ -1,7 +1,7 @@
 ---
 title: AngularJS $http not sending X-Requested-With header
 date: 2014-09-24
-tags: [AJAX, angular, js]
+tags: [angular, js]
 ---
 
 

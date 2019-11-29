@@ -2,6 +2,7 @@
 title: Život podle Charlese Bukowského
 source: http://www.seberizeni.cz/10-rad-pro-zivot-od-charlese-bukowskeho/
 date: 2018-11-02
+tags: [lifehack]
 ---
 
 # Život podle Charlese Bukowského

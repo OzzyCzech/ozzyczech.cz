@@ -1,7 +1,7 @@
 ---
 title: Výpočet hash objektu v PHP
 date: 2011-09-25
-tags: [hash, PHP]
+tags: [PHP]
 ---
 
 # Výpočet hash objektu v PHP

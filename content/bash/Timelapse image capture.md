@@ -1,6 +1,7 @@
 ---
 title: Timelapse image capture 
 date: 2017-09-11
+tags: [bash]
 ---
 
 # Timelapse image capture

@@ -1,6 +1,7 @@
 ---
 title: Read .env file in bash
 date: 2019-03-01
+tags: [bash]
 ---
 
 # Read .env file in bash

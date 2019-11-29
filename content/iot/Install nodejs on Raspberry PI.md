@@ -1,6 +1,7 @@
 ---
 title: Install nodejs on Raspberry PI
 date: 2018-12-23
+tags: [iot, Raspberry]
 ---
 
 # Install nodejs on Raspberry PI

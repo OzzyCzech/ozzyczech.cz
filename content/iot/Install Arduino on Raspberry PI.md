@@ -1,6 +1,7 @@
 ---
 title: Install Arduino on Raspberry PI
 date: 2019-10-24
+tags: [Raspberry, iot]
 ---
 
 

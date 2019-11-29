@@ -1,7 +1,7 @@
 ---
 title: How to switch Homebrew formulas to older version
 date: 2014-10-18
-tags: [brew, osx, php]
+tags: [brew, macOS, php]
 ---
 
 # How to switch Homebrew formulas to older version

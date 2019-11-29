@@ -1,7 +1,7 @@
 ---
 title: Zjištění práv k souboru nebo adresáři v PHP
 date: 2012-09-05
-tags: [PHP, tip]
+tags: [PHP]
 ---
 
 

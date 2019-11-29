@@ -1,7 +1,7 @@
 ---
 title: Tik v oku
 date: 2008-08-12
-tags: [zdraví, oko]
+tags: [lifehack]
 ---
 
 # Tik v oku

@@ -1,7 +1,7 @@
 ---
 title: How to fix “Shell Shock” bash bug on OS X
 date: 2014-09-25
-tags: [bash, brew, shell]
+tags: [bash, brew, macOS]
 ---
 
 

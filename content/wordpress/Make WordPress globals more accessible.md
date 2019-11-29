@@ -1,7 +1,7 @@
 ---
 title: Make WordPress globals more accessible
 date: 2013-02-08
-tags: [hack, PHP, wordpress]
+tags: [wordpress]
 ---
 
 # Make WordPress globals more accessible
