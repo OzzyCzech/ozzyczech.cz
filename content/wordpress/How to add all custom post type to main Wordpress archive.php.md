@@ -1,7 +1,7 @@
 ---
 title: How to add all custom post type to main Wordpress archive.php
 date: 2014-07-24
-tags: [Wordpress, php]
+tags: [Wordpress, PHP]
 ---
 
 # How to add all custom post type to main Wordpress archive.php
