@@ -1,10 +1,10 @@
 ---
 title: Jak poznat Gisáka
 date: 2006-11-22
-tags:[lifehack]
+tags: [lifehack]
 ---
 
-# Jak poznat Gisáka
+# 🛰 Jak poznat Gisáka
 
 Nechal jsem se inspirovat jedním webem a sepsal jsem několik indicii jak bezpečně poznáte **Gisáka na ulici** :-)
 

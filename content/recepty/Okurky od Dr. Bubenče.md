@@ -4,7 +4,7 @@ tags: [Recepty, Okurky, Zavařování]
 date: 2000-01-01
 ---
 
-# Okurky od Dr. Bubenče
+# 🥒 Okurky od Dr. Bubenče
 
 Vhodné pro 0.7l sklenice - bez vaření nálevu:
 
