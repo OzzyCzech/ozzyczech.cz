@@ -1,7 +1,7 @@
 ---
 title: How to clean flash drive before unmount on Mac
 date: 2013-12-21
-tags: [drive, macOS, tip, bash]
+tags: [drive, macOS, bash]
 ---
 
 

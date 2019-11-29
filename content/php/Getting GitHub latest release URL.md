@@ -1,7 +1,7 @@
 ---
 title: Getting GitHub latest release URL
 date: 2014-09-28
-tags: [github, PHP, tip]
+tags: [github, PHP]
 ---
 
 # Getting GitHub latest release URL
