@@ -1,7 +1,7 @@
 ---
 title: Význam barev
 date: 2009-04-16
-tags: [webdesign, barvy]
+tags: [webdesign]
 ---
 
 # Význam barev
