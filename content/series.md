@@ -5,6 +5,9 @@ slug: series
 
 # 2019
 
+- [Why Women Kill](https://www.imdb.com/title/tt9054904)
+- [The Spy](https://www.imdb.com/title/tt5952634/)
+- [Beforeigners](https://www.imdb.com/title/tt8332130/)
 - [Black Monday](https://www.imdb.com/title/tt7406334/)
 - [Chernobyl](https://www.imdb.com/title/tt7366338/)
 - [Brickleberry](https://www.imdb.com/title/tt2022713/)
