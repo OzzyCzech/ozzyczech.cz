@@ -12,8 +12,9 @@ tags: [backup, security]
 ### Commercial cold storage
 
 * [Amazon Glacier](https://aws.amazon.com/glacier/) - Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup.
-* [Amazon Drive](https://www.amazon.com/clouddrive/home) - Secure Storage from Amazon (from $11 per year)
- 
+* [Amazon Drive](https://www.amazon.com/clouddrive/home) - Cloud Storage from Amazon (from $11 per year)
+* [Azure Archive Storage](https://azure.microsoft.com/services/storage/archive/) - Azure Archive Storage offers low-cost, durable, and highly available secure cloud storage
+
 ### Cold storage
 
 * [Verbatim Ultra HD 4K External Slimline Blu-ray Writer](https://www.verbatim-europe.co.uk/en/prod/ultra-hd-4k-external-slimline-blu-ray-writer-43888/) - compatible with Blu-ray MDISC up to 100 GB MDISC
