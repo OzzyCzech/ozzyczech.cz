@@ -1,16 +1,15 @@
 ---
-title: Backup plan
+title: Backup & security
 date: 2017-04-06
-tags: [backup]
+tags: [backup, security]
 ---
 
-# Backup plan
+# Backup & security
 
-### Personal cloud
 
-* [Resilio](https://www.resilio.com/individuals/) - Share All Your Data Across All Your Devices
+## Backup
 
-### Commercial cloud storage
+### Commercial cold storage
 
 * [Amazon Glacier](https://aws.amazon.com/glacier/) - Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup.
 * [Amazon Drive](https://www.amazon.com/clouddrive/home) - Secure Storage from Amazon (from $11 per year)
@@ -41,6 +40,33 @@ tags: [backup]
 * [ForkLift 3](https://binarynights.com/) - they have function called Synclet
 * [rclone](https://rclone.org/) - rclone is a command line program to sync files to cloud storages
 
-## Cloud
+## Cloud backup
 
-* [Backblaze](https://www.backblaze.com/)
+* [Backblaze](https://www.backblaze.com/) - low cost cloud storage
+* [Resilio](https://www.resilio.com/individuals/) - Share All Your Data Across All Your Devices with personal cloud
+
+## Security
+
+### Passwords
+
+* https://1password.com/
+* https://www.lastpass.com/
+* https://www.keepersecurity.com/
+* https://www.dashlane.com/
+* https://bitwarden.com/
+
+### VPN
+
+* https://one.one.one.one/ - free VPN from CloudFlare
+* https://www.vpnhub.com/ - free VPN from PornHub
+* https://protonvpn.com/ - High-speed Swiss VPN that safeguards your privacy.
+
+
+### Emails
+
+* [ProtonMail](https://protonmail.com/cs/)
+
+### Browsers
+
+* [Firefox](https://www.mozilla.org/cs/firefox/new/)
+* [TorBrowser](https://www.torproject.org/download/)
