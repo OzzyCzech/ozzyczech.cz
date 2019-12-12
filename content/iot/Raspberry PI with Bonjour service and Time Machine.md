@@ -107,6 +107,12 @@ PS: `RackMac` is define icon that will be shown in Finder (there is plenty other
 </service-group>
 ```
 
+For server less ssh you can copy your key to pi:
+ 
+```bash
+ssh-copy-id pi@pi.local
+```
+
 #### Configure avahi daemon
 
 Then in `/etc/avahi/avahi-daemon.conf` change two parametters `host-name` and `publish-workstation`:
