@@ -10,10 +10,10 @@ Replacement of `document.write` can be combination of [insertAdjacentHTML()](htt
 
 The `insertAdjacentHTML()` method of the Element interface parses the specified text as HTML or XML and inserts the resulting nodes into the DOM tree at a **specified position**: 
 
- - 'beforebegin': Before the element itself.
- - 'afterbegin': Just inside the element, before its first child.
- - 'beforeend': Just inside the element, after its last child.
- - 'afterend': After the element itself.
+ - `'beforebegin'`: Before the element itself.
+ - `'afterbegin'`: Just inside the element, before its first child.
+ - `'beforeend'`: Just inside the element, after its last child.
+ - `'afterend'`: After the element itself.
 
 The `Document.currentScript` property returns the `<script>` element whose script is currently being processed. Best position to add new HTML will be **beforebegin** - new HTML will be inserted before `<script>` itself.
 
