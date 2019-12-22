@@ -9,7 +9,7 @@ date: 2000-01-01
 # Sýrové tyčinky
 
 
-<img src="/Pečení/Sýrové tyčinky.jpg" width="350" class="img-fluid ml-2 rounded float-right">
+<img src="/recepty/peceni/Sýrové tyčinky.jpg" width="350" class="img-fluid ml-2 rounded float-right">
 
 ## Co budete potřebovat?
 

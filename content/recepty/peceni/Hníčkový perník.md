@@ -6,7 +6,7 @@ date: 2000-01-01
 
 # Hrníčkový perník
 
-<img src="/Pečení/Hrníčkový perník.jpg" width="350" class="img-fluid ml-2 rounded float-right">
+<img src="/recepty/peceni/Hrníčkový perník.jpg" width="350" class="img-fluid ml-2 rounded float-right">
 
 * 2 lžíce med
 * 1 hrnek hnědého cukru
