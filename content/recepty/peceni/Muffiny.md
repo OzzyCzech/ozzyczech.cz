@@ -24,4 +24,4 @@ Před pečením posypat směsí lžíce cukru krystal + lžičky skořice.
 
 180°C, cca 25 minut
 
-<img src="/Pečení/Hrníčkový perník.jpg" class="img-fluid ml-2 rounded">
+<img src="/recepty/peceni/Muffiny.jpg" class="img-fluid ml-2 rounded">
