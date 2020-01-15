@@ -1,7 +1,7 @@
 ---
 title: How to backup iCloud drive with rclone
 date: 2019-09-12
-tags: [iCLoud, backup, macOS]
+tags: [iCloud, backup, macOS]
 ---
 
 # How to backup iCloud drive with rclone
