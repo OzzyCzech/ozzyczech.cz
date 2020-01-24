@@ -1,6 +1,6 @@
 ---
 title: Docker cleanup guide
-date: 24. 1. 2020
+date: 2020-01-24
 tags: [Docker]
 ---
 

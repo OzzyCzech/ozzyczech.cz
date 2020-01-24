@@ -41,7 +41,7 @@ const sitemap = require('@sphido/sitemap');
 	// Get sorted posts only
 	const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
 	posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
+	
 	// index.json for https://fusejs.io/
 	const striptags = env.getFilter('striptags');
 	await outputFile('public/index.json', JSON.stringify(
