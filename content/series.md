@@ -35,8 +35,6 @@ slug: series
 - [Stranger Things](https://www.imdb.com/title/tt4574334/)
 - [True Detective](https://www.imdb.com/title/tt2356777/)
 - [The OA](https://www.imdb.com/title/tt4635282/)
-- [Fauda](https://www.imdb.com/title/tt4565380/)
-- [Tabula Rasa](https://www.imdb.com/title/tt5197860/)
 - The Staircase
 
 # Oldies
