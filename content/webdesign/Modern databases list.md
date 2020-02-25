@@ -38,3 +38,8 @@ applications.
 
 ### MariaDB
 - https://mariadb.org/
+
+
+### FaunaDB
+
+[FaunaDB](https://fauna.com/) is a global serverless database that gives you ubiquitous, low latency access to app data, without sacrificing data correctness and scale. Database built for serverless, featuring native GraphQL
