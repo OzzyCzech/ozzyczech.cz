@@ -114,7 +114,6 @@ docker network rm [NETWORK ID]
 #### Remove all unused networks
 
 Use the `docker network prune` command to remove all unused networks.
-
 Remove all networks that are created more than 12 hours ago:
 
 ```shell script

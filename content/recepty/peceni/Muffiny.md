@@ -18,9 +18,9 @@ Promíchat a přidat mouk. Podle potřeby - hustoty těsta, dolít mléko.
 * 1,5 hrnku hladké mouky
 * prášek do pečiva
 
-2 velká oloupaná jablka na kostky, přimíchat k těstu, plnit košíčky.
-
-Před pečením posypat směsí lžíce cukru krystal + lžičky skořice.
+Dvě velká oloupaná jablka makrájíme na kostky, přimíchat k těstu,
+naplníme do košíčků. Před pečením posypat směsí lžíce 
+cukru krystal + lžičky skořice.
 
 180°C, cca 25 minut
 
