@@ -39,4 +39,4 @@ slug: series
 
 # Oldies
 
-- [Ren a Stimpy ](https://www.imdb.com/title/tt0101178/)
+- [Ren a Stimpy](https://www.imdb.com/title/tt0101178/)

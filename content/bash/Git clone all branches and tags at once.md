@@ -9,7 +9,7 @@ tags: [bash, git]
 
 Follow script clone all branches and tags at once:
 
-```bash
+```shell script
 #!/bin/bash
 git fetch --all --tags
 for branch in `git branch -r --format="%(refname:short)" | sed 's/origin\///'`
@@ -19,7 +19,7 @@ done
 
 Single line version:
 
-```bash
+```shell script
 git fetch --all --tags; for branch in `git branch -r --format="%(refname:short)" | sed 's/origin\///'`; do git branch -f --track "$branch" "origin/$branch" ; done ;
 ```
 
@@ -28,13 +28,13 @@ git fetch --all --tags; for branch in `git branch -r --format="%(refname:short)"
 
 This command is super usefull when you need copy repo between remotes:
 
-```bash
+```shell script
 git remote add alternative git@github.com:....git 
 ```
 
 Check if is there another remote:
 
-```bash
+```shell script
 git remote -v
 > origin	git@github.com:.../....git (fetch)
 > origin	git@github.com:.../....git (push)
@@ -44,7 +44,7 @@ git remote -v
 
 Push all changes to **alternative** remote
 
-```bash
+```shell script
 git push alternative --all # push all braneches
 git push alternative --tags # push all tags
 ```

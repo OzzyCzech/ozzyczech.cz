@@ -15,7 +15,7 @@ $ env x='() { :;}; echo vulnerable' bash -c 'echo hello'
 
 Follow output is an example of a non-vulnerable bash version.
 
-```bash
+```shell script
 bash: warning: x: ignoring function definition attempt
 bash: error importing function definition for `x'
 hello
@@ -26,7 +26,7 @@ hello
 
  First check your bash version:
 
-```bash
+```shell script
 $ bash --version    
 GNU bash, version 4.3.18(1)-release (x86_64-apple-darwin13.3.0)
 Copyright (C) 2013 Free Software Foundation, Inc.
@@ -41,14 +41,14 @@ $ ls -la /usr/local/bin/bash
 
 Then upgrade bash:
 
-```bash
+```shell script
 $ brew update
 $ brew upgrade bash
 ```
 
 If your terminal starts returning weird error like:
 
-```bash
+```shell script
 dyld: Library not loaded: @@HOMEBREW_PREFIX@@/opt/readline/lib/libreadline.6.dylib
   Referenced from: /usr/local/bin/bash
   Reason: image not found
@@ -56,7 +56,7 @@ dyld: Library not loaded: @@HOMEBREW_PREFIX@@/opt/readline/lib/libreadline.6.dyl
 
 You will need upgrade also readline with follow commands:
 
-```bash
+```shell script
 $ brew rm -f readline
 $ brew install readline
 $ brew link readline --force

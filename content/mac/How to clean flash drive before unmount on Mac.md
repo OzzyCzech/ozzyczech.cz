@@ -9,7 +9,7 @@ tags: [macOS, bash]
 
 How to **clean flash drive** and delete all hidden (dot) files on mac before unmount? It's simple, save follow commands as `flash`:
 
-```bash
+```shell script
 #!/bin/bash
 
 if [ -n "$1" ]; then

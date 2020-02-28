@@ -11,12 +11,12 @@ Follow commands create tar archives folder by folder into their own tar - so fol
 
 **Compressed archive**
 
-```bash
+```shell script
 find . -type d -maxdepth 1 -mindepth 1 -exec tar zcvf {}.tar.gz {} \;
 ```
 
 **Un-coompressed archive**
 
-```bash
+```shell script
 find . -type d -maxdepth 1 -mindepth 1 -exec tar cvf {}.tar {}  \;
 ```

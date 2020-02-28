@@ -14,7 +14,7 @@ tags: [Raspberry, iot]
 Now, you have to add the Debian 10 login user to the dialout, tty, uucp and plugdev group.
 Otherwise, you won’t be able to upload your Arduino code to the Arduino microcontroller.
 
-```bash
+```shell script
 sudo usermod -aG dialout $(whoami)
 sudo usermod -aG tty $(whoami)
 sudo usermod -aG uucp $(whoami)

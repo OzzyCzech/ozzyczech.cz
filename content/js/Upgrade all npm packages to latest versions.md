@@ -9,7 +9,7 @@ tags: [nodejs, npm, yarn, js]
 This is similar to [npm-check interactive](https://www.npmjs.com/package/npm-check-interactive) update mode. 
 It provides an easy way to update outdated packages
 
-```bash
+```shell script
 yarn upgrade-interactive --latest 
 ```
 

@@ -1,12 +1,10 @@
 ---
-title: IOT
-slug: iot
+title: Bonjour service for IOT
+date: 2019-10-22
+tags: [Bonjour, iot]
 ---
 
-- [Particle store](https://store.particle.io/)
-
-
-## mDNS - Bonjour service for IOT
+# mDNS - Bonjour service for IOT
 
 mDNS is installed by default on most operating systems or is available as separate package. On Mac OS it is 
 installed by default and is called `Bonjour`. Apple releases an installer for Windows that can be found on 

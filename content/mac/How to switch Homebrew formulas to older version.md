@@ -11,7 +11,7 @@ some older (e.g. PHP 5.6.1 won’t work and you need install at least 5.6.0 and
 getting your work done). As you know all brew formulas are GIT repos, you
 can swith to older version easly:
 
-```bash
+```shell script
 $ cd /usr/local/Library/Taps/homebrew/homebrew-php/Formula
 $ git log --pretty="%h - %s" -10
 ```
@@ -31,7 +31,7 @@ a81eba6 - update pecl_http to 2.1.2
 
 Then just switch
 
-```bash
+```shell script
 $ git checkout 908fedd
 ```
 

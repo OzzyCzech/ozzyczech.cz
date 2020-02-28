@@ -9,14 +9,14 @@ tags: [iot, Raspberry]
 
 First download latest version of nodejs:
 
-```bash
+```shell script
 wget -qO- http://nodejs.org/dist/latest/node-v12.4.0-linux-armv7l.tar.xz | tar xvz -C ./nodejs
 cd nodejs
 ```
 
 Compile from sources:
 
-```bash
+```shell script
 sudo cp -R bin/* /usr/bin/
 sudo cp -R lib/* /usr/lib/
 sudo apt update && sudo apt upgrade

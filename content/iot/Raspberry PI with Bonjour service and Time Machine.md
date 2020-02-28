@@ -14,7 +14,7 @@ tags: [Raspberry, iot]
 
 ### Basic configuration and Wifi connection
 
-```bash
+```shell script
 sudo raspi-config
 ```
 
@@ -26,7 +26,7 @@ sudo raspi-config
 If you have Wifi with hidden SSID, you will need change `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` file
 and add `scan_ssid=1`:
 
-```bash
+```shell script
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=CZ
@@ -44,7 +44,7 @@ Reboot (`sudo reboot`) and then check with `iwgetid` if you are connected to you
 
 Netatalk provide **AppleTalk Filing Protocol** (AFP) interface:
 
-```bash
+```shell script
 sudo apt install netatalk -y
 ```
 
@@ -67,7 +67,7 @@ basedir regex = /home
 
 ### Install Bonjour support: [avahi](https://www.avahi.org/) )
 
-```bash
+```shell script
 sudo apt install avahi-daemon avahi-utils -y
 sudo update-rc.d avahi-daemon defaults
 ```
@@ -109,7 +109,7 @@ PS: `RackMac` is define icon that will be shown in Finder (there is plenty other
 
 For server less ssh you can copy your key to pi:
  
-```bash
+```shell script
 ssh-copy-id pi@pi.local
 ```
 
@@ -132,21 +132,21 @@ publish-workstation=yes # this row
 
 Enable **afp** and **avahi**
 
-```bash
+```shell script
 sudo systemctl enable netatalk
 sudo systemctl enable avahi-daemon
 ```
 
 and start them
 
-```bash
+```shell script
 sudo service avahi-daemon start
 sudo service netatalk start
 ```
 
 now check if everything works well with
 
-```bash
+```shell script
 avahi-browse -a | grep $(hostname)
 ```
 

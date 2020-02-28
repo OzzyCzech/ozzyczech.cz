@@ -12,7 +12,7 @@ The **wget** is command line utility allows you to download whole web pages, fil
 
 Follow command works just fine: 
 
-```bash
+```shell script
 wget -nd -nc -np \
      -e robots=off \
      --recursive -p \
@@ -49,7 +49,7 @@ Read more on [wget manual page](https://www.gnu.org/software/wget/manual/wget.ht
 
 Download all [Homophones, Weakly](http://homophonesweakly.blogspot.com/) images since 2011
 
-```bash
+```shell script
 wget -nd -nc -np \
      -e robots=off \
      --recursive -p \

@@ -13,7 +13,7 @@ How To Remove them?
  
 Remove stopped containers, all dangling images, and all unused networks:
 
-```bash
+```shell script
 docker system prune
 ```
 
@@ -29,18 +29,18 @@ Are you sure you want to continue? [y/N]
 
 You can also include all unused volumes, then add `--volumes`:
  
-```bash
+```shell script
 docker system prune --volumes
 ```
 
 ## Docker Containers
 
-```bash
+```shell script
 docker container ls -a
 ```
 #### Remove selected container
 
-```bash
+```shell script
 docker container rm [CONTAINER ID]
 ```
 
@@ -48,19 +48,19 @@ docker container rm [CONTAINER ID]
 
 To remove all stopped containers use:
 
-```bash
+```shell script
 docker container prune
 ```
 
 You can also list what will be removed:
 
-```bash
+```shell script
 docker container ls -a --filter status=exited --filter status=created 
 ```
 
 #### Stop and remove all containers
 
-```bash
+```shell script
 docker container stop $(docker container ls -aq)
 docker container rm $(docker container ls -aq)
 ```
@@ -69,13 +69,13 @@ docker container rm $(docker container ls -aq)
 
 You can list them:
 
-```bash
+```shell script
 docker image ls
 ```
 
 #### Remove selected image
 
-```bash
+```shell script
 docker image rm [IMAGE ID]
 ```
 
@@ -84,7 +84,7 @@ docker image rm [IMAGE ID]
 A dangling image is an image that is not tagged and is not used by any container.
 You can remove them by:
 
-```bash
+```shell script
 docker image prune
 ```
 
@@ -93,7 +93,7 @@ docker image prune
 To remove all images which are not referenced by any existing container, 
 not just the dangling ones, use the `prune` command with the `-a` flag:
 
-```bash
+```shell script
 docker image prune -a
 ```
 
@@ -101,13 +101,13 @@ docker image prune -a
 
 You can list them with:
 
-```bash
+```shell script
 docker network ls
 ```
 
 #### Remove selected network
 
-```bash
+```shell script
 docker network rm [NETWORK ID]
 ```
 
@@ -117,24 +117,24 @@ Use the `docker network prune` command to remove all unused networks.
 
 Remove all networks that are created more than 12 hours ago:
 
-```bash
+```shell script
 docker network prune -a --filter "until=12h"
 ```
 
 ## Docker Volumes
 
-```bash
+```shell script
 docker volume ls
 ```
 
 #### Remove selected Volume
 
-```bash
+```shell script
 docker volume rm [VOLUME NAME]
 ```
 
 #### Remove all unused volumes
 
-```bash
+```shell script
 docker volume prune
 ```
