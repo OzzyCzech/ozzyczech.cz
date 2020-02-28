@@ -19,7 +19,6 @@ document.onreadystatechange = function () {
 		}
 
 
-
 		// copy pre > code
 		document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 			let copy = document.createElement('a');
@@ -38,7 +37,8 @@ document.onreadystatechange = function () {
 					copy.innerText = 'ERROR';
 				});
 				e.preventDefault();
-			});
+				e.stopPropagation();
+			}, false);
 
 			codeBlock.parentNode.insertBefore(copy, codeBlock);
 		});
