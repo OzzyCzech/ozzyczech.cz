@@ -17,5 +17,31 @@ document.onreadystatechange = function () {
 				a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
 			}
 		}
+
+
+
+		// copy pre > code
+		document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+			let copy = document.createElement('a');
+			copy.className = 'btn-copy';
+			copy.innerText = 'Copy';
+			copy.title = 'Copy to Clipboard!';
+			copy.href = '#';
+
+			copy.addEventListener('click', function (e) {
+				copy.innerText = 'Copied!';
+				navigator.clipboard.writeText(codeBlock.innerText).then(function () {
+					setTimeout(function () {
+						copy.innerText = 'Copy';
+					}, 500);
+				}, function (err) {
+					copy.innerText = 'ERROR';
+				});
+				e.preventDefault();
+			});
+
+			codeBlock.parentNode.insertBefore(copy, codeBlock);
+		});
+
 	}
 };

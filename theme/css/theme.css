@@ -1,0 +1,23 @@
+:root {
+	--background-color: #242425;
+
+	--border-color: #343435;
+	--border-color-dark: #333333;
+
+	--text-default-color: #B6B6B6;
+	--text-secondary-color: #747474;
+	--text-dark-color: #747474;
+	--text-href-color: #2C8AD3;
+	--text-code-color: #e83e8c;
+
+	--token-comment: #468438;
+	--token-tag: #e06c75;
+	--token-string: #CF7A60;
+
+	--line-number-color: #5C6370;
+
+	--token-variable: #77D6FF;
+	--token-keyword: #C368B5;
+
+	--font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}

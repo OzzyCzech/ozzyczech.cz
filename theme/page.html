@@ -5,7 +5,7 @@
 	<title>{{ page.title | trim }}</title>
 	{% include "theme/partials/head.html" %}
 </head>
-<body class="{{page.slug}}">
+<body class="{{page.slug}} line-numbers">
 
 <aside>{% include "theme/partials/aside.html" %}</aside>
 
@@ -24,7 +24,7 @@
 <footer class="text-secondary text-right">
 	<small>
 		<script>
-			var date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
+			let date = dateFns.distanceInWords(new Date('{{page.date}}'), new Date()) + ' ago';
 			document.currentScript.insertAdjacentHTML("beforebegin", date);
 		</script>
 		| <a href="https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" target="_blank" class="text-secondary">view</a>
@@ -32,6 +32,11 @@
 		| <a href="https://github.com/OzzyCzech/ozzyczech.cz/edit/master/{{ page.dir | urlencode }}/{{page.base | urlencode}}{{page.ext}}" target="_blank" class="text-secondary">edit</a>
 	</small>
 </footer>
+
+<script>
+
+</script>
+
 
 </body>
 </html>

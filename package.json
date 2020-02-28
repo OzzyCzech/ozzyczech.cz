@@ -4,22 +4,22 @@
 		"dev": "watch './index.js' ./content ./theme | serve public"
 	},
 	"devDependencies": {
-		"serve": "^11.2.0",
+		"serve": "^11.3.0",
 		"watch": "^1.0.2"
 	},
 	"dependencies": {
-		"@sindresorhus/slugify": "^0.9.1",
-		"@sphido/core": "^0.0.3",
-		"@sphido/feed": "^0.0.2",
-		"@sphido/frontmatter": "^0.0.1",
-		"@sphido/link": "^0.0.3",
-		"@sphido/marked": "^0.0.1",
-		"@sphido/meta": "^0.0.3",
-		"@sphido/nunjucks": "^0.0.2",
-		"@sphido/pagination": "^0.0.2",
-		"@sphido/sitemap": "^0.0.4",
-		"@sphido/twemoji": "^0.0.1",
+		"@sindresorhus/slugify": "^0.11.0",
+		"@sphido/core": "^0.0.4",
+		"@sphido/feed": "^0.0.3",
+		"@sphido/frontmatter": "^0.0.2",
+		"@sphido/link": "^0.0.4",
+		"@sphido/marked": "^0.0.2",
+		"@sphido/meta": "^0.0.4",
+		"@sphido/nunjucks": "^0.0.3",
+		"@sphido/pagination": "^0.0.3",
+		"@sphido/sitemap": "^0.0.5",
+		"@sphido/twemoji": "^0.0.3",
 		"fs-extra": "^8.1.0",
-		"globby": "^10.0.1"
+		"globby": "^11.0.0"
 	}
 }
