@@ -10,7 +10,7 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	grid-gap: 1rem !important;
-	padding: 1.5rem !important;
+	padding: 1rem !important;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	background-color: var(--background-color);
