@@ -5,7 +5,7 @@ slug: js
 
 # 🥕 JavaScript
 
-![](js/universal-standard.png)
+<img  src="js/universal-standard.png" class="img-fluid ml-2 rounded">
 
 ### Devstack
 
