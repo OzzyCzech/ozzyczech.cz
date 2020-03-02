@@ -24,21 +24,33 @@ performance at any scale. It's a fully managed, multiregion, multimaster, durabl
 with built-in security, backup and restore, and in-memory caching for internet-scale
 applications.
 
-### Firebase
-- https://firebase.google.com/
+### Firebase - Cloud Firestore
+
+[Cloud Firestore](https://firebase.google.com/) is the successor to Firebase's original databasing system, Real-time Database,
+ and allows for nested documents and fields rather than the tree-view provided in the Real-time Database. 
 
 ### Apache Cassandra 
-- http://cassandra.apache.org/ 
+
+[Apache Cassandra](http://cassandra.apache.org) is a free and open-source, distributed, wide column store, NoSQL database 
+management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of 
  
 ### Unbounded
-- https://unbounded.cloud/
+
+[Unbounded](https://unbounded.cloud/) is the First Programmable NoSQL Database
+Effortlessly scale your data in the cloud using the language you already know.
 
 ### PostgreSQL
-- https://www.postgresql.org/
+
+[PostgreSQL](https://www.postgresql.org/), also known as Postgres, is a free and open-source relational database management 
+system (RDBMS) emphasizing extensibility and technical standards compliance. It is designed to handle a range of workloads,
+from single machines to data warehouses or Web services with many concurrent users. It is the default database for macOS Server,
+and is also available for Linux, FreeBSD, OpenBSD, and Windows.
 
 ### MariaDB
-- https://mariadb.org/
 
+[MariaDB](https://mariadb.org/) is a community-developed, commercially supported fork of the MySQL relational database management system (RDBMS),
+intended to remain free and open-source software under the GNU General Public License. Development is led by some of the original 
+developers of MySQL, who forked it due to concerns over its acquisition by Oracle Corporation in 2009.
 
 ### FaunaDB
 
