@@ -1,6 +1,7 @@
 ---
 title: Download website mirror with wget
 date: 2018-12-13
+tags: [wget]
 ---
 
 # Download website mirror with wget

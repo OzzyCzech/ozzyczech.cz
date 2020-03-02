@@ -13,7 +13,7 @@ It provides an easy way to update outdated packages
 yarn upgrade-interactive --latest 
 ```
 
-```text
+```
 [1/? Choose which packages to update. (Press <space> to select, <a> to toggle all, <i> to inverse selection)
 
  devDependencies

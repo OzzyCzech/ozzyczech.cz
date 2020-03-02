@@ -1,7 +1,7 @@
 ---
 title: Modern databases list
 date: 2020-02-09
-tags: [database, list]
+tags: [database]
 ---
 
 # Modern databases list

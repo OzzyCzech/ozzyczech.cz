@@ -13,7 +13,7 @@ written using `X'string'` or `0xstring` notation, where string contains hexadeci
 SELECT HEX('EXAMPLE'), X'4558414D504C45';
 ```
 
-```text
+```
 +----------------+-------------------+
 | HEX('EXAMPLE') | X'4558414D504C45' |
 +----------------+-------------------+

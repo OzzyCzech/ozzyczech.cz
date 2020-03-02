@@ -17,7 +17,7 @@ Remove stopped containers, all dangling images, and all unused networks:
 docker system prune
 ```
 
-```text
+```
 WARNING! This will remove:
   - all stopped containers
   - all networks not used by at least one container
