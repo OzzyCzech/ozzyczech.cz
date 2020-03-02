@@ -50,9 +50,12 @@ na inspektorátu dostal nové ostravské značky a nový neprostřižený malý 
 Všechno byla záležitost cca na 10 minut. Stálo to na správních poplatcích 800 Kč. Kopii velkého 
 technického průkazu jsem pak ještě poslal na pojišťovnu a ta mi obratem poslala novou zelenou kartu, 
 kde je uvedena moje nová registrační značka. Ještě malý dodatek. 
+
 Pokud je v autě na skle nalepená **dálniční známka**, zneplatní se výměnou značek. 
+
 Dálniční známku si prý můžete nechat vyměnit na jakékoliv větší poště. Stačí k tomu původní známka 
 a nový technický průkaz. Ještě jsem to nestihl udělat, takže přesně nevím. 
+
 Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty se při výměně značky 
 dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (
 Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)
