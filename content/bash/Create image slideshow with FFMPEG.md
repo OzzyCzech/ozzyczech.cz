@@ -1,10 +1,10 @@
 ---
-title: Create image slideshow with FFMPEG
+title: Create image slideshow with ffmpeg
 date: 2019-12-06
 tags: [bash, ffmpeg]
 ---
 
-# Create image slideshow with FFMPEG
+# Create image slideshow with ffmpeg
 
 Following will take all `*.jpg` images from current folder and create mp4 image slideshow.
 Images can have different sizes, [ffmpeg](https://www.ffmpeg.org/ffmpeg.html) will rescale or pad them.
