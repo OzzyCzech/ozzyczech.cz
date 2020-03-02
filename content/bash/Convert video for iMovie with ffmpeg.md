@@ -19,7 +19,7 @@ Apple added ProRes support sometime in late 2014 since iMovie 10 you can use fol
 ffmpeg -i input.avi -c:v prores -c:a pcm_s16le output.mov
 ```
 
-## List of [supported formats](https://support.apple.com/en-us/HT209029):
+**List of [supported formats](https://support.apple.com/en-us/HT209029)**:
 
 Video formats:
 
