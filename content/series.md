@@ -5,6 +5,7 @@ slug: series
 
 # 2020
 
+- [Altered Carbon](https://www.imdb.com/title/tt2261227/)
 - [Picard](https://www.imdb.com/title/tt8806524/)
 - [Dublin Murders](https://www.imdb.com/title/tt7768192/)
 - [Mindhunter](https://www.imdb.com/title/tt5290382/)
