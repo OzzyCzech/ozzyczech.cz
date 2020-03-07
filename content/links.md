@@ -18,6 +18,7 @@
 - https://stocksnap.io/
 - https://www.pexels.com/
 - https://freephotos.cc/
+- https://www.pxfuel.com/
 
 #### Payments services
 
