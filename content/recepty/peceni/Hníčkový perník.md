@@ -8,6 +8,8 @@ date: 2000-01-01
 
 <img src="/recepty/peceni/Hrníčkový perník.jpg" width="350" class="img-fluid ml-2 rounded float-right">
 
+Promíchejte
+
 * 1 hrnek hladké mouky
 * 1 hrnek žitné mouky (nebo hladké pokud nemáte)
 * 1 necelý hrnek cukru
@@ -16,6 +18,8 @@ date: 2000-01-01
 * 1 vanilkový cukr nebo extrakt
 * 2 lžíce kakaa
 * špatka soli
+
+a pak přidejte 
 
 * 1/2 hrnku oleje nebo rozpuštěného másla
 * 1 hrnek mléka
