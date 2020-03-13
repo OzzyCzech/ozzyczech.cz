@@ -8,17 +8,19 @@ date: 2000-01-01
 
 <img src="/recepty/peceni/Hrníčkový perník.jpg" width="350" class="img-fluid ml-2 rounded float-right">
 
-* 2 lžíce med
-* 1 hrnek hnědého cukru
-* 1 hrnek mléka
 * 1 hrnek hladké mouky
 * 1 hrnek žitné mouky (nebo hladké pokud nemáte)
-* 1/2 hrnku oleje nebo rozpuštěného másla
-* 2 ks vejce
-* 1 balíček prášek do perníku
+* 1 necelý hrnek cukru
 * 1 lžička jedlá soda
+* 1 balíček prášek do perníku
+* 1 vanilkový cukr nebo extrakt
 * 2 lžíce kakaa
 * špatka soli
+
+* 1/2 hrnku oleje nebo rozpuštěného másla
+* 1 hrnek mléka
+* 2 lžíce med
+* 1-2 ks vejce
 
 ### Nepovinné vylepšováky do těsta
 
@@ -28,7 +30,6 @@ date: 2000-01-01
 * dvě strouhané jablka
 * panáka rumu
 * sekané ořechy
-* vanilkový extrakt nebo cukr
 * lžička skořice
 
 ### Vylepšováky po dopečení
@@ -37,4 +38,4 @@ date: 2000-01-01
 * podélně rozpůlit namazat marmeládou a znovu slepit
 * kafíčko
 
-Pečeme na 150° asi 35 - 45 minut ve vymazaném plechu.
+Pečeme na 170° asi 20 - 35 minut ve vymazaném a vysypaném plechu.
