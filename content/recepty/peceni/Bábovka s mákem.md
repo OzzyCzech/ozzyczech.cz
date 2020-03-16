@@ -10,7 +10,6 @@ date: 2020-03-16
 * 300 graml cukru krupice
 * 1 prášek do pečiva
 * 1 vanilkový cukr
-
 * 4 vejce
 * 2 dcl oleje
 * 0,5 dcl rumu
