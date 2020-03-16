@@ -51,7 +51,7 @@ slug: js
 ### Templating
 
 - [Nunjucks](https://mozilla.github.io/nunjucks/) - A rich and powerful templating language for JavaScript.
-
+- [MDX](https://mdxjs.com/) - Markdown for the component era
 ### Desktop apps
 
 - [Electron](https://electron.atom.io/) - Build cross platform desktop apps with JavaScript, HTML, and CSS
