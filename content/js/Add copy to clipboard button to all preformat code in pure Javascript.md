@@ -47,7 +47,8 @@ document.onreadystatechange = function () {
 
 ```css
 a.btn-copy, a.btn-copy:hover {
-	color: black;
+  color: black;
+  user-select: none;
 	position: absolute;
 	padding: 8px;
 	font-size: smaller;
