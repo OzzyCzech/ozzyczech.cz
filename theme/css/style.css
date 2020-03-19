@@ -203,6 +203,7 @@ code {
 a.btn-copy, a.btn-copy:hover {
 	color: var(--text-default-color);
 	position: absolute;
+	user-select: none;
 	padding: 8px;
 	font-size: smaller;
 	right: 0;
