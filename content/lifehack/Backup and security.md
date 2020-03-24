@@ -50,24 +50,26 @@ tags: [backup, security]
 
 ### Passwords
 
-* https://1password.com/
-* https://www.lastpass.com/
+* [1Password](https://1password.com/) - 
+* [LastPass](https://www.lastpass.com/) - 
+* [Dashline](https://www.dashlane.com/) - 
+* [bitwarden](https://bitwarden.com/) -
 * https://www.keepersecurity.com/
-* https://www.dashlane.com/
-* https://bitwarden.com/
 
 ### VPN
 
-* https://one.one.one.one/ - free VPN from CloudFlare
-* https://www.vpnhub.com/ - free VPN from PornHub
-* https://protonvpn.com/ - High-speed Swiss VPN that safeguards your privacy.
+* [1.1.1.1](https://one.one.one.one/) - free VPN from CloudFlare
+* [VPNHub](https://www.vpnhub.com/) - free VPN from PornHub
+* [ProtonVPN](https://protonvpn.com/) - High-speed Swiss VPN that safeguards your privacy.
 
 
-### Emails
+### Secure emails
 
 * [ProtonMail](https://protonmail.com/cs/)
+* [Tutanota](https://tutanota.com)
 
 ### Browsers
 
 * [Firefox](https://www.mozilla.org/cs/firefox/new/)
 * [TorBrowser](https://www.torproject.org/download/)
+

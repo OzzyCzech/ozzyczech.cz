@@ -42,7 +42,7 @@ tags: [photo]
 ## Cameras
 
 * Fujifilm X-T3
-* Fujifilm X100F
+* Fujifilm X100V
 * Ricoh GR III
 
 
