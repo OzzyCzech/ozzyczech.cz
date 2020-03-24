@@ -22,4 +22,4 @@ You can download and install it with [brew](https://brew.sh/index_cs):
 brew cask install typora
 ```
 
-Homepage https://typora.io/ or [Twitter](https://twitter.com/typora)
+Homepage https://typora.io/ and [Twitter](https://twitter.com/typora)
