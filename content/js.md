@@ -5,7 +5,7 @@ slug: js
 
 # 🥕 JavaScript
 
-<img  src="js/universal-standard.png" class="img-fluid ml-2 rounded">
+<img  src="js/universal-standard.png" class="img-fluid ml-2 mx-auto rounded">
 
 ### Devstack
 

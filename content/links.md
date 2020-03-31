@@ -2,28 +2,28 @@
 
 #### Free icons & emoji
 
-- https://flaticon.com
-- https://material.io/tools/icons/
-- https://twemoji.twitter.com/
-- https://thenounproject.com/
+- [FlatIcon](https://flaticon.com)
+- [Material Icons](https://material.io/tools/icons/)
+- [TwEmoji](https://twemoji.twitter.com/) - emoji from Twitter
+- [The Noun Project](https://thenounproject.com/) - Icons for everything
 
 #### Favicons services
 
-- http://favicongrabber.com - free and opensource favicon grabber
-- https://www.google.com/s2/favicons?domain=ozzyczech.cz - Google favicon service from Chrome
+- [FaviconGrabber](http://favicongrabber.com) - free and opensource favicon grabber
+- [Google API](https://www.google.com/s2/favicons?domain=ozzyczech.cz) - Google favicon service from Chrome
 
 #### Free useable images catalogues
 
-- https://unsplash.com/
-- https://stocksnap.io/
-- https://www.pexels.com/
-- https://freephotos.cc/
-- https://www.pxfuel.com/
+- [Unsplash](https://unsplash.com/)
+- [Stocksnap](https://stocksnap.io/)
+- [Pexels](https://www.pexels.com/)
+- [FreePhotos](https://freephotos.cc/)
+- [PxFuel](https://www.pxfuel.com/)
 
 #### Payments services
 
-* https://www.braintreepayments.com (1,9% + €0,30)
-* https://stripe.com/
+* [Braintree](https://www.braintreepayments.com)
+* [Stripe](https://stripe.com/)
 
 #### Electron
 
@@ -38,23 +38,26 @@
 
 #### Regex testers
 
-- https://www.regexpal.com/
-- https://regex101.com/
-- https://www.phpliveregex.com/
+- [RegexPal](https://www.regexpal.com/)
+- [Regex101](https://regex101.com/)
+- [PHP Live Regex](https://www.phpliveregex.com/)
 
 #### Emailing services
 
-- https://www.mailgun.com/
-- https://postmarkapp.com/
-- https://aws.amazon.com/ses/
-- https://sendgrid.com/
-- http://www.mandrill.com/
+- [MailGun](https://www.mailgun.com/)
+- [Postmark app]( https://postmarkapp.com/)
+- [AWS SES](https://aws.amazon.com/ses/)
+- [Send Grid](https://sendgrid.com/)
+- [ManDrill](http://www.mandrill.com/)
 
 #### Web tools
 
-- https://telegra.ph/ - Post anything online
-- https://httpbin.org/ - A simple HTTP Request & Response Service.
+- https://httpbin.org - A simple HTTP Request & Response Service.
 
+#### Publish content online
+
+* [Telegra.ph](https://telegra.ph/) - Post anything online
+* [pen.io](http://pen.io/)
 
 ### HTTPS Tools
 
@@ -67,13 +70,10 @@
 - [Graylog](https://www.graylog.org/)
 - [Papertrails](https://papertrailapp.com/)
 
-### That one privacy site
+### [That one privacy site](https://thatoneprivacysite.net/)
 
 The site is meant to be a resource for those who value their privacy, specifically for those looking to escape from the abundance of biased, bought-and-paid-for shillery on the subject.
 
-https://thatoneprivacysite.net/
-
-
-# IOT
+#### IOT
 
 - [Particle store](https://store.particle.io/)
