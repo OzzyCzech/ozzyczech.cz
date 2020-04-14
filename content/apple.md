@@ -14,6 +14,7 @@
 * [Macdown](https://macdown.uranusjr.com/) - free and open source editor for mac
 * [Joplin](https://joplinapp.org/) - Joplin is a free, open source note taking and to-do application
 * [iWriter](https://ia.net/writer) - 
+* [Caret](https://caret.io/) - is a Markdown editor for Mac, Windows and Linux. It stands out with its clean interface, productivity features and obsessive attention to detail.
 
 ## Image editing
 
