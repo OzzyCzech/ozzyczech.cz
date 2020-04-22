@@ -26,6 +26,12 @@ There is one tool which people often want to install on its own, and that’s th
 brew install mongodb-community-shell
 ```
 
+You can also install only tools for managing mongo database:
+
+```shell
+brew install mongodb-database-tools
+```
+
 ### Starting mongo
 
 ```shell
