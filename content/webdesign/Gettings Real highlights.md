@@ -1,9 +1,10 @@
 ---
-title: Gettings Real highlights
+title: Gettings Real - highlights
 date: 2017-05-11
+tags: [webdesign]
 ---
 
-# Gettings Real highlights
+# Gettings Real - heighlights
 
 ## Starting
 
@@ -67,7 +68,7 @@ date: 2017-05-11
 
 > Ask people what they don't want
 
-> [Innovation] comes from saying no to 1,000 things to make sure we don't get on the wrong track or try to do too much.
+> Innovation comes from saying no to 1,000 things to make sure we don't get on the wrong track or try to do too much.
 
 > Most of the time you spend is wasted on things that just don't matter. If you can cut out the work and thinking that just don't matter, you'll achieve productivity you've never imagined.
 
@@ -159,7 +160,7 @@ date: 2017-05-11
 
 > Use Real Words Insert actual text instead of lorem ipsum
 
-> Easy On, Easy Off Make signup and cancellation a painless process
+> **Easy On, Easy Off Make signup and cancellation a painless process**
 
 > There should always be a free option so customers can demo the app without entering credit card information.
 
@@ -179,7 +180,7 @@ date: 2017-05-11
 
 ## Betas
 
-> Private betas are fine, public betas are bullshit.
+> **Private betas are fine, public betas are bullshit.**
 
 > Don't wait for your product to reach perfection.
 
