@@ -1,14 +1,17 @@
 :root {
 	--background-color: #242425;
+	--background-heighlight-color: #404040;
 
 	--border-color: #343435;
 	--border-color-dark: #333333;
 
 	--text-default-color: #B6B6B6;
 	--text-secondary-color: #747474;
+	--text-heighligh-color:#c3c3c3;
 	--text-dark-color: #747474;
 	--text-href-color: #2C8AD3;
 	--text-code-color: #e83e8c;
+
 
 	--token-comment: #468438;
 	--token-tag: #e06c75;

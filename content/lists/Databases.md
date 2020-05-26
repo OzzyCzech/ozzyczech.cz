@@ -1,10 +1,10 @@
 ---
-title: Modern databases list
+title: Databases
 date: 2020-02-09
-tags: [database]
+tags: [database, list]
 ---
 
-# Modern databases list
+# Databases
 
 ### MongoDB
 
@@ -33,7 +33,7 @@ applications.
 
 [Apache Cassandra](http://cassandra.apache.org) is a free and open-source, distributed, wide column store, NoSQL database 
 management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of 
- 
+
 ### Unbounded
 
 [Unbounded](https://unbounded.cloud/) is the First Programmable NoSQL Database

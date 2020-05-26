@@ -170,13 +170,18 @@ pre {
 .page-item .page-link:hover,
 .page-item.active .page-link:hover,
 .page-item.active .page-link {
-	color: var(--text-default-color);
-	background-color: var(--text-dark-color);
-	border-color: var(--border-color-dark);
+	color: var(--text-heighligh-color);
+	background-color: var(--background-heighlight-color);
+	border-color: rgba(0, 0, 0,.6);
 }
 
 .list-group-item-action {
 	color: var(--text-secondary-color);
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+	color: var(--text-heighligh-color);
+	background-color: var(--background-heighlight-color);
 }
 
 .page-link {

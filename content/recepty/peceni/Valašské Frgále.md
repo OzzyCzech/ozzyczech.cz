@@ -4,11 +4,9 @@ date: 2020-05-22
 tags: [Recepty, Pečení]
 ---
 
+# Valašské Frgále
 
-
-## Valašské Frgále
-
-<img src="/recepty/peceni/frgale.jpg" width="350" class="img-fluid ml-2 rounded float-right">
+<img src="/recepty/peceni/frgal.jpeg" width="380" class="img-fluid ml-2 mb-2 rounded float-right">
 
 Těsto na čtyři koláče:
 
@@ -44,3 +42,4 @@ Ohřejeme mléko, přidáme lžičku cukru a kostrku droždí - necháme vzejít
 - dvě lžíce vanilkového pudinku
 
 Pečeme na 170-180°C asi 20 - 35 minut - před pečením necháme chvilku nakynout (10 minut).
+
