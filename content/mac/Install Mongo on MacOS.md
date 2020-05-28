@@ -1,7 +1,7 @@
 ---
 titla: Install mongo on MacOS
 date: 2020-04-07
-tags: [brew, macos, mongo]
+tags: [brew, macOS, mongo]
 ---
 
 

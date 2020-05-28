@@ -1,7 +1,8 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Aside from './Aside'
 import Header from './Header'
 import slugify from "@sindresorhus/slugify";
+import Tags from "./Tags";
 
 export default ({tag, posts, tags}) => {
 	return (<html lang="cs" dir="ltr">
@@ -26,9 +27,7 @@ export default ({tag, posts, tags}) => {
 
 		<footer>
 			<p className="text-break text-justify px-3 py-2">
-				{tags.map((tag, index) =>
-					<Fragment key={index}><a href={`/tag/${slugify(tag)}`} className="text-dark">#{tag}</a> </Fragment>
-				)}
+				<Tags tags={tags}/>
 			</p>
 		</footer>
 

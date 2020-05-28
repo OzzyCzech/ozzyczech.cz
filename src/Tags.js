@@ -1,13 +1,10 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import slugify from "@sindresorhus/slugify";
 
 export default ({tags}) => {
-	return (<p className="text-right">
-			{tags.forEach((tag, index) =>
-				<a href={"/tag/" + slugify(tag)} className="text-dark" key={index}>
-					#{tag}
-				</a>
-			)}
-		</p>
+	return (
+		<Fragment>{[...tags].map((tag, index) =>
+			<Fragment key={index}><a href={`/tag/${slugify(tag)}`} className="text-dark tag">#{tag}</a> </Fragment>
+		)}</Fragment>
 	);
 }

@@ -1,7 +1,7 @@
 ---
 title: Typora - the best editor for Markdowns
 date: 2020-03-24
-tags: [mac, markdown]
+tags: [macOS, markdown]
 ---
 
 # Typora - the best editor for Markdowns

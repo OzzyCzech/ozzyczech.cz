@@ -9,7 +9,7 @@ tags: [PHP, Traits]
 
 # Usefull traits
 
-## Get class_basename trait
+### Get class_basename trait
 
 ```php
 trait ClassBasename {
@@ -21,7 +21,7 @@ trait ClassBasename {
 
 This trait returns class basename. If you have e.g. class `something\\class\\path\\MyClass` it will returns only `MyClass`.
 
-## Get class_namespace trait
+### Get class_namespace trait
 
 ```php
 trait ClassNamespace {

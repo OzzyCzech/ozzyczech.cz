@@ -1,10 +1,16 @@
 ---
 title: Photo
-date: 2018-09-27
-tags: [photo]
+date: 2020-05-28
 ---
 
 # 📷 Photo
+
+## Cameras
+
+* [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/)
+* [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
+* [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
+* [Ricoh GR III](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
 
 ### Fuji RAW (best results)
 
@@ -38,11 +44,3 @@ tags: [photo]
 ### Image Managers
 
 - [Pixave](http://www.littlehj.com/mac/)
-
-## Cameras
-
-* Fujifilm X-T3
-* Fujifilm X100V
-* Ricoh GR III
-
-

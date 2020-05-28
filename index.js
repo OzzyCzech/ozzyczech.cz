@@ -84,7 +84,7 @@ import slugify from "@sindresorhus/slugify";
 
 	for (const tag of tags) {
 		await render(
-			<Tag tag={tag} tags={[...tags]} posts={posts.filter((post => post.tags.has(tag)))}/>,
+			<Tag tag={tag} tags={tags} posts={posts.filter((post => post.tags.has(tag)))}/>,
 			join('public/tag', slugify(tag), 'index.html'),
 		)
 	}
