@@ -4,14 +4,16 @@ date: 2020-04-01
 tags: [pizza]
 ---
 
-# Pizza
+# 🍕Pizza
 
-- 1 hrst sůl
+- 4 lžíce olivového oleje
 - 1 kg hladká mouka *nebo směs různých druhů*
-- 3 balení droždí (sušené nebo kostka)
-- 0,50 l vlažná voda
-- 1 hrst cukr
+- 30 g balení droždí (balíček sušeného nebo kostka)
+- 500 ml vlažná voda
+- hrst cukr
+- hrst soli
 
-Do vody postupně přimíchávám sůl, cukr, 1/3 mouky s droždím a necháme vzejít kvásek. Dokud to lze v míse míchat, pak vyklopím na vál a postupně zapracuji všechnu mouku, pořádně prodělat, těsto má být vláčné a téměř nelepí. 
+Do vody postupně přidáme cukr trochu 1/3 mouky a droždí. Necháme vzejít kvásek. Nakonec přidáme zbytek mouky, olej a sůl. Promícháme a vyklopíme na vál a zpracujeme těsto. Těsto má být vláčné a téměř nelepí.
 
-Těsto je donré nechat odležet v lednici do druhého dne.
+Těsto necháme odležet přes noc v lednici do druhého dne (zdvojnásobí svůj objem).
+
