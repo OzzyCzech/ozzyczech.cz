@@ -1,6 +1,7 @@
 {
+	"license": "MIT",
 	"scripts": {
-		"build": "./index.js",
+		"build": "babel ./index.js",
 		"dev": "watch './index.js' ./content ./theme | serve public"
 	},
 	"devDependencies": {
@@ -8,6 +9,11 @@
 		"watch": "^1.0.2"
 	},
 	"dependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.9.6",
+		"@babel/node": "^7.8.7",
+		"@babel/preset-env": "^7.9.6",
+		"@babel/preset-react": "^7.9.4",
 		"@sindresorhus/slugify": "^1.0.0",
 		"@sphido/core": "^0.0.5",
 		"@sphido/feed": "^0.0.4",
@@ -15,11 +21,12 @@
 		"@sphido/link": "^0.0.5",
 		"@sphido/marked": "^0.0.3",
 		"@sphido/meta": "^0.0.5",
-		"@sphido/nunjucks": "^0.0.4",
 		"@sphido/pagination": "^0.0.4",
 		"@sphido/sitemap": "^0.0.6",
 		"@sphido/twemoji": "^0.0.4",
 		"fs-extra": "^9.0.0",
-		"globby": "^11.0.0"
+		"globby": "^11.0.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
 	}
 }

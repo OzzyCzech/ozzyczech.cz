@@ -1,21 +1,28 @@
-#!/usr/bin/env node
+#!/usr/bin/env npx babel-node
 
-const {join} = require('path');
-const globby = require('globby');
-const {getPages} = require('@sphido/core');
-const {outputFile, copy} = require('fs-extra');
-const pagination = require('@sphido/pagination');
-const {save, env, renderString, renderToFile} = require('@sphido/nunjucks');
-const {link} = require('@sphido/link');
-const feed = require('@sphido/feed');
-const slugify = require('@sindresorhus/slugify');
-const sitemap = require('@sphido/sitemap');
+import {join} from 'path';
+import {copy, outputFile} from "fs-extra";
+import globby from "globby";
+import {getPages} from "@sphido/core";
+import pagination from "@sphido/pagination";
+import {link} from "@sphido/link";
+import feed from "@sphido/feed";
+import sitemap from "@sphido/sitemap";
+import React from 'react'
+import {render} from "./src/render";
+
+import Page from "./src/Page";
+import Pages from "./src/Pages";
+import Tag from "./src/Tag";
+import slugify from "@sindresorhus/slugify";
 
 (async () => {
 
-	// nunjucks setup
-	env.addFilter('h1strip', content => content.replace(/<h1.*>.*?<\/h1>/g, ''));
-	env.addFilter('slugify', content => slugify(content));
+	// Copy static content
+	let files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'static/404.html']);
+	for await (let file of files) {
+		await copy(file, file.replace(/^[\w]+/, 'public'))
+	}
 
 	// Get pages from directory
 	const pages = await getPages(
@@ -25,16 +32,16 @@ const sitemap = require('@sphido/sitemap');
 			require('@sphido/twemoji'),
 			require('@sphido/marked'),
 			require('@sphido/meta'),
-			{save, link},
+			{link},
 		]
 	);
 
 	// Generate single pages...
 	for await (let page of pages) {
-		await page.save(
-			page.dir.replace('content', 'public'),
-			'theme/page.html'
-		);
+		await render(
+			<Page page={page}/>,
+			join(page.dir.replace('content', 'public'), page.slug, 'index.html')
+		)
 	}
 
 	// Get sorted posts only
@@ -42,12 +49,11 @@ const sitemap = require('@sphido/sitemap');
 	posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 	// index.json for https://fusejs.io/
-	const striptags = env.getFilter('striptags');
 	await outputFile('public/index.json', JSON.stringify(
 		posts.map(
 			page => ({
 				title: page.title,
-				content: striptags(page.content),
+				content: page.content.replace(/(<([^>]+)>)/ig, ''),
 				link: page.link('https://ozzyczech.cz/'),
 				tags: page.tags,
 			})
@@ -55,7 +61,7 @@ const sitemap = require('@sphido/sitemap');
 	));
 
 	// Generate sitemap.xml
-	await outputFile('public/sitemap.xml', sitemap(posts, 'https://ozzyczech.cz'));
+	await outputFile('public/sitemap.xml', sitemap(posts, 'https://ozzyczech.cz/'));
 
 	// Generate RSS
 	await outputFile(
@@ -67,15 +73,6 @@ const sitemap = require('@sphido/sitemap');
 		)
 	);
 
-
-	for await (const page of pagination(posts, 8)) {
-		await renderToFile(
-			page.current === 1 ? 'public/index.html' : join('public/page/', page.current.toString(), 'index.html'),
-			'theme/pages.html',
-			{page}
-		);
-	}
-
 	// tags
 
 	let tags = new Set();
@@ -86,21 +83,17 @@ const sitemap = require('@sphido/sitemap');
 	});
 
 	for (const tag of tags) {
-		await renderToFile(
+		await render(
+			<Tag tag={tag} tags={[...tags]} posts={posts.filter((post => post.tags.has(tag)))}/>,
 			join('public/tag', slugify(tag), 'index.html'),
-			'theme/tag.html',
-			{
-				tag: tag,
-				tags: [...tags],
-				posts: posts.filter((post => post.tags.has(tag)))
-			}
-		);
+		)
 	}
 
-	// Copy static content
-	let files = await globby(['theme/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'theme/404.html']);
-	for await (let file of files) {
-		await copy(file, file.replace(/^[\w]+/, 'public'))
+	for await (const page of pagination(posts, 8)) {
+		await render(
+			<Pages posts={page.posts} current={page.current} pages={page.pages}/>,
+			page.current === 1 ? 'public/index.html' : join('public/page/', page.current.toString(), 'index.html')
+		);
 	}
 
 })();

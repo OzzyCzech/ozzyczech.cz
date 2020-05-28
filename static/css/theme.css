@@ -1,0 +1,28 @@
+:root {
+	--font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+
+	--body-background-color: #282c34;
+	--text-color-primary: #dee2e6;
+	--text-color-brighter: #ebeff2;
+	--text-color-secondary: #8b99a7;
+
+	/* heighlight */
+	--background-heighlight-color: #21252b;
+	--background-heighlight-color-hover: #353b45;
+	--text-heighligh-color: #a8b3bd;
+
+	--border-color-primary: #21252b;
+	--border-color-dark: #181b20;
+
+	--text-color-href: #2C8AD3;
+	--text-color-code: #e83e8c;
+}
+
+:root {
+	--token-comment: #468438;
+	--token-tag: #e06c75;
+	--token-string: #CF7A60;
+	--line-number-color: #5C6370;
+	--token-variable: #77D6FF;
+	--token-keyword: #C368B5;
+}

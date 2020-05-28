@@ -1,21 +1,19 @@
 ---
-title: Change the Default Screen Shot File Name in MacOS
+title: Change the Default MacOS Screenshot settings
 date: 2020-03-24
 tags: [macOS, screenshot]
 ---
 
-# Change the Default MacOS Screen Shot settings
+# Change the Default MacOS Screenshot settings
 
-Change Screen Shot filename to date and time only:
+Change Screen Shot filename:
 
-```shell script
-defaults write com.apple.screencapture name ""
-killall SystemUIServer
+```shell
+defaults write com.apple.screencapture name "From " && killall SystemUIServer
 ```
 
 Change the Screen Shot Save File Location:
 
-```shell script
-defaults write com.apple.screencapture location ~/Downloads/
-killall SystemUIServer
+```shell
+defaults write com.apple.screencapture location ~/Downloads/ && killall SystemUIServer
 ```
