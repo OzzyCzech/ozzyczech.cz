@@ -1,7 +1,7 @@
 ---
 title: Pizza
 date: 2020-04-01
-tags: [pizza]
+tags: [Recepty, Pečení, Pizza]
 ---
 
 # 🍕Pizza
