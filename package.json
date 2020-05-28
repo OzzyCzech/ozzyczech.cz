@@ -1,7 +1,7 @@
 {
 	"license": "MIT",
 	"scripts": {
-		"build": "babel ./index.js",
+		"build": "babel-node ./index.js",
 		"dev": "watch './index.js' ./content ./theme | serve public"
 	},
 	"devDependencies": {
