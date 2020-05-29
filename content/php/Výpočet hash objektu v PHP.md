@@ -13,7 +13,7 @@ být vždy žádoucí. Někdy potřebujete objekt identifikovat na základě jeh
 vnitřních hodnot pomocí neměnného řetězce. Takový hash můžete snadno získat
 například takto:
 
-```
+```php
 class Foo {
  private $p;
  public function setProperty($p) {
@@ -28,7 +28,7 @@ class Foo {
 
 Pro vypsání/získání hash pak stačí:
 
-```
+```php
 $bar = new Foo();
 $bar->setProperty('25');
 echo $bar;

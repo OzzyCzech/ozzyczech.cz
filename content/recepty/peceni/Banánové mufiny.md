@@ -17,6 +17,9 @@ Na 12 kusů muffinů:
 * Jeden banán (rozsekaný vidličkou)
 * čokoláda nasekaná
 
-180 stupňů 25 minut v předehřaté troubě.
+Vylepšení:
 
-Vylepšení: mouka může být 125 g špaldové/125 g pšeničné
+* mouka může být 125 g špaldové
+* 125 g pšeničné
+
+Pečeme: 180 stupňů 25 minut v předehřaté troubě.

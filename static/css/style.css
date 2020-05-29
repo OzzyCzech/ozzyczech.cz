@@ -6,7 +6,7 @@ body {
 	grid-template-areas: "main aside" "footer aside";
 	grid-template-columns: 1fr 320px;
 	grid-template-rows: 1fr auto;
-	max-width: 1280px;
+	max-width: 1420px;
 	width: 100%;
 	margin: 0 auto;
 	grid-gap: 1rem !important;
@@ -32,7 +32,7 @@ body > footer {
 
 body > main {
 	grid-area: main;
-	max-width: 912px;
+	max-width: 1080px;
 }
 
 body > aside {
@@ -61,10 +61,8 @@ body > aside {
 }
 
 body > main > article {
-	padding: 2rem;
-	border-radius: 10px;
-	background-color: var(--background-heighlight-color);
-	border: 1px solid var(--border-color-primary);
+	border: 1px solid var(--border-color-dark);
+	border-radius: 1rem;
 }
 
 blockquote {
@@ -98,9 +96,14 @@ img.emoji {
 
 article h1,
 article h1 > a,
-article h2.h1,
-article h2 > a {
+article > h2.h1,
+article > h2 > a {
 	color: var(--text-color-brighter) !important;
+}
+
+article h1,
+article > h2.h1 {
+	margin-bottom: 1.1rem !important
 }
 
 article img {
@@ -210,10 +213,10 @@ a.text-dark:hover {
 
 code {
 	color: var(--text-color-code);
-	background: rgba(0, 0, 0, .1);
-	border-radius: 5px;
+	background: var(--background-heighlight-color-darker);
+	border-radius: 3px;
 	display: inline-block;
-	padding: 3px;
+	padding: 0px 5px;
 }
 
 a.btn-copy, a.btn-copy:hover {

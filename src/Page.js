@@ -14,7 +14,7 @@ export default ({page}) => {
 	<Aside/>
 
 	<main>
-		<article className={page.slug}>
+		<article className={"rounded shadow p-5 mb-4 " + page.slug}>
 			<small className="d-block float-right text-secondary">{new Intl.DateTimeFormat('cs').format(page.date)}</small>
 			<div dangerouslySetInnerHTML={{__html: page.content}}></div>
 			{page.tags.size > 0 && <p className="text-right"><Tags tags={page.tags}/></p>}

@@ -16,7 +16,7 @@ tags: [composer, git, PHP]
 
 Remove `vendor` dir from your `.gitignore` and add follow lines to root of `composer.json`
 
-```
+```shell
 "scripts": {
  "post-update-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf vendor/**/**/.git"],
  "post-install-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf vendor/**/**/.git"]
@@ -27,13 +27,13 @@ That's automatically remove the `.git` directory of every dependency after the i
 
 When you are using tagged releases (no dev versions) of package then run:     
 
-```
+```shell
 rm -rf vendor/some/package && composer update some/package --prefer-source --no-scripts
 ```
 
 For dev versions (dev-master) it's simpler:
 
-```
+```shell
 rm -rf vendor/some/package && composer update some/package --no-scripts
 ```
 

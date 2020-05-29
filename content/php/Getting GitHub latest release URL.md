@@ -16,6 +16,6 @@ function getLatestTagUrl($repository, $default = 'master') {
     return sprintf("https://github.com/$repository/archive/%s.zip", $file ? reset($file)->name : $default);
 }
 
-echo getLatestTagUrl('OzzyCzech/vestibulum');
-// will return https://github.com/OzzyCzech/vestibulum/archive/v0.2.1.zip
+echo getLatestTagUrl('sphido/sphido');
+// will return https://github.com/sphido/sphido/archive/v0.2.1.zip
 ```

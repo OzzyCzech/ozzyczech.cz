@@ -4,7 +4,6 @@ date: 2011-06-20
 tags: [PHP]
 ---
 
-
 # Case insensitive in_array v PHP
 
 PHP funkce [in_array](http://php.net/manual/en/function.in-array.php) je case
@@ -12,7 +11,7 @@ sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a
 nezáleží Vám na velikosti písmen u jeho prvků:
 
 
-```
+```php
 $array = array('a', 'B', 'cE');
 
 function inArrayCaseInsensitive($needle, $array) {
@@ -30,7 +29,7 @@ zajímavý přepínač PREG_GREP_INVERT. Tímto přepínačem odfiltrujete všec
 hodnoty v poli, které neodpovídají zadanému **regulárnímu výrazu**.
 Filtrace zachovává klíče pole.
 
-```
+```php
 $array = array('a', 'A', 'cE');
 
 function filterArrayValues($needle, $array) {

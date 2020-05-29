@@ -1,5 +1,5 @@
 ---
-title: Mac useful commands
+title: List all mounted drives on Mac
 date: 2013-03-11
 tags: [macOS, bash]
 ---

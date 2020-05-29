@@ -13,7 +13,7 @@ Angular [$http](https://docs.angularjs.org/api/ng/service/$http) isn’t appendi
 
  That can cause some problems on PHP side. If you need somehow differentiate XHR and common requests. For example Zend Framework and lot of others PHP frameworks use follow code:
 
-```
+```js
 function isXmlHttpRequest() {
  return !empty($_SERVER['HTTP_X_REQUESTED_WITH']) &&
   $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
@@ -22,7 +22,7 @@ function isXmlHttpRequest() {
 
 You can easily add  on Angular side by following code:
 
-```
+```js
 myAppModule.config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
 }]);

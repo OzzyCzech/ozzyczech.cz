@@ -51,4 +51,3 @@ $code = preg_replace("/'name_plural' => '(.+)'/", "'name' => __('$1')", $code);
 $code = "<?php\n return " . preg_replace('/stdClass::__set_state/', '(object)', $code) . ';';
 file_put_contents(__DIR__ . '/currencies.locale.php', $code);
 ```
-  

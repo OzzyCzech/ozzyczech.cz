@@ -4,22 +4,24 @@ date: 2011-03-27
 tags: [PHP, YouTube]
 ---
 
-
 # Snadné vložené YouTube videa pomocí PHP
 
-Následující PHP kód zamění jakýkoliv odkazu na [YouTube](http://www.youtube.com/) video za vložený přehrávač. Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři různé formáty URL adresy za embed video přehrávač.
+Následující PHP kód zamění jakýkoliv odkazu na [YouTube](http://www.youtube.com/) video za vložený přehrávač. 
+Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři
+různé formáty URL adresy za embed video přehrávač.
 
+```php
+function youtube($string)
+{
+  return preg_replace(
+    '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&?.*?#i',
+    '<iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/$4" frameborder="0" allowfullscreen></iframe>',
+    $string
+  );
+}
 
-    function youtube($string)
-    {
-      return preg_replace(
-        '#(http://(www.)?youtube.com)?/(v/|watch\?v\=)([-|~_0-9A-Za-z]+)&?.*?#i',
-        '<iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/$4" frameborder="0" allowfullscreen></iframe>',
-        $string
-      );
-    }
-
-    echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
-    echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
-    echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
-    echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
+echo youtube('http://www.youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
+echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
+echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
+```

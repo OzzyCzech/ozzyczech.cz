@@ -15,7 +15,7 @@ export default ({posts, current, pages}) => {
 
 	<main>
 		{posts.map((page, index) =>
-			<article className={page.slug} key={index}>
+			<article className={"rounded shadow p-5 mb-4 "  + page.slug} key={index}>
 				<small className="d-block float-right text-secondary">{new Intl.DateTimeFormat('cs').format(page.date)}</small>
 				<h2 className="h1"><a href={page.link()}>{page.title}</a></h2>
 				<div dangerouslySetInnerHTML={{__html: page.content.replace(/<h1.*>.*?<\/h1>/g, '')}}></div>

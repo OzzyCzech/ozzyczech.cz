@@ -6,15 +6,20 @@ tags: [webdesign]
 
 # Význam barev
 
-Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete [internetové stránky](http://www.omdesign.cz "Internetové stránky"), je na to 
+Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete [internetové stránky](https://www.omdesign.cz "Internetové stránky"), je na to 
 potřeba pamatovat dvojnásob. Barva dokáže návštěvníka oslovit a navodit ten správný pocit. Barvy se obecně dělí na
-barvy teplé, studené a neutrální. **Teplé barvy** jsou založené na odstínech žluté, hnědé, zeleno žluté a oranžové.
+barvy teplé, studené a neutrální
+
+**Teplé barvy** jsou založené na odstínech žluté, hnědé, zeleno žluté a oranžové.
 Teplé barvy svoji podstatou vzrušují, mají tendenci upoutat pozornost. Na pomezí mezi teplou a studenou barvou je 
-možné přiřadit odstíny zelené a fialové. Záleží jak moc obsahují červené nebo modré (RGB). **Studené barvy** jsou 
-založeny na odstínech modré, zelené, fialové, modro-zelené, modro-červené. Tyto barvy mají tendenci uklidňovat, tišit.
-Na rozdíl od teplých barev, se dají barvy studené celkem úspěšně aplikovat na velké plochy. Mezi **neutrální barvy** 
-patří bílá, šedá a černá. Pak celá řada barev, které obsahují velké množství šedé (barvy tmavé). 
+možné přiřadit odstíny zelené a fialové. Záleží jak moc obsahují červené nebo modré (RGB).
+
+**Studené barvy** jsou založeny na odstínech modré, zelené, fialové, modro-zelené, modro-červené. Tyto barvy mají tendenci
+uklidňovat, tišit. Na rozdíl od teplých barev, se dají barvy studené celkem úspěšně aplikovat na velké plochy.
+
+Mezi **neutrální barvy** patří bílá, šedá a černá. Pak celá řada barev, které obsahují velké množství šedé (barvy tmavé). 
 Neutrální barvy dokáží zvýšit atraktivitu teplých barev. Velké množství barev je znepokojující (vezměte si např. kolotoče).
+
 Pro webové stránky je **lepší použít nižší množství** barev (ideálně 3-4). Barvy jsou často a 
 právem spojovány s konkrétními vlastnostmi ([Psychologie barev](http://www.webdesign.org/web/web-design-basics/color-theory/color-psychology-quick-reference-cards.13826.html "Barvy a jejich význam")):
 

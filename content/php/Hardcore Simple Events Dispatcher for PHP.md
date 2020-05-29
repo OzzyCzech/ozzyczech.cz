@@ -21,7 +21,7 @@ With **sphido/events** can:
 
 ## Trigger event
 
-```
+```php
 on('event', function () {
   echo "wow it's works yeah!";
 });
