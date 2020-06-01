@@ -7,14 +7,14 @@ import {getPages} from "@sphido/core";
 import pagination from "@sphido/pagination";
 import {link} from "@sphido/link";
 import feed from "@sphido/feed";
-import sitemap from "@sphido/sitemap";
 import React from 'react'
-import {render} from "./src/render";
+import {render, renderXML} from "./src/render";
 
 import Page from "./src/Page";
 import Pages from "./src/Pages";
 import Tag from "./src/Tag";
 import slugify from "@sindresorhus/slugify";
+import Sitemap from "./src/Sitemap";
 
 (async () => {
 
@@ -60,10 +60,14 @@ import slugify from "@sindresorhus/slugify";
 		)
 	));
 
-	// Generate sitemap.xml
-	await outputFile('public/sitemap.xml', sitemap(posts, 'https://ozzyczech.cz/'));
+	// sitemap.xml
 
-	// Generate RSS
+	await renderXML(<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>, 'public/sitemap2.xml');
+
+	//await outputFile('public/sitemap.xml', sitemap(posts, 'https://ozzyczech.cz/'));
+
+	// rss.xml
+
 	await outputFile(
 		'public/rss.xml',
 		feed(
@@ -88,6 +92,8 @@ import slugify from "@sindresorhus/slugify";
 			join('public/tag', slugify(tag), 'index.html'),
 		)
 	}
+
+	// pagination
 
 	for await (const page of pagination(posts, 8)) {
 		await render(

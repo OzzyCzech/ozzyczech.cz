@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 
 export default ({title}) => {
-	return (<Fragment>
+	return (<>
 		<meta charSet="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
@@ -35,6 +35,5 @@ export default ({title}) => {
 
 		<link rel="stylesheet" href="/css/style.css"/>
 		<script src="/js/app.js"></script>
-
-	</Fragment>)
+	</>)
 };
