@@ -14,7 +14,6 @@ import Page from "./src/Page";
 import Pages from "./src/Pages";
 import Tag from "./src/Tag";
 import slugify from "@sindresorhus/slugify";
-import Sitemap from "./src/Sitemap";
 
 (async () => {
 
