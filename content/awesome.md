@@ -1,6 +1,7 @@
 ---
 title: Awesome list
 tags: [awesome, list]
+slug: awesome
 ---
 
 ## Queues
