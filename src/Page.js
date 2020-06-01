@@ -11,7 +11,7 @@ export default ({page}) => {
 
 	<body className="line-numbers">
 
-	<Aside/>
+	<Aside active={'/' + page.slug} />
 
 	<main>
 		<article className={"rounded shadow p-5 mb-4 " + page.slug}>

@@ -1,11 +1,9 @@
-#  Apple
+# Apple
 
 ## macOS
 
 * [Homebrew](https://brew.sh/) - The missing package manager for macOS
 * [AdGuard](https://adguard.com/) - the world's most advanced ad blocker!
-
-  
 
 ## Markdown editors
 

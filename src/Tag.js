@@ -12,7 +12,7 @@ export default ({tag, posts, tags}) => {
 
 		<body>
 
-		<Aside/>
+		<Aside active={`/tag/${tag}`}/>
 
 		<main>
 			<article>

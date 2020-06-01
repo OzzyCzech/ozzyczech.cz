@@ -176,22 +176,26 @@ pre {
 	overflow: auto;
 }
 
+.list-group-item.active,
 .page-item .page-link:hover,
 .page-item.active .page-link:hover,
 .page-item.active .page-link {
 	background-color: var(--background-heighlight-color-hover);
 	border-color: var(--border-color-dark);
 	color: var(--text-heighligh-color);
+	fill: currentColor;
 }
 
 .list-group-item-action {
 	background-color: var(--background-heighlight-color);
 	color: var(--text-heighligh-color);
+	fill: currentColor;
 }
 
 .list-group-item-action:focus, .list-group-item-action:hover {
 	background-color: var(--background-heighlight-color-hover);
 	color: var(--text-heighligh-color);
+	fill: currentColor;
 }
 
 .page-link {
@@ -237,4 +241,9 @@ a.btn-copy, a.btn-copy:hover {
 
 aside .list-group {
 	user-select: none;
+}
+aside .list-group svg {
+	width: 20px;
+	height: 20px;
+	padding: 2px;
 }
