@@ -5,7 +5,7 @@ import React from 'react';
 import {renderToStaticMarkup} from "react-dom/server";
 
 module.exports = {
-	async render(element, file) {
+	async renderHTML(element, file) {
 		await outputFile(file, "<!doctype html>\n" + renderToStaticMarkup(element));
 	},
 	async renderXML(element, file) {

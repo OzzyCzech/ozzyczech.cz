@@ -8,7 +8,7 @@ import pagination from "@sphido/pagination";
 import {link} from "@sphido/link";
 import feed from "@sphido/feed";
 import React from 'react'
-import {render, renderXML} from "./src/render";
+import {renderHTML, renderXML} from "./src/render";
 
 import Page from "./src/Page";
 import Pages from "./src/Pages";
@@ -37,7 +37,7 @@ import slugify from "@sindresorhus/slugify";
 
 	// Generate single pages...
 	for await (let page of pages) {
-		await render(
+		await renderHTML(
 			<Page page={page}/>,
 			join(page.dir.replace('content', 'public'), page.slug, 'index.html')
 		)
@@ -61,9 +61,19 @@ import slugify from "@sindresorhus/slugify";
 
 	// sitemap.xml
 
-	await renderXML(<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>, 'public/sitemap2.xml');
-
-	//await outputFile('public/sitemap.xml', sitemap(posts, 'https://ozzyczech.cz/'));
+	await renderXML(<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		<url>
+			<loc>https://ozzyczech.cz/</loc>
+			<lastmod>{new Date().toISOString()}</lastmod>
+			<priority>1.0</priority>
+		</url>
+		{posts.map((post, index) =>
+			<url key={index}>
+				<loc>{post.link('https://ozzyczech.cz/')}</loc>
+				<lastmod>{post.date.toISOString()}</lastmod>
+				<priority>0.80</priority>
+			</url>
+		)}</urlset>, 'public/sitemap.xml');
 
 	// rss.xml
 
@@ -86,7 +96,7 @@ import slugify from "@sindresorhus/slugify";
 	});
 
 	for (const tag of tags) {
-		await render(
+		await renderHTML(
 			<Tag tag={tag} tags={tags} posts={posts.filter((post => post.tags.has(tag)))}/>,
 			join('public/tag', slugify(tag), 'index.html'),
 		)
@@ -95,7 +105,7 @@ import slugify from "@sindresorhus/slugify";
 	// pagination
 
 	for await (const page of pagination(posts, 8)) {
-		await render(
+		await renderHTML(
 			<Pages posts={page.posts} current={page.current} pages={page.pages}/>,
 			page.current === 1 ? 'public/index.html' : join('public/page/', page.current.toString(), 'index.html')
 		);
