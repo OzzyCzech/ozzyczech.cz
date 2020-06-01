@@ -38,9 +38,7 @@ export default ({page}) => {
 				<a className="list-group-item list-group-item-action" href="/books"><Emoji from="📖"/>Books</a>
 				<a className="list-group-item list-group-item-action" href="/series"><Emoji from="🎞"/>Series</a>
 				<a className="list-group-item list-group-item-action" href="/tag/recepty"><Emoji from="🥄"/>Recepty</a>
-				<a className="list-group-item list-group-item-action" href="/quotes">
-					<img src="https://twemoji.maxcdn.com/v/13.0.0/72x72/1faa7.png" width="20" className="mr-3" alt=""/> Quotes
-				</a>
+				<a className="list-group-item list-group-item-action" href="/quotes"><Emoji from="🪧"/>Quotes</a>
 			</section>
 
 		</aside>
