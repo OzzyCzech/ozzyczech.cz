@@ -7,10 +7,17 @@ date: 2020-05-28
 
 ## Cameras
 
-* [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/)
-* [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
-* [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
-* [Ricoh GR III](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
+- [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/)
+- [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
+- [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
+- [Ricoh GR III](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
+- [Sony ZV-1](https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/zv-1)
+
+
+## Flash & Lights
+
+- [LIGHTPIX LABS FlashQ Q20II](https://www.lightpixlabs.com/pages/q20ii)
+- [LIGHTPIX LABS FlashQ Trigger Kit T2](https://lightpixlabs.com/pages/flashq-t2)
 
 ### Fuji RAW (best results)
 
