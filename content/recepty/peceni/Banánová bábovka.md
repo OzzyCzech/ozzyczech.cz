@@ -13,16 +13,14 @@ date: 2020-06-11
 - prášek do pečiva
 - špetka soli
 
-a 
+Nejprve promícháme vše sypké a přídáme
 
 - 2 vajíčka
 - 200 ml mléka
 - 150 ml oleje nebo rozpuštěného másla
-- dva banány
-- hořká čokoláda (cca 40 g nasekat na větší kousky)
+- dva rozmačkané banány
 - citrónová kůra
 
-Nejprve promícháme vše sypké. Poté přidáme olej, vajíčka a mléko a rozmačkané banány - 
-promícháme a na závěr přidáme sekanou čokoládu.
+Na závěr přidáme kousky hořké čokolády (cca 40 g nasekat na větší kousky).
 
 Pečeme na 180°C asi 35-40 minut ve vymazané formě - nesmí lepit na špejli.
