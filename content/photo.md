@@ -13,7 +13,6 @@ date: 2020-05-28
 - [Ricoh GR III](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
 - [Sony ZV-1](https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/zv-1)
 
-
 ## Flash & Lights
 
 - [LIGHTPIX LABS FlashQ Q20II](https://www.lightpixlabs.com/pages/q20ii)

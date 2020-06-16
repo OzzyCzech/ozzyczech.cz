@@ -14,51 +14,55 @@ slug: awesome
 
 ## Favicons services
 
-* [FaviconGrabber](http://favicongrabber.com) - free and opensource favicon grabber
-* [Google API](https://www.google.com/s2/favicons?domain=ozzyczech.cz) - Google favicon service from Chrome
+- [FaviconGrabber](http://favicongrabber.com) - free and opensource favicon grabber
+- [Google API](https://www.google.com/s2/favicons?domain=ozzyczech.cz) - Google favicon service from Chrome
 
 ## HTTP & web tools
 
-* [HTTPS certificates](https://transparencyreport.google.com/https/certificates)
-* [crt.sh](https://crt.sh) 
-* [DIG](https://toolbox.googleapps.com/apps/dig/#ANY/) - online DIG from Google
-* [HTTPBin](https://httpbin.org) - A simple HTTP Request & Response Service.
+- [HTTPS certificates](https://transparencyreport.google.com/https/certificates)
+- [crt.sh](https://crt.sh) 
+- [DIG](https://toolbox.googleapps.com/apps/dig/#ANY/) - online DIG from Google
+- [HTTPBin](https://httpbin.org) - A simple HTTP Request & Response Service.
 
 ## Payment services
 
-* [Braintree](https://www.braintreepayments.com)
-* [Stripe](https://stripe.com/)
+- [Braintree](https://www.braintreepayments.com)
+- [Stripe](https://stripe.com/)
 
 ## Regex testers
 
-* [RegexPal](https://www.regexpal.com/)
-* [Regex101](https://regex101.com/)
-* [PHP Live Regex](https://www.phpliveregex.com/)
+- [RegexPal](https://www.regexpal.com/)
+- [Regex101](https://regex101.com/)
+- [PHP Live Regex](https://www.phpliveregex.com/)
 
 ## Emailing services
 
-* [MailGun](https://www.mailgun.com/)
-* [Postmark app]( https://postmarkapp.com/)
-* [AWS SES](https://aws.amazon.com/ses/)
-* [Send Grid](https://sendgrid.com/)
-* [ManDrill](http://www.mandrill.com/)
+- [MailGun](https://www.mailgun.com/)
+- [Postmark app](https://postmarkapp.com/)
+- [AWS SES](https://aws.amazon.com/ses/)
+- [Send Grid](https://sendgrid.com/)
+- [ManDrill](http://www.mandrill.com/)
+
+## Crypto
+
+- [Wasabi Wallet](https://www.wasabiwallet.io/)
 
 ## Wordpress Themes
 
-* https://wordpress.org/themes/
-* http://themetrust.com/themes/
-* https://themeforest.net/category/wordpress
+- [Wordpress](https://wordpress.org/themes/)
+- [ThemeTrust](http://themetrust.com/themes/)
+- [ThemeForest](https://themeforest.net/category/wordpress)
 
 ## Logs processing
 
-* [Filebeat](https://www.elastic.co/products/beats/filebeat)
-* [Graylog](https://www.graylog.org/)
-* [Papertrails](https://papertrailapp.com/)
+- [Filebeat](https://www.elastic.co/products/beats/filebeat)
+- [Graylog](https://www.graylog.org/)
+- [Papertrails](https://papertrailapp.com/)
 
 ## Online publishing
 
-* [Telegra.ph](https://telegra.ph/) - Post anything online
-* [pen.io](http://pen.io/)
+- [Telegra.ph](https://telegra.ph/) - Post anything online
+- [pen.io](http://pen.io/)
 
 ## Queues
 
@@ -109,18 +113,18 @@ Resource: http://queues.io/
 
 ## Privacy
 
-* [That One Privacy site](https://thatoneprivacysite.net/) - The site is meant to be a resource 
+- [That One Privacy site](https://thatoneprivacysite.net/) - The site is meant to be a resource 
   for those who value their privacy, specifically for those looking to escape 
   from the abundance of biased, bought-and-paid-for shillery on the subject.
   
 ## IOT
 
-* [Particle store](https://store.particle.io/)
+- [Particle store](https://store.particle.io/)
+- [uThing::VOC™ Air-Quality USB sensor dongle](https://ohmtech.io/products/uthingvoc/) and [shop](https://www.tindie.com/products/damancuso/uthingvoc-air-quality-usb-dongle/)
 
 ## Free icons & emoji
 
-* [FlatIcon](https://flaticon.com)
-* [Material Icons](https://material.io/tools/icons/)
-* [TwEmoji](https://twemoji.twitter.com/) - emoji from Twitter
-* [The Noun Project](https://thenounproject.com/) - Icons for everything
-
+- [FlatIcon](https://flaticon.com)
+- [Material Icons](https://material.io/tools/icons/)
+- [TwEmoji](https://twemoji.twitter.com/) - emoji from Twitter
+- [The Noun Project](https://thenounproject.com/) - Icons for everything
