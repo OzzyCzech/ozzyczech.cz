@@ -12,8 +12,9 @@ import {renderHTML, renderXML} from "./src/render";
 
 import Page from "./src/Page";
 import Pages from "./src/Pages";
-import Tag from "./src/Tag";
+import PageTag from "./src/PageTag";
 import slugify from "@sindresorhus/slugify";
+import Sitemap from "./src/Sitemap";
 
 (async () => {
 
@@ -35,6 +36,22 @@ import slugify from "@sindresorhus/slugify";
 		]
 	);
 
+	// Get sorted posts only
+	const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
+	posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+	// tags
+	let tags = new Map();
+	posts.map((post) => {
+		post.tags.forEach((tag) => {
+			if (tags.has(tag)) {
+				tags.get(tag).count++;
+			} else {
+				tags.set(tag, {title: tag, slug: slugify(tag), count: 1});
+			}
+		});
+	});
+
 	// Generate single pages...
 	for await (let page of pages) {
 		await renderHTML(
@@ -42,10 +59,6 @@ import slugify from "@sindresorhus/slugify";
 			join(page.dir.replace('content', 'public'), page.slug, 'index.html')
 		)
 	}
-
-	// Get sorted posts only
-	const posts = pages.filter((page) => page.dir !== 'content' && page.base[0] !== '_');
-	posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 	// index.json for https://fusejs.io/
 	await outputFile('public/index.json', JSON.stringify(
@@ -59,21 +72,30 @@ import slugify from "@sindresorhus/slugify";
 		)
 	));
 
+	// tags pages
+
+
+	for (const tag of tags.values()) {
+		await renderHTML(
+			<PageTag tag={tag.title} tags={tags} posts={posts.filter((post => post.tags.has(tag.title)))}/>,
+			join('public/tag/', tag.slug, 'index.html'),
+		)
+	}
+
+	// TODO index tags render
+
+	// posts pagination
+
+	for await (const page of pagination(posts, 8)) {
+		await renderHTML(
+			<Pages posts={page.posts} current={page.current} pages={page.pages} tags={tags}/>,
+			page.current === 1 ? 'public/index.html' : join('public/page/', page.current.toString(), 'index.html')
+		);
+	}
+
 	// sitemap.xml
 
-	await renderXML(<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-		<url>
-			<loc>https://ozzyczech.cz/</loc>
-			<lastmod>{new Date().toISOString()}</lastmod>
-			<priority>1.0</priority>
-		</url>
-		{posts.map((post, index) =>
-			<url key={index}>
-				<loc>{post.link('https://ozzyczech.cz/')}</loc>
-				<lastmod>{post.date.toISOString()}</lastmod>
-				<priority>0.80</priority>
-			</url>
-		)}</urlset>, 'public/sitemap.xml');
+	await renderXML(<Sitemap posts={posts} tags={tags}/>, 'public/sitemap.xml');
 
 	// rss.xml
 
@@ -85,30 +107,5 @@ import slugify from "@sindresorhus/slugify";
 			'https://ozzyczech.cz/rss.xml'
 		)
 	);
-
-	// tags
-
-	let tags = new Set();
-	posts.map((post) => {
-		post.tags.forEach((tag) => {
-			tags.add(tag)
-		});
-	});
-
-	for (const tag of tags) {
-		await renderHTML(
-			<Tag tag={tag} tags={tags} posts={posts.filter((post => post.tags.has(tag)))}/>,
-			join('public/tag', slugify(tag), 'index.html'),
-		)
-	}
-
-	// pagination
-
-	for await (const page of pagination(posts, 8)) {
-		await renderHTML(
-			<Pages posts={page.posts} current={page.current} pages={page.pages}/>,
-			page.current === 1 ? 'public/index.html' : join('public/page/', page.current.toString(), 'index.html')
-		);
-	}
 
 })();

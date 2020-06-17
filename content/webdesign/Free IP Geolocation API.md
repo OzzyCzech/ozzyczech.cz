@@ -1,7 +1,7 @@
 ---
 title: Free IP Geolocation API
 date: 2019-06-29
-tags: [api, gis]
+tags: [gis]
 ---
 
 # Free IP Geolocation API

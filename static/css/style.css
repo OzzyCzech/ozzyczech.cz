@@ -4,13 +4,13 @@
 body {
 	display: grid;
 	grid-template-areas: "main aside" "footer aside";
-	grid-template-columns: 1fr 320px;
+	grid-template-columns: minmax(0, auto) 320px;
 	grid-template-rows: 1fr auto;
-	max-width: 1420px;
-	width: 100%;
-	margin: 0 auto;
+
 	grid-gap: 1rem !important;
 	padding: 1rem !important;
+	margin: 0 auto;
+
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	background-color: var(--body-background-color);
@@ -19,6 +19,11 @@ body {
 
 a {
 	color: var(--text-color-href);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 
@@ -32,7 +37,6 @@ body > footer {
 
 body > main {
 	grid-area: main;
-	max-width: 1080px;
 }
 
 body > aside {
@@ -159,6 +163,10 @@ blockquote,
 	border-color: var(--border-color-dark);
 }
 
+.list-group-item {
+	padding: .75rem 1.25rem;
+}
+
 :not(pre) > code[class*=language-],
 pre[class*=language-] {
 	background-color: var(--background-heighlight-color-darker);
@@ -242,6 +250,7 @@ a.btn-copy, a.btn-copy:hover {
 aside .list-group {
 	user-select: none;
 }
+
 aside .list-group svg {
 	width: 20px;
 	height: 20px;

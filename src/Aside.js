@@ -1,29 +1,29 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import {parse} from 'twemoji-parser'
 // @see https://twemoji.maxcdn.com/2/test/preview.html
 
-export default ({active}) => {
+export default ({active, tags}) => {
 
 	active = active || '';
 
 	const Emoji = ({from}) => {
 		const em = parse(from);
 		return (
-			<>
+			<Fragment>
 				<img src={em[0].url} alt={em[0].text} className="mr-3" width="20" height="20"/>
-			</>
+			</Fragment>
 		);
 	};
 
 	const Link = (props) => {
 		return (
-			<>
+			<Fragment>
 				<a
 					className={`list-group-item list-group-item-action ${active.toLowerCase() === props.href.toLowerCase() ? 'active' : ''}`}
 					href={props.href}>
 					{props.emoji ? <Emoji from={props.emoji}/> : ''}{props.children}
 				</a>
-			</>
+			</Fragment>
 		);
 	};
 
