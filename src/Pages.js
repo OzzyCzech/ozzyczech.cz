@@ -41,7 +41,7 @@ export default ({posts, current, pages, tags}) => {
 
 		<nav className="mb-5">
 			{[...tags.values()].map((tag, index) =>
-				<Tag key={index} slug={tag.slug} title={tag.title}/>
+				<Tag key={index} slug={tag.slug} title={tag.title} count={tag.count}/>
 			)}
 		</nav>
 	</footer>
