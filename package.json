@@ -2,10 +2,10 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "babel-node ./index.js",
-		"dev": "watch './index.js' ./content ./theme | serve public"
+		"dev": "watch './index.js' ./content ./src | serve public"
 	},
 	"devDependencies": {
-		"serve": "^11.3.1",
+		"serve": "^11.3.2",
 		"watch": "^1.0.2"
 	},
 	"dependencies": {
@@ -24,8 +24,8 @@
 		"@sphido/pagination": "^0.0.4",
 		"@sphido/sitemap": "^0.0.6",
 		"@sphido/twemoji": "^0.0.4",
-		"fs-extra": "^9.0.0",
-		"globby": "^11.0.0",
+		"fs-extra": "^9.0.1",
+		"globby": "^11.0.1",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"twemoji-parser": "^13.0.0"

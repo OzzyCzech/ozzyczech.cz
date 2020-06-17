@@ -12,6 +12,12 @@ date: 2020-05-28
 - [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 - [Ricoh GR III](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
 - [Sony ZV-1](https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/zv-1)
+- [GoPro HERO8 Black](https://gopro.com/en/cz/shop/cameras/hero8-black/CHDHX-801-master.html)
+
+## Fujifilm lenses
+
+- Fujifilm XF 16 mm f/1,4 R WR
+- Fujifilm XF 23 mm f/2 R WR
 
 ## Flash & Lights
 

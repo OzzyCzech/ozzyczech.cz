@@ -4,7 +4,9 @@ tags: [awesome, list]
 slug: awesome
 ---
 
-## Free useable images catalogues
+# Awesome list
+
+## Free images catalogues
 
 - [Unsplash](https://unsplash.com/)
 - [Stocksnap](https://stocksnap.io/)
@@ -45,7 +47,7 @@ slug: awesome
 
 ## Crypto
 
-- [Wasabi Wallet](https://www.wasabiwallet.io/)
+- [Wasabi Wallet](https://www.wasabiwallet.io/) - Wasabi is an open-source, non-custodial, privacy-focused Bitcoin wallet for Desktop, that implements trustless CoinJoin.
 
 ## Wordpress Themes
 
