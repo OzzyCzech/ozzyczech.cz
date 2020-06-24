@@ -23,6 +23,7 @@ date: 2020-05-28
 
 - [LIGHTPIX LABS FlashQ Q20II](https://www.lightpixlabs.com/pages/q20ii)
 - [LIGHTPIX LABS FlashQ Trigger Kit T2](https://lightpixlabs.com/pages/flashq-t2)
+- [FOMEI LED MINI RGB 12](https://landing.fomei.com/led-mini-rgb-12)
 
 ### Fuji RAW (best results)
 
