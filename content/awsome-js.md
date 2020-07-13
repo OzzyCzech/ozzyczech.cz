@@ -93,7 +93,7 @@ slug: js
 * [gocommerce](https://github.com/netlify/gocommerce) - A small go based API for static e-commerce sites.
 * [Simple MD](https://github.com/NextStepWebs/simplemde-markdown-editor) - A simple, beautiful, and embeddable JavaScript Markdown editor.
 * [moment.js](https://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript.
-
+* [shareon.js](https://shareon.js.org/) - shareon are share buttons for popular social networks
 ## React related
 
 * [Glamorous](https://glamorous.rocks/) - Maintainable CSS with React
