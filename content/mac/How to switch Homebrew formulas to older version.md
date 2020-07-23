@@ -15,7 +15,7 @@ can swith to older version easly:
 cd /usr/local/Homebrew/Library/Taps/homebrew
 ```
 
-There are `homebrew-cask`, `homebrew-core` and `homebrew-services` dirs. You can show logs of a
+There are `homebrew-cask`, `homebrew-core` and `homebrew-services` dirs:
 
 ```shell
 cd homebrew-core
