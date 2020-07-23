@@ -1,10 +1,30 @@
 ---
-title: How to switch Homebrew formulas to older version
-date: 2014-10-18
+title: Advanced tasks with Homebrew
+date: 2020-07-23
 tags: [brew, macOS]
 ---
 
-# How to switch Homebrew formulas to older version
+# Advanced tasks with Homebrew
+
+### Install specific cask version
+
+```shell
+cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask
+```
+
+Then show history of specific formula like:
+
+```shell
+git log master -- Casks/phpstorm.rb
+```
+
+Then you can `install` or `reinstall` specific selected version:
+
+```
+brew cask reinstall https://raw.githubusercontent.com/caskroom/homebrew-cask/2c625cbfbd167829b6e607106fbcbac636ac2eb7/Casks/phpstorm.rb
+```
+
+### Sitch Homebrew formulas to older version
 
 Sometimes you just won’t be able install latest version of any program and need
 some older (e.g. PHP 5.6.1 won’t work and you need install at least 5.6.0 and
@@ -43,7 +63,10 @@ git checkout 908fedd
 And then run `brew install php56` and older version PHP will be installed. Procedure can be used for any formulas.
 
 
-PS: you can always reset everything back with
+
+### Reset everything back
+
+PS: you can always reset everything back to normal with follow command
 
 ```shell
 brew update-reset
