@@ -24,7 +24,7 @@ Then you can `install` or `reinstall` specific selected version:
 brew cask reinstall https://raw.githubusercontent.com/caskroom/homebrew-cask/2c625cbfbd167829b6e607106fbcbac636ac2eb7/Casks/phpstorm.rb
 ```
 
-### Sitch Homebrew formulas to older version
+### Switch Homebrew formulas to older version
 
 Sometimes you just won’t be able install latest version of any program and need
 some older (e.g. PHP 5.6.1 won’t work and you need install at least 5.6.0 and
