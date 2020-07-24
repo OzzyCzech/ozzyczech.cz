@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import {parse} from 'twemoji-parser'
+import Tag from "./Tag";
 // @see https://twemoji.maxcdn.com/2/test/preview.html
 
 export default ({active, tags}) => {
@@ -71,6 +72,14 @@ export default ({active, tags}) => {
 				<Link href="/quotes" emoji="🪧">Quotes</Link>
 			</section>
 
+
+			{tags ? <section>
+				<nav className="m-2 mt-4">
+					{[...tags.values()].map((tag, index) =>
+						<Tag key={index} slug={tag.slug} title={tag.title} count={tag.count}/>
+					)}
+				</nav>
+			</section>: ''}
 		</aside>
 	);
 }

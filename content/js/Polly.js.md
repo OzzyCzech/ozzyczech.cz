@@ -1,7 +1,7 @@
 ---
 title: Polly.js - Record, replay, and stub HTTP interactions.
 date: 2019-07-29
-tags: [js, testing]
+tags: [javascript, testing]
 ---
 
 

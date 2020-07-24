@@ -1,7 +1,7 @@
 ---
 title: Upgrade all npm packages to latest versions
 date: 2013-12-30
-tags: [nodejs, npm, yarn, js]
+tags: [nodejs, npm, yarn, javascript]
 ---
 
 # Upgrade all npm packages to latest versions

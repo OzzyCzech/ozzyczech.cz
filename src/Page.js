@@ -4,7 +4,7 @@ import Header from './Header'
 import slugify from "@sindresorhus/slugify";
 import Tag from "./Tag";
 
-export default ({page}) => {
+export default ({page, tags}) => {
 	return (<html lang="cs" dir="ltr">
 	<head>
 		<Header title={page.title.trim()}/>
@@ -12,11 +12,11 @@ export default ({page}) => {
 
 	<body className="line-numbers container-xxl">
 
-	<Aside active={'/' + page.slug}/>
+	<Aside active={'/' + page.slug} tags={tags}/>
 
 	<main>
-		<article className={"rounded shadow p-5 mb-4 " + page.slug}>
-			<small className="d-block float-right text-secondary">{new Intl.DateTimeFormat('cs').format(page.date)}</small>
+		<article className={page.slug}>
+			<small className="d-block float-right text-secondary">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>
 			<div dangerouslySetInnerHTML={{__html: page.content}}></div>
 			{page.tags.size > 0 && <p className="text-right">{[...page.tags].map((tag, index) =>
 				<Tag key={index} title={tag} slug={slugify(tag)}/>

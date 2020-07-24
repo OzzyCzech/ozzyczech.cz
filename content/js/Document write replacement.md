@@ -1,7 +1,7 @@
 ---
 title: Javascript document.write replacement
 date: 2018-11-26
-tags: [js]
+tags: [javascript]
 ---
 
 # Javascript document.write replacement

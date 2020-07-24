@@ -3,7 +3,7 @@ title: JavaScript
 slug: js
 ---
 
-# 🥕 JavaScript
+# JavaScript 🥕
 
 ## Editors
 

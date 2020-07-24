@@ -1,7 +1,7 @@
 ---
 title: Usefull traits
 date: 2020-04-02
-tags: [PHP, Traits]
+tags: [PHP]
 ---
 
 # Usefull traits

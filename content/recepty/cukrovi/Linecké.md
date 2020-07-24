@@ -1,6 +1,6 @@
 ---
 title: Linecké těsto
-tags: [Pečení, Cukroví, Recepty, Vánoce]
+tags: [Pečení, Cukroví, Recepty]
 date: 2000-01-01
 ---
 

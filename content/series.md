@@ -5,6 +5,8 @@ slug: series
 
 # 2020
 
+- [The Durrells](https://www.imdb.com/title/tt5014882/)
+- [Gomorra: La serie](https://www.imdb.com/title/tt2049116/)
 - [Zero, Zero, Zero](https://www.imdb.com/title/tt8332438/)
 - [Zone Blanche](https://www.imdb.com/title/tt6519410/)
 - [Altered Carbon](https://www.imdb.com/title/tt2261227/)

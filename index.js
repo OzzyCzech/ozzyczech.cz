@@ -55,7 +55,7 @@ import Sitemap from "./src/Sitemap";
 	// Generate single pages...
 	for await (let page of pages) {
 		await renderHTML(
-			<Page page={page}/>,
+			<Page page={page} tags={tags}/>,
 			join(page.dir.replace('content', 'public'), page.slug, 'index.html')
 		)
 	}

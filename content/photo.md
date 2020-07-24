@@ -3,7 +3,7 @@ title: Photo
 date: 2020-05-28
 ---
 
-# 📷 Photo
+# Photo
 
 ## Cameras
 

@@ -1,7 +1,7 @@
 ---
 title: Add copy to clipboard button to all preformat code in pure Javascript
 date: 2020-03-02
-tags: [js]
+tags: [javascript]
 ---
 
 # Add copy to clipboard button to all preformat code in pure Javascript

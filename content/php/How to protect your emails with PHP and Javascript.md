@@ -1,7 +1,7 @@
 ---
 title: How to protect your emails with PHP and Javascript
 date: 2014-04-22
-tags: [email, js, PHP, antispam]
+tags: [email, javascript, PHP, antispam]
 ---
 
 # How to protect your emails with PHP and Javascript

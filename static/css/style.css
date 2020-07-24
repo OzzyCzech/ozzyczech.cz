@@ -26,7 +26,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-
 p, ul, ol, li {
 	font-family: var(--font-family);
 }
@@ -42,7 +41,6 @@ body > main {
 body > aside {
 	grid-area: aside;
 }
-
 
 @media (max-width: 768px) {
 	body {
@@ -64,9 +62,8 @@ body > aside {
 
 }
 
-body > main > article {
-	border: 1px solid var(--border-color-dark);
-	border-radius: 1rem;
+body > main > article:not(:last-of-type) {
+	margin-bottom: 7vh;
 }
 
 blockquote {
@@ -107,7 +104,16 @@ article > h2 > a {
 
 article h1,
 article > h2.h1 {
-	margin-bottom: 1.1rem !important
+	margin-bottom: 1rem;
+}
+
+
+article h1:before,
+article > h2.h1:before {
+	content: '#';
+	margin-right: .4rem;
+	font-size: .875em;
+	color: var(--text-color-secondary);
 }
 
 article img {
@@ -228,7 +234,7 @@ code {
 	background: var(--background-heighlight-color-darker);
 	border-radius: 3px;
 	display: inline-block;
-	padding: 0px 5px;
+	padding: 0 5px;
 }
 
 a.btn-copy, a.btn-copy:hover {
@@ -245,7 +251,6 @@ a.btn-copy, a.btn-copy:hover {
 	background: inherit;
 	border: 0;
 }
-
 
 aside .list-group {
 	user-select: none;

@@ -11,7 +11,7 @@ export default ({tag, posts, tags}) => {
 
 		<body className="container-xxl">
 
-		<Aside active={`/tag/${tag}`}/>
+		<Aside active={`/tag/${tag}`} tags={tags}/>
 
 		<main>
 			<h1>#{tag}</h1>
@@ -21,14 +21,6 @@ export default ({tag, posts, tags}) => {
 				)}
 			</div>
 		</main>
-
-		<footer>
-			<p className="text-break px-3 py-2">
-				{[...tags.values()].map((tag, index) =>
-					<Tag key={index} slug={tag.slug} title={tag.title}/>
-				)}
-			</p>
-		</footer>
 
 		</body>
 		</html>
