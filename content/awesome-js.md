@@ -1,9 +1,9 @@
 ---
-title: JavaScript
+title: Awesome JavaScript
 slug: js
 ---
 
-# JavaScript 🥕
+# Awesome JavaScript 🥕
 
 ## Editors
 
@@ -35,7 +35,12 @@ slug: js
 * [mocha](https://github.com/mochajs/mocha) - Simple, flexible, fun javascript test framework for node.js & the browser.
 * [jasmine](https://github.com/jasmine/jasmine) - DOM-less simple JavaScript testing framework.
 
-### Runners
+### Library
+
+* [Playwright](https://github.com/microsoft/playwright) - Cross browser testing library
+* [QAwolf](https://www.qawolf.com/) - Wolf converts your browser actions to Playwright/Jest test code
+
+### Test runners
 
 * [puppeteer](https://pptr.dev/) - Headless Chrome Node.js API by official Google Chrome team.
 
