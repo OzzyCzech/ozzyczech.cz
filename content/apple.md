@@ -12,6 +12,7 @@
 * [Joplin](https://joplinapp.org/) - Joplin is a free, open source note taking and to-do application
 * [iWriter](https://ia.net/writer) - clean, simple and distraction-free writing environment
 * [Caret](https://caret.io/) - is a Markdown editor for Mac, Windows and Linux. It stands out with its clean interface, productivity features and obsessive attention to detail.
+* [Nota](https://nota.md/) - markdown notebook
 
 ## File management
 
