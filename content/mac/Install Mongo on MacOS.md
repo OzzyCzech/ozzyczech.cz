@@ -1,12 +1,12 @@
 ---
-titla: Install mongo on MacOS
+titla: Install mongo on macOS
 date: 2020-04-07
 tags: [brew, macOS, mongo]
 ---
 
 
 
-# Install mongo on MacOS
+# Install mongo on macOS
 
 First you need tap official mongo brew:
 
