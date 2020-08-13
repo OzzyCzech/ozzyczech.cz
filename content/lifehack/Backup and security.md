@@ -51,7 +51,7 @@ tags: [backup, security]
 ### Passwords
 
 * [1Password](https://1password.com/) - 
-* [bitwarden](https://bitwarden.com/) -
+* [bitwarden](https://bitwarden.com/) - Open Source Password Management for You and Your Business
 * [Dashline](https://www.dashlane.com/) - 
 * [LastPass](https://www.lastpass.com/) - 
 * [keepersecurity](https://www.keepersecurity.com/)
