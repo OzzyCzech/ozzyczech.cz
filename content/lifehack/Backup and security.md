@@ -51,10 +51,10 @@ tags: [backup, security]
 ### Passwords
 
 * [1Password](https://1password.com/) - 
-* [LastPass](https://www.lastpass.com/) - 
-* [Dashline](https://www.dashlane.com/) - 
 * [bitwarden](https://bitwarden.com/) -
-* https://www.keepersecurity.com/
+* [Dashline](https://www.dashlane.com/) - 
+* [LastPass](https://www.lastpass.com/) - 
+* [keepersecurity](https://www.keepersecurity.com/)
 
 ### VPN
 
