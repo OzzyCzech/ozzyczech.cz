@@ -1,7 +1,7 @@
 ---
 title: Subreddit Image Downloader
 date: 2019-10-15
-tags: [bash, redddit, curl]
+tags: [bash, reddit, curl]
 ---
 
 

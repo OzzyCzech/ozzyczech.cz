@@ -14,6 +14,10 @@ slug: awesome
 - [FreePhotos](https://freephotos.cc/)
 - [PxFuel](https://www.pxfuel.com/)
 
+## Image editors
+
+- [Photopea](https://www.photopea.com/) - online Adobe Photoshop clone
+
 ## Favicons services
 
 - [FaviconGrabber](http://favicongrabber.com) - free and opensource favicon grabber
