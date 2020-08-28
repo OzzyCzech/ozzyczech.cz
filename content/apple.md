@@ -53,6 +53,7 @@
 * [Easy New File](https://itunes.apple.com/us/app/easy-new-file/id1162194131?ls=1&mt=12) - Finder extensions for create new File
 * [New File Menu](https://itunes.apple.com/us/app/new-file-menu/id1064959555) - finder extensions for create new File
 * [iCal Státní svátky ČR](webcal://www.google.com/calendar/ical/czech__cs%40holiday.calendar.google.com/public/basic.ics)
+* [Maccy](https://maccy.app/) - Clipboard manager for macOS which does one job - keep your copy history at hand. Period.
 
 and much more here https://github.com/OzzyCzech/dotfiles
 
