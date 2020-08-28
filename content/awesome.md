@@ -116,7 +116,8 @@ Resource: http://queues.io/
 - [Mongo Atlas](https://www.mongodb.com/cloud/atlas) - Mongo
 - [Parse](https://parse.com/) - Parse Server
 - [RedisLab](https://redislabs.com/)
-
+- [MediaFire](https://app.mediafire.com/myfiles) - 10GB free storage
+- [Degoo](https://degoo.com/) - 100 GB free cloud space
 ## Privacy
 
 - [That One Privacy site](https://thatoneprivacysite.net/) - The site is meant to be a resource 
