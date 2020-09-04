@@ -29,6 +29,7 @@ slug: awesome
 - [crt.sh](https://crt.sh) 
 - [DIG](https://toolbox.googleapps.com/apps/dig/#ANY/) - online DIG from Google
 - [HTTPBin](https://httpbin.org) - A simple HTTP Request & Response Service.
+- [Favicon Grabber](http://favicongrabber.com/) - getting favicons from any URL
 
 ## Payment services
 
