@@ -132,6 +132,7 @@ Resource: http://queues.io/
 
 ## Free icons & emoji
 
+- [Icons8](https://icons8.com/)
 - [FlatIcon](https://flaticon.com)
 - [Material Icons](https://material.io/tools/icons/)
 - [TwEmoji](https://twemoji.twitter.com/) - emoji from Twitter
