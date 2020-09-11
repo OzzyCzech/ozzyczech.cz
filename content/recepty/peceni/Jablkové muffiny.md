@@ -1,10 +1,10 @@
 ---
-title: Muffiny
+title: Jablkové muffiny
 tags: [Recepty, Pečení]
 date: 2019-12-22
 ---
 
-# Muffiny
+# Jablkové muffiny
 
 * 100 ml mléka
 * 100 ml oleje
