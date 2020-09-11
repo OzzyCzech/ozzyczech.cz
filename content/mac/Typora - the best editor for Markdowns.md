@@ -14,7 +14,7 @@ I am just found the best (*for me*) Markdown editor on the planet. Why?
 - support folders, [front matter](https://jekyllrb.com/docs/front-matter/), custom styles, 
 - allow quick file open ⌘ + ⇧ + O 😍
 
-<img src="/mac/Typora.png" class="img-fluid rounded p-4" />
+![Typora screenshot](/mac/Typora.png)
 
 You can download and install it with [brew](https://brew.sh/index_cs):
 

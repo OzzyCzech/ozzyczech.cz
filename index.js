@@ -24,6 +24,14 @@ const renderer = {
 		return `<table class="table table-bordered table-striped bg-white m-1">${header}${body}</table>`
 	},
 
+	image(href, title, text) {
+		return `
+		<figure class="figure">
+			<a href="${href}"><img src="${href}" class="figure-img img-fluid rounded" title="${title ? title : ''}" alt="${text ? text : ''}"/></a>
+			<figcaption class="figure-caption text-center">${text}</figcaption>
+		</figure>`
+	},
+
 	// ext links have target="_blank"
 	link(href, title, text) {
 		if (href.includes('ozzyczech.cz')) {
