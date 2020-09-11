@@ -15,6 +15,26 @@ import Pages from "./src/Pages";
 import PageTag from "./src/PageTag";
 import slugify from "@sindresorhus/slugify";
 import Sitemap from "./src/Sitemap";
+import marked from 'marked';
+
+// see https://marked.js.org/using_pro
+const renderer = {
+	// table classes
+	table(header, body) {
+		return `<table class="table table-bordered table-striped bg-white m-1">${header}${body}</table>`
+	},
+
+	// ext links have target="_blank"
+	link(href, title, text) {
+		if (href.includes('ozzyczech.cz')) {
+			return `<a href="${href}" title="${title ? title : ''}">${text}</a>`
+		} else {
+			return `<a href="${href}" title="${title ? title : ''}" target="_blank">${text}</a>`
+		}
+	}
+};
+
+marked.use({renderer});
 
 (async () => {
 
@@ -30,7 +50,9 @@ import Sitemap from "./src/Sitemap";
 		...[
 			require('@sphido/frontmatter'),
 			require('@sphido/twemoji'),
-			require('@sphido/marked'),
+			(page) => {
+				page.content = page.ext === '.html' ? page.content : marked(page.content);
+			},
 			require('@sphido/meta'),
 			{link},
 		]
@@ -67,13 +89,12 @@ import Sitemap from "./src/Sitemap";
 				title: page.title,
 				content: page.content.replace(/(<([^>]+)>)/ig, ''),
 				link: page.link('https://ozzyczech.cz/'),
-				tags: page.tags,
+				tags: [...page.tags],
 			})
 		)
 	));
 
 	// tags pages
-
 
 	for (const tag of tags.values()) {
 		await renderHTML(

@@ -1,24 +1,6 @@
 document.onreadystatechange = function () {
 	if (document.readyState == 'complete') {
 
-		// tables
-		const tables = document.querySelectorAll("article table");
-		Array.from(tables).forEach(function (table) {
-			table.classList.add('table', 'table-striped');
-		});
-
-		// remove subdomain of current site's url and setup regex
-		const internal = new RegExp(location.host, "i");
-
-		var a = document.getElementsByTagName('a'); // then, grab every link on the page
-		for (var i = 0; i < a.length; i++) {
-			let href = a[i].host;
-			if (!internal.test(href)) {
-				a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
-			}
-		}
-
-
 		// copy pre > code
 		document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 			let copy = document.createElement('a');
@@ -42,6 +24,61 @@ document.onreadystatechange = function () {
 
 			codeBlock.parentNode.insertBefore(copy, codeBlock);
 		});
+
+		// https://fusejs.io/ search
+
+		(async () => {
+			const response = await fetch('/index.json');
+			const index = await response.json();
+
+			const fuse = new Fuse(index, {
+				shouldSort: true,
+				findAllMatches: true,
+				threshold: 0.5,
+				location: 0,
+				distance: 100,
+				maxPatternLength: 32,
+				minMatchCharLength: 1,
+				keys: [
+					{name: "title", weight: 0.8},
+					{name: "tags", weight: 0.6},
+					{name: "content", weight: 0.3}
+				]
+			});
+
+
+			const q = document.getElementById('q');
+			const main = document.getElementsByTagName("main")[0];
+			const mainBackup = main.innerHTML;
+
+			const search = (event) => {
+				let results = fuse.search(q.value);
+				if (q.value.length === 0) {
+					main.innerHTML = mainBackup;
+				} else {
+					main.innerHTML = '<h1 class="h3">Search results:</h1>';
+				}
+
+				results.map((page) => {
+					main.insertAdjacentHTML("beforeend", `
+						<article>
+							<h2 class="h1">
+								<a href="${page.link}">${page.title}</a>
+							</h2>
+							<p class="text-secondary small">${page.content}</p>
+						</article>`);
+				});
+				event.preventDefault();
+			};
+
+
+			['keyup', 'change'].forEach((e) => {
+				q.addEventListener(e, (event) => {
+					search(event)
+				}, false)
+			});
+
+		})();
 
 	}
 };
