@@ -4,30 +4,30 @@ tags: [Recepty, Pečení]
 date: 2000-01-01
 ---
 
-# Bublanina
+# Hrníčková bublanina
 
-* 300 g polohrubé mouky
-* 200 g mletého cukru
-* 1/2-3/4 sklenky rozpuštěného másla (nebo tuku nebo oleje)
-* 1/2-1 prášku do pečiva
-* 4 vejce
-* špetka soli
-* vanilkový cukr
-* cca 1 dl mléka nebo vody
-* ovoce syrové nebo mražené nebo kompotované
-* olej nebo rozpuštěný tuk na vymazání plechu
-* strouhanka nebo kokos na vysypání plechu.
-* ruční šlehač
-* plech se zvýšenými okraji (uzavřený)
+Promícháme nejprve sypkou část:
 
-Dle původního receptu se vše prostě smíchalo (nejlépe ručním šlehačem) a vylilo na vymazaný a vysypaný plech a upeklo.
-Když se ale přidá trošku práce navíc, výsledek je o třídu lepší. Bublanina bude obzvlášť nadýchaná.
+* 2 hrnečky polohrubé mouka
 
-1. ušlehám bílky se špetkou soli a částí cukru
-2. v druhé míse vyšlehám žloutky s vanilkovým cukrem, zbytkem cukru a rozpuštěným máslem (v mikrovlnce).
-3. ke žloutkům přimíchám mouku s práškem do pečiva a dle potřeby přidám trochu mléka (jsou-li vejce velká, není potřeba).
-4. lehce přimíchám ušlehaný sníh.
+* 1 balíček prášek do pečiva
+* 3/4 hrnečku cukr moučka
 
-Těsto vyliji na plech a pokladu ovocem: rebarbora, meruňky, jahody, maliny, borůvky co je po ruce.
+Poté samostatně promícháme tekutou část:
 
-Pečeme na 170 st.C do růžova a až je zapíchnutá špejle suchá.
+* hrnek mléka
+* 1/2 hrnku oleje nebo rozpuštěného másla
+* 2 ks vejce
+
+Následně vše smícháme dohromady a vylejeme na vymazaný plech. Pokladame ovoce a posypeme posypkou z másla, hrubé mouky, cukru.
+
+Peřeme cca 20 - 30 minut na 180 °C
+
+
+<!-- div class="text-center">
+
+<a href="/recepty/peceni/bublanina-one.jpg"><img src="/recepty/peceni/bublanina-one.jpg" class="img-thumbnail m-1" width="200"></a>
+<a href="/recepty/peceni/bublanina-two.jpg"><img src="/recepty/peceni/bublanina-two.jpg" class="img-thumbnail m-1" width="200"></a>
+<a href="/recepty/peceni/bublanina-three.jpg"><img src="/recepty/peceni/bublanina-three.jpg" class="img-thumbnail m-1" width="200"></a>
+
+</div -->
