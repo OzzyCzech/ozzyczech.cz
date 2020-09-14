@@ -128,4 +128,4 @@ slug: js
 * https://github.com/sindresorhus/awesome
 * [Delightful Node.js packages and resources](https://node.cool)
 
-<img src="js/universal-standard.png" class="img-fluid d-block mt-5 mx-auto rounded"> 
+![](/js/universal-standard.png)

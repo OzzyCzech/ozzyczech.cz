@@ -24,4 +24,4 @@ cukru krystal + lžičky skořice.
 
 180°C, cca 25 minut
 
-<img src="/recepty/peceni/jablkove-muffiny.jpg" class="img-fluid ml-2 rounded">
+![](/recepty/peceni/jablkove-muffiny.jpg)

@@ -1160,6 +1160,13 @@
   dependencies:
     marked "^1.1.0"
 
+"@sphido/markdown@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@sphido/markdown/-/markdown-0.0.3.tgz#34fb9d5c984311e97bacd8d0a03233b08900f8d5"
+  integrity sha512-4jXw9lfRPHUVd1RGj9mNQ1By1xZWuoO6c4rHD6pKQMMD8+Si/n1gIrLfA/b760vVdJqIPVH0KqM0ZKkbjUABZQ==
+  dependencies:
+    marked "^1.1.0"
+
 "@sphido/marked@^0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@sphido/marked/-/marked-0.0.4.tgz#269c8b228a21fd9fef7ca15afea180412173af68"

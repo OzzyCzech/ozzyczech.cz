@@ -56,7 +56,9 @@ export default ({active, tags}) => {
 			</form>
 
 			<button className="btn btn-outline-secondary btn-block mb-3 d-lg-none" type="button" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" aria-expanded="false" aria-label="Toggle menu">
-				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"><title>Menu</title><path stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" d="M4 7h22M4 15h22M4 23h22"/></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"><title>Menu</title>
+					<path stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" d="M4 7h22M4 15h22M4 23h22"/>
+				</svg>
 			</button>
 
 

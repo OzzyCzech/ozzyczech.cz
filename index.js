@@ -7,42 +7,46 @@ import {getPages} from "@sphido/core";
 import pagination from "@sphido/pagination";
 import {link} from "@sphido/link";
 import feed from "@sphido/feed";
+import slugify from "@sindresorhus/slugify";
+
 import React from 'react'
 import {renderHTML, renderXML} from "./src/render";
 
 import Page from "./src/Page";
 import Pages from "./src/Pages";
 import PageTag from "./src/PageTag";
-import slugify from "@sindresorhus/slugify";
 import Sitemap from "./src/Sitemap";
-import marked from 'marked';
 
-// see https://marked.js.org/using_pro
-const renderer = {
-	// table classes
-	table(header, body) {
-		return `<table class="table table-bordered table-striped bg-white m-1">${header}${body}</table>`
-	},
+import meta from '@sphido/meta';
+import frontmatter from '@sphido/frontmatter';
+import twemoji from '@sphido/twemoji';
+import {markdown, renderer} from '@sphido/markdown'
 
-	image(href, title, text) {
-		return `
-		<figure class="figure">
-			<a href="${href}"><img src="${href}" class="figure-img img-fluid rounded" title="${title ? title : ''}" alt="${text ? text : ''}"/></a>
-			<figcaption class="figure-caption text-center">${text}</figcaption>
-		</figure>`
-	},
+const domain = new URL('https://ozzyczech.cz/');
 
-	// ext links have target="_blank"
-	link(href, title, text) {
-		if (href.includes('ozzyczech.cz')) {
-			return `<a href="${href}" title="${title ? title : ''}">${text}</a>`
-		} else {
-			return `<a href="${href}" title="${title ? title : ''}" target="_blank">${text}</a>`
+// @see https://marked.js.org/using_pro#renderer
+
+renderer(
+	{
+		table: (header, body) => `<table class="table table-bordered table-striped bg-white m-1">${header}${body}</table>`,
+
+		image: (href, title, text) => {
+			const className = new URL(href, domain).hash.substring(1).replace(/[_]/g, ' ');
+			return `<div class=" ${className ? className : 'd-flex justify-content-center my-1'}"><figure class="figure text-center w-75">
+			<a href="${href}" target="_blank"><img src="${href}" class="figure-img img-fluid rounded shadow" title="${title ? title : ''}" alt="${text ? text : ''}"/></a>		
+			<figcaption class="figure-caption text-center">${text}</figcaption></figure></div>`
+		},
+
+		link: (href, title, text) => {
+			if (href.includes(domain.hostname)) {
+				return `<a href="${href}" title="${title ? title : ''}">${text}</a>`
+			} else {
+				return `<a href="${href}" title="${title ? title : ''}" target="_blank">${text}</a>`
+			}
 		}
 	}
-};
+);
 
-marked.use({renderer});
 
 (async () => {
 
@@ -56,12 +60,10 @@ marked.use({renderer});
 	const pages = await getPages(
 		await globby('content/**/*.{md,html}'),
 		...[
-			require('@sphido/frontmatter'),
-			require('@sphido/twemoji'),
-			(page) => {
-				page.content = page.ext === '.html' ? page.content : marked(page.content);
-			},
-			require('@sphido/meta'),
+			frontmatter,
+			twemoji,
+			markdown,
+			meta,
 			{link},
 		]
 	);
@@ -96,7 +98,7 @@ marked.use({renderer});
 			page => ({
 				title: page.title,
 				content: page.content.replace(/(<([^>]+)>)/ig, ''),
-				link: page.link('https://ozzyczech.cz/'),
+				link: page.link(domain),
 				tags: [...page.tags],
 			})
 		)
@@ -133,7 +135,7 @@ marked.use({renderer});
 		feed(
 			posts.slice(0, 20),
 			{title: 'OzzyCzech.cz blog', description: 'Blog by Roman Ožana', link: 'https://ozzyczech.cz/',},
-			'https://ozzyczech.cz/rss.xml'
+			domain + 'rss.xml'
 		)
 	);
 

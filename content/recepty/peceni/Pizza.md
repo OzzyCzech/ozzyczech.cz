@@ -4,7 +4,7 @@ date: 2020-04-01
 tags: [Recepty, Pečení, Pizza]
 ---
 
-# 🍕Pizza
+# Pizza 🍕
 
 - 4 lžíce olivového oleje
 - 1 kg hladká mouka *nebo směs různých druhů*

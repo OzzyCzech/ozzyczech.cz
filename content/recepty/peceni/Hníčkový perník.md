@@ -6,7 +6,7 @@ date: 2000-01-01
 
 # Hrníčkový perník
 
-<img src="/recepty/peceni/Hrníčkový perník.jpg" width="350" class="img-fluid ml-2 rounded float-right">
+![](/recepty/peceni/hrnickovy-pernik.jpg#float-right_w-50_pl-3)
 
 Promíchejte
 

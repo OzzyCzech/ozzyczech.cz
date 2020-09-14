@@ -1,7 +1,6 @@
 import React from 'react'
 import Aside from './Aside'
 import Header from './Header'
-import Tag from "./Tag";
 
 export default ({tag, posts, tags}) => {
 	return (<html lang="cs" dir="ltr">

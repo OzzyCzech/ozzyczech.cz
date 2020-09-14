@@ -24,4 +24,3 @@ export default ({posts, tags}) => {
 			)}
 		</urlset>);
 }
-
