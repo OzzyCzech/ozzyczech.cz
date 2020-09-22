@@ -8,7 +8,7 @@ tags: [iot, bluetooth]
 
 MHO-C401 is new (2020) MMC E-Ink Screen Smart Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Gearbest]( https://www.gearbest.com/sale/MHO-C401/) or [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).
 
-![/iot/MHO-C401.jpg](MHO-C401 Bluetooth Thermometer Hygrometer)
+![MHO-C401](/iot/MHO-C401.jpg "MHO-C401 Bluetooth Thermometer Hygrometer")
 
 ## Searching for sensor
 
