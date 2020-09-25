@@ -57,3 +57,4 @@ date: 2020-05-28
 ## Resources
 
 - [Digital Photography Review](https://www.dpreview.com/)
+- [Fuji vs. Fuji](https://www.fujivsfuji.com/)
