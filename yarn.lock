@@ -1136,65 +1136,65 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@sphido/core@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-0.0.6.tgz#6cb252920ccf36d32541501229da479f8f957557"
-  integrity sha512-s3daVz2hxDmy6G4QHRjxbtQ3lQerJ8pWKi03O0f7hiKubz+Do0Wr3pgTx/jI3hzljyMkw7ArBbT4gb7zCtnqwQ==
+"@sphido/core@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-0.0.9.tgz#90648fd50c6b53cf01283b9fdd0c70df342984f5"
+  integrity sha512-clBGXffBOj1gBel/ooQVPRaT4F5qvflUAfCFqqVjB7mk2tO91Tlhfg4/caBYYRkvg84NfqghzUTpNz9VzNiuUA==
 
-"@sphido/feed@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@sphido/feed/-/feed-0.0.5.tgz#df9a5202a889957a1d8d8f21a3351bad3f47a222"
-  integrity sha512-shVREa/LxwEhteeJ+gEE8VGI6efjPTRKJjJac0SnX/KLeS2L2hhI9Dr6g9RLYw3xvGephWtXlbdh7WnkThFxHA==
+"@sphido/feed@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@sphido/feed/-/feed-0.0.8.tgz#a0a1a7b1b318edc97f90203f50a56481b1c2b001"
+  integrity sha512-4ygMiCMpbTy6C84UREP5r19rzCALMKOrv6pL0e9hYVoGIdl/20shs15tNTAny8P9n69T53AJxWJxThTj0544Pg==
 
-"@sphido/frontmatter@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-0.0.4.tgz#28fd3943d7054e16c4aa0ec0d8329f03204bf9f4"
-  integrity sha512-ACuzbIL4I6O4mKAJEyx0Flv4B+yzdtTCaTb8kScjeL5+aYRUZ5n6nkY0lEgxpFVqN4Xzvg7RQbIKkkraMaMN4Q==
+"@sphido/frontmatter@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-0.0.7.tgz#9e70267dd57fd60ce77a549814946baef6010d05"
+  integrity sha512-383RwVA4AXJPjX3Nm7Hhe+Cpvqc8sJap0WSimSq1PTYRf/wYlewQDxnrudylWvOj6C/6SlU71TMFLNudRhJckQ==
   dependencies:
     js-yaml "^3.14.0"
 
-"@sphido/link@^0.0.6":
+"@sphido/link@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@sphido/link/-/link-0.0.9.tgz#a5325c2ed6ef48dbb2d2652c1e53ca2ab8ac71e3"
+  integrity sha512-zqmsSNJL1gceMYN+D+Im8XN7lAi98XmMZLI6Cvcl516W+H/s6XoFB94UCNIs1wFGF0YxOljZQyXLQ7IZk5JYag==
+  dependencies:
+    marked "^1.1.0"
+
+"@sphido/markdown@^0.0.6":
   version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@sphido/link/-/link-0.0.6.tgz#01c546ab74fa3b5fa6e6d9990a208ded91a1c51f"
-  integrity sha512-j0bqYdVS7OFM3/4Bdqe4ATn+1GP9U9eJNOeNODrsCnJB5GFNrc/2P8SeuvRj4sy0GEhHuDfgyAvv0FnCIyrXCA==
+  resolved "https://registry.yarnpkg.com/@sphido/markdown/-/markdown-0.0.6.tgz#ce62a038e2ea98773a2529b7ed5b34a542f629a7"
+  integrity sha512-rv4ZSVpsKKkkrLysK2N3Gp5SPD/n7xTJiZUgOgACNHZIeIIrxnl5LYBMtLt5RmsJZDRPOqhueLHjFR+TlXLtng==
   dependencies:
     marked "^1.1.0"
 
-"@sphido/markdown@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@sphido/markdown/-/markdown-0.0.3.tgz#34fb9d5c984311e97bacd8d0a03233b08900f8d5"
-  integrity sha512-4jXw9lfRPHUVd1RGj9mNQ1By1xZWuoO6c4rHD6pKQMMD8+Si/n1gIrLfA/b760vVdJqIPVH0KqM0ZKkbjUABZQ==
+"@sphido/marked@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@sphido/marked/-/marked-0.0.7.tgz#57c5bc9453d8d9a73edaea6a3288b93a0d8e67a4"
+  integrity sha512-Ao6bQE0q8EbAuQ9I3QHVhHHX+eVzHFaRpoEszACWuq8UjJgefFaWQR70o4oWVePqBS3ppNte9lc4OI4Uy+UIrw==
   dependencies:
     marked "^1.1.0"
 
-"@sphido/marked@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@sphido/marked/-/marked-0.0.4.tgz#269c8b228a21fd9fef7ca15afea180412173af68"
-  integrity sha512-dZaLf/zafWbNQufMcSBJ13c2+wTxwBqgCLkwdRd2f9nnAQS1NhZflkI53G34jPnpUOVQ1CSza+jEugNexXSNsA==
-  dependencies:
-    marked "^1.1.0"
-
-"@sphido/meta@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@sphido/meta/-/meta-0.0.6.tgz#dee5d774fbb31188ef5852dd62b86b1e165c6843"
-  integrity sha512-N9qpsW6xWLahsPJOV9xwiNni4YBAE5OKE7QqfJ70rA50dbw2RxXFp4QPg+5+xZmPGoxSXMydcGaJNORKeqDvKg==
+"@sphido/meta@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@sphido/meta/-/meta-0.0.9.tgz#e19096ff8471a342cd24d012738f1d52cc683355"
+  integrity sha512-f2ak+Jk9OZcp7EOUL0F0Dpq9763AvyHwdehqXdSwGt/O30wwGhhiGZn34ZuU9sn++6Ispmz/hcmQv2bCuljV5w==
   dependencies:
     "@sindresorhus/slugify" "^1.0.0"
 
-"@sphido/pagination@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@sphido/pagination/-/pagination-0.0.5.tgz#0e565ec99aa9a60f2e4ecadebaa1f7f6ddc4465c"
-  integrity sha512-4ELENZQ421yzgm6hpzooNZkHTR4vyvyn3giOMfGyB1ZjIR79VNUFb1huaFY/ZHq+eNoxj9YgMUShb2UpJ5LjhA==
+"@sphido/pagination@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@sphido/pagination/-/pagination-0.0.8.tgz#506ed3f1b7f82839e2aa7e3b5b3b2b81fad3b771"
+  integrity sha512-cUTpc5xsvUtV2lG4xv9DFUMT44GaMzwgJeNqJ9G/7nhwG396PnUBYqTOzukU9PMckRo9RjPips/FjejE5he/+w==
 
-"@sphido/sitemap@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-0.0.7.tgz#9c216c6e6fca54523d9b68ec5aa8d3cbae9fe7a6"
-  integrity sha512-HB4DJ/xwPb7Y+mxpU1GwKlZIQjqiHveGpanBbEVaI18yiHmNF0NlmICV9kmOZgWwPR3u6qITuoXotIlXcyvkqA==
+"@sphido/sitemap@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-0.0.10.tgz#da6f213cc6b7d76cb865b782ccb67ae2be241a9f"
+  integrity sha512-BsHjAF6LuNTT9PgiM1gS8W6StzPrgkSk+AR+jxkOOuEXbW9omXGDPu0UEsKpJP0RvcdAizaWM3le8lOH/ujavQ==
 
-"@sphido/twemoji@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@sphido/twemoji/-/twemoji-0.0.5.tgz#928a45a35d4b78d8c123837956d617d3c8edfbfc"
-  integrity sha512-i17jQJ+AJIYdpm1yccUUMh0YTwxCUBf/8lmjmUPF0OeSo0td2AHChxGio5ElNwFWQWReDSw5/URKCg/mASdAUA==
+"@sphido/twemoji@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@sphido/twemoji/-/twemoji-0.0.8.tgz#913aab0aa002ff8a8f23d806920d476efc121990"
+  integrity sha512-tiEyuSe2Za7UyQjwFICAWo/y6XVy0736qmH1EfD6zD6L+1mGpw1c1fSfTTTno6vxjQSbitPDf37bMeMDbOwfkw==
   dependencies:
     twemoji "^13.0.0"
 
