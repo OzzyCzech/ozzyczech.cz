@@ -31,6 +31,13 @@ slug: awesome
 - [HTTPBin](https://httpbin.org) - A simple HTTP Request & Response Service.
 - [Favicon Grabber](http://favicongrabber.com/) - getting favicons from any URL
 
+## CSS
+
+- [Tailwind](https://tailwindcss.com/) - A utility-first CSS framework
+- [PureCSS](https://purecss.io/) - A set of small, responsive CSS modules
+- [Boostrap](https://getbootstrap.com/) - Build fast, responsive sites with Bootstrap
+- [Primer CSS](https://primer.style/css/) - CSS Framework from GitHub
+
 ## Payment services
 
 - [Braintree](https://www.braintreepayments.com)
@@ -119,6 +126,7 @@ Resource: http://queues.io/
 - [RedisLab](https://redislabs.com/)
 - [MediaFire](https://app.mediafire.com/myfiles) - 10GB free storage
 - [Degoo](https://degoo.com/) - 100 GB free cloud space
+
 ## Privacy
 
 - [That One Privacy site](https://thatoneprivacysite.net/) - The site is meant to be a resource 
@@ -133,7 +141,8 @@ Resource: http://queues.io/
 ## Free icons & emoji
 
 - [Icons8](https://icons8.com/)
-- [FlatIcon](https://flaticon.com)
+- [Boostrap Icons](https://icons.getbootstrap.com/)
 - [Material Icons](https://material.io/tools/icons/)
-- [TwEmoji](https://twemoji.twitter.com/) - emoji from Twitter
+- [FlatIcon](https://flaticon.com)
+- [TwEmoji](https://twemoji.twitter.com/) - colorfull Emoji from Twitter
 - [The Noun Project](https://thenounproject.com/) - Icons for everything
