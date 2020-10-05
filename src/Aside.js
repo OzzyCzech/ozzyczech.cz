@@ -81,8 +81,8 @@ export default ({active, tags}) => {
 					<Link href="/js" emoji="🥕">Javascript</Link>
 					<Link href="/books" emoji="📖">Books</Link>
 					<Link href="/series" emoji="🎞">Series</Link>
-					<Link href="https://recepty.ozzyczech.cz" emoji="🥄" target="_blank">Cooking</Link>
 					<Link href="/quotes" emoji="🪧">Quotes</Link>
+					<Link href="https://recepty.ozzyczech.cz" emoji="🥄" target="_blank">Cooking</Link>
 				</section>
 
 				{tags ? <section>
