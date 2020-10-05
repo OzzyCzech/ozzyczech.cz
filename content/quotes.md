@@ -45,3 +45,12 @@ title: Quotes
 
 > Nezáleží na tom, jestli máte styl, pověst nebo peníze. Pokud nemáte dobré srdce, nemáte žádnou cenu.
 > *Louis de Funès*
+
+> Lidé byli stvořeni k tomu, aby byli milováni, a věci k tomu, aby byly používány. Svět je v chaosu proto, že vše je naopak.
+> *Dalajláma*
+
+> Intelligence is the ability to adapt to change.
+> *Stephen Hawking*
+
+> Jen takové společnosti se bude dobře dařit, ve které staří muži sázejí stromy, o nichž vědí, že v jejich stínu už nebudou odpočívat.
+> *antické moudro*
