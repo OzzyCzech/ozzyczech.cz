@@ -21,8 +21,11 @@
 
 ## RSS readers
 
-* [Reeder App 4](https://reederapp.com/) - news reader 
 * [NetNewsWire](https://ranchero.com/netnewswire/) - **NetNewsWire** is a free and open source RSS reader for **Mac** and **iOS**.
+* [Reeder 5](https://reederapp.com/)
+* [ReadKit](https://readkitapp.com/)
+* [Cappuccino](https://cappuccinoapp.com/)
+* [News Explorer](https://betamagic.nl/products/newsexplorer.html)
 
 ## Image editing
 

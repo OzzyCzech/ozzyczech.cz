@@ -146,3 +146,7 @@ Resource: http://queues.io/
 - [FlatIcon](https://flaticon.com)
 - [TwEmoji](https://twemoji.twitter.com/) - colorfull Emoji from Twitter
 - [The Noun Project](https://thenounproject.com/) - Icons for everything
+
+## Font
+
+- [atipo Foundry](https://www.atipofoundry.com/) - independent digital typeface foundry
