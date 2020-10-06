@@ -1,5 +1,6 @@
 ---
 title: HTML Skeleton
+date: 2020-10-06
 tags: [HTML, snippets]
 ---
 
