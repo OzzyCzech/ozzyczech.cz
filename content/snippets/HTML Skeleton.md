@@ -11,20 +11,17 @@ tags: [HTML, snippets]
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
   <title></title>
-
-  <!-- Author -->
-  <meta name="author" content="Your name" />
-  <meta name="description" content="Brief description" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="" />
 
   <!-- OG -->
-  <meta property="og:title" content="Your Page Title" />
-  <meta property="og:description" content="Brief description" />
-  <meta property="og:image" content="/some-image.png" />
-  <meta property="og:url" content="/this-page.html" />
-  <meta property="og:site_name" content="Your Site Name" />
+  <meta property="og:title" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -55,3 +52,4 @@ With:
 * [Twitter card](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 * [Open Graph](https://ogp.me/)
 * [Tailwind CSS](https://tailwindcss.com/)
+* SVG favicon
