@@ -5,6 +5,8 @@ slug: series
 
 # 2020
 
+- [Nightflyers](https://www.imdb.com/title/tt6903284/)
+- [Another Life](https://www.imdb.com/title/tt8369840/)
 - [The Durrells](https://www.imdb.com/title/tt5014882/)
 - [Gomorra: La serie](https://www.imdb.com/title/tt2049116/)
 - [Zero, Zero, Zero](https://www.imdb.com/title/tt8332438/)
