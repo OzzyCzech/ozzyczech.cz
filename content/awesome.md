@@ -147,6 +147,10 @@ Resource: http://queues.io/
 - [TwEmoji](https://twemoji.twitter.com/) - colorfull Emoji from Twitter
 - [The Noun Project](https://thenounproject.com/) - Icons for everything
 
+## Tools 
+
+- [Gradient Magic](https://www.gradientmagic.com/) - A Free Gallery of Fantastic and Unique CSS Gradients
+
 ## Font
 
 - [atipo Foundry](https://www.atipofoundry.com/) - independent digital typeface foundry
