@@ -150,6 +150,7 @@ Resource: http://queues.io/
 ## Tools 
 
 - [Gradient Magic](https://www.gradientmagic.com/) - A Free Gallery of Fantastic and Unique CSS Gradients
+- [RealFaviconGenerator](https://realfavicongenerator.net/) - Favicon Generator. For real usage.
 
 ## Font
 
