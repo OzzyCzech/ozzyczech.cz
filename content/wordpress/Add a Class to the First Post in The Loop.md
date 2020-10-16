@@ -1,7 +1,7 @@
 ---
 title: Add a Class to the First Post in The Loop
-date: 2020-10-06
-tags: [Wordpress, Snippets]
+date: 2020-10-16
+tags: [Wordpress, PHP]
 ---
 
 # Add a Class to the First Post in The Loop
