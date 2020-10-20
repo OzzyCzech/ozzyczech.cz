@@ -54,3 +54,6 @@ title: Quotes
 
 > Jen takové společnosti se bude dobře dařit, ve které staří muži sázejí stromy, o nichž vědí, že v jejich stínu už nebudou odpočívat.
 > *antické moudro*
+
+> It's a sad day for capitalism when a man can't fly a midget on a kite over Central Park
+> *Jim Moran*
