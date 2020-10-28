@@ -12,6 +12,11 @@
 * [wp-latte](https://github.com/mejta/wp-latte) - This mu-plugin gives theme and plugin developers availability to write templates with Nette Latte v2.5.
 * [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) -  The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes your code to follow standards; whether you want to follow PHP coding standards as defined in the PSR-1, PSR-2, etc., or other community driven ones like the Symfony one. You can also define your (team's) style through configuration.
 
+### Design 
+
+* [Cascadia Code Font](https://github.com/microsoft/cascadia-code) - This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
+* [FiraCode](https://github.com/tonsky/FiraCode) - Free monospaced font with programming ligatures
+
 ### IPFS
 
 Exploring [IPFS](https://ipfs.io/) a peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open.
@@ -20,3 +25,9 @@ IPFS powers the Distributed Web https://ipfs.io/
 ```bash
 brew cask install ipfs
 ```
+
+### Logitech Folio Touch for iPad
+
+[Logitech Folio Touch](https://www.logitech.com/en-us/products/ipad-keyboards/folio-touch.920-009952.html) Backlit keyboard case with trackpad for iPad Pro® 11-inch and iPad Air® (4th gen)
+
+![](https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/products/mobility/folio-touch/gallery/folio-touch-air-gallery-2.png?v=1)
