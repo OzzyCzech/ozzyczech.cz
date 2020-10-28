@@ -26,8 +26,8 @@ IPFS powers the Distributed Web https://ipfs.io/
 brew cask install ipfs
 ```
 
-### Logitech Folio Touch for iPad
+### Logitech Folio Touch for iPad Air (4tg gen)
 
 [Logitech Folio Touch](https://www.logitech.com/en-us/products/ipad-keyboards/folio-touch.920-009952.html) Backlit keyboard case with trackpad for iPad Pro® 11-inch and iPad Air® (4th gen)
 
-![](https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/products/mobility/folio-touch/gallery/folio-touch-air-gallery-2.png?v=1)
+![Logitech Folio Touch for iPad Air (4th gen)](https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/products/mobility/folio-touch/gallery/folio-touch-air-gallery-2.png?v=1)
