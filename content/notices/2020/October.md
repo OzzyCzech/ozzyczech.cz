@@ -11,6 +11,7 @@
 * [Nextra](https://github.com/shuding/nextra) - Nextra is a Next.js and Markdown (MDX) based site generator. 0 line of code needed.
 * [wp-latte](https://github.com/mejta/wp-latte) - This mu-plugin gives theme and plugin developers availability to write templates with Nette Latte v2.5.
 * [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) -  The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes your code to follow standards; whether you want to follow PHP coding standards as defined in the PSR-1, PSR-2, etc., or other community driven ones like the Symfony one. You can also define your (team's) style through configuration.
+* [Editor.js](https://editorjs.io/) Next generation block styled editor. Free. Use for pleasure.
 
 ### Design 
 
