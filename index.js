@@ -34,7 +34,7 @@ renderer(
 			const className = new URL(href, domain).hash.substring(1).replace(/[_]/g, ' ');
 			return `<div class=" ${className ? className : 'd-flex justify-content-center my-1'}"><figure class="figure text-center w-75">
 			<a href="${href}" target="_blank"><img src="${href}" class="figure-img img-fluid rounded shadow" title="${title ? title : ''}" alt="${text ? text : ''}"/></a>		
-			<figcaption class="figure-caption text-center">${title}</figcaption></figure></div>`
+			<figcaption class="figure-caption text-center">${title ? title : (text ? text : null)}</figcaption></figure></div>`
 		},
 
 		link: (href, title, text) => {
