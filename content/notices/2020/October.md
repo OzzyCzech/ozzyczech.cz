@@ -1,3 +1,8 @@
+---
+date: 2020-10-01
+tags: [notices]
+---
+
 # October 2020
 
 ### Apps & services

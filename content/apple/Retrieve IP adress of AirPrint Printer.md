@@ -1,6 +1,6 @@
 ---
 title: Retrieve IP adress of AirPrint Printer
-date: 2013-11-12
+date: 2020-11-12
 tags: [macOS]
 ---
 
