@@ -14,6 +14,7 @@ tags: [notices]
 
 - [No Design DEV](https://nodesign.dev/) - A collection of tools for developers who have little to no artistic talent.
 - [SVGBox](https://svgbox.net/) - SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
+- [SimpleIcons](https://simpleicons.org/) - 1463 Free SVG icons for popular brands
 
 ### Life
 
