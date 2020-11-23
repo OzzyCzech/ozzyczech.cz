@@ -20,3 +20,7 @@ tags: [notices]
 
 - [Veloretti](https://www.veloretti.nl/) - Lightweight, handmade in Europe, a damn good design and no fuss. 
 - [Dafilms](https://dafilms.cz/film) - documentary movies online
+
+### IOT
+
+- [ROCK Pi 4](https://rockpi.org/rockpi4) - single board computer with M.2 connector supports **up to 2T M.2 NVME SSD**
