@@ -51,11 +51,12 @@ tags: [backup, security]
 
 ### Passwords
 
-* [1Password](https://1password.com/) - 
-* [bitwarden](https://bitwarden.com/) - Open Source Password Management for You and Your Business
+* [1Password](https://1password.com/) - 1Password syncs passwords and personal data across all your devices
+* [Bitwarden](https://bitwarden.com/) - Open Source Password Management for You and Your Business
 * [Dashline](https://www.dashlane.com/) - 
 * [LastPass](https://www.lastpass.com/) - 
-* [keepersecurity](https://www.keepersecurity.com/)
+* [NordPass](https://nordpass.com/) - We lock passwords. You hold the key.
+* [Keeper Security](https://www.keepersecurity.com/)
 
 ### VPN
 
