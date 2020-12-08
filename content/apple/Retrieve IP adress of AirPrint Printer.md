@@ -17,7 +17,7 @@ ippfind
 
 Then you get local adress of printer (Internet Printing Protocol (IPP, [RFC 2911](https://tools.ietf.org/html/rfc2911))):
 
-```txt
+```
 ipp://3036B5000000.local:XXX/ipp/print
 ```
 

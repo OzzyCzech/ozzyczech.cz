@@ -43,7 +43,7 @@ yarn upgrade-interactive --latest
 
 Will looks like follow:
 
-```txt
+```
 [1/? Choose which packages to update. (Press <space> to select, <a> to toggle all, <i> to inverse selection)
 
  devDependencies

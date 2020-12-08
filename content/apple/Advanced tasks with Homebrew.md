@@ -70,7 +70,7 @@ cd homebrew-core
 git log --pretty="%h - %s" -10
 ```
 
-```txt
+```
 71b2069 - Update to PHP 5.5.18
 b8aeb54 - Use homebrew's openssl for IMAP
 f0d721a - php56: improve phpdbg logic

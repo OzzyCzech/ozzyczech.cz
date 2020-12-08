@@ -24,7 +24,7 @@ sudo hcitool lescan
 
 You will get output similar to this one:
 
-```txt
+```
 49:01:7D:E8:21:CF (unknown)
 4D:E8:5B:D3:56:7E (unknown)
 5C:6D:23:6F:57:14 (unknown)
@@ -171,7 +171,7 @@ finally:
 
 Upper code will generate follow output:
 
-```txt
+```
 Tempterature: 25.82°C
     Humidity: 49%
         Time: 13:32:09
