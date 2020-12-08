@@ -20,7 +20,7 @@ git log master -- Casks/phpstorm.rb
 
 and you will get hashes of each commit (change) that was made in this formula:
 
-```txt
+```
 commit d49e3f36f3c7844c580d04d46a71cfd5d10f56c3
 Author: jcbot <jcb@leipert.io>
 Date:   2020-07-22
