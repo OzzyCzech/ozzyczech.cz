@@ -29,7 +29,7 @@ ping 3036B5000000.local
 
 and here we go
 
-```txt
+```
 PING 3036B5000000.local (192.168.0.108): 56 data bytes
 64 bytes from 192.168.0.108: icmp_seq=0 ttl=64 time=262.342 ms
 64 bytes from 192.168.0.108: icmp_seq=1 ttl=64 time=285.290 ms

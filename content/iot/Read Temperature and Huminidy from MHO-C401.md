@@ -75,7 +75,7 @@ finally:
 
 Output will looks like that:
 
-```txt
+```
 Connecting to device...
 Service <uuid=Generic Access handleStart=1 handleEnd=7>
  Characteristic <Device Name>

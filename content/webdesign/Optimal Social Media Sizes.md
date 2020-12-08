@@ -47,7 +47,7 @@ tags: [webdesign]
 
 ### Twitter
 
-* Twitter profile picture size: [400×400](#img/400/400/TwitterProfileImage.png) ([PNG](#img/400/400/TwitterProfileImage.png), [JPG](#img/400/400/TwitterProfileImage.jpg) or [GIF](#img/400/400/TwitterProfile.gif)) up to 2 MB
+* Twitter profile picture size: [400×400](#img/400/400/TwitterProfileImage.png) up to 2 MB
 * Twitter header size: [1500×500](#img/1500/500/TwitterHeaderImage.png)
 * Twitter post image size: [1024×512](#img/1024/512/TwitterPostImage.png)
 * Twitter card image size: [1200×628](#img/1200/628/TwitterCard.jpg)
@@ -111,9 +111,8 @@ function placeholder(width, height, text) {
 }
 
 document.querySelectorAll('a[href^="#img/"]').forEach(link => {
-	const href = new URL(link.href.replace('#img/', ''))
-	const [width, height, name] = href.pathname.substring(1).split('/')
-	
+	const href = new URL(link.href);
+	const [width, height, name] = href.hash.replace('#img/', '').split('/');
 	link.download = name;
 
 	const svg = placeholder(width, height);
