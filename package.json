@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "babel-node ./index.js",
-		"dev": "watch './index.js' ./content ./src ./static | serve public"
+		"start": "watch './index.js' ./content ./src ./static | serve public"
 	},
 	"devDependencies": {
 		"serve": "^11.3.2",

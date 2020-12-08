@@ -9,7 +9,7 @@ tags: [ftp, macOS]
 Setup everyhing: `sudo subl /etc/ftpd.conf`
 
 ```shell script
-# match umask from Mac OS X Server ftpd
+# match umask from Mac OS×Server ftpd
 umask all 022
 chroot GUEST /Users/roman/ftp
 modify guest off
