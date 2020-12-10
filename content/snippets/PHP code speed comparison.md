@@ -1,10 +1,10 @@
 ---
-title: PHP code speed comparation
+title: PHP code speed comparison
 date: 2020-12-10
 tags: [PHP, Snippets]
 ---
 
-# PHP code speed comparation
+# PHP code speed comparison
 
 ```php
 function versus(callable $first, callable $second, $repeat = 100000) {
