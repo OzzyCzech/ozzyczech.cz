@@ -5,6 +5,12 @@ slug: series
 
 # 2020
 
+- [Dark](https://www.imdb.com/title/tt5753856/)
+- [Star Trek Discovery](https://www.imdb.com/title/tt5171438/)
+- [Away](https://www.imdb.com/title/tt8787802/)
+- [Money Heist](https://www.imdb.com/title/tt6468322/)
+- [Lost in space](https://www.imdb.com/title/tt5232792)
+- [Mandalorian](https://www.imdb.com/title/tt8111088/)
 - [Nightflyers](https://www.imdb.com/title/tt6903284/)
 - [Another Life](https://www.imdb.com/title/tt8369840/)
 - [The Durrells](https://www.imdb.com/title/tt5014882/)
@@ -18,6 +24,7 @@ slug: series
 
 # 2019
 
+- [Mandalorian](https://www.imdb.com/title/tt8111088/)
 - [Why Women Kill](https://www.imdb.com/title/tt9054904)
 - [The Spy](https://www.imdb.com/title/tt5952634/)
 - [Beforeigners](https://www.imdb.com/title/tt8332130/)
