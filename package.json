@@ -9,11 +9,11 @@
 		"watch": "^1.0.2"
 	},
 	"dependencies": {
-		"@babel/cli": "^7.12.1",
-		"@babel/core": "^7.12.3",
-		"@babel/node": "^7.12.6",
-		"@babel/preset-env": "^7.12.1",
-		"@babel/preset-react": "^7.12.5",
+		"@babel/cli": "^7.12.10",
+		"@babel/core": "^7.12.10",
+		"@babel/node": "^7.12.10",
+		"@babel/preset-env": "^7.12.11",
+		"@babel/preset-react": "^7.12.10",
 		"@sindresorhus/slugify": "^1.1.0",
 		"@sphido/core": "^0.0.9",
 		"@sphido/feed": "^0.0.8",
@@ -27,7 +27,7 @@
 		"@sphido/twemoji": "^0.0.8",
 		"fs-extra": "^9.0.1",
 		"globby": "^11.0.1",
-		"marked": "^1.2.4",
+		"marked": "^1.2.7",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"twemoji-parser": "^13.0.0"
