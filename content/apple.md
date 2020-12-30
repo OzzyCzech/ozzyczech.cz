@@ -50,6 +50,7 @@
 * [tldr](https://github.com/tldr-pages/tldr) - simplified and community-driven man pages
 * [trash](http://hasseg.org/trash/)  - moves files or folders to the trash
 
+
 ## Tools
 
 * [Lungo](https://sindresorhus.com/lungo) -  Prevent your Mac from going to sleep
@@ -57,6 +58,8 @@
 * [New File Menu](https://itunes.apple.com/us/app/new-file-menu/id1064959555) - finder extensions for create new File
 * [iCal Státní svátky ČR](webcal://www.google.com/calendar/ical/czech__cs%40holiday.calendar.google.com/public/basic.ics)
 * [Maccy](https://maccy.app/) - Clipboard manager for macOS which does one job - keep your copy history at hand. Period.
+* [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
+* [Kap](https://getkap.co/) - An open-source screen recorder built with web technology.
 
 and much more here https://github.com/OzzyCzech/dotfiles
 
