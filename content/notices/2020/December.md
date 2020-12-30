@@ -8,3 +8,10 @@ tags: [notices]
 ### Libs
 
 - [swiperjs](https://swiperjs.com/) - Swiper is the most modern free mobile touch slider
+- [Terminal.sexy](https://terminal.sexy/) - terminal color editor
+
+### Tools
+
+- [Kap](https://getkap.co/) - open-source screen recorder built with web technology
+- [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
+
