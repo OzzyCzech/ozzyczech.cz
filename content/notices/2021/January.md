@@ -18,9 +18,22 @@ tags: [notices]
 * [Lagoon anc traveller](https://europe.beyerdynamic.com/lagoon-anc-traveller.html) - Wireless headphones with ANC from BeyerDynamic
 * [Sony WH-1000XM4](https://www.sony.com/electronics/headband-headphones/wh-1000xm4) - Wireless Noise-Canceling Headphones form Sony
 
+### Comments
+
+* [Guestbook](https://leerob.io/guestbook) - GitHub issue based Guestbook
+* [Utteranc](https://utteranc.es) - A lightweight comments widget built on GitHub issues.
+* [Octomments](https://ocs.now.sh) - Using GitHub issues as a comment plugin.
+* [Commento](https://commento.io/) - Embed comments without giving up your privacy.
+* [Fast Comments](https://fastcomments.com) - A comment service that will delight your users and developers.
+
+
 ### Earl Grey
 
 * [Earl Grey Special](https://www.caj.cz/earl-grey-special~z528-000159.html)
 * [Earl Grey Superior](https://oxalis.cz/cs/earl-grey-superior-60-g-8595218075732-231.htm/)
 * [Earl Grey Supreme](https://harneyteas.cz/products/earl-grey-supreme-sypany-caj-196-g)
 * [Extravagant Earl Grey](https://www.whittard.cz/extravagant-earl-grey/)
+
+### Webdesign
+
+* [Primer](https://primer.style) - Design, build, and create with GitHub’s design system
