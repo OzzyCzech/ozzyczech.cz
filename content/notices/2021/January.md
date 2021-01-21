@@ -9,6 +9,13 @@ tags: [notices]
 
 * [Random user api](https://randomuser.me/api/) - With the Bionic Reading© API you can deliver the next level of reading to your audience.
 * [Zero SSL](https://zerossl.com/) - SSL Protection For Anyone Fast. Reliable. Free.
+* [Git Large File Storage (LFS)](https://git-lfs.github.com/) - Git extension for versioning large files
+
+### Image hosting
+
+* [Imgur](https://imgur.com/) - 
+* [PostImage](https://postimages.org/) - Imgur alternative
+* [Put.re](https://put.re/) - free and opensource image hosting 
 
 ### Gears
 
