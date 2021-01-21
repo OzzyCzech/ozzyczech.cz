@@ -25,6 +25,7 @@ tags: [notices]
 * [Neumann NDH-20](https://en-de.neumann.com/ndh-20) - premium quality studio headphones
 * [Lagoon anc traveller](https://europe.beyerdynamic.com/lagoon-anc-traveller.html) - Wireless headphones with ANC from BeyerDynamic
 * [Sony WH-1000XM4](https://www.sony.com/electronics/headband-headphones/wh-1000xm4) - Wireless Noise-Canceling Headphones form Sony
+* [Raspberry Pi Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/) - Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, a brand new microcontroller chip designed by Raspberry Pi
 
 ### Comments
 
