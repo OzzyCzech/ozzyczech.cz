@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import {parse} from 'twemoji-parser'
-import Tag from "./Tag";
+import Tag from "./Tag.js";
 // @see https://twemoji.maxcdn.com/2/test/preview.html
 
 export default ({active, tags}) => {

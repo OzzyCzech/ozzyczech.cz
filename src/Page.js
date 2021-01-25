@@ -1,8 +1,8 @@
 import React from 'react'
-import Aside from './Aside'
-import Header from './Header'
+import Aside from './Aside.js'
+import Header from './Header.js'
 import slugify from "@sindresorhus/slugify";
-import Tag from "./Tag";
+import Tag from "./Tag.js";
 
 export default ({page, tags}) => {
 	return (<html lang="cs" dir="ltr">

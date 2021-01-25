@@ -1,25 +1,26 @@
 #!/usr/bin/env npx babel-node
 
-import {join} from 'path';
-import {copy, outputFile} from "fs-extra";
+import path from 'path';
+import fs from "fs-extra";
 import globby from "globby";
+
 import {getPages} from "@sphido/core";
-import pagination from "@sphido/pagination";
+import {pagination} from "@sphido/pagination";
 import {link} from "@sphido/link";
-import feed from "@sphido/feed";
+import {feed} from "@sphido/feed";
 import slugify from "@sindresorhus/slugify";
 
 import React from 'react'
-import {renderHTML, renderXML} from "./src/render";
+import {renderHTML, renderXML} from "./src/render.js";
 
-import Page from "./src/Page";
-import Pages from "./src/Pages";
-import PageTag from "./src/PageTag";
-import Sitemap from "./src/Sitemap";
+import Page from "./src/Page.js";
+import Pages from "./src/Pages.js";
+import PageTag from "./src/PageTag.js";
+import Sitemap from "./src/Sitemap.js";
 
-import meta from '@sphido/meta';
-import frontmatter from '@sphido/frontmatter';
-import twemoji from '@sphido/twemoji';
+import {meta} from '@sphido/meta';
+import {frontmatter} from '@sphido/frontmatter';
+import {emoji} from '@sphido/emoji';
 import {markdown, renderer} from '@sphido/markdown'
 
 const domain = new URL('https://ozzyczech.cz/');
@@ -53,7 +54,7 @@ renderer(
 	// Copy static content
 	let files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'static/404.html']);
 	for await (let file of files) {
-		await copy(file, file.replace(/^[\w]+/, 'public'))
+		await fs.copy(file, file.replace(/^[\w]+/, 'public'))
 	}
 
 	// Get pages from directory
@@ -61,7 +62,7 @@ renderer(
 		await globby('content/**/*.{md,html}'),
 		...[
 			frontmatter,
-			twemoji,
+			emoji,
 			markdown,
 			meta,
 			{link},
@@ -88,12 +89,12 @@ renderer(
 	for await (let page of pages) {
 		await renderHTML(
 			<Page page={page} tags={tags}/>,
-			join(page.dir.replace('content', 'public'), page.slug, 'index.html')
+			path.join(page.dir.replace('content', 'public'), page.slug, 'index.html')
 		)
 	}
 
 	// index.json for https://fusejs.io/
-	await outputFile('public/index.json', JSON.stringify(
+	await fs.outputFile('public/index.json', JSON.stringify(
 		posts.map(
 			page => ({
 				title: page.title,
@@ -109,7 +110,7 @@ renderer(
 	for (const tag of tags.values()) {
 		await renderHTML(
 			<PageTag tag={tag.title} tags={tags} posts={posts.filter((post => post.tags.has(tag.title)))}/>,
-			join('public/tag/', tag.slug, 'index.html'),
+			path.join('public/tag/', tag.slug, 'index.html'),
 		)
 	}
 
@@ -120,7 +121,7 @@ renderer(
 	for await (const page of pagination(posts, 8)) {
 		await renderHTML(
 			<Pages posts={page.posts} current={page.current} pages={page.pages} tags={tags}/>,
-			page.current === 1 ? 'public/index.html' : join('public/page/', page.current.toString(), 'index.html')
+			page.current === 1 ? 'public/index.html' : path.join('public/page/', page.current.toString(), 'index.html')
 		);
 	}
 
@@ -130,7 +131,7 @@ renderer(
 
 	// rss.xml
 
-	await outputFile(
+	await fs.outputFile(
 		'public/rss.xml',
 		feed(
 			posts.slice(0, 20),

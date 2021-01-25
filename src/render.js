@@ -1,14 +1,12 @@
-'use strict';
-
 import {outputFile} from "fs-extra";
 import React from 'react';
-import {renderToStaticMarkup} from "react-dom/server";
+import {renderToStaticMarkup} from "react-dom/server.js";
 
-module.exports = {
-	async renderHTML(element, file) {
-		await outputFile(file, "<!doctype html>\n" + renderToStaticMarkup(element));
-	},
-	async renderXML(element, file) {
-		await outputFile(file, `<?xml version="1.0" encoding="UTF-8"?>\n` + renderToStaticMarkup(element))
-	}
-};
+
+export async function renderHTML(element, file) {
+	await outputFile(file, "<!doctype html>\n" + renderToStaticMarkup(element));
+}
+
+export async function renderXML(element, file) {
+	await outputFile(file, `<?xml version="1.0" encoding="UTF-8"?>\n` + renderToStaticMarkup(element))
+}

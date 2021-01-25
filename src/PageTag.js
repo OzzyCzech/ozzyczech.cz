@@ -1,6 +1,6 @@
 import React from 'react'
-import Aside from './Aside'
-import Header from './Header'
+import Aside from './Aside.js'
+import Header from './Header.js'
 
 export default ({tag, posts, tags}) => {
 	return (<html lang="cs" dir="ltr">
