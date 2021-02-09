@@ -6,7 +6,7 @@ tags: [webdesign]
 
 # Význam barev
 
-Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete [internetové stránky](https://www.omdesign.cz "Internetové stránky"), je na to 
+Všechny barvy ve vašem okolí na Vás nějak působí. Pokud navrhujete [internetové stránky](https://ozana.cz "Internetové stránky"), je na to 
 potřeba pamatovat dvojnásob. Barva dokáže návštěvníka oslovit a navodit ten správný pocit. Barvy se obecně dělí na
 barvy teplé, studené a neutrální
 

@@ -13,7 +13,7 @@ namespace testomato\invoice;
 /**
  * Get currency rates from ČNB in PHP
  *
- * @author Roman Ožana <ozana@omdesign.cz>
+ * @author Roman Ožana <roman@ozana.cz>
  */
 class ExchangeRates {
 

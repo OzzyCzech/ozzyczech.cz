@@ -14,8 +14,8 @@ Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro
 Plugin Name: Hashs
 Description: Twitter like hash for Wordpress
 Version: 1.0
-Author: Roman Ozana <ozana@omdesign.cz>
-Author URI: http://www.omdesign.cz/
+Author: Roman Ozana <roman@ozana.cz>
+Author URI: https://ozana.cz/
 */
 class Hashs {
 
