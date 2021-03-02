@@ -5,7 +5,7 @@
 		"start": "watch 'index.js' ./content ./src ./static | serve public"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.12.13",
+		"@babel/core": "^7.13.8",
 		"@babel/preset-react": "^7.12.13",
 		"@node-loader/babel": "^1.0.0",
 		"serve": "^11.3.2",
@@ -29,7 +29,7 @@
 		"@sphido/sitemap": "^1.0.4",
 		"fs-extra": "^9.0.1",
 		"globby": "^11.0.1",
-		"marked": "^2.0.0",
+		"marked": "^2.0.1",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"twemoji-parser": "^13.0.0"
