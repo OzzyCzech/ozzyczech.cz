@@ -8,3 +8,4 @@ tags: [notices]
 ### Tools
 
 * [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+* [Mak](https://mak.ink/) - Markdown notice [app](https://inns.studio/mak)
