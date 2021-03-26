@@ -34,6 +34,7 @@ slug: js
 ### Frameworks
 
 * [ava](https://github.com/avajs/ava) - 🚀 Futuristic JavaScript test runner
+* [JEST](https://jestjs.io/) - Delightful JavaScript Testing Framework with a focus on simplicity
 * [mocha](https://github.com/mochajs/mocha) - Simple, flexible, fun javascript test framework for node.js & the browser.
 * [jasmine](https://github.com/jasmine/jasmine) - DOM-less simple JavaScript testing framework.
 
