@@ -3,6 +3,14 @@ title: Seriály
 slug: series
 ---
 
+# 2021
+
+* [The Expanse](https://www.imdb.com/title/tt3230854/)
+* [Paradise PD](https://www.imdb.com/title/tt8235236/)
+* [Brooklyn nine-nine](https://www.imdb.com/title/tt2467372/)
+* [The MIRE](https://www.imdb.com/title/tt8855592/)
+- [Years and Years](https://www.imdb.com/title/tt8694364/)
+
 # 2020
 
 - [Dark](https://www.imdb.com/title/tt5753856/)
@@ -32,7 +40,6 @@ slug: series
 - [Chernobyl](https://www.imdb.com/title/tt7366338/)
 - [Brickleberry](https://www.imdb.com/title/tt2022713/)
 - [The Boys](https://www.imdb.com/title/tt1190634/)
-- [Years and Years](https://www.imdb.com/title/tt8694364/)
 
 # 2018
 
