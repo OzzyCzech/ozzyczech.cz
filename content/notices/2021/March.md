@@ -8,3 +8,7 @@ tags: [notices]
 ## Libs
 
 * [Svelte in Markdown](https://mdsvex.pngwn.io/) - embed Svelte directly to Markdown
+
+## Tools
+
+* [Removal.AI](https://removal.ai/) - AI-powered background removal
