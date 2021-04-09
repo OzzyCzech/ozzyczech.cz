@@ -48,3 +48,10 @@ tags: [js, webdesign]
     }
  })();
 ```
+
+There is another option, you can display HTML in new window as blob data:
+
+```js
+const content = URL.createObjectURL(new Blob([response.data + overlay || ''], {type: "text/html"}));
+window.open(content, "response", `width=640, height=480`).focus();
+```
