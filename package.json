@@ -2,11 +2,11 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "node --experimental-modules --experimental-loader @node-loader/babel index.js",
-		"start": "watch 'index.js' ./content ./src ./static | serve public"
+		"start": "watch './index.js' ./content ./src ./static | serve public"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.13.8",
-		"@babel/preset-react": "^7.12.13",
+		"@babel/core": "^7.13.15",
+		"@babel/preset-react": "^7.13.13",
 		"@node-loader/babel": "^1.0.0",
 		"serve": "^11.3.2",
 		"watch": "^1.0.2"
@@ -17,21 +17,21 @@
 	},
 	"dependencies": {
 		"@sindresorhus/slugify": "^1.1.0",
-		"@sphido/core": "^1.0.4",
-		"@sphido/emoji": "^1.0.6",
-		"@sphido/feed": "^1.0.4",
-		"@sphido/frontmatter": "^1.0.3",
-		"@sphido/link": "^1.0.3",
-		"@sphido/markdown": "^1.0.3",
+		"@sphido/core": "^1.0.5",
+		"@sphido/emoji": "^1.0.8",
+		"@sphido/feed": "^1.0.5",
+		"@sphido/frontmatter": "^1.0.4",
+		"@sphido/link": "^1.0.4",
+		"@sphido/markdown": "^1.0.4",
 		"@sphido/marked": "^0.0.7",
-		"@sphido/meta": "^1.0.3",
-		"@sphido/pagination": "^1.0.3",
-		"@sphido/sitemap": "^1.0.4",
+		"@sphido/meta": "^1.0.4",
+		"@sphido/pagination": "^1.0.7",
+		"@sphido/sitemap": "^1.0.5",
 		"fs-extra": "^9.0.1",
-		"globby": "^11.0.1",
-		"marked": "^2.0.1",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
+		"globby": "^11.0.3",
+		"marked": "^2.0.3",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
 		"twemoji-parser": "^13.0.0"
 	}
 }
