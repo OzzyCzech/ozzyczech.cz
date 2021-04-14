@@ -18,7 +18,7 @@ export default ({posts, current, pages, tags}) => {
 	<main>
 		{posts.map((page, index) =>
 			<article className={page.slug} key={index}>
-				<small className="d-block pl-5 float-right text-secondary">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>
+				<small className="d-block pe-5 float-end text-secondary">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>
 				<h2 className="h1"><a href={page.link()}>{page.title}</a></h2>
 				<div dangerouslySetInnerHTML={{__html: page.content.replace(/<h1.*>.*?<\/h1>/g, '')}}></div>
 				{page.tags.size > 0 && <p className="text-right">{[...page.tags].map((tag, index) =>

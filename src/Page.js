@@ -16,7 +16,7 @@ export default ({page, tags}) => {
 
 	<main>
 		<article className={page.slug}>
-			<small className="d-block float-right text-secondary">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>{' '}
+			<small className="d-block float-end text-secondary">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>{' '}
 			<div dangerouslySetInnerHTML={{__html: page.content}}></div>
 			{page.tags.size > 0 && <p className="text-right">{[...page.tags].map((tag, index) =>
 				<Tag key={index} title={tag} slug={slugify(tag)}/>
