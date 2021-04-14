@@ -12,3 +12,4 @@ tags: [notices]
 ## Tools
 
 * [Removal.AI](https://removal.ai/) - AI-powered background removal
+* [Starship](https://starship.rs/) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
