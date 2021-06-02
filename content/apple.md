@@ -21,16 +21,18 @@
 
 ## RSS readers
 
-* [NetNewsWire](https://ranchero.com/netnewswire/) - **NetNewsWire** is a free and open source RSS reader for **Mac** and **iOS**.
 * [Reeder 5](https://reederapp.com/)
+* [NetNewsWire](https://ranchero.com/netnewswire/) - **NetNewsWire** is a free and open source RSS reader for **Mac** and **iOS**.
 * [ReadKit](https://readkitapp.com/)
 * [Cappuccino](https://cappuccinoapp.com/)
 * [News Explorer](https://betamagic.nl/products/newsexplorer.html)
 
 ## Image editing
 
+* [Pixelmator Pro](https://www.pixelmator.com/pro/)
 * [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
 * [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+* [Procreate](https://procreate.art/)
 
 ## Video editing
 

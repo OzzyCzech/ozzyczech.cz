@@ -66,6 +66,7 @@ export default ({active, tags}) => {
 				<section className="list-group">
 					<Link href="/" emoji="🚀">Home</Link>
 					<Link href="/photo" emoji="📷">Photo</Link>
+					<Link href="/gear" emoji="⚙️">Gear</Link>
 					<Link href="/awesome" emoji="💄">Awesome</Link>
 					<Link href="/apple">
 						<svg
@@ -82,7 +83,6 @@ export default ({active, tags}) => {
 					<Link href="/books" emoji="📖">Books</Link>
 					<Link href="/series" emoji="🎞">Series</Link>
 					<Link href="/quotes" emoji="🪧">Quotes</Link>
-					<Link href="https://recepty.ozzyczech.cz" emoji="🥄" target="_blank">Cooking</Link>
 				</section>
 
 				{tags ? <section>
