@@ -15,7 +15,7 @@ tags: [notices]
 
 ### PHP
 
-* [Fork](https://github.com/spatie/fork)
+* [Fork](https://github.com/spatie/fork) - A lightweight solution for running code concurrently in PHP
 
 ### Tools
 
