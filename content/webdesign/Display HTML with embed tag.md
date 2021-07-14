@@ -25,7 +25,7 @@ tags: [js, webdesign]
     try {
       // clean content first     
       embedResponse.setAttribute('src', 'data:text/html;charset=utf-8,');
-      const response = await fetch(,
+      const response = await fetch('/api/response',
         {
           method: 'post',
           // accept HTML response
