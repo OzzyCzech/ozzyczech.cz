@@ -17,6 +17,11 @@ tags: [notices]
 
 * [Fork](https://github.com/spatie/fork) - A lightweight solution for running code concurrently in PHP
 
+### JS
+
+* [Summernote](https://summernote.org/) - Super Simple WYSIWYG
+* [Quilljs](https://quilljs.com/) - Your powerful rich text editor
+
 ### Tools
 
 * [Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace) - MySQL/MariaDB database management for macOS
