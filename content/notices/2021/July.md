@@ -21,7 +21,9 @@ tags: [notices]
 
 * [Summernote](https://summernote.org/) - Super Simple WYSIWYG
 * [Quilljs](https://quilljs.com/) - Your powerful rich text editor
+* [EditorJS](https://editorjs.io/) - 
 
 ### Tools
 
 * [Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace) - MySQL/MariaDB database management for macOS
+* [CleanMyDrive](https://macpaw.com/cleanmydrive) - remove junk from external drives
