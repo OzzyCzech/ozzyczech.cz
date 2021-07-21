@@ -37,6 +37,8 @@ title: Quotes
 
 > Co tě nezabije, to se tě pokusí zabít znova.
 
+> To není v prdeli, to je v lidech
+
 > Nikdy nepřemýšlím o budoucnosti, protože přichází přiliš rychle.
 > *Albert Einstein*
 
