@@ -5,11 +5,13 @@ slug: series
 
 # 2021
 
+* [High Seas](https://www.imdb.com/title/tt8961508/)
+* [Loki](https://www.imdb.com/title/tt9140554/)
 * [The Expanse](https://www.imdb.com/title/tt3230854/)
 * [Paradise PD](https://www.imdb.com/title/tt8235236/)
 * [Brooklyn nine-nine](https://www.imdb.com/title/tt2467372/)
 * [The MIRE](https://www.imdb.com/title/tt8855592/)
-- [Years and Years](https://www.imdb.com/title/tt8694364/)
+* [Years and Years](https://www.imdb.com/title/tt8694364/)
 
 # 2020
 
@@ -60,4 +62,6 @@ slug: series
 
 # Oldies
 
-- [Ren a Stimpy](https://www.imdb.com/title/tt0101178/)
+* [Ren a Stimpy](https://www.imdb.com/title/tt0101178/)
+* [Courage the Cowardly Dog](https://www.imdb.com/title/tt0220880)
+* [Cow and Chicken](https://www.imdb.com/title/tt0118289/)
