@@ -16,7 +16,12 @@ date: 2020-05-28
 - [XF 16 mm f/1,4 R WR](https://fujifilm-x.com/global/products/lenses/xf16mmf14-r-wr/)
 - [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf23mmf2-r-wr/)
 - [XF 18-55mmF2.8-4 R LM OIS](https://fujifilm-x.com/global/products/lenses/xf18-55mmf28-4-r-lm-ois/)
+- [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
 - [XF 10-24mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
+
+## Mini-tripods
+
+- [MT-03](https://www.leofoto.com/products_detail.php?id=293) Spider + [MBH-19](https://www.leofoto.com/products_detail.php?id=297)
 
 ## Others cameras 
 
