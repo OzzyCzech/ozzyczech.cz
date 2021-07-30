@@ -30,3 +30,4 @@ tags: [notices]
 * [CleanMyDrive](https://macpaw.com/cleanmydrive) - remove junk from external drives
 * [Mailtrain](https://mailtrain.org/) - Self Hosted Newsletter App Built on Top of Nodemailer
 * [sendy](https://sendy.co/) - Send newsletters, 100x cheaper with [AWS SES](https://aws.amazon.com/ses/)
+
