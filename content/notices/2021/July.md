@@ -6,6 +6,7 @@ tags: [notices]
 # July 2021
 
 * [Open source flags](https://flagpack.xyz/) - collection of 250 open source flags
+* [iceDrive](https://icedrive.net/) - The next generation of cloud storage
 
 ### RollingSquare
 
