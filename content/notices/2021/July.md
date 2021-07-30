@@ -22,11 +22,11 @@ tags: [notices]
 
 * [Summernote](https://summernote.org/) - Super Simple WYSIWYG
 * [Quilljs](https://quilljs.com/) - Your powerful rich text editor
-* [EditorJS](https://editorjs.io/) - 
+* [EditorJS](https://editorjs.io/) - Next generation block styled editor
 
 ### Tools
 
 * [Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace) - MySQL/MariaDB database management for macOS
 * [CleanMyDrive](https://macpaw.com/cleanmydrive) - remove junk from external drives
 * [Mailtrain](https://mailtrain.org/) - Self Hosted Newsletter App Built on Top of Nodemailer
-* [sendy](https://sendy.co/)
+* [sendy](https://sendy.co/) - Send newsletters, 100x cheaper with [AWS SES](https://aws.amazon.com/ses/)
