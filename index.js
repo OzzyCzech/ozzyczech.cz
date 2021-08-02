@@ -2,7 +2,7 @@
 
 import path from 'path';
 import fs from "fs-extra";
-import { globby } from "globby";
+import {globby} from "globby";
 
 import { getPages } from "@sphido/core";
 import { pagination } from "@sphido/pagination";
@@ -64,7 +64,7 @@ renderer(
 );
 
 
-//(async () => {
+(async () => {
 
 	// Copy static content
 	let files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'static/404.html']);
@@ -155,4 +155,4 @@ renderer(
 		)
 	);
 
-//})();
+})();
