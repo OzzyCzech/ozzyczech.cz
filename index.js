@@ -64,7 +64,7 @@ renderer(
 );
 
 
-(async () => {
+//(async () => {
 
 	// Copy static content
 	let files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'static/404.html']);
@@ -155,4 +155,4 @@ renderer(
 		)
 	);
 
-})();
+//})();
