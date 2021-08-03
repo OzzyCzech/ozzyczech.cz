@@ -26,10 +26,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-p, ul, ol, li {
-	font-family: var(--font-family);
-}
-
 body > footer {
 	grid-area: footer;
 }

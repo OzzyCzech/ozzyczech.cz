@@ -1,6 +1,8 @@
 import React, {Fragment} from 'react'
 import {parse} from 'twemoji-parser'
-import Tag from "./Tag.js";
+import Tag from "./Tag.js"
+import md5 from 'md5'
+
 // @see https://twemoji.maxcdn.com/2/test/preview.html
 
 export default ({active, tags}) => {
@@ -33,7 +35,7 @@ export default ({active, tags}) => {
 				<div className="card-body text-center">
 
 					<a href="/">
-						<img src="https://www.gravatar.com/avatar/78a2dc1230226b0c47af6c99a3148794?s=128" className="rounded-circle shadow-lg mb-3" alt="Roman Ožana"/>
+						<img src={`https://www.gravatar.com/avatar/${md5('roman@ozana.cz')}?s=128`} className="rounded-circle shadow-lg mb-3" alt="Roman Ožana"/>
 					</a>
 
 					<h5 className="card-title">

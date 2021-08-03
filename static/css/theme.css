@@ -1,9 +1,7 @@
 :root {
-	--font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-
-	--body-background-color: #282c34;
-	--text-color-primary: #dee2e6;
-	--text-color-brighter: #ebeff2;
+	--body-background-color: #1C1E21;
+	--text-color-primary: #cfd4d9;
+	--text-color-brighter: #ffffff;
 	--text-color-secondary: #8b99a7;
 
 	/* heighlight */
