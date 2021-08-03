@@ -17,8 +17,8 @@ export default ({posts, current, pages, tags}) => {
 
 	<main>
 		{posts.map((page, index) =>
-			<article className={page.slug + ' dark:text-white'} key={index}>
-				<small className="d-block pe-5 float-end text-secondary">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>
+			<article className={page.slug + ' dark:text-gray-100'} key={index}>
+				<small className="">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>
 				<h2 className="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold dark:text-lime-400 tracking-tight mb-8"><a href={page.link()}>{page.title}</a></h2>
 				<div dangerouslySetInnerHTML={{__html: page.content.replace(/<h1.*>.*?<\/h1>/g, '')}}></div>
 				{page.tags.size > 0 && <p className="text-right">{[...page.tags].map((tag, index) =>

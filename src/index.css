@@ -55,3 +55,19 @@ body > aside {
 	}
 
 }
+
+article p, ol, ul {
+	@apply font-mono;
+}
+
+article p {
+	@apply mb-3;
+}
+
+article ul {
+	@apply list-disc list-inside mb-3;
+}
+
+article ol {
+	@apply list-decimal list-inside mb-3;
+}
