@@ -1,6 +1,6 @@
 all:
 	yarn install --production --no-color
-	yarn run build
+	yarn run build:css build:content
 
 deploy:
 	git commit --allow-empty -m "Deploy `date +%F-%T`" && git push

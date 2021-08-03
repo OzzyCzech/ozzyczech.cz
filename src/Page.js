@@ -5,7 +5,7 @@ import slugify from "@sindresorhus/slugify";
 import Tag from "./Tag.js";
 
 export default ({page, tags}) => {
-	return (<html lang="cs" dir="ltr">
+	return (<html lang="cs" dir="ltr" className="dark">
 	<head>
 		<Header title={page.title.trim()}/>
 	</head>
@@ -14,7 +14,7 @@ export default ({page, tags}) => {
 
 	<Aside active={'/' + page.slug} tags={tags}/>
 
-	<main>
+	<main className="bg-white dark:bg-gray-800">
 		<article className={page.slug}>
 			<small className="d-block float-end text-secondary">{page.date.getDate()}.&nbsp;{page.date.getMonth() + 1}.&nbsp;{page.date.getFullYear()}</small>{' '}
 			<div dangerouslySetInnerHTML={{__html: page.content}}></div>

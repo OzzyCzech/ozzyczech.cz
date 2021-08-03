@@ -33,7 +33,7 @@ export default ({active, tags}) => {
 	const Gravatar = (props) => {
 		return (
 			<Fragment>
-				<img src={`https://www.gravatar.com/avatar/${md5(props.email)}?s=128`} className="rounded-circle shadow-lg mb-3" alt="Roman Ožana"/>
+				<img src={`https://www.gravatar.com/avatar/${md5(props.email)}?s=128`} className="inline object-cover my-2 w-128 h-128 rounded-full" alt="Roman Ožana"/>
 			</Fragment>
 		)
 	}
@@ -42,12 +42,12 @@ export default ({active, tags}) => {
 			<section className="card">
 				<div className="card-body text-center">
 
-					<a href="/">
+					<a href="/" className="">
 						<Gravatar email="roman@ozana.cz"/>
 					</a>
 
 					<h5 className="card-title">
-						Hi, <a href="https://omdesign.cz" target="_blank" className="text-reset">I am Roman!</a>
+						Hi, <a href="https://ozana.cz" target="_blank" className="text-reset">I am Roman!</a>
 					</h5>
 
 					<div className="social-media">
