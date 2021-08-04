@@ -2,6 +2,7 @@ document.onreadystatechange = function () {
 	if (document.readyState == 'complete') {
 
 		// copy pre > code
+		/*
 		document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 			let copy = document.createElement('a');
 			copy.className = 'btn-copy';
@@ -24,6 +25,8 @@ document.onreadystatechange = function () {
 
 			codeBlock.parentNode.insertBefore(copy, codeBlock);
 		});
+
+		 */
 
 		// https://fusejs.io/ search
 

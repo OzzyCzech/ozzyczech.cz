@@ -3,7 +3,7 @@ import React, {Fragment} from 'react'
 export default ({title}) => {
 	return (<Fragment>
 			<meta charSet="UTF-8"/>
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+			<meta name="viewport" content="width=device-width"/>
 
 			<title>{title}</title>
 
@@ -14,10 +14,6 @@ export default ({title}) => {
 			<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
 
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.5/fuse.min.js"></script>
-
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-core.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/plugins/autoloader/prism-autoloader.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.min.js"></script>
 
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132992179-1"></script>
@@ -34,7 +30,6 @@ export default ({title}) => {
 			/>
 
 			<link rel="stylesheet" href="/css/style.css"/>
-			<link rel="stylesheet" href="/css/prism.css"/>
 			<script src="/js/app.js"></script>
 		</Fragment>
 	)

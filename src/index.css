@@ -3,71 +3,89 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	display: grid;
-	grid-template-areas: "main aside" "footer aside";
-	grid-template-columns: minmax(0, auto) 320px;
-	grid-template-rows: 1fr auto;
-
-	grid-gap: 1rem !important;
-	padding: 1rem !important;
-	margin: 0 auto;
-
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
+pre {
+	@apply text-white bg-black bg-opacity-75 rounded;
+	@apply overflow-x-auto;
+	@apply p-4 mb-3 leading-snug;
+	@apply font-mono text-left leading-6;
+	@apply break-normal;
+	@apply whitespace-pre !important;
+	hyphens: none;
+	tab-size: 2;
 }
 
-a {
+:root {
+	--token-comment: #468438;
+	--token-tag: #e06c75;
+	--token-string: #CF7A60;
+	--line-number-color: #5C6370;
+	--token-variable: #77D6FF;
+	--token-keyword: #C368B5;
 }
 
-a:hover {
-	@apply underline;
+.token.shebang,
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: var(--token-comment);
 }
 
-body > footer {
-	grid-area: footer;
+.token.selector,
+.token.tag {
+	color: var(--token-tag);
 }
 
-body > main {
-	grid-area: main;
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted {
+	color: #d19a66;
 }
 
-body > aside {
-	grid-area: aside;
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted {
+	color: var(--token-string);
 }
 
-@media (max-width: 768px) {
-	body {
-		grid-template-areas: "aside aside" "main main" "footer footer";
-		grid-template-columns: 1fr;
-		grid-auto-rows: auto auto auto;
-	}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #56b6c2;
 }
 
-@media print {
-	body {
-		grid-template-areas: "main" "footer";
-		grid-template-columns: 1fr;
-	}
-
-	.pagination, header, aside {
-		display: none;
-	}
-
+.token.atrule,
+.token.keyword {
+	color: var(--token-keyword);
 }
 
-article p, ol, ul {
-	@apply font-mono;
+.token.function {
+	color: #61afef;
 }
 
-article p {
-	@apply mb-3;
+.token.regex,
+.token.important,
+.token.variable {
+	color: var(--token-variable);
 }
 
-article ul {
-	@apply list-disc list-inside mb-3;
+.token.important,
+.token.bold {
+	font-weight: bold;
 }
 
-article ol {
-	@apply list-decimal list-inside mb-3;
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
 }

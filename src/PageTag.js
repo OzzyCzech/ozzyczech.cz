@@ -3,23 +3,30 @@ import Aside from './Aside.js'
 import Header from './Header.js'
 
 export default ({tag, posts, tags}) => {
-	return (<html lang="cs" dir="ltr">
+	return (<html lang="cs" dir="ltr" className="dark">
 		<head>
 			<Header title={`OzzyCzech - tag #${tag}`}/>
 		</head>
 
-		<body className="container-xxl">
+		<body className="line-numbers antialiased leading-normal tracking-normal lg:container px-4 sm:px-6 xl:px-8 pt-10 pb-16 lg:pb-18 lg:mx-auto dark:bg-gray-900 dark:text-gray-100 min-h-screen">
 
-		<Aside active={`/tag/${tag}`} tags={tags}/>
+		<div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-6">
 
-		<main>
-			<h1>#{tag}</h1>
-			<div className="list-group mt-3">
-				{posts.map((post, index) =>
-					<a className="list-group-item list-group-item-action" href={post.link()} key={index}>{post.title}</a>
-				)}
-			</div>
-		</main>
+			<Aside active={`/tag/${tag}`} tags={tags}/>
+
+			<main className="lg:col-span-4 lg:order-first">
+				<h1 className="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-blue-600 dark:text-lime-300 tracking-tight mb-8">#{tag}</h1>
+
+				<div className="mb-3">
+					{posts.map((post, index) =>
+						<a className="flex justify-between py-3 px-5 mb-1 block bg-gray-100 hover:bg-gray-200 rounded dark:hover:bg-gray-700 dark:bg-gray-800" href={post.link()} key={index}>
+							<span>{post.title}</span>
+							<span className="dark:text-gray-400 text-opacity-40">{post.date.getFullYear()}</span>
+						</a>
+					)}
+				</div>
+			</main>
+		</div>
 
 		</body>
 		</html>

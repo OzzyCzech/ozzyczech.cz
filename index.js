@@ -4,32 +4,71 @@ import path from 'path';
 import fs from "fs-extra";
 import {globby} from "globby";
 
-import { getPages } from "@sphido/core";
-import { pagination } from "@sphido/pagination";
-import { link } from "@sphido/link";
-import { feed } from "@sphido/feed";
+import Prism from "prismjs";
+import 'prismjs/components/prism-ini.js'
+import 'prismjs/components/prism-json.js'
+import 'prismjs/components/prism-jsx.js'
+import 'prismjs/components/prism-sql.js'
+import 'prismjs/components/prism-scss.js'
+import 'prismjs/components/prism-less.js'
+import 'prismjs/components/prism-css.js'
+import 'prismjs/components/prism-swift.js'
+import 'prismjs/components/prism-php.js'
+import 'prismjs/components/prism-php-extras.js'
+import 'prismjs/components/prism-markup-templating.js'
+import 'prismjs/components/prism-yaml.js'
+import 'prismjs/components/prism-python.js'
+import 'prismjs/components/prism-bash.js'
+
+import {getPages} from "@sphido/core";
+import {pagination} from "@sphido/pagination";
+import {link} from "@sphido/link";
+import {feed} from "@sphido/feed";
 import slugify from "@sindresorhus/slugify";
 
 import React from 'react'
-import { renderHTML, renderXML } from "./src/render.js";
+import {renderHTML, renderXML} from "./src/render.js";
 
 import Page from "./src/Page.js";
 import Pages from "./src/Pages.js";
 import PageTag from "./src/PageTag.js";
 import Sitemap from "./src/Sitemap.js";
 
-import { meta } from '@sphido/meta';
-import { frontmatter } from '@sphido/frontmatter';
-import { emoji } from '@sphido/emoji';
-import { markdown, renderer } from '@sphido/markdown'
+import {meta} from "@sphido/meta";
+import {frontmatter} from "@sphido/frontmatter";
+import {emoji} from "@sphido/emoji";
+import {markdown, options, renderer} from "@sphido/markdown"
 
 const domain = new URL('https://ozzyczech.cz/');
+
+// syntax geighlight with prism
+options(
+	{
+		highlight: (code, lang) => {
+			lang = lang || 'markup';
+			return Prism.highlight(code, Prism.languages[lang], lang)
+		},
+	}
+);
 
 // @see https://marked.js.org/using_pro#renderer
 
 renderer(
 	{
-		table: (header, body) => `<table class="table table-bordered table-striped bg-white m-1">${header}${body}</table>`,
+		paragraph: (text) => `<p class="mb-3">${text}</p>`,
+
+		list: (body, order, start) => `<${order ? 'ol' : 'ul'} class="${order ? 'list-decimal' : 'list-disc'} list-inside mb-3">${body}</${order ? 'ol' : 'ul'}>`,
+
+		table: (header, body) => `<table class="table">${header}${body}</table>`,
+
+		heading: (text, level, raw, slugger) => ({
+			1: `<h1 id="${slugger.slug(raw)}" class="mb-3">${text}</h1>`,
+			2: `<h2 id="${slugger.slug(raw)}" class="text-4xl font-bold mb-4">${text}</h2>`,
+			3: `<h3 id="${slugger.slug(raw)}" class="text-3xl mb-4">${text}</h3>`,
+			4: `<h4 id="${slugger.slug(raw)}" class="text-2xl mb-3">${text}</h4>`,
+			5: `<h5 id="${slugger.slug(raw)}" class="font-bold mb-3">${text}</h5>`,
+			6: `<h6 id="${slugger.slug(raw)}" class="font-bold mb-3">${text}</h6>`
+		})[level],
 
 		image: (href, title, text) => {
 			const className = new URL(href, domain).hash.substring(1).replace(/[_]/g, ' ');
@@ -49,7 +88,7 @@ renderer(
 				const video = new URL(href);
 				const id = video.searchParams.get('v');
 				if (id) {
-					return `<div class="ratio ratio-16x9"><h3></h3><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${id}?rel=0" allowfullscreen></iframe></div>`
+					return `<div class="aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/${id}?rel=0&controls=1" allowfullscreen></iframe></div>`
 				}
 			}
 
@@ -58,7 +97,7 @@ renderer(
 				// @see https://github.com/markedjs/marked/issues/458 - waiting for async
 			}
 
-			return `<a href="${href}" title="${title ? title : ''}" target="_blank">${text}</a>`
+			return `<a href="${href}" title="${title ? title : ''}" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">${text}</a>`
 		}
 	}
 );
@@ -80,7 +119,8 @@ renderer(
 			emoji,
 			markdown,
 			meta,
-			{ link },
+			(page) => page.tags.add('' + page.date.getFullYear()),
+			{link},
 		]
 	);
 
@@ -95,7 +135,7 @@ renderer(
 			if (tags.has(tag)) {
 				tags.get(tag).count++;
 			} else {
-				tags.set(tag, { title: tag, slug: slugify(tag), count: 1 });
+				tags.set(tag, {title: tag, slug: slugify(tag), count: 1});
 			}
 		});
 	});
@@ -103,7 +143,7 @@ renderer(
 	// Generate single pages...
 	for await (let page of pages) {
 		await renderHTML(
-			<Page page={page} tags={tags} />,
+			<Page page={page} tags={tags}/>,
 			path.join(page.dir.replace('content', 'public'), page.slug, 'index.html')
 		)
 	}
@@ -124,7 +164,7 @@ renderer(
 
 	for (const tag of tags.values()) {
 		await renderHTML(
-			<PageTag tag={tag.title} tags={tags} posts={posts.filter((post => post.tags.has(tag.title)))} />,
+			<PageTag tag={tag.title} tags={tags} posts={posts.filter((post => post.tags.has(tag.title))).sort((a, b) => new Date(b.date) - new Date(a.date))}/>,
 			path.join('public/tag/', tag.slug, 'index.html'),
 		)
 	}
@@ -135,14 +175,14 @@ renderer(
 
 	for await (const page of pagination(posts, 8)) {
 		await renderHTML(
-			<Pages posts={page.posts} current={page.current} pages={page.pages} tags={tags} />,
+			<Pages posts={page.posts} current={page.current} pages={page.pages} tags={tags}/>,
 			page.current === 1 ? 'public/index.html' : path.join('public/page/', page.current.toString(), 'index.html')
 		);
 	}
 
 	// sitemap.xml
 
-	await renderXML(<Sitemap posts={posts} tags={tags} />, 'public/sitemap.xml');
+	await renderXML(<Sitemap posts={posts} tags={tags}/>, 'public/sitemap.xml');
 
 	// rss.xml
 
@@ -150,7 +190,7 @@ renderer(
 		'public/rss.xml',
 		feed(
 			posts.slice(0, 20),
-			{ title: 'OzzyCzech.cz blog', description: 'Blog by Roman Ožana', link: 'https://ozzyczech.cz/', },
+			{title: 'OzzyCzech.cz blog', description: 'Blog by Roman Ožana', link: 'https://ozzyczech.cz/',},
 			domain + 'rss.xml'
 		)
 	);

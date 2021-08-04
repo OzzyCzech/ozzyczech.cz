@@ -32,7 +32,7 @@ tags: [HTML, Snippets]
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
 
   <!-- Tailwind -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css" integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w==" crossorigin="anonymous" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet" />
 
   <!-- Favicon -->

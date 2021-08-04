@@ -15,13 +15,18 @@ module.exports = {
 			current: 'currentColor',
 			gray: colors.trueGray,
 			white: colors.white,
+			black: colors.black,
 			lime: colors.lime,
-			green: colors.green
+			red: colors.red,
+			yellow: colors.amber,
+			blue: colors.blue
 		},
 		extend: {},
 	},
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/aspect-ratio'),
+	],
 }
