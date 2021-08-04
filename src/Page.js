@@ -17,16 +17,14 @@ export default ({page, tags}) => {
 
 		<main className="lg:col-span-4 lg:order-first">
 			<Post page={page} single={true}/>
-		</main>
 
-		<footer className="lg:ring-offset-4">
 			<small>
 				Updated <script dangerouslySetInnerHTML={{__html: `let date = dateFns.distanceInWords(new Date('${page.date}'), new Date()) + ' ago '; document.currentScript.insertAdjacentHTML("beforebegin", date);`}}/>
 				{` | `}<a href={`https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="text-secondary">view</a>
 				{` | `}<a href={`https://github.com/OzzyCzech/ozzyczech.cz/delete/master/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="text-secondary">delete</a>
 				{` | `}<a href={`https://github.com/OzzyCzech/ozzyczech.cz/edit/master/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="text-secondary">edit</a>
 			</small>
-		</footer>
+		</main>
 
 	</div>
 
