@@ -1,7 +1,7 @@
 {
 	"license": "MIT",
 	"scripts": {
-		"build": "yarn build:css && yarn build:content",
+		"build": "yarn build:content && yarn build:css",
 		"build:content": "node --experimental-modules --experimental-loader @node-loader/babel index.js",
 		"build:css": "postcss src/index.css -o public/css/style.css",
 		"start": "watch ./index.js ./content ./src ./static | serve public"
@@ -31,6 +31,7 @@
 		"@sphido/sitemap": "^1.0.7",
 		"@tailwindcss/aspect-ratio": "^0.2.1",
 		"autoprefixer": "^10.3.1",
+		"cssnano": "^5.0.7",
 		"fs-extra": "^10.0.0",
 		"globby": "^12.0.0",
 		"marked": "^2.1.3",

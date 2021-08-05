@@ -1,10 +1,13 @@
 const colors = require('tailwindcss/colors')
 
+
+console.log(process.env);
+
 module.exports = {
 	purge: {
-		enabled: true,
+		enabled: process.env.NODE_ENV === 'production',
 		content: [
-			'./src/**/*.html',
+			'./public/**/*.html',
 			'./src/**/*.js',
 		]
 	},
@@ -28,5 +31,6 @@ module.exports = {
 	},
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
+		require('cssnano')(process.env.NODE_ENV === 'production' ? {preset: 'default'} : false),
 	],
 }
