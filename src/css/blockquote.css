@@ -1,10 +1,10 @@
 blockquote {
-	@apply max-w-4xl mx-auto;
-	@apply rounded-xl px-10 py-8 my-8 italic text-xl;
+	@apply text-xl italic;
+	@apply rounded-xl px-10 py-8 my-8;
 	@apply bg-gray-100 dark:bg-gray-900;
 }
 
-blockquote p.mb-3 {
+blockquote p.mb-3:last-of-type {
 	@apply mb-0 important;
 }
 

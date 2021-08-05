@@ -40,22 +40,22 @@ export default ({active, tags}) => {
 
 	return (<aside>
 			<section>
-				<div className="text-center mb-3">
+				<div className="text-center">
 
-					<a href="/" className="">
+					<a href="/" className="mb-3">
 						<Gravatar email="roman@ozana.cz"/>
 					</a>
 
-					<h5 className="">
-						Hi, <a href="https://ozana.cz" target="_blank" className="text-reset">I am Roman!</a>
+					<h5 className="text-2xl">
+						Hi, <a href="https://ozana.cz" target="_blank" className="hover:text-blue-500 hover:underline">I am Roman!</a>
 					</h5>
 
-					<div className="">
-						<a href="https://github.com/OzzyCzech/" target="_blank">GitHub</a>
+					<div className="mb-3">
+						<a href="https://github.com/OzzyCzech/" target="_blank" className="hover:text-blue-500 hover:underline">GitHub</a>
 						<span className="mx-1">•</span>
-						<a href="https://meta.stackoverflow.com/users/355316/" target="_blank">StackOverflow</a>
+						<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" className="hover:text-blue-500 hover:underline">StackOverflow</a>
 						<span className="mx-1">•</span>
-						<a href="https://www.twitter.com/OzzyCzech" target="_blank">Twitter</a>
+						<a href="https://www.twitter.com/OzzyCzech" target="_blank" className="hover:text-blue-500 hover:underline">Twitter</a>
 					</div>
 				</div>
 			</section>
@@ -66,7 +66,7 @@ export default ({active, tags}) => {
 
 			<section className="mb-3">
 				<Link href="/" emoji="🚀">Home</Link>
-				<Link href="/photo" emoji="📷">Photo</Link>
+				<Link href="/photo" emoji="📷">Photography</Link>
 				<Link href="/gear" emoji="⚙️">Gear</Link>
 				<Link href="/awesome" emoji="💄">Awesome</Link>
 				<Link href="/apple">

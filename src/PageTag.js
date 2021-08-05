@@ -8,7 +8,7 @@ export default ({tag, posts, tags}) => {
 			<Header title={`OzzyCzech - tag #${tag}`}/>
 		</head>
 
-		<body className="line-numbers antialiased leading-normal tracking-normal lg:container px-4 sm:px-6 xl:px-8 pt-10 pb-16 lg:pb-18 lg:mx-auto dark:bg-gray-900 dark:text-gray-100 min-h-screen">
+		<body className="antialiased leading-normal tracking-normal lg:container px-4 sm:px-6 xl:px-8 pt-10 pb-16 lg:pb-18 lg:mx-auto dark:bg-gray-900 dark:text-gray-100 min-h-screen">
 
 		<div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-6">
 

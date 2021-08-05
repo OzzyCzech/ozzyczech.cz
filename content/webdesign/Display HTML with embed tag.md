@@ -1,7 +1,7 @@
 ---
 title: Display HTML with embed tag
 date: 2021-04-09
-tags: [js, webdesign]
+tags: [javascript, webdesign]
 ---
 
 # Display HTML with embed tag

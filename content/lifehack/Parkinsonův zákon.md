@@ -10,14 +10,14 @@ Parkinsonův zákon, nebo spíš zákony byly poprvé vydán v roce 1957. Jejich
 [Cyril Northcote Parkinson](http://en.wikipedia.org/wiki/C._Northcote_Parkinson "C. Northcote Parkinson").
 Tři nejpovedenější zákony praví:
 
-<div class="lead">
 
-* **Práce roste úměrně s časem, který je na ni možno vynaložit**; to, co je třeba udělat, nabývá na důležitosti a komplikovanosti v přímé proporci k vyhrazenému času.
-* Výdaje rostou úměrně k příjmům.
-* Rozrůstání plodí složitost a složitost plodí zánik.
-* Otázce, kterou je třeba rozhodnout, se věnuje tím víc času, čím menší je její význam.
-
-</div>
+> **Práce roste úměrně s časem, který je na ni možno vynaložit**; to, co je třeba udělat, nabývá na důležitosti a komplikovanosti v přímé proporci k vyhrazenému času.
+> 
+> Výdaje rostou úměrně k příjmům.
+>
+> Rozrůstání plodí složitost a složitost plodí zánik.
+>
+> Otázce, kterou je třeba rozhodnout, se věnuje tím víc času, čím menší je její význam.
 
 Nejvíce se mi samozřejmě líbí zákon první. V překladu to znamená, že pokud na něco 
 dostanete týden, budete to dělat týden. Pokud na to dostanete měsíc, budete to dělat 

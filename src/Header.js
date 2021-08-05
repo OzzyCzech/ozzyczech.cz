@@ -11,8 +11,6 @@ export default ({title}) => {
 			<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"/>
 			<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
 
-			<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
-
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.5/fuse.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.min.js"></script>
 

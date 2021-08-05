@@ -3,17 +3,19 @@ title: Seriály
 slug: series
 ---
 
-# 2021
+## 2021
 
-* [High Seas](https://www.imdb.com/title/tt8961508/)
+* [Devs](https://www.imdb.com/title/tt8134186/)
+* [Rick a Morty](https://www.imdb.com/title/tt2861424/)
 * [Loki](https://www.imdb.com/title/tt9140554/)
+* [High Seas](https://www.imdb.com/title/tt8961508/)
 * [The Expanse](https://www.imdb.com/title/tt3230854/)
 * [Paradise PD](https://www.imdb.com/title/tt8235236/)
 * [Brooklyn nine-nine](https://www.imdb.com/title/tt2467372/)
 * [The MIRE](https://www.imdb.com/title/tt8855592/)
 * [Years and Years](https://www.imdb.com/title/tt8694364/)
 
-# 2020
+## 2020
 
 - [Dark](https://www.imdb.com/title/tt5753856/)
 - [Star Trek Discovery](https://www.imdb.com/title/tt5171438/)
@@ -32,7 +34,7 @@ slug: series
 - [Dublin Murders](https://www.imdb.com/title/tt7768192/)
 - [Mindhunter](https://www.imdb.com/title/tt5290382/)
 
-# 2019
+## 2019
 
 - [Mandalorian](https://www.imdb.com/title/tt8111088/)
 - [Why Women Kill](https://www.imdb.com/title/tt9054904)
@@ -43,7 +45,7 @@ slug: series
 - [Brickleberry](https://www.imdb.com/title/tt2022713/)
 - [The Boys](https://www.imdb.com/title/tt1190634/)
 
-# 2018
+## 2018
 
 - [Legion](https://www.imdb.com/title/tt5114356/)
 - [La casa de papel](https://www.imdb.com/title/tt6468322)
@@ -60,7 +62,7 @@ slug: series
 - [The OA](https://www.imdb.com/title/tt4635282/)
 - The Staircase
 
-# Oldies
+## Oldies
 
 * [Ren a Stimpy](https://www.imdb.com/title/tt0101178/)
 * [Courage the Cowardly Dog](https://www.imdb.com/title/tt0220880)

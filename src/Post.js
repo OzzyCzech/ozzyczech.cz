@@ -12,7 +12,9 @@ export default ({page, single}) => {
 					<h2 className="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-blue-600 dark:text-lime-300 tracking-tight mb-8"><a href={page.link()}>{page.title}</a></h2>
 			}
 
-			<div className="content" dangerouslySetInnerHTML={{__html: page.content.replace(/<h1.*>.*?<\/h1>/g, '')}}></div>
+			<div dangerouslySetInnerHTML={{__html: page.content.replace(/<h1.*>.*?<\/h1>/g, '')}}></div>
+
+			{props.children}
 
 			{page.tags.size > 0 && <p className="text-right">
 				{[...page.tags].map((tag, index) => <Tag key={index} title={tag} slug={slugify(tag)}/>)}

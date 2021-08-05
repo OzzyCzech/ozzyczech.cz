@@ -57,7 +57,7 @@ renderer(
 	{
 		paragraph: (text) => `<p class="mb-3">${text}</p>`,
 
-		list: (body, order, start) => `<${order ? 'ol' : 'ul'} class="${order ? 'list-decimal' : 'list-disc'} list-inside mb-3">${body}</${order ? 'ol' : 'ul'}>`,
+		list: (body, order, start) => `<${order ? 'ol' : 'ul'} class="${order ? 'list-decimal' : 'list-disc'} ml-6 mb-3">${body}</${order ? 'ol' : 'ul'}>`,
 
 		table: (header, body) => `<table class="table">${header}${body}</table>`,
 

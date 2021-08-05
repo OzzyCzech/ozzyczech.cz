@@ -1,32 +1,14 @@
+/* global dateFns */
+
+function showDate(date) {
+	document.currentScript.insertAdjacentHTML(
+		"beforebegin",
+		`${dateFns.distanceInWords(date, new Date())} at ${new Intl.DateTimeFormat().format(date)}`
+	);
+}
+
 document.onreadystatechange = function () {
 	if (document.readyState == 'complete') {
-
-		// copy pre > code
-		/*
-		document.querySelectorAll('pre > code').forEach(function (codeBlock) {
-			let copy = document.createElement('a');
-			copy.className = 'btn-copy';
-			copy.innerText = 'Copy';
-			copy.title = 'Copy to Clipboard!';
-			copy.href = '#';
-
-			copy.addEventListener('click', function (e) {
-				copy.innerText = 'Copied!';
-				navigator.clipboard.writeText(codeBlock.innerText).then(function () {
-					setTimeout(function () {
-						copy.innerText = 'Copy';
-					}, 500);
-				}, function (err) {
-					copy.innerText = 'ERROR';
-				});
-				e.preventDefault();
-				e.stopPropagation();
-			}, false);
-
-			codeBlock.parentNode.insertBefore(copy, codeBlock);
-		});
-
-		 */
 
 		// https://fusejs.io/ search
 
