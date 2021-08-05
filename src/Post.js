@@ -14,8 +14,6 @@ export default ({page, single}) => {
 
 			<div dangerouslySetInnerHTML={{__html: page.content.replace(/<h1.*>.*?<\/h1>/g, '')}}></div>
 
-			{props.children}
-
 			{page.tags.size > 0 && <p className="text-right">
 				{[...page.tags].map((tag, index) => <Tag key={index} title={tag} slug={slugify(tag)}/>)}
 			</p>}
