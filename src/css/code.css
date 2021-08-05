@@ -1,0 +1,86 @@
+pre {
+	@apply text-white bg-black dark:bg-gray-900 dark:bg-opacity-80 rounded-xl;
+	@apply overflow-hidden overflow-x-auto;
+	@apply p-4 my-6 leading-snug;
+	@apply font-mono text-left leading-6;
+	@apply break-normal;
+	@apply whitespace-pre !important;
+	hyphens: none;
+	tab-size: 2;
+}
+
+.token.class-name,
+.token.function,
+.token.selector,
+.token.selector .class,
+.token.tag {
+	color: rgb(232, 121, 249);
+}
+
+.token.attr-name,
+.token.important,
+.token.keyword,
+.token.operator,
+.token.pseudo-class,
+.token.rule {
+	color: rgb(34, 211, 238);
+}
+
+.token.attr-value,
+.token.class,
+.token.color,
+.token.number,
+.token.string,
+.token.unit {
+	color: rgb(190, 242, 100);
+}
+
+.token.module,
+.token.property,
+.token.punctuation {
+	color: rgb(186, 230, 253);
+}
+
+.language-css .token.function,
+.language-shell .token:not(.comment),
+.token.atapply .token:not(.rule):not(.important) {
+	color: inherit
+}
+
+.token.doctype,
+.token.comment {
+	color: rgb(156, 163, 175);
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+
+/*
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+	background-color: var(--background-heighlight-color-darker);
+	border-color: var(--border-color-dark);
+}
+*/
+
+:not(pre) > code {
+	@apply select-all;
+	@apply font-mono;
+	@apply dark:bg-gray-900;
+	@apply rounded;
+	@apply inline-block;
+	@apply px-1;
+	color: rgb(232, 121, 249);
+}
+

@@ -1,0 +1,21 @@
+blockquote {
+	@apply max-w-4xl mx-auto;
+	@apply rounded-xl px-10 py-8 my-8 italic text-xl;
+	@apply bg-gray-100 dark:bg-gray-900;
+}
+
+blockquote p.mb-3 {
+	@apply mb-0 important;
+}
+
+blockquote em {
+	@apply block text-right mt-3 text-sm text-gray-600 dark:text-gray-400;
+
+}
+
+blockquote em::before {
+	content:"» "
+}
+blockquote em::after {
+	content: " «";
+}

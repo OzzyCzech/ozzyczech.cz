@@ -262,18 +262,3 @@ a.btn-copy, a.btn-copy:hover {
 	right: 0;
 	top: 0;
 }
-
-.card {
-	background: inherit;
-	border: 0;
-}
-
-aside .list-group {
-	user-select: none;
-}
-
-aside .list-group svg {
-	width: 20px;
-	height: 20px;
-	padding: 2px;
-}

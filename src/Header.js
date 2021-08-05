@@ -3,7 +3,7 @@ import React, {Fragment} from 'react'
 export default ({title}) => {
 	return (<Fragment>
 			<meta charSet="UTF-8"/>
-			<meta name="viewport" content="width=device-width"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
 			<title>{title}</title>
 
