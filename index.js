@@ -62,10 +62,10 @@ renderer(
 		table: (header, body) => `<table class="table">${header}${body}</table>`,
 
 		heading: (text, level, raw, slugger) => ({
-			1: `<h1 id="${slugger.slug(raw)}" class="mb-3">${text}</h1>`,
-			2: `<h2 id="${slugger.slug(raw)}" class="text-4xl font-bold mb-4">${text}</h2>`,
-			3: `<h3 id="${slugger.slug(raw)}" class="text-3xl mb-4">${text}</h3>`,
-			4: `<h4 id="${slugger.slug(raw)}" class="text-2xl mb-3">${text}</h4>`,
+			1: `<h1 id="${slugger.slug(raw)}">${text}</h1>`,
+			2: `<h2 id="${slugger.slug(raw)}" class="text-2xl lg:text-4xl font-bold lg:mb-4">${text}</h2>`,
+			3: `<h3 id="${slugger.slug(raw)}" class="text-xl lg:text-3xl mb-4">${text}</h3>`,
+			4: `<h4 id="${slugger.slug(raw)}" class="lg:text-2xl mb-3">${text}</h4>`,
 			5: `<h5 id="${slugger.slug(raw)}" class="font-bold mb-3">${text}</h5>`,
 			6: `<h6 id="${slugger.slug(raw)}" class="font-bold mb-3">${text}</h6>`
 		})[level],
