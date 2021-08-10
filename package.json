@@ -7,7 +7,7 @@
 		"start": "watch ./index.js ./content ./src ./static | serve public"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.14.8",
+		"@babel/core": "^7.15.0",
 		"@babel/preset-react": "^7.14.5",
 		"@node-loader/babel": "^1.1.0",
 		"serve": "^12.0.0",
