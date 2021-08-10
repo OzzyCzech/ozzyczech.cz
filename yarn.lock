@@ -344,41 +344,41 @@
     escape-string-regexp "^5.0.0"
     lodash.deburr "^4.1.0"
 
-"@sphido/core@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-1.0.7.tgz#7e699551ac46f36e6b50df229bceb895f3515f6b"
-  integrity sha512-L8C8qD15yJ5CqcvTRaTNCCsPiHCHzrGQmkuzDcOZZR5lneTNH8v8dduYa8EVm/QL2MGVP4fzvOHRo4EHHjmn/A==
+"@sphido/core@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-1.0.8.tgz#b594458016ef2f48b7e2a46bbe182e1d4069e072"
+  integrity sha512-nvGoBGOcn0cy/LVixdxngvSilYByoiauGdKBw/f3SlrY/je1W0dowC18zbakIAel9VNWJFXl7Sh2HNRbjdirGQ==
 
-"@sphido/emoji@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@sphido/emoji/-/emoji-1.0.9.tgz#98ff91780db5d67ad111853d40fc57baf73d763d"
-  integrity sha512-c/LsI+U1S7MpIzBqlyZFtHU0yJ3A4LARGNdvZnV96xjaXVdztZy4t+/v+j9eoSdhyvbxDpG5Snkk/P098W9oAw==
+"@sphido/emoji@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@sphido/emoji/-/emoji-1.0.10.tgz#cd94bd0898ce99e0bc67dc2988c02b45995dd45d"
+  integrity sha512-b/dhNLKACKRI8bhbheUHpqil/zzOAgRAFHtUOcIB8sBdY8zEGQpL1S+WfORe8Ee+jWih9Uw3Lcori3/RdQoQaw==
   dependencies:
     twemoji "^13.1.0"
 
-"@sphido/feed@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@sphido/feed/-/feed-1.0.7.tgz#4b15549d3bb6734a80bb9b04cc1d3285fd32ab27"
-  integrity sha512-NCMJLjHpoYLc5MfNyfxvm0qGxt1XC+JX7Dl3UARjzVk+2jzVxYcBGxc4G3qik3Tq8NdEgdO+GAwqUWsXYk5wiw==
+"@sphido/feed@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@sphido/feed/-/feed-1.0.8.tgz#d224910ec234b7548b3a0a25378ab60bd0ca5983"
+  integrity sha512-W1HQfnDr41rvGKjGj72UXDBJeNuG4W0Xi2gS+jgOYPdgwF5DiRck6WgZJ1Zh3Dab650xHgHQMiPF4YmiPkXv0w==
 
-"@sphido/frontmatter@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-1.0.6.tgz#006a0f2acb5de94be63b16dd5504497b47f07789"
-  integrity sha512-KEsKZKRgkPkzQptdSsTbN+5hMa5VVc1p4xdLltm0DTsS+Tx1RCvCAhSF4XPAAZM6y3bppJgrhqHtlgH2LxgeFw==
+"@sphido/frontmatter@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-1.0.7.tgz#7bd7f8a7849fefa86c5815afce0f3145c018c575"
+  integrity sha512-h6WzS3niQ8sn5MlZSnMlTJ3cOUFS6zYBs7w9bFKc9WTRLCbYy603C4Y73GRY2X1IIdnX6r+GD2QG9TJSDxaxBA==
   dependencies:
     js-yaml "^4.1.0"
 
-"@sphido/link@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@sphido/link/-/link-1.0.7.tgz#4e6085177e17f78007de176125b35631eaef6ec0"
-  integrity sha512-3eLq0eDZ/uB4wT64XX31WJYyw3HHpJcY55ACzbbrLV2A1OvuGTAxFIVu20CfyzYpzbXZWl3W4RL/59Jujr1UqA==
+"@sphido/link@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@sphido/link/-/link-1.0.8.tgz#647f6b7077d4bf1b403d5a22ee7e9fecaa5dc194"
+  integrity sha512-mkluJu/GGeHp+MnnSYNu/60+fYwr7LXS537CP4dnsfxo7IOIAf2yiax6zspIUYk3r3zmKgVoGrwbfqkaYFxVvA==
   dependencies:
     marked "^2.1.3"
 
-"@sphido/markdown@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@sphido/markdown/-/markdown-1.0.8.tgz#c2bac7bfd552af59ef62755b6e94784280b21db5"
-  integrity sha512-zTo6L5W9JO9Dx1ziF07pDNHvVMXmCitWQ//4uRolfd7bIguwC1/QGek9RYiJGMyVY0ZxqJoqKQSpk8GmqmEd0g==
+"@sphido/markdown@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@sphido/markdown/-/markdown-1.0.9.tgz#94f3ff561fcda3eb5ffb1c5af829b33d798243e6"
+  integrity sha512-lsnrifKFbduQkDuX1fHIzcCaKwvt7JGo0tiksczpDqeeSIyanA3kZVDEa4LrqjvtnOERjBU86dH3Qaxc+FjWIA==
   dependencies:
     marked "^2.1.3"
 
@@ -389,22 +389,22 @@
   dependencies:
     marked "^1.1.0"
 
-"@sphido/meta@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@sphido/meta/-/meta-1.0.6.tgz#396680313e06f1ec63a5065e0432d8b1d2e42b1d"
-  integrity sha512-X2Nm9cfFdNGM5V6+gqzfIVCr/s0zdKan5yg/MltLJGwCxb0ZRlDqWxv3tVs9fF9B9CUPusxbQipOTFz0lnqLJw==
+"@sphido/meta@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@sphido/meta/-/meta-1.0.7.tgz#1117e40b983d29b7a197104a525de647c230c088"
+  integrity sha512-KkLU9DN/o3ByjWY2JbA54OUEKDBqW7kArEo5XOnI5bE9f6FYcDZ9RKfaU0ZzH4miHdMZq/bE71n5HI+G/JTPdg==
   dependencies:
     "@sindresorhus/slugify" "^2.1.0"
 
-"@sphido/pagination@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@sphido/pagination/-/pagination-1.0.8.tgz#364019f48343085d8456f028838f21f59ae6e0ca"
-  integrity sha512-2EY2I6O5SJijP3F7Is7EG/wxl/jJsdp6lFHbzczbwMmcy3509F+/YfME353MNfCZn+qGvuN+KUOdGxNFady9ig==
+"@sphido/pagination@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@sphido/pagination/-/pagination-1.0.9.tgz#f4c332413c5ca972a43d5c467b341c9fb3d23500"
+  integrity sha512-YyyKR6291rLWEg+4zF/LON4zN7R2eZA3MozNQFV0KrjocCS6Z3FZiNFAzBI0ezfNmmK+p9HEJfPqySM6XNyzJA==
 
-"@sphido/sitemap@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-1.0.7.tgz#5b7d8837af25a8807e40567541dde5484510d86a"
-  integrity sha512-YMplqGij2n1JPhn4/Vm/0AmqcmDhQ5ftv0P1XPaEoCGD8/TLEp5RSX8xed5gGtw6aEMd8nWoYTi0Dkx9h3UZqw==
+"@sphido/sitemap@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-1.0.8.tgz#3415d9517686f4d5f215528d85ef79067130c888"
+  integrity sha512-NFfZsrRW79mptlhvvqxvGh/R3/zhPSmWPnDglYKDDy2jLfZ610jBK4kjrHtB11j84rvA32A+cR5UZxKa8wsu3Q==
 
 "@tailwindcss/aspect-ratio@^0.2.1":
   version "0.2.1"

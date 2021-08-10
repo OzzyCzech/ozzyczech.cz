@@ -23,7 +23,7 @@ Zoom lens
 Prime lens
 
 * [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf23mmf2-r-wr/)
-* [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf35mmf2-r-wr/)
+* [XF 35 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf35mmf2-r-wr/)
 
 ### and others...
 
