@@ -14,11 +14,16 @@ slug: photo
 
 ### Fuji lenses
 
-* [XF 16 mm f/1,4 R WR](https://fujifilm-x.com/global/products/lenses/xf16mmf14-r-wr/)
-* [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf23mmf2-r-wr/)
+Zoom lens
+
 * [XF 18-55mmF2.8-4 R LM OIS](https://fujifilm-x.com/global/products/lenses/xf18-55mmf28-4-r-lm-ois/)
 * [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
 * [XF 10-24mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
+
+Prime lens
+
+* [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf23mmf2-r-wr/)
+* [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf35mmf2-r-wr/)
 
 ### and others...
 
