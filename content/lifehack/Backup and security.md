@@ -46,6 +46,8 @@ tags: [backup, security]
 ## Cloud backup
 
 * [Backblaze](https://www.backblaze.com/) - low cost cloud storage, unlimited backup
+* [Wasabi](https://wasabi.com/) - 80% less then S3 from Amazon (1TB ~ 6 USD)
+* [Linode](https://www.linode.com/) - S3 Compatible storage
 * [Resilio](https://www.resilio.com/individuals/) - Share All Your Data Across All Your Devices with personal cloud
 * [CrashPlan](https://www.crashplan.com/en-us/)
 
