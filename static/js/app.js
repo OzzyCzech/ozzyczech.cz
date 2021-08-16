@@ -7,8 +7,21 @@ function showDate(date) {
 	);
 }
 
+function toggleMenu() {
+	const toggleButton = document.querySelector('[aria-expanded]');
+	toggleButton.addEventListener('click', (e) => {
+		e.preventDefault();
+		Array.from(document.querySelectorAll('[aria-hidden]')).forEach((item) => {
+			item.classList.toggle('hidden');
+		});
+	});
+}
+
 document.onreadystatechange = function () {
 	if (document.readyState == 'complete') {
+
+
+		toggleMenu();
 
 		// https://fusejs.io/ search
 

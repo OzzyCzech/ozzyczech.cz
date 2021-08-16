@@ -64,7 +64,18 @@ export default ({active, tags}) => {
 				<input className="form-control text-secondary w-100" id="q" name="q" type="search" placeholder="Search&hellip;" aria-label="Search"/>
 			</form>
 
-			<section className="mb-3">
+			<div className="mb-3 sm:hidden">
+				<button type="button" className="sm:hidden rounded inline-flex justify-center py-3 px-5 mb-1 block bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:bg-gray-800 focus:outline-none w-full" aria-expanded="false">
+					<svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
+					</svg>
+					<svg className="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="false">
+						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+					</svg>
+				</button>
+			</div>
+
+			<section className="mb-3 hidden md:block" aria-hidden="true">
 				<Link href="/" emoji="🚀">Home</Link>
 				<Link href="/photo" emoji="📷">Photography</Link>
 				<Link href="/gear" emoji="⚙️">Gear</Link>
@@ -89,7 +100,7 @@ export default ({active, tags}) => {
 				<Link href="/quotes" emoji="🪧">Quotes</Link>
 			</section>
 
-			{tags ? <section className="mb-3">
+			{tags ? <section className="mb-3 hidden md:block" aria-hidden="true">
 				<nav>
 					{[...tags.values()].map((tag, index) =>
 						<Tag key={index} slug={tag.slug} title={tag.title} count={tag.count}/>
