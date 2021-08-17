@@ -100,7 +100,7 @@ export default ({active, tags}) => {
 				<Link href="/quotes" emoji="🪧">Quotes</Link>
 			</section>
 
-			{tags ? <section className="mb-3 hidden md:block" aria-hidden="true">
+			{tags ? <section className="mb-3 hidden md:block text-center" aria-hidden="true">
 				<nav>
 					{[...tags.values()].map((tag, index) =>
 						<Tag key={index} slug={tag.slug} title={tag.title} count={tag.count}/>
