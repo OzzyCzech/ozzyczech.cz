@@ -38,7 +38,7 @@ export default ({active, tags}) => {
 		)
 	}
 
-	return (<aside>
+	return (<Fragment>
 			<section>
 				<div className="text-center">
 
@@ -108,6 +108,6 @@ export default ({active, tags}) => {
 				</nav>
 			</section> : ''}
 
-		</aside>
+		</Fragment>
 	);
 }

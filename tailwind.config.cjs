@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
 	purge: {
-		enabled: true,
+		enabled: process.env.VERCEL_ENV === 'production',
 		content: [
 			'./public/**/*.html',
 			'./src/**/*.js',
@@ -14,6 +14,9 @@ module.exports = {
 			colors: {
 				gray: colors.trueGray,
 				lime: colors.lime,
+			},
+			gridTemplateColumns: {
+				'300px': 'minmax(0, auto) 300px',
 			}
 		},
 	},

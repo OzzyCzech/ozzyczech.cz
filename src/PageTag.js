@@ -8,13 +8,16 @@ export default ({tag, posts, tags}) => {
 			<Header title={`OzzyCzech - tag #${tag}`}/>
 		</head>
 
-		<body className="antialiased leading-normal tracking-normal lg:container px-4 sm:px-6 xl:px-8 pt-10 pb-16 lg:pb-18 lg:mx-auto dark:bg-gray-900 dark:text-gray-100 min-h-screen">
+		<body className="antialiased leading-normal tracking-normal lg:container lg:mx-auto px-0 md:px-2 pt-5 pb-16 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
 
-		<div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-6">
+		<div className="grid grid-cols-1 md:grid-cols-300px gap-4 lg:gap-6">
 
-			<Aside active={`/tag/${tag}`} tags={tags}/>
+			<aside>
+				<Aside active={`/tag/${tag}`} tags={tags}/>
+			</aside>
 
-			<main className="lg:col-span-4 lg:order-first">
+
+			<main className="md:order-first">
 				<h1 className="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-blue-600 dark:text-lime-300 tracking-tight mb-8">#{tag}</h1>
 
 				<div className="mb-3">

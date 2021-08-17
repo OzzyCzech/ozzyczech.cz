@@ -11,21 +11,20 @@ export default ({posts, current, pages, tags}) => {
 	</head>
 
 
-	<body className="antialiased leading-normal tracking-normal lg:container px-4 sm:px-6 xl:px-8 pt-10 pb-16 lg:pb-18 lg:mx-auto dark:bg-gray-900 dark:text-gray-100 min-h-screen">
+	<body className="antialiased leading-normal tracking-normal lg:container lg:mx-auto px-0 md:px-2 pt-5 pb-16 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
 
+	<div className="grid grid-cols-1 md:grid-cols-300px gap-4 lg:gap-6">
 
-	<div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-6">
+		<aside>
+			<Aside tags={tags}/>
+		</aside>
 
-		<Aside tags={tags}/>
-
-		<main className="lg:col-span-4 lg:order-first">
-			{posts.map((page, index) =>
-				<Post page={page} key={index}/>
-			)}
+		<main className="md:order-first">
+			{posts.map((page, index) => <Post page={page} key={index}/>)}
 		</main>
 
-		<footer className="text-center lg:col-span-4">
-			<nav className="block">
+		<footer className="text-center">
+			<nav>
 				<ul className="inline-flex list-none flex-wrap">
 					{pages.map((pageNumber, index) =>
 						<li className="my-3" key={index}>
