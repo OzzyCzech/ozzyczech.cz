@@ -3,7 +3,6 @@
 ## macOS
 
 * [Homebrew](https://brew.sh/) - The missing package manager for macOS
-* [AdGuard](https://adguard.com/) - the world's most advanced ad blocker!
 
 ## Markdown editors
 
@@ -30,9 +29,13 @@
 ## Image editing
 
 * [Pixelmator Pro](https://www.pixelmator.com/pro/)
+* [Procreate](https://procreate.art/)
 * [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
 * [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
-* [Procreate](https://procreate.art/)
+
+## Digital diary
+
+* [Diarly](https://diarly.app/)
 
 ## Video editing
 
@@ -62,6 +65,7 @@
 * [Maccy](https://maccy.app/) - Clipboard manager for macOS which does one job - keep your copy history at hand. Period.
 * [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
 * [Kap](https://getkap.co/) - An open-source screen recorder built with web technology.
+* [Wipr](https://giorgiocalderolla.com/wipr.html) - ads blocker for iOS and macOS
 
 and much more here https://github.com/OzzyCzech/dotfiles
 
