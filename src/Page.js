@@ -23,9 +23,9 @@ export default ({page, tags}) => {
 			<div className="text-sm text-right text-gray-500">
 				<script className="bg-gray-600" dangerouslySetInnerHTML={{__html: `showDate(new Date('${page.date}'))`}}/>
 				<span className="mx-1">•</span>
-				<a href={`https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/master/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="hover:underline">raw</a>
+				<a href={`https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/main/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="hover:underline">raw</a>
 				<span className="mx-1">•</span>
-				<a href={`https://github.com/OzzyCzech/ozzyczech.cz/edit/master/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="hover:underline">edit</a>
+				<a href={`https://github.com/OzzyCzech/ozzyczech.cz/edit/main/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="hover:underline">edit</a>
 			</div>
 		</main>
 
