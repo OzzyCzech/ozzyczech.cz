@@ -17,4 +17,8 @@ slug: symbols
 
 `⌃` - Control (or Ctrl)
 
+`℃` - de
+
+`°` Degree Sign
+
 </div>
