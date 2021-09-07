@@ -60,15 +60,26 @@ Prime lens
 * [DXO PhotoLab](https://www.dxo.com/dxo-photolab/)
 * [Darktable](https://www.darktable.org/) - is open source and works on Linux, Mac, and Windows
 
+### Presets
+
+* [Capture One styles](https://www.captureone.com/en/products-plans/styles)
+* [300+ film emulation](https://www.presetpro.com/product/film-emulation-capture-one/)
+* [RNI](https://reallyniceimages.com/store.html)
+
 ### Image viewers & managers
 
 * [FileLoupe](https://www.fileloupe.com/)
 * [AcdSee](https://www.acdsee.com/en/index)
 * [Pixave](http://www.littlehj.com/mac/)
 
+### iOS Apps
+
+* [Glass](https://glass.photo/)
+
 ### Cloud storages
 
 * [Apple Photos](https://support.apple.com/photos)
+* [Backblaze](https://www.backblaze.com/)
 * [500px](https://web.500px.com/)
 * [Flickr](https://www.flickr.com/)
 * [SmugMug](https://www.smugmug.com/)
