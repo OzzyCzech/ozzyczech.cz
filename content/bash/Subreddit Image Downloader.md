@@ -14,7 +14,7 @@ Subreddit downoader is a **bash script** which:
 * support paging
 * is MacOS/Linux/Windows compatible
 
-```shell script
+```shell
 #!/usr/bin/env bash
 
 ###############################################################################
@@ -79,13 +79,13 @@ wait #wait for all background jobs to terminate
 
 ## Usage 
 
-```shell script
+```shell
 ./subreddit-download.sh <subreddit name> <directory> <pages>
 ```
 
 Download all images from [catpictures](https://www.reddit.com/r/catpictures/) subreddit:
 
-```shell script
+```shell
 ./subreddit-download.sh catpictures ./catpictures 5
 ```
 

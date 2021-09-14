@@ -15,7 +15,7 @@ example2=value
 
 then you can read this file like this:
 
-```shell script
+```shell
 #!/usr/bin/env bash
 
 set -o allexport

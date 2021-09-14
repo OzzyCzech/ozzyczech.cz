@@ -49,7 +49,7 @@ When a container is started for the first time it will execute
 files with extensions **.sh**, **.sql** and **.sql.gz** that are 
 found in `/docker-entrypoint-initdb.d`. Lets have follow `./etc/db/init.sh` script:
 
-```shell script
+```shell
 #!/bin/bash
 if [ -f /db/$MYSQL_DATABASE.sql ]; then
   mysql --protocol=socket -uroot -p -p"$MYSQL_ROOT_PASSWORD" $MYSQL_DATABASE < /db/$MYSQL_DATABASE.sql
@@ -64,26 +64,26 @@ Now it's time run `docker-compose up`
 
 ### Connect to database prompt
 
-```shell script
+```shell
 docker-compose exec \
  mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE'
 ```
 ### Backup database to SQL file
 
-```shell script
+```shell
 docker-compose exec \
  mariadb bash -c 'mysqldump -u root --password=$MYSQL_ROOT_PASSWORD  $MYSQL_DATABASE > /db/$MYSQL_DATABASE.sql'
 ```
 
 ### Restore database from SQL file
 
-```shell script
+```shell
 docker-compose exec \
 mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE < /db/$MYSQL_DATABASE.sql'
 ```
 
 ### Execute mysql_upgrade after upgrade
 
-```shell script
+```shell
 docker-compose exec mariadb bash -c 'mysql_upgrade -uroot -proot'
 ```

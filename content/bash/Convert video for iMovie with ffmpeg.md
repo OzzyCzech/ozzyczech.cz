@@ -9,13 +9,13 @@ tags: [bash, ffmpeg]
 You need to include the argument `-pix_fmt yuv420p` to generate `H.264` content for Apple 
 software/devices, and a bunch of other decoders that don't handle `yuv444p`.
 
-```shell script
+```shell
 ffmpeg -i input.avi -pix_fmt yuv420p output.mp4
 ```
 
 Apple added ProRes support sometime in late 2014 since iMovie 10 you can use follow code:
 
-```shell script
+```shell
 ffmpeg -i input.avi -c:v prores -c:a pcm_s16le output.mov
 ```
 

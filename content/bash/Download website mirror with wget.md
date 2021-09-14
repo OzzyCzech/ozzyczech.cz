@@ -6,7 +6,7 @@ tags: [wget]
 
 # Download website mirror with wget
 
-```shell script
+```shell
 wget --mirror \
      --convert-links \
      --adjust-extension \

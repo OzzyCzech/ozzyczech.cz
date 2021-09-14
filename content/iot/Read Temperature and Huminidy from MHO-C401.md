@@ -18,7 +18,7 @@ Every [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy)
 
 First check, if your `hcitool` can see your device with `hcitool dev`  command, then you can start `lescan` for other devices arroud.
 
-```bash
+```shell
 sudo hcitool lescan
 ```
 
@@ -40,7 +40,7 @@ As you can see from list my `MHO-C401`  have `A4:C1:38:4B:B7:FF` MAC address.
 
 We will use a Python to read the data from BLE - there are some great libraries for that, like [bluepy](https://github.com/IanHarvey/bluepy). Bluepy provide a comprehensive API to allow access to Bluetooth Low Energy devices.
 
-```bash
+```shell
 sudo apt-get install python3-pip libglib2.0-dev
 sudo pip3 install bluepy
 ```

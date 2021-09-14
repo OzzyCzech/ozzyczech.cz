@@ -8,7 +8,7 @@ tags: [ftp, macOS]
 
 Setup everyhing: `sudo subl /etc/ftpd.conf`
 
-```shell script
+```shell
 # match umask from Mac OS×Server ftpd
 umask all 022
 chroot GUEST /Users/roman/ftp
@@ -19,12 +19,12 @@ upload guest on
 
 Start FTP server
 
-```shell script
+```shell
 sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
 ```
 
 And stop again:
 
-```shell script
+```shell
 sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist
 ```

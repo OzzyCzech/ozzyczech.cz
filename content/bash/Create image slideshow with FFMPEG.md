@@ -9,7 +9,7 @@ tags: [bash, ffmpeg]
 Following will take all `*.jpg` images from current folder and create mp4 image slideshow.
 Images can have different sizes, [ffmpeg](https://www.ffmpeg.org/ffmpeg.html) will rescale or pad them.
 
-```shell script
+```shell
 ffmpeg -framerate 1/3 \
        -pattern_type glob -i '*.jpg' \
        -vf "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1" \
@@ -28,7 +28,7 @@ ffmpeg -framerate 1/3 \
 
  With background music:
 
-```shell script
+```shell
 ffmpeg -framerate 1/3 \
        -pattern_type glob -i '*.jpg' \
        -i audiofile.mp3 \

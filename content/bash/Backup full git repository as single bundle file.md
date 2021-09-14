@@ -14,7 +14,7 @@ then unbundle into another repository.
 Following bash function will clone repository and create one 
 signle bundle file with nice name:
 
-```shell script
+```shell
 #!/bin/bash
 
 function git_backup() {	
@@ -50,14 +50,14 @@ For more informtion view https://github.com/OzzyCzech/dotfiles
 You can use [GitHub API](https://developer.github.com/v3/repos/) to get list of all [user repos](https://api.github.com/users/OzzyCzech/repos).
 Then you have to apply all your bash magic power to getting right names from that.
 
-```shell script
+```shell
 curl -s https://api.github.com/users/OzzyCzech/repos | json_pp | grep full_name | cut -d\" -f4
 ```
 
 Or there are a number of tools specifically designed for the purpose of manipulating JSON from the command line. 
 One of the best seems to me [jq](https://stedolan.github.io/jq/)
 
-```shell script
+```shell
 for repo in $(curl -s https://api.github.com/users/OzzyCzech/repos | jq -r ".[].ssh_url")
 do  
   git backup $repo /Volumes/Backup/git
@@ -68,6 +68,6 @@ done;
 
 You can difectly clone repository from bundle file:
 
-```shell script
+```shell
 git clone my-super-file.bundle directory
 ```
