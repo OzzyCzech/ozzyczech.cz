@@ -20,7 +20,7 @@ git log master -- Casks/phpstorm.rb
 
 and you will get hashes of each commit (change) that was made in this formula:
 
-```
+```text
 commit d49e3f36f3c7844c580d04d46a71cfd5d10f56c3
 Author: jcbot <jcb@leipert.io>
 Date:   2020-07-22
@@ -70,7 +70,7 @@ cd homebrew-core
 git log --pretty="%h - %s" -10
 ```
 
-```
+```text
 71b2069 - Update to PHP 5.5.18
 b8aeb54 - Use homebrew's openssl for IMAP
 f0d721a - php56: improve phpdbg logic
