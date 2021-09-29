@@ -12,12 +12,11 @@ slug: js
 
 ## Bundlers
 
-* [Snowpack](https://www.snowpack.dev/) - the faster frontend build tool
-* [Webpack](https://webpack.js.org/) - Webpack is a module bundler for JavaScript 
-* [Parcel](https://parceljs.org/) - Blazing fast, zero configuration web application bundler
-* [Rollup.js](https://rollupjs.org/) - Rollup is a module bundler for JavaScript which compiles small pieces of code into a something larger and more complex, such as a library or application.
 * [esbuild](https://github.com/evanw/esbuild) - An extremely fast JavaScript bundler and minifier
 * [Vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool. It's fast.
+* [Snowpack](https://www.snowpack.dev/) - the faster frontend build tool
+* [Parcel](https://parceljs.org/) - Blazing fast, zero configuration web application bundler
+* [Webpack](https://webpack.js.org/) - Webpack is a module bundler for JavaScript 
 
 ## QA Tools
 
