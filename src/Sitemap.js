@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default ({posts, tags}) => {
 	return (
@@ -13,14 +13,14 @@ export default ({posts, tags}) => {
 					<loc>{post.link('https://ozzyczech.cz/')}</loc>
 					<lastmod>{post.date.toISOString()}</lastmod>
 					<priority>0.80</priority>
-				</url>
+				</url>,
 			)}
 			{[...tags].map((tag, index) =>
 				<url key={index}>
 					<loc>{'https://ozzyczech.cz/tag/' + tag.slug}</loc>
 					<lastmod>{new Date().toISOString()}</lastmod>
 					<priority>0.70</priority>
-				</url>
+				</url>,
 			)}
 		</urlset>);
 }

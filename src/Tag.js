@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React, {Fragment} from 'react';
 
 export default ({slug, title, count}) => {
 	return (

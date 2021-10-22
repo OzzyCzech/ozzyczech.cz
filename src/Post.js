@@ -1,6 +1,6 @@
-import React from 'react'
-import Tag from "./Tag.js";
-import slugify from "@sindresorhus/slugify";
+import React from 'react';
+import Tag from './Tag.js';
+import slugify from '@sindresorhus/slugify';
 
 export default ({page, single}) => {
 	return (

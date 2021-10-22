@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react'
-import {parse} from 'twemoji-parser'
-import Tag from "./Tag.js";
-import md5 from 'md5'
+import React, {Fragment} from 'react';
+import {parse} from 'twemoji-parser';
+import Tag from './Tag.js';
+import md5 from 'md5';
 
 // @see https://twemoji.maxcdn.com/2/test/preview.html
 
@@ -35,8 +35,8 @@ export default ({active, tags}) => {
 			<Fragment>
 				<img src={`https://www.gravatar.com/avatar/${md5(props.email)}?s=128`} className="inline object-cover my-2 w-128 h-128 rounded-full" alt="Roman Ožana"/>
 			</Fragment>
-		)
-	}
+		);
+	};
 
 	return (<Fragment>
 			<section>
@@ -103,7 +103,7 @@ export default ({active, tags}) => {
 			{tags ? <section className="mb-3 hidden md:block text-center" aria-hidden="true">
 				<nav>
 					{[...tags.values()].map((tag, index) =>
-						<Tag key={index} slug={tag.slug} title={tag.title} count={tag.count}/>
+						<Tag key={index} slug={tag.slug} title={tag.title} count={tag.count}/>,
 					)}
 				</nav>
 			</section> : ''}

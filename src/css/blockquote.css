@@ -14,8 +14,9 @@ blockquote em {
 }
 
 blockquote em::before {
-	content:"» "
+	content: "» "
 }
+
 blockquote em::after {
 	content: " «";
 }

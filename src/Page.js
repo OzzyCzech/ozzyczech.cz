@@ -1,7 +1,7 @@
-import React from 'react'
-import Aside from './Aside.js'
-import Header from './Header.js'
-import Post from "./Post.js";
+import React from 'react';
+import Aside from './Aside.js';
+import Header from './Header.js';
+import Post from './Post.js';
 
 export default ({page, tags}) => {
 	return (<html lang="cs" dir="ltr" className="dark">

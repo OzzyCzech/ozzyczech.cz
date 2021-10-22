@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React, {Fragment} from 'react';
 
 export default ({title}) => {
 	return (<Fragment>
@@ -30,5 +30,5 @@ export default ({title}) => {
 			<link rel="stylesheet" href="/css/style.css"/>
 			<script src="/js/app.js"></script>
 		</Fragment>
-	)
+	);
 };
