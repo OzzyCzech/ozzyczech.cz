@@ -25,7 +25,6 @@
 		"@sphido/frontmatter": "^1.0.7",
 		"@sphido/link": "^1.0.9",
 		"@sphido/markdown": "^1.0.10",
-		"@sphido/marked": "^0.0.7",
 		"@sphido/meta": "^1.0.7",
 		"@sphido/pagination": "^1.0.9",
 		"@sphido/sitemap": "^1.0.8",
