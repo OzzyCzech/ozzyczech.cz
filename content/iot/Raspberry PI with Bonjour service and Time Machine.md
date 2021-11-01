@@ -19,7 +19,7 @@ sudo raspi-config
 ```
 
 1. Change User Password :-) ([default user](https://www.raspberrypi.org/documentation/linux/usage/users.md) `pi` with password `raspberry`)
-2. Change *Localisation Options*...
+2. Change *Localisation Options*... select `en_US.utf8` and whatever else
 3. Enable SSH in *Interfacing Options*...
 4. Configure WiFi in *Network Options* and change *Hostname* (in my case to **pi**)
 
@@ -36,6 +36,14 @@ network={
 	scan_ssid=1
 	psk="and password :)"
 }
+```
+
+If your language characters are still wrong (square), you have to reconfigure locales again:
+
+```
+sudo dpkg-reconfigure locales
+sudo dpkg-reconfigure console-setup
+sudo dpkg-reconfigure keyboard-configuration
 ```
 
 Reboot (`sudo reboot`) and then check with `iwgetid` if you are connected to your Wifi!
