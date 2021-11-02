@@ -2,14 +2,14 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "yarn build:content && yarn build:css",
-		"build:content": "node --experimental-modules --experimental-loader @node-loader/babel index.js",
+		"build:content": "node --experimental-modules --loader babel-register-esm index.js",
 		"build:css": "postcss src/css/index.css -o public/css/style.css",
 		"start": "watch ./index.js ./content ./src ./static | serve public"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.15.8",
-		"@babel/preset-react": "^7.14.5",
-		"@node-loader/babel": "^1.1.0",
+		"@babel/core": "^7.16.0",
+		"@babel/preset-react": "^7.16.0",
+		"babel-register-esm": "^1.2.1",
 		"serve": "^12.0.1",
 		"watch": "^1.0.2"
 	},
@@ -29,11 +29,12 @@
 		"@sphido/pagination": "^1.0.9",
 		"@sphido/sitemap": "^1.0.8",
 		"@tailwindcss/aspect-ratio": "^0.3.0",
-		"autoprefixer": "^10.3.7",
+		"autoprefixer": "^10.4.0",
+
 		"cssnano": "^5.0.8",
 		"fs-extra": "^10.0.0",
 		"globby": "^12.0.2",
-		"marked": "^3.0.7",
+		"marked": "^3.0.8",
 		"md5": "^2.3.0",
 		"postcss": "^8.3.11",
 		"postcss-cli": "^9.0.1",
@@ -41,7 +42,7 @@
 		"prismjs": "^1.25.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
-		"tailwindcss": "^2.2.17",
+		"tailwindcss": "^2.2.19",
 		"twemoji-parser": "^13.1.0"
 	}
 }

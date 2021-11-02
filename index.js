@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-modules --experimental-loader @node-loader/babel
+#!/usr/bin/env node --experimental-modules --loader babel-register-esm
 
 import path from 'path';
 import fs from 'fs-extra';
