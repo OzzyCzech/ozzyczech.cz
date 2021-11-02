@@ -30,8 +30,7 @@
 		"@sphido/sitemap": "^1.0.8",
 		"@tailwindcss/aspect-ratio": "^0.3.0",
 		"autoprefixer": "^10.4.0",
-
-		"cssnano": "^5.0.8",
+		"cssnano": "^5.0.9",
 		"fs-extra": "^10.0.0",
 		"globby": "^12.0.2",
 		"marked": "^3.0.8",
