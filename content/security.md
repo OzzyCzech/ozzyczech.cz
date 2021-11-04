@@ -52,7 +52,9 @@ tags: [backup, security]
 ### NAS Storages
 
 * [Synology](https://www.synology.com) - any of the [plus products](https://www.synology.com/cs-cz/products)
+* [TrueNAS](https://www.truenas.com/) - Open Storage Means
 * [NextCloud](https://nextcloud.com/) - The self-hosted productivity platform
+* [Unraid](https://unraid.net/)
 
 ### Desktop backup
 
