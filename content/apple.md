@@ -42,6 +42,7 @@
 * [Luma Touch](https://luma-touch.com/) - iOS
 * [iMovie](https://www.apple.com/imovie/) - free video editor for mac
 * [Final Cut Pro](https://www.apple.com/final-cut-pro/) - best for mac
+* [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Free video editor for Windows/macOS
 
 ## Command Line Apps
 
