@@ -40,8 +40,9 @@ slug: awesome
 
 ## Payment services
 
-- [Braintree](https://www.braintreepayments.com)
+- [Paddle](https://paddle.com/)
 - [Stripe](https://stripe.com/)
+- [Braintree](https://www.braintreepayments.com)
 
 ## Regex testers
 
