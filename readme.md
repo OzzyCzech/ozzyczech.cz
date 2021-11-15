@@ -6,3 +6,7 @@ View: https://ozzyczech.cz
 
 * web: www.omdesign.cz
 * mail: roman@omdesign.cz
+
+## TODO
+
+- add search https://github.com/nextapps-de/flexsearch
