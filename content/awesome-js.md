@@ -8,7 +8,6 @@ slug: js
 ## Editors
 
 * [Visual Studio Code](https://code.visualstudio.com/download) - Free and open source. Integrated Git, debugging and extensions.
-* [Atom](https://atom.io/) - A hackable text editor for the 21st Century
 
 ## Bundlers
 
@@ -29,6 +28,11 @@ slug: js
 * [Yarn](https://yarnpkg.com/lang/en/) - Fast, reliable, and secure dependency management
 * [NPM](https://www.npmjs.com/) - package management
 
+## Fetch
+
+* [Axios.js](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+* [Got](https://github.com/sindresorhus/got) - Human-friendly and powerful HTTP request library for Node.js
+
 ## Testing
 
 ### Frameworks
@@ -46,7 +50,7 @@ slug: js
 ### Test runners
 
 * [puppeteer](https://pptr.dev/) - Headless Chrome Node.js API by official Google Chrome team.
-
+* 
 ## Devstack
 
 * [Neutrino](https://github.com/mozilla-neutrino/neutrino-dev) - Create and build modern JavaScript applications with zero initial configuration. 
