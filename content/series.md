@@ -67,3 +67,4 @@ slug: series
 * [Ren a Stimpy](https://www.imdb.com/title/tt0101178/)
 * [Courage the Cowardly Dog](https://www.imdb.com/title/tt0220880)
 * [Cow and Chicken](https://www.imdb.com/title/tt0118289/)
+* [Regular Show](https://www.imdb.com/title/tt1710308/)
