@@ -326,19 +326,17 @@
   dependencies:
     js-yaml "^4.1.0"
 
-"@sphido/link@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@sphido/link/-/link-1.0.9.tgz#55e90aaa8cfe52224770a943b29aefa4597d1488"
-  integrity sha512-7W/kFe/W46E1Wg4KGylQN0K/XjN7Vi0pO8XCU0icr5YgvdofBPmJSQHAkXoTQFb01BqP++uQNKYXE1M0Hoq0Qg==
-  dependencies:
-    marked "^3.0.4"
+"@sphido/link@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@sphido/link/-/link-1.0.11.tgz#1aa370247f8af17f3055d45f95a5b5ea7a110773"
+  integrity sha512-rn6rh+dl+OBolc8Q3kdiyJAO1nKjYJJ29HnupU14NMHwrM6PH6h5yPwMBHqSiE0D4I+iTbG+kcVgYo589pQxKA==
 
-"@sphido/markdown@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@sphido/markdown/-/markdown-1.0.10.tgz#fbf64ccd688c8ffe00ccde4c65d24b8b452c79cd"
-  integrity sha512-pCeGPM8idQw+J3t/xe69Get5ynqLnKK0FfptW60EtBXmkZ8bXQqk/86Pf6H9X/TUBh8ALWs3d/LQfEffBXarRg==
+"@sphido/markdown@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@sphido/markdown/-/markdown-1.0.11.tgz#85019d483e94d69af0df2059c00765e191d42cf1"
+  integrity sha512-E2wFyRFLg1XhmSkaSr4zJDDDOnkHeGL7mqMJx9cWpb07d2I89tcZXDWehxzA67Sk090vGaOx1G9KaoaLpiaJYw==
   dependencies:
-    marked "^3.0.4"
+    marked "^4.0.5"
 
 "@sphido/meta@^1.0.7":
   version "1.0.7"
@@ -1484,11 +1482,6 @@ loose-envify@^1.1.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
-
-marked@^3.0.4:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-3.0.8.tgz#2785f0dc79cbdc6034be4bb4f0f0a396bd3f8aeb"
-  integrity sha512-0gVrAjo5m0VZSJb4rpL59K1unJAMb/hm8HRXqasD8VeC8m91ytDPMritgFSlKonfdt+rRYYpP/JfLxgIX8yoSw==
 
 marked@^4.0.5:
   version "4.0.5"
