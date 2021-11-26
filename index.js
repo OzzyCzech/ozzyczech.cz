@@ -41,7 +41,7 @@ import {markdown, options, renderer} from '@sphido/markdown';
 
 const domain = new URL('https://ozzyczech.cz/');
 
-// syntax geighlight with prism
+// syntax highlights with prism
 options(
 	{
 		highlight: (code, lang) => {
@@ -57,7 +57,7 @@ renderer(
 	{
 		paragraph: (text) => `<p class="mb-3">${text}</p>`,
 
-		list: (body, order, start) => `<${order ? 'ol' : 'ul'} class="${order ? 'list-decimal' : 'list-disc'} ml-6 mb-3">${body}</${order ? 'ol' : 'ul'}>`,
+		list: (body, order) => `<${order ? 'ol' : 'ul'} class="${order ? 'list-decimal' : 'list-disc'} ml-6 mb-3">${body}</${order ? 'ol' : 'ul'}>`,
 
 		table: (header, body) => `<table class="table">${header}${body}</table>`,
 
