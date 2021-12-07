@@ -21,16 +21,6 @@
 - https://freephotos.cc/
 - https://www.pxfuel.com/
 
-#### Payments services
-
-* https://www.braintreepayments.com (1,9% + €0,30)
-* https://stripe.com/
-
-#### Electron
-
-- http://electron.atom.io
-- http://photonkit.com
-
 #### Wordpress Themes
 
 - https://wordpress.org/themes/
@@ -56,6 +46,12 @@
 - https://telegra.ph/ - Post anything online
 - https://httpbin.org/ - A simple HTTP Request & Response Service.
 
+
+### Social networks debug tools
+
+- [Facebook](https://developers.facebook.com/tools/debug/)
+- [LinkedIn](https://www.linkedin.com/post-inspector/inspect/)
+- [Twitter](https://cards-dev.twitter.com/validator)
 
 ### HTTPS Tools
 
