@@ -8,22 +8,24 @@ slug: photo
 
 ### Fuji cameras
 
-* [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/)
 * [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
+* [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/)
 * [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 
 ### Fuji lenses
 
-Zoom lens
-
-* [XF 18-55mmF2.8-4 R LM OIS](https://fujifilm-x.com/global/products/lenses/xf18-55mmf28-4-r-lm-ois/)
 * [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
-* [XF 10-24mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
 
-Prime lens
+#### F2
 
 * [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf23mmf2-r-wr/)
 * [XF 35 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf35mmf2-r-wr/)
+
+#### F1.4
+
+* [XF18mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
+* [XF23mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
+* [XF33mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
 
 ### and others...
 
