@@ -35,9 +35,9 @@ slug: photo
 
 ### Action cameras
 
-* [GoPro HERO9 Black](https://gopro.com/en/cz/shop/cameras/hero9-black/CHDHX-901-master.html)
+* [GoPro HERO10 Black](https://gopro.com/en/cz/shop/cameras/hero10-black/CHDHX-101-master.html)
+* [DJI Osmo Action 2](https://www.dji.com/cz/dji-action-2)
 * [DJI Osmo Pocket](https://www.dji.com/cz/osmo-pocket)
-* [DJI Osmo Action](https://www.dji.com/cz/osmo-action)
 
 ### Mini-tripods
 
