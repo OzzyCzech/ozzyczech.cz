@@ -153,14 +153,13 @@ renderer(
 		);
 	}
 
-	// index.json for https://fusejs.io/
-	await fs.outputFile('public/index.json', JSON.stringify(
+	await fs.outputFile('public/algolia.json', JSON.stringify(
 		posts.map(
 			page => ({
 				title: page.title,
 				content: page.content.replace(/(<([^>]+)>)/ig, ''),
-				link: page.link(domain),
-				tags: [...page.tags],
+				permalink: page.link(domain),
+				_tags: [...page.tags],
 			}),
 		),
 	));
