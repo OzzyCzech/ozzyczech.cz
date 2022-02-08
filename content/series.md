@@ -3,6 +3,10 @@ title: Seriály
 slug: series
 ---
 
+## 2022
+
+* [Sopranos](https://www.imdb.com/title/tt0141842/)
+
 ## 2021
 
 * [Devs](https://www.imdb.com/title/tt8134186/)

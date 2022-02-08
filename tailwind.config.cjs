@@ -1,23 +1,20 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-	purge: {
-		enabled: process.env.VERCEL_ENV === 'production',
-		content: [
-			'./public/**/*.html',
-			'./src/**/*.js',
-		]
-	},
+	content: [
+		'./public/**/*.html',
+		'./src/**/*.js',
+	],
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
 		extend: {
 			colors: {
-				gray: colors.trueGray,
+				gray: colors.neutral,
 				lime: colors.lime,
 			},
 			gridTemplateColumns: {
 				'300px': 'minmax(0, auto) 300px',
-			}
+			},
 		},
 	},
 	variants: {
@@ -26,4 +23,4 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
 	],
-}
+};
