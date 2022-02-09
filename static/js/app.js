@@ -1,9 +1,11 @@
-/* global dateFns */
+// for the search only version
+import Fuse from 'https://cdn.jsdelivr.net/npm/fuse.js@6.5.3/dist/fuse.esm.js'
+import {dateFns} from 'https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js'
 
 function showDate(date) {
 	document.currentScript.insertAdjacentHTML(
-		"beforebegin",
-		`${dateFns.distanceInWords(date, new Date())} at ${new Intl.DateTimeFormat().format(date)}`
+		'beforebegin',
+		`${dateFns.distanceInWords(date, new Date())} at ${new Intl.DateTimeFormat().format(date)}`,
 	);
 }
 
@@ -19,14 +21,12 @@ function toggleMenu() {
 
 document.onreadystatechange = function () {
 	if (document.readyState == 'complete') {
-
-
 		toggleMenu();
 
 		// https://fusejs.io/ search
 
 		(async () => {
-			const response = await fetch('/index.json');
+			const response = await fetch('/fuse.json');
 			const index = await response.json();
 
 			const fuse = new Fuse(index, {

@@ -61,7 +61,9 @@ export default ({active, tags}) => {
 			</section>
 
 			<form className="" method="get" id="search" hidden>
-				<input className="form-control text-secondary w-100" id="q" name="q" type="search" placeholder="Search&hellip;" aria-label="Search"/>
+				<div className="pb-2 relative mx-auto text-gray-600">
+					<input className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg rounded focus:outline-none" type="search" name="search" placeholder="Search" id="search-box"/>
+				</div>
 			</form>
 
 			<div className="mb-3 sm:hidden">
