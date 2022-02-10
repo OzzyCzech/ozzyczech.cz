@@ -81,7 +81,7 @@ export default ({active, tags}) => {
 				<Link href="/" emoji="🚀">Home</Link>
 				<Link href="/photo" emoji="📷">Photography</Link>
 				<Link href="/gear" emoji="⚙️">Gear</Link>
-				<Link href="/awesome" emoji="💄">Awesome</Link>
+				<Link href="/awesome" emoji="💄">Awesome list</Link>
 				<Link href="/security" emoji="🔐">Security Checklist</Link>
 				<Link href="/apple">
 					<svg
