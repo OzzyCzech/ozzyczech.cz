@@ -14,4 +14,4 @@ tags: [lifehack, email]
 * [Protonmail](https://protonmail.com/) - Secure Email Based in Switzerland from 4€/month
 
 
-You can reate free email aliases for your domain name with https://improvmx.com/
+You can create free email aliases for your domain name with https://improvmx.com/

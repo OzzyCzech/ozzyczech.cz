@@ -1,16 +1,14 @@
 blockquote {
-	@apply text-xl italic;
-	@apply rounded-xl px-10 py-8 my-8;
+	@apply px-10 py-8 my-8;
 	@apply bg-gray-100 dark:bg-gray-900;
 }
 
-blockquote p.mb-3:last-of-type {
-	@apply mb-0 important;
+blockquote p:last-of-type {
+	@apply m-0 important;
 }
 
 blockquote em {
 	@apply block text-right mt-3 text-sm text-gray-600 dark:text-gray-400;
-
 }
 
 blockquote em::before {

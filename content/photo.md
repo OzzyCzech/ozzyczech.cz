@@ -1,6 +1,5 @@
 ---
 title: Photography
-date: 2020-05-28
 slug: photo
 ---
 

@@ -55,21 +55,6 @@ options(
 
 renderer(
 	{
-		paragraph: (text) => `<p class="mb-3">${text}</p>`,
-
-		list: (body, order) => `<${order ? 'ol' : 'ul'} class="${order ? 'list-decimal' : 'list-disc'} ml-6 mb-3">${body}</${order ? 'ol' : 'ul'}>`,
-
-		table: (header, body) => `<table class="table">${header}${body}</table>`,
-
-		heading: (text, level, raw, slugger) => ({
-			1: `<h1 id="${slugger.slug(raw)}">${text}</h1>`,
-			2: `<h2 id="${slugger.slug(raw)}" class="text-2xl lg:text-4xl font-bold lg:mb-4">${text}</h2>`,
-			3: `<h3 id="${slugger.slug(raw)}" class="text-xl lg:text-3xl mb-4">${text}</h3>`,
-			4: `<h4 id="${slugger.slug(raw)}" class="lg:text-2xl mb-3">${text}</h4>`,
-			5: `<h5 id="${slugger.slug(raw)}" class="font-bold mb-3">${text}</h5>`,
-			6: `<h6 id="${slugger.slug(raw)}" class="font-bold mb-3">${text}</h6>`,
-		})[level],
-
 		image: (href, title, text) => {
 			const className = new URL(href, domain).hash.substring(1).replace(/[_]/g, ' ');
 			return `<div class=" ${className ? className : 'flex justify-center my-3'}">
@@ -102,7 +87,7 @@ renderer(
 				// @see https://github.com/markedjs/marked/issues/458 - waiting for async
 			}
 
-			return `<a href="${href}" title="${title ? title : ''}" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">${text}</a>`;
+			return `<a href="${href}" title="${title ? title : ''}" target="_blank">${text}</a>`;
 		},
 	},
 );

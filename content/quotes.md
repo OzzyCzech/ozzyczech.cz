@@ -4,7 +4,7 @@ title: Quotes
 
 # Quotes
 
-> You can never make the same mistake twice because the second time you make it, it's not a mistake, it's a choice.
+> You can never make the **same mistake twice** because the second time you make it, it's not a mistake, it's a choice.
 > *Steven Denn*
 
 > Nemysli. Když myslíš, tak nemluv. Když mluvíš, tak nepiš.

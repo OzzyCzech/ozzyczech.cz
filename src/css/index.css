@@ -1,6 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "code.css";
 @import "blockquote.css";
+@import "code.css";
 @import "emoji.css";

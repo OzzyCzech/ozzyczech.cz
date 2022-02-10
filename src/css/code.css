@@ -1,10 +1,4 @@
 pre {
-	@apply text-white bg-black dark:bg-gray-900 dark:bg-opacity-80 rounded-xl;
-	@apply overflow-hidden overflow-x-auto;
-	@apply p-4 my-6 leading-snug;
-	@apply font-mono text-left leading-6;
-	@apply break-normal;
-	@apply whitespace-pre !important;
 	hyphens: none;
 	tab-size: 2;
 }
@@ -64,23 +58,3 @@ pre {
 .token.entity {
 	cursor: help;
 }
-
-
-/*
-:not(pre) > code[class*=language-],
-pre[class*=language-] {
-	background-color: var(--background-heighlight-color-darker);
-	border-color: var(--border-color-dark);
-}
-*/
-
-:not(pre) > code {
-	@apply select-all;
-	@apply font-mono;
-	@apply dark:bg-gray-900;
-	@apply rounded;
-	@apply inline-block;
-	@apply px-1;
-	color: rgb(232, 121, 249);
-}
-

@@ -18,7 +18,10 @@ export default ({tag, posts, tags}) => {
 
 
 			<main className="md:order-first">
-				<h1 className="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-blue-600 dark:text-lime-300 tracking-tight mb-8">#{tag}</h1>
+				<div className="prose lg:prose-xl dark:prose-invert">
+					<h1>#{tag}</h1>
+				</div>
+				<h1 className="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-blue-600 dark:text-lime-300 tracking-tight mb-8"></h1>
 
 				<div className="mb-3">
 					{posts.map((post, index) =>

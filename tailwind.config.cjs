@@ -15,6 +15,27 @@ module.exports = {
 			gridTemplateColumns: {
 				'300px': 'minmax(0, auto) 300px',
 			},
+
+			typography: ({theme}) => ({
+				DEFAULT: {
+					css: {
+						'blockquote p:first-of-type::before': {content: ''},
+						'blockquote p:last-of-type::after': {content: ''},
+					},
+				},
+				invert: {
+					css: {
+						'--tw-prose-links': theme('colors.blue[400]'),
+						'--tw-prose-code': theme('colors.pink[400]'),
+					},
+				},
+				gray: {
+					css: {
+						'--tw-prose-links': theme('colors.blue[600]'),
+						'--tw-prose-code': theme('colors.pink[400]'),
+					},
+				},
+			}),
 		},
 	},
 	variants: {
@@ -22,5 +43,6 @@ module.exports = {
 	},
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/typography'),
 	],
 };
