@@ -59,7 +59,7 @@
 
 ## Tools
 
-* [Lungo](https://sindresorhus.com/lungo) -  Prevent your Mac from going to sleep
+* [KeepingYouAwake](https://keepingyouawake.app/) -  Prevents your Mac from going to sleep
 * [Easy New File](https://itunes.apple.com/us/app/easy-new-file/id1162194131?ls=1&mt=12) - Finder extensions for create new File
 * [New File Menu](https://itunes.apple.com/us/app/new-file-menu/id1064959555) - finder extensions for create new File
 * [iCal Státní svátky ČR](webcal://www.google.com/calendar/ical/czech__cs%40holiday.calendar.google.com/public/basic.ics)
