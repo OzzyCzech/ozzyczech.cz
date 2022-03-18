@@ -58,7 +58,3 @@ pre {
 .token.entity {
 	cursor: help;
 }
-
-:not(pre) > code {
-	@apply select-all;
-}
