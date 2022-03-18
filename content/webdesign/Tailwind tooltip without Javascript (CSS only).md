@@ -41,7 +41,6 @@ Then you have to add follow code to your `tailwind.css` file:
     @apply after:mb-2.5 after:-translate-x-1/2 before:-translate-x-1/2;
     @apply before:content-[''] before:border-[5px] before:border-transparent before:border-t-gray-900 dark:before:border-t-gray-500 before:w-0 before:h-0;
     @apply hover:before:opacity-100 hover:after:opacity-100;
-    @apply hover:before:bottom-full hover:after:bottom-full;
   }
 }
 ```
@@ -55,4 +54,4 @@ Tooltip is fully customizable right from HTML:
   aria-label="Show red tooltip">Example button</button>
 ```
 
-https://play.tailwindcss.com/VKQ44KqUCz
+https://play.tailwindcss.com/V0oMqeJku6
