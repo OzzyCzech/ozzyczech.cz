@@ -12,7 +12,9 @@ You can easily add tooltips to your elements without JavaScript and in just a fe
 <div class="dark">
   <div class="py-64 text-center dark:bg-gray-800">
     <p class="dark:text-gray-200 pb-3">Hover over button to show tooltip</p>
-    <button aria-label="Show tooltip content" class="px-4 py-2 border dark:border-gray-700 rounded bg-blue-600 text-white font-semibold text-sm shadow">Example button</button>
+    <button 
+      class="px-4 py-2 border dark:border-gray-700 rounded bg-blue-600 text-white font-semibold text-sm shadow"
+      aria-label="Show tooltip content">Example button</button>
   </div>
 </div>
 ```
