@@ -51,5 +51,4 @@ Tooltip is fully customizable right from HTML:
 <button aria-label="Show red tooltip" class="tooltip after:!bg-red-600 before:!border-t-red-600">Example button</button>
 ```
 
-
 https://play.tailwindcss.com/VKQ44KqUCz
