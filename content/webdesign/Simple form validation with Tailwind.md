@@ -11,7 +11,7 @@ See the [pseudo-class reference](https://tailwindcss.com/docs/hover-focus-and-ot
 list of available pseudo-class modifiers. 
 
 But what if user just loaded website and there are `required` inputs with default (empty) value?
-They will be immediately red and `invalid`! That's not what you expect!
+They will be immediately red and `invalid` - that's not what you expect!
 
 ```html
 <input type="url" class="invalid:bg-red-500" value="" required />
