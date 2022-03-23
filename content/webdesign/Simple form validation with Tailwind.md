@@ -32,15 +32,15 @@ Let's crate following Javascript (sort of polyfill):
  * @see https://caniuse.com/?search=user-invalid
  */
 try {
-	if (typeof window !== 'undefined') {
-		document.querySelector(':user-invalid');
-	}
+  if (typeof window !== 'undefined') {
+    document.querySelector(':user-invalid');
+  }
 } catch {
-	document.addEventListener('DOMContentLoaded', () => {
-		for (const input of document.querySelectorAll('input')) {
-			input.addEventListener('change', event => event.target.classList.add('dirty'));
-		}
-	});
+  document.addEventListener('DOMContentLoaded', () => {
+    for (const input of document.querySelectorAll('input')) {
+      input.addEventListener('change', event => event.target.classList.add('dirty'));
+    }
+  });
 }
 ```
 
@@ -51,9 +51,9 @@ requires [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms) 
 ```css
 /* invalid and dirty or :user*/
 :is(input:user-invalid, input.dirty) {
-	@apply invalid:focus:ring-red-100 invalid:focus:dark:ring-red-500 invalid:focus:dark:ring-opacity-30;
-	@apply invalid:dark:bg-red-800/20 invalid:dark:border-red-900;
-	@apply invalid:bg-red-50 invalid:border-red-300;
+  @apply invalid:focus:ring-red-100 invalid:focus:dark:ring-red-500 invalid:focus:dark:ring-opacity-30;
+  @apply invalid:dark:bg-red-800/20 invalid:dark:border-red-900;
+  @apply invalid:bg-red-50 invalid:border-red-300;
 }
 ```
 
@@ -63,30 +63,30 @@ and full CSS example:
 @tailwind base;
 
 @layer base {
- [type='text'],
-	[type='email'],
-	[type='url'],
-	[type='password'],
-	[type='number'],
-	[type='date'],
-	[type='datetime-local'],
-	[type='month'],
-	[type='search'],
-	[type='tel'],
-	[type='time'],
-	[type='week'],
-	[multiple],
-	textarea,
-	select {
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
     @apply block w-full rounded-md shadow-sm;
-		@apply border-gray-300 focus:border-blue-300;
-		@apply dark:bg-gray-700 dark:border-gray-600 dark:text-white;
-		@apply placeholder-gray-500 dark:placeholder-gray-400;
-		@apply dark:border-gray-600 dark:focus:border-gray-500;
+    @apply border-gray-300 focus:border-blue-300;
+    @apply dark:bg-gray-700 dark:border-gray-600 dark:text-white;
+    @apply placeholder-gray-500 dark:placeholder-gray-400;
+    @apply dark:border-gray-600 dark:focus:border-gray-500;
 
-		@apply focus:ring;
-		@apply focus:ring-blue-200 dark:focus:ring-gray-600;
-		@apply focus:ring-opacity-50 dark:focus:ring-opacity-50;
+    @a,pply focus:ring;
+    @apply focus:ring-blue-200 dark:focus:ring-gray-600;
+    @apply focus:ring-opacity-50 dark:focus:ring-opacity-50;
   }
 }
 
@@ -95,9 +95,9 @@ and full CSS example:
 
 /* invalid and dirty or :user*/
 :is(input:user-invalid, input.dirty) {
-	@apply invalid:focus:ring-red-100 invalid:focus:dark:ring-red-500 invalid:focus:dark:ring-opacity-30;
-	@apply invalid:dark:bg-red-800/20 invalid:dark:border-red-900;
-	@apply invalid:bg-red-50 invalid:border-red-300;
+  @apply invalid:focus:ring-red-100 invalid:focus:dark:ring-red-500 invalid:focus:dark:ring-opacity-30;
+  @apply invalid:dark:bg-red-800/20 invalid:dark:border-red-900;
+  @apply invalid:bg-red-50 invalid:border-red-300;
 }
 ```
 
