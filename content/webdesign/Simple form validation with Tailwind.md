@@ -46,7 +46,18 @@ try {
 
 This code adds a `dirty` class to all changed input fields, which helps us to *simulate* the `:user-invalid` pseudo-class and clearly mark all inputs that have been changed by the user.
 Then you can easily distinguish between changed and unchanged inputs that are invalid. Following [Tailwind code](https://tailwindcss.com/docs/hover-focus-and-other-states#invalid) 
-requires [tailwindcss-forms plugin](https://github.com/tailwindlabs/tailwindcss-forms):
+requires [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms) plugin:
+
+```css
+/* invalid and dirty or :user*/
+:is(input:user-invalid, input.dirty) {
+	@apply invalid:focus:ring-red-100 invalid:focus:dark:ring-red-500 invalid:focus:dark:ring-opacity-30;
+	@apply invalid:dark:bg-red-800/20 invalid:dark:border-red-900;
+	@apply invalid:bg-red-50 invalid:border-red-300;
+}
+```
+
+and full CSS example:
 
 ```css
 @tailwind base;
