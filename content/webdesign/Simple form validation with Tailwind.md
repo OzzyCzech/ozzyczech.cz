@@ -17,7 +17,7 @@ They will be immediately red and `invalid` - that's not what you expect!
 <input type="url" class="invalid:bg-red-500" value="" required />
 ```
 
-You should wait with input validation to user. That's why the CSS pseud-class `:user-invalid` exists
+You should wait with input validation to user. That's why the CSS pseud-class [`:user-invalid`](https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid) exists
 This class represents any validated form element whose value isn't valid based on their validation constraints,
 after the user has interacted with it. Right now `:user-invalid` pseudo-class isn't very well 
 supported - [works only in Firefox](https://caniuse.com/?search=user-invalid).
@@ -28,7 +28,6 @@ Let's crate following Javascript (sort of polyfill):
 /**
  * Form validation for older browsers
  *
- * @see https://www.html5rocks.com/en/tutorials/forms/constraintvalidation/
  * @see https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid
  * @see https://caniuse.com/?search=user-invalid
  */
