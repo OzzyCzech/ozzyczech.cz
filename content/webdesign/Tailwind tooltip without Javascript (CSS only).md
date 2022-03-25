@@ -51,7 +51,7 @@ Then you have to add follow code to your `tailwind.css` file:
 
   :where([aria-label]) {
     @apply dark:after:bg-gray-500 after:bg-gray-900 after:text-white after:text-sm after:rounded after:py-1 after:px-2;
-    @apply before:border-t-gray-900 dark:before:border-t-gray-500 before:border-transparent;
+    @apply before:border-t-gray-900 dark:before:border-t-gray-500 before:border-transparent after:text-center;
   }
 }
 ```
@@ -78,4 +78,4 @@ new line to the `aria-label` .
 <p aria-label="extra long content" class="after:max-w-[180px]">Example button</p>
 ```
 
-https://play.tailwindcss.com/gtheJ3a4Au
+https://play.tailwindcss.com/8QreaqXGBt
