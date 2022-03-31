@@ -6,17 +6,17 @@ tags: [Tailwind, css]
 
 # CSS only toggle switch using TailwindCSS (checkbox replacement)
 
+Learn how to create toggle switch (on/off button) from `<input type="checkbox">`.
+Let's starts with a simple HTML code:
+
 <video width="320" height="240" loop muted autoplay class="mx-auto">
   <source src="/webdesign/css-only-toggle.mp4" type="video/mp4">
 </video>
 
-Learn how to create toggle switch (on/off button) from `<input type="checkbox">`.
-Let's starts with a simple HTML code:
-
 ```html
-<label for="one">
-  <input id="one" type="checkbox" />
-  This is radio checkbox
+<label>
+  <input type="checkbox" />
+  This is on/off checkbox
 </label>
 ```
 
@@ -56,7 +56,7 @@ Then you have to add follow code to your `tailwind.css` file:
     @apply checked:after:duration-300 checked:after:translate-x-4;
 
     @apply disabled:after:bg-opacity-75 disabled:cursor-not-allowed;
-		@apply disabled:checked:before:bg-opacity-40;
+    @apply disabled:checked:before:bg-opacity-40;
   }
 }
 ```
