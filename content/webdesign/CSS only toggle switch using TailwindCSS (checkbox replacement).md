@@ -6,7 +6,7 @@ tags: [Tailwind, css]
 
 # CSS only toggle switch using TailwindCSS (checkbox replacement)
 
-<video width="320" height="240" autoplay>
+<video width="320" height="240" loop muted autoplay>
   <source src="/webdesign/css-only-toggle.mp4" type="video/mp4">
 </video>
 
