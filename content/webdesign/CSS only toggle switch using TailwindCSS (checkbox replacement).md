@@ -9,16 +9,16 @@ tags: [Tailwind, css]
 Learn how to create toggle switch (on/off button) from `<input type="checkbox">`.
 Let's starts with a simple HTML code:
 
-<video width="320" height="240" loop muted autoplay class="mx-auto">
-  <source src="/webdesign/css-only-toggle.mp4" type="video/mp4">
-</video>
-
 ```html
 <label>
   <input type="checkbox" />
   This is on/off checkbox
 </label>
 ```
+
+<video width="320" height="240" loop muted autoplay class="mx-auto">
+  <source src="/webdesign/css-only-toggle.mp4" type="video/mp4">
+</video>
 
 Then you have to add follow code to your `tailwind.css` file:
 
@@ -33,7 +33,8 @@ Then you have to add follow code to your `tailwind.css` file:
   }
 
   [type="checkbox"] {
-    @apply w-11 h-0 cursor-pointer inline-block focus:outline-0 dark:focus:!outline-0;
+    @apply w-11 h-0 cursor-pointer inline-block;
+    @apply focus:outline-0 dark:focus:outline-0;
     @apply border-0 dark:border-0;
     @apply focus:ring-offset-transparent dark:focus:ring-offset-transparent;
     @apply focus:ring-transparent dark:focus:ring-transparent;
@@ -61,4 +62,4 @@ Then you have to add follow code to your `tailwind.css` file:
 }
 ```
 
-https://play.tailwindcss.com/eVYORthSSl
+https://play.tailwindcss.com/t1RIyUSZRC
