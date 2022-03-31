@@ -30,7 +30,7 @@ Then you have to add follow code to your `tailwind.css` file:
 @layer base {
 
   label {
-    @apply h-5 relative inline-block;
+    @apply h-6 relative inline-block;
   }
 
   [type="checkbox"] {
@@ -50,7 +50,7 @@ Then you have to add follow code to your `tailwind.css` file:
     @apply after:content-[''] after:w-5 after:h-5 after:mt-0.5 after:ml-0.5;
     @apply after:shadow-md after:duration-100;
 
-    @apply before:content-[''] before:w-10 before:h-6;
+    @apply before:content-[''] before:w-10 before:h-full;
     @apply before:shadow-[inset_0_0_#000];
 
     @apply after:bg-white dark:after:bg-gray-50;
@@ -64,4 +64,4 @@ Then you have to add follow code to your `tailwind.css` file:
 }
 ```
 
-https://play.tailwindcss.com/eLvm2jjCLQ
+https://play.tailwindcss.com/gNadhDPsbj
