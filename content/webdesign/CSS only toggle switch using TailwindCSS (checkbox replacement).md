@@ -28,8 +28,9 @@ Then you have to add follow code to your `tailwind.css` file:
 @tailwind utilities;
 
 @layer base {
+
   label {
-    @apply inline-flex align-middle;
+    @apply h-4 relative inline-block;
   }
 
   [type="checkbox"] {
@@ -40,8 +41,9 @@ Then you have to add follow code to your `tailwind.css` file:
     @apply focus:ring-transparent dark:focus:ring-transparent;
     @apply focus-within:ring-0 dark:focus-within:ring-0;
     @apply focus:shadow-none dark:focus:shadow-none;
-
+    
     @apply after:absolute before:absolute;
+    @apply after:top-0 before:top-0;
     @apply after:block before:inline-block;
     @apply before:rounded-full after:rounded-full;
 
@@ -62,4 +64,4 @@ Then you have to add follow code to your `tailwind.css` file:
 }
 ```
 
-https://play.tailwindcss.com/t1RIyUSZRC
+https://play.tailwindcss.com/GZ5HdNAbir
