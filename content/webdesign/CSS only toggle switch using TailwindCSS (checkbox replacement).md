@@ -7,7 +7,7 @@ tags: [Tailwind, css]
 # CSS only toggle switch using TailwindCSS (checkbox replacement)
 
 <video width="320" height="240" controls>
-  <source src="/webdesign/css-only-toggle.mov" type="video/mov">  
+  <source src="/webdesign/css-only-toggle.mp4" type="video/mov">
 </video>
 
 Learn how to create toggle switch (on/off button) from `<input type="checkbox">`.
