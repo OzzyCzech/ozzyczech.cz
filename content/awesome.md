@@ -38,6 +38,11 @@ slug: awesome
 - [Boostrap](https://getbootstrap.com/) - Build fast, responsive sites with Bootstrap
 - [Primer CSS](https://primer.style/css/) - CSS Framework from GitHub
 
+## Tailwind toolkits
+
+- [Tail-kit](https://www.tailwind-kit.com/) - Tail-kit Components and templates for Tailwind CSS 2.0
+- [Flowbite](https://flowbite.com/)
+
 ## Payment services
 
 - [Paddle](https://paddle.com/)
