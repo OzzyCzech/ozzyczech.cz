@@ -20,6 +20,7 @@ slug: photo
 * [XF23mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
 * [XF33mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
 * [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
+* [Sigma X Mount lenses](https://www.sigma-global.com/en/magazine/m_series/others-lenses/fujifilm-x-mount/sigma_xmount_lenses/)
 
 ### and others...
 
