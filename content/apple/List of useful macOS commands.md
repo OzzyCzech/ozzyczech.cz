@@ -55,13 +55,15 @@ The `caffeinate` command is used to prevent a Mac from going to sleep.
 * `-t` - Specifies the timeout value in seconds for which the command is valid.
 * `-w` - Waits for the process with the specified pid to exit.
 
-
 ```shell
-caffeinate -i make # caffeinate forks a process, execs "make" in it and prevents idle sleep as long as that process is running
+caffeinate -i make
+# caffeinate forks a process, execs "make" in it 
+# and prevents idle sleep as long as that 
+# process is running
 ```
 
 ```shell
-caffeinate -t 18000 # seconds
+caffeinate -t 18000 # 18000 seconds
 ```
 
 Or you can just use free app [KeepingYouAwake](https://keepingyouawake.app/)
