@@ -11,7 +11,7 @@ One of the most missing components are [dropdowns](https://getbootstrap.com/docs
 Dropdowns are toggleable, contextual overlays for displaying lists of links and more.
 They’re made interactive with a JavaScript.
 
-![Tailwin menu](https://github.com/OzzyCzech/tailwind-dropdowns/raw/main/menu.png)
+![Dropdown menu with Tailwind](https://github.com/OzzyCzech/tailwind-dropdowns/raw/main/menu.png)
 
 Let's have button first:
 
@@ -49,7 +49,7 @@ Popper will provide accurate position of this menu right under button and will s
 yarn add @popperjs/core
 ```
 
-Then create [dropdown-menu.js](https://github.com/OzzyCzech/tailwind-dropdowns/blob/main/src/dropdown-menu.js) file:
+and craete [dropdown-menu.js](https://github.com/OzzyCzech/tailwind-dropdowns/blob/main/src/dropdown-menu.js) file with following content:
 
 ```js
 import {createPopper} from '@popperjs/core/lib/popper-lite.js';
@@ -105,4 +105,4 @@ for (const dropDownButton of inputDocument.querySelectorAll('[data-dropdown]')) 
 }
 ```
 
-You can find the whole example on my GitHub: https://github.com/OzzyCzech/tailwind-dropdowns
+You can find the whole example on my GitHub at [OzzyCzech/tailwind-dropdowns](https://github.com/OzzyCzech/tailwind-dropdowns)
