@@ -56,6 +56,7 @@ slug: photo
 * [Affinity Photo](https://affinity.serif.com/en-us/photo/)
 * [DXO PhotoLab](https://www.dxo.com/dxo-photolab/)
 * [Darktable](https://www.darktable.org/)
+* [Rawsie](https://rawsie.co/)
 
 ### Presets
 
