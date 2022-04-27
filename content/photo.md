@@ -60,8 +60,9 @@ slug: photo
 
 ### Presets
 
-* [Capture One styles](https://www.captureone.com/en/products-plans/styles)
+* [Capture One Styles](https://www.captureone.com/en/products-plans/styles)
 * [300+ film emulation](https://www.presetpro.com/product/film-emulation-capture-one/)
+* [Filtergrade](https://filtergrade.com/product-category/capture-one-styles/)
 * [RNI](https://reallyniceimages.com/store.html)
 
 ### Image viewers & managers
