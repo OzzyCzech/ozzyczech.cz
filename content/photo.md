@@ -22,11 +22,13 @@ slug: photo
 * [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
 * [Sigma X Mount lenses](https://www.sigma-global.com/en/magazine/m_series/others-lenses/fujifilm-x-mount/sigma_xmount_lenses/)
 
+
 ### and others...
 
-* [Ricoh GR III](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
+* [Sony α7 IV](https://www.sony.cz/electronics/fotoaparaty-s-vymennymi-objektivy-2/ilce-7m4)
 * [Sony ZV-E10](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/zv-e10)
 * [Sony α7C](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7c)
+* [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
 
 ### Action cameras
 
