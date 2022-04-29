@@ -1,6 +1,6 @@
 import {outputFile} from 'fs-extra';
 import React from 'react';
-import {renderToStaticMarkup} from 'react-dom/server.js';
+import {renderToStaticMarkup} from 'react-dom/server';
 
 
 export async function renderHTML(element, file) {
