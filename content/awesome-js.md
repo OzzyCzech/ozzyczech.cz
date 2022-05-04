@@ -103,7 +103,6 @@ slug: js
 ## Libraries
 
 * [gocommerce](https://github.com/netlify/gocommerce) - A small go based API for static e-commerce sites.
-* [Simple MD](https://github.com/NextStepWebs/simplemde-markdown-editor) - A simple, beautiful, and embeddable JavaScript Markdown editor.
 * [moment.js](https://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript.
 * [shareon.js](https://shareon.js.org/) - shareon are share buttons for popular social networks
 * [Choices.js logo](https://joshuajohnson.co.uk/Choices/) - Choices.js is a lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency.
