@@ -8,33 +8,31 @@
 * [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 
 ### Fuji X mount lenses
-
-* [XF10-24mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
-* [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
 * [XF18mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
 * [XF23mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
-* [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf23mmf2-r-wr/)
-* [XF 35 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf35mmf2-r-wr/)
 * [XF33mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
+
+Zoom lenses:
+* [XF10-24mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
+* [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
+
+Third party:
 * [Laowa 9mm f/2.8 Zero-D](https://www.venuslens.net/product/9mm/)
 * [Sigma X Mount lenses](https://www.sigma-global.com/en/magazine/m_series/others-lenses/fujifilm-x-mount/sigma_xmount_lenses/)
 
-
 ### Sony cameras
-
 * [Sony α7 IV](https://www.sony.cz/electronics/fotoaparaty-s-vymennymi-objektivy-2/ilce-7m4)
 * [Sony ZV-E10](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/zv-e10)
 * [Sony α7C](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7c)
 
 ### Others
-
 * [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
 
 ### Action cameras
 
 * [GoPro HERO10 Black](https://gopro.com/en/cz/shop/cameras/hero10-black/CHDHX-101-master.html)
 * [DJI Osmo Action 2](https://www.dji.com/cz/dji-action-2)
-* [DJI Osmo Pocket](https://www.dji.com/cz/osmo-pocket)
+* [DJI Osmo Pocket](https://www.dji.com/cz/pocket-2)
 
 ### Mini-tripods
 
