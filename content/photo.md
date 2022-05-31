@@ -6,8 +6,9 @@
 * [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 
 ### Fuji X mount lenses
-
- [XF 18mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/), [XF 23mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/) or [XF 33mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
+* [XF 18mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
+* [XF 23mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
+* [XF 33mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
 
 Zoom lenses:
 * [XF 10-24mm F4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
