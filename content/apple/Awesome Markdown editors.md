@@ -6,6 +6,13 @@ tags: [markdown, macOS]
 
 # Awesome Markdown editors
 
+## [Obsidian](https://obsidian.md/)
+Obsidian is a powerful **knowledge base** on top of a **local folder** of plain text Markdown files.
+
+```shell
+brew install obsidian
+```
+
 ## [Typora](https://typora.io/)
 
 I am just found the best (*for me*) Markdown editor on the planet. Why?
