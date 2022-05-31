@@ -4,7 +4,6 @@
 > *Steven Denn*
 
 > Nemysli. Když myslíš, tak nemluv. Když mluvíš, tak nepiš.
-> 
 > Když píšeš, tak nepodepiš. Když podepíšeš, tak se nediv.
 > 
 > *Jan Werich*
