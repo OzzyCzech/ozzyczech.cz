@@ -13,8 +13,8 @@ export default ({page, single}) => {
 			      dark:prose-invert
 
 						prose-a:no-underline
+						prose-a:text-violet-500
 						hover:prose-a:underline
-
 			      my-3 max-w-none"></div>
 
 			{page.tags.size > 0 && <p className="text-right">
