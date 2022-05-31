@@ -29,7 +29,7 @@ Don't expect security search from Google 🫣
 * [ProtonMail](https://proton.me/mail)
 * [Tutanota](https://tutanota.com/cs/)
 
-try [SimpleLogin](https://simplelogin.io/) if you need anonymous email aliases
+if you need an anonymous email aliases try [SimpleLogin](https://simplelogin.io/)
 
 ## Passwords
 * [1Password](https://1password.com/) - 1Password syncs passwords and personal data across all your devices
