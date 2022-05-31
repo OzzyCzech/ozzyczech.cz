@@ -1,4 +1,4 @@
-# Security
+# Security list
 This is list of security tools I use and would recommend to others.
 
 ## Browsers
