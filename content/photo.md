@@ -8,13 +8,14 @@
 * [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 
 ### Fuji X mount lenses
-* [XF18mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
-* [XF23mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
-* [XF33mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
+* [XF 18mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
+* [XF 23mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
+* [XF 33mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
 
 Zoom lenses:
-* [XF10-24mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
-* [XF 16-80mmF4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
+* [XF 10-24mm F4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
+[XF 16-55mm F2-8 LM WR](https://fujifilm-x.com/global/products/lenses/xf16-55mmf28-r-lm-wr/)
+* [XF 16-80mm F4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/)
 
 Third party:
 * [Laowa 9mm f/2.8 Zero-D](https://www.venuslens.net/product/9mm/)
@@ -27,6 +28,7 @@ Third party:
 
 ### Others
 * [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
+* Leica Q2 [Black](https://leica-camera.com/en-SG/photography/cameras/q/q2-black), [Reporter](https://leica-camera.com/en-SG/photography/cameras/q/q2-reporter) or [Monochrome](https://leica-camera.com/en-SG/photography/cameras/q/q2-monochrom)
 
 ### Action cameras
 
