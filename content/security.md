@@ -5,7 +5,7 @@ tags: [backup, security]
 ---
 
 # Security
-Tools I use and would recommend to others:
+This is list of security tools I use and would recommend to others.
 
 ## Browsers
 * [Brave](https://brave.com/download/)
