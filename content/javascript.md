@@ -1,9 +1,4 @@
----
-title: Awesome JavaScript
-slug: js
----
-
-# Awesome JavaScript 🥕
+# JS
 
 ## Editors
 

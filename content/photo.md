@@ -1,9 +1,4 @@
----
-title: Photo
-slug: photo
----
-
-# Photography
+# Photo
 
 ### Fuji cameras
 

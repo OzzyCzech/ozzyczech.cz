@@ -1,7 +1,4 @@
----
-title: Knihy
-slug: books
----
+# Books
 
 ## Beletrie
 
