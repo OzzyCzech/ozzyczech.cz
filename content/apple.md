@@ -6,9 +6,10 @@
 
 ## Markdown editors
 
+* [Obsidian](https://obsidian.md) - free note taking app on top of local folder
+* [Joplin](https://joplinapp.org/) - Joplin is a free, open source note taking and to-do application
 * [Typora](https://typora.io/) - free and opensource for mac/linux and windows
 * [Macdown](https://macdown.uranusjr.com/) - free and open source editor for mac
-* [Joplin](https://joplinapp.org/) - Joplin is a free, open source note taking and to-do application
 * [iWriter](https://ia.net/writer) - clean, simple and distraction-free writing environment
 * [Caret](https://caret.io/) - is a Markdown editor for Mac, Windows and Linux. It stands out with its clean interface, productivity features and obsessive attention to detail.
 * [Nota](https://nota.md/) - markdown notebook
@@ -39,9 +40,9 @@
 
 ## Video editing
 
-* [Luma Touch](https://luma-touch.com/) - iOS
-* [iMovie](https://www.apple.com/imovie/) - free video editor for mac
+* [LumaFusion](https://luma-touch.com/) - Professional Editing Reimagined for Mobile
 * [Final Cut Pro](https://www.apple.com/final-cut-pro/) - best for mac
+* [iMovie](https://www.apple.com/imovie/) - free video editor for mac
 * [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Free video editor for Windows/macOS
 
 ## Command Line Apps

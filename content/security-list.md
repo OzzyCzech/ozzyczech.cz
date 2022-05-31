@@ -2,11 +2,11 @@
 This is list of security tools I use and would recommend to others.
 
 ## Browsers
-* [Brave](https://brave.com/download/)
-* [FireFox](https://www.mozilla.org/cs/firefox/new/)
+* [Brave](https://brave.com/download/)  - block ads and cookie trackers
+* [FireFox](https://www.mozilla.org/cs/firefox/new/) 
 * [Opera](https://www.opera.com/)
 
-or if you need extra „security” try [TorBrowser](https://www.torproject.org/download/)
+or if you ne. d extra „security” try [TorBrowser](https://www.torproject.org/download/)
 
 ### Browsers extensions
 * [DuckDuckGo Privacy Essentials](https://duckduckgo.com/?q=DuckDuckGo+Privacy+Essentials) for all Browsers
@@ -60,5 +60,6 @@ or some of them - any password manager is better than no password manager:
 * [GitJournal](https://gitjournal.io/)
 
 PS: this blog is written in [Obsidian](https://obsidian.md/) or [VS Code](https://)
+
 ## Authentication
 * [YubiKey](https://www.yubico.com/)
