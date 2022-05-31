@@ -1,8 +1,9 @@
-.obsidian/cache
-.obsidian/workspace
-public
-.trash
 node_modules
-*.log
+public
+/content/.obsidian/workspace
+/content/.obsidian/cache
+
+.trash
 .vercel
 .env.local
+*.log
