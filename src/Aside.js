@@ -80,7 +80,6 @@ export default ({active, tags}) => {
 			<section className="mb-3 hidden md:block" aria-hidden="true">
 				<Link href="/" emoji="🚀">Home</Link>
 				<Link href="/photo" emoji="📷">Photo</Link>
-				<Link href="/gear" emoji="⚙️">Gear</Link>
 				<Link href="/awesome-list" emoji="💄">Awesome list</Link>
 				<Link href="/security-list" emoji="🔐">Security list</Link>
 				<Link href="/apple">
