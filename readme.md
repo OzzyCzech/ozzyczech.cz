@@ -4,8 +4,8 @@ View: https://ozzyczech.cz
 
 ## Contact
 
-* web: www.omdesign.cz
-* mail: roman@omdesign.cz
+* web: www.ozana.cz
+* mail: roman@ozana.cz
 
 ## TODO
 
