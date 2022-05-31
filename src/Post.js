@@ -9,7 +9,7 @@ export default ({page, single}) => {
 			<div dangerouslySetInnerHTML={{__html: single ? page.content : page.content.replace(/(<h1.*>.*?<\/h1>)/, `<a href="${page.link()}" class="no-underline">$1</a>`)}}
 			     className="
 						prose
-			      lg:prose-xl
+			      lg:prose-lg
 			      dark:prose-invert
 
 						prose-a:no-underline
