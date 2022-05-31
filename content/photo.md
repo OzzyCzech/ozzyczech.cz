@@ -1,5 +1,5 @@
 ---
-title: Photography
+title: Photo
 slug: photo
 ---
 
@@ -21,7 +21,6 @@ slug: photo
 * [XF 23 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf23mmf2-r-wr/)
 * [XF 35 mm f/2 R WR](https://fujifilm-x.com/global/products/lenses/xf35mmf2-r-wr/)
 * [XF33mmF1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
-
 * [Laowa 9mm f/2.8 Zero-D](https://www.venuslens.net/product/9mm/)
 * [Sigma X Mount lenses](https://www.sigma-global.com/en/magazine/m_series/others-lenses/fujifilm-x-mount/sigma_xmount_lenses/)
 

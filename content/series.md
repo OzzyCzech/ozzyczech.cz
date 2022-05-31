@@ -4,11 +4,11 @@ slug: series
 ---
 
 ## 2022
-
 * [Sopranos](https://www.imdb.com/title/tt0141842/)
+* [StrangerThings](https://www.imdb.com/title/tt4574334/)
+* [Arcane](https://www.imdb.com/title/tt11126994/)
 
 ## 2021
-
 * [Devs](https://www.imdb.com/title/tt8134186/)
 * [Rick a Morty](https://www.imdb.com/title/tt2861424/)
 * [Loki](https://www.imdb.com/title/tt9140554/)
@@ -20,7 +20,6 @@ slug: series
 * [Years and Years](https://www.imdb.com/title/tt8694364/)
 
 ## 2020
-
 - [Dark](https://www.imdb.com/title/tt5753856/)
 - [Star Trek Discovery](https://www.imdb.com/title/tt5171438/)
 - [Away](https://www.imdb.com/title/tt8787802/)
@@ -39,7 +38,6 @@ slug: series
 - [Mindhunter](https://www.imdb.com/title/tt5290382/)
 
 ## 2019
-
 - [Mandalorian](https://www.imdb.com/title/tt8111088/)
 - [Why Women Kill](https://www.imdb.com/title/tt9054904)
 - [The Spy](https://www.imdb.com/title/tt5952634/)
@@ -50,7 +48,6 @@ slug: series
 - [The Boys](https://www.imdb.com/title/tt1190634/)
 
 ## 2018
-
 - [Legion](https://www.imdb.com/title/tt5114356/)
 - [La casa de papel](https://www.imdb.com/title/tt6468322)
 - [Le Bureau des Légendes](https://www.imdb.com/title/tt4063800/)
@@ -67,7 +64,6 @@ slug: series
 - The Staircase
 
 ## Oldies
-
 * [Ren a Stimpy](https://www.imdb.com/title/tt0101178/)
 * [Courage the Cowardly Dog](https://www.imdb.com/title/tt0220880)
 * [Cow and Chicken](https://www.imdb.com/title/tt0118289/)

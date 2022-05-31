@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "771f89df96ef2361",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6db823d82696760",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "apple/Advanced tasks with Homebrew.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "66848febc9d5bb26",
+    "type": "split",
+    "children": [
+      {
+        "id": "427e8c75ae1966bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c2d16074e53474d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "70f18c6ca6c4e352",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "589f42303b923d59",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3a52f63ddee9a0b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a2c23a6888d27ee",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "apple/Advanced tasks with Homebrew.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f6db823d82696760",
+  "lastOpenFiles": [
+    "apple/Advanced tasks with Homebrew.md",
+    "apple/Control Time Machine from the command line.md",
+    "apple/Setup email sending from PHP on Mac.md",
+    "series.md",
+    "Untitled.md",
+    "security.md",
+    "iot/Bluetooth sensor mesh.md",
+    "iot/MHO-C401.jpg",
+    "wordpress/Add a Class to the First Post in The Loop.md",
+    "backup.md"
+  ]
+}
