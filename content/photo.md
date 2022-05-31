@@ -6,9 +6,8 @@
 * [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 
 ### Fuji X mount lenses
-* [XF 18mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
-* [XF 23mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
-* [XF 33mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
+
+ [XF 18mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/), [XF 23mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/) or [XF 33mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
 
 Zoom lenses:
 * [XF 10-24mm F4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/)
@@ -61,9 +60,10 @@ Third party lenses:
 * [RNI](https://reallyniceimages.com/store.html)
 
 ### Image viewers & managers
-* [FileLoupe](https://www.fileloupe.com/)
-* [AcdSee](https://www.acdsee.com/en/index)
-* [Pixave](http://www.littlehj.com/mac/)
+* [AcdSee](https://www.acdsee.com/en/index) - well known image organizer from 90's
+* [Pixave](http://www.littlehj.com/mac/) - smart image organizer for macOS
+* [MetaImage](https://neededapps.com/metaimage/) - reads, writes and edits your image metadata in a familiar interface such as EXIF, IPTC, XMP and GPS tags
+* [FileLoupe](https://www.fileloupe.com/) - Fast File Browser for macOS
 
 ### iOS Apps
 * [Glass](https://glass.photo/)
