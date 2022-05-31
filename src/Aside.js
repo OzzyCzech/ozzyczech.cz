@@ -22,7 +22,7 @@ export default ({active, tags}) => {
 		return (
 			<Fragment>
 				<a
-					className={`rounded py-3 px-5 mb-1 block bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:bg-gray-800 ${active.toLowerCase() === props.href.toLowerCase() ? 'dark:bg-gray-700' : ''}`}
+					className={`rounded py-3 px-5 mb-1 flex bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:bg-gray-800 ${active.toLowerCase() === props.href.toLowerCase() ? 'dark:bg-gray-700' : ''}`}
 					href={props.href}>
 					{props.emoji ? <Emoji from={props.emoji}/> : ''}{props.children}
 				</a>
