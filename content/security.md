@@ -1,9 +1,3 @@
----
-title: Security checklist
-slug: security
-tags: [backup, security]
----
-
 # Security
 This is list of security tools I use and would recommend to others.
 
