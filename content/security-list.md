@@ -3,7 +3,7 @@ This is list of security tools I use and would recommend to others.
 
 ## Browsers
 * [Brave](https://brave.com/download/)  - block ads and cookie trackers
-* [FireFox](https://www.mozilla.org/cs/firefox/new/) 
+* [FireFox](https://www.mozilla.org/cs/firefox/new/) or [LibreWolf](https://librewolf.net/) fork
 * [Opera](https://www.opera.com/)
 
 or if you ne. d extra „security” try [TorBrowser](https://www.torproject.org/download/)
@@ -52,6 +52,8 @@ or some of them - any password manager is better than no password manager:
 * [IVPN](https://www.ivpn.net/)
 * [VPNHub](https://www.vpnhub.com/) - free VPN from PornHub
 * [ProtonVPN](https://protonvpn.com/) - High-speed Swiss VPN that safeguards your privacy.
+* [Njalla](https://njal.la/)
+* [Mullvad](https://mullvad.net/en/)
 
 ## Notes
 * [Obsidian](https://obsidian.md/)
@@ -60,6 +62,9 @@ or some of them - any password manager is better than no password manager:
 * [GitJournal](https://gitjournal.io/)
 
 PS: this blog is written in [Obsidian](https://obsidian.md/) or [VS Code](https://)
+
+## Storage
+* [ProtonDrive](https://proton.me/drive) 
 
 ## Authentication
 * [YubiKey](https://www.yubico.com/)
