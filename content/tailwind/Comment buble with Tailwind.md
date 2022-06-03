@@ -4,7 +4,7 @@ tags: [Tailwind, css]
 ---
 
 # Comment bubble with Tailwind
-![[comment-bubble.png]]
+![[tailwind/comment-bubble.png]]
 
 ```html
 <div class="
@@ -14,3 +14,6 @@ tags: [Tailwind, css]
  after:border-l-transparent after:border-b-transparent
 ">50</div>
 ```
+
+
+https://play.tailwindcss.com/6MOkpPmqmu
