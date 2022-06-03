@@ -27,3 +27,5 @@ výrobků vyrobených na území Chiny. Cílem je odvrátit celosvětový
 ekonomický kolaps. A zamezení chaosu do kterého se postupně 
 propadají jednotlivé státy. O dalším vývoji situace Vás budeme
 průběžně informovat.
+
+*Dodatek*: tahle povídka z roku 2012 se málem zrealizovalo v letech 2019 - 2022 kdy se Čína potýkala s pandemii COVID a byla nucena zavřít své továrny

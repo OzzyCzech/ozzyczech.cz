@@ -21,7 +21,7 @@ export default ({page, tags}) => {
 			<Post page={page} single={true}/>
 
 			<div className="text-sm text-right text-gray-500">
-				<script className="bg-gray-600" dangerouslySetInnerHTML={{__html: `showDate(new Date('${page.date}'))`}}/>
+				<span data-ago={new Date(page.date).toISOString()}>{(new Date(page.date)).toLocaleDateString('cs-CZ')}</span>
 				<span className="mx-1">•</span>
 				<a href={`https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/main/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="hover:underline">raw</a>
 				<span className="mx-1">•</span>
@@ -34,3 +34,5 @@ export default ({page, tags}) => {
 	</body>
 	</html>);
 }
+
+// <script className="bg-gray-600" dangerouslySetInnerHTML={{__html: `showDate(new Date('${page.date}'))`}}/>

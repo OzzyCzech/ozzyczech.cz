@@ -21,12 +21,9 @@
 
 ## RSS readers
 
-* [Reeder 5](https://reederapp.com/)
-* [NetNewsWire](https://ranchero.com/netnewswire/) - **NetNewsWire** is a free and open source RSS reader for **Mac** and **iOS**.
-* [ReadKit](https://readkitapp.com/)
-* [Cappuccino](https://cappuccinoapp.com/)
-* [News Explorer](https://betamagic.nl/products/newsexplorer.html)
-
+- [Reeder 5](https://reederapp.com/) - last RSS reader that you will need
+- [Cappuccino](https://cappuccinoapp.com/) - your inbox for news
+- [NetNewsWire](https://netnewswire.com/) - free and open source RSS reader for Mac and iOS
 ## Image editing
 
 * [Pixelmator Pro](https://www.pixelmator.com/pro/)
@@ -34,7 +31,7 @@
 * [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
 * [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
 
-## Digital diary
+## Diary
 
 * [Diarly](https://diarly.app/)
 
@@ -52,11 +49,9 @@
 * [git](https://github.com/git/git) - version control
 * [jq](https://github.com/stedolan/jq) - JSON processor
 * [curl](https://curl.haxx.se/docs/manpage.html) - Transfer data from or to a server
-* [youtube-dl](https://github.com/rg3/youtube-dl) - Download videos from YouTube and other video sites
-* [now](https://github.com/zeit/now-cli) - Real time global deployments served over HTTP/2
+* [now](https://github.com/zeit/now-cli) - real time global deployments served over HTTP/2
 * [tldr](https://github.com/tldr-pages/tldr) - simplified and community-driven man pages
 * [trash](http://hasseg.org/trash/)  - moves files or folders to the trash
-
 
 ## Tools
 

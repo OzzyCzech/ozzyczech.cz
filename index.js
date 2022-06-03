@@ -57,14 +57,20 @@ renderer(
 	{
 		image: (href, title, text) => {
 			const className = new URL(href, domain).hash.substring(1).replace(/[_]/g, ' ');
-			return `<div class=" ${className ? className : 'flex justify-center my-3'}">
-							<figure class="max-w-xl mx-auto text-center">
+			if (!href.startsWith('/') && !href.startsWith('http')) href = '/' + href; // add leading '/'
+
+			if (href.match(/mp4|webm|mov/)) {
+				return `<video loop muted autoplay src="${href}" class="mx-auto rounded"></video>`;
+			} else {
+				return `<div class="${className ? className : 'flex justify-center'}">
+							<figure>
 								<a href="${href}" target="_blank">
-									<img src="${href}" class="w-full rounded shadow bg-white dark:bg-black" title="${title ? title : ''}" alt="${text ? text : ''}"/>
+									<img src="${href}" class="rounded shadow bg-white dark:bg-black" title="${title ? title : ''}" alt="${text ? text : ''}"/>
 								</a>		
-								<figcaption class="mt-2 italic text-gray-400 text-center">${title ? title : (text ? text : null)}</figcaption>
+								<figcaption>${title ? title : (text ? text : null)}</figcaption>
 						</figure>
-			</div>`;
+						</div>`;
+			}
 		},
 
 		link: (href, title, text) => {

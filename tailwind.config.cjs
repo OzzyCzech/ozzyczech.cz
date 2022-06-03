@@ -21,6 +21,7 @@ module.exports = {
 					css: {
 						'blockquote p:first-of-type::before': {content: ''},
 						'blockquote p:last-of-type::after': {content: ''},
+						'figcaption': {textAlign: 'center', fontStyle: 'italic'}
 					},
 				},
 				invert: {

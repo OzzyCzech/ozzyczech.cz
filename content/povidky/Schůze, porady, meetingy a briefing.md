@@ -1,5 +1,4 @@
 ---
-title: Schůze, porady, meetingy a briefing
 date: 2008-01-21
 tags: [lifehack]
 ---

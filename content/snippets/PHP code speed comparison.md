@@ -1,5 +1,4 @@
 ---
-title: PHP code speed comparison
 date: 2020-12-10
 tags: [PHP, Snippets]
 ---
@@ -43,6 +42,6 @@ versus(
 
 Will print: 
 
-```
+```text
 Second function is 36.72% faster (0.142766 vs 0.090349)
 ```
