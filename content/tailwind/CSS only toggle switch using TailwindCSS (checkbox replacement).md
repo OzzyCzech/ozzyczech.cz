@@ -16,10 +16,7 @@ Let's starts with a simple HTML code:
 </label>
 ```
 
-<video width="320" height="240" loop muted autoplay class="mx-auto">
-  <source src="/tailwind/css-only-toggle.mp4" type="video/mp4">
-</video>
-
+![](tailwind/css-only-toggle.mp4)
 Then you have to add follow code to your `tailwind.css` file:
 
 ```css
