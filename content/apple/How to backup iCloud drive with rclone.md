@@ -1,9 +1,3 @@
----
-title: How to backup iCloud drive with rclone
-date: 2019-09-12
-tags: [iCloud, backup, macOS]
----
-
 # How to backup iCloud drive with rclone
 
 All iCloud drive data are located in `~/Library/Mobile\ Documents/com~apple~CloudDocs/` folder. 
@@ -21,3 +15,5 @@ If you will need also backup of all deleted files (sync usually remove files tha
 rclone sync ~/Library/Mobile\ Documents/com~apple~CloudDocs/ /Volumes/Backup/iCloudDriveBackup --copy-links 
        --backup-dir="/Volumes/Backup/iCloudDriveArchive/$(date +%Y)/$(date +%F_%T)"
 ```
+
+#macOS #iCloud 

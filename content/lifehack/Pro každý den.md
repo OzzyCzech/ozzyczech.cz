@@ -1,9 +1,3 @@
----
-title: Pro každý den
-date: 2017-08-10
-tags: [lifehack]
----
-
 # Pro každý den
 
 * Každý den se 20-30 minut procházejte. Mějte přitom na tváři úsměv.

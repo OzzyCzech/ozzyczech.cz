@@ -1,9 +1,3 @@
----
-title: CSS only toggle switch using TailwindCSS (checkbox replacement)
-date: 2022-03-31
-tags: [Tailwind, css]
----
-
 # CSS only toggle switch using TailwindCSS (checkbox replacement)
 
 Learn how to create toggle switch (on/off button) from `<input type="checkbox">`.
@@ -62,3 +56,5 @@ Then you have to add follow code to your `tailwind.css` file:
 ```
 
 https://play.tailwindcss.com/gNadhDPsbj
+
+#Tailwind 

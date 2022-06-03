@@ -1,9 +1,3 @@
----
-title: Dropdown menu with Tailwind and Vanilla JS
-date: 2022-04-26
-tags: [Tailwind, css, js]
----
-
 # Dropdown menu with Tailwind and Vanilla JS
 
 Tailwind CSS does not provide a base set of components that are ready to use right out of the box.
@@ -106,3 +100,5 @@ for (const dropDownButton of inputDocument.querySelectorAll('[data-dropdown]')) 
 ```
 
 You can find the whole example on my GitHub at [OzzyCzech/tailwind-dropdowns](https://github.com/OzzyCzech/tailwind-dropdowns)
+
+#Tailwind #javascript #css 

@@ -1,9 +1,3 @@
----
-title: Read Temperature and Huminidy from MHO-C401
-date: 2020-09-21
-tags: [iot, bluetooth]
----
-
 # Read Temperature and Huminidy from MHO-C401
 
 MHO-C401 is new (2020) MMC E-Ink Screen Smart Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Gearbest]( https://www.gearbest.com/sale/MHO-C401/) or [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).
@@ -187,3 +181,4 @@ Source codes https://github.com/OzzyCzech/MHO-C401
 * [Python library to work with Xiaomi Temperature and Humidifier sensor](https://github.com/h4/lywsd02/blob/master/lywsd02/client.py)
 * [xiaomi_bluetooth](https://github.com/andras-tim/poc/blob/master/bluetooth/xiaomi_bluetooth)
 
+#iot #bluetooth 

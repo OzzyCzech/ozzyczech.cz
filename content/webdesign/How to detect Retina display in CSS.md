@@ -1,10 +1,3 @@
----
-title: How to detect Retina display in CSS
-date: 2013-03-27
-tags: [CSS]
----
-
-
 # How to detect Retina display in CSS
 
 ```css
@@ -12,3 +5,5 @@ tags: [CSS]
   /* it's retina yeah! */
 }
 ```
+
+#css 

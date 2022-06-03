@@ -1,9 +1,3 @@
----
-title:  AutoExpand textarea
-date: 2021-08-18
-tags: [HTML, Javascript, Snippets]
----
-
 # AutoExpand textarea
 
 ```js
@@ -31,3 +25,5 @@ And HTML:
 ```html
 <textarea is="auto-expand"></textarea>
 ```
+
+#HTML #javascript 

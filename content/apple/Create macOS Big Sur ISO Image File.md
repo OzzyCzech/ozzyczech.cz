@@ -1,9 +1,3 @@
----
-title: Create macOS Big Sur ISO Image File
-date: 2020-11-20
-tags: [macOS]
----
-
 # Create macOS Big Sur ISO Image File
 
 First download macOS Big Sur From Apple with App Store. Quit installator with `⌘+q`, then create new empty volume:
@@ -49,3 +43,5 @@ sudo rm -fv /tmp/BigSur.dmg
 ```
 
 [How to create a bootable installer for macOS](https://support.apple.com/en-us/HT201372)
+
+#macOS 

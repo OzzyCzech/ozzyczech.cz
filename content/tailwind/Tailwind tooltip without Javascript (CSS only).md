@@ -1,9 +1,3 @@
----
-title: Tailwind tooltip without Javascript (CSS only)!
-date: 2022-03-18
-tags: [Tailwind, css]
----
-
 # Tailwind tooltip without Javascript (CSS only)!
 
 There's a plenty of libraries (mostly JavaScript) to enable the classic tooltip design pattern. You can easily add tooltips
@@ -79,3 +73,5 @@ new line to the `aria-label` .
 ```
 
 https://play.tailwindcss.com/8QreaqXGBt
+
+#Tailwind #css

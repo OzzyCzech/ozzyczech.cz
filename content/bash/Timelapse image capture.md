@@ -1,9 +1,3 @@
----
-title: Timelapse image capture 
-date: 2017-09-11
-tags: [bash, ffmpeg]
----
-
 # Timelapse image capture
 
 ```shell
@@ -33,3 +27,5 @@ Generate timelapse video from all images:
 ```shell
 ffmpeg -framerate 30 -pattern_type glob -i 'images/*.jpeg' -vcodec libx264 video.mp4
 ```
+
+#ffmpeg 

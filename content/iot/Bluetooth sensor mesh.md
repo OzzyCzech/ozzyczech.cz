@@ -1,9 +1,3 @@
----
-title: Bluetooth sensor mesh
-date: 2018-10-28
-tags: [iot, bluetooth]
----
-
 # Bluetooth sensor mesh
 
 **Idea**: Create bluetooth mesh from bunch of env. sensors (doors, windows, temperature, humidity, move sensors, buttons) 
@@ -40,4 +34,6 @@ connected to hub.
 
 ## Bluetooth 5
 * [bluetooth5 spec](https://www.bluetooth.com/specifications/%20bluetooth-core-specification/bluetooth5)
-* [Nordicsemi Bluetooth 5](https://www.nordicsemi.com/eng/Products/Bluetooth-5)
+* [Nordicsemi Bluetooth 5](https://www.nordicsemi.com/eng/Products/Bluetooth-5
+
+#iot #bluetooth 

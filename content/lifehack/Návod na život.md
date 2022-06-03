@@ -1,9 +1,3 @@
----
-title: Návod na život
-date: 2017-08-10
-tags: [lifehack]
----
-
 # Návod na život
 
 * Když se ti něco líbí – řekni to.

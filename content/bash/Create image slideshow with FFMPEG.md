@@ -1,13 +1,6 @@
----
-title: Create image slideshow with ffmpeg
-date: 2019-12-06
-tags: [bash, ffmpeg]
----
-
 # Create image slideshow with ffmpeg
 
-Following will take all `*.jpg` images from current folder and create mp4 image slideshow.
-Images can have different sizes, [ffmpeg](https://www.ffmpeg.org/ffmpeg.html) will rescale or pad them.
+Following will take all `*.jpg` images from current folder and create mp4 image slideshow. Images can have different sizes, [ffmpeg](https://www.ffmpeg.org/ffmpeg.html) will rescale or pad them.
 
 ```shell
 ffmpeg -framerate 1/3 \
@@ -25,7 +18,6 @@ ffmpeg -framerate 1/3 \
 * `-r 25` set frame rate.
 * `-pix_fmt` pixel output format
 
-
  With background music:
 
 ```shell
@@ -39,3 +31,5 @@ ffmpeg -framerate 1/3 \
 ```
 
 * `-shortest` will take shorten source images or mp3 as length limit for video
+
+#ffmpeg 

@@ -1,9 +1,3 @@
----
-title: Jak správně přepsat ojeté auto
-date: 2012-06-14
-tags: [lifehack]
----
-
 # Jak správně přepsat ojeté auto
 
 Popíšu jak to probíhalo u mě. Kupoval jsem ojeté auto přímo od majitele. Platil jsem hotově bez úvěru. 

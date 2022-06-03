@@ -1,8 +1,3 @@
----
-date: 2022-06-03
-tags: [Tailwind, css]
----
-
 # Comment bubble with Tailwind
 
 ![Comment bubble](tailwind/comment-bubble.png)
@@ -17,3 +12,5 @@ tags: [Tailwind, css]
 ```
 
 https://play.tailwindcss.com/6MOkpPmqmu
+
+#Tailwind

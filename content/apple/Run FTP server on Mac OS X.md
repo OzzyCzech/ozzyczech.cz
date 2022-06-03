@@ -1,9 +1,3 @@
----
-title: Run FTP server on Mac OS X
-date: 2013-11-28
-tags: [ftp, macOS]
----
-
 # Run FTP server on Mac OS X
 
 Setup everyhing: `sudo subl /etc/ftpd.conf`
@@ -17,7 +11,7 @@ umask  guest 0707
 upload guest on
 ```
 
-Start FTP server
+Start #FTP server
 
 ```shell
 sudo launchctl load /System/Library/LaunchDaemons/ftp.plist
@@ -28,3 +22,5 @@ And stop again:
 ```shell
 sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist
 ```
+
+#macOS

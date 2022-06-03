@@ -1,10 +1,3 @@
----
-title: Mé Bulharské dobrodružství
-date: 2007-08-04
-tags: [lifehack]
----
-
-
 # Mé Bulharské dobrodružství
 
 Určitě jste si všimli, že i na tomto webu zavládla pravá a **nefalšovaná okurková sezóna**. Na počítač (tím méně na blog) prostě nějak poslední dobou není čas. Nicméně jsem se rozhodl popsat moje malé Bulharské dobrodružství. Jak správně tušíte, bude se tento článek věnovat mé **dovolené v Bulharsku**, ze které jsme se minulý týden díky bohu vrátil :-). Do Bulharska jsme se vypravil s několika kamarády, podívat se [na pohoří Rila](http://cs.wikipedia.org/wiki/Rila "Popis pohoří Rila"). Toto pohoří jsem myslím úspěšně dobyli a zmapovali.

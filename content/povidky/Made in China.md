@@ -1,9 +1,3 @@
----
-title: Made in China - Paranoidní povídka na dobrou noc
-date: 2012-12-09
-tags: [lifehack]
----
-
 # Made in China - Paranoidní povídka na dobrou noc
 
 China právě vyhlásila jednostranné embargo na vývoz výrobku vyrobených na jejich

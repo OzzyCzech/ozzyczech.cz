@@ -1,9 +1,3 @@
----
-title: How to add all custom post type to main Wordpress archive.php
-date: 2014-07-24
-tags: [Wordpress, PHP]
----
-
 # How to add all custom post type to main Wordpress archive.php
 
 Default archive shows only `post` type if you need show all post types just add follow code to `function.php`
@@ -28,3 +22,5 @@ add_filter(
     }
 );
 ```
+
+#Wordpress 

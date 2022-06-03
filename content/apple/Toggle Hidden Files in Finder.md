@@ -1,10 +1,3 @@
----
-title: Toggle Hidden Files in Finder
-date: 2013-03-26
-tags: [macOS, bash]
----
-
-
 # Toggle Hidden Files in Finder
 
 Run [Automator](http://en.wikipedia.org/wiki/Automator_(software)) and create new Application. Add task **Run Shell script** and paste follow code:
@@ -20,4 +13,6 @@ fi
 killall Finder
 ```
 
- Save application. From now can Tooggle
+Save application. From now can Tooggle
+
+#macOS 

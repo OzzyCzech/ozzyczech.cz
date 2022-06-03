@@ -1,9 +1,3 @@
----
-title: Retrieve IP adress of AirPrint Printer
-date: 2020-11-12
-tags: [macOS]
----
-
 # Retrieve IP adress of AirPrint Printer
 
 
@@ -36,3 +30,5 @@ PING 3036B5000000.local (192.168.0.108): 56 data bytes
 ```
 
 our printer has `192.168.0.108`
+
+#macOS #AirPrint

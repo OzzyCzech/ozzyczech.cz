@@ -1,14 +1,6 @@
----
-title: WYSIWYG pro popis uživatele ve Wordpress
-date: 2012-10-29
-tags: [PHP, Wordpress, WYSIWYG]
----
+#  WYSIWYG for user description in Wordpress
 
-
-# WYSIWYG pro popis uživatele ve Wordpress
-
-Následující kratičký kód zobrazí WYSIWYG editor u popisu autora u uživatelského profilu: Kód stačí přidat do `function.php` ve vašem template:
-
+The following short code will display the WYSIWYG editor next to the author description of the user profile: Just add the code to `function.php` in your template:
 ```php
 class CustomUserProfile {
 
@@ -42,3 +34,5 @@ public function initDescriptionWysywig($options) {
 }
 new CustomUserProfile();
 ```
+
+#Wordpress #WYSIWYG #PHP 

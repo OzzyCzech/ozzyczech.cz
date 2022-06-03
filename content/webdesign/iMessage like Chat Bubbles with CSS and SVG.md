@@ -1,9 +1,3 @@
----
-title: iMessage like Chat Bubbles with CSS and SVG
-date: 2017-12-15
-tags: [iOS, HTML, CSS]
----
-
 # iMessage like Chat Bubbles with CSS and SVG
 
 <script async src="//jsfiddle.net/OzzyCzech/22qnqub5/embed/result,css,html/dark/"></script>
@@ -84,6 +78,4 @@ article p.to-me.last:after {
 }
 ```
 
-
-
-
+#css 

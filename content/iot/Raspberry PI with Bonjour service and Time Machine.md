@@ -1,9 +1,3 @@
----
-title: Raspberry PI with Bonjour service and Time Machine
-date: 2018-12-27
-tags: [Raspberry, iot]
----
-
 # Raspberry PI with Bonjour service and Time Machine
 
 ### Raspbian Buster Lite (without desktop)
@@ -162,3 +156,5 @@ avahi-browse -a | grep $(hostname)
 
 * http://www.avahi.org/
 * https://support.apple.com/bonjour
+
+#Raspberry #iot 

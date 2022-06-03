@@ -1,9 +1,3 @@
----
-title: HTML Skeleton
-date: 2020-10-06
-tags: [HTML, Snippets]
----
-
 # HTML Skeleton
 
 ```html
@@ -52,3 +46,5 @@ With:
 * [Twitter card](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 * [Tailwind Play](https://tailwindcss.com/)
 * SVG favicon
+
+#HTML #Tailwind 

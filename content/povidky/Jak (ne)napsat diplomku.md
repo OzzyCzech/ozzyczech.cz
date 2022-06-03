@@ -1,13 +1,6 @@
----
-title: Jak (ne)napsat diplomku
-date: 2007-12-12
-tags: [lifehack]
----
-
-
 # Jak (ne)napsat diplomku
 
-#### brzo ráno
+### Brzo ráno
 
 1. Posaďte se do svého velkého pohodlného křesla
 2. Než vaše PC naběhne, zkontrolujte, zda máte u křesla dobře nastaven režim houpání
@@ -15,7 +8,7 @@ tags: [lifehack]
 4. Zkontrolujte email
 5. Otevřete si dokument s textem své diplomky
 
-#### dopoledne
+### Dopoledne
 
 1. Jděte si uvařit čaj - bude Vám to lépe myslet, když se čas od času napijete
 2. Po návratu do pokoje se opět usaďte do svého pohodlného křesla
@@ -24,7 +17,7 @@ tags: [lifehack]
 5. Nezapomeňte si zajít na záchod (zadržování tekutin není zdravé)
 6. Zkontrolujte email a mobil jestli Vás někdo nehledal
 
-#### těsně před polednem
+### Před polednem
 
 1. Přečtěte si zadání a ubezpečte se, že mu skutečně rozumíte
 2. Proberte se spolužáky po ICQ co budou dělat, až tady skončí (myšleno na škole)
@@ -34,7 +27,7 @@ tags: [lifehack]
 6. Zkontrolujte email
 7. Neopomeňte si zajít na záchod (zadržování tekutin není zdravé)
 
-#### zhruba kolem poledne
+### Kolem poledne
 
 1. Zavolejte svému kamarádovi na [Skype](http://www.skype.com/) jestli už začal psát a kolik toho má
 2. Skočte si do bufetu nebo obchodu pro něco dobrého, to Vám pomůže - když už budete v tom obchodě, kupte si nějaký časopis
@@ -42,7 +35,7 @@ tags: [lifehack]
 4. Zkontrolujte email a mobil - někdo by Vás mohl potřebovat
 5. Nezapomeňte si zajít na záchod (zadržování tekutin není zdravé)
 
-#### odpoledne
+### Odpoledne
 
 1. Jděte si opět uvařit čaj - protože pitný režim se musí dodržovat
 2. A když už jste u toho, udělejte si něco na jídlo, s plným žaludkem to jde vždy lépe
@@ -51,8 +44,7 @@ tags: [lifehack]
 5. Pohrajte si se svým psem, kočkou (nebo jiným živočichem) opět to velmi dobře uvolňuje stres
 6. Přemýšlejte o tom, zda byste neměli rozesílat svůj životopis firmám - je dobré být připraven
 
-
-#### v podvečer
+### Podvečer
 
 1. Podívejte se na večerní zprávy - musíte si dát přestávku od toho sezení u počítače
 2. Napište SMS některému ze spolužáků, který nemá internet, že celý den pilně píšete diplomku - potěší ho to
@@ -61,7 +53,7 @@ tags: [lifehack]
 5. Pusťte si nějakou pomalejší pohodovou hudbu - přeci jen je večer
 6. Zkontrolujte email
 
-#### noc
+### Noc
 
 1. Proberte s lidma co jsou ještě online svůj celý den - nezapomeňte se zmínit o tom, že celý den děláte na diplomce
 2. Pravděpodobně se Vám už začínají trošku klížit oči - není divu, byl to náročný den

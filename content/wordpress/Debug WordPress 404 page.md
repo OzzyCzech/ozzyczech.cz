@@ -1,9 +1,3 @@
----
-title: Debug WordPress 404 page
-date: 2020-12-01
-tags: [Wordpress, PHP]
----
-
 # Debug WordPress 404 page
 
 Insert following code to `functions.php` for debuging 404 page:
@@ -52,3 +46,5 @@ add_filter(
 	}
 );
 ```
+
+#Wordpress 

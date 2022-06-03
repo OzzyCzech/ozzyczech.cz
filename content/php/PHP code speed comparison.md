@@ -1,8 +1,3 @@
----
-date: 2020-12-10
-tags: [PHP, Snippets]
----
-
 # PHP code speed comparison
 
 ```php
@@ -45,3 +40,5 @@ Will print:
 ```text
 Second function is 36.72% faster (0.142766 vs 0.090349)
 ```
+
+#PHP 

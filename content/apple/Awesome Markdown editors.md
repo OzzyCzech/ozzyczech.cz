@@ -1,9 +1,3 @@
----
-title: Awesome Markdown editors
-date: 2020-10-12
-tags: [markdown, macOS]
----
-
 # Awesome Markdown editors
 
 ## [Obsidian](https://obsidian.md/)
@@ -57,3 +51,5 @@ brew cask install macdown
 ```shell
 brew cask install visual-studio-code
 ```
+
+#macOS #markdown

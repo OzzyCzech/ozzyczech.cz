@@ -1,10 +1,3 @@
----
-title: How to clean flash drive before unmount on Mac
-date: 2013-12-21
-tags: [macOS, bash]
----
-
-
 # How to clean flash drive before unmount on Mac
 
 How to **clean flash drive** and delete all hidden (dot) files on mac before unmount? It's simple, save follow commands as `flash`:
@@ -28,3 +21,5 @@ fi
 
 Then change the access mode of a file `chmod +x flash`. To unmount a clean flash drive just run
 `./flash Flashka` (Flashka is name od drive).
+
+#macOS #bash 

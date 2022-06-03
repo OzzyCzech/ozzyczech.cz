@@ -1,10 +1,3 @@
----
-title: Install Arduino on Raspberry PI
-date: 2019-10-24
-tags: [Raspberry, iot]
----
-
-
 # Install Arduino on Raspberry PI
 
 1. [Download arduino Linux ARM 64 bit](https://www.arduino.cc/en/Main/software)
@@ -29,3 +22,5 @@ sudo usermod -aG uucp $(whoami)
 sudo usermod -aG plugdev $(whoami)
 sudo reboot
 ```
+
+#Raspberry #iot 

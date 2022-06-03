@@ -1,8 +1,3 @@
----
-date: 2020-10-20
-tags: [css, webdesign]
----
-
 # CSS Framweorks
 
 ## Full frameworks
@@ -14,4 +9,3 @@ tags: [css, webdesign]
 ## Minimalist
 * [MVP.css](https://andybrewer.github.io/mvp/) - A minimalist stylesheet for HTML elements
 * [Picni.css](https://picnicss.com/) - Lightweight and beautiful CSS library
-

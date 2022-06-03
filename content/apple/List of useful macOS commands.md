@@ -1,9 +1,3 @@
----
-title: List of useful macOS commands
-date: 2022-04-19
-tags: [macOS, bash]
----
-
 # List of useful macOS commands
 
 ## Network speed quality
@@ -67,3 +61,5 @@ caffeinate -t 18000 # 18000 seconds
 ```
 
 Or you can just use free app [KeepingYouAwake](https://keepingyouawake.app/)
+
+#macOS 

@@ -1,9 +1,3 @@
----
-title: Backup mongo indexes
-date: 2020-04-20
-tags: [mongo]
----
-
 # Backup mongo indexes
 
 There is really short and briliant script for create backup of indexes queries. This code iterate over all collections and create backup of `createIndex()` queries.
@@ -35,3 +29,5 @@ db.users.createIndex({"settings" : 1}, {"name" : "settingsIndex", "background" :
 db.users.createIndex({"name" : 1}, {"name" : "nameIndex", "background" : true});
 db.users.createIndex({"email" : 1}, {"name" : "emailIndex", "background" : true});
 ```
+
+#mongo 

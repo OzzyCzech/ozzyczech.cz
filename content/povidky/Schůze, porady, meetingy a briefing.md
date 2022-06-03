@@ -1,9 +1,3 @@
----
-date: 2008-01-21
-tags: [lifehack]
----
-
-
 # Schůze, porady, meetingy a briefing
 
 Začal bych tím, co to vlastně schůze, porada, meeting nebo briefing je. Někteří

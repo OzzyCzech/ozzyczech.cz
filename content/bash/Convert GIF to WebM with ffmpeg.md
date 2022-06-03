@@ -1,9 +1,3 @@
----
-title: Convert GIF to WebM with ffmpeg
-date: 2020-03-17
-tags: [bash, ffmpeg]
----
-
 # Convert GIF to WebM with ffmpeg
 
 ```shell
@@ -15,3 +9,5 @@ ffmpeg -i my-animation.gif -c vp9 -b:v 0 -crf 41 my-animation.webm
   <source src="my-animation.webm" type="video/webm">
 </video>
 ```
+
+#bash #ffmpeg

@@ -20,13 +20,21 @@ export default ({page, tags}) => {
 		<main className="md:order-first">
 			<Post page={page} single={true}/>
 
-			<div className="text-sm text-right text-gray-500">
-				<span data-ago={new Date(page.date).toISOString()}>{(new Date(page.date)).toLocaleDateString('cs-CZ')}</span>
-				<span className="mx-1">•</span>
-				<a href={`https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/main/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="hover:underline">raw</a>
-				<span className="mx-1">•</span>
-				<a href={`https://github.com/OzzyCzech/ozzyczech.cz/edit/main/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`} target="_blank" className="hover:underline">edit</a>
-			</div>
+			<ul className="flex flex-row text-gray-500 gap-2">
+				<li>last change <span data-ago={new Date(page.date).toISOString()}>{(new Date(page.date)).toLocaleDateString('cs-CZ')}</span></li>
+				<li>
+					<a
+						href={`https://raw.githubusercontent.com/OzzyCzech/ozzyczech.cz/main/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`}
+						target="_blank"
+						className="bg-gray-800 hover:text-gray-200 hover:bg-gray-700 inline-block px-1.5 rounded-sm">raw</a>
+				</li>
+				<li><a
+					href={`https://github.com/OzzyCzech/ozzyczech.cz/edit/main/${encodeURI(page.dir)}/${encodeURI(page.base)}${encodeURI(page.ext)}`}
+					target="_blank"
+					className="bg-gray-800 hover:text-gray-200 hover:bg-gray-700 inline-block px-1.5 rounded-sm">edit</a>
+				</li>
+			</ul>
+
 		</main>
 
 	</div>
@@ -34,5 +42,3 @@ export default ({page, tags}) => {
 	</body>
 	</html>);
 }
-
-// <script className="bg-gray-600" dangerouslySetInnerHTML={{__html: `showDate(new Date('${page.date}'))`}}/>

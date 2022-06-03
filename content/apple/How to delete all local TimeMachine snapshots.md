@@ -1,9 +1,3 @@
----
-title: How to delete all local TimeMachine snapshots
-date: 2021-09-14
-tags: [macOS, TimeMachine]
----
-
 # How to delete all local TimeMachine snapshots
 
 Your Time Machine backup disk might not always be available, so Time Machine also stores
@@ -28,3 +22,5 @@ You can lists all snaphosts and deletes all of them in a loop:
 ```shell
 for d in $(tmutil listlocalsnapshotdates | grep "-"); do sudo tmutil deletelocalsnapshots $d; done
 ```
+
+#macOS  #TimeMachine

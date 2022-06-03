@@ -1,9 +1,3 @@
----
-title: Control Time Machine from the command line
-date: 2022-02-10
-tags: [macOS, TimeMachine]
----
-
 # Control Time Machine from the command line
 
 You can enable `sudo tmutil enable` or disable `sudo tmutil disable` from command line. If you want to run a Time Machine backup right away, just run `tmutil startbackup` or
@@ -52,3 +46,5 @@ sudo mdfind "com_apple_backup_excludeItem = 'com.apple.backupd'"
 ```shell
 tmutil listbackups
 ```
+
+#macOS #TimeMachine 

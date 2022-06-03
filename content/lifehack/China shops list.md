@@ -1,8 +1,3 @@
----
-title: Best china shops list
-date: 2018-10-23
----
-
 # China shops list
 
 * https://www.aliexpress.com

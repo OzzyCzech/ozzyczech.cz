@@ -1,9 +1,3 @@
----
-title: iOS like on/off switch with CSS and HTML
-date: 2017-09-28
-tags: [iOS, CSS, HTML]
----
-
 # iOS like on/off switch button with CSS and HTML
 
 Out there is multiple solution of iOS like on/off switch button, but:
@@ -93,6 +87,4 @@ div {
 }
 ```
 
-
-
-
+#css 

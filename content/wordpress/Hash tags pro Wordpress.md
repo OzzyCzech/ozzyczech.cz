@@ -1,9 +1,3 @@
----
-title: Hash tags pro Wordpress
-date: 2012-09-15
-tags: [PHP, Wordpress]
----
-
 # Hash tags pro Wordpress
 
 Napsal jsem velmi jednoduchý plugin, který přidává do Wordpress podporu pro hash tagy:
@@ -51,3 +45,5 @@ Povšimněte si zejména řádku  `wp_set_object_terms($post_id, $matches[1], 'p
 ten totiž ukládá nalezené tagy k postu. Pokud je poslední hodnota `true`,
 provede append (přidání ke stávajícím tagům). Pokud je `false`, provede 
 nahrazení všech tagů u postu nalezenými hashtagy.
+
+#Wordpress 

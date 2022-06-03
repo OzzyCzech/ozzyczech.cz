@@ -1,9 +1,3 @@
----
-title: Case insensitive in_array v PHP
-date: 2011-06-20
-tags: [PHP]
----
-
 # Case insensitive in_array v PHP
 
 PHP funkce [in_array](http://php.net/manual/en/function.in-array.php) je case
@@ -38,3 +32,5 @@ function filterArrayValues($needle, $array) {
 
 print_r(filterArrayValues('a', $array)); // vypíše jen cE
 ```
+
+#PHP

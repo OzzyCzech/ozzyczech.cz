@@ -1,9 +1,3 @@
----
-title: Setup email sending from PHP on Mac
-date: 2013-05-14
-tags: [email, macOS, PHP]
----
-
 # Setup email sending from PHP on Mac
 
 First write in terminal: `which sendmail` wlll return path to sendmail app (in my case `/usr/sbin/sendmail`). Then open `php.ini` file and setup:
@@ -25,3 +19,5 @@ And check if emails will come:
 ```shell
 php -r "mail('youremail@domain.com', 'subject', 'message', 'From: <youremail@domain.com>' . PHP_EOL);"
 ```
+
+#macOS #PHP 

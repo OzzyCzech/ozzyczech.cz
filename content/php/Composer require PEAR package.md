@@ -1,10 +1,3 @@
----
-title: Composer require PEAR package
-date: 2013-09-25
-tags: [composer, PHP]
----
-
-
 # Composer require PEAR package
 
 ```json
@@ -20,3 +13,5 @@ tags: [composer, PHP]
  }
 }
 ```
+
+#PHP #composer #pear

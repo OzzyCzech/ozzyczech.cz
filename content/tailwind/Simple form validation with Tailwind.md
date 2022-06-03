@@ -1,9 +1,3 @@
----
-title: Simple form validation with Tailwind
-date: 2022-03-23
-tags: [Tailwind, css, js]
----
-
 # Simple form validation with Tailwind
 
 Tailwind have multiple utilities for different inputs states like `required`, `invalid`, and `disabled`.
@@ -102,3 +96,5 @@ and full CSS example:
 ```
 
 https://play.tailwindcss.com/awVeicebKX
+
+#Tailwind 

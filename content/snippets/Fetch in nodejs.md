@@ -1,9 +1,3 @@
----
-title: Fetch in nodejs 
-date: 2021-10-22
-tags: [nodejs, Snippets]
----
-
 # Fetch in nodejs
 
 ```javascript
@@ -39,3 +33,5 @@ async function fetch(url) {
 
 const html = await fetch('https://ozana.cz');
 ```
+
+#nodejs

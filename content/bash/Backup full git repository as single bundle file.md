@@ -1,9 +1,3 @@
----
-title: Backup full git repository as single bundle file
-date: 2019-09-27
-tags: [bash, git]
----
-
 # Backup full git repository as single bundle file
 
 Git is capable of "bundling" its data into a single file. The [bundle command](https://git-scm.com/docs/git-bundle) 
@@ -71,3 +65,5 @@ You can difectly clone repository from bundle file:
 ```shell
 git clone my-super-file.bundle directory
 ```
+
+#git #bash 

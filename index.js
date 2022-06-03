@@ -114,6 +114,10 @@ renderer(
 			frontmatter,
 			emoji,
 			markdown,
+			(page) => {
+				page.tags = Array.from(page.content.matchAll(/#(\w+) /g), m => `${m[1]}`);
+				page.content = page.content.replace(/#(\w+) /g, '');
+			},
 			meta,
 			(page) => page.tags.add('' + page.date.getFullYear()),
 			{link},

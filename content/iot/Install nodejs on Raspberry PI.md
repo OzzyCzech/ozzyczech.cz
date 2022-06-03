@@ -1,11 +1,4 @@
----
-title: Install nodejs on Raspberry PI
-date: 2018-12-23
-tags: [iot, Raspberry]
----
-
 # Install nodejs on Raspberry PI
-
 
 First download latest version of nodejs:
 
@@ -22,3 +15,6 @@ sudo cp -R lib/* /usr/lib/
 sudo apt update && sudo apt upgrade
 sudo apt install build-essential
 ```
+
+
+#iot #Raspberry 

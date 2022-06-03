@@ -1,9 +1,3 @@
----
-title: Advanced tasks with Homebrew
-date: 2020-07-23
-tags: [brew, macOS]
----
-
 # Advanced tasks with Homebrew
 
 ### Install specific cask version
@@ -97,3 +91,5 @@ PS: you can always reset everything back to normal with follow command
 ```shell
 brew update-reset
 ```
+
+#macOS #brew 

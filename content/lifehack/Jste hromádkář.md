@@ -1,9 +1,3 @@
----
-title: Jste hromádkář
-date: 2008-01-16
-tags: [lifehack]
----
-
 # Jste hromádkář, nebo ne?
 
 Během svého života jsem pochopil jednu věc, že lidé se dělí na **hromádkáře a nehromádkáře**. 

@@ -4,7 +4,9 @@
   "promptDelete": false,
   "attachmentFolderPath": "./",
   "newLinkFormat": "absolute",
-  "showFrontmatter": true,
+  "showFrontmatter": false,
   "useMarkdownLinks": true,
-  "alwaysUpdateLinks": false
+  "alwaysUpdateLinks": false,
+  "strictLineBreaks": false,
+  "tabSize": 2
 }

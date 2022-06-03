@@ -1,13 +1,6 @@
----
-title: Convert video for iMovie with ffmpeg
-date: 2020-03-02
-tags: [bash, ffmpeg]
----
-
 # Convert video for iMovie with ffmpeg
 
-You need to include the argument `-pix_fmt yuv420p` to generate `H.264` content for Apple 
-software/devices, and a bunch of other decoders that don't handle `yuv444p`.
+You need to include the argument `-pix_fmt yuv420p` to generate `H.264` content for Apple software/devices, and a bunch of other decoders that don't handle `yuv444p`.
 
 ```shell
 ffmpeg -i input.avi -pix_fmt yuv420p output.mp4
@@ -37,23 +30,9 @@ Video formats:
 * Photo JPEG
 * XAVC-S
 
-Container formats
-
-* 3GP
-* AVI
-* M4V
-* MOV (QuickTime)
-* MP4
-
-Audio formats
-
-* AAC
-* AIFF
-* BWF
-* CAF
-* MP3
-* MP4
-* RF64
-* WAV
+Container formats: **3GP**, **AVI**, **M4V**, **MOV** (QuickTime) and **MP4**
+Audio formats: AAC, AIFF, BWF, CAF, MP3, MP4, RF64 and WAV
 
 More information [about incompatible media in iMovie for macOS](https://support.apple.com/en-us/HT209029)
+
+#ffmpeg #macOS 

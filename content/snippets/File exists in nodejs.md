@@ -1,9 +1,3 @@
----
-title: File exists in nodejs
-date: 2021-10-22
-tags: [nodejs, Snippets]
----
-
 # File exists in nodejs
 
 There are two functions `fs.exists()` and `fs.existsSync()`. Function `fs.exists()` is [deprecated](https://nodejs.org/api/fs.html#fsexistspath-callback), but `fs.existsSync()` is not.
@@ -19,3 +13,4 @@ let fileExists = s => new Promise(resolve => access(s, constants.F_OK, error => 
 const exists = await fileExists(`${homedir()}/Downloads/something.png`);
 ```
 
+#nodejs 
