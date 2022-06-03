@@ -4,7 +4,7 @@ tags: [Tailwind, css]
 ---
 
 # Comment bubble with Tailwind
-![[tailwind/comment-bubble.png]]
+![Comment bubble](tailwind/comment-bubble.png)
 
 ```html
 <div class="
