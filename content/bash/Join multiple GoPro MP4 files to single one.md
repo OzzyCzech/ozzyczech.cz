@@ -1,9 +1,3 @@
----
-title: Join multiple GoPro MP4 files to single one
-date: 2021-05-10
-tags: [bash, ffmpeg, gopro]
----
-
 # Join multiple GoPro MP4 files to single one
 
 GoPro 'chapters' are footage around 4 GB - The camera starts a new file every ~ 10 minutes.
@@ -36,3 +30,4 @@ Then you can call `video-concat` function as follow:
 video-concat *.MP4 output.mp3
 ```
 
+#bash #ffmpeg #gopro

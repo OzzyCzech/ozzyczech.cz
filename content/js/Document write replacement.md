@@ -1,9 +1,3 @@
----
-title: Javascript document.write replacement
-date: 2018-11-26
-tags: [javascript]
----
-
 # Javascript document.write replacement
 
 Replacement of `document.write` can be combination of [insertAdjacentHTML()](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) method and [document.currentScript](https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript) property.
@@ -25,3 +19,5 @@ The `Document.currentScript` property returns the `<script>` element whose scrip
   );
 </script>
 ```
+
+#javascript

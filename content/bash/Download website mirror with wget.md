@@ -1,9 +1,3 @@
----
-title: Download website mirror with wget
-date: 2018-12-13
-tags: [wget]
----
-
 # Download website mirror with wget
 
 ```shell
@@ -14,3 +8,5 @@ wget --mirror \
      --no-parent \
      --no-check-certificate http://example.com
 ```
+
+#wget

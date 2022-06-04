@@ -1,10 +1,3 @@
----
-title: Polly.js - Record, replay, and stub HTTP interactions.
-date: 2019-07-29
-tags: [javascript, testing]
----
-
-
 # Polly.js - Record, replay, and stub HTTP interactions.
 
 [![Record, replay, and stub HTTP interactions.](/js/Polly.js.png#center)](https://netflix.github.io/pollyjs/#/)
@@ -13,3 +6,5 @@ Polly.JS is a standalone, framework-agnostic JavaScript library that enables rec
 
 - https://netflix.github.io/pollyjs - homepage
 - https://github.com/Netflix/pollyjs - source codes
+
+#javascript

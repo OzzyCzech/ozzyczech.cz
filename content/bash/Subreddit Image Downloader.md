@@ -1,10 +1,3 @@
----
-title: Subreddit Image Downloader
-date: 2019-10-15
-tags: [bash, reddit, curl]
----
-
-
 # Subreddit Image Downloader
 
 Subreddit downoader is a **bash script** which:
@@ -17,9 +10,9 @@ Subreddit downoader is a **bash script** which:
 ```shell
 #!/usr/bin/env bash
 
-###############################################################################
+#########
 # Config
-###############################################################################
+#########
 
 # default subreddit=catpictures :)
 subreddit=${1-catpictures} && json=${subreddit}
@@ -30,9 +23,9 @@ dir=`realpath ${2-${subreddit}}` && mkdir -p ${dir}
 # default page=1
 pages=${3-1} 
 
-###############################################################################
+#####################
 # Downloading images
-###############################################################################
+#####################
 
 printf "Download all subreddit \e[1;31m/r/${subreddit}\e[m images to \e[1;31m${dir}\e[m\n"
 
@@ -68,13 +61,13 @@ do
 
 done;
 
-###############################################################################
+##########
 # Cleanup
-###############################################################################
+##########
 
 rm ${dir}/*.json
 
-wait #wait for all background jobs to terminate
+wait # wait for all background jobs to terminate
 ```
 
 ## Usage 
@@ -96,3 +89,5 @@ Download all images from [catpictures](https://www.reddit.com/r/catpictures/) su
 - [curl](https://curl.haxx.se/download.html)
 
 Source code: https://github.com/OzzyCzech/subreddit-image-downloader
+
+#curl #subreddit 

@@ -1,9 +1,3 @@
----
-title: Fetch in pure Node.js
-date: 2020-09-24
-tags: [javascript, nodejs]
----
-
 # Fetch in pure Node.js
 
 There are a lot of popular Node.js modules for requestiong data with HTTP or HTTPS (e.g. [axios](https://github.com/axios/axios), [got](https://github.com/sindresorhus/got), [node-fetch](https://github.com/node-fetch/node-fetch)), but you **don't need them**! You can easily made HTTP/HTTPS requests in Node.js with [http.get](https://nodejs.org/api/http.html#http_http_get_options_callback) or [https.get](https://nodejs.org/api/https.html#https_https_get_options_callback):
@@ -60,3 +54,5 @@ import fetch from './fetch'
 ```
 
 Happy nodescripting! 
+
+#nodejs

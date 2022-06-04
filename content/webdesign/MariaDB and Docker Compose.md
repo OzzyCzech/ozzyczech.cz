@@ -1,12 +1,6 @@
----
-title: MariaDB and Docker Compose
-date: 2018-10-24 17:30:00
----
-
 # MariaDB and Docker Compose
 
-This is a short instructions how to run [MariaDB Docker](https://hub.docker.com/_/mariadb/) with 
-[docker compose](https://docs.docker.com/compose/) and have suitable developer env.
+This is a short instructions how to run #mariadb with #docker official [image](https://hub.docker.com/_/mariadb/) with [docker compose](https://docs.docker.com/compose/) and have suitable developer env.
 
 Let's have follow `docker-compose.yml` and two folders `./etc/db` and `./data`
 
@@ -44,10 +38,7 @@ collation-server=utf8_czech_ci
 
 ## Initializing a fresh instance
 
-Most important is **env** - with **MYSQL_ROOT_PASSWORD** and **MYSQL_DATABASE** variable.
-When a container is started for the first time it will execute
-files with extensions **.sh**, **.sql** and **.sql.gz** that are 
-found in `/docker-entrypoint-initdb.d`. Lets have follow `./etc/db/init.sh` script:
+Most important is **env** - with `MYSQL_ROOT_PASSWORD` and `MYSQL_DATABASE` variable. When a container is started for the first time it will execute files with extensions with following  `.sh` , `.sql`  and `.sql.gz`  that are found in `/docker-entrypoint-initdb.d`. Lets have follow `./etc/db/init.sh` script:
 
 ```shell
 #!/bin/bash
@@ -82,7 +73,7 @@ docker-compose exec \
 mariadb bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE < /db/$MYSQL_DATABASE.sql'
 ```
 
-### Execute mysql_upgrade after upgrade
+### Execute `mysql_upgrade` after upgrade
 
 ```shell
 docker-compose exec mariadb bash -c 'mysql_upgrade -uroot -proot'

@@ -1,9 +1,3 @@
----
-title: Convert MYSQL HEX to string with PHP
-date: 2019-11-27
-tags: [PHP, mysql]
----
-
 # Convert MYSQL HEX to string with PHP
 
 [Hexadecimal literal](https://dev.mysql.com/doc/refman/8.0/en/hexadecimal-literals.html) values are 
@@ -36,3 +30,4 @@ function hexToString($hex) {
 
 Inserting string to the table will be easy just `"INSERT INTO table (column) VALUES HEX(?)"` or with [Hexadecimal Literal](https://dev.mysql.com/doc/refman/8.0/en/hexadecimal-literals.html) string starting with `0x` or `X'string'`.
 
+#PHP #mysql 

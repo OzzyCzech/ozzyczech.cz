@@ -1,10 +1,3 @@
----
-title: Download all images from URL into a single folder
-date: 2019-09-12
-tags: [bash, wget]
----
-
-
 # Download all images from URL into a single folder
 
 There is plenty options, but easiest one is use command line. 
@@ -60,3 +53,4 @@ wget -nd -nc -np \
      http://homophonesweakly.blogspot.com/{2011..2019}
 ```
 
+#bash #wget

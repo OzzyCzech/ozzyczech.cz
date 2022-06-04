@@ -14,7 +14,7 @@ add_filter('the_content','omSearchHeighlight');
 add_filter('the_excerpt','omSearchHeighlight');
 
 // nezapomeňte strong element nastylovat např.
-// strong.search-keyword {background: #f3ff0f!important; color:#000!important;}
+// strong.search-keyword {background:#f3ff0f!important; color:#000!important;}
 ```
 
  Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.
