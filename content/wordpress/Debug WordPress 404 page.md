@@ -1,6 +1,6 @@
 # Debug WordPress 404 page
 
-Insert following code to `functions.php` for debuging 404 page:
+Following code dump state of #WordPress 404 page with permalins, rewrite rules etc. plase it to `functions.php`
 
 ```php
 ini_set('error_reporting', -1);
@@ -10,9 +10,11 @@ add_action(
 	'parse_request',
 	function (&$wp) {
 		global $wp_rewrite;
-
+		
 		printf('<h2>rewrite rules</h2><pre>%s</pre>', var_export($wp_rewrite->wp_rewrite_rules(), true));
+		
 		printf('<h2>permalink structure</h2><pre>%s</pre>', var_export($wp_rewrite->permalink_structure, true));
+		
 		printf('<h2>page permastruct</h2><pre>%s</pre>', var_export($wp_rewrite->get_page_permastruct(), true));
 		printf('<h2>matched rule and query</h2><pre>%s</pre>', var_export($wp->matched_rule, true));
 		printf('<h2>matched query</h2><pre>%s</pre>', var_export($wp->matched_query, true));
@@ -46,5 +48,3 @@ add_filter(
 	}
 );
 ```
-
-#Wordpress 

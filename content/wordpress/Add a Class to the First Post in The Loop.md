@@ -12,4 +12,4 @@ add_filter(
 );
 ```
 
-#Wordpress 
+#WordPress 
