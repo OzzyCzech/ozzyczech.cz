@@ -75,7 +75,7 @@ renderer(
 
 		link: (href, title, text) => {
 			// Current domain
-			if (href.includes(domain.hostname)) {
+			if (href.includes(domain.hostname) || href.startsWith('/')) {
 				return `<a href="${href}" title="${title ? title : ''}">${text}</a>`;
 			}
 
