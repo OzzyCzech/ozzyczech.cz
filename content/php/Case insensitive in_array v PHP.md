@@ -1,9 +1,6 @@
 # Case insensitive in_array v PHP
 
-PHP funkce [in_array](http://php.net/manual/en/function.in-array.php) je case
-sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a
-nezáleží Vám na velikosti písmen u jeho prvků:
-
+#PHP funkce [in_array](http://php.net/manual/en/function.in-array.php) je case sensitive - což se nemusí vždy hodit. Občas potřebujete prohledat pole a nezáleží Vám na velikosti písmen u jeho prvků:
 
 ```php
 $array = array('a', 'B', 'cE');
@@ -32,5 +29,3 @@ function filterArrayValues($needle, $array) {
 
 print_r(filterArrayValues('a', $array)); // vypíše jen cE
 ```
-
-#PHP
