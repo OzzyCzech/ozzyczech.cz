@@ -3,6 +3,8 @@
 import path from 'path';
 import fs from 'fs-extra';
 import {globby} from 'globby';
+import {statSync} from 'node:fs';
+import {inspect} from 'node:util';
 
 import Prism from 'prismjs';
 import 'prismjs/components/prism-ini.js';
@@ -113,13 +115,29 @@ renderer(
 		...[
 			frontmatter,
 			emoji,
+
+			(page) => {
+				const tags = page.content
+					.replace(/```[^`]*```/gmi, '') // skip preformat
+					.match(/(?<=^|\s)#([\w-]{2,})/gmi) // match all tags
+					?.map(tag => tag.substring(1)); // remove # from the
+
+				page.tags = new Set(tags); // set tags
+
+				if (tags) {
+					const anchor = new RegExp('#(' + tags.join('|') + ')', 'gmi');
+					page.content = page.content.replace(anchor, (match, capture) => {
+						return `[${match}](/tag/${slugify(capture)})`;
+					});
+				}
+
+			},
 			markdown,
 			(page) => {
-				page.tags = Array.from(page.content.matchAll(/#(\w+) /g), m => `${m[1]}`);
-				page.content = page.content.replace(/#(\w+) /g, '');
+				page.date = page.file ? new Date(inspect(statSync(page.file).mtime)) : new Date();
+				page.title = (page.title || (page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i) || [page.base || '']).pop()).trim();
+				page.slug = slugify(page.base);
 			},
-			meta,
-			(page) => page.tags.add('' + page.date.getFullYear()),
 			{link},
 		],
 	);
