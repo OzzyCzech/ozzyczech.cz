@@ -1,19 +1,13 @@
----
-title: Read .env file in bash
-date: 2019-03-01
-tags: [bash]
----
+# Load .env file in Bash
 
-# Read .env file in bash
-
-Let's have example **.env** file:
+There is an easy way to load an `.env` file in #bash. Let's have example `.env` file:
 
 ```
 example=value
 example2=value
 ```
 
-then you can read this file like this:
+then you can read this file in #bash like this:
 
 ```shell
 #!/usr/bin/env bash

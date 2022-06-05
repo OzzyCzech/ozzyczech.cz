@@ -1,9 +1,3 @@
----
-title: Exiftool tips & tricks
-date: 2019-06-24
-tags: [bash, exiftool]
----
-
 # Exiftool tips & tricks
 
 ## Organize images
@@ -13,6 +7,7 @@ Organize images by years/months
 ```shell
 exiftool -d "%Y/%m/%Y-%m-%d %H.%M.%S%%-c.%%le" "-filename<CreateDate" -r ./Photos
 ```
+
 Download RAW files from SD card to current folder:
 
 ```shell
@@ -110,3 +105,5 @@ Outputs a grouped collection of records as JSON in a directory:
 ```shell
 exiftool -json -g /path > collectionprofile.json
 ```
+
+#bash 

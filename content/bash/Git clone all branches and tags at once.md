@@ -1,13 +1,6 @@
----
-title: Git clone all branches at once
-date: 2017-08-11
-tags: [bash, git]
----
-
-
 # Git clone all branches and tags at once
 
-Follow script clone all branches and tags at once:
+Following script clone all #git branches and tags at once:
 
 ```shell
 #!/bin/bash
@@ -22,7 +15,6 @@ Single line version:
 ```shell
 git fetch --all --tags; for branch in `git branch -r --format="%(refname:short)" | sed 's/origin\///'`; do git branch -f --track "$branch" "origin/$branch" ; done ;
 ```
-
 
 ## Motivation?
 

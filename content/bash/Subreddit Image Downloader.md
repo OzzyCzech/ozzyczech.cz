@@ -1,6 +1,6 @@
 # Subreddit Image Downloader
 
-Subreddit downoader is a **bash script** which:
+#Subreddit downoader is a #bash script which:
 
 * download all images in full size
 * download only new images
@@ -82,12 +82,10 @@ Download all images from [catpictures](https://www.reddit.com/r/catpictures/) su
 ./subreddit-download.sh catpictures ./catpictures 5
 ```
 
-## Requirements
+## System requirements
 
 - bash
 - [jq](https://stedolan.github.io/jq/download/)
 - [curl](https://curl.haxx.se/download.html)
 
-Source code: https://github.com/OzzyCzech/subreddit-image-downloader
-
-#curl #subreddit 
+Full source code: https://github.com/OzzyCzech/subreddit-image-downloader

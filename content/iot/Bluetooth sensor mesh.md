@@ -1,13 +1,11 @@
 # Bluetooth sensor mesh
 
-**Idea**: Create bluetooth mesh from bunch of env. sensors (doors, windows, temperature, humidity, move sensors, buttons) 
-connected to hub.
+**Idea**: Create #bluetooth mesh from bunch of env. sensors (doors, windows, temperature, humidity, move sensors, buttons) connected to hub.
 
 ## Bluetooth mesh
 
 * [nrf52 mesh module](https://www.aliexpress.com/item/skylab-ble5-ble-50-mesh-nrf52-nrf52840-module-keyboard-bluetooth-hid-module/32946330811.html)
 * [Home Mesh](https://www.homesmartmesh.com/) or [here](https://hackaday.io/project/20388-home-smart-mesh)
-
 
 ## Bluetooth buttons
 
@@ -31,9 +29,9 @@ connected to hub.
 * [nRF52 specs](http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.nrf52%2Fdita%2Fnrf52%2Fnrf52_series.html)
 * [nRF52 vs nRF51](https://devzone.nordicsemi.com/b/blog/posts/new-features-in-nrf52) - new features in nRF52
 
-
 ## Bluetooth 5
+
 * [bluetooth5 spec](https://www.bluetooth.com/specifications/%20bluetooth-core-specification/bluetooth5)
 * [Nordicsemi Bluetooth 5](https://www.nordicsemi.com/eng/Products/Bluetooth-5
 
-#iot #bluetooth 
+#iot 

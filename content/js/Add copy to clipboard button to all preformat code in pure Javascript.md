@@ -1,9 +1,3 @@
----
-title: Add copy to clipboard button to all preformat code in pure Javascript
-date: 2020-03-02
-tags: [javascript]
----
-
 # Add copy to clipboard button to all preformat code in pure Javascript
 
 ```js
@@ -59,7 +53,6 @@ a.btn-copy:hover {
 }
 ```
 
-As with many new APIs, `navigator.clipboard` is only supported for pages served over HTTPS. To help prevent abuse, clipboard access is only allowed when a page is the active tab. Pages in active tabs can write to the clipboard without requesting permission, but reading from the
-clipboard always requires permission.
+As with many new APIs, `navigator.clipboard` is only supported for pages served over HTTPS. To help prevent abuse, clipboard access is only allowed when a page is the active tab. Pages in active tabs can write to the clipboard without requesting permission, but reading from the clipboard always requires permission.
 
 https://developers.google.com/web/updates/2018/03/clipboardapi
