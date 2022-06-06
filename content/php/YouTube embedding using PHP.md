@@ -1,8 +1,6 @@
-# Snadné vložené YouTube videa pomocí PHP
+# YouTube embedding using PHP
 
-Následující PHP kód zamění jakýkoliv odkazu na [YouTube](http://www.youtube.com/) video za vložený přehrávač. 
-Prostřednictvím jediného regulárního výrazu se dokáží automaticky nahradit celkem čtyři
-různé formáty URL adresy za embed video přehrávač.
+The following #PHP code will replace any link to a #YouTube video with an embedded player. Through a single regular expression, it can automatically replace a total of four different URL formats for an embedded video player.
 
 ```php
 function youtube($string)
@@ -19,5 +17,3 @@ echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
 echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
 echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
 ```
-
-#PHP #YouTube
