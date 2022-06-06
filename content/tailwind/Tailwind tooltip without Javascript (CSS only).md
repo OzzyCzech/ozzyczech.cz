@@ -74,4 +74,4 @@ new line to the `aria-label` .
 
 https://play.tailwindcss.com/8QreaqXGBt
 
-#Tailwind #css
+#Tailwind #CSS

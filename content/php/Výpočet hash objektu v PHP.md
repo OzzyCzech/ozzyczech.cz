@@ -1,9 +1,3 @@
----
-title: Výpočet hash objektu v PHP
-date: 2011-09-25
-tags: [PHP]
----
-
 # Výpočet hash objektu v PHP
 
 Funkce [spl_object_hash()](http://php.net/manual/en/function.spl-object-hash.php)
@@ -34,3 +28,5 @@ $bar->setProperty('25');
 echo $bar;
 $hash = (string) $bar;
 ```
+
+#PHP

@@ -1,9 +1,3 @@
----
-title: Snadné vložené YouTube videa pomocí PHP
-date: 2011-03-27
-tags: [PHP, YouTube]
----
-
 # Snadné vložené YouTube videa pomocí PHP
 
 Následující PHP kód zamění jakýkoliv odkazu na [YouTube](http://www.youtube.com/) video za vložený přehrávač. 
@@ -25,3 +19,5 @@ echo youtube('http://youtube.com/watch?v=VWsjWCt1PsQ');
 echo youtube('http://youtube.com/v/VWsjWCt1PsQ');
 echo youtube('http://www.youtube.com/v/VWsjWCt1PsQ');
 ```
+
+#PHP #YouTube

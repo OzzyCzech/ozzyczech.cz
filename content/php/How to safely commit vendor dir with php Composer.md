@@ -1,10 +1,3 @@
----
-title: How to safely commit vendor dir with php Composer
-date: 2013-07-24
-tags: [composer, git, PHP]
----
-
-
 # How to safely commit vendor dir with php Composer
 
 [Composer](http://getcomposer.org/) is great tool, but sometimes you will need avoid all external dependencies. Sometimes you will need have all source codes in your git repository. Should I [ commit the dependencies](http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md) in my vendor directory, and still have all benefits of using Composer? Here are my requirements: - Everything need to be automatically.
@@ -43,3 +36,5 @@ Now, when you go to vendor/some/package dir it's common git repository - you can
 - Duplication of the history of all your dependencies in your own VCS.
 - There can be conflicts in commits especially when you work in larger team.
 - Still **not avoid commit .git directory** after running composer with `--no-scripts` param.
+
+#Composer #git #PHP

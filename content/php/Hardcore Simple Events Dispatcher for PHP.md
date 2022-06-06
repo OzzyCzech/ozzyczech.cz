@@ -1,9 +1,3 @@
----
-title: Hardcore Simple Events Dispatcher for PHP
-date: 2014-10-05
-tags: [PHP]
----
-
 # Hardcore Simple Events Dispatcher for PHP
 
 Events is simple pure functional **event dispatching library** for PHP 5.5+ and
@@ -31,3 +25,5 @@ trigger('event'); // print wow it's works yeah!
 
 Hardcore simple events for PHP with filter, prioritizing, removing handlers and
 stop propagation. It's even simpler then my previous version https://github.com/OzzyCzech/events.
+
+#PHP

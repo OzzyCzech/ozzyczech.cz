@@ -1,9 +1,3 @@
----
-title: Get currency rates from ČNB in PHP
-date: 2016-10-07
-tags: [PHP]
----
-
 # Get currency rates from ČNB in PHP
 
 ```php
@@ -53,3 +47,5 @@ class ExchangeRates {
 
 }
 ```
+
+#PHP

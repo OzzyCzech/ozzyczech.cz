@@ -1,9 +1,3 @@
----
-title: Display HTML with embed tag
-date: 2021-04-09
-tags: [javascript, webdesign]
----
-
 # Display HTML with embed tag
 
 ```html
@@ -55,3 +49,5 @@ There is another option, you can display HTML in new window as blob data:
 const content = URL.createObjectURL(new Blob([response.data + overlay || ''], {type: "text/html"}));
 window.open(content, "response", `width=640, height=480`).focus();
 ```
+
+#JavaScript

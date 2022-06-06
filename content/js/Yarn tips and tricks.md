@@ -1,9 +1,3 @@
----
-title: Yarn tips and tricks
-date: 2020-10-02
-tags: [yarn, npm, javascript]
----
-
 # Yarn tips and tricks
 
 ## Chose Yarn version
@@ -71,3 +65,5 @@ yarn-offline-mirror-pruning true
 ```
 
 All npm packages will be saved to `.npm` folder locally.
+
+#Yarn #JavaScript #NPM

@@ -1,10 +1,3 @@
----
-title: Zjištění práv k souboru nebo adresáři v PHP
-date: 2012-09-05
-tags: [PHP]
----
-
-
 # Zjištění práv k souboru nebo adresáři v PHP
 
 ```php
@@ -21,3 +14,5 @@ function hasPermisions($path, $permission = 777) {
   return ($current > $permission);
 }
 ```
+
+#PHP

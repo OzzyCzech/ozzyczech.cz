@@ -7,4 +7,4 @@ Polly.JS is a standalone, framework-agnostic JavaScript library that enables rec
 - https://netflix.github.io/pollyjs - homepage
 - https://github.com/Netflix/pollyjs - source codes
 
-#javascript
+#JavaScript

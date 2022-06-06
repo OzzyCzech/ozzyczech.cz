@@ -1,7 +1,6 @@
 # Dropdown menu with Tailwind and Vanilla JS
 
-Tailwind CSS does not provide a base set of components that are ready to use right out of the box.
-One of the most missing components are [dropdowns](https://getbootstrap.com/docs/5.0/components/dropdowns/).
+Tailwind CSS does not provide a base set of components that are ready to use right out of the box. One of the most missing components are [dropdowns](https://getbootstrap.com/docs/5.0/components/dropdowns/).
 Dropdowns are toggleable, contextual overlays for displaying lists of links and more.
 They’re made interactive with a JavaScript.
 
@@ -101,4 +100,4 @@ for (const dropDownButton of inputDocument.querySelectorAll('[data-dropdown]')) 
 
 You can find the whole example on my GitHub at [OzzyCzech/tailwind-dropdowns](https://github.com/OzzyCzech/tailwind-dropdowns)
 
-#Tailwind #javascript #css 
+#Tailwind #JavaScript 

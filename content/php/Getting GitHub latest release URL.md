@@ -1,9 +1,3 @@
----
-title: Getting GitHub latest release URL
-date: 2014-09-28
-tags: [github, PHP]
----
-
 # Getting GitHub latest release URL
 
 Do you need **Download Latest Version** button? Try follow PHP code:
@@ -19,3 +13,5 @@ function getLatestTagUrl($repository, $default = 'master') {
 echo getLatestTagUrl('sphido/sphido');
 // will return https://github.com/sphido/sphido/archive/v0.2.1.zip
 ```
+
+#PHP #GitHub

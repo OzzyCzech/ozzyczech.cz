@@ -1,9 +1,3 @@
----
-title: Snadné připojení k FTP pomocí PHP
-date: 2011-04-13
-tags: [PHP]
----
-
 # Snadné připojení k FTP pomocí PHP
 
 Mám v oblibě [zkrácený zápis](http://en.wikipedia.org/wiki/File_Transfer_Protocol) připojení k FTP.
@@ -31,3 +25,5 @@ function getFtpConnection($uri)
 ```
 
  Výstupem funkce je samozřejmě ID připojení, se kterým pak můžete [normálně pracovat](http://www.php.net/manual/en/ref.ftp.php) dál. Funkci najdete také zde: [https://gist.github.com/998091](https://gist.github.com/998091)
+
+#PHP

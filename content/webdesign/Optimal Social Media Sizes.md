@@ -1,9 +1,3 @@
----
-title: Optimal Social Media Sizes
-date: 2020-12-08
-tags: [webdesign]
----
-
 # Optimal Social Media Sizes
 
 ### Facebook

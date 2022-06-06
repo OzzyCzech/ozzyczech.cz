@@ -26,4 +26,4 @@ And HTML:
 <textarea is="auto-expand"></textarea>
 ```
 
-#HTML #javascript 
+#HTML #JavaScript  

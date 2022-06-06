@@ -1,9 +1,3 @@
----
-title: Remove link manager from Wordpress
-date: 2011-09-11
-tags: [Wordpress]
----
-
 # Remove link manager from Wordpress
 
 WordPress [link manager](http://codex.wordpress.org/Links_Manager) is useless. Why do not remove that from menu? It's easy:

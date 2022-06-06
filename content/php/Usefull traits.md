@@ -1,10 +1,4 @@
----
-title: Usefull traits
-date: 2020-04-02
-tags: [PHP]
----
-
-# Usefull traits
+# Useful traits
 
 ### Get class_basename trait
 
@@ -30,3 +24,4 @@ trait ClassNamespace {
 
 This trait returns class namespace. If you have e.g. class `something\\class\\path\\MyClass` it will returns only `something\\class\\path`.
 
+#PHP

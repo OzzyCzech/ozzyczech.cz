@@ -19,4 +19,4 @@ add_filter('the_excerpt','omSearchHeighlight');
 
  Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.
 
-#css #PHP #Wordpress 
+#PHP #Wordpress #CSS

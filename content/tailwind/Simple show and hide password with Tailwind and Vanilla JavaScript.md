@@ -1,16 +1,14 @@
 # Simple show & hide password with Tailwind and Vanilla JavaScript
 
-I will show you a simple way in Vanilla #javascript how to made show/hide password button. Let's start with #Tailwind first:
+I will show you a simple way in Vanilla #JavaScript how to made show/hide password button. Let's start with #Tailwind first:
 
 ```html
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 ```
 
 Then add following HTML code:
 
 ```html
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-
 <div class="mx-auto max-w-md my-12">
   <label for="password" class="font-bold mb-2">Password</label>
   <div class="flex justify-center w-full">

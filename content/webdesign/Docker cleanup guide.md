@@ -1,9 +1,3 @@
----
-title: Docker cleanup guide
-date: 2020-01-24
-tags: [Docker]
----
-
 # Docker cleanup guide
 
 Docker **doesn't remove unused objects** such as containers, images, volumes, and networks unless you explicitly tell it to do so.
@@ -137,3 +131,5 @@ docker volume rm [VOLUME NAME]
 ```shell
 docker volume prune
 ```
+
+#Docker

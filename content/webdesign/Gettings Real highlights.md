@@ -1,9 +1,3 @@
----
-title: Gettings Real - highlights
-date: 2017-05-11
-tags: [webdesign]
----
-
 # Gettings Real - heighlights
 
 ## Starting

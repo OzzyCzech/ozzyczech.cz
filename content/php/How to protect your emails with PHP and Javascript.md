@@ -1,9 +1,3 @@
----
-title: How to protect your emails with PHP and Javascript
-date: 2014-04-22
-tags: [email, javascript, PHP, antispam]
----
-
 # How to protect your emails with PHP and Javascript
 
 Working with or without javascript it's combine two technique for email protection [ROT13](http://en.wikipedia.org/wiki/ROT13) and CSS
@@ -22,3 +16,5 @@ function mail($email, $text = null) {
 
 - [Nine ways to obfuscate e-mail addresses compared](http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/)
 - [Best Method for Email Obfuscation?](http://perishablepress.com/best-method-for-email-obfuscation/)
+
+#JavaScript 

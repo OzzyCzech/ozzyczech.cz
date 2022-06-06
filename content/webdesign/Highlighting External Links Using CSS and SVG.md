@@ -1,9 +1,3 @@
----
-title: Highlighting External Links Using CSS and SVG
-date: 2020-04-21
-tags: [css, svg]
----
-
 # Highlighting External Links Using CSS and SVG
 
 Follow CSS code add small SVG allow on the top of the extrenall links:
@@ -15,3 +9,5 @@ a[href*="//"]:not([href*="ozzyczech.cz"]):after {
 ```
 
 PS: do not forgot change `href*="ozzyczech.cz"` in CSS code 😀
+
+#CSS #SVG
