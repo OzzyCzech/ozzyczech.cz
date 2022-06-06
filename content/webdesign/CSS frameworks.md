@@ -1,4 +1,4 @@
-# CSS Framweorks
+# CSS Frameworks
 
 * [Tailwind CSS](https://tailwindcss.com/) - utility-first CSS framework for rapidly building custom designs
 * [Twitter Boostrap](https://getbootstrap.com/) - world’s most popular front-end open source toolkit
