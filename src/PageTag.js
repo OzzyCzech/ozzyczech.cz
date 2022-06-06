@@ -25,9 +25,8 @@ export default ({tag, posts, tags}) => {
 
 				<div className="mb-3">
 					{posts.map((post, index) =>
-						<a className="flex justify-between py-3 px-5 mb-1 block bg-gray-100 hover:bg-gray-200 rounded dark:hover:bg-gray-700 dark:bg-gray-800" href={post.link()} key={index}>
+						<a className="py-3 px-5 mb-1 block bg-gray-100 hover:bg-gray-200 rounded dark:hover:bg-gray-700 dark:bg-gray-800" href={post.link()} key={index}>
 							<span>{post.title}</span>
-							<span className="dark:text-gray-400 text-opacity-40">{post.date.getFullYear()}</span>
 						</a>,
 					)}
 				</div>
