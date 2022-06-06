@@ -1,4 +1,4 @@
-# Simple show & hide password with Tailwind and Vanilla JavaScript
+# Simple show and hide password with Tailwind and Vanilla JavaScript
 
 I will show you a simple way in Vanilla #JavaScript how to made show/hide password button. Let's start with #Tailwind first:
 
