@@ -1,9 +1,3 @@
----
-title: Wodpress constants for human-readable intervals
-date: 2013-02-20
-tags: [Wordpress]
----
-
 # Wodpress constants for human-readable intervals
 
 Constants for expressing human-readable intervals in new #Wordpress are very useful:

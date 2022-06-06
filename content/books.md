@@ -1,6 +1,6 @@
 # Books
 
-## Beletrie
+## Read
 
 * [Ready Player One: Hra začíná](https://www.databazeknih.cz/knihy/ready-player-one-hra-zacina-290983)
 * [Rudé hvězdy ve vesmíru aneb Pohled do zákulisí sovětské kosmonautiky](http://www.databazeknih.cz/knihy/rude-hvezdy-ve-vesmiru-aneb-pohled-do-zakulisi-sovetske-kosmonautiky-220823)
@@ -15,8 +15,12 @@
 * [Průmysl lži: Propaganda, konspirace, a dezinformační válka](https://www.kosmas.cz/knihy/238394/prumysl-lzi/)
 * [Faktomluva](https://www.melvil.cz/kniha-faktomluva/)
 * [Důmyslné umění, jak mít všechno u prdele](https://www.databazeknih.cz/knihy/dumyslne-umeni-jak-mit-vsechno-u-prdele-351608)
-* [Ruka noci podaná - Václav Cílek](https://kosmas.cz/knihy/250595/ruka-noci-podana/)
 * [Informační válka](https://www.alza.cz/media/informacni-valka-d5246169.ht``m)
+
+### Česká 
+* [Ruka noci podaná - Václav Cílek](https://kosmas.cz/knihy/250595/ruka-noci-podana/)
+### Jasom Fried
+
 * [Getting Real - Jason Fried](https://www.amazon.com/gp/product/0578012812/)
 * [Rework - Jason Fried](https://www.amazon.com/gp/product/0307463745/)
 * [It Doesn't Have to Be Crazy at Work - Jason Fried](https://www.amazon.com/gp/product/B079WV79TK/)
