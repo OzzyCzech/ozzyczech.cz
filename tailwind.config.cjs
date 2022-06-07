@@ -21,7 +21,7 @@ module.exports = {
 					css: {
 						'blockquote p:first-of-type::before': {content: ''},
 						'blockquote p:last-of-type::after': {content: ''},
-						'figcaption': {textAlign: 'center', fontStyle: 'italic'}
+						'figcaption': {textAlign: 'center', fontStyle: 'italic'},
 					},
 				},
 				invert: {
@@ -45,5 +45,6 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
 		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms'),
 	],
 };

@@ -367,13 +367,6 @@
   dependencies:
     marked "^4.0.14"
 
-"@sphido/meta@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@sphido/meta/-/meta-1.0.9.tgz#30a8ef1fa876d8eede1402b901c61145eea5b31c"
-  integrity sha512-pIUql4jfLoF3n7SfatdV9gYzrh+H5qCyHwszmBw4Su6lWLJVqP7JXsRi2inFFWIEyTNW4gblPV0SMiPvHD3cyQ==
-  dependencies:
-    "@sindresorhus/slugify" "^2.1.0"
-
 "@sphido/pagination@^1.0.11":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@sphido/pagination/-/pagination-1.0.11.tgz#4a37cb68b30b9b35edf1fe9516004c9c16846e6c"
@@ -388,6 +381,13 @@
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@tailwindcss/aspect-ratio/-/aspect-ratio-0.4.0.tgz#c635dd7331cbcc1b111cebdc2647dd3493ebdd3e"
   integrity sha512-WJu0I4PpqNPuutpaA9zDUq2JXR+lorZ7PbLcKNLmb6GL9/HLfC7w3CRsMhJF4BbYd/lkY6CfXOvkYpuGnZfkpQ==
+
+"@tailwindcss/forms@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.2.tgz#4ef45f9916dcb37838cbe7fecdcc4ba7a7c2ab59"
+  integrity sha512-pSrFeJB6Bg1Mrg9CdQW3+hqZXAKsBrSG9MAfFLKy1pVA4Mb4W7C0k7mEhlmS2Dfo/otxrQOET7NJiJ9RrS563w==
+  dependencies:
+    mini-svg-data-uri "^1.2.3"
 
 "@tailwindcss/typography@^0.5.2":
   version "0.5.2"
@@ -1384,6 +1384,11 @@ mime-types@~2.1.34:
   integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
   dependencies:
     mime-db "1.52.0"
+
+mini-svg-data-uri@^1.2.3:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
+  integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
 
 minimatch@3.0.4:
   version "3.0.4"

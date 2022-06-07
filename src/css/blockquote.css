@@ -9,12 +9,5 @@ blockquote p:last-of-type {
 
 blockquote em {
 	@apply block text-right mt-3 text-sm text-gray-600 dark:text-gray-400;
-}
-
-blockquote em::before {
-	content: "» "
-}
-
-blockquote em::after {
-	content: " «";
+	@apply before:content-['»_'] after:content-['_«'];
 }

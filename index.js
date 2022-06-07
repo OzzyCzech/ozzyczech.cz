@@ -26,6 +26,7 @@ import {getPages} from '@sphido/core';
 import {pagination} from '@sphido/pagination';
 import {link} from '@sphido/link';
 import {feed} from '@sphido/feed';
+import {hashtags} from '@sphido/hashtags';
 import slugify from '@sindresorhus/slugify';
 
 import React from 'react';
@@ -36,7 +37,6 @@ import Pages from './src/Pages.js';
 import PageTag from './src/PageTag.js';
 import Sitemap from './src/Sitemap.js';
 
-import {meta} from '@sphido/meta';
 import {frontmatter} from '@sphido/frontmatter';
 import {emoji} from '@sphido/emoji';
 import {markdown, options, renderer} from '@sphido/markdown';
@@ -100,13 +100,12 @@ renderer(
 	},
 );
 
-
 (async () => {
 
 	// Copy static content
 	let files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'static/404.html']);
 	for await (let file of files) {
-		await fs.copy(file, file.replace(/^[\w]+/, 'public'));
+		await fs.copy(file, file.replace(/^\w+/, 'public'));
 	}
 
 	// Get pages from directory
@@ -115,23 +114,7 @@ renderer(
 		...[
 			frontmatter,
 			emoji,
-
-			(page) => {
-				const tags = page.content
-					.replace(/```[^`]*```/gmi, '') // skip preformat
-					.match(/(?<=^|\s)#([\w-]{2,})/gmi) // match all tags
-					?.map(tag => tag.substring(1)); // remove # from the
-
-				page.tags = new Set(tags); // set tags
-
-				if (tags) {
-					const anchor = new RegExp('#(' + tags.join('|') + ')', 'gmi');
-					page.content = page.content.replace(anchor, (match, capture) => {
-						return `[${match}](/tag/${slugify(capture)})`;
-					});
-				}
-
-			},
+			hashtags,
 			markdown,
 			(page) => {
 				page.date = page.file ? new Date(inspect(statSync(page.file).mtime)) : new Date();

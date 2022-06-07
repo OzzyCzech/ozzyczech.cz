@@ -96,7 +96,7 @@ export default ({active, tags}) => {
 					</svg>
 					Apple
 				</Link>
-				<Link href="/js" emoji="🥕">Javascript</Link>
+				<Link href="/javascript" emoji="🥕">Javascript</Link>
 				<Link href="/books" emoji="📖">Books</Link>
 				<Link href="/series" emoji="🎞">Series</Link>
 				<Link href="/quotes" emoji="🪧">Quotes</Link>
