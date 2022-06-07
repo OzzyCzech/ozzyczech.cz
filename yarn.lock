@@ -348,6 +348,13 @@
   dependencies:
     js-yaml "^4.1.0"
 
+"@sphido/hashtags@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@sphido/hashtags/-/hashtags-1.0.2.tgz#8f8d3dde7ec7114a9acf06dcd01ea0eee4287daa"
+  integrity sha512-QDqjo+V6e1Oa19IbVzFFsVzmxLlPKf0pY7C2Swm7dx394NHUycIFc/5SVAUcLqdayo/oknbS3icemUUPdEriPQ==
+  dependencies:
+    "@sindresorhus/slugify" "^2.1.0"
+
 "@sphido/link@^1.0.13":
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/@sphido/link/-/link-1.0.13.tgz#fd0e800627d5d0ebbadffec3a22b44a876baa4ba"

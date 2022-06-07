@@ -23,6 +23,7 @@
 		"@sphido/emoji": "^1.0.12",
 		"@sphido/feed": "^1.0.10",
 		"@sphido/frontmatter": "^1.0.9",
+		"@sphido/hashtags": "^1.0.2",
 		"@sphido/link": "^1.0.13",
 		"@sphido/markdown": "^1.0.15",
 		"@sphido/meta": "^1.0.9",
