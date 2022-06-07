@@ -108,6 +108,10 @@ renderer(
 		await fs.copy(file, file.replace(/^\w+/, 'public'));
 	}
 
+
+	console.log(globby('content/**/*.{md,html}'));
+	return;
+
 	// Get pages from directory
 	const pages = await getPages(
 		await globby('content/**/*.{md,html}'),
