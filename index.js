@@ -118,7 +118,7 @@ renderer(
 			hashtags,
 			markdown,
 			(page) => {
-				page.date = page.file ? new Date(inspect(statSync(page.file).mtime)) : new Date();
+				page.date = page.file ? new Date(inspect(statSync(page.file).birthtime)) : new Date();
 				page.title = (page.title || (page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i) || [page.base || '']).pop()).trim();
 				page.slug = slugify(page.base);
 			},
