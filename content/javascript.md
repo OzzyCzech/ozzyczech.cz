@@ -4,29 +4,26 @@
 
 * [Visual Studio Code](https://code.visualstudio.com/download) - Free and open source. Integrated Git, debugging and extensions.
 
-## Bundlers
+## CND services
 
-* [esbuild](https://github.com/evanw/esbuild) - An extremely fast JavaScript bundler and minifier
-* [Vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool. It's fast.
-* [Snowpack](https://www.snowpack.dev/) - the faster frontend build tool
-* [Parcel](https://parceljs.org/) - Blazing fast, zero configuration web application bundler
-* [Webpack](https://webpack.js.org/) - Webpack is a module bundler for JavaScript 
+- [esm.run](https://www.jsdelivr.com/esm) - a new age CDN for Javascript
+- [JSDELIVR](https://www.jsdelivr.com/) - free CDN for open source
+- [cndjs.com](https://cdnjs.com/) - Sinple, fast and reliable CDN
 
-## QA Tools
-
-* [xo](https://github.com/xojs/xo) - ❤️ JavaScript linter with great defaults
-* [ESLint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in JavaScript.
-* [prettier](https://github.com/prettier/prettier) - Prettier is an opinionated code formatter.
+## Server side
+- [DENO](https://deno.land/) - a modern runtime for JavaScript and TypeScript
+- [Node.js](https://nodejs.dev/) - open-sourced, cross-platform JavaScript run-time environment
 
 ## Package management
 
 * [Yarn](https://yarnpkg.com/lang/en/) - Fast, reliable, and secure dependency management
 * [NPM](https://www.npmjs.com/) - package management
 
-## Fetch
+## Code quality tools
 
-* [Axios.js](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
-* [Got](https://github.com/sindresorhus/got) - Human-friendly and powerful HTTP request library for Node.js
+* [xo](https://github.com/xojs/xo) - ❤️ JavaScript linter with great defaults
+* [ESLint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in JavaScript.
+* [prettier](https://github.com/prettier/prettier) - Prettier is an opinionated code formatter.
 
 ## Testing
 
@@ -44,8 +41,8 @@
 
 ### Test runners
 
-* [puppeteer](https://pptr.dev/) - Headless Chrome Node.js API by official Google Chrome team.
-* 
+* [puppeteer](https://pptr.dev/) - Headless Chrome Node.js API by official Google Chrome team. 
+
 ## Devstack
 
 * [Neutrino](https://github.com/mozilla-neutrino/neutrino-dev) - Create and build modern JavaScript applications with zero initial configuration. 
@@ -80,7 +77,7 @@
 
 * [PDF.js](https://github.com/mozilla/pdf.js) - PDF Reader in JavaScript.
 
-## Editors
+## Online editors
 
 * [Draft.js](https://github.com/facebook/draft-js) - A React framework for building text editors.
 * [ace](https://github.com/ajaxorg/ace) - Ace (Ajax.org Cloud9 Editor).
@@ -127,4 +124,4 @@
 * https://github.com/sindresorhus/awesome
 * [Delightful Node.js packages and resources](https://node.cool)
 
-![](/js/universal-standard.png)
+![](Javascript/universal-standard.png)
