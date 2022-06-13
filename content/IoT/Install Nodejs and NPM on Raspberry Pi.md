@@ -1,6 +1,6 @@
 # Install Nodejs and NPM on Raspberry Pi
 
-_Node.js_ is an open source server environment; _Node.js_ is free; _Node.js_ runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.). There are two ways you can use to install #NodeJS and NPM on your #Raspberry.
+_Node.js_ is an open source server environment; _Node.js_ is free; _Node.js_ runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.). There are two ways you can use to install #nodejs and NPM on your #Raspberry.
 
 ### Install nodejs from NodeSource repository
 
