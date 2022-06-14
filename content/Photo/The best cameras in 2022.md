@@ -14,9 +14,9 @@
 * [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
 * [Fujifilm X-Pro3](https://fujifilm-x.com/en-us/products/cameras/x-pro3/)
 
-### Fujifilm X 100V
+### [Fujifilm X 100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 
-[Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/) is the best small APS-C mirrorless camera from Fuji with fixed lens.
+The best small APS-C mirrorless camera from Fuji with fixed lens is Fujifilm X100V.
 
 ![Fujifilm X100V](Photo/Fujifilm%20X100V.png)
 ## Best Sony cameras
