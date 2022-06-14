@@ -6,7 +6,7 @@
   "newLinkFormat": "absolute",
   "showFrontmatter": false,
   "useMarkdownLinks": true,
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
   "tabSize": 2
 }
