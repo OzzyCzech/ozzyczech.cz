@@ -1,6 +1,4 @@
 # Photo
-
-
 ### Others
 * [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
 * Leica Q2 [Black](https://leica-camera.com/en-SG/photography/cameras/q/q2-black), [Reporter](https://leica-camera.com/en-SG/photography/cameras/q/q2-reporter) or [Monochrome](https://leica-camera.com/en-SG/photography/cameras/q/q2-monochrom)
@@ -12,18 +10,7 @@
 * [LIGHTPIX LABS FlashQ Trigger Kit T2](https://lightpixlabs.com/pages/flashq-t2)
 * [FOMEI LED MINI RGB 12](https://landing.fomei.com/led-mini-rgb-12)
 
-### RAW processing
-* [Capture One](https://www.captureone.com/en/)
-* [Adobe Lightroom](https://lightroom.adobe.com/)
-* [ON1 Photo RAW](https://www.on1.com/)
-* [Luminar](https://skylum.com/luminar)
-* [Affinity Photo](https://affinity.serif.com/en-us/photo/)
-and also
-* [Fuji RAW file converter](http://www.fujifilm.com/support/digital_cameras/software/myfinepix_studio/rfc/)
-* [Picktorial](https://www.picktorial.com/)
-* [DXO PhotoLab](https://www.dxo.com/dxo-photolab/)
-* [Darktable](https://www.darktable.org/) - free and open source
-* [Rawsie](https://rawsie.co/) - RAW compressor
+
 
 ### Presets
 * [Capture One Styles](https://www.captureone.com/en/products-plans/styles)
