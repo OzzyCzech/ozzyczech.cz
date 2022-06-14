@@ -18,7 +18,7 @@
 
 [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/) is the best small APS-C mirrorless camera from Fuji with fixed lens.
 
-![](Photo/Fujifilm%20X100V.png)
+![Fujifilm X100V](Photo/Fujifilm%20X100V.png)
 ## Best Sony cameras
 
 * [Sony α7 IV](https://www.sony.cz/electronics/fotoaparaty-s-vymennymi-objektivy-2/ilce-7m4)
