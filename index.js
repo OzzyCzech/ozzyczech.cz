@@ -1,5 +1,6 @@
 #!/usr/bin/env node --experimental-modules --loader babel-register-esm
 
+
 import path from 'path';
 import fs from 'fs-extra';
 import {globby} from 'globby';
@@ -102,6 +103,8 @@ renderer(
 
 (async () => {
 
+	console.time('Sphido');
+
 	// Copy static content
 	let files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'static/404.html']);
 	for await (let file of files) {
@@ -197,4 +200,5 @@ renderer(
 		),
 	);
 
+	console.timeEnd('Sphido');
 })();
