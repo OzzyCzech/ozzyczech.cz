@@ -1,6 +1,4 @@
-# September 2021
-
-## Lightsabers
+# Lightsabers
 
 * https://vadersvault.com/
 * https://saberforge.com/
