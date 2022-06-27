@@ -1,4 +1,4 @@
-# Git clone all branches and tags at once
+# Clone all branches and tags at once
 
 Following script clone all #git branches and tags at once:
 

@@ -24,4 +24,10 @@ The best small APS-C mirrorless camera with fixed lens is Fujifilm X100V.
 * [Sony ZV-E10](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/zv-e10)
 * [Sony α7C](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7c)
 
+## Others
+
+* [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
+* Leica Q2 [Black](https://leica-camera.com/en-SG/photography/cameras/q/q2-black), [Reporter](https://leica-camera.com/en-SG/photography/cameras/q/q2-reporter) or [Monochrome](https://leica-camera.com/en-SG/photography/cameras/q/q2-monochrom)
+
+
 #Sony #Fujifilm #GoPro #DJI #Insta360 

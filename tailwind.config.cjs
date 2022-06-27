@@ -7,15 +7,12 @@ module.exports = {
 	],
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
+		container: {center: true, padding: '1rem'},
 		extend: {
 			colors: {
 				gray: colors.neutral,
 				lime: colors.lime,
 			},
-			gridTemplateColumns: {
-				'300px': 'minmax(0, auto) 300px',
-			},
-
 			typography: ({theme}) => ({
 				DEFAULT: {
 					css: {

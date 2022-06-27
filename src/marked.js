@@ -1,0 +1,72 @@
+import {marked} from 'marked';
+
+import Prism from 'prismjs';
+import 'prismjs/components/prism-ini.js';
+import 'prismjs/components/prism-json.js';
+import 'prismjs/components/prism-jsx.js';
+import 'prismjs/components/prism-sql.js';
+import 'prismjs/components/prism-scss.js';
+import 'prismjs/components/prism-less.js';
+import 'prismjs/components/prism-css.js';
+import 'prismjs/components/prism-swift.js';
+import 'prismjs/components/prism-php.js';
+import 'prismjs/components/prism-php-extras.js';
+import 'prismjs/components/prism-markup-templating.js';
+import 'prismjs/components/prism-yaml.js';
+import 'prismjs/components/prism-python.js';
+import 'prismjs/components/prism-bash.js';
+import 'prismjs/components/prism-markdown.js';
+
+
+marked.setOptions({
+	highlight: (code, lang) => {
+		lang = lang || 'markdown';
+		return Prism.highlight(code, Prism.languages[lang], lang);
+	},
+});
+
+const renderer = {
+	image: (href, title, text) => {
+		//const className = new URL(href, domain).hash.substring(1).replace(/[_]/g, ' ');
+		if (!href.startsWith('/') && !href.startsWith('http')) href = '/' + href; // add leading '/'
+
+		if (href.match(/mp4|webm|mov/)) {
+			return `<video loop muted autoplay src="${href}" class="mx-auto rounded"></video>`;
+		} else {
+			return `<div class="flex justify-center">
+							<figure>
+								<a href="${href}" target="_blank">
+									<img src="${href}" class="rounded shadow bg-white dark:bg-black" title="${title ? title : ''}" alt="${text ? text : ''}"/>
+								</a>		
+								<figcaption>${title ? title : (text ? text : null)}</figcaption>
+						</figure>
+						</div>`;
+		}
+	},
+	link: (href, title, text) => {
+		// Current domain
+		if (href.includes('https://ozzyczech.cz') || href.startsWith('/')) {
+			return `<a href="${href}" title="${title ? title : ''}">${text}</a>`;
+		}
+
+		// YouTube video embed
+		if (href.includes('youtube.com') && href === text) {
+			const video = new URL(href);
+			const id = video.searchParams.get('v');
+			if (id) {
+				return `<div class="aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/${id}?rel=0&controls=1" allowfullscreen></iframe></div>`;
+			}
+		}
+
+		// GitHub
+		if (href.includes('github.com') && text === href) {
+			// @see https://github.com/markedjs/marked/issues/458 - waiting for async
+		}
+
+		return `<a href="${href}" title="${title ? title : ''}" target="_blank">${text}</a>`;
+	},
+};
+
+marked.use({renderer});
+
+export {marked};

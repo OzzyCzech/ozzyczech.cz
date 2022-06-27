@@ -1,6 +1,6 @@
 # Comment bubble with Tailwind
 
-![Comment bubble](tailwind/comment-bubble.png)
+![Comment bubble](Tailwind/comment-bubble.png)
 
 ```html
 <div class="

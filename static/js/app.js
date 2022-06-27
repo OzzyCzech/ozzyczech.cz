@@ -6,6 +6,13 @@ for (const ago of document.querySelectorAll('[data-ago]')) {
 	ago.innerText = DateTime.fromISO(ago.dataset.ago).toRelative({locale: 'en'}) + ' at ' + ago.innerText;
 }
 
+
+for (const button of document.querySelectorAll('aside button')) {
+	button.addEventListener('click', () => {
+		button.nextElementSibling.classList.toggle('hidden');
+	});
+}
+
 // toggle menu
 const toggleButton = document.querySelector('[aria-expanded]');
 toggleButton.addEventListener('click', (event) => {
