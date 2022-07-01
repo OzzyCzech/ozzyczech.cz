@@ -1,5 +1,7 @@
 #!/usr/bin/env node --experimental-modules
 
+console.time('Build HTML');
+
 import {dirname, join, relative} from 'node:path';
 import {allPages, copyFile, getPages, readFile, writeFile} from '@sphido/core';
 import slugify from '@sindresorhus/slugify';
@@ -35,7 +37,6 @@ let tags = new Map();
 for (const page of allPages(pages)) {
 	page.content = await readFile(page.path);
 	page.tags = getHashtags(page.content);
-	page.content = tagsToMarkdown(page.content, page.tags);
 	page.content = marked(page.content);
 	page.title = page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i)?.pop();
 	page.url = new URL(page.slug, 'https://ozzyczech.cz').toString();
@@ -74,3 +75,5 @@ const files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,ht
 for await (const file of files) {
 	await copyFile(file, file.replace(/^\w+/, 'public'));
 }
+
+console.timeEnd('Build HTML');

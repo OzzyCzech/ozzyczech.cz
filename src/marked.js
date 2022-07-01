@@ -73,6 +73,30 @@ const renderer = {
 	},
 };
 
-marked.use({renderer});
+const extensions = [
+	{
+		name: 'hashtag',
+		level: 'inline',
+		start(src) {
+			return src.match(/#([\w-]{2,})/)?.index;
+		},
+		tokenizer(src, tokens) {
+			const match = src.match(/^#([\w-]{2,})/);  // Regex for the complete token, anchor to string start
+			if (match) {
+				return {
+					type: 'hashtag',
+					raw: match[0],
+					tag: match[1],
+				};
+			}
+		},
+
+		renderer(token) {
+			return `\n<a href="/tag/${slugify(token.tag)}.html">#${token.tag}</a>`;
+		},
+	},
+];
+
+marked.use({renderer, extensions});
 
 export {marked};
