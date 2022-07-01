@@ -92,7 +92,7 @@ const extensions = [
 		},
 
 		renderer(token) {
-			return `\n<a href="/tag/${slugify(token.tag)}.html">#${token.tag}</a>`;
+			return `\n<a href="/tag/${slugify(token.tag.toLowerCase())}">#${token.tag}</a>`;
 		},
 	},
 ];

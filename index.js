@@ -50,7 +50,7 @@ for (const page of allPages(pages)) {
 			if (!tags.has(tag)) {
 				tags.set(tag, {
 					title: tag.slice(1),
-					slug: `/tag/${slugify(tag)}`,
+					slug: `/tag/${slugify(tag.toLowerCase())}`,
 					children: [],
 				});
 			}
@@ -64,8 +64,8 @@ for (const page of allPages(pages)) {
 // Render tags
 
 for (const [tag, page] of tags) {
-	sitemap.add({url: new URL(`${page.slug}.html`, 'https://ozzyczech.cz').toString()});
-	await writeFile(`public/${page.slug}.html`, getTagHtml(page, pages));
+	sitemap.add({url: new URL(`${page.slug}`, 'https://ozzyczech.cz').toString()});
+	await writeFile(`public/${page.slug}/index.html`, getTagHtml(page, pages));
 }
 
 sitemap.end();
