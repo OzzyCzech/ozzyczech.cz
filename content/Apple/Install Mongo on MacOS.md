@@ -1,6 +1,6 @@
 # Install mongo on macOS
 
-First you need tap official mongo brew:
+First you need tap official #mongo brew:
 
 ```bash
 brew tap mongodb/brew
@@ -36,4 +36,4 @@ or stop
 brew services stop mongodb-community
 ```
 
-#macOS #brew  #mongo 
+#macOS #brew 
