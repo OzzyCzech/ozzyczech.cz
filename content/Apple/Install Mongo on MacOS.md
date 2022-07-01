@@ -2,37 +2,37 @@
 
 First you need tap official mongo brew:
 
-```shell
+```bash
 brew tap mongodb/brew
 ```
 
 Then just install mongo with:
 
-```shell
+```bash
  brew install mongodb-community
 ```
 
 There is one tool which people often want to install on its own, and that’s the MongoDB shell.
 
-```shell
+```bash
 brew install mongodb-community-shell
 ```
 
 You can also install only [database tools](https://docs.mongodb.com/database-tools/) for managing mongo database:
 
-```shell
+```bash
 brew install mongodb-database-tools
 ```
 
 ### Starting mongo
 
-```shell
+```bash
 brew services start mongodb-community
 ```
 
 or stop
 
-```shell
+```bash
 brew services stop mongodb-community
 ```
 
