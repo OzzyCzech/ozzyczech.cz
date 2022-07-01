@@ -9,7 +9,7 @@ import {globby} from 'globby';
 import {marked} from './src/marked.js';
 import {getPageHtml} from './src/get-page-html.js';
 import {createSitemap} from '@sphido/sitemap';
-import {getHashtags, tagsToMarkdown} from '@sphido/hashtags';
+import {getHashtags} from '@sphido/hashtags';
 import {getTagHtml} from './src/get-tag-html.js';
 
 const sitemap = await createSitemap();
@@ -64,6 +64,7 @@ for (const page of allPages(pages)) {
 // Render tags
 
 for (const [tag, page] of tags) {
+	sitemap.add({url: new URL(`${page.slug}.html`, 'https://ozzyczech.cz').toString()});
 	await writeFile(`public/${page.slug}.html`, getTagHtml(page, pages));
 }
 
