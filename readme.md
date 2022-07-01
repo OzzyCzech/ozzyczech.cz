@@ -10,3 +10,6 @@ View: https://ozzyczech.cz
 ## TODO
 
 - add search https://github.com/nextapps-de/flexsearch
+- https://kbar.vercel.app/
+- https://github.com/timc1/kbar
+- https://github.com/ssleptsov/ninja-keys
