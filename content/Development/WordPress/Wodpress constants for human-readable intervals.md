@@ -1,6 +1,6 @@
 # Wodpress constants for human-readable intervals
 
-Constants for expressing human-readable intervals in new #Wordpress are very useful:
+Constants for expressing human-readable intervals in new #WordPress are very useful:
 
 ```php
 define( 'MINUTE_IN_SECONDS', 60 );

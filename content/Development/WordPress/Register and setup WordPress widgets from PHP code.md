@@ -1,6 +1,6 @@
-# Wordpress: register and setup witgets from PHP code
+# Register and setup WordPress widgets from PHP code
 
-#PHP driven registration of the Widgets in #Wordpress can be quite confusing. There is my way how to handle it:
+#PHP driven registration of the Widgets in #WordPress can be quite confusing. There is my way how to handle it:
 
 ```php
 class Widgets {

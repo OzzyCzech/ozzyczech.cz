@@ -1,4 +1,4 @@
-# Zvýraznění právě hledaných slov ve Wordpress
+# Zvýraznění právě hledaných slov ve WordPress
 
 Několik následujících řádků kódu **obalí** všechna právě vyhledávaná **klíčová slova** do značky `<strong>` (class search-keyword). Kód je možné vložit do `function.php` ve Vašem template. Nebo jej můžete vložit rovnou do `search.php` někde těsně za volání funkce `get_header()`. Předpokladem samozřejmě je, že využíváte standardních vyhledávacích funkcí [Wordpress](http://codex.wordpress.org/Function_Reference/get_search_form).
 
@@ -19,4 +19,4 @@ add_filter('the_excerpt','omSearchHeighlight');
 
  Výsledkem je malé, ale užitečné, vylepšení výsledků vyhledávání, které Vás navíc nestojí téměř žádnou námahu. Ještě malá poznámka na závěr: Kód nedbá na velikost písmen.
 
-#PHP #Wordpress #CSS
+#PHP #WordPress #CSS
