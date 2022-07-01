@@ -1,4 +1,5 @@
 import {marked} from 'marked';
+import {basename, dirname, join} from 'node:path';
 
 import Prism from 'prismjs';
 import 'prismjs/components/prism-ini.js';
@@ -16,6 +17,7 @@ import 'prismjs/components/prism-yaml.js';
 import 'prismjs/components/prism-python.js';
 import 'prismjs/components/prism-bash.js';
 import 'prismjs/components/prism-markdown.js';
+import slugify from '@sindresorhus/slugify';
 
 
 marked.setOptions({
@@ -56,6 +58,10 @@ const renderer = {
 			if (id) {
 				return `<div class="aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/${id}?rel=0&controls=1" allowfullscreen></iframe></div>`;
 			}
+		}
+
+		if (href.endsWith('.md')) {
+			return `<a href="${join(dirname(href), `${slugify(basename(href, '.md'))}.html`)}" title="${title ? title : ''}">${text}</a>`;
 		}
 
 		// GitHub

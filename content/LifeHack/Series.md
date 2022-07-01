@@ -1,5 +1,6 @@
 # Series
 ## 2022
+
 * [Sopranos](https://www.imdb.com/title/tt0141842/)
 * [StrangerThings](https://www.imdb.com/title/tt4574334/)
 * [Arcane](https://www.imdb.com/title/tt11126994/)
