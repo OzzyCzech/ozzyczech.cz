@@ -1,6 +1,6 @@
 #  WYSIWYG for user description in Wordpress
 
-WordPress user description is by default plain text. Following #PHP code will display the #WYSIWYG editor next to the author description of the user profile.
+#WordPress user description is by default plain text. Following #PHP code will display the #WYSIWYG editor next to the author description of the user profile.
 
 Just add the code to `function.php` in your template:
 
