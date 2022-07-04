@@ -92,4 +92,4 @@ PS: you can always reset everything back to normal with follow command
 brew update-reset
 ```
 
-#macOS #brew 
+#macOS #brew

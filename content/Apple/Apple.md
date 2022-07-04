@@ -1,7 +1,6 @@
 # Apple
 
 ## macOS
-
 * [Homebrew](https://brew.sh/) - The missing package manager for macOS
 
 ## Markdown editors
@@ -23,18 +22,16 @@
 
 - [Reeder 5](https://reederapp.com/) - last RSS reader that you will need
 - [Cappuccino](https://cappuccinoapp.com/) - your inbox for news
-- [NetNewsWire](https://netnewswire.com/) - free and open source RSS reader for Mac and iOS
+- [NetNewsWire](https://netnewswire.com/) - free and open source RSS reader for Mac and iOS 
+- 
 ## Image editing
-
 * [Pixelmator Pro](https://www.pixelmator.com/pro/)
 * [Procreate](https://procreate.art/)
 * [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
 * [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
 
 ## Diary
-
 * [Diarly](https://diarly.app/)
-
 ## Video editing
 
 * [LumaFusion](https://luma-touch.com/) - Professional Editing Reimagined for Mobile
