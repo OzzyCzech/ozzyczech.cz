@@ -8,5 +8,7 @@
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
-  "tabSize": 2
+  "tabSize": 2,
+  "newFileLocation": "current",
+  "showUnsupportedFiles": false
 }
