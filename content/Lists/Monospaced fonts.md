@@ -6,7 +6,7 @@ Free monospaced font with programming ligatures.
 ## [Cascadia Code Font](https://github.com/microsoft/cascadia-code)
 This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
 
-## [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)
+### [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)
 Ubuntu Mono is available via an open source license.
 
 ## [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
