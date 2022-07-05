@@ -1,9 +1,6 @@
 #!/usr/bin/env node --experimental-modules
 
 import {getTagIndexHtml} from './src/get-tag-index-html.js';
-
-console.time('Build HTML');
-
 import {dirname, join, relative} from 'node:path';
 import {allPages, copyFile, getPages, readFile, writeFile} from '@sphido/core';
 import slugify from '@sindresorhus/slugify';
@@ -13,6 +10,8 @@ import {getPageHtml} from './src/get-page-html.js';
 import {createSitemap} from '@sphido/sitemap';
 import {getHashtags} from '@sphido/hashtags';
 import {getTagHtml} from './src/get-tag-html.js';
+
+console.time('Build HTML');
 
 const sitemap = await createSitemap();
 
@@ -45,7 +44,7 @@ for (const page of allPages(pages)) {
 
 	sitemap.add(page);
 
-	// prepare tags
+	// Prepare tags object
 
 	if (page.name !== 'index') {
 		page.tags?.forEach((tag) => {
@@ -70,7 +69,12 @@ for (const [tag, page] of tags) {
 	await writeFile(`public/${page.slug}/index.html`, getTagHtml(page, pages));
 }
 
+// Render tags cloud
+
 await writeFile('public/tag/index.html', getTagIndexHtml(tags, pages));
+sitemap.add({url: 'https://ozzyczech.cz/tag'});
+
+// Save sitemap
 
 sitemap.end();
 
