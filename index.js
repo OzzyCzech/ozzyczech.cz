@@ -1,5 +1,7 @@
 #!/usr/bin/env node --experimental-modules
 
+import {getTagIndexHtml} from './src/get-tag-index-html.js';
+
 console.time('Build HTML');
 
 import {dirname, join, relative} from 'node:path';
@@ -67,6 +69,8 @@ for (const [tag, page] of tags) {
 	sitemap.add({url: new URL(`${page.slug}`, 'https://ozzyczech.cz').toString()});
 	await writeFile(`public/${page.slug}/index.html`, getTagHtml(page, pages));
 }
+
+await writeFile('public/tag/index.html', getTagIndexHtml(tags, pages));
 
 sitemap.end();
 
