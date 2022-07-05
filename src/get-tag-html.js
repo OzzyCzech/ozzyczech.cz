@@ -5,7 +5,7 @@ export function getTagHtml({title, slug, children} = {}, pages) {
 	return getDocument({
 		title,
 		main: `<article class="lg:dark:bg-gray-800 lg:rounded-xl lg:px-24 lg:py-16 prose max-w-full lg:prose-xl dark:prose-invert prose-a:no-underline hover:prose-a:underline prose-h1:text-lime-300">
-					<h1>#${title}</h1>
+					<h1>Tags</h1>
 					<div class="not-prose">
 						<ul>
 							${children.map(page => `<li>
