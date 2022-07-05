@@ -1,13 +1,13 @@
 # Monospaced fonts
 
-## [Fira Code](https://fonts.google.com/specimen/Fira+Code)
-Free monospaced font with programming ligatures
+## [Fira Code](https://github.com/tonsky/FiraCode)
+Free monospaced font with programming ligatures.
 
 ## [Cascadia Code Font](https://github.com/microsoft/cascadia-code)
 This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
 
 ## [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)
-Ubuntu Mono is available via an open source license
+Ubuntu Mono is available via an open source license.
 
 ## [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 Roboto Mono is a monospaced addition to the [Roboto](https://github.com/googlefonts/roboto) type family.
