@@ -23,13 +23,13 @@ module.exports = {
 				},
 				invert: {
 					css: {
-						'--tw-prose-links': theme('colors.blue[400]'),
+						'--tw-prose-links': theme('colors.blue[500]'),
 						'--tw-prose-code': theme('colors.pink[400]'),
 					},
 				},
 				gray: {
 					css: {
-						'--tw-prose-links': theme('colors.blue[600]'),
+						'--tw-prose-links': theme('colors.blue[500]'),
 						'--tw-prose-code': theme('colors.pink[400]'),
 					},
 				},

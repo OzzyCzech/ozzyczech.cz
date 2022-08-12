@@ -7,7 +7,7 @@
 		"start": "watch ./index.js ./content ./src ./static | serve public"
 	},
 	"devDependencies": {
-		"serve": "^13.0.2",
+		"serve": "^14.0.1",
 		"watch": "^1.0.2"
 	},
 	"type": "module",
@@ -22,12 +22,12 @@
 		"@sphido/sitemap": "^2.0.9",
 		"@tailwindcss/aspect-ratio": "^0.4.0",
 		"@tailwindcss/forms": "^0.5.2",
-		"@tailwindcss/typography": "^0.5.2",
+		"@tailwindcss/typography": "^0.5.4",
 		"fs-extra": "^10.1.0",
 		"globby": "^13.1.2",
-		"marked": "^4.0.17",
+		"marked": "^4.0.18",
 		"md5": "^2.3.0",
 		"prismjs": "^1.28.0",
-		"tailwindcss": "^3.1.4"
+		"tailwindcss": "^3.1.8"
 	}
 }
