@@ -6,6 +6,12 @@ Obsidian is a powerful **knowledge base** on top of a **local folder** of pl
 brew install obsidian
 ```
 
+## [MarkText](https://github.com/marktext/marktext)
+A simple and elegant markdown editor, available for Linux, macOS and Windows.
+
+```shell
+brew install --cask mark-text
+```
 ## [Typora](https://typora.io/)
 I am just found the best (*for me*) Markdown editor on the planet. Why?
 
@@ -16,7 +22,7 @@ I am just found the best (*for me*) Markdown editor on the planet. Why?
 - allow quick file open ⌘ + ⇧ + O 😍
 
 ```shell
-brew cask install typora
+brew install --cask typora
 ```
 
 ## [Nota](https://nota.md/)
@@ -25,19 +31,20 @@ Pro notes app designed for local Markdown files. From simple notes and todo list
 ## [Notable](https://notable.app/)
 Markdown note taking app supports tags, dark theme, zen mode, multi edit and so on
 ```shell
-brew cask install notable
+brew install --cask notable
 ```
 
 ## [MacDown](https://macdown.uranusjr.com/)
 Open source Markdown editor inspired by [Mou](http://25.io/mou/), with live preview of extended markdown syntaxes
 
 ```shell
-brew cask install macdown
+brew install --cask macdown
 ```
 
 ## [Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+
 ```shell
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 #macOS #markdown
