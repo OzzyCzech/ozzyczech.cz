@@ -10,10 +10,6 @@
 - [JSDELIVR](https://www.jsdelivr.com/) - free CDN for open source
 - [cndjs.com](https://cdnjs.com/) - Sinple, fast and reliable CDN
 
-## Server side
-- [DENO](https://deno.land/) - a modern runtime for JavaScript and TypeScript
-- [Node.js](https://nodejs.dev/) - open-sourced, cross-platform JavaScript run-time environment
-
 ## Package management
 
 * [Yarn](https://yarnpkg.com/lang/en/) - Fast, reliable, and secure dependency management
@@ -84,6 +80,7 @@
 
 ## Desktop apps
 
+* [Tauri](https://tauri.app/) - Build an optimized, secure, and frontend-independent application for multi-platform deployment.
 * [Electron](https://electron.atom.io/) - Build cross platform desktop apps with JavaScript, HTML, and CSS
 
 ## Node.js frameworks
