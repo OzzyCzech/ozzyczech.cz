@@ -2,13 +2,13 @@
 
 ### Install specific cask version
 
-```shell
+```bash
 cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask
 ```
 
 Then show history of selected formula like:
 
-```shell
+```bash
 git log master -- Casks/phpstorm.rb
 ```
 
