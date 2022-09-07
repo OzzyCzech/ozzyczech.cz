@@ -9,14 +9,11 @@
 * [Insta360 Go 2](https://www.insta360.com/product/insta360-go2) - best micro camera
 
 ## Best Fuji cameras
+#### [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/) 
+#### [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
+#### [Fujifilm X-Pro3](https://fujifilm-x.com/en-us/products/cameras/x-pro3/)
 
-* [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/) 
-* [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
-
-
-### [Fujifilm X-Pro3](https://fujifilm-x.com/en-us/products/cameras/x-pro3/)
-
-![](Photo/Fujifilm-X-Pro3.jpg)
+![X-Pro3](Photo/Fujifilm-X-Pro3.jpg)
 
 ## Best Sony cameras
 
