@@ -18,3 +18,4 @@ View: https://ozzyczech.cz
 Tailwind search bars:
 
 https://www.nashservers.com/components/application-ui/navigation/command-palettes/
+https://blog.superhuman.com/how-to-build-a-remarkable-command-palette/
