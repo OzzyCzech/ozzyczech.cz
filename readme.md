@@ -13,3 +13,8 @@ View: https://ozzyczech.cz
 - https://kbar.vercel.app/
 - https://github.com/timc1/kbar
 - https://github.com/ssleptsov/ninja-keys
+
+
+Tailwind search bars:
+
+https://www.nashservers.com/components/application-ui/navigation/command-palettes/
