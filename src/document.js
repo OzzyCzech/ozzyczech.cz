@@ -1,3 +1,5 @@
+import {dialog} from "./dialog.js";
+
 export function getDocument({title, aside, main} = {}) {
 	return `<!DOCTYPE html>
 <html lang="en" dir="ltr" class="dark">
@@ -14,6 +16,7 @@ export function getDocument({title, aside, main} = {}) {
 <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,auto)_320px] gap-4 lg:gap-6">
 	<aside>${aside}</aside>
 	<main class="md:order-first">${main}</main>
+	${dialog}	
 </div>
 </body>
 </html>`;

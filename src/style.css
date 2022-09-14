@@ -81,4 +81,8 @@
 	}
 }
 
+dialog::backdrop {
+	@apply backdrop-grayscale backdrop-brightness-50 transition;
+}
+
 @tailwind utilities;

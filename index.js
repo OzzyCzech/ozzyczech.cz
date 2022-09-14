@@ -10,10 +10,12 @@ import {getPageHtml} from './src/get-page-html.js';
 import {createSitemap} from '@sphido/sitemap';
 import {getHashtags} from '@sphido/hashtags';
 import {getTagHtml} from './src/get-tag-html.js';
+import {createFuse} from "./src/fuse.js";
 
 console.time('Build HTML');
 
 const sitemap = await createSitemap();
+const fuse = await createFuse();
 
 // Get pages list
 
@@ -38,10 +40,16 @@ let tags = new Map();
 for (const page of allPages(pages)) {
 	page.content = await readFile(page.path);
 	page.tags = getHashtags(page.content);
-	page.content = marked(page.content);
-	page.title = page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i)?.pop();
 	page.url = new URL(page.slug, 'https://ozzyczech.cz').toString();
 
+	// Process markdown and title
+
+	page.content = marked(page.content);
+	page.title = page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i)?.pop();
+
+	// Save pages to lists
+
+	fuse.add(page);
 	sitemap.add(page);
 
 	// Prepare tags object
@@ -74,9 +82,10 @@ for (const [tag, page] of tags) {
 await writeFile('public/tag/index.html', getTagIndexHtml(tags, pages));
 sitemap.add({url: 'https://ozzyczech.cz/tag'});
 
-// Save sitemap
+// Save sitemap and Fuse.js
 
 sitemap.end();
+fuse.end();
 
 // Copy static files
 
