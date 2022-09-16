@@ -11,7 +11,7 @@
 	.token.selector,
 	.token.selector .class,
 	.token.tag {
-		@apply text-fuchsia-400;
+		@apply text-rose-400;
 	}
 
 	.token.attr-name,
@@ -82,7 +82,7 @@
 }
 
 dialog::backdrop {
-	@apply backdrop-grayscale backdrop-brightness-50 transition;
+	@apply backdrop-brightness-50 transition;
 }
 
 @tailwind utilities;

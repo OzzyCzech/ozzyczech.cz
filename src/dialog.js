@@ -1,14 +1,16 @@
-export const dialog = `<dialog class="shadow-lg rounded-lg dark:bg-gray-900 border dark:border-gray-800  overflow-y-auto backdrop-opacity-40">
+export const dialog = `<dialog class="w-full mx-auto max-w-2xl transform-all overflow-hidden rounded-xl bg-gray-900 shadow-2xl transition-all p-0 divide-y divide-gray-500 divide-opacity-20 border-neutral-600 border-1">
 		<form>
-			<div class="flex gap-4">
-				<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" class="dark:fill-white"><path d="M39.8 41.95 26.65 28.8q-1.5 1.3-3.5 2.025-2 .725-4.25.725-5.4 0-9.15-3.75T6 18.75q0-5.3 3.75-9.05 3.75-3.75 9.1-3.75 5.3 0 9.025 3.75 3.725 3.75 3.725 9.05 0 2.15-.7 4.15-.7 2-2.1 3.75L42 39.75Zm-20.95-13.4q4.05 0 6.9-2.875Q28.6 22.8 28.6 18.75t-2.85-6.925Q22.9 8.95 18.85 8.95q-4.1 0-6.975 2.875T9 18.75q0 4.05 2.875 6.925t6.975 2.875Z"/></svg>
-				<input id="search" type="text" autocomplete="off" placeholder="Search&hellip;" autofocus class="border-0 dark:bg-transparent dark:text-gray-50">
-			</div>
-	  </form>
-	  
-	  <ul class="dark:text-white">
-	    <li class="dark:bg-gray-700">Homepage (cmd+h)</li>
-	    <li></li>
-	    <li></li>
+			<input id="search" type="text" autocomplete="off" placeholder="Search&hellip;" autofocus class="font-normal bg-transparent py-3 px-4 border-0 w-full placeholder:text-neutral-500 focus:ring-0 dark:text-white">
+		</form>
+		<ul class="dark:text-gray-400 overflow-y-auto max-h-80" id="commands">
+		<li class="flex cursor-default select-none items-center px-3 py-2 bg-neutral-700">
+			<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" style="margin-right: 1em" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+			<a href="" class="flex-1">Homepage</a>
+			<span>cmd+h</span>
+		</li>
+		<li class="flex cursor-default select-none items-center px-3 py-2">Twitter</li>
 		</ul>
+		<div class="dark:text-neutral-500 text-sm p-3">
+			<p>Search tags <code>#</code></p>
+		</div>
 	</dialog>`;
