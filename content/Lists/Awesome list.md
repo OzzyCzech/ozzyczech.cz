@@ -1,13 +1,5 @@
 # Awesome list
 
-## Free photos
-
-- [Unsplash](https://unsplash.com/)
-- [Stocksnap](https://stocksnap.io/)
-- [Pexels](https://www.pexels.com/)
-- [FreePhotos](https://freephotos.cc/)
-- [PxFuel](https://www.pxfuel.com/)
-
 ## Image editors
 
 - [Photopea](https://www.photopea.com/) - online Adobe Photoshop clone
