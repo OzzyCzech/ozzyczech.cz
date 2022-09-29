@@ -85,7 +85,7 @@ Resource: http://queues.io/
 - [RedisLab](https://redislabs.com/)
 - [MediaFire](https://app.mediafire.com/myfiles) - 10GB free storage
 - [Degoo](https://degoo.com/) - 100 GB free cloud space
-
+- [Dragonfly](https://dragonflydb.io/) - A modern Redis & Memcached replacement
 ## Privacy
 
 - [That One Privacy site](https://thatoneprivacysite.net/) - The site is meant to be a resource 
