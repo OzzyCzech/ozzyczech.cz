@@ -3,6 +3,8 @@
 ## macOS
 * [Homebrew](https://brew.sh/) - The missing package manager for macOS
 
+
+
 ## Markdown editors
 
 * [Obsidian](https://obsidian.md) - free note taking app on top of local folder
@@ -16,6 +18,10 @@
 ## File management
 
 * [ForkLift](https://binarynights.com/) - the most advanced dual pane file manager 
+* [Marta](https://marta.sh/) - File Manager
+* for macOS. Native. Extensible. Fast
+* [muCommander](https://www.mucommander.com/) - open source, dual-pane file manager
+* [Commander One](https://mac.eltima.com/file-manager.html) - free Finder replacement
 * [Pixave](http://www.littlehj.com/mac/) - image manager with smart way to organize images
 
 ## RSS readers
