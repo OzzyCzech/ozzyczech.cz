@@ -49,29 +49,29 @@
     escape-string-regexp "^5.0.0"
     lodash.deburr "^4.1.0"
 
-"@sphido/core@^2.0.13":
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-2.0.13.tgz#1a190419343bcfe0a5bf98a4412908e9a54f40d8"
-  integrity sha512-59DG8kl/hVGTYJUuSk3uOleXEyQwYJax93dHD67yFEc4Q41yn6duRllEHf32eprcXcdciFe3iQ1RLOe3ggeoXQ==
+"@sphido/core@^2.0.14":
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-2.0.14.tgz#1d187b2daf5d029f547006293cb316cfc4886c9a"
+  integrity sha512-vBlKB3CG8UDonmkyGDtqz4QtF/8sOyV3vMZCiqihnoRk0W2lOYAaWRKDOnf9iJTaeEDZB3UJcB6Iec4RmV3nRQ==
 
-"@sphido/frontmatter@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-2.0.2.tgz#ed3b0a04231e7a00a3e01c63ede54984c67e2a8d"
-  integrity sha512-COFcQRTFTJ07GhVwPzkiTLogK8F1GRW6K8yCN4LBwRzqxtacUHr+cZQ8xWapLF0Og4iCXwynn1xUtp54V9Y9sg==
+"@sphido/frontmatter@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-2.0.3.tgz#9e0057f57fe8ce61462c7f5183d35fa84a594996"
+  integrity sha512-IEaQWaFyDfSGx40hubdiG5i+wYwTGcVc57xmA4fcC5DS1aNlu0MdylpbkNo6f/1ZPOn3vWro9Px715SO8VYLzg==
   dependencies:
     js-yaml "^4.1.0"
 
-"@sphido/hashtags@^2.0.13":
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/@sphido/hashtags/-/hashtags-2.0.13.tgz#29cfd382cc3c3d08e647512dbeab1964d85fd539"
-  integrity sha512-oku2jmjv+ereykzbAgg9JklAqkm2pBzZgTflOILuci82V+ep9dzXsJP8i5wVvXBlC0nCdU/fKkPCoJCUva+ipQ==
+"@sphido/hashtags@^2.0.14":
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/@sphido/hashtags/-/hashtags-2.0.14.tgz#5357f0c28a740d15da6db8eb840406bbb122b61d"
+  integrity sha512-bykEQzbWfhBAYqtsd/D5XgnPHKI+3lveuq9esZyVzhbumI3R26nrrumucZ+zf1pGpSDn7AJx6l2zDPiHxFltlw==
   dependencies:
     "@sindresorhus/slugify" "^2.1.1"
 
-"@sphido/sitemap@^2.0.10":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-2.0.10.tgz#a6743139e0e09adb8f6dc7d98d80b6938e9e95aa"
-  integrity sha512-cp985t9faWivgNf3smg1XiDtNdnhkNhUxiKcHVSRB6mWafVfUtt7yjMdc9eiX7cuuH15jLhs0o1kpwrd84xzuQ==
+"@sphido/sitemap@^2.0.11":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-2.0.11.tgz#1c5cc2af8f66c073337c533cbfeeb07961250276"
+  integrity sha512-B6Ye+VQGY+uTabMTB0+TMEWwPU+35a80B4NqithS8OwSd5npu05/4IBYG+ZuXsJXAGsKSlwV4iCVsLkZzzL7QQ==
 
 "@tailwindcss/aspect-ratio@^0.4.2":
   version "0.4.2"
@@ -713,7 +713,7 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-micromatch@^4.0.4:
+micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
   integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
@@ -1134,10 +1134,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-tailwindcss@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.0.tgz#0164a930645e7e1df301df1e9d434a52602c918d"
-  integrity sha512-ARh/W0uH5UlWIC2nn02V0+5fyF0k6qZliyt4QYic2upOhPUE/Spu1EURNc9txJ3+4j8OEmdigqfDpw4d2tA4vA==
+tailwindcss@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.1.tgz#1bd828fff3172489962357f8d531c184080a6786"
+  integrity sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==
   dependencies:
     arg "^5.0.2"
     chokidar "^3.5.3"
@@ -1149,6 +1149,7 @@ tailwindcss@^3.2.0:
     glob-parent "^6.0.2"
     is-glob "^4.0.3"
     lilconfig "^2.0.6"
+    micromatch "^4.0.5"
     normalize-path "^3.0.0"
     object-hash "^3.0.0"
     picocolors "^1.0.0"
