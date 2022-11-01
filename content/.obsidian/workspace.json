@@ -1,0 +1,121 @@
+{
+  "main": {
+    "id": "e08e762b7d8a6c6d",
+    "type": "split",
+    "children": [
+      {
+        "id": "61b8b1bf9a75ceb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60dfc79b640c4d83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Bash/Download Twitter or Youtube video from command line.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c0976bb1c20916aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "37e306444a88eeb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81821f7b10ee9464",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "173e26be5a93b7e6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7fee4366347e882b",
+    "type": "split",
+    "children": [
+      {
+        "id": "635b16a9ba2d04af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7a61106c8c86771",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Development/Bash/Download Twitter or Youtube video from command line.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d856ab24fecea4cf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "60dfc79b640c4d83",
+  "lastOpenFiles": [
+    "Development/Backup mongo indexes.md",
+    "Development/Bash/Download Twitter or Youtube video from command line.md",
+    "Development/Docker/MariaDB and Docker Compose.md",
+    "Lists/Awesome list.md",
+    "Lists/Databases overview.md",
+    "Lists/Free Stock Photos.md",
+    "Lists/Cloud storage services.md",
+    "Lists/Books.md",
+    "Lists/CSS frameworks.md",
+    "Lists/Earl Grey.md"
+  ]
+}
