@@ -1,12 +1,11 @@
 # The best cameras in 2022
 
-## Best action a
-
-* [GoPro HERO10 Black](https://gopro.com/en/cz/shop/cameras/hero10-black/CHDHX-101-master.html) - best action camera
-* [DJI Osmo Action 2](https://www.dji.com/cz/dji-action-2) - best small action camera
-* [Insta360 One R](https://www.insta360.com/product/insta360-oner_twin-edition) - best 360-degree camera
-* [DJI Osmo Pocket 2](https://www.dji.com/cz/pocket-2) - best stabilised pocket camera
-* [Insta360 Go 2](https://www.insta360.com/product/insta360-go2) - best micro camera
+## Best action cameras
+### [GoPro HERO11 Black](https://gopro.com/en/cz/shop/cameras/hero11-black/CHDHX-111-master.html)
+### [DJI Osmo Action 3](https://www.dji.com/cz/osmo-action-3)
+![](Photo/dji-osmo-action-3.png)
+### [Insta360 X3](https://www.insta360.com/product/insta360-x3) 
+### [DJI Osmo Pocket 2](https://www.dji.com/cz/pocket-2) 
 
 ## Best Fuji cameras
 #### [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/) 
