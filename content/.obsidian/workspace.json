@@ -118,6 +118,9 @@
     "direction": "horizontal",
     "width": 300
   },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
   "active": "e9761b0d780d6f88",
   "lastOpenFiles": [
     "Lists/Best Email Hosting Services.md",
