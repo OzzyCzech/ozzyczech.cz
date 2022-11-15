@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "61b8b1bf9a75ceb5",
+        "id": "c7337da9df8828a7",
         "type": "tabs",
         "children": [
           {
-            "id": "60dfc79b640c4d83",
+            "id": "b9eccf116992d946",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lists/Best Email Hosting Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9761b0d780d6f88",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lists/Best application hosting.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lists/Best application hosting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,20 +100,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "e9761b0d780d6f88",
+  "active": "b9eccf116992d946",
   "lastOpenFiles": [
     "Lists/Best Email Hosting Services.md",
+    "Tailwind/Awsome Tailwind.md",
+    "Lists/Awesome list.md",
+    "Lists/Best application hosting.md",
     "Photo/The best cameras in 2022.md",
     "Photo/action-3.png",
     "Lists/Apps and services.md",
     "Lists/Security list.md",
-    "Lists/Awesome list.md",
     "Lists/Books.md",
-    "Development/Bash/Download Twitter or Youtube video from command line.md",
-    "Development/Bash/Download all images from URL into a single folder.md",
-    "Development/Backup mongo indexes.md"
+    "Development/Bash/Download Twitter or Youtube video from command line.md"
   ]
 }
