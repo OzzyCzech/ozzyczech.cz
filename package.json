@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"onchange": "^7.1.0",
-		"serve": "^14.0.1"
+		"serve": "^14.1.1"
 	},
 	"type": "module",
 	"engines": {
@@ -22,12 +22,12 @@
 		"@sphido/sitemap": "^2.0.11",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/forms": "^0.5.3",
-		"@tailwindcss/typography": "^0.5.7",
+		"@tailwindcss/typography": "^0.5.8",
 		"fs-extra": "^10.1.0",
 		"globby": "^13.1.2",
-		"marked": "^4.1.1",
+		"marked": "^4.2.2",
 		"md5": "^2.3.0",
 		"prismjs": "^1.29.0",
-		"tailwindcss": "^3.2.1"
+		"tailwindcss": "^3.2.4"
 	}
 }
