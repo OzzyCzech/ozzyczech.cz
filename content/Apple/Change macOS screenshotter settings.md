@@ -1,4 +1,4 @@
-# Change the Default MacOS Screenshot settings
+# Change macOS screenshotter settings
 
 Change Screen Shot filename:
 

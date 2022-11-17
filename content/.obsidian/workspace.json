@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c7337da9df8828a7",
+        "id": "933a2166ab3cf7eb",
         "type": "tabs",
         "children": [
           {
-            "id": "b9eccf116992d946",
+            "id": "caaacb07ea82d8db",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Apple/Advanced tasks with Homebrew.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Apple/Advanced tasks with Homebrew.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,17 +105,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b9eccf116992d946",
+  "active": "caaacb07ea82d8db",
   "lastOpenFiles": [
-    "Lists/Best Email Hosting Services.md",
-    "Tailwind/Awsome Tailwind.md",
-    "Lists/Awesome list.md",
-    "Lists/Best application hosting.md",
-    "Photo/The best cameras in 2022.md",
-    "Photo/action-3.png",
-    "Lists/Apps and services.md",
-    "Lists/Security list.md",
-    "Lists/Books.md",
-    "Development/Bash/Download Twitter or Youtube video from command line.md"
+    "Apple/Best macOS apps and tools.md",
+    "Apple/Best Markdown editors for Mac.md",
+    "Apple/Control Time Machine from the command line.md",
+    "Apple/Create macOS Big Sur ISO Image File.md",
+    "Apple/Fix casks with depends_on that reference pre-Mavericks.md",
+    "Apple/How to backup iCloud drive with rclone.md",
+    "Apple/How to clean flash drive before unmount on Mac.md",
+    "Apple/How to delete all local TimeMachine snapshots.md",
+    "Apple/Change macOS screenshotter settings.md",
+    "Apple/Install Mongo on MacOS.md"
   ]
 }
