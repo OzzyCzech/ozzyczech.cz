@@ -1,10 +1,11 @@
 # Series
 ## 2022
 
-* [The Boys](https://www.imdb.com/title/tt1190634/)
 * [Better Call Saul](https://www.imdb.com/title/tt3032476/)
+* [Boba Fett](https://www.imdb.com/title/tt13668894/)
+* [The Boys](https://www.imdb.com/title/tt1190634/)
 * [Sopranos](https://www.imdb.com/title/tt0141842/)
-* [StrangerThings](https://www.imdb.com/title/tt4574334/)
+* [Stranger Things](https://www.imdb.com/title/tt4574334/)
 * [Arcane](https://www.imdb.com/title/tt11126994/)
 
 ## 2021
