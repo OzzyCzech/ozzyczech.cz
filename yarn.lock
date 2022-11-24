@@ -49,29 +49,29 @@
     escape-string-regexp "^5.0.0"
     lodash.deburr "^4.1.0"
 
-"@sphido/core@^2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-2.0.14.tgz#1d187b2daf5d029f547006293cb316cfc4886c9a"
-  integrity sha512-vBlKB3CG8UDonmkyGDtqz4QtF/8sOyV3vMZCiqihnoRk0W2lOYAaWRKDOnf9iJTaeEDZB3UJcB6Iec4RmV3nRQ==
+"@sphido/core@^2.0.15":
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-2.0.15.tgz#21e8578a00d2c8ecb1f01e5a20e481b8e3d0cc87"
+  integrity sha512-emXxm/sxen2ZLZbCW9nbFPbdQ4AgeqxyBlsv83YE9giuH3HHX8OLSWRY9Fntg9yuo2kdOZNhkcQppwSJZHxxBQ==
 
-"@sphido/frontmatter@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-2.0.3.tgz#9e0057f57fe8ce61462c7f5183d35fa84a594996"
-  integrity sha512-IEaQWaFyDfSGx40hubdiG5i+wYwTGcVc57xmA4fcC5DS1aNlu0MdylpbkNo6f/1ZPOn3vWro9Px715SO8VYLzg==
+"@sphido/frontmatter@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-2.0.4.tgz#46a213a3de088b4006a016f22b69f66b6cd2b5a3"
+  integrity sha512-IuyoGBxj2aW2tMaVDqoyc7DPo+jRJEWH1UalLvwG+E0PKvEKlZ87ezig1+6aCJTHQgLkcpsZ/qQonEQdafR9Lw==
   dependencies:
     js-yaml "^4.1.0"
 
-"@sphido/hashtags@^2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@sphido/hashtags/-/hashtags-2.0.14.tgz#5357f0c28a740d15da6db8eb840406bbb122b61d"
-  integrity sha512-bykEQzbWfhBAYqtsd/D5XgnPHKI+3lveuq9esZyVzhbumI3R26nrrumucZ+zf1pGpSDn7AJx6l2zDPiHxFltlw==
+"@sphido/hashtags@^2.0.15":
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/@sphido/hashtags/-/hashtags-2.0.15.tgz#c28137045ba579ff30dcf81073a61f7723d69158"
+  integrity sha512-QEpmDUn9EgFOgFBzIrwztYb1PJtCnijTektam4P6KQmeznqw7jvb1RQW26SxITVpEHPMA/gh69ayt2mwpv2qlA==
   dependencies:
     "@sindresorhus/slugify" "^2.1.1"
 
-"@sphido/sitemap@^2.0.11":
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-2.0.11.tgz#1c5cc2af8f66c073337c533cbfeeb07961250276"
-  integrity sha512-B6Ye+VQGY+uTabMTB0+TMEWwPU+35a80B4NqithS8OwSd5npu05/4IBYG+ZuXsJXAGsKSlwV4iCVsLkZzzL7QQ==
+"@sphido/sitemap@^2.0.12":
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-2.0.12.tgz#bb3bd3bff99a5816bb574b17d33d1a24196f33ff"
+  integrity sha512-98pj6YgLweyw9aqLSD9Oy21Sr9WXVAe2ZL8C9PYWDJQsjSLcfHzAYjJEBctsclJhN80lZTWaWmOV1emU8GWchA==
 
 "@tailwindcss/aspect-ratio@^0.4.2":
   version "0.4.2"
@@ -689,10 +689,10 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-marked@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-4.2.2.tgz#1d2075ad6cdfe42e651ac221c32d949a26c0672a"
-  integrity sha512-JjBTFTAvuTgANXx82a5vzK9JLSMoV6V3LBVn4Uhdso6t7vXrGx7g1Cd2r6NYSsxrYbQGFCMqBDhFHyK5q2UvcQ==
+marked@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.2.3.tgz#bd76a5eb510ff1d8421bc6c3b2f0b93488c15bea"
+  integrity sha512-slWRdJkbTZ+PjkyJnE30Uid64eHwbwa1Q25INCAYfZlK4o6ylagBy/Le9eWntqJFoFT93ikUKMv47GZ4gTwHkw==
 
 md5@^2.3.0:
   version "2.3.0"
@@ -1036,10 +1036,10 @@ serve-handler@6.1.5:
     path-to-regexp "2.2.1"
     range-parser "1.2.0"
 
-serve@^14.1.1:
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/serve/-/serve-14.1.1.tgz#17d299f2ec78ae022760e9fa63d122336fe0a1bc"
-  integrity sha512-7RhRDEirZ7Qyee4QWhBHO9qRtjIGsIPGecDDPzNzlOsjDiZWcq36GS8FioVJAuJPVJBBDTsGp33WWOO4B9A82g==
+serve@^14.1.2:
+  version "14.1.2"
+  resolved "https://registry.yarnpkg.com/serve/-/serve-14.1.2.tgz#65d7a3cec5a0b876c46bb8927fabc27957c2e1e0"
+  integrity sha512-luwVfJwbeE7dhCKeRU0vIBpt4bXdbAfzwsWJIQ5eqrIW2e+4nLWXbSlZ0WzelSFHQq+FlueOW6dr90jEewS9zw==
   dependencies:
     "@zeit/schemas" "2.21.0"
     ajv "8.11.0"

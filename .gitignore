@@ -1,6 +1,7 @@
 node_modules
 public
 /content/.obsidian/workspace
+/content/.obsidian/workspace.json
 /content/.obsidian/cache
 
 .trash
