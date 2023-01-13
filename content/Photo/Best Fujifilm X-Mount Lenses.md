@@ -30,4 +30,8 @@ Best wide angel lenses are:
 
 https://fujifilm-x.com/global/products/lenses/
 
+
+https://www.youtube.com/watch?v=kxaDnWZjAgI
+
+
 #Fujifilm  
