@@ -3,7 +3,7 @@ import {got} from 'got';
 async function getSeriesHtml(match, movie) {
 	const response = await got(`https://api.themoviedb.org/3/search/tv/?api_key=${process.env.TMDB_API_KEY}&query=${movie}`).json();
 
-	return `<li class="text-center p-2 m-0 lg:w-1/4">
+	return `<li class="text-center p-2 m-0 md:w-1/2 lg:w-1/4">
 		<a href="https://www.themoviedb.org/tv/${response.results[0].id}" target="_blank" class="text-inherit">
 			<img src="https://image.tmdb.org/t/p/w500${response.results[0].poster_path}" alt="${response.results[0].name}" class="!p-0 !my-2"/>
 			<span>${response.results[0].name}</span>
