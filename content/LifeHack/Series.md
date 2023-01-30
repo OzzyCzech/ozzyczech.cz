@@ -1,70 +1,82 @@
 # Series
+
+## 2023
+
+* Gravity falls
+* Star vs. the Forces of Evil
+
 ## 2022
 
-* [Better Call Saul](https://www.imdb.com/title/tt3032476/)
-* [Boba Fett](https://www.imdb.com/title/tt13668894/)
-* [The Boys](https://www.imdb.com/title/tt1190634/)
-* [Sopranos](https://www.imdb.com/title/tt0141842/)
-* [Stranger Things](https://www.imdb.com/title/tt4574334/)
-* [Arcane](https://www.imdb.com/title/tt11126994/)
+* Star Wars: The Bad Batch
+* Breaking Bad
+* Regular Show
+* Better Call Saul
+* The Book of Boba Fett
+* The Boys
+* Sopranos
+* Stranger Things
+* Arcane
 
 ## 2021
-* [Devs](https://www.imdb.com/title/tt8134186/)
-* [Rick a Morty](https://www.imdb.com/title/tt2861424/)
-* [Loki](https://www.imdb.com/title/tt9140554/)
-* [High Seas](https://www.imdb.com/title/tt8961508/)
-* [The Expanse](https://www.imdb.com/title/tt3230854/)
-* [Paradise PD](https://www.imdb.com/title/tt8235236/)
-* [Brooklyn nine-nine](https://www.imdb.com/title/tt2467372/)
-* [The MIRE](https://www.imdb.com/title/tt8855592/)
-* [Years and Years](https://www.imdb.com/title/tt8694364/)
+
+* Devs
+* Rick a Morty
+* Loki
+* High Seas
+* The Expanse
+* Paradise PD
+* Brooklyn nine-nine
+* The MIRE
+* Years and Years
 
 ## 2020
-- [Dark](https://www.imdb.com/title/tt5753856/)
-- [Star Trek Discovery](https://www.imdb.com/title/tt5171438/)
-- [Away](https://www.imdb.com/title/tt8787802/)
-- [Money Heist](https://www.imdb.com/title/tt6468322/)
-- [Lost in space](https://www.imdb.com/title/tt5232792)
-- [Mandalorian](https://www.imdb.com/title/tt8111088/)
-- [Nightflyers](https://www.imdb.com/title/tt6903284/)
-- [Another Life](https://www.imdb.com/title/tt8369840/)
-- [The Durrells](https://www.imdb.com/title/tt5014882/)
-- [Gomorra: La serie](https://www.imdb.com/title/tt2049116/)
-- [Zero, Zero, Zero](https://www.imdb.com/title/tt8332438/)
-- [Zone Blanche](https://www.imdb.com/title/tt6519410/)
-- [Altered Carbon](https://www.imdb.com/title/tt2261227/)
-- [Picard](https://www.imdb.com/title/tt8806524/)
-- [Dublin Murders](https://www.imdb.com/title/tt7768192/)
-- [Mindhunter](https://www.imdb.com/title/tt5290382/)
+
+* Dark
+* Star Trek Discovery
+* Away
+* Money Heist
+* Lost in space
+* Mandalorian
+* Nightflyers
+* Another Life
+* The Durrells
+* Gomorra: La serie
+* Zero, Zero, Zero
+* Zone Blanche
+* Altered Carbon
+* Picard
+* Dublin Murders
+* Mindhunter
 
 ## 2019
-- [Mandalorian](https://www.imdb.com/title/tt8111088/)
-- [Why Women Kill](https://www.imdb.com/title/tt9054904)
-- [The Spy](https://www.imdb.com/title/tt5952634/)
-- [Beforeigners](https://www.imdb.com/title/tt8332130/)
-- [Black Monday](https://www.imdb.com/title/tt7406334/)
-- [Chernobyl](https://www.imdb.com/title/tt7366338/)
-- [Brickleberry](https://www.imdb.com/title/tt2022713/)
-- [The Boys](https://www.imdb.com/title/tt1190634/)
+
+* Mandalorian
+* Why Women Kil
+* The Spy
+* Beforeigners
+* Black Monday
+* Chernobyl
+* Brickleberry
+* The Boys
 
 ## 2018
-- [Legion](https://www.imdb.com/title/tt5114356/)
-- [La casa de papel](https://www.imdb.com/title/tt6468322)
-- [Le Bureau des Légendes](https://www.imdb.com/title/tt4063800/)
-- [Final space](https://www.imdb.com/title/tt6317068/)
-- [Star Trek: Discovery](https://www.imdb.com/title/tt5171438/)
-- [Lost in space](https://www.imdb.com/title/tt5232792)
-- [Altered Carbon](https://www.imdb.com/title/tt2261227/)
-- [The Expanse](https://www.imdb.com/title/tt3230854/)
-- [Fortitude](https://www.imdb.com/title/tt3498622/)
-- [Jordskott](https://www.imdb.com/title/tt2309405)
-- [Stranger Things](https://www.imdb.com/title/tt4574334/)
-- [True Detective](https://www.imdb.com/title/tt2356777/)
-- [The OA](https://www.imdb.com/title/tt4635282/)
-- The Staircase
+
+* Legion
+* La casa de pape
+* Le Bureau des Légendes
+* Final space
+* Star Trek: Discovery
+* Lost in spac
+* Altered Carbon
+* The Expanse
+* Fortitude
+* Jordskot
+* Stranger Things
+* True Detective
+* The OA
 
 ## Oldies
-* [Ren a Stimpy](https://www.imdb.com/title/tt0101178/)
-* [Courage the Cowardly Dog](https://www.imdb.com/title/tt0220880)
-* [Cow and Chicken](https://www.imdb.com/title/tt0118289/)
-* [Regular Show](https://www.imdb.com/title/tt1710308/)
+
+* Ren a Stimpy
+* Courage the Cowardly Dog
+* Cow and Chicken

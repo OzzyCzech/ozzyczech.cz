@@ -28,19 +28,19 @@ marked.setOptions({
 });
 
 const renderer = {
-	image: (href, title, text) => {
+	image: (src, title, text) => {
 		//const className = new URL(href, domain).hash.substring(1).replace(/[_]/g, ' ');
-		if (!href.startsWith('/') && !href.startsWith('http')) href = '/' + href; // add leading '/'
+		if (!src.startsWith('/') && !src.startsWith('http')) src = '/' + src; // add leading '/'
 
-		if (href.match(/mp4|webm|mov/)) {
-			return `<video loop muted autoplay src="${href}" class="mx-auto rounded"></video>`;
+		if (src.match(/mp4|webm|mov/)) {
+			return `<video loop muted autoplay src="${src}" class="mx-auto rounded"></video>`;
 		} else {
 			return `<div class="flex justify-center">
 							<figure>
-								<a href="${href}" target="_blank">
-									<img src="${href}" class="rounded shadow bg-white dark:bg-black" title="${title ? title : ''}" alt="${text ? text : ''}"/>
-								</a>		
-								<figcaption>${title ? title : (text ? text : null)}</figcaption>
+								<a href="${src}" target="_blank">
+									<img src="${src}" class="rounded shadow bg-white dark:bg-black" title="${title ? title : ''}" alt="${text ? text : ''}"/>
+								</a>
+								${title || text ? `<figcaption>${title || text}</figcaption>` : ''} 
 						</figure>
 						</div>`;
 		}

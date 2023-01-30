@@ -6,5 +6,5 @@ public
 
 .trash
 .vercel
-.env.local
+.env*
 *.log

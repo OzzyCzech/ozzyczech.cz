@@ -1,10 +1,11 @@
-# What are the best Fujifilm X-Mount Lenses in 2022?
+# The best lenses for Fujifilm X-mount
 
 ## Best standard zoom lenses
 
 The standard zoom lens is the photographer's **handy multitool** a variable lens capturing landscapes, groups, or architecture, and a telephoto to get closer to a distant subject or make a portrait.
 
-* [XF 16-55mm F2-8 LM WR](https://fujifilm-x.com/global/products/lenses/xf16-55mmf28-r-lm-wr/) - best standard zoom lense
+* [XF 16-55mm F2.8 LM WR](https://fujifilm-x.com/global/products/lenses/xf16-55mmf28-r-lm-wr/) - best standard zoom lense
+* [Sigma 18-50 F2.8 DC DN](https://www.youtube.com/watch?v=kxaDnWZjAgI) - zoom lens that is small with decent aparature
 * You also may consider [Fujinon XF 16-80mm f/4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/) but there is notable lack in AF system that's specially in low light.
 
 ## Best wide angel lenses
@@ -23,15 +24,10 @@ Best wide angel lenses are:
 - [Viltrox 13 mm F1.4](https://viltroxstore.com/products/13mm-f14-af-lens-for-fujifilm-x-mount-camera-models) 
 * [XF 33mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
 
-## Third party lenses
+## Fujifilm X mount lenses providers
 
 * [Sigma X Mount lenses](https://www.sigma-global.com/en/magazine/m_series/others-lenses/fujifilm-x-mount/sigma_xmount_lenses/)
 * [Viltrox X Mount Lenses](https://viltroxstore.com/collections/all/x-mount)
-
-https://fujifilm-x.com/global/products/lenses/
-
-
-https://www.youtube.com/watch?v=kxaDnWZjAgI
-
+* [Fujifilm X Mount Lenses](https://fujifilm-x.com/global/products/lenses/)
 
 #Fujifilm  
