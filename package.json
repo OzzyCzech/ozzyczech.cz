@@ -11,9 +11,6 @@
 		"serve": "^14.2.0"
 	},
 	"type": "module",
-	"engines": {
-		"node": ">=14"
-	},
 	"dependencies": {
 		"@sindresorhus/slugify": "^2.2.0",
 		"@sphido/core": "^2.0.16",
