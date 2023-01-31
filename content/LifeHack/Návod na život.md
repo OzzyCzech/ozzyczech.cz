@@ -24,5 +24,3 @@
 * K ženám (ostatně i k mužům), stejně jako k dětem buď trpělivý a trochu shovívavý.
 * Pokud máš špatnou náladu, zamysli se nad tím, že až zemřeš, nebudeš mít ani tu
 * Žij dneska, protože včerejšek už není a zítřek být ani nemusí.
-
-Jaroslav Dušek
