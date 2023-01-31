@@ -1,14 +1,18 @@
 import {got} from 'got';
 
-async function getSeriesHtml(match, movie) {
-	const response = await got(`https://api.themoviedb.org/3/search/tv/?api_key=${process.env.TMDB_API_KEY}&query=${movie}`).json();
+async function getSeriesHtml(match, series) {
+	const response = await got(`https://api.themoviedb.org/3/search/tv/?api_key=${process.env.TMDB_API_KEY}&include_adult=true&query=${series}`).json();
 
-	return `<li class="text-center p-2 m-0 sm:w-1/2 md:w-1/3 lg:w-1/4">
-		<a href="https://www.themoviedb.org/tv/${response.results[0].id}" target="_blank" class="text-inherit">
-			<img src="https://image.tmdb.org/t/p/w500${response.results[0].poster_path}" alt="${response.results[0].name}" class="!p-0 !my-2"/>
-			<span>${response.results[0].name}</span>
-		</a>
-	</li>`;
+	if (response?.results.length) {
+		const result = response.results.filter((result) => result.name.toLowerCase() === series.toLowerCase()).shift() || response.results.shift();
+
+		return `<li class="text-center p-2 m-0 w-1/2 md:w-1/3 lg:w-1/4">
+			<a href="https://www.themoviedb.org/tv/${result.id}" target="_blank" class="text-inherit">
+				<img src="https://image.tmdb.org/t/p/w500${result.poster_path}" alt="${result.name}" class="!p-0 !my-2"/>
+				<span title="${series}">${result.name}</span>
+			</a>
+		</li>`;
+	}
 }
 
 export async function replaceSeries(str) {

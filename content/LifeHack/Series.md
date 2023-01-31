@@ -13,7 +13,7 @@
 * Better Call Saul
 * The Book of Boba Fett
 * The Boys
-* Sopranos
+* The Sopranos
 * Stranger Things
 * Arcane
 
@@ -26,22 +26,23 @@
 * The Expanse
 * Paradise PD
 * Brooklyn nine-nine
-* The MIRE
+* The Mire
 * Years and Years
 
 ## 2020
 
+* Raised by Wolves
 * Dark
-* Star Trek Discovery
+* Star Trek: Discovery
 * Away
 * Money Heist
 * Lost in space
-* Mandalorian
+* The Mandalorian
 * Nightflyers
 * Another Life
 * The Durrells
 * Gomorra: La serie
-* Zero, Zero, Zero
+* ZeroZeroZero
 * Zone Blanche
 * Altered Carbon
 * Picard
@@ -50,8 +51,8 @@
 
 ## 2019
 
-* Mandalorian
-* Why Women Kil
+* The Mandalorian
+* Why Women Kill
 * The Spy
 * Beforeigners
 * Black Monday
@@ -62,8 +63,8 @@
 ## 2018
 
 * Legion
-* La casa de pape
-* Le Bureau des Légendes
+* Money Heist
+* Le Bureau des légendes
 * Final space
 * Star Trek: Discovery
 * Lost in spac
@@ -77,6 +78,6 @@
 
 ## Oldies
 
-* Ren a Stimpy
+* The Ren & Stimpy Show
 * Courage the Cowardly Dog
 * Cow and Chicken
