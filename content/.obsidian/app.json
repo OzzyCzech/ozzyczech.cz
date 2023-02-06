@@ -10,5 +10,7 @@
   "strictLineBreaks": false,
   "tabSize": 2,
   "newFileLocation": "current",
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "foldHeading": true,
+  "showInlineTitle": false
 }
