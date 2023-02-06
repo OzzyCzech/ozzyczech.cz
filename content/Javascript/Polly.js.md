@@ -1,4 +1,4 @@
-# Polly.js - Record, replay, and stub HTTP interactions.
+# Polly.js
 
 [![Record, replay, and stub HTTP interactions.](/js/Polly.js.png#center)](https://netflix.github.io/pollyjs/#/)
 

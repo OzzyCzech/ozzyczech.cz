@@ -1,4 +1,4 @@
-# Subreddit Image Downloader
+# Bash script for download subreddit images
 
 #Subreddit downoader is a #bash script which:
 

@@ -1,4 +1,4 @@
-# Exiftool tips & tricks
+# Exiftool tips and tricks
 
 ## Organize images
 

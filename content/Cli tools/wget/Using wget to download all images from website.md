@@ -1,7 +1,6 @@
-# Download all images from URL into a single folder
+# Using wget to download all images from website
 
-There is plenty options, but easiest one is use command line. 
-The **wget** is command line utility allows you to download whole web pages, files and images from the specific URL.
+There is plenty options, but easiest one is use command line. The **wget** is command line utility allows you to download whole web pages, files and images from the specific URL.
 
 Follow command works just fine: 
 
@@ -36,7 +35,7 @@ Other useful download options:
 * `--limit-rate=amount`: Limit the download speed to amount bytes per second
 * `-U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"`: Identify as agent-string to the HTTP server as Mozilla Firefox from Windows
 
-Read more on [wget manual page](https://www.gnu.org/software/wget/manual/wget.html).
+Read more on [wget manual page](https://www.gnu.org/software/wget/manual/wget.html). 
 
 ### Real world example
 

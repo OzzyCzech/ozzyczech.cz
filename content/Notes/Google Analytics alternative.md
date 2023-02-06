@@ -1,8 +1,3 @@
-## Travel bags
+# Google Analytics alternative
 
-https://alpakagear.com/collections/all-bags
-
-## Google Analytics alternative
-
-### Free Open source Google Analytics alternative
 [Umami](https://umami.is/) is an **[open source](https://github.com/umami-software/umami)**, privacy-focused alternative to Google Analytics.

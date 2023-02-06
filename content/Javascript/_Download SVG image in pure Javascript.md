@@ -1,3 +1,4 @@
+# _Download SVG image in pure Javascript
 ```js
 function downloadPlaceholder(width, height, name, type = 'png') {
 	const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 ${width} ${height}"><rect fill="#ddd" width="${width}" height="${height}"/><text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5" font-weight="bold" x="50%" y="50%" text-anchor="middle">${width}×${height}</text></svg>`;
