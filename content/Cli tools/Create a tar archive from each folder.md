@@ -1,4 +1,4 @@
-# Create a separate tar archive from each folder
+# Create a tar archive from each folder
 
 Follow commands create tar archives folder by folder into their own tar - so folder becomes *folder.tar*
 
