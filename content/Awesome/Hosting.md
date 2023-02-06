@@ -1,4 +1,4 @@
-# Best application hosting
+# Hosting
 
 * [Railway](https://railway.app/) - code centric hosting
 * [Netlify](https://www.netlify.com/)

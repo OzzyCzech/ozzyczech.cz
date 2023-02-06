@@ -1,4 +1,4 @@
-# Image viewers & managers
+# Image viewers and managers
 
 * [AcdSee](https://www.acdsee.com/en/index) - well known image organizer from 90's
 * [Pixave](http://www.littlehj.com/mac/) - smart image organizer for macOS

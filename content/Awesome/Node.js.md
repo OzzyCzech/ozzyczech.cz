@@ -1,4 +1,4 @@
-# Awesome Node.js
+# Node.js
 
 Delightful #nodejs packages and resources:
 
