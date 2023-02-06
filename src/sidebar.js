@@ -1,5 +1,3 @@
-import md5 from 'md5';
-
 export function getSidebarMenu(pages, active, className = '') {
 	let menu = '';
 
@@ -7,18 +5,18 @@ export function getSidebarMenu(pages, active, className = '') {
 		if (page?.children) {
 			const expanded = active.startsWith(page.slug);
 			menu += `<li>
-	<button class="flex justify-between rounded py-3 pl-4 pr-2 flex bg-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 dark:bg-neutral-800 w-full mb-1" aria-expanded="${expanded}">
+	<button class="flex justify-between w-full px-3 py-2 rounded font-semibold hover:bg-neutral-200 dark:hover:bg-neutral-800" aria-expanded="${expanded}">
 		<span>${page.name}</span>
-		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class="fill-natural-500">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class="fill-natural-500 dark:fill-neutral-400">
 			<path d="M0 0h24v24H0z" fill="none"/>
 			<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
 		</svg>
 	</button>
-	${getSidebarMenu(page.children, active, expanded ? 'ml-2' : 'ml-2 hidden')}
+	${getSidebarMenu(page.children, active, expanded ? 'mx-2' : 'mx-2 hidden')}
 </li>`;
 		} else {
 			menu += `<li>
-	<a href="${page.slug}" ${page.slug === active ? 'aria-current="page"' : ''} class="flex py-3 px-4 rounded bg-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 dark:bg-neutral-800 w-full ${page.slug == active ? 'text-yellow-300' : ''}">
+	<a href="${page.slug}" ${page.slug === active ? 'aria-current="page"' : ''} class="flex py-2 px-3 rounded hover:bg-neutral-200 dark:hover:bg-neutral-900 w-full ${page.slug == active ? 'font-semibold dark:bg-neutral-800 text-yellow-300' : ''}">
 		${page.name}
 	</a>
 </li>`;
@@ -28,26 +26,12 @@ export function getSidebarMenu(pages, active, className = '') {
 }
 
 export function getAside(pages, active) {
-	return `<section class="text-center">
-				<a href="/" class="mb-3">
-					<img src="https://www.gravatar.com/avatar/${md5('roman@ozana.cz')}?s=128" class="inline object-cover my-2 w-128 h-128 rounded-full" alt="Roman Ožana" />
+	return `
+			<nav class="mx-1 my-3">
+				<a href="/" class="flex justify-between w-full px-3 py-2 rounded font-semibold hover:bg-neutral-200 dark:hover:bg-neutral-800">
+					<span>Homepage</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class="fill-gray-500"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
 				</a>
-				<h5 class="text-2xl">
-					Hi, <a href="https://ozana.cz" target="_blank" class="hover:text-yellow-500 hover:underline transition">I am Roman!</a>
-				</h5>
-				<div class="mb-3 text-center">
-					<a href="https://github.com/OzzyCzech/" target="_blank" class="hover:text-yellow-500 hover:underline transition">GitHub</a>
-					<span class="mx-1">•</span>
-					<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hover:text-yellow-500 hover:underline transition">StackOverflow</a>
-					<span class="mx-1">•</span>
-					<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hover:text-yellow-500 hover:underline transition">Twitter</a>
-			</div>				
-			</section>
-			<a href="/" class="rounded flex items-center gap-2 py-3 px-5 mb-1 flex bg-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 dark:bg-neutral-800">
-				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class="fill-gray-500"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-				<span>Homepage</span>
-			</a>
-			<nav>
-				${getSidebarMenu([...pages].filter(page => page.name !== 'index'), active)}
+				${getSidebarMenu([...pages].filter(page => page.name !== 'Homepage'), active)}
 			</nav>`;
 }

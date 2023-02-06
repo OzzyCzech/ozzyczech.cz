@@ -4,7 +4,7 @@ import {getDocument} from './document.js';
 export function getPageHtml({content, title, slug} = {}, pages) {
 	return getDocument({
 		title,
-		main: `<article class="prose max-w-full lg:prose-xl dark:prose-invert prose-a:no-underline hover:prose-a:underline prose-h1:text-yellow-500 lg:dark:bg-gray-800 lg:rounded-lg lg:px-24 lg:py-16">${content}</article>`,
+		main: `<article class="prose max-w-screen-lg lg:prose-lg mx-auto dark:prose-invert dark:prose-sky prose-a:no-underline prose-h1:text-yellow-500 hover:prose-a:underline my-12">${content}</article>`,
 		aside: getAside(pages, slug),
 	});
 }

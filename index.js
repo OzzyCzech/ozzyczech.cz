@@ -25,7 +25,7 @@ const fuse = await createFuse();
 const pages = await getPages({path: 'content'}, (page, dirent) => {
 
 	if (dirent.isFile()) {
-		page.slug = join('/', relative('content', dirname(page.path)), slugify(page.name) + '.html');
+		page.slug = join('/', relative('content', dirname(page.path)), slugify(page.name === 'Homepage' ? 'index' : page.name) + '.html');
 		page.output = join('public', page.slug);
 	}
 
@@ -47,7 +47,6 @@ for (const page of allPages(pages)) {
 
 	page.content = marked(page.content);
 	page.title = page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i)?.pop();
-
 
 	// Add links to series page
 	if (page.name === 'Series') {

@@ -1,3 +1,5 @@
+import md5 from 'md5';
+
 export function getDocument({title, aside, main} = {}) {
 	return `<!DOCTYPE html>
 <html lang="en" dir="ltr" class="dark">
@@ -10,12 +12,36 @@ export function getDocument({title, aside, main} = {}) {
 	<link rel="stylesheet" href="/style.css"/>
 	<script src="/js/app.js" type="module"></script>
 </head>
-<body class="antialiased leading-normal tracking-normal container my-12 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
-<div class="grid grid-cols-1 lg:grid-cols-[minmax(0,auto)_320px] gap-4 lg:gap-6">
-	<aside>${aside}</aside>
-	<main class="md:order-first">${main}</main>	
-</div>
+<body class="antialiased leading-normal tracking-normal dark:bg-gray-900 dark:text-gray-100">
+<header class="flex flex-wrap items-center justify-between mx-auto bg-gray-50 dark:bg-gray-800 px-4 py-3">
 
+	<a href="/" class="flex items-center">
+		<img src="https://www.gravatar.com/avatar/${md5('roman@ozana.cz')}?s=128" class="h-7 mr-3 rounded-full" alt="Roman Ožana" />
+		<span class="text-xl font-semibold whitespace-nowrap dark:text-white">Roman's notes</span>
+	</a>				
+	
+	<div>
+		<ul class="flex flex-col md:flex-row gap-4">
+			<li>
+				<a href="https://github.com/OzzyCzech/" target="_blank" class="hover:text-yellow-500 hover:underline transition">GitHub</a>
+			</li>
+			<li>
+				<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hover:text-yellow-500 hover:underline transition">StackOverflow</a>
+			</li>
+			<li>
+				<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hover:text-yellow-500 hover:underline transition">Twitter</a>
+			</li>
+		</ul>
+	</div>
+			
+</header>
+
+<div>
+	<div class="grid grid-cols-1 lg:grid-cols-[320px,minmax(0,auto)] gap-4 lg:gap-6 min-h-screen">
+		<aside class="border-r dark:border-gray-800">${aside}</aside>
+		<main>${main}</main>	
+	</div>
+</div>
 <command-palette />
 </body>
 </html>`;
