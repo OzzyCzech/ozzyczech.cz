@@ -1,4 +1,4 @@
-# MacOS apps and tools
+# Apps and tools
 
 * [Homebrew](https://brew.sh/) - The missing package manager for macOS
 

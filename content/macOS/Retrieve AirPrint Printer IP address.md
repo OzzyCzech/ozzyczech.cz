@@ -1,4 +1,4 @@
-# Retrieve IP adress of AirPrint Printer
+# Retrieve AirPrint Printer IP address
 
 
 You can use [ippfind](https://manpages.debian.org/testing/cups-ipp-utils/ippfind.1.en.html) command that finds services

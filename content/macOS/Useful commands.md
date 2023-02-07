@@ -1,4 +1,4 @@
-# Useful macOS commands
+# Useful commands
 
 ## Network speed quality
 

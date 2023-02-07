@@ -1,4 +1,4 @@
-# How to delete all local TimeMachine snapshots
+# Delete local TimeMachine snapshots
 
 Your Time Machine backup disk might not always be available, so Time Machine also stores
 some of its backups on your Mac. These backups are called local snapshots. 
