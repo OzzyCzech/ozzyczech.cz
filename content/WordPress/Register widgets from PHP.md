@@ -1,4 +1,4 @@
-# Register and setup WordPress widgets from PHP code
+# Register widgets from PHP
 
 #PHP driven registration of the Widgets in #WordPress can be quite confusing. There is my way how to handle it:
 

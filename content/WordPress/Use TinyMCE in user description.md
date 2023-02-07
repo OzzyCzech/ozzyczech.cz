@@ -1,4 +1,4 @@
-#  WYSIWYG for user description in Wordpress
+#  Use TinyMCE in user description
 
 #WordPress user description is by default plain text. Following #PHP code will display the #WYSIWYG editor next to the author description of the user profile.
 

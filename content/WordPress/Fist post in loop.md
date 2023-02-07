@@ -1,4 +1,4 @@
-# Add a Class to the First Post in The Loop
+# Fist post in loop
 
 ```php
 add_filter(

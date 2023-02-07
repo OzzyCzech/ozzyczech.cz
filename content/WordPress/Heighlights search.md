@@ -1,4 +1,4 @@
-# Highlight Search Terms in WordPress
+# Heighlights search
 
 The next few lines of code **wrap** all the **keywords** currently being searched for in the `<strong class="search-keyword"></strong>` tag.
 

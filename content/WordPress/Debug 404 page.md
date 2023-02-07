@@ -1,4 +1,4 @@
-# Debug WordPress 404 page
+# Debug 404 page
 
 Following code dump state of #WordPress 404 page with permalins, rewrite rules etc. plase it to `functions.php`
 

@@ -1,4 +1,4 @@
-# Make WordPress globals more accessible
+# Globals as static class
 
 #WordPress using a lot [globals variables](http://codex.wordpress.org/Global_Variables). These variables are used throughout WordPress code for various reasons. Great example is database connection object [wpdb](http://codex.wordpress.org/Class_Reference/wpdb). Here is common example how to use `$wpdb` in some function:
 

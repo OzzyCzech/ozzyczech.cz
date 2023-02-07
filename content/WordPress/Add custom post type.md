@@ -1,10 +1,11 @@
-# How to add all custom post type to main Wordpress archive.php
+# Add custom post type
 
 Default archive shows only `post` type if you need show all post types just add follow code to `function.php`
 
 ```php
 add_filter(
-'pre_get_posts', function ($query) {
+'pre_get_posts', 
+function ($query) {
         if (
             $query->is_main_query() &&
             !is_admin() &&

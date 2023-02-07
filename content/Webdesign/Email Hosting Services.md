@@ -1,4 +1,4 @@
-# Best Email Hosting Services
+# Email Hosting Services
 
 * [iCloud+](https://www.apple.com/cz/icloud/)
 * [Namecheap](https://www.namecheap.com/hosting/email/) - email hosting from $10/year

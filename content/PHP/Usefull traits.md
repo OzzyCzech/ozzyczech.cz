@@ -1,4 +1,4 @@
-# Useful traits
+# Usefull traits
 
 ### Get class_basename trait
 
