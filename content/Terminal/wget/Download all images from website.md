@@ -1,4 +1,4 @@
-# Using wget to download all images from website
+# Download all images from website
 
 There is plenty options, but easiest one is use command line. The **wget** is command line utility allows you to download whole web pages, files and images from the specific URL.
 

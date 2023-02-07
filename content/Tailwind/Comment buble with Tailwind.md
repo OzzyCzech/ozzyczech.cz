@@ -1,4 +1,4 @@
-# Comment bubble with Tailwind
+# Comment buble with Tailwind
 
 ![Comment bubble](Tailwind/comment-bubble.png)
 

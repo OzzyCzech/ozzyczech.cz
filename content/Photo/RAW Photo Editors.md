@@ -1,4 +1,4 @@
-# Best RAW Photo Editors in 2022
+# RAW Photo Editors
 
 * [Capture One](https://www.captureone.com/en/)
 * [Adobe Lightroom](https://lightroom.adobe.com/)

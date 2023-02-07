@@ -1,4 +1,4 @@
-# Create image slideshow with ffmpeg
+# Create image slideshow
 
 Following will take all `*.jpg` images from current folder and create mp4 image slideshow. Images can have different sizes, [ffmpeg](https://www.ffmpeg.org/ffmpeg.html) will rescale or pad them.
 

@@ -1,4 +1,4 @@
-# Convert video for iMovie with ffmpeg
+# Convert video for iMovie
 
 You need to include the argument `-pix_fmt yuv420p` to generate `H.264` content for Apple software/devices, and a bunch of other decoders that don't handle `yuv444p`.
 

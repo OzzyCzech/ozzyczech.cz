@@ -1,4 +1,4 @@
-# Tailwind tooltip without Javascript (CSS only)!
+# Tailwind tooltip without Javascript (CSS only)
 
 There's a plenty of libraries (mostly JavaScript) to enable the classic tooltip design pattern. You can easily add tooltips to your elements without JavaScript and in just a few lines of [Tailwind](https://tailwindcss.com/) code and HTML. 
 
