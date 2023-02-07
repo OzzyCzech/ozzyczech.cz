@@ -1,4 +1,4 @@
-# CSS
+# CSS frameworks
 
 - [Tailwind](https://tailwindcss.com/) - A utility-first CSS framework
 - [PureCSS](https://purecss.io/) - A set of small, responsive CSS modules
