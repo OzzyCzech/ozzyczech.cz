@@ -7,7 +7,7 @@ Obsidian is a powerful **knowledge base** on top of a **local folder** of pl
 brew install obsidian
 ```
 
-# [Joplin](https://joplinapp.org/)
+## [Joplin](https://joplinapp.org/)
 Joplin is an open source note-taking app. Capture your thoughts and securely access them from any device.
 
 ## [Bear](https://bear.app/)
