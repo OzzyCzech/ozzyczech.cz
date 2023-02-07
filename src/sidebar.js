@@ -16,7 +16,7 @@ export function getSidebarMenu(pages, active, className = '') {
 </li>`;
 		} else {
 			menu += `<li>
-	<a href="${page.slug}" ${page.slug === active ? 'aria-current="page"' : ''} class="flex py-2 px-3 rounded hover:bg-neutral-200 dark:hover:bg-neutral-900 w-full ${page.slug == active ? 'font-semibold dark:bg-neutral-800 text-yellow-300' : ''}">
+	<a href="${page.slug}" ${page.slug === active ? 'aria-current="page"' : ''} class="flex py-2 px-3 rounded hover:bg-neutral-200 dark:hover:bg-neutral-800 w-full ${page.slug == active ? 'font-semibold dark:bg-neutral-800 text-yellow-300' : ''}">
 		${page.name}
 	</a>
 </li>`;
