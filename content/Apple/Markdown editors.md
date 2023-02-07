@@ -1,4 +1,4 @@
-# Best Markdown editors for Mac
+# Markdown editors
 
 ## [Obsidian](https://obsidian.md/)
 Obsidian is a powerful **knowledge base** on top of a **local folder** of plain text Markdown files.
@@ -7,10 +7,11 @@ Obsidian is a powerful **knowledge base** on top of a **local folder** of pl
 brew install obsidian
 ```
 
-## [Bear](https://bear.app/)
-Markdown Notes for iPhone, iPad, and Mac. Bear is a beautiful, flexible writing app for crafting notes and prose.
+# [Joplin](https://joplinapp.org/)
+Joplin is an open source note-taking app. Capture your thoughts and securely access them from any device.
 
-Download from: https://bear.app/
+## [Bear](https://bear.app/)
+Markdown Notes for iPhone, iPad, and Mac. Bear is a beautiful, flexible writing app for crafting notes and prose. Download from: https://bear.app/
 
 ## [MarkText](https://github.com/marktext/marktext)
 A simple and elegant markdown editor, available for Linux, macOS and Windows.
@@ -40,6 +41,9 @@ Markdown note taking app supports tags, dark theme, zen mode, multi edit and so 
 ```shell
 brew install --cask notable
 ```
+
+# [GitJournal](https://gitjournal.io/)
+Mobile first Markdown Notes integrated with Git. Can be integrated with other editors.
 
 ## [MacDown](https://macdown.uranusjr.com/)
 Open source Markdown editor inspired by [Mou](http://25.io/mou/), with live preview of extended markdown syntaxes

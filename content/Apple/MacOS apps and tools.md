@@ -1,22 +1,15 @@
-# Best macOS apps and tools
+# MacOS apps and tools
 
 * [Homebrew](https://brew.sh/) - The missing package manager for macOS
 
-## File management
 
-* [ForkLift](https://binarynights.com/) - the most advanced dual pane file manager 
-* [Marta](https://marta.sh/) - File Manager
-* for macOS. Native. Extensible. Fast
-* [muCommander](https://www.mucommander.com/) - open source, dual-pane file manager
-* [Commander One](https://mac.eltima.com/file-manager.html) - free Finder replacement
-* [Pixave](http://www.littlehj.com/mac/) - image manager with smart way to organize images
 
 ## RSS readers
 
 - [Reeder 5](https://reederapp.com/) - last RSS reader that you will need
 - [Cappuccino](https://cappuccinoapp.com/) - your inbox for news
 - [NetNewsWire](https://netnewswire.com/) - free and open source RSS reader for Mac and iOS 
-- 
+
 ## Image editing
 
 * [Pixelmator Pro](https://www.pixelmator.com/pro/)
@@ -65,7 +58,6 @@
 * [Screen Studio](https://www.screen.studio/)
 
 ## Screen savers
-
 * [Aerial](https://aerialscreensaver.github.io) - free screensaver that lets you play videos from Apple's tvOS screensaver
 ### Links
 

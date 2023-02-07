@@ -55,12 +55,6 @@ or some of them - any password manager is better than no password manager:
 * [Njalla](https://njal.la/)
 * [Mullvad](https://mullvad.net/en/)
 
-## Notes
-* [Obsidian](https://obsidian.md/)
-* [Standard Notes](https://standardnotes.com/)
-* [Joplin](https://joplinapp.org/)
-* [GitJournal](https://gitjournal.io/)
-
 PS: this blog is written in [Obsidian](https://obsidian.md/) or [VS Code](https://)
 
 ## Storage
