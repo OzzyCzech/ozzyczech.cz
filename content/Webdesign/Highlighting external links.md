@@ -1,4 +1,4 @@
-# Highlighting External Links Using CSS and SVG
+# Highlighting external links
 
 Follow CSS code add small SVG allow on the top of the extrenall links:
 
