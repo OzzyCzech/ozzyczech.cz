@@ -12,7 +12,7 @@ export function getDocument({title, aside, main} = {}) {
 	<link rel="stylesheet" href="/style.css"/>
 	<script src="/js/app.js" type="module"></script>
 </head>
-<body class="antialiased leading-normal tracking-normal dark:bg-gray-900 dark:text-gray-100">
+<body class="antialiased leading-normal tracking-normal dark:bg-neutral-900 dark:text-neutral-200">
 <header class="flex flex-wrap items-center justify-between mx-auto bg-gray-50 dark:bg-gray-800 px-4 py-3">
 
 	<a href="/" class="flex items-center">
@@ -37,7 +37,7 @@ export function getDocument({title, aside, main} = {}) {
 </header>
 
 <div>
-	<div class="grid grid-cols-1 lg:grid-cols-[320px,minmax(0,auto)] gap-4 lg:gap-6 min-h-screen">
+	<div class="grid grid-cols-1 lg:grid-cols-[340px,minmax(0,auto)] gap-4 lg:gap-6 min-h-screen">
 		<aside class="border-r dark:border-gray-800">${aside}</aside>
 		<main>${main}</main>	
 	</div>

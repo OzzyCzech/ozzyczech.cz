@@ -1,4 +1,6 @@
-# Advanced tasks with Homebrew
+# Homebrew
+
+[Homebrew](https://brew.sh/) is a popular package manager for macOS that makes it easy to install, update, and manage various Unix tools, libraries, and applications. With Homebrew, users can install thousands of open-source tools and libraries without having to manually compile or download them. Homebrew also provides a convenient command-line interface for managing packages and is widely used by developers and power users on the macOS platform.
 
 ### Install specific cask version
 
