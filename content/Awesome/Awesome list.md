@@ -17,11 +17,12 @@
 - [HTTPBin](https://httpbin.org) - A simple HTTP Request & Response Service.
 - [Favicon Grabber](http://favicongrabber.com/) - getting favicons from any URL
 
-## Payment services
+## Payment service providers
 
 - [Paddle](https://paddle.com/)
 - [Stripe](https://stripe.com/)
 - [Braintree](https://www.braintreepayments.com)
+- [Lemon Squeezy](https://www.lemonsqueezy.com/)
 
 ## Regex testers
 
