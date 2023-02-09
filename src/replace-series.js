@@ -1,7 +1,8 @@
 import {got} from 'got';
 
 async function getSeriesHtml(match, series) {
-	const response = await got(`https://api.themoviedb.org/3/search/tv/?api_key=${process.env.TMDB_API_KEY}&include_adult=true&query=${series}`).json();
+	const url = `https://api.themoviedb.org/3/search/tv?api_key=${process.env.TMDB_API_KEY}&include_adult=true&query=${series}`;
+	const response = await got(url).json();
 
 	if (response?.results.length) {
 		const result = response.results.filter((result) => result.name.toLowerCase() === series.toLowerCase()).shift() || response.results.shift();
