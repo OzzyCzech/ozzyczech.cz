@@ -1,7 +1,5 @@
 # Editors
 
-
-
 ## Code editors
 
 - [Monaco](https://microsoft.github.io/monaco-editor/) -  Monaco Editor is the code editor that powers [VS Code](https://github.com/microsoft/vscode)
@@ -17,13 +15,15 @@
 
 ## Rich Text
 
+- [TinyMCE](https://www.tiny.cloud/) - a trusted WYSIWYG editor for
 - [Slate](. ) - editor framework
 - [Quill](https://quilljs.com/) - powerfull rich text editor
+- [Draft.js](https://draftjs.org/) - Rich Text Editor Framework for React
 - [CKEeditor](https://ckeditor.com/ckeditor-5/) - WYSIWYG editing solution 🤑
 - [Froala](https://www.froala.com/wysiwyg-editor) - next generation Javascript WYSIWYG HTML Editor 🤑
 
 ## Markdown editors
 
-- [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor) - A simple, beautiful, and embeddable JavaScript Markdown editor.
+- [SimpleMDE](https://simplemde.com/) - A simple, beautiful, and embeddable JavaScript Markdown editor.
 - [EasyMDE - Markdown Editor](https://github.com/Ionaru/easy-markdown-editor) - A simple, beautiful, and embeddable JavaScript Markdown editor. (fork of **SimpleMDE**)
 - [editor](https://github.com/lepture/editor) - a markdown editor you really want ([demo](https://lab.lepture.com/editor/))
