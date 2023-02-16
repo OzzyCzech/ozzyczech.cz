@@ -2,6 +2,16 @@
 
 ## Flexbox
 
+Center `<div>` vertically and horizontally with [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) layout using [Tailwind](https://play.tailwindcss.com/C1ZhLc4jle)
+
+```html
+<div class="flex justify-center items-center w-full h-screen">
+	<p>center</p>
+</div>
+```
+
+or CSS
+
 ```css
 div {	
 	display: flex;
@@ -10,15 +20,17 @@ div {
 }
 ```
 
-with [Tailwind](https://play.tailwindcss.com/C1ZhLc4jle)
+## Grid
+
+Center `<div>` vertically and horizontally with [Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids) layout using [Tailwind](https://play.tailwindcss.com/YleaVnoPIN)
 
 ```html
-<div class="flex justify-center items-center w-full h-screen">
-	<p>center</p>
+<div class="grid place-content-center w-full h-screen">
+  <p>center</p>
 </div>
 ```
 
-## Grid
+or CSS 
 
 ```css
 div {
@@ -27,15 +39,17 @@ div {
 }
 ```
 
-with [Tailwind](https://play.tailwindcss.com/YleaVnoPIN)
+## Absolute/relative position
+
+Center `<div>`  content with relative and absolute positioning using [Tailwind](https://play.tailwindcss.com/93dDkcY82t)
 
 ```html
-<div class="grid place-content-center w-full h-screen">
-  <p>center</p>
+<div class="relative w-full h-screen">
+  <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">center</p>
 </div>
 ```
 
-## Absolute/relative position
+or CSS
 
 ```css
 div {
@@ -48,12 +62,4 @@ p {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-```
-
-with [Tailwind](https://play.tailwindcss.com/93dDkcY82t)
-
-```html
-<div class="relative w-full h-screen">
-  <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">center</p>
-</div>
 ```

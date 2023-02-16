@@ -1,7 +1,6 @@
 # Jak správně přepsat ojeté auto
 
-Popíšu jak to probíhalo u mě. Kupoval jsem ojeté auto přímo od majitele. Platil jsem hotově bez úvěru. 
-Auto má platnou technickou prohlídku a emise do roku 2015.
+Popíšu jak to probíhalo u mě. Kupoval jsem ojeté auto přímo od majitele. Platil jsem hotově bez úvěru. Auto má platnou technickou prohlídku a emise do roku 2015.
 
 1. uzavřeli jsme s majitelem kupní smlouvu, kde byl uveden VIN kód auta
 2. poslal jsme mu peníze na účet
@@ -27,25 +26,19 @@ Což znamená automaticky nutnost **výměny registračních značek vozidla**. 
 - **žádost o přepis vozidla** (dostanete a vyplníte na inspektorátu)
 - **protokol o evidenční kontrole silničního motorového** (viz. níže)
 
-Pro úspěšný přepis auta potřebujete tzv. *protokol o evidenční kontrole silničního motorového vozidla* - 
-ten získáte na **jakékoliv stanici STK** v ČR. K získání protokolu je nutné: - ukázat občanku
+Pro úspěšný přepis auta potřebujete tzv. *protokol o evidenční kontrole silničního motorového vozidla* - ten získáte na **jakékoliv stanici STK** v ČR. K získání protokolu je nutné: - ukázat občanku
 
 - malý a velký technický průkaz
 - a auto.
 
-Celkově záležitost na 5 minut. Pracovník STK zkontroloval VIN, barvu vozidla, stav tachometru a číslo motoru. Stálo to kolem 200 Kč. Platnost protokolu je opět 10 dní. Po předložení všech náležitostí jsem 
-na inspektorátu dostal nové ostravské značky a nový neprostřižený malý technický průkaz.
-Všechno byla záležitost cca na 10 minut. 
+Celkově záležitost na 5 minut. Pracovník STK zkontroloval VIN, barvu vozidla, stav tachometru a číslo motoru. Stálo to kolem 200 Kč. Platnost protokolu je opět 10 dní. Po předložení všech náležitostí jsem  na inspektorátu dostal nové ostravské značky a nový neprostřižený malý technický průkaz. Všechno byla záležitost cca na 10 minut. 
 
 Stálo to na správních poplatcích 800 Kč. Kopii velkého technického průkazu jsem pak ještě poslal na pojišťovnu a ta mi obratem poslala novou zelenou kartu, kde je uvedena moje nová registrační značka. Ještě malý dodatek. 
 
 Pokud je v autě na skle nalepená **dálniční známka**, zneplatní se výměnou značek. 
 
-Dálniční známku si prý můžete nechat vyměnit na jakékoliv větší poště. Stačí k tomu původní známka 
-a nový technický průkaz. Ještě jsem to nestihl udělat, takže přesně nevím. 
+Dálniční známku si prý můžete nechat vyměnit na jakékoliv větší poště. Stačí k tomu původní známka a nový technický průkaz. Ještě jsem to nestihl udělat, takže přesně nevím. 
 
-Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty se při výměně značky 
-dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (
-Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)
+Petr Novák: Dovoluji si doplnit, že podle odkazované stránky České pošty se při výměně značky  dálniční známka nemění a zůstává platná, specificky to zmiňuje bod 2.13 jejich metodického pokynu. (Možná to změnili, podle hlaviček ta stránka byla aktualizovaná 27. května letošního roku.)
 
 Popis výměny dálniční známky najdete na stránkách [České Pošty](http://www.ceskaposta.cz/cz/sluzby/prodej-na-postach/default.htm).

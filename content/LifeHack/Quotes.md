@@ -1,5 +1,11 @@
 # Quotes
 
+> When I was a kid I used to pray every night for a new bicycle. Then I realised that the Lord doesn’t work that way so I stole one and asked Him to forgive me.
+> *Emo Philips*
+
+> Až Rusové konečně odtáhnou, tento národ pozná, že je sám svým okupantem. Totalitní ideje a ideje komunismu jsou v něm příliš hluboko zakořeněny. Obávám se říct, že jsou mu jaksi vlastní. Proto musíme být mimořádně ostražití vůči všem pokusům zesměšňovat, omezovat či zatracovat demokracii, která se ve vědomí naší společnosti teprve probouzí.
+> *Václav Havel, 1991*
+
 > You can never make the **same mistake twice** because the second time you make it, it's not a mistake, it's a choice.
 > *Steven Denn*
 
