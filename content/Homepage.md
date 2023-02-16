@@ -9,5 +9,4 @@ Notes are mostly about #JavaScript , #PHP  or #Tailwind  and development in gene
 You will also find a lot of information about my hobbies, such as:
 
  - shooting with #Fujifilm cameras 🤓
- - working with [Apple products](Apple/Apple.md)
  - [Netflix and Chill](Lists/Series.md)
