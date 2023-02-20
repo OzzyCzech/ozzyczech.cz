@@ -1,4 +1,4 @@
-# Jste hromádkář, nebo ne?
+# Jste hromádkář
 
 Během svého života jsem pochopil jednu věc, že lidé se dělí na **hromádkáře a nehromádkáře**. 
 Typický hromádkář se vyznačuje tím, že štosuje věci do různě vysokých nevzhledných hromádek.
