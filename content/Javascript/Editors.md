@@ -21,6 +21,7 @@
 - [Draft.js](https://draftjs.org/) - Rich Text Editor Framework for React
 - [CKEeditor](https://ckeditor.com/ckeditor-5/) - WYSIWYG editing solution 🤑
 - [Froala](https://www.froala.com/wysiwyg-editor) - next generation Javascript WYSIWYG HTML Editor 🤑
+- [Summernote](https://summernote.org/) - Super Simple WYSIWYG editor based on Bootstrap
 
 ## Markdown editors
 

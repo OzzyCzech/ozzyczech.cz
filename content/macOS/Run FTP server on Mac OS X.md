@@ -1,6 +1,6 @@
 # Run FTP server on Mac OS X
 
-Setup everyhing: `sudo subl /etc/ftpd.conf`
+Setup everyhing: `sudo nano /etc/ftpd.conf`
 
 ```shell
 # match umask from Mac OS×Server ftpd

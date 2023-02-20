@@ -1,4 +1,4 @@
-# How to backup
+# Backup
 
 ### Long term backup on Cloud
 
