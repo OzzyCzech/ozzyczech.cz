@@ -13,10 +13,10 @@
 	"type": "module",
 	"dependencies": {
 		"@sindresorhus/slugify": "^2.2.0",
-		"@sphido/core": "^2.0.16",
-		"@sphido/frontmatter": "^2.0.5",
-		"@sphido/hashtags": "^2.0.16",
-		"@sphido/sitemap": "^2.0.13",
+		"@sphido/core": "^2.0.17",
+		"@sphido/frontmatter": "^2.0.6",
+		"@sphido/hashtags": "^2.0.17",
+		"@sphido/sitemap": "^2.0.14",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/forms": "^0.5.3",
 		"@tailwindcss/typography": "^0.5.9",
@@ -27,6 +27,6 @@
 		"marked": "^4.2.12",
 		"md5": "^2.3.0",
 		"prismjs": "^1.29.0",
-		"tailwindcss": "^3.2.4"
+		"tailwindcss": "^3.2.7"
 	}
 }
