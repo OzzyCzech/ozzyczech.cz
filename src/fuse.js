@@ -13,12 +13,12 @@ export async function createFuse(file = 'public/fuse.json') {
 	let sep = '';
 
 	// Create stream
-	const fuse = createWriteStream(file, {flags: 'a'});
-	fuse.write('[\n');
+	const stream = createWriteStream(file, {flags: 'a'});
+	stream.write('[\n');
 
 	return {
 		add({title, content, url, path, tags = []} = {}) {
-			fuse.write(sep + JSON.stringify({title, path, url, content, tags}));
+			stream.write(sep + JSON.stringify({title, path, url, tags}));
 			if (!sep) sep = ',\n';
 		},
 
@@ -26,8 +26,8 @@ export async function createFuse(file = 'public/fuse.json') {
 		 * Save sitemap end
 		 */
 		end() {
-			fuse.write('\n]');
-			fuse.end();
+			stream.write('\n]');
+			stream.end();
 		},
 	};
 }

@@ -1,4 +1,5 @@
 # HTML Skeleton
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -41,6 +42,7 @@
 ```
 
 With:
+
 * [Open Graph](https://ogp.me/)
 * [Twitter card](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 * [Tailwind Play](https://tailwindcss.com/)

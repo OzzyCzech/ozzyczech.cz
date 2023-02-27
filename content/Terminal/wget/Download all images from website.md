@@ -2,7 +2,7 @@
 
 There is plenty options, but easiest one is use command line. The **wget** is command line utility allows you to download whole web pages, files and images from the specific URL.
 
-Follow command works just fine: 
+Follow command works just fine:
 
 ```shell
 wget -nd -nc -np \
@@ -20,8 +20,8 @@ What's mean all that?
 * `-nc`, `--no-clobber`: Do not overwrite existing files.
 * `-np`, `--no-parent`: Do not ever ascend to the parent directory when retrieving recursively.
 * `-e robots=off`: execute command `robots=off` as if it was part of
-   `.wgetrc` file. This turns off the robot exclusion which means you ignore
-   robots.txt and the robot meta tags (you should know the implications this comes with, take care).
+  `.wgetrc` file. This turns off the robot exclusion which means you ignore
+  robots.txt and the robot meta tags (you should know the implications this comes with, take care).
 * `-r`, `--recursive`: Turn on recursive retrieving
 * `-p`, `--page-requisites`: Download all the files that are necessary.
 * `-l depth`, `--level=depth`: Specify recursion maximum depth level.
@@ -35,7 +35,7 @@ Other useful download options:
 * `--limit-rate=amount`: Limit the download speed to amount bytes per second
 * `-U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"`: Identify as agent-string to the HTTP server as Mozilla Firefox from Windows
 
-Read more on [wget manual page](https://www.gnu.org/software/wget/manual/wget.html). 
+Read more on [wget manual page](https://www.gnu.org/software/wget/manual/wget.html).
 
 ### Real world example
 

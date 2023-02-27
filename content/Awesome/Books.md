@@ -17,8 +17,10 @@
 * [Důmyslné umění, jak mít všechno u prdele](https://www.databazeknih.cz/knihy/dumyslne-umeni-jak-mit-vsechno-u-prdele-351608)
 * [Informační válka](https://www.alza.cz/media/informacni-valka-d5246169.ht``m)
 
-### Česká 
+### Česká
+
 * [Ruka noci podaná - Václav Cílek](https://kosmas.cz/knihy/250595/ruka-noci-podana/)
+
 ### Jasom Fried
 
 * [Getting Real - Jason Fried](https://www.amazon.com/gp/product/0578012812/)

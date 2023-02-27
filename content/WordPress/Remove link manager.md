@@ -8,6 +8,6 @@ add_action('admin_menu', function (){
 });
 ```
 
-You can remove other functions as well e.g.: `remove_menu_page('edit-comments.php');`  remove comments edit from menu.
+You can remove other functions as well e.g.: `remove_menu_page('edit-comments.php');`remove comments edit from menu.
 
 #WordPress 

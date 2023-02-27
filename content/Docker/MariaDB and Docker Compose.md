@@ -39,7 +39,8 @@ collation-server=utf8_czech_ci
 
 ## Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, `.sql.xz` and `.sql.zst` that are found in `/docker-entrypoint-initdb.d`
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions`.sh`,`.sql`,`.sql.gz`,`.sql.xz`and`.sql.zst`that are found
+in`/docker-entrypoint-initdb.d`
 
 Let's create `./etc/db/mariadb/01-init.sql` file that will create database:
 
@@ -65,7 +66,7 @@ First backup database schema
 docker compose exec mariadb bash -c 'mysqldump --no-data -uroot -p$MARIADB_ROOT_PASSWORD $MARIADB_DATABASE --databases $MARIADB_DATABASE | sed "s/ AUTO_INCREMENT=[0-9]*\b//g"' > etc/db/mariadb/02-scheme.sql
 ```
 
-then backup data 
+then backup data
 
 ```shell
 docker compose exec mariadb bash -c 'mysqldump --hex-blob --no-create-info --databases $MARIADB_DATABASE --skip-extended-insert --complete-insert=true --default-character-set=utf8 -uroot -p$MARIADB_ROOT_PASSWORD $MARIADB_DATABASE' > etc/db/mariadb/03-data.sql

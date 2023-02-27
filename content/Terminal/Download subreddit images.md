@@ -1,4 +1,4 @@
-#  Download subreddit images
+# Download subreddit images
 
 #Subreddit downoader is a #bash script which:
 
@@ -70,7 +70,7 @@ rm ${dir}/*.json
 wait # wait for all background jobs to terminate
 ```
 
-## Usage 
+## Usage
 
 ```shell
 ./subreddit-download.sh <subreddit name> <directory> <pages>

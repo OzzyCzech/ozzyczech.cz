@@ -42,7 +42,7 @@ export function getDocument({title, aside, main} = {}) {
 		<main>${main}</main>	
 	</div>
 </div>
-<command-palette />
+<cmd-dialog theme="dark"></cmd-dialog>
 </body>
 </html>`;
 }

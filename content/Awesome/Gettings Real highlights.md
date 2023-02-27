@@ -2,18 +2,19 @@
 
 ## Starting
 
->  When there's too many people involved, nothing gets done.
+> When there's too many people involved, nothing gets done.
 
->  Many months are spent on planning features and arguing details with the goal of everyone reaching an agreement on what is the "right" thing for the customer.
+> Many months are spent on planning features and arguing details with the goal of everyone reaching an agreement on what is the "right" thing for the customer.
 
->  Months of writing specs are not necessary — specs should have the foundations nailed and details figured out and refined during the development phase.
+> Months of writing specs are not necessary — specs should have the foundations nailed and details figured out and refined during the development phase.
 
->  Getting Real is about skipping all the stuff that represents real (charts, graphs, boxes, arrows, schematics, wireframes, etc.) and actually building the real thing.
+> Getting Real is about skipping all the stuff that represents real (charts, graphs, boxes, arrows, schematics, wireframes, etc.) and actually building the real thing.
 
 > Getting Real foregoes functional specs and other transitory documentation in favor of building real screens.
 
-> Getting Real gets rid of... Timelines that take months or even years Pie-in-the-sky functional specs Scalability debates Interminable staff meetings The "need" to hire dozens of employees Meaningless version numbers Pristine roadmaps that predict the perfect future Endless preference options Outsourced support Unrealistic user testing Useless paperwork Top-down hierarchy You don't need tons of money or a huge team or a lengthy development cycle to build great software. Those things are the ingredients for slow, murky, changeless applications. Getting real takes the opposite approach.
-
+> Getting Real gets rid of... Timelines that take months or even years Pie-in-the-sky functional specs Scalability debates Interminable staff meetings The "need" to hire dozens of employees Meaningless version numbers Pristine roadmaps that predict the perfect future Endless
+> preference options Outsourced support Unrealistic user testing Useless paperwork Top-down hierarchy You don't need tons of money or a huge team or a lengthy development cycle to build great software. Those things are the ingredients for slow, murky, changeless applications.
+> Getting real takes the opposite approach.
 
 ## Change
 
@@ -33,7 +34,8 @@
 
 > Ignore Details Early On Work from large to small
 
-> Don't worry about the size of your headline font in week one. You don't need to nail that perfect shade of green in week two. You don't need to move that "submit" button three pixels to the right in week three. Just get the stuff on the page for now. Then use it. Make sure it works.
+> Don't worry about the size of your headline font in week one. You don't need to nail that perfect shade of green in week two. You don't need to move that "submit" button three pixels to the right in week three. Just get the stuff on the page for now. Then use it. Make sure it
+> works.
 
 ## New features
 
@@ -43,14 +45,14 @@
 
 > Take whatever you think your product should be and cut it in half. Pare features down until you're left with only the most essential ones.
 
-> For every new feature you need to... 
+> For every new feature you need to...
 > 1. Say no.
 > 2. Force the feature to prove its value.
 > 3. If "no" again, end here. If "yes," continue...
 > 4. Sketch the screen(s)/ui.
 > 5. Design the screen(s)/ui.
 > 6. Code it.
-> 7-15. Test, tweak, test, tweak, test, tweak, test, tweak...
+     > 7-15. Test, tweak, test, tweak, test, tweak, test, tweak...
 > 16. Check to see if help text needs to be modified.
 > 17. Update the product tour (if necessary).
 > 18. Update the marketing copy (if necessary).
@@ -74,13 +76,15 @@
 
 > The alone zone is where real progress is made.
 
-> Getting in the zone takes time. And that's why interruption is your enemy. It's like rem sleep — you don't just go to rem sleep, you go to sleep first and you make your way to rem. Any interruptions force you to start over. rem is where the real sleep magic happens. The alone time zone is where the real development magic happens.
+> Getting in the zone takes time. And that's why interruption is your enemy. It's like rem sleep — you don't just go to rem sleep, you go to sleep first and you make your way to rem. Any interruptions force you to start over. rem is where the real sleep magic happens. The alone
+> time zone is where the real development magic happens.
 
 > They usually convey an abysmally small amount of information per minute
 
 > Judge potential tech hires on open source contributions
 
-> A single good programmer working on a single task has no coordination or communication overhead. Five programmers working on the same task must coordinate and communicate. That takes a lot of time... The real trouble with using a lot of mediocre programmers instead of a couple of good ones is that no matter how long they work, they never produce something as good as what the great programmers can produce.
+> A single good programmer working on a single task has no coordination or communication overhead. Five programmers working on the same task must coordinate and communicate. That takes a lot of time... The real trouble with using a lot of mediocre programmers instead of a couple
+> of good ones is that no matter how long they work, they never produce something as good as what the great programmers can produce.
 
 > Enthusiasm. It's one attribute you just can't fake.
 
@@ -104,7 +108,8 @@
 
 > Much like a weblog, it's up to them to populate it — the overall look and feel doesn't take shape until people enter their data: posts, links, comments, hours, sidebar info, or whatever.
 
-> Use it as an opportunity to insert quick tutorials and help blurbs. Give a sample screenshot of the page populated with data so people know what to expect (and why they should stick around). Explain how to get started, what the screen will eventually look like, etc. Answer key questions that first-time viewers will ask: What is this page? What do I do now? How will this screen look once it's full? Set expectations and help reduce frustration, intimidation, and overall confusion.
+> Use it as an opportunity to insert quick tutorials and help blurbs. Give a sample screenshot of the page populated with data so people know what to expect (and why they should stick around). Explain how to get started, what the screen will eventually look like, etc. Answer key
+> questions that first-time viewers will ask: What is this page? What do I do now? How will this screen look once it's full? Set expectations and help reduce frustration, intimidation, and overall confusion.
 
 > You Never Get A Second Chance...
 
@@ -116,7 +121,8 @@
 
 > The way you fight this complexity is with less software. Less software means less features, less code, less waste.
 
-> Less software is easier to manage. Less software reduces your codebase and that means less maintenance busywork (and a happier staff). Less software lowers your cost of change so you can adapt quickly. You can change your mind without having to change boatloads of code. Less software results in fewer bugs. Less software means less support.
+> Less software is easier to manage. Less software reduces your codebase and that means less maintenance busywork (and a happier staff). Less software lowers your cost of change so you can adapt quickly. You can change your mind without having to change boatloads of code. Less
+> software results in fewer bugs. Less software means less support.
 
 > **Tere is No CODE That is More Flexible Than NO Code!**
 
@@ -150,7 +156,8 @@
 
 > Write a one page story about what the app needs to do. Use plain language and make it quick. If it takes more than a page to explain it, then it's too complex.
 
-> A "spec" is close to useless. I have never seen a spec that was both big enough to be useful and accurate. And I have seen lots of total crap work that was based on specs. It's the single worst way to write software, because it by definition means that the software was written to match theory, not reality.
+> A "spec" is close to useless. I have never seen a spec that was both big enough to be useful and accurate. And I have seen lots of total crap work that was based on specs. It's the single worst way to write software, because it by definition means that the software was written
+> to match theory, not reality.
 
 > Use Real Words Insert actual text instead of lorem ipsum
 

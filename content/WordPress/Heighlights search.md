@@ -2,7 +2,8 @@
 
 The next few lines of code **wrap** all the **keywords** currently being searched for in the `<strong class="search-keyword"></strong>` tag.
 
-The code can be inserted into `function.php` in your template. Or you can paste it directly into `search.php` somewhere just after the `get_header()` function call. The assumption, of course, is that you are using the standard [WordPress](http://codex.wordpress.org/Function_Reference/get_search_form) search functions.
+The code can be inserted into `function.php` in your template. Or you can paste it directly into `search.php` somewhere just after the `get_header()` function call. The assumption, of course, is that you are using the
+standard [WordPress](http://codex.wordpress.org/Function_Reference/get_search_form) search functions.
 
 ```php 
 function searchHeighlight($text) {
@@ -29,6 +30,6 @@ then just add follow code to your css:
 }
 ```
 
- The result is a small, but useful, improvement in search results that costs you almost no effort.
+The result is a small, but useful, improvement in search results that costs you almost no effort.
 
 #PHP #WordPress #CSS

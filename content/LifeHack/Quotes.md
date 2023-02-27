@@ -3,7 +3,8 @@
 > When I was a kid I used to pray every night for a new bicycle. Then I realised that the Lord doesn’t work that way so I stole one and asked Him to forgive me.
 > *Emo Philips*
 
-> Až Rusové konečně odtáhnou, tento národ pozná, že je sám svým okupantem. Totalitní ideje a ideje komunismu jsou v něm příliš hluboko zakořeněny. Obávám se říct, že jsou mu jaksi vlastní. Proto musíme být mimořádně ostražití vůči všem pokusům zesměšňovat, omezovat či zatracovat demokracii, která se ve vědomí naší společnosti teprve probouzí.
+> Až Rusové konečně odtáhnou, tento národ pozná, že je sám svým okupantem. Totalitní ideje a ideje komunismu jsou v něm příliš hluboko zakořeněny. Obávám se říct, že jsou mu jaksi vlastní. Proto musíme být mimořádně ostražití vůči všem pokusům zesměšňovat, omezovat či zatracovat
+> demokracii, která se ve vědomí naší společnosti teprve probouzí.
 > *Václav Havel, 1991*
 
 > You can never make the **same mistake twice** because the second time you make it, it's not a mistake, it's a choice.
@@ -11,7 +12,7 @@
 
 > Nemysli. Když myslíš, tak nemluv. Když mluvíš, tak nepiš.
 > Když píšeš, tak nepodepiš. Když podepíšeš, tak se nediv.
-> 
+>
 > *Jan Werich*
 
 > Jakkoli krásnou máte strategii, měli byste se občas podívat i na její výsledky.
@@ -60,7 +61,7 @@
 > Intelligence is the ability to adapt to change.
 > *Stephen Hawking*
 
-> Jen takové společnosti se bude dobře dařit, ve které staří muži sázejí stromy, o nichž vědí, že v jejich stínu už nebudou odpočívat.
+> Jen takové společnosti se bude dobře dařit, ve které staří muži sázejí stromy, o nichž vědí, že v jejich stínu už nebudou odpočívat.
 > *antické moudro*
 
 > It's a sad day for capitalism when a man can't fly a midget on a kite over Central Park

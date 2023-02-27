@@ -1,4 +1,14 @@
-# Email Hosting Services
+# Email
+
+## Emailing hosting services
+
+- [MailGun](https://www.mailgun.com/)
+- [Postmark app](https://postmarkapp.com/)
+- [AWS SES](https://aws.amazon.com/ses/)
+- [Send Grid](https://sendgrid.com/)
+- [ManDrill](http://www.mandrill.com/)
+
+## Email providers
 
 * [iCloud+](https://www.apple.com/cz/icloud/)
 * [Namecheap](https://www.namecheap.com/hosting/email/) - email hosting from $10/year

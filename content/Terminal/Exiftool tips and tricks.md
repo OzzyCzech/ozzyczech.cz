@@ -84,6 +84,7 @@ cat $DESKTOP/kml-start.fmt > out.kml
 exiftool -n -r -q -p $DESKTOP/kml-placemark.fmt . >> out.kml
 cat $DESKTOP/kml-end.fmt >> out.kml
 ```
+
 Create CSV of Geo Information:
 
 ```shell

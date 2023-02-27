@@ -4,7 +4,7 @@ Docker **doesn't remove unused objects** such as containers, images, volumes, an
 How To Remove them?
 
 ## Removing All Unused Objects
- 
+
 Remove stopped containers, all dangling images, and all unused networks:
 
 ```shell
@@ -22,7 +22,7 @@ Are you sure you want to continue? [y/N]
 ```
 
 You can also include all unused volumes, then add `--volumes`:
- 
+
 ```shell
 docker system prune --volumes
 ```
@@ -32,6 +32,7 @@ docker system prune --volumes
 ```shell
 docker container ls -a
 ```
+
 #### Remove selected container
 
 ```shell
@@ -84,7 +85,7 @@ docker image prune
 
 #### Remove all unused images
 
-To remove all images which are not referenced by any existing container, 
+To remove all images which are not referenced by any existing container,
 not just the dangling ones, use the `prune` command with the `-a` flag:
 
 ```shell

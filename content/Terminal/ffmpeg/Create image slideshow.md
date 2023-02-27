@@ -18,7 +18,7 @@ ffmpeg -framerate 1/3 \
 * `-r 25` set frame rate.
 * `-pix_fmt` pixel output format
 
- With background music:
+With background music:
 
 ```shell
 ffmpeg -framerate 1/3 \

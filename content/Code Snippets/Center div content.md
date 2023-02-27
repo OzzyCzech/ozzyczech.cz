@@ -30,7 +30,7 @@ Center `<div>` vertically and horizontally with [Grid](https://developer.mozilla
 </div>
 ```
 
-or CSS 
+or CSS
 
 ```css
 div {

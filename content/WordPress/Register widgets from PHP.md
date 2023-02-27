@@ -61,14 +61,13 @@ $widgets->add('text', [
   'classes' => '',
   'ids' => null,
  ],
- 'footer-1'
+ 'cmdFooter-1'
 );
 
 // ...
 ```
 
-
- This code need to be call only once. Put your code to `function.php` to `after_switch_theme` action:
+This code need to be call only once. Put your code to `function.php` to `after_switch_theme` action:
 
 ```php
 add_action(

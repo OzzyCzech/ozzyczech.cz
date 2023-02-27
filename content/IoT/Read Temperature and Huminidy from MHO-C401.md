@@ -6,9 +6,10 @@ MHO-C401 is new (2020) MMC E-Ink Screen Smart #Bluetooth Thermometer Hygrometer 
 
 ## Searching for sensor
 
-Every [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) (BLE) device have unique [MAC address](https://en.wikipedia.org/wiki/MAC_address) - you can search this address with `hcitool` 
+Every [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) (BLE) device have unique [MAC address](https://en.wikipedia.org/wiki/MAC_address) - you can search this address with `hcitool`
 
-> `hcitool` is Linux tool for monitoring and configuring Bluetooth devices. It is aptly named **hci**tool as it communicates via a common HCI ([Host Controller Interface](https://en.wikipedia.org/wiki/Host_controller_interface_(USB,_Firewire)) port to your bluetooth devices. You can utilize the utility to scan for devices and send commands/data for standard Bluetooth and Bluetooth Low Energy.
+> `hcitool` is Linux tool for monitoring and configuring Bluetooth devices. It is aptly named **hci**tool as it communicates via a common HCI ([Host Controller Interface](https://en.wikipedia.org/wiki/Host_controller_interface_(USB,_Firewire)) port to your bluetooth devices. You
+> can utilize the utility to scan for devices and send commands/data for standard Bluetooth and Bluetooth Low Energy.
 
 First check, if your `hcitool` can see your device with `hcitool dev`  command, then you can start `lescan` for other devices arroud.
 
@@ -39,7 +40,8 @@ sudo apt-get install python3-pip libglib2.0-dev
 sudo pip3 install bluepy
 ```
 
-Each BLE devices provide [Services](https://www.bluetooth.com/specifications/gatt/services/) and [Characteristics](https://www.bluetooth.com/specifications/gatt/characteristics/). **Services** are used to break data up into logic entities, and contain specific chunks of data called **characteristics**. A service can have one or more characteristics, and each service distinguishes itself from other services by means of a unique numeric ID called a UUID, which can be either 16-bit (for officially adopted BLE Services) or 128-bit (for custom services).
+Each BLE devices provide [Services](https://www.bluetooth.com/specifications/gatt/services/) and [Characteristics](https://www.bluetooth.com/specifications/gatt/characteristics/). **Services** are used to break data up into logic entities, and contain specific chunks of data
+called **characteristics**. A service can have one or more characteristics, and each service distinguishes itself from other services by means of a unique numeric ID called a UUID, which can be either 16-bit (for officially adopted BLE Services) or 128-bit (for custom services).
 
 The Python code below will generate a list of all the available services and characteristics on the our BLE device.
 
@@ -128,7 +130,8 @@ finally:
 
 ## Reading temperature and humidity
 
-For reading temperature and humidity you have to [subscribe notifications](https://ianharvey.github.io/bluepy-doc/notifications.html) for UUID =  `EBE0CCC1-7A0A-4B0C-8A1A-6FF2997DA3A6` - there are 3 bytes of data. Notifications are processed by creating a “delegate” object and registering it with the `Peripheral`.
+For reading temperature and humidity you have to [subscribe notifications](https://ianharvey.github.io/bluepy-doc/notifications.html) for UUID =  `EBE0CCC1-7A0A-4B0C-8A1A-6FF2997DA3A6` - there are 3 bytes of data. Notifications are processed by creating a “delegate” object and
+registering it with the `Peripheral`.
 
 ```python
 from bluepy import btle

@@ -2,7 +2,6 @@
 
 <script async src="//jsfiddle.net/OzzyCzech/22qnqub5/embed/result,css,html/dark/"></script>
 
-
 #### HTML code
 
 ```html

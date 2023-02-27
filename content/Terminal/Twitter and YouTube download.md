@@ -21,7 +21,7 @@ Get the best audio quality into `mp3` file:
 ```shell
 yt-dlp -f "ba" -x --audio-format mp3 [URL]
 ```
- 
+
 ## Download other formats
 
 First you need to list all available formats with:

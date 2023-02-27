@@ -1,6 +1,5 @@
 # AI
 
-
 ## Text
 
 - [ChatGPT](https://chat.openai.com/) - chatbot developed by OpenAI

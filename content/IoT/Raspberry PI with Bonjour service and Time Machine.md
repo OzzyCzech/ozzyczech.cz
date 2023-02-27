@@ -110,7 +110,7 @@ PS: `RackMac` is define icon that will be shown in Finder (there is plenty other
 ```
 
 For server less ssh you can copy your key to pi:
- 
+
 ```shell
 ssh-copy-id pi@pi.local
 ```

@@ -34,6 +34,7 @@
 
 * [KeepingYouAwake](https://keepingyouawake.app/) -  Prevents your Mac from going to sleep
 * [iCal Státní svátky ČR](webcal://www.google.com/calendar/ical/czech__cs%40holiday.calendar.google.com/public/basic.ics)
+* [Paste](https://pasteapp.me/) - Paste is a clipboard manager for macOS that helps you organize your clipboard history.
 * [Maccy](https://maccy.app/) - Clipboard manager for macOS which does one job - keep your copy history at hand. Period.
 * [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
 * [Wipr](https://giorgiocalderolla.com/wipr.html) - ads blocker for iOS and macOS
