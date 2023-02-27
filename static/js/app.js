@@ -1,4 +1,3 @@
-import './command-palette.js';
 import {DateTime} from 'https://esm.run/luxon';
 import cmdDialog from 'https://esm.run/cmd-dialog';
 
