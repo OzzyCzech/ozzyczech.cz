@@ -4,14 +4,14 @@ import {getAside} from './sidebar.js';
 export function getTagHtml({title, slug, children} = {}, pages) {
 	return getDocument({
 		title,
-		main: `<article class="lg:dark:bg-gray-800 lg:rounded-xl lg:px-24 lg:py-16 prose max-w-full lg:prose-xl dark:prose-invert prose-a:no-underline hover:prose-a:underline prose-h1:text-lime-300">
+		main: `<article class="prose max-w-screen-lg lg:prose-lg mx-auto dark:prose-invert dark:prose-sky prose-a:no-underline prose-h1:text-yellow-500 hover:prose-a:underline my-12">
 					<h1>#${title}</h1>
 					<div class="not-prose">
-						<ul>
-							${children.map(page => `<li>
+						<ul class="flex flex-col gap-3">
+							${children.map(page => `<li class="flex rounded grow border dark:border-neutral-900 grow dark:hover:bg-neutral-900 hover:bg-neutral-200">
 								<a
 									href="${page.slug}"
-									class="rounded flex items-center gap-2 py-3 px-5 mb-1 flex bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-600 dark:bg-gray-700"
+									class="flex py-3 px-5 font-semibold"
 									title="${page.title}"
 									>${page.title}</a>
 								</li>`).join('')}

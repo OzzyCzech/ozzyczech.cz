@@ -2,7 +2,6 @@ import {createWriteStream, existsSync} from 'node:fs';
 import {mkdir, unlink} from 'node:fs/promises';
 import {dirname} from 'node:path';
 
-// TODO
 export async function createFuse(file = 'public/fuse.json') {
 
 	// Truncate file

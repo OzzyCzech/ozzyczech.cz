@@ -81,8 +81,4 @@
 	}
 }
 
-dialog::backdrop {
-	@apply backdrop-brightness-50 transition;
-}
-
 @tailwind utilities;
