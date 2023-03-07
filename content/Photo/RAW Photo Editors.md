@@ -10,6 +10,7 @@ and also
 
 * [Fuji RAW file converter](http://www.fujifilm.com/support/digital_cameras/software/myfinepix_studio/rfc/)
 * [Picktorial](https://www.picktorial.com/)
+* [Darkroom](https://darkroom.co/) - macOS, iOS RAW editor
 * [DXO PhotoLab](https://www.dxo.com/dxo-photolab/)
 * [Darktable](https://www.darktable.org/) - free and open source
 * [Rawsie](https://rawsie.co/) - RAW compressor

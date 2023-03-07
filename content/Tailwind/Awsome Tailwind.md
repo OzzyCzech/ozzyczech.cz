@@ -8,4 +8,8 @@
 * [MerakiUI](https://merakiui.com/components) - Custom UI Components Builtwith Tailwind CSS & Alpine JS
 * [Ripple UI](https://www.ripple-ui.com/) - MIT licensed collection of components and
 
+## Colors
+
+- [Tailwind colors Palette](https://tailwindcolor.com/)
+
 #Tailwind 
