@@ -1,5 +1,5 @@
 import {DateTime} from 'https://esm.run/luxon';
-import cmdDialog from 'https://esm.sh/cmd-dialog';
+import 'https://esm.sh/cmd-dialog';
 
 // date time ago
 for (const ago of document.querySelectorAll('[data-ago]')) {
