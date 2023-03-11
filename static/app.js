@@ -81,3 +81,9 @@ actions.unshift(
 );
 
 dialog.actions = actions;
+
+// search open
+
+document.querySelector('#search').addEventListener('click', () => {
+	dialog.open();
+});
