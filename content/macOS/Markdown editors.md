@@ -4,19 +4,23 @@
 
 Obsidian is a powerful **knowledge base** on top of a **local folder** of plain text Markdown files.
 
-![](https://obsidian.md/images/screenshot-1.0-hero-combo.png)
-
 ```shell
 brew install obsidian
 ```
+
+![](https://obsidian.md/images/screenshot-1.0-hero-combo.png)
 
 ## [Joplin](https://joplinapp.org/)
 
 Joplin is an open source note-taking app. Capture your thoughts and securely access them from any device.
 
+![](https://joplinapp.org/images/home-top-img-4x.webp)
+
 ## [Bear](https://bear.app/)
 
 Markdown Notes for iPhone, iPad, and Mac. Bear is a beautiful, flexible writing app for crafting notes and prose. Download from: https://bear.app/
+
+![](https://bear.app/static/images/header-mac-screenshot@2x.png)
 
 ## [MarkText](https://github.com/marktext/marktext)
 
@@ -33,20 +37,25 @@ I am just found the best (*for me*) Markdown editor on the planet. Why?
 - it's freeware and opensource
 - it's minimalistic and easy to use
 - combine wysiwyg and plaintext editing
-- support folders, [front matter](https://jekyllrb.com/docs/front-matter/), custom styles, 
+- support folders, [front matter](https://jekyllrb.com/docs/front-matter/), custom styles,
 - allow quick file open ⌘ + ⇧ + O 😍
 
 ```shell
 brew install --cask typora
 ```
 
-## Byword
+## [Byword](https://bywordapp.com/)
 
-Byword is a simple, elegant Markdown editor for Mac and iOS. Download from: https://bywordapp.com/
+Byword is a Markdown editor that offers a clean and simple interface. It also includes a range of
+features such as syntax highlighting, distraction-free mode, and export options
 
-## Paper
+## [iA Writer](https://ia.net/writer)
 
-Paper is a beautiful, flexible writing app for crafting notes and prose in Markdown. Download from: https://papereditor.app/
+iA Writer is a minimal, distraction-free writing app for Mac, iOS, and Android. It's the perfect tool for writing long texts, essays, articles, and books.
+
+## [Paper](https://papereditor.app/)
+
+Paper is a beautiful, flexible writing app for crafting notes and prose in Markdown.
 
 ## [Nota](https://nota.md/)
 
@@ -60,17 +69,20 @@ Markdown note-taking app supports tags, dark theme, zen mode, multi edit and so 
 brew install --cask notable
 ```
 
-# [GitJournal](https://gitjournal.io/)
-
-Mobile first Markdown Notes integrated with Git. Can be integrated with other editors.
-
 ## [MacDown](https://macdown.uranusjr.com/)
 
-Open source Markdown editor inspired by [Mou](http://25.io/mou/), with live preview of extended markdown syntaxes
+MacDown is a free and open-source Markdown editor that offers a clean and intuitive
+interface. It also includes a live preview and syntax highlighting.
 
 ```shell
 brew install --cask macdown
 ```
+
+![](https://macdown.uranusjr.com/static/images/macdown-demo.png)
+
+## [GitJournal](https://gitjournal.io/)
+
+Mobile first Markdown Notes integrated with Git. Can be integrated with other editors.
 
 ## [Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
 
