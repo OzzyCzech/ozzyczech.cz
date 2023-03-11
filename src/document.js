@@ -14,30 +14,23 @@ export function getDocument({title, aside, main} = {}) {
 </head>
 <body class="antialiased leading-normal tracking-normal dark:bg-neutral-800 dark:text-neutral-200">
 <header class="flex flex-wrap items-center justify-between mx-auto bg-gray-50 dark:bg-neutral-900 px-4 py-2.5 sticky top-0">
-	<a href="/" class="flex items-center">
-		<img src="https://www.gravatar.com/avatar/${md5('roman@ozana.cz')}?s=128" class="h-7 mr-3 rounded-full" alt="Roman Ožana" />
-		<span class="text-xl font-semibold whitespace-nowrap dark:text-white">Roman's notes</span>
-	</a>				
-	<div>
-		<ul class="flex flex-col md:flex-row gap-4 items-center">
-			<li>
+		
+		<nav class="flex gap-6 items-center font-medium">
+				<a href="/" class="flex items-center">
+					<img src="https://www.gravatar.com/avatar/${md5('roman@ozana.cz')}?s=128" class="h-7 mr-3 rounded-full" alt="Roman Ožana" />
+					<span class="text-xl font-semibold whitespace-nowrap dark:text-white">Roman's notes</span>
+				</a>
 				<a href="https://github.com/OzzyCzech/" target="_blank" class="hover:text-yellow-500 hover:underline transition">GitHub</a>
-			</li>
-			<li>
-				<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hover:text-yellow-500 hover:underline transition">StackOverflow</a>
-			</li>
-			<li>
+				<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hover:text-yellow-500 hover:underline transition">StackOverflow</a>	
 				<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hover:text-yellow-500 hover:underline transition">Twitter</a>
-			</li>
-			<li>
-				<button class="py-1.5 px-4 rounded-full border dark:border-gray-700 text-neutral-500 hover:text-gray-400 hover:border-gray-600 dark:bg-neutral-900 outline-0 inline-flex items-center gap-1 transition" id="search">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-				  <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
-				</svg>
-				Search ⌘+K
-				</button>
-			</li>
-		</ul>
+		</nav>
+		
+		<button class="py-1.5 px-4 rounded-full border dark:border-gray-700 text-neutral-500 hover:text-gray-400 hover:border-gray-600 dark:bg-neutral-900 outline-0 inline-flex items-center gap-1" id="search">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+			  <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+			</svg>
+			Search ⌘+K
+		</button>
 	</div>
 </header>
 
