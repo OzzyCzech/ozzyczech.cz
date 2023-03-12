@@ -1,9 +1,10 @@
 # Jokes
 
-# Just checking in
+## Just checking in
 ![](https://workchronicles.com/wp-content/uploads/2021/03/Just-checking-in.png)
 [workchronicles.com](https://workchronicles.com/just-checking-in/)
-# Hobbies
+
+## Hobbies
 ![Hobbies](https://workchronicles.com/wp-content/uploads/2021/04/Hobbies.png)
 [workchronicles.com](https://workchronicles.com/hobbies/)
 

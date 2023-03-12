@@ -11,6 +11,7 @@ Let's starts with a simple HTML code:
 ```
 
 ![](Tailwind/css-only-toggle.mp4)
+
 Then you have to add follow code to your `tailwind.css` file:
 
 ```css

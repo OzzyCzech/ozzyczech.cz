@@ -2,6 +2,7 @@
 
 ## 2023
 
+* Star Trek: Strange new Worlds
 * Kleo
 * Gravity falls
 * Star vs. the Forces of Evil

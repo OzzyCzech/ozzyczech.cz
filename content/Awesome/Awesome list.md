@@ -4,11 +4,6 @@
 
 - [Photopea](https://www.photopea.com/) - online Adobe Photoshop clone
 
-## Favicons services
-
-- [FaviconGrabber](http://favicongrabber.com) - free and opensource favicon grabber
-- [Google API](https://www.google.com/s2/favicons?domain=ozzyczech.cz) - Google favicon service from Chrome
-
 ## HTTP & web tools
 
 - [HTTPS certificates](https://transparencyreport.google.com/https/certificates)
@@ -17,21 +12,9 @@
 - [HTTPBin](https://httpbin.org) - A simple HTTP Request & Response Service.
 - [Favicon Grabber](http://favicongrabber.com/) - getting favicons from any URL'
 
-## Regex testers
-
-- [RegexPal](https://www.regexpal.com/)
-- [Regex101](https://regex101.com/)
-- [PHP Live Regex](https://www.phpliveregex.com/)
-
 ## Crypto
 
 - [Wasabi Wallet](https://www.wasabiwallet.io/) - Wasabi is an open-source, non-custodial, privacy-focused Bitcoin wallet for Desktop, that implements trustless CoinJoin.
-
-## Wordpress Themes
-
-- [Wordpress](https://wordpress.org/themes/)
-- [ThemeTrust](http://themetrust.com/themes/)
-- [ThemeForest](https://themeforest.net/category/wordpress)
 
 ## Logs processing
 

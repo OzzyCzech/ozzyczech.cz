@@ -5,13 +5,13 @@ import {dirname, join, relative} from 'node:path';
 import {allPages, copyFile, getPages, readFile, writeFile} from '@sphido/core';
 import slugify from '@sindresorhus/slugify';
 import {globby} from 'globby';
-import {marked} from './src/marked.js';
 import {getPageHtml} from './src/get-page-html.js';
 import {createSitemap} from '@sphido/sitemap';
 import {getHashtags} from '@sphido/hashtags';
 import {getTagHtml} from './src/get-tag-html.js';
 import {createFuse} from './src/fuse.js';
 import {replaceSeries} from './src/replace-series.js';
+import {markdown} from './src/markdown/markdown.js';
 
 dotenv.config();
 
@@ -45,7 +45,7 @@ for (const page of allPages(pages)) {
 
 	// Process markdown and title
 
-	page.content = marked(page.content);
+	page.content = await markdown(page.content);
 	page.title = page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i)?.pop();
 
 	// Add links to series page
