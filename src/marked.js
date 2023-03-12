@@ -40,7 +40,7 @@ const renderer = {
 								<a href="${src}" target="_blank">
 									<img src="${src}" class="rounded" title="${title ? title : ''}" alt="${text ? text : ''}"/>
 								</a>
-								${title || text ? `<figcaption>${title || text}</figcaption>` : ''} 
+								${title || text ? `<figcaption>${title || text}</figcaption>` : ''}
 						</figure>
 						</div>`;
 		}
