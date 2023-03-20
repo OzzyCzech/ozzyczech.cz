@@ -2,9 +2,9 @@
 import dotenv from 'dotenv'
 import {getTagIndexHtml} from './src/get-tag-index-html.js';
 import {dirname, join, relative} from 'node:path';
-import {allPages, copyFile, getPages, readFile, writeFile} from '@sphido/core';
+import {cp} from 'node:fs/promises';
+import {allPages, getPages, readFile, writeFile} from '@sphido/core';
 import slugify from '@sindresorhus/slugify';
-import {globby} from 'globby';
 import {getPageHtml} from './src/get-page-html.js';
 import {createSitemap} from '@sphido/sitemap';
 import {getHashtags} from '@sphido/hashtags';
@@ -92,10 +92,13 @@ sitemap.end();
 fuse.end();
 
 // Copy static files
-
-const files = await globby(['static/**/*.*', 'content/**/*.*', '!**/*.{md,xml,html}', 'static/404.html']);
-for await (const file of files) {
-	await copyFile(file, file.replace(/^\w+/, 'public'));
-}
+await cp('static', 'public', {recursive: true});
+await cp('content', 'public', {
+	recursive: true,
+	filter: (src) => {
+		return !src.includes('.obsidian') &&
+			!src.match(/\.(md|xml|html)$/);
+	},
+});
 
 console.timeEnd('Build HTML');

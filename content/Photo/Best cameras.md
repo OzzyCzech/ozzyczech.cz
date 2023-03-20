@@ -7,8 +7,6 @@
 * [Insta360 X3](https://www.insta360.com/product/insta360-x3)
 * [DJI Osmo Pocket 2](https://www.dji.com/cz/pocket-2)
 
-![DJI Osmo Action 3](Photo/dji-osmo-action-3.png)
-
 ## Fuji cameras
 
 #### [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/)
@@ -16,8 +14,6 @@
 #### [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
 
 #### [Fujifilm X-Pro3](https://fujifilm-x.com/en-us/products/cameras/x-pro3/)
-
-![X-Pro3](Photo/Fujifilm-X-Pro3.jpg)
 
 ## Sony cameras
 
