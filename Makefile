@@ -8,5 +8,9 @@ deploy:
 clean:
 	rm -rf node_modules
 	rm -rf public
-	
+
+
+screenshots:
+	capture-website https://backblaze.com --output=Photo/backblaze.png
+
 PHONY: all deploy clean
