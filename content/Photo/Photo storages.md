@@ -1,4 +1,4 @@
-# Photo cloud storages
+# Photo storages
 
 ## Apple Photos
 
@@ -12,7 +12,7 @@ It is included with macOS and iOS, and can be downloaded for free from the App S
 
 Backblaze is a cloud storage and cloud backup service provider based in San Mateo, California.
 
-![](backblaze.png)
+![](./backblaze.png)
 
 [Backblaze](https://www.backblaze.com/)
 
