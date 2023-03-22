@@ -3,22 +3,23 @@
 Let's create `uptime` file with follow content
 
 ```shell
-#!/usr/bin/env bash  
-  
-format=$(cat <<EOF  
----------------------------------------------  
-Uptime of $@ is  
----------------------------------------------  
-      time_namelookup:  %{time_namelookup}s  
-        time_connect:  %{time_connect}s  
-     time_appconnect:  %{time_appconnect}s  
-    time_pretransfer:  %{time_pretransfer}s  
-       time_redirect:  %{time_redirect}s  
-  time_starttransfer:  %{time_starttransfer}s  
----------------------------------------------  
-          time_total:  %{time_total}s  
-EOF)  
-  
+#!/usr/bin/env bash
+
+format=$(cat <<EOF
+---------------------------------------------
+Uptime of $@ is
+---------------------------------------------
+      time_namelookup:  %{time_namelookup}s
+        time_connect:  %{time_connect}s
+     time_appconnect:  %{time_appconnect}s
+    time_pretransfer:  %{time_pretransfer}s
+       time_redirect:  %{time_redirect}s
+  time_starttransfer:  %{time_starttransfer}s
+---------------------------------------------
+          time_total:  %{time_total}s
+EOF
+)
+
 curl -w "$format" -o /dev/null -s "$@"
 ```
 
