@@ -25,15 +25,7 @@ export function getSidebarMenu(pages, active, className = '') {
 }
 
 export function getAside(pages, active) {
-	return `
-			<nav class="font-semibold">
-				<div class="mx-2 mt-2 mb-1">
-					<a href="/" class="flex justify-between px-2.5 py-1.5 rounded hover:bg-neutral-200 dark:hover:bg-neutral-900">
-						<span>Homepage</span>
-						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class="fill-neutral-500"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-					</a>
-				</div>
-			
-				${getSidebarMenu([...pages].filter(page => page.name !== 'Homepage'), active)}
-			</nav>`;
+
+	return `<nav class="font-semibold">${getSidebarMenu(
+		[...pages.filter(page => !page?.children), ...pages.filter(page => page?.children).sort((a, b) => a.name.localeCompare(b.name))], active)}</nav>`;
 }
