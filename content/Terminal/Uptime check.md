@@ -51,4 +51,4 @@ Format can be also loded from file
 curl -w "@format.txt" -o /dev/null -s https://www.google.com
 ```
 
-[StackOverflow[]()](https://stackoverflow.com/a/22625150/355316)
+Source: [StackOverflow](https://stackoverflow.com/a/22625150/355316)

@@ -15,7 +15,6 @@ export async function markdown(content) {
 		.use(links)  // external links
 		.use(video)  // video
 		.use(images) // images
-		.use(linkImages) // images
 		.use(hashtags) // syntax highlighting
 		.use(prism) // syntax highlighting
 		.process(content)
