@@ -1,4 +1,4 @@
-# Uptime check
+# Response times with curl
 
 Let's create `uptime` file with follow content
 
@@ -34,14 +34,14 @@ And you get following results:
 ---------------------------------------------
 Uptime of https://www.google.com is
 ---------------------------------------------
-      time_namelookup:  0.021137s
-        time_connect:  0.033610s
-     time_appconnect:  0.064180s
-    time_pretransfer:  0.064246s
-       time_redirect:  0.000000s
-  time_starttransfer:  0.134371s
+      time_namelookup:  0.021137s
+        time_connect:  0.033610s
+     time_appconnect:  0.064180s
+    time_pretransfer:  0.064246s
+       time_redirect:  0.000000s
+  time_starttransfer:  0.134371s
 ---------------------------------------------
-          time_total:  0.136121s
+          time_total:  0.136121s
 ```
 
 
