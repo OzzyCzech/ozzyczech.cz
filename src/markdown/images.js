@@ -1,4 +1,5 @@
 import {visit} from 'unist-util-visit';
+import {h} from 'hastscript';
 
 export default function images(options = {}) {
 
@@ -6,11 +7,8 @@ export default function images(options = {}) {
 		visit(tree, 'image', (node) => {
 
 			// Add leading slash to relative URLs
-			if (
-				!node.url.startsWith('http') &&
-				!node.url.startsWith('/')
-			) {
-				node.url = `/${node.url}`;
+			if (!node.url.startsWith('http') && !node.url.startsWith('/')) {
+				node.url = `./${node.url}`;
 			}
 
 			// Video files

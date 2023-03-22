@@ -1223,7 +1223,7 @@ hast-util-whitespace@^2.0.0:
   resolved "https://registry.yarnpkg.com/hast-util-whitespace/-/hast-util-whitespace-2.0.1.tgz#0ec64e257e6fc216c7d14c8a1b74d27d650b4557"
   integrity sha512-nAxA0v8+vXSBDt3AnRUNjyRIQ0rD+ntpbAp4LnPkumc5M9yUbSMa4XDU9Q6etY4f1Wp4bNgvc1yjiZtsTTrSng==
 
-hastscript@^7.0.0:
+hastscript@^7.0.0, hastscript@^7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/hastscript/-/hastscript-7.2.0.tgz#0eafb7afb153d047077fa2a833dc9b7ec604d10b"
   integrity sha512-TtYPq24IldU8iKoJQqvZOuhi5CyCQRAbvDOX0x1eW6rsHSxa/1i2CCiptNTotGHJ3VoHRGmqiv6/D3q113ikkw==
@@ -2880,6 +2880,14 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+to-vfile@^7.0.0, to-vfile@^7.2.4:
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/to-vfile/-/to-vfile-7.2.4.tgz#b97ecfcc15905ffe020bc975879053928b671378"
+  integrity sha512-2eQ+rJ2qGbyw3senPI0qjuM7aut8IYXK6AEoOWb+fJx/mQYzviTckm1wDjq91QYHAPBTYzmdJXxMFA6Mk14mdw==
+  dependencies:
+    is-buffer "^2.0.0"
+    vfile "^5.1.0"
+
 tough-cookie@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-4.1.2.tgz#e53e84b85f24e0b65dd526f46628db6c85f6b874"
@@ -3050,6 +3058,14 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
+vfile-find-down@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/vfile-find-down/-/vfile-find-down-6.1.0.tgz#9813a354b924baf3742148cf20870080a4f56098"
+  integrity sha512-ByX04fAnnRiatNgjOjuwWHNyqEg3RpaazInr6qiYkR//ZLfpmIJcMbPmACmOTgfUUr+WZwiQu63znPFl6K9GLw==
+  dependencies:
+    to-vfile "^7.0.0"
+    vfile "^5.0.0"
+
 vfile-location@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/vfile-location/-/vfile-location-4.1.0.tgz#69df82fb9ef0a38d0d02b90dd84620e120050dd0"
@@ -3066,7 +3082,14 @@ vfile-message@^3.0.0:
     "@types/unist" "^2.0.0"
     unist-util-stringify-position "^3.0.0"
 
-vfile@^5.0.0:
+vfile-rename@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/vfile-rename/-/vfile-rename-2.0.2.tgz#0150c69af25eebefa524a2c4d3cf8c5093c3558f"
+  integrity sha512-ClXanFqC0KhShU83LJymIXP5srjblVy0fKNwg7CiFQ570o0x2BfvnJHbhAcY2cy1vf/jxoPrjxDqVjH4+K3aSA==
+  dependencies:
+    vfile "^5.0.0"
+
+vfile@^5.0.0, vfile@^5.1.0:
   version "5.3.7"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-5.3.7.tgz#de0677e6683e3380fafc46544cfe603118826ab7"
   integrity sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==

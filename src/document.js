@@ -20,9 +20,9 @@ export function getDocument({title, aside, main} = {}) {
 					<img src="https://www.gravatar.com/avatar/${md5('roman@ozana.cz')}?s=128" class="h-7 mr-3 rounded-full" alt="Roman Ožana" />
 					<span class="text-xl font-semibold whitespace-nowrap dark:text-white">Roman's notes</span>
 				</a>
-				<a href="https://github.com/OzzyCzech/" target="_blank" class="hover:text-yellow-500 hover:underline transition">GitHub</a>
-				<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hover:text-yellow-500 hover:underline transition">StackOverflow</a>	
-				<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hover:text-yellow-500 hover:underline transition">Twitter</a>
+				<a href="https://github.com/OzzyCzech/" target="_blank" class="hidden md:inline hover:text-yellow-500 hover:underline transition">GitHub</a>
+				<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hidden md:inline hover:text-yellow-500 hover:underline transition">StackOverflow</a>	
+				<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hidden md:inline hover:text-yellow-500 hover:underline transition">Twitter</a>
 		</nav>
 		
 		<button class="py-1.5 px-4 rounded-full border dark:border-gray-700 text-neutral-500 hover:text-gray-400 hover:border-gray-600 dark:bg-neutral-900 outline-0 inline-flex items-center gap-1" id="search">
