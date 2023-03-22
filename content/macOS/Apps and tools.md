@@ -32,6 +32,7 @@
 
 ## Tools
 
+* [Vanilla](https://matthewpalmer.net/vanilla/) - Hide menu bar icons on your Mac
 * [KeepingYouAwake](https://keepingyouawake.app/) -  Prevents your Mac from going to sleep
 * [iCal Státní svátky ČR](webcal://www.google.com/calendar/ical/czech__cs%40holiday.calendar.google.com/public/basic.ics)
 * [Paste](https://pasteapp.me/) - Paste is a clipboard manager for macOS that helps you organize your clipboard history.
