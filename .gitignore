@@ -8,3 +8,4 @@ public
 .vercel
 .env*
 *.log
+engine.bin

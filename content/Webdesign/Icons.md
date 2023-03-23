@@ -2,27 +2,27 @@
 
 ### [Heroicons](https://heroicons.com/)
 
-![](https://res.cloudinary.com/ddgwhfzbg/image/upload/v1678610928/heroicons_fuiejc.png)
+![](https://ozzyczech.cz/i/heroicons.png)
 
 ### [Boostrap Icons](https://icons.getbootstrap.com/)
 
-![](https://res.cloudinary.com/ddgwhfzbg/image/upload/v1678610928/bootstrap_k4blvx.png)
+![](https://ozzyczech.cz/i/bootstrap-icons.png)
 
 ### [Remix Icons](https://remixicon.com/)
 
-![](https://res.cloudinary.com/ddgwhfzbg/image/upload/v1678611035/remix_sr3dzy.png)
+![](https://ozzyczech.cz/i/remix-icons.png)
 
 ### [Devicon](https://devicon.dev/)
 
-![](https://res.cloudinary.com/ddgwhfzbg/image/upload/v1678612164/devicons_j6ptud.png)
+![](https://ozzyczech.cz/i/devicon.png)
 
 ### [Phosphor Icons](https://phosphoricons.com/)
 
-![](https://res.cloudinary.com/ddgwhfzbg/image/upload/v1678612748/phosphoricons_zt7zkh.png)
+![](https://ozzyczech.cz/i/phosphor-icons.png)
 
 ### [Twemoji](https://twemoji.twitter.com/)
 
-![](https://res.cloudinary.com/ddgwhfzbg/image/upload/v1678612254/twemoji_elwsld.png)
+![](https://ozzyczech.cz/i/twemoji.png)
 
 - [Tabler Icons](https://tablericons.com/) - 1424 Open source free SVG icons for you to use in your web projects.
 - [Tabler Icons.io](https://tabler-icons.io) - Over 4000 pixel-perfect icons for web design and development
