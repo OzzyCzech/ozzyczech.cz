@@ -1,5 +1,9 @@
 # Quotes
 
+> „Často zapomínáme, že lidé, s nimiž musíme žít, také musí žít s námi.“
+> 
+> *Lafayette Ronald Hubbard*
+
 > When I was a kid I used to pray every night for a new bicycle. Then I realised that the Lord doesn’t work that way so I stole one and asked Him to forgive me.
 > *Emo Philips*
 
