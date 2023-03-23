@@ -2,7 +2,7 @@
 	"version": 2,
 	"rewrites": [
 		{
-			"source": "/img/:match*",
+			"source": "/i/:match*",
 			"destination": "https://f003.backblazeb2.com/file/ozzyczech/:match*"
 		}
 	]
