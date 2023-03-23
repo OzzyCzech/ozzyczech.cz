@@ -1,0 +1,9 @@
+{
+	"version": 2,
+	"rewrites": [
+		{
+			"source": "/img/:match*",
+			"destination": "https://f003.backblazeb2.com/file/ozzyczech/:match*"
+		}
+	]
+}
