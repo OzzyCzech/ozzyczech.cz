@@ -1,11 +1,11 @@
-# The best lenses for Fujifilm X-mount
+# The best Fujifilm X-mount lenses
 
 ## Best standard zoom lenses
 
 The standard zoom lens is the photographer's **handy multitool** a variable lens capturing landscapes, groups, or architecture, and a telephoto to get closer to a distant subject or make a portrait.
 
 - [XF 16-55mm F2.8 LM WR](https://fujifilm-x.com/global/products/lenses/xf16-55mmf28-r-lm-wr/) - best standard zoom lense
-- [Sigma 18-50 F2.8 DC DN](https://www.youtube.com/watch?v=kxaDnWZjAgI) - zoom lens that is small with decent aparature
+- [Sigma 18-50 F2.8 DC DN](https://www.sigma-global.com/en/lenses/c021_18_50_28/) - zoom lens that is small with decent aparature
 - You also may consider [Fujinon XF 16-80mm f/4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf16-80mmf4-r-ois-wr/) but there is notable lack in AF system that's specially in low light.
 
 ## Best wide angel lenses

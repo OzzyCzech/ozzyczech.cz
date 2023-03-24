@@ -1,4 +1,4 @@
-# RAW Photo Editors
+# RAW Editors
 
 * [Capture One](https://www.captureone.com/en/)
 * [Adobe Lightroom](https://lightroom.adobe.com/)
