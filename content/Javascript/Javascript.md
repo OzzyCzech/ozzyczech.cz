@@ -50,6 +50,7 @@
 * [React](https://facebook.github.io/react/) - React a javascript library for building user interfaces
 * [Vue](https://vuejs.org/) - The Progressive JavaScript Framework
 * [Preact](https://preactjs.com/) - Fast 3kB alternative to React with the same ES6 API.
+* [Milion.js](https://millionjs.org/) - blazing fast components using React
 * [Marko](http://markojs.com/) - Simple, intuitive, performant UI components and templates 
 * [Relay](https://facebook.github.io/relay/) - A JavaScript framework for building data-driven React applications
 * [svelte](https://github.com/sveltejs/svelte) - Svelte is a new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.
