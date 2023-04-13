@@ -32,6 +32,7 @@
 
 ## Tools
 
+* [Sensei](https://cindori.com/sensei) - ultimate app for optimizing your Mac
 * [ImageOptim](https://imageoptim.com/mac) - open source image optimization tool
 * [Vanilla](https://matthewpalmer.net/vanilla/) - Hide menu bar icons on your Mac
 * [KeepingYouAwake](https://keepingyouawake.app/) -  Prevents your Mac from going to sleep
