@@ -8,7 +8,7 @@ This is list of security tools I use and would recommend to others.
 * [FireFox](https://www.mozilla.org/cs/firefox/new/) or [LibreWolf](https://librewolf.net/) fork
 * [Opera](https://www.opera.com/)
 
-or if you ne. d extra „security” try [TorBrowser](https://www.torproject.org/download/)
+Check Open-source audit of web browser privacy [privacytests.org](https://privacytests.org/) - 
 
 ### Browsers extensions
 
