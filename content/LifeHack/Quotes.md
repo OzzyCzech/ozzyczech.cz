@@ -1,5 +1,8 @@
 # Quotes
 
+> Člověk může mockrát selhat, ale zoufalcem se stává až ve chvíli, kdy začne obviňovat druhé.
+> *John Burroughs*
+
 > Často zapomínáme, že lidé, s nimiž musíme žít, také musí žít s námi.
 > *Lafayette Ronald Hubbard*
 
