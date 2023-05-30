@@ -1,5 +1,8 @@
 # Quotes
 
+> 20 years from now, the only people who will remember that you worked late are your kids
+> *Reddit*
+
 > Člověk může mockrát selhat, ale zoufalcem se stává až ve chvíli, kdy začne obviňovat druhé.
 > *John Burroughs*
 
