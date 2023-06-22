@@ -7,25 +7,19 @@
 * [Insta360 X3](https://www.insta360.com/product/insta360-x3)
 * [DJI Osmo Pocket 2](https://www.dji.com/cz/pocket-2)
 
-## Fuji cameras
+## Fujifilm
 
-#### [Fujifilm X-T4](https://fujifilm-x.com/global/products/cameras/x-t4/)
+- [Fujifilm X-T5](https://fujifilm-x.com/global/products/cameras/x-t5/)
+- [Fujifilm X-H2](https://fujifilm-x.com/global/products/cameras/x-h2/)
+- [Fujifilm X-Pro3](https://fujifilm-x.com/en-us/products/cameras/x-pro3/)
+- [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 
-#### [Fujifilm X-T3](https://fujifilm-x.com/global/products/cameras/x-t3/)
 
-#### [Fujifilm X-Pro3](https://fujifilm-x.com/en-us/products/cameras/x-pro3/)
+Sony FE 35mm f/1.4 GM
 
-## Sony cameras
-
-* [Sony α7 IV](https://www.sony.cz/electronics/fotoaparaty-s-vymennymi-objektivy-2/ilce-7m4)
-* [Sony ZV-E10](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/zv-e10)
-* [Sony α7C](https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7c)
-
-## Compact cameras
+## Others
 
 * [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
-* [Fujifilm X-E4](https://fujifilm-x.com/en-us/products/cameras/x-e4/)
-* [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
 * Leica Q2 [Black](https://leica-camera.com/en-SG/photography/cameras/q/q2-black), [Reporter](https://leica-camera.com/en-SG/photography/cameras/q/q2-reporter) or [Monochrome](https://leica-camera.com/en-SG/photography/cameras/q/q2-monochrom)
 
 #Sony #Fujifilm #GoPro #DJI #Insta360 
