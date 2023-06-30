@@ -1,4 +1,4 @@
-# iOS like on/off switch button with CSS and HTML
+# iOS like switch button with CSS and HTML
 
 Out there is multiple solution of iOS like on/off switch button, but:
 

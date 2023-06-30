@@ -18,6 +18,7 @@ angle. And that includes models with focal lengths like 16mm, 18mm, 23mm, and so
 Best wide angel lenses are:
 
 - [Laowa 9mm f/2.8 Zero-D](https://www.venuslens.net/product/9mm/) - ultra wide
+- [Fujifilm XF 8 mm f/3,5 R WR](https://fujifilm-x.com/global/products/lenses/xf8mmf35-r-wr/)
 - [XF 18mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
 - [XF 23mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
 - [XF 10-24mm F4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/) - best zoom lens for landscapes
