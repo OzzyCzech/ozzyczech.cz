@@ -35,7 +35,7 @@ Add the private key to the SSH agent on macOS:
 ```shell
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
-[]()
+
 ## Copy public key to clipboard
 
 ```shell
