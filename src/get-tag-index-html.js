@@ -12,7 +12,7 @@ export function getTagIndexHtml(tags, pages) {
 								<a
 									href="${tag.slug}"
 									data-weight="${tag.children.length}"
-									class="py-2 px-3 ${tag.children.length >= 15 ? 'font-bold text-6xl' : tag.children.length >= 10 ? 'font-semibold text-4xl' : tag.children.length >= 5 ? 'font-medium text-3xl' : tag.children.length >= 3 ? 'font-semibold text-2xl' : tag.children.length >= 2 ? 'text-xl' : 'text-neutral-500'}"
+									class="py-2 px-3 ${tag.children.length >= 15 ? 'font-bold text-6xl' : tag.children.length >= 10 ? 'font-semibold text-4xl' : tag.children.length >= 5 ? 'font-medium text-3xl' : tag.children.length >= 3 ? 'font-semibold text-2xl' : tag.children.length >= 2 ? 'text-xl' : 'text-gray-500'}"
 									title="${tag.title}"
 									>#${tag.title}</a>
 								</li>`).join('')}

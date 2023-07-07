@@ -2,6 +2,9 @@
 
 ## 2023
 
+* What we do in the shadows
+* Endeavour
+* Star Trek: Picard
 * War of the Worlds
 * Star Trek: Strange new Worlds
 * Kleo

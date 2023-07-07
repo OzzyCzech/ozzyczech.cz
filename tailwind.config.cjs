@@ -10,8 +10,7 @@ module.exports = {
 		container: {center: true, padding: '1rem'},
 		extend: {
 			colors: {
-				gray: colors.neutral,
-				lime: colors.lime,
+				gray: colors.zinc,
 			},
 			typography: ({theme}) => ({
 				DEFAULT: {
@@ -43,5 +42,6 @@ module.exports = {
 		require('@tailwindcss/aspect-ratio'),
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/forms'),
+		require('tailwind-debug'),
 	],
 };

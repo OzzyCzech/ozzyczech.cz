@@ -8,7 +8,7 @@ export function getTagHtml({title, slug, children} = {}, pages) {
 					<h1>#${title}</h1>
 					<div class="not-prose">
 						<ul class="flex flex-col gap-3">
-							${children.map(page => `<li class="flex rounded grow border dark:border-neutral-900 grow dark:hover:bg-neutral-900 hover:bg-neutral-200">
+							${children.map(page => `<li class="flex rounded grow border dark:border-gray-900 grow dark:hover:bg-gray-900 hover:bg-gray-200">
 								<a
 									href="${page.slug}"
 									class="flex py-3 px-5 font-semibold"
