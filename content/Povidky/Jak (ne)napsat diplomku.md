@@ -4,7 +4,8 @@
 
 1. Posaďte se do svého velkého pohodlného křesla
 2. Než vaše PC naběhne, zkontrolujte, zda máte u křesla dobře nastaven režim houpání
-3. Po zapnutí se přihlaste na ICQ (Skype, Jabber, MSN, ...) že máte nastaven stav **Nerušit** případně **Nedostupný** - to bezpečně každého odradí od toho, aby Vám psal
+3. Po zapnutí se přihlaste na ICQ (Skype, Jabber, MSN, ...) že máte nastaven stav **Nerušit** případně **Nedostupný** -
+   to bezpečně každého odradí od toho, aby Vám psal
 4. Zkontrolujte email
 5. Otevřete si dokument s textem své diplomky
 
@@ -12,8 +13,10 @@
 
 1. Jděte si uvařit čaj - bude Vám to lépe myslet, když se čas od času napijete
 2. Po návratu do pokoje se opět usaďte do svého pohodlného křesla
-3. Spusťte [internetový prohlížeč](http://www.mozilla-europe.org/cs/products/firefox/), protože jistě budete potřebovat něco najít na internetu
-4. Když už jej máte spuštěn, podívejte se, jestli je něco nového na [YouTube](http://www.youtube.com/), [Novinách](http://news.google.cz/) nebo v [Bulváru](http://www.blesk.cz/) - nechcete přeci ztratit kontakt se světem
+3. Spusťte [internetový prohlížeč](https://www.mozilla.org/cs/firefox/new/), protože jistě budete potřebovat
+   něco najít na internetu
+4. Když už jej máte spuštěn, podívejte se, jestli je něco nového
+   na [YouTube](http://www.youtube.com/), Novinách nebo v Bulváru - nechcete přeci ztratit kontakt se světem
 5. Nezapomeňte si zajít na záchod (zadržování tekutin není zdravé)
 6. Zkontrolujte email a mobil jestli Vás někdo nehledal
 
@@ -30,7 +33,8 @@
 ### Kolem poledne
 
 1. Zavolejte svému kamarádovi na [Skype](http://www.skype.com/) jestli už začal psát a kolik toho má
-2. Skočte si do bufetu nebo obchodu pro něco dobrého, to Vám pomůže - když už budete v tom obchodě, kupte si nějaký časopis
+2. Skočte si do bufetu nebo obchodu pro něco dobrého, to Vám pomůže - když už budete v tom obchodě, kupte si nějaký
+   časopis
 3. Přečtěte si ty nejzajímavější články v časopisu
 4. Zkontrolujte email a mobil - někdo by Vás mohl potřebovat
 5. Nezapomeňte si zajít na záchod (zadržování tekutin není zdravé)

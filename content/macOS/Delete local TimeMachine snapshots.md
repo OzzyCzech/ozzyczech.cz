@@ -1,11 +1,9 @@
 # Delete local TimeMachine snapshots
 
-Your Time Machine backup disk might not always be available, so Time Machine also stores
-some of its backups on your Mac. These backups are called local snapshots. 
-[Local TimeMachine snapshots](https://support.apple.com/en-us/HT204015)
-take a large amount of disk space. This space is listed as
-purgeable in disk info, but cannot be actually used until
-the system decides to free it up. You can list all local backups with:
+Your Time Machine backup disk might not always be available, so Time Machine also stores some of its backups on your
+Mac. These backups are called local snapshots. [Local TimeMachine snapshots](https://support.apple.com/en-us/HT204015)
+take a large amount of disk space. This space is listed as purgeable in disk info, but cannot be actually used until the
+system decides to free it up. You can list all local backups with:
 
 ```shell
 tmutil listlocalsnapshots /
@@ -23,4 +21,4 @@ You can lists all snaphosts and deletes all of them in a loop:
 for d in $(tmutil listlocalsnapshotdates | grep "-"); do sudo tmutil deletelocalsnapshots $d; done
 ```
 
-#macOS  #TimeMachine
+#macOS #TimeMachine

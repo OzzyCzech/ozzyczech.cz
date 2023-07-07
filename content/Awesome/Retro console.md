@@ -1,4 +1,4 @@
 # Retro console
 
-https://anbernic.com/
-https://www.goretroid.com/
+- https://anbernic.com/
+- https://www.goretroid.com/

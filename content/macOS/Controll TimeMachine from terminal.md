@@ -1,6 +1,7 @@
 # Controll TimeMachine from terminal
 
-You can enable `sudo tmutil enable` or disable `sudo tmutil disable` from command line. If you want to run a Time Machine backup right away, just run `tmutil startbackup` or
+You can enable `sudo tmutil enable` or disable `sudo tmutil disable` from command line. If you want to run a Time
+Machine backup right away, just run `tmutil startbackup` or
 `tmutil stopbackup` if you ever want to stop a backup.
 
 ## Local snapshots
