@@ -12,7 +12,7 @@ export function getDocument({title, aside, main} = {}) {
 	<link rel="stylesheet" href="/style.css"/>
 	<script src="/app.js" type="module"></script>
 </head>
-<body class="antialiased leading-normal tracking-normal dark:bg-neutral-800 dark:text-neutral-200">
+<body class="antialiased leading-normal tracking-normal dark:bg-gray-800 dark:text-gray-200">
 <header class="flex flex-wrap items-center justify-between mx-auto bg-gray-50 dark:bg-neutral-900 px-4 py-2.5 sticky top-0">
 		
 		<nav class="flex gap-6 items-center font-medium">
@@ -34,7 +34,7 @@ export function getDocument({title, aside, main} = {}) {
 	</div>
 </header>
 
-<div>
+<div class="container">
 	<div class="grid grid-cols-1 lg:grid-cols-[340px,minmax(0,auto)] gap-4 lg:gap-6 min-h-screen">
 		<aside class="border-r dark:border-neutral-900">${aside}</aside>
 		<main>${main}</main>	

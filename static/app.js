@@ -8,7 +8,6 @@ for (const ago of document.querySelectorAll('[data-ago]')) {
 
 for (const button of document.querySelectorAll('aside button')) {
 	button.addEventListener('click', () => {
-		button.classList.toggle('text-red-300');
 		button.nextElementSibling.classList.toggle('hidden');
 	});
 }
