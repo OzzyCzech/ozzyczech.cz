@@ -1,7 +1,7 @@
 import md5 from 'md5';
 
 export function getDocument({title, aside, main} = {}) {
-	return `<!DOCTYPE html>
+  return `<!DOCTYPE html>
 <html lang="en" dir="ltr" class="dark">
 <head>
 	<meta charset="UTF-8">

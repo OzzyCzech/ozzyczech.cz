@@ -2,9 +2,9 @@ import {getDocument} from './document.js';
 import {getAside} from './sidebar.js';
 
 export function getTagHtml({title, slug, children} = {}, pages) {
-	return getDocument({
-		title,
-		main: `<article class="prose max-w-screen-lg lg:prose-lg mx-auto dark:prose-invert dark:prose-sky prose-a:no-underline prose-h1:text-yellow-500 hover:prose-a:underline my-12 p-4">
+  return getDocument({
+    title,
+    main: `<article class="prose max-w-screen-lg lg:prose-lg mx-auto dark:prose-invert dark:prose-sky prose-a:no-underline prose-h1:text-yellow-500 hover:prose-a:underline my-12 p-4">
 					<h1>#${title}</h1>
 					<div class="not-prose">
 						<ul class="flex flex-col gap-3">
@@ -18,6 +18,6 @@ export function getTagHtml({title, slug, children} = {}, pages) {
 						</ul>
 					</div>
 					`,
-		aside: getAside(pages, slug),
-	});
+    aside: getAside(pages, slug),
+  });
 }

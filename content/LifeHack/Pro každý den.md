@@ -13,7 +13,8 @@
 * Přimějte k úsměvu alespoň tři lidi denně.
 * Neutrácejte svou drahocennou energii na pomluvy.
 * Zapomeňte na problémy minulosti. Nepřipomínejte blízkým a přátelům minulé spory, brání to vašemu dnešnímu štěstí.
-* Zapomeňte na negativní myšlenky, zaměřte se na kladné stránky. Život je škola; přišli jste se sem učit. Problémy jsou součástí výuky, která jednou skončí, stejně jako hodina matematiky. To, co se naučíte, vám však zůstane navždy.
+* Zapomeňte na negativní myšlenky, zaměřte se na kladné stránky. Život je škola; přišli jste se sem učit. Problémy jsou
+  součástí výuky, která jednou skončí, stejně jako hodina matematiky. To, co se naučíte, vám však zůstane navždy.
 * Život je příliš krátký, než abychom utráceli čas nenávistí. Nikoho bychom neměli nenávidět.
 * Neberte se tak vážně. Nikdo jiný vás tak nebere.
 * Opravdu nemusíte vyhrát každý spor. Naučte se uznat, že nemáte pravdu.

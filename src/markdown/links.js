@@ -4,33 +4,33 @@ import slugify from '@sindresorhus/slugify';
 
 export default function links(options = {}) {
 
-	return tree => {
-		visit(tree, 'link', (node) => {
+  return tree => {
+    visit(tree, 'link', (node) => {
 
-			if (
-				!node.url.startsWith('http') &&
-				!node.url.startsWith('/')
-			) {
-				node.url = `/${node.url}`;
-			}
+      if (
+        !node.url.startsWith('http') &&
+        !node.url.startsWith('/')
+      ) {
+        node.url = `/${node.url}`;
+      }
 
-			// replace .md links with .html
-			if (!node.url.startsWith('http') && node.url.endsWith('.md')) {
-				node.url = join(dirname(node.url), `${slugify(basename(node.url, '.md'))}.html`);
-			}
+      // replace .md links with .html
+      if (!node.url.startsWith('http') && node.url.endsWith('.md')) {
+        node.url = join(dirname(node.url), `${slugify(basename(node.url, '.md'))}.html`);
+      }
 
-			// external links
-			if (!node.url.includes('ozzyczech.org') && !node.url.startsWith('/')) {
+      // external links
+      if (!node.url.includes('ozzyczech.org') && !node.url.startsWith('/')) {
 
-				const hProperties = node.data?.hProperties ?? {};
+        const hProperties = node.data?.hProperties ?? {};
 
-				// add noopener and noreferrer to external links
-				hProperties.target = '_blank';
-				hProperties.rel = ['noopener', 'noreferrer'];
+        // add noopener and noreferrer to external links
+        hProperties.target = '_blank';
+        hProperties.rel = ['noopener', 'noreferrer'];
 
-				node.data = {hProperties};
-			}
+        node.data = {hProperties};
+      }
 
-		});
-	};
+    });
+  };
 }

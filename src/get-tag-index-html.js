@@ -2,9 +2,9 @@ import {getDocument} from './document.js';
 import {getAside} from './sidebar.js';
 
 export function getTagIndexHtml(tags, pages) {
-	return getDocument({
-		title: 'Tags',
-		main: `<article class="prose max-w-screen-lg lg:prose-lg mx-auto dark:prose-invert dark:prose-sky prose-a:no-underline prose-h1:text-yellow-500 hover:prose-a:underline my-12 prose-figure:m-0 prose-figure:p-0 p-4">
+  return getDocument({
+    title: 'Tags',
+    main: `<article class="prose max-w-screen-lg lg:prose-lg mx-auto dark:prose-invert dark:prose-sky prose-a:no-underline prose-h1:text-yellow-500 hover:prose-a:underline my-12 prose-figure:m-0 prose-figure:p-0 p-4">
 					<h1>#tags</h1>
 					<div class="not-prose">
 						<ul class="flex flex-wrap max-w-screen-lg place-content-center items-center py-6 mx-auto">
@@ -19,6 +19,6 @@ export function getTagIndexHtml(tags, pages) {
 						</ul>
 					</div>
 					`,
-		aside: getAside(pages, 'tag'),
-	});
+    aside: getAside(pages, 'tag'),
+  });
 }
