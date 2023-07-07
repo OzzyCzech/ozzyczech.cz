@@ -5,13 +5,13 @@ export function getSidebarMenu(pages, active, className = '') {
     if (page?.children) {
       const expanded = active.startsWith(page.slug);
       menu += `<li>
-				<button class="flex justify-between w-full px-3 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-950/50 ${expanded ? 'text-sky-500' : ''}" aria-expanded="${expanded}">
+				<button class="flex justify-between w-full px-3 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-950/50 group peer" aria-expanded="${expanded}">
 					<span>${page.name}</span>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" class="fill-natural-500 dark:fill-gray-400 ${expanded ? 'rotate-90' : ''}">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" class="transition ease-in-out group-aria-expanded:rotate-90 fill-natural-500 dark:fill-gray-400">
 						<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
 					</svg>
 				</button>
-				${getSidebarMenu(page.children, active, `border-l dark:border-gray-800 p-1 ml-4 ${expanded ? '' : 'hidden'}`)}
+				${getSidebarMenu(page.children, active, `border-l dark:border-gray-800 p-1 ml-4 hidden peer-aria-expanded:block`)}
 			</li>`;
     } else {
       menu += `<li>
@@ -32,5 +32,13 @@ export function getAside(pages, active) {
       ...pages.filter(page => page?.children).sort((a, b) => a.name.localeCompare(b.name))],
     active
   )}
-   </nav>`;
+   </nav>
+   
+   <script>
+     document.querySelectorAll('button[aria-expanded]').forEach(button => {
+        button.addEventListener('click', () => {
+          button.setAttribute('aria-expanded', button.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+        });
+     });
+  </script>`;
 }

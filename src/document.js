@@ -1,5 +1,7 @@
 import md5 from 'md5';
 
+// https://www.gitbook.com/gitbook-library
+
 export function getDocument({title, aside, main} = {}) {
   return `<!DOCTYPE html>
 <html lang="en" dir="ltr" class="dark">
@@ -20,9 +22,9 @@ export function getDocument({title, aside, main} = {}) {
 				<img src="https://www.gravatar.com/avatar/${md5('roman@ozana.cz')}?s=128" class="h-7 mr-3 rounded-full" alt="Roman Ožana"/>
 				<span class="text-xl font-semibold whitespace-nowrap dark:text-white">Roman's notes</span>
 			</a>
-			<a href="https://github.com/OzzyCzech/" target="_blank" class="hidden md:inline hover:text-yellow-500 hover:underline transition">GitHub</a>
-			<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hidden md:inline hover:text-yellow-500 hover:underline transition">StackOverflow</a>
-			<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hidden md:inline hover:text-yellow-500 hover:underline transition">Twitter</a>
+			<a href="https://github.com/OzzyCzech/" target="_blank" class="hidden md:inline hover:text-sky-500 hover:underline transition">GitHub</a>
+			<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hidden md:inline hover:text-sky-500 hover:underline transition">StackOverflow</a>
+			<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hidden md:inline hover:text-sky-500 hover:underline transition">Twitter</a>
 		</nav>
 
 		<button class="py-1.5 px-4 rounded-full border dark:border-gray-700 text-gray-500 hover:text-gray-400 hover:border-gray-600 dark:bg-gray-900 outline-0 inline-flex items-center gap-1" id="search">
@@ -37,7 +39,7 @@ export function getDocument({title, aside, main} = {}) {
 
 <div class="container mx-auto px-4">
 	<div class="grid grid-cols-1 lg:grid-cols-[340px,minmax(0,auto)] gap-4 lg:gap-6 min-h-screen">
-		<aside class="border-r dark:border-gray-800">${aside}</aside>
+		<aside class="border-r dark:border-gray-800 overflow-y-auto">${aside}</aside>
 		<main>${main}</main>
 	</div>
 </div>
