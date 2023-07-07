@@ -78,8 +78,6 @@ interface. It also includes a live preview and syntax highlighting.
 brew install --cask macdown
 ```
 
-![](https://macdown.uranusjr.com/static/images/macdown-demo.png)
-
 ## [GitJournal](https://gitjournal.io/)
 
 Mobile first Markdown Notes integrated with Git. Can be integrated with other editors.
