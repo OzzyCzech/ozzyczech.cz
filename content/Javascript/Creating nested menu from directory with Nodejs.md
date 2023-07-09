@@ -23,7 +23,8 @@ export async function directoryMenu(dir) {
  }  
   
  return `<ul>${menu}</ul>`;  
-}```
+}
+```
 
 You can try it:
 
