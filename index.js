@@ -24,14 +24,14 @@ const fuse = await createFuse();
 
 const pages = await getPages({path: 'content'}, (page, dirent) => {
 
-	if (dirent.isFile()) {
-		page.slug = join('/', relative('content', dirname(page.path)), slugify(page.name === 'Homepage' ? 'index' : page.name) + '.html');
-		page.output = join('public', page.slug);
-	}
+  if (dirent.isFile()) {
+    page.slug = join('/', relative('content', dirname(page.path)), `${slugify(page.name === 'Home' ? 'index' : page.name)}.html`);
+    page.output = join('public', page.slug);
+  }
 
-	if (dirent.isDirectory()) {
-		page.slug = join('/', relative('content', dirname(page.path)), page.name);
-	}
+  if (dirent.isDirectory()) {
+    page.slug = join('/', relative('content', dirname(page.path)), page.name);
+  }
 });
 
 let tags = new Map();
@@ -39,46 +39,46 @@ let tags = new Map();
 // Render pages
 
 for (const page of allPages(pages)) {
-	page.content = await readFile(page.path);
-	page.tags = getHashtags(page.content);
-	page.url = new URL(page.slug, 'https://ozzyczech.cz').toString();
+  page.content = await readFile(page.path);
+  page.tags = getHashtags(page.content);
+  page.url = new URL(page.slug, 'https://ozzyczech.cz').toString();
 
-	// Process markdown and title
+  // Process markdown and title
 
-	page.content = await markdown(page.content);
-	page.title = page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i)?.pop();
+  page.content = await markdown(page.content);
+  page.title = page.content.match(/(?<=<h[12][^>]*?>)([^<>]+?)(?=<\/h[12]>)/i)?.pop();
 
-	// Add links to series page
-	if (page.name === 'Series') {
-		page.content = await replaceSeries(page.content)
-	}
+  // Add links to series page
+  if (page.name === 'Series') {
+    page.content = await replaceSeries(page.content)
+  }
 
-	// Save pages to lists
+  // Save pages to lists
 
-	fuse.add(page);
-	sitemap.add(page);
+  fuse.add(page);
+  sitemap.add(page);
 
-	// Prepare tags object
+  // Prepare tags object
 
-	if (page.name !== 'index') {
-		page.tags?.forEach((tag) => {
-			if (!tags.has(tag)) {
-				tags.set(tag, {
-					title: tag.slice(1), slug: `/tag/${slugify(tag.toLowerCase())}`, children: [],
-				});
-			}
-			tags.get(tag).children.push({slug: page.slug, title: page.title});
-		});
-	}
+  if (page.name !== 'index') {
+    page.tags?.forEach((tag) => {
+      if (!tags.has(tag)) {
+        tags.set(tag, {
+          title: tag.slice(1), slug: `/tag/${slugify(tag.toLowerCase())}`, children: [],
+        });
+      }
+      tags.get(tag).children.push({slug: page.slug, title: page.title});
+    });
+  }
 
-	await writeFile(page.output, getPageHtml(page, pages));
+  await writeFile(page.output, getPageHtml(page, pages));
 }
 
 // Render tags
 
 for (const [tag, page] of tags) {
-	sitemap.add({url: new URL(`${page.slug}`, 'https://ozzyczech.cz').toString()});
-	await writeFile(`public/${page.slug}/index.html`, getTagHtml(page, pages));
+  sitemap.add({url: new URL(`${page.slug}`, 'https://ozzyczech.cz').toString()});
+  await writeFile(`public/${page.slug}/index.html`, getTagHtml(page, pages));
 }
 
 // Render tags cloud
@@ -94,11 +94,11 @@ fuse.end();
 // Copy static files
 await cp('static', 'public', {recursive: true});
 await cp('content', 'public', {
-	recursive: true,
-	filter: (src) => {
-		return !src.includes('.obsidian') &&
-			!src.match(/\.(md|xml|html)$/);
-	},
+  recursive: true,
+  filter: (src) => {
+    return !src.includes('.obsidian') &&
+      !src.match(/\.(md|xml|html)$/);
+  },
 });
 
 console.timeEnd('Build HTML');

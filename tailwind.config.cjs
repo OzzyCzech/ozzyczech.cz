@@ -1,5 +1,4 @@
 const colors = require('tailwindcss/colors');
-const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: [
@@ -11,7 +10,19 @@ module.exports = {
     container: {center: true, padding: '1rem'},
     extend: {
       colors: {
-        gray: colors.zinc,
+        gray: {
+          '50': '#f6f7f9',
+          '100': '#ebedf3',
+          '200': '#d3d7e4',
+          '300': '#acb4cd',
+          '400': '#7f8cb1',
+          '500': '#5f6d98',
+          '600': '#4b577e',
+          '700': '#3e4766',
+          '800': '#363d56',
+          '900': '#30354a',
+          '950': '#171923', // https://uicolors.app/create
+        },
       },
       typography: ({theme}) => ({
         DEFAULT: {
@@ -19,18 +30,6 @@ module.exports = {
             'blockquote p:first-of-type::before': {content: ''},
             'blockquote p:last-of-type::after': {content: ''},
             'figcaption': {textAlign: 'center', fontStyle: 'italic'},
-          },
-        },
-        invert: {
-          css: {
-            '--tw-prose-links': theme('colors.blue[500]'),
-            '--tw-prose-code': theme('colors.pink[400]'),
-          },
-        },
-        gray: {
-          css: {
-            '--tw-prose-links': theme('colors.blue[500]'),
-            '--tw-prose-code': theme('colors.pink[400]'),
           },
         },
       }),
