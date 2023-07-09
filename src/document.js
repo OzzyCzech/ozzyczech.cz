@@ -45,10 +45,10 @@ export function getDocument({title, aside, main} = {}) {
 	</div>
 </header>
 
-<div class="container mx-auto px-4">
+<div class="container px-4 mx-auto">
 	<div class="grid grid-cols-1 lg:grid-cols-[320px,minmax(0,auto)] gap-4 lg:gap-6 min-h-screen">
-		<aside class="border-r dark:border-gray-700/50 overflow-y-auto">${aside}</aside>
-		<main>${main}</main>
+		<aside class="border-r dark:border-gray-900">${aside}</aside>
+		<main class="">${main}</main>
 	</div>
 </div>
 <cmd-dialog theme="dark"></cmd-dialog>
