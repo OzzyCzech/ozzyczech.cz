@@ -5,7 +5,7 @@ export function getSidebarMenu(pages, active, className = '') {
     if (page?.children) {
       const expanded = active.startsWith(page.slug);
       menu += `<li>
-				<button type="button" class="group peer flex justify-between py-1 w-full text-gray-200 font-semibold dark:hover:text-sky-500" aria-expanded="${expanded}">
+				<button type="button" class="group peer flex justify-between py-1 w-full text-gray-700 dark:text-gray-200 font-semibold hover:text-blue-600 dark:hover:text-sky-500" aria-expanded="${expanded}">
 					<span>${page.name}</span>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="currentColor"
 					  class="transition ease-in-out group-aria-expanded:rotate-90">
@@ -17,7 +17,7 @@ export function getSidebarMenu(pages, active, className = '') {
     } else {
       menu += `<li>
 	      <a href="${page.slug}" ${page.slug === active ? 'aria-current="page"' : ''}
-  		    class="flex py-0.5 w-full dark:hover:text-sky-500 ${page.slug == active ? 'text-sky-500' : ''}">
+  		    class="flex py-0.5 w-full dark:hover:text-sky-500 hover:text-blue-700 ${page.slug == active ? 'text-blue-700 dark:text-sky-500' : ''}">
     		${page.name}
     	</a>
       </li>`;
@@ -27,7 +27,7 @@ export function getSidebarMenu(pages, active, className = '') {
 }
 
 export function getAside(pages, active) {
-  return `<nav class="mx-2 my-6 text-gray-300">
+  return `<nav class="mx-2 my-6 dark:text-gray-300 text-gray-600">
       ${getSidebarMenu(
     [...pages.filter(page => !page?.children),
       ...pages.filter(page => page?.children).sort((a, b) => a.name.localeCompare(b.name))],
