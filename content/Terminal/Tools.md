@@ -1,6 +1,6 @@
 # Tools
 
-## ack
+## [ack](https://beyondgrep.com)
 
 `ack` is a grep-like source code search tool.
 
@@ -12,9 +12,7 @@ ack 'foo' --js
 brew install ack
 ```
 
-[Homepage](https://beyondgrep.com/)
-
-## bat
+## [bat]](https://github.com/sharkdp/bat)
 
 `bat` is a `cat` clone with syntax highlighting and Git integration.
 
@@ -24,22 +22,16 @@ brew install ack
 brew install bat
 ```
 
-[GitHub](https://github.com/sharkdp/bat)
-
-## fd
+## [fd](https://github.com/sharkdp/fd)
 
 `fd` is a fast and user-friendly alternative to `find`
 
 ![](https://github.com/sharkdp/fd/raw/master/doc/screencast.svg)
 
-
 ```shell
 brew install fd
 ```
-
-[GitHub](https://github.com/sharkdp/fd)
-
-## sd
+## [sd](https://github.com/chmln/sd)
 
 `sd` is an intuitive find & replace command-line tool, it is an alternative to `sed`
 
@@ -51,4 +43,16 @@ sd 'foo' 'bar' foo.txt
 brew install sd
 ```
 
-[GitHub](https://github.com/chmln/sd)
+## [dog](https://github.com/ogham/dog)
+
+`dog` is a command-line DNS client, like `dig`
+
+```shell
+dog google.com
+```
+
+![](https://github.com/ogham/dog/raw/master/dog-screenshot.png)
+
+```shell
+brew install dog
+```
