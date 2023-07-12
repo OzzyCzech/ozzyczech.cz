@@ -12,7 +12,7 @@ ack 'foo' --js
 brew install ack
 ```
 
-## [bat]](https://github.com/sharkdp/bat)
+## [bat](https://github.com/sharkdp/bat)
 
 `bat` is a `cat` clone with syntax highlighting and Git integration.
 
