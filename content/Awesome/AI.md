@@ -3,6 +3,7 @@
 ## Text
 
 - [ChatGPT](https://chat.openai.com/) - chatbot developed by OpenAI
+- [Google Bard](https://bard.google.com/) - chatbot from Google
 - [DeepL](https://www.deepl.com/translator) - AI translator
 - [NovelAI](https://novelai.net/)
 
