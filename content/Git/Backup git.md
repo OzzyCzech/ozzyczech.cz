@@ -1,4 +1,4 @@
-# Backup git repository as single bundle file
+# Backup git
 
 Git is capable of "bundling" its data into a single file. The [bundle command](https://git-scm.com/docs/git-bundle)
 will package up everything that would normally be pushed over the wire with a git push command
