@@ -20,7 +20,7 @@ export default function links(options = {}) {
       }
 
       // external links
-      if (!node.url.includes('ozzyczech.org') && !node.url.startsWith('/')) {
+      if (!node.url.includes('ozzyczech.cz') && !node.url.startsWith('/')) {
 
         const hProperties = node.data?.hProperties ?? {};
 

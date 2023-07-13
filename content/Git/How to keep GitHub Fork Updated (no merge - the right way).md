@@ -1,6 +1,7 @@
 # How to keep GitHub Fork Updated (no merge - the right way)
 
-Here is solution how to keep your forks updated [without merge](https://help.github.com/articles/syncing-a-fork)and clean history
+Here is solution how to keep your forks updated [without merge](https://help.github.com/articles/syncing-a-fork) and
+clean history
 
 ```shell
 git clone git@github.com:[username]/[repo].git

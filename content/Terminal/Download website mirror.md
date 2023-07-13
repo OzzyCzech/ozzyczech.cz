@@ -1,4 +1,4 @@
-# Download website mirror with wget
+# Download website mirror
 
 ```shell
 wget --mirror \

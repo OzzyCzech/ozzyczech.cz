@@ -58,10 +58,6 @@
         @apply cursor-help;
     }
 
-    .language-bash {
-        @apply before:content-['$'] before:inline-block before:mr-2 before:text-gray-500;
-    }
-
     aside [data-active=true] {
         @apply dark:text-lime-300 dark:bg-gray-700;
     }

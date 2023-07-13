@@ -1,4 +1,4 @@
-# Backup git
+# Backup git repository
 
 Git is capable of "bundling" its data into a single file. The [bundle command](https://git-scm.com/docs/git-bundle)
 will package up everything that would normally be pushed over the wire with a git push command
@@ -37,6 +37,23 @@ backup = "!gb() { target=$(echo ${1#*:} | tr / _); git clone --mirror $1 ${targe
 
 Backup alias can be also found in my [dotfiles](https://github.com/OzzyCzech/dotfiles/blob/main/.gitconfig) repository.
 
+
+## Restore
+
+You can difectly clone repository from bundle file:
+
+```shell
+git clone my-super-file.bundle directory
+```
+
+Or you can create empty repository and pull from bundle file:
+
+```shell
+git init directory
+cd directory
+git pull my-super-file.bundle
+```
+
 ## Backup whole GitHub account
 
 You can use [GitHub API](https://developer.github.com/v3/repos/) to get list of
@@ -55,14 +72,6 @@ for repo in $(curl -s https://api.github.com/users/OzzyCzech/repos | jq -r ".[].
 do  
   git backup $repo /Volumes/Backup/git
 done;
-```
-
-## Restore
-
-You can difectly clone repository from bundle file:
-
-```shell
-git clone my-super-file.bundle directory
 ```
 
 #git #bash 

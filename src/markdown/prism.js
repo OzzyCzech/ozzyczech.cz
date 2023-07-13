@@ -19,8 +19,11 @@ import 'prismjs/components/prism-markdown.js';
 export default function prism(options = {}) {
   return tree => visit(tree, 'code', (node, index, parent) => {
 
-    const lang = node.lang || 'markdown';
+    let lang = node.lang || 'markdown';
     node.type = 'html';
+    if (lang === 'shell') {
+      lang = 'bash';
+    }
     node.value = `<pre><code class="language-${lang}">${Prism.highlight(node.value, Prism.languages[lang], lang)}</code></pre>`;
   });
 }
