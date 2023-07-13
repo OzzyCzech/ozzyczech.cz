@@ -2,8 +2,7 @@
 
 Git is capable of "bundling" its data into a single file. The [bundle command](https://git-scm.com/docs/git-bundle)
 will package up everything that would normally be pushed over the wire with a git push command
-into a binary file that you can email to someone or put on a flash drive,
-then unbundle into another repository.
+into a binary file that you can email to someone or put on a flash drive, then unbundle into another repository.
 
 Following bash function will clone repository and create one
 signle bundle file with nice name:
@@ -21,7 +20,7 @@ function git_backup() {
 
 Usage:
 
-```
+```shell
 git_backup git@github.com:OzzyCzech/dotfiles.git ~/Downloads/
 ```
 
@@ -33,15 +32,16 @@ You can also create nice alias in `.gitconfig` file:
 
 ```ini
 [alias]
-  backup="!gb() { target=$(echo ${1#*:} | tr / _); git clone --mirror $1 ${target} && cd ${target}; git bundle create ${2-../}/${target%%.git}.bundle --all; cd - && rm -rf ${target}; }; gb"
+backup = "!gb() { target=$(echo ${1#*:} | tr / _); git clone --mirror $1 ${target} && cd ${target}; git bundle create ${2-../}/${target%%.git}.bundle --all; cd - && rm -rf ${target}; }; gb"
 ```
 
-For more informtion view https://github.com/OzzyCzech/dotfiles
+Backup alias can be also found in my [dotfiles](https://github.com/OzzyCzech/dotfiles/blob/main/.gitconfig) repository.
 
 ## Backup whole GitHub account
 
-You can use [GitHub API](https://developer.github.com/v3/repos/) to get list of all [user repos](https://api.github.com/users/OzzyCzech/repos).
-Then you have to apply all your bash magic power to getting right names from that.
+You can use [GitHub API](https://developer.github.com/v3/repos/) to get list of
+all [user repos](https://api.github.com/users/OzzyCzech/repos). Then you have to apply all your bash magic power to
+getting right names from that.
 
 ```shell
 curl -s https://api.github.com/users/OzzyCzech/repos | json_pp | grep full_name | cut -d\" -f4
