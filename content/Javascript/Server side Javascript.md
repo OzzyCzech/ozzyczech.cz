@@ -4,7 +4,7 @@
 
 Bun is a fast all-in-one JavaScript runtime. Bundle, transpile, install and run JavaScript & TypeScript projects — all in Bun. Bun is a new JavaScript runtime with a native bundler, transpiler, task runner and npm client built-in.
 
-## [Deno ](https://deno.land/)
+## [Deno](https://deno.land/)
 
 Deno is a simple, modern and secure runtime for JavaScript, TypeScript, and WebAssembly that uses V8 and is built in Rust.
 
