@@ -12,7 +12,7 @@ export function getDocument({title, aside, main} = {}) {
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"/>
 	<link rel="stylesheet" href="/style.css"/>
-	<script src="/theme.js" type="module"></script>
+	<script src="/theme.js" type="module" async></script>
 	<script src="/app.js" type="module"></script>
 </head>
 <body class="antialiased leading-normal tracking-normal dark:bg-gray-950 dark:text-gray-200 dark:selection:bg-sky-950">
