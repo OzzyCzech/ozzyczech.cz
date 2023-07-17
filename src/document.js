@@ -10,10 +10,11 @@ export function getDocument({title, aside, main} = {}) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 	<title>${title || ''} / OzzyCzech.cz</title>
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"/>
-	<script src="/theme.js" type="module" async></script>
-	<link rel="stylesheet" href="/style.css"/>
+	<script src="/theme.js"></script>
 	<script src="/app.js" type="module"></script>
+	<link rel="stylesheet" href="/style.css"/>
+	
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"/>
 </head>
 <body class="antialiased leading-normal tracking-normal dark:bg-gray-950 dark:text-gray-200 dark:selection:bg-sky-950">
 <header class="sticky top-0 z-40 backdrop-blur ">
