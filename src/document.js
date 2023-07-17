@@ -11,8 +11,8 @@ export function getDocument({title, aside, main} = {}) {
 	<title>${title || ''} / OzzyCzech.cz</title>
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"/>
-	<link rel="stylesheet" href="/style.css"/>
 	<script src="/theme.js" type="module" async></script>
+	<link rel="stylesheet" href="/style.css"/>
 	<script src="/app.js" type="module"></script>
 </head>
 <body class="antialiased leading-normal tracking-normal dark:bg-gray-950 dark:text-gray-200 dark:selection:bg-sky-950">
