@@ -1,4 +1,4 @@
-# Awsome Tailwind
+# Awesome Tailwind
 
 ## Components
 
@@ -8,8 +8,17 @@
 * [MerakiUI](https://merakiui.com/components) - Custom UI Components Builtwith Tailwind CSS & Alpine JS
 * [Ripple UI](https://www.ripple-ui.com/) - MIT licensed collection of components and
 
+## Frameworks
+
+* [DaisyUI](https://daisyui.com/) - The most popular, free and open-source Tailwind CSS component library
+
+## Admin interface
+
+* [Tail Admin](https://tailadmin.com/) - Free Tailwind CSS Admin Dashboard Template
+
 ## Colors
 
-- [Tailwind colors Palette](https://tailwindcolor.com/)
+- [Color generator](https://uicolors.app/create)
+- [Colors Palette](https://tailwindcolor.com/)
 
 #Tailwind 
