@@ -88,4 +88,8 @@ Mobile first Markdown Notes integrated with Git. Can be integrated with other ed
 brew install --cask visual-studio-code
 ```
 
+## [Mak](https://mak.ink/)
+
+Mak is a universal in-browser [notepad](https://inns.studio/mak) with build in Markdown support.
+
 #macOS #markdown

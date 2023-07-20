@@ -2,7 +2,7 @@
 
 There is an easy way to load an `.env` file in #bash. Let's have example `.env` file:
 
-```
+```text
 example=value
 example2=value
 ```
