@@ -11,6 +11,7 @@
 ## Email providers
 
 * [iCloud+](https://www.apple.com/cz/icloud/)
+* [Fastmail](https://www.fastmail.com/) - email hosting from $3/month
 * [Namecheap](https://www.namecheap.com/hosting/email/) - email hosting from $10/year
 * [Hostinger](https://www.hostinger.com/email-hosting) - email hosting from $0.99/month
 * [Mailbox](https://mailbox.org/en/services#e-mail-account) - email hosting from Germany for 1€/month
