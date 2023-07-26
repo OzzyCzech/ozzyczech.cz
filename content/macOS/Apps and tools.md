@@ -41,6 +41,7 @@
 * [Maccy](https://maccy.app/) - Clipboard manager for macOS which does one job - keep your copy history at hand. Period.
 * [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
 * [Wipr](https://giorgiocalderolla.com/wipr.html) - ads blocker for iOS and macOS
+* [Dropover](https://apps.apple.com/us/app/dropover/id1024951453?mt=12) - Drag and drop everywhere
 
 ## Screen recorders
 
