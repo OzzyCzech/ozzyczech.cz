@@ -7,6 +7,7 @@
 - [AWS SES](https://aws.amazon.com/ses/)
 - [Send Grid](https://sendgrid.com/)
 - [ManDrill](http://www.mandrill.com/)
+- [Resend](https://resend.com/)
 
 ## Email providers
 
