@@ -13,8 +13,14 @@ export function getDocument({title, aside, main} = {}) {
 	<script src="/theme.js"></script>
 	<script src="/app.js" type="module" async></script>
 	<link rel="stylesheet" href="/style.css"/>
-	
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"/>
+	<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ik8np4lwxl");
+  </script>
 </head>
 <body class="antialiased leading-normal tracking-normal dark:bg-gray-950 dark:text-gray-200 dark:selection:bg-sky-950">
 <header class="sticky top-0 z-40 backdrop-blur ">
