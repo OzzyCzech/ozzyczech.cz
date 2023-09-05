@@ -15,6 +15,7 @@ import 'prismjs/components/prism-yaml.js';
 import 'prismjs/components/prism-python.js';
 import 'prismjs/components/prism-bash.js';
 import 'prismjs/components/prism-markdown.js';
+import 'prismjs/components/prism-docker.js';
 
 export default function prism(options = {}) {
   return tree => visit(tree, 'code', (node, index, parent) => {

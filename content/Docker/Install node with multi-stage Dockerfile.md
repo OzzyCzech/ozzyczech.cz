@@ -14,7 +14,7 @@ Specifically, it copies:
 * The `npm` packages from `/usr/local/lib/node_modules/`
 
 
-```Dockerfile
+```dockerfile
 FROM node:current-slim as node
 FROM debian:bookworm-slim
 
