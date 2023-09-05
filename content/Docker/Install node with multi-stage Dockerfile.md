@@ -27,9 +27,7 @@ COPY --from=node /opt/yarn-v*/bin/* /usr/local/bin/
 COPY --from=node /opt/yarn-v*/lib/* /usr/local/lib/
 # Link npm and yarn
 RUN ln -vs /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
-    && ln -vs /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx \
-	&& ln -vs /opt/yarn/bin/yarn /usr/local/bin/yarn \
-	&& ln -vs /opt/yarn/bin/yarnpkg /usr/local/bin/yarnpkg
+    && ln -vs /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
 
 # install whatever you need e.g. PHP
 
