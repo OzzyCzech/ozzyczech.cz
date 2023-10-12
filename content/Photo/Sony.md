@@ -8,7 +8,9 @@
 
 ## Best zoom lenses
 
-- [Sony FE 16–35mm F2,8 GM II](https://www.sony.cz/electronics/objektivy-s-bajonetem-e/sel1635gm2) or [FE PZ 16-35mm F4 G](https://www.sony.cz/lenses/products/selp1635g)
+- [Sony FE 16–35mm F2,8 GM II](https://www.sony.cz/electronics/objektivy-s-bajonetem-e/sel1635gm2)
+- [FE PZ 16-35mm F4 G](https://www.sony.cz/lenses/products/selp1635g)
+- [Sigma 16-28 mm f/2,8 DG DN]()
 - [Sony FE 24-105mm F4 G OSS](https://www.sony.cz/electronics/fotoaparaty-objektivy/sel24105g)
 
 ## Best compact lenses
