@@ -18,6 +18,7 @@
 - [Sony FE 24mm F2.8 G](https://www.sony.cz/lenses/products/sel24f28g)
 - [Sony FE 40mm F2.5 G](https://www.sony.cz/lenses/products/sel40f25g)
 - [Sony FE 50mm F2.5 G](https://www.sony.cz/lenses/products/sel50f25g)
+- [Tamron 20-40 mm f/2,8 Di III VXD pro Sony FE](https://www.tamron.eu/p/af6e65ec-cc38-4d6a-8098-1aff349fa997/20-40mm-f28-di-iii-vxd)
 
 ## Best prime lenses
 
