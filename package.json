@@ -14,10 +14,10 @@
   "type": "module",
   "dependencies": {
     "@sindresorhus/slugify": "^2.2.1",
-    "@sphido/core": "^2.0.20",
-    "@sphido/frontmatter": "^2.0.9",
-    "@sphido/hashtags": "^2.0.20",
-    "@sphido/sitemap": "^2.0.17",
+    "@sphido/core": "^2.0.22",
+    "@sphido/frontmatter": "^2.0.10",
+    "@sphido/hashtags": "^2.0.21",
+    "@sphido/sitemap": "^2.0.18",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/typography": "^0.5.10",
@@ -31,7 +31,7 @@
     "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1",
     "tailwind-debug": "^1.0.2",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.3.5",
     "unist-util-visit": "^5.0.0"
   }
 }

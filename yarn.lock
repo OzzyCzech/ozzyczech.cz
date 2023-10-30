@@ -95,29 +95,29 @@
   dependencies:
     escape-string-regexp "^5.0.0"
 
-"@sphido/core@^2.0.20":
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-2.0.20.tgz#cf349d2069f25c08478a9c59c16233ad9746cbff"
-  integrity sha512-G8HhvkD0xdoPVQYfSvuUsZTBaez6vExwLHa5q862oKJVzSkVLFU7Z2/QSbr5um9IDc50st7qVPy6W1QZuBaDJw==
+"@sphido/core@^2.0.22":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@sphido/core/-/core-2.0.22.tgz#92a0c21b30b55f7e8ac8a61f42070bae901e9b53"
+  integrity sha512-Y1LH7q94aTZp07LUIqlVRBJ/pfMjXe7pX75Vrl7eDZQNhZJViblRmgL91WFHZubI1Dh9Iq9aXo75Jw0icc9acg==
 
-"@sphido/frontmatter@^2.0.9":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-2.0.9.tgz#073051b1bd1f5593e2859a247c47209d00b58e9d"
-  integrity sha512-t/4zUG4+IJVAku1qYL6Q2Nm7MzIIBqYjIwfHAYJAlQ5ja2YA698Y8dStphGGM+KO/DW4lGzlO6yLP2JpcgvcWA==
+"@sphido/frontmatter@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@sphido/frontmatter/-/frontmatter-2.0.10.tgz#d09183df25191a847c0e6c7f6f1aeabdb6fff813"
+  integrity sha512-onGG8Nlb6aohm5NZlyRc7L9Ypnj9ZcpJIx5VvWzDogc1GOVvufdj3miu2upey+DOwL4g5FipILVkeCTsF7sUDQ==
   dependencies:
     js-yaml "^4.1.0"
 
-"@sphido/hashtags@^2.0.20":
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/@sphido/hashtags/-/hashtags-2.0.20.tgz#92d60cdab340c827bf4a98addcb0d7ff43518e3c"
-  integrity sha512-tXwRe4RpzNKHsSX4mng5/vQBQLvp4CRK4sS+2iRGfMa23A/d72ejemg+cS2zWrqc8LjE2J054A4/Ou9TuGLlDg==
+"@sphido/hashtags@^2.0.21":
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/@sphido/hashtags/-/hashtags-2.0.21.tgz#43d487507fc433950a7342c18776749d509c1ef9"
+  integrity sha512-r++zs2Ch8z7RxgBDdCne9JiheNuvZd64bOx/b6rlIgHDpaa2F7EKIBbom3VfKza05HZ/QC1FmRzQu/z8pTxrNw==
   dependencies:
     "@sindresorhus/slugify" "^2.2.1"
 
-"@sphido/sitemap@^2.0.17":
-  version "2.0.17"
-  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-2.0.17.tgz#ef1cadb6017510d2ae533dd993829b7424227b5e"
-  integrity sha512-9AV48+Xb2WRShojP/u446Mpg+NLhRcnfDa5XcSYXdLbcFDTkdBKaxOMTIgK954AjlTZhnuwZAWs3i297EtPwzw==
+"@sphido/sitemap@^2.0.18":
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/@sphido/sitemap/-/sitemap-2.0.18.tgz#fb222e147a79934e2a1565259ab57ee7a53b75ac"
+  integrity sha512-UndAonLsP5uUBTITACjLROwYsHE55x6oB1+aMdxxG5lEEDLpY9wtdPv8XDST3LgQl57vFMyalIpJhmdyzfIa2g==
 
 "@szmarczak/http-timer@^5.0.1":
   version "5.0.1"
@@ -623,7 +623,7 @@ fast-deep-equal@^3.1.1:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-fast-glob@^3.2.12, fast-glob@^3.3.0:
+fast-glob@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.3.0.tgz#7c40cb491e1e2ed5664749e87bfb516dbe8727c0"
   integrity sha512-ChDuvbOypPuNjO8yIDf36x7BlZX1smcUMTTcyoIjycexOxd6DFsKsg21qVBzEmr3G7fUKIRy2/psii+CIUt7FA==
@@ -977,10 +977,10 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-jiti@^1.18.2:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.19.1.tgz#fa99e4b76a23053e0e7cde098efe1704a14c16f1"
-  integrity sha512-oVhqoRDaBXf7sjkll95LHVS6Myyyb1zaunVwk4Z0+WPSW4gjS0pl01zYKHScTuyEhQsFxV5L4DR5r+YqSyqyyg==
+jiti@^1.19.1:
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.20.0.tgz#2d823b5852ee8963585c8dd8b7992ffc1ae83b42"
+  integrity sha512-3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==
 
 js-yaml@^4.1.0:
   version "4.1.0"
@@ -2075,20 +2075,20 @@ tailwind-debug@^1.0.2:
   resolved "https://registry.yarnpkg.com/tailwind-debug/-/tailwind-debug-1.0.2.tgz#3049c71eae8e9eb67b60b3d274c6690b0a437e65"
   integrity sha512-vcQOJAR19kASfvYGw6QBGo24mInTyVi3UF56rl55QeG+nYjZhgYNmlU/ciP4/q2zg7DzqpU8n7pfQQw5sSTH3w==
 
-tailwindcss@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.3.tgz#90da807393a2859189e48e9e7000e6880a736daf"
-  integrity sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==
+tailwindcss@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.5.tgz#22a59e2fbe0ecb6660809d9cc5f3976b077be3b8"
+  integrity sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==
   dependencies:
     "@alloc/quick-lru" "^5.2.0"
     arg "^5.0.2"
     chokidar "^3.5.3"
     didyoumean "^1.2.2"
     dlv "^1.1.3"
-    fast-glob "^3.2.12"
+    fast-glob "^3.3.0"
     glob-parent "^6.0.2"
     is-glob "^4.0.3"
-    jiti "^1.18.2"
+    jiti "^1.19.1"
     lilconfig "^2.1.0"
     micromatch "^4.0.5"
     normalize-path "^3.0.0"
