@@ -32,6 +32,7 @@
 
 ## Tools
 
+* [Aerolite](https://aerolite.dev/applite/index.html) -  third party applications manager
 * [Sensei](https://cindori.com/sensei) - ultimate app for optimizing your Mac
 * [ImageOptim](https://imageoptim.com/mac) - open source image optimization tool
 * [Vanilla](https://matthewpalmer.net/vanilla/) - Hide menu bar icons on your Mac
