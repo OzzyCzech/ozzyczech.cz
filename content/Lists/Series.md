@@ -2,6 +2,7 @@
 
 ## 2023
 
+* Wisting
 * Ahsoka
 * Modern Family
 * What we do in the shadows
