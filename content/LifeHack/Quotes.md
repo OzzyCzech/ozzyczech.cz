@@ -1,5 +1,7 @@
 # Quotes
 
+> Život je krátký, smějte se dokud máte zuby!
+
 > 20 years from now, the only people who will remember that you worked late are your kids
 > *Reddit*
 
@@ -21,7 +23,6 @@
 
 > Nemysli. Když myslíš, tak nemluv. Když mluvíš, tak nepiš.
 > Když píšeš, tak nepodepiš. Když podepíšeš, tak se nediv.
->
 > *Jan Werich*
 
 > Jakkoli krásnou máte strategii, měli byste se občas podívat i na její výsledky.
