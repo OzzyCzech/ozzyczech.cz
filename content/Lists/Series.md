@@ -1,5 +1,9 @@
 # Series
 
+## 2024
+
+* Blue Eye Samurai
+
 ## 2023
 
 * From
