@@ -1,5 +1,8 @@
 # Quotes
 
+> Kdo nemá mravní zásady, obvykle se zahalí do praporu, a parchanti se vždycky dovolávají čistoty své rasy.
+> *Umberto Eco*
+
 > Život je krátký, smějte se dokud máte zuby!
 
 > 20 years from now, the only people who will remember that you worked late are your kids
