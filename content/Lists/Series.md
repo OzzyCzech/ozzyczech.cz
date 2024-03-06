@@ -3,6 +3,9 @@
 ## 2024
 
 * Blue Eye Samurai
+* Fargo
+* True Detective: Night Country
+* The Completely Made-Up Adventures of Dick Turpin
 
 ## 2023
 
