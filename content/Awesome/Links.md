@@ -25,6 +25,13 @@
 - [LinkedIn](https://www.linkedin.com/post-inspector/inspect/)
 - [Twitter](https://cards-dev.twitter.com/validator)
 
+### SEO Tools
+
+- [Google Search Console](https://search.google.com/search-console)
+- [Google PageSpeed](https://pagespeed.web.dev/)
+- [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/)
+- [Meta Explorer](https://www.metaexplorer.co/)
+
 ### HTTPS Tools
 
 - [HTTPS certificates](https://transparencyreport.google.com/https/certificates)
