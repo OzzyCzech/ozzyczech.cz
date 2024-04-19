@@ -28,7 +28,7 @@ Then you have to put credentials into your sSMTP configuration file.
 
 Let's create a `ssmtp.conf` file with the following content:
 
-```conf
+```text
 root=root@example.com
 mailhub=email-smtp.eu-central-1.amazonaws.com:465
 AuthUser=[ Amazon SES SMTP username ]
