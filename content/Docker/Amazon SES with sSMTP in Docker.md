@@ -45,7 +45,7 @@ Last line in `ssmtp.conf` config need to be keep empty! Let's test our config in
 
 To add sSMTP to your Docker container, you can use the following `Dockerfile`:
 
-```Dockerfile
+```dockerfile
 FROM alpine:latest
 
 RUN apk --update --no-cache add ssmtp mailx
