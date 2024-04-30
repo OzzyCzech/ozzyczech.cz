@@ -32,7 +32,6 @@ export function getDocument({title, aside, main} = {}) {
 			</a>
 			<a href="https://github.com/OzzyCzech/" target="_blank" class="hidden md:inline hover:text-sky-500 hover:underline transition">GitHub</a>
 			<a href="https://meta.stackoverflow.com/users/355316/" target="_blank" class="hidden md:inline hover:text-sky-500 hover:underline transition">StackOverflow</a>
-			<a href="https://www.twitter.com/OzzyCzech" target="_blank" class="hidden md:inline hover:text-sky-500 hover:underline transition">Twitter</a>
 		</nav>
 
     <div class="flex gap-6 items-center">
