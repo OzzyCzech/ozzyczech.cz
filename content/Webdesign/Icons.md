@@ -29,8 +29,8 @@
 - [Teeny icons](https://teenyicons.com/) - small 1x icons set
 - [Majest icons](https://www.majesticons.com/) - Over 720 icons under MIT license
 - [Feather](https://feathericons.com/) - simple and beautiful icons set
-- [Simple Icons](https://simpleicons.org/) - 2441 Free SVG icons for popular brands
-- [iconsax](https://iconsax.io/) - **Vuesax** framework icons
+- [Simple Icons](https://simpleicons.org/) - 2441 Free SVG icons for popular brands
+- [iconsax](https://iconsax.io/) - **Vuesax** framework icons
 - [ionicons](https://ionic.io/ionicons/) - hand crafter open source icons library
 - [Tabler Icons](https://tablericons.com/) - 1424 Open source free SVG icons for you to use in your web projects.
 - [Tabler Icons.io](https://tabler-icons.io) - Over 4000 pixel-perfect icons for web design and development
@@ -62,4 +62,5 @@
 ## Favicons
 
 - http://favicongrabber.com - free and opensource favicon grabber
+- [RealFaviconGenerator](https://realfavicongenerator.net/) - Favicon Generator. For real usage.
 - https://www.google.com/s2/favicons?domain=ozzyczech.cz - Google favicon service from Chrome
