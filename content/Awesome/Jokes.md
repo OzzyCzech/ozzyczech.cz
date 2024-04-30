@@ -9,9 +9,9 @@
 [workchronicles.com](https://workchronicles.com/hobbies/)
 
 ## Perfect fit
-![Perfect Fit](https://www.monkeyuser.com/assets/images/2021/214-perfect-fit.png "Nothing can go wrong")
+![Perfect Fit](https://www.monkeyuser.com/2021/perfect-fit/214-perfect-fit.png "Nothing can go wrong")
 [monkeyuser.com](https://www.monkeyuser.com/2021/perfect-fit/)
 
 ## Introduction
-![Introduction](https://www.monkeyuser.com/assets/images/2021/213-introduction.png "We also have deadline waiting")
+![Introduction](https://www.monkeyuser.com/2021/introduction/213-introduction.png "We also have deadline waiting")
 [monkeyuser.com](https://www.monkeyuser.com/2021/introduction/)
