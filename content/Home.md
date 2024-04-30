@@ -1,7 +1,7 @@
 # Welcome to my notes
 
 The website is a public presentation of my notes collected over time. It's open sourced, you
-can [found source](https://github.com/OzzyCzech/ozzyczech.cz) on #github - all content is maintained
+can [found source](https://github.com/OzzyCzech/ozzyczech.cz) on #GitHub - all content is maintained
 by [Roman Ožana](https://ozana.cz).
 
 ## What's about?
