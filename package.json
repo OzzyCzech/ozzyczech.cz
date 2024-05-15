@@ -9,18 +9,18 @@
   },
   "devDependencies": {
     "onchange": "^7.1.0",
-    "serve": "^14.2.1"
+    "serve": "^14.2.3"
   },
   "type": "module",
   "dependencies": {
     "@sindresorhus/slugify": "^2.2.1",
-    "@sphido/core": "^2.0.26",
-    "@sphido/frontmatter": "^2.0.14",
-    "@sphido/hashtags": "^2.0.25",
-    "@sphido/sitemap": "^2.0.22",
+    "@sphido/core": "^2.0.29",
+    "@sphido/frontmatter": "^2.0.17",
+    "@sphido/hashtags": "^2.0.28",
+    "@sphido/sitemap": "^2.0.25",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.13",
     "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
     "globby": "^14.0.1",
@@ -30,8 +30,8 @@
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1",
-    "tailwind-debug": "^1.0.2",
-    "tailwindcss": "^3.4.1",
+    "tailwind-debug": "^1.0.3",
+    "tailwindcss": "^3.4.3",
     "unist-util-visit": "^5.0.0"
   }
 }
