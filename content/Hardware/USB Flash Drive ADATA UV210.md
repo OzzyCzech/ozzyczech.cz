@@ -1,0 +1,5 @@
+# USB Flash ADATA UV210 32GB
+
+Super cheap USB flash drive from ADATA. The write speed is about 13 MB/s and the read speed is slightly below 30 MB/s!
+
+![USB Flash ADATA UV210 32GB](USB_Flash_ADATA_UV210_32GB.png)
