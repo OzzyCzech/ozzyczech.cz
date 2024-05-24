@@ -1,36 +1,21 @@
 import {visit} from 'unist-util-visit';
-import {basename, dirname, join} from 'node:path';
-import slugify from '@sindresorhus/slugify';
 
 export default function links(options = {}) {
 
-  return tree => {
-    visit(tree, 'link', (node) => {
+	return tree => {
+		visit(tree, 'link', (node) => {
+			// add noopener and noreferrer to external links
+			if (URL.canParse(node.url)) {
+				const link = new URL(node.url);
+				if (link.hostname !== 'ozzyczech.cz') {
+					const hProperties = node.data?.hProperties ?? {};
 
-      if (
-        !node.url.startsWith('http') &&
-        !node.url.startsWith('/')
-      ) {
-        node.url = `/${node.url}`;
-      }
+					hProperties.target = '_blank';
+					hProperties.rel = ['noopener', 'noreferrer'];
 
-      // replace .md links with .html
-      if (!node.url.startsWith('http') && node.url.endsWith('.md')) {
-        node.url = join(dirname(node.url), `${slugify(basename(node.url, '.md'))}.html`);
-      }
-
-      // external links
-      if (!node.url.includes('ozzyczech.cz') && !node.url.startsWith('/')) {
-
-        const hProperties = node.data?.hProperties ?? {};
-
-        // add noopener and noreferrer to external links
-        hProperties.target = '_blank';
-        hProperties.rel = ['noopener', 'noreferrer'];
-
-        node.data = {hProperties};
-      }
-
-    });
-  };
+					node.data = {hProperties};
+				}
+			}
+		});
+	};
 }

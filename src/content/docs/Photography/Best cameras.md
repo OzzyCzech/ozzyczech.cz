@@ -1,0 +1,26 @@
+---
+title: Best cameras
+---
+
+## Action cameras
+
+- [GoPro HERO11 Black](https://gopro.com/en/cz/shop/cameras/hero11-black/CHDHX-111-master.html)
+- [DJI Osmo Action 3](https://www.dji.com/cz/osmo-action-3)
+- [Insta360 X3](https://www.insta360.com/product/insta360-x3)
+- [DJI Osmo Pocket 2](https://www.dji.com/cz/pocket-2)
+
+## Fujifilm
+
+- [Fujifilm X-T5](https://fujifilm-x.com/global/products/cameras/x-t5/)
+- [Fujifilm X-H2](https://fujifilm-x.com/global/products/cameras/x-h2/)
+- [Fujifilm X-Pro3](https://fujifilm-x.com/en-us/products/cameras/x-pro3/)
+- [Fujifilm X100V](https://fujifilm-x.com/en-us/products/cameras/x100v/)
+
+Sony FE 35mm f/1.4 GM
+
+## Others
+
+- [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
+- Leica Q2 [Black](https://leica-camera.com/en-SG/photography/cameras/q/q2-black), [Reporter](https://leica-camera.com/en-SG/photography/cameras/q/q2-reporter) or [Monochrome](https://leica-camera.com/en-SG/photography/cameras/q/q2-monochrom)
+
+#Sony #Fujifilm #GoPro #DJI #Insta360
