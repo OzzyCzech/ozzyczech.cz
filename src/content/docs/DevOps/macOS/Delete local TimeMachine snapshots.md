@@ -22,5 +22,3 @@ You can lists all snaphosts and deletes all of them in a loop:
 ```shell
 for d in $(tmutil listlocalsnapshotdates | grep "-"); do sudo tmutil deletelocalsnapshots $d; done
 ```
-
-#macOS #TimeMachine
