@@ -1,5 +1,5 @@
 ---
-title: RAW Editors
+title: Photo Editors
 ---
 
 - [Capture One](https://www.captureone.com/en/)
