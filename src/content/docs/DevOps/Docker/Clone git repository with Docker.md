@@ -1,5 +1,7 @@
 ---
 title: Clone git repository with Docker
+sidebar:
+  label: Clone git with Docker
 ---
 There are many ways to use Git with Docker, but this guide focuses
 on using **SSH Deploy keys** to clone a repository from GitLab or GitHub.
