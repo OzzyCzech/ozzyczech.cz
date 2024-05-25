@@ -1,5 +1,5 @@
 ---
-title: The best Fujifilm X-mount lenses
+title: Fujifilm X-mount lenses
 ---
 
 ## Best standard zoom lenses
@@ -32,5 +32,3 @@ Best wide angel lenses are:
 - [Sigma X Mount lenses](https://www.sigma-global.com/en/magazine/m_series/others-lenses/fujifilm-x-mount/sigma_xmount_lenses/)
 - [Viltrox X Mount Lenses](https://viltroxstore.com/collections/all/x-mount)
 - [Fujifilm X Mount Lenses](https://fujifilm-x.com/global/products/lenses/)
-
-#Fujifilm
