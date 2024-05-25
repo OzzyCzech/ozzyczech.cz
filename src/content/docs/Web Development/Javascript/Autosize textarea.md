@@ -2,7 +2,7 @@
 title: Automatically resize a text area using web components
 description: Automatically resize a text area using web components, autosize library, and custom HTML elements
 sidebar:
-  label: Textarea autosize
+  label: Autosize textarea
 ---
 
 In this blog post, we’ll explore how to create a custom HTML element that automatically resizes a textarea as the

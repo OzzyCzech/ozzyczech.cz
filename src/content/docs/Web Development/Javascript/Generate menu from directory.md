@@ -1,5 +1,7 @@
 ---
-title: Creating nested menu from directory with Nodejs
+title: Creating nested menu from directory with Node.js
+sidebar:
+  label: Generate menu from directory
 ---
 
 I would like to create a nested menu and show all files and directories (except hidden folders) in the selected directory with#nodejs 

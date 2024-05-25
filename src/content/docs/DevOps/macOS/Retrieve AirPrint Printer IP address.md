@@ -1,5 +1,7 @@
 ---
-title: Retrieve AirPrint Printer IP address
+title: Retrieve IP address of AirPrint printer
+sidebar:
+  label: IP address of printer
 ---
 
 
@@ -11,7 +13,7 @@ and show their URIs, show their current status, or run commands.
 ippfind
 ```
 
-Then you get local adress of printer (Internet Printing Protocol (IPP, [RFC 2911](https://tools.ietf.org/html/rfc2911))):
+Then you get local address of printer (Internet Printing Protocol (IPP, [RFC 2911](https://tools.ietf.org/html/rfc2911))):
 
 ```
 ipp://3036B5000000.local:XXX/ipp/print
@@ -32,5 +34,3 @@ PING 3036B5000000.local (192.168.0.108): 56 data bytes
 ```
 
 our printer has `192.168.0.108`
-
-#macOS #AirPrint

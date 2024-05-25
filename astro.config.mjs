@@ -39,7 +39,7 @@ export default defineConfig({
 						{label: 'Tailwind', autogenerate: {directory: 'Web Development/Tailwind'}, collapsed: true},
 						{label: 'CSS', autogenerate: {directory: 'Web Development/CSS'}, collapsed: true},
 						{label: 'PHP', collapsed: true, autogenerate: {directory: 'Web Development/PHP'}},
-						{label: 'Wordpress', collapsed: true, autogenerate: {directory: 'Web Development/Wordpress'}},
+						{label: 'WordPress', collapsed: true, autogenerate: {directory: 'Web Development/WordPress'}},
 						{label: 'Services', collapsed: true, autogenerate: {directory: 'Web Development/Services'}},
 						{label: 'Tools', collapsed: true, autogenerate: {directory: 'Web Development/Tools'}},
 					]
@@ -47,10 +47,10 @@ export default defineConfig({
 				{
 					label: 'DevOps',
 					items: [
-						{label: 'macOS', autogenerate: {directory: 'OS/macOS'}, collapsed: true},
-						{label: 'Linux', autogenerate: {directory: 'OS/Linux'}, collapsed: true},
-						{label: 'Docker', collapsed: true, autogenerate: {directory: 'OS/Docker'}},
-						{label: 'Command line', collapsed: true, autogenerate: {directory: 'OS/Command line'}},
+						{label: 'macOS', autogenerate: {directory: 'DevOps/macOS'}, collapsed: true},
+						{label: 'Linux', autogenerate: {directory: 'DevOps/Linux'}, collapsed: true},
+						{label: 'Docker', collapsed: true, autogenerate: {directory: 'DevOps/Docker'}},
+						{label: 'Command line', collapsed: true, autogenerate: {directory: 'DevOps/Command line'}},
 					]
 				},
 				{label: 'LifeHack', collapsed: true, autogenerate: {directory: 'LifeHack'}},

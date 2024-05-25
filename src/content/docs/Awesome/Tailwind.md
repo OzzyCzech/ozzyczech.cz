@@ -1,5 +1,5 @@
 ---
-title: Awesome Tailwind
+title: Tailwind
 ---
 
 ## Components

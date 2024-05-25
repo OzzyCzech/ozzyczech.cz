@@ -1,8 +1,6 @@
 ---
-title: Custom post type
+title: Add custom post type
 ---
-
-# Add custom post type
 
 Default archive shows only `post` type if you need show all post types just add follow code to `function.php`
 

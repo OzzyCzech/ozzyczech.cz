@@ -1,6 +1,25 @@
 ---
-title: Web frameworks
+title: Frameworks
 ---
+
+## Svelte
+
+A new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.
+
+[Svelte](https://github.com/sveltejs/svelte)
+
+## React
+
+A JavaScript library for building user interfaces.
+
+[React](https://reactjs.org/) [Preact](https://preactjs.com/)
+
+
+## Vue
+
+The Progressive JavaScript Framework.
+
+[Vue](https://vuejs.org/) [Nuxt.js](https://nuxtjs.org/)
 
 ## Express.js
 

@@ -1,7 +1,6 @@
 ---
 title: Register widgets from PHP
 ---
-# Register widgets from PHP
 
 PHP driven registration of the Widgets in #WordPress can be quite confusing. There is my way how to handle it:
 
@@ -81,5 +80,3 @@ add_action(
  }
 );
 ```
-
-https://gist.github.com/4663766/

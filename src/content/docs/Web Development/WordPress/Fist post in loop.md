@@ -2,8 +2,6 @@
 title: Fist post in loop
 ---
 
-# Fist post in loop
-
 ```php
 add_filter(
     'post_class', 
@@ -15,5 +13,3 @@ add_filter(
     }
 );
 ```
-
-#WordPress 

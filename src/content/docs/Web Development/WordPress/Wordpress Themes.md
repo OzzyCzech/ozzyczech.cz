@@ -2,8 +2,8 @@
 title: Wordpress Themes
 ---
 
-## Wordpress Themes
+## WordPress Themes
 
-- [Wordpress](https://wordpress.org/themes/)
+- [WordPress](https://wordpress.org/themes/)
 - [ThemeTrust](http://themetrust.com/themes/)
 - [ThemeForest](https://themeforest.net/category/wordpress)
