@@ -22,6 +22,4 @@ fi
 ```
 
 Then change the access mode of a file `chmod +x flash`. To unmount a clean flash drive just run
-`./flash Flashka` (Flashka is name od drive).
-
-#macOS #bash 
+`./flash Flashka` (Flashka is name od drive). 
