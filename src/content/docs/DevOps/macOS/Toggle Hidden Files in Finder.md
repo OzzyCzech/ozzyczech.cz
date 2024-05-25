@@ -16,5 +16,3 @@ killall Finder
 ```
 
 Save application. From now can Tooggle
-
-#macOS
