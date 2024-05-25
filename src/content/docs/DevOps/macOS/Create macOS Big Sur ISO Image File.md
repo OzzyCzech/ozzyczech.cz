@@ -45,5 +45,3 @@ sudo rm -fv /tmp/BigSur.dmg
 ```
 
 [How to create a bootable installer for macOS](https://support.apple.com/en-us/HT201372)
-
-#macOS 
