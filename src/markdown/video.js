@@ -1,6 +1,6 @@
 import {visit} from 'unist-util-visit';
 
-export default function video(options = {}) {
+export default function video() {
 
 	return tree => {
 		visit(tree, 'link', (node) => {

@@ -1,4 +1,4 @@
-import {defineConfig} from 'astro/config';
+import {defineConfig, passthroughImageService} from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // Markdown plugins
@@ -10,6 +10,9 @@ export default defineConfig({
 	site: 'https://ozzyczech.cz',
 	markdown: {
 		remarkPlugins: [links, video]
+	},
+	image: {
+		service: passthroughImageService(),
 	},
 	integrations: [
 		starlight({

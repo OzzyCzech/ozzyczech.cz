@@ -1,6 +1,6 @@
 import {visit} from 'unist-util-visit';
 
-export default function links(options = {}) {
+export default function links() {
 
 	return tree => {
 		visit(tree, 'link', (node) => {
