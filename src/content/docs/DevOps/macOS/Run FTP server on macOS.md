@@ -1,5 +1,5 @@
 ---
-title: Run FTP server on Mac OS X
+title: Run FTP server on MacOS
 ---
 
 Setup everyhing: `sudo nano /etc/ftpd.conf`
@@ -24,5 +24,3 @@ And stop again:
 ```shell
 sudo launchctl unload /System/Library/LaunchDaemons/ftp.plist
 ```
-
-#macOS
