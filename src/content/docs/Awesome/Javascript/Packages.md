@@ -22,10 +22,10 @@ title: Packages
 
 ### Searching
 
+- [Pagefind](https://pagefind.app/) - fast, client-side search for static sites
 - [FlexSearch.js](https://github.com/nextapps-de/flexsearch) - Web's fastest and most memory-flexible full-text search library with zero dependencies
 - [Fuse.js](https://fusejs.io/) - Lightweight fuzzy-search library
 - [Lunr.js](https://lunrjs.com/) - search made simple
-
 
 ### Files
 
