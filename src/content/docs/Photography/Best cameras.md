@@ -19,7 +19,6 @@ Sony FE 35mm f/1.4 GM
 
 ## Full Frame sensor size
 
-
 ## Compact size camera
 
 - [Fujifilm X100VI](https://fujifilm-x.com/en-us/products/cameras/x100vi/)
