@@ -14,6 +14,7 @@ title: Email
 
 You can create free email aliases for your domain name with https://improvmx.com/
 
+ 
 ### Email API service
 
 - [MailGun](https://www.mailgun.com/) - email API service
@@ -27,3 +28,9 @@ You can create free email aliases for your domain name with https://improvmx.com
 
 - [Sendy](https://sendy.co/) - Send newsletters, 100x cheaper with [AWS SES](https://aws.amazon.com/ses/)
 - [Substack](https://substack.com/) - Start a paid newsletter
+
+### Temporary email
+
+- [Email.ml](https://email.ml/) - Minimalist temporary Email
+- [Temp Mail](https://temp-mail.org/en/) - Temporary Email
+- [10 Minute Mail](https://10minutemail.com/) - Temporary Email
