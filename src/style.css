@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+
+
+@layer components {
+
+	blockquote {
+		@apply p-4 bg-gray-100 dark:bg-gray-800;
+	}
+
+	blockquote em {
+		@apply block text-right mt-3 text-sm text-gray-600 dark:text-gray-400;
+		@apply before:content-['»_'] after:content-['_«'];
+	}
+}
+
+@tailwind utilities;

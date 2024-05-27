@@ -1,11 +1,12 @@
 ---
 title: Quotes
+tableOfContents: false
 ---
 
 > Kdo nemá mravní zásady, obvykle se zahalí do praporu, a parchanti se vždycky dovolávají čistoty své rasy.
 > _Umberto Eco_
 
-> Život je krátký, smějte se dokud máte zuby!
+> Život je příliš krátký na to, aby se člověk trápil kvůli zbytečnostem. Proto se **směj dokud máš ještě zuby**!
 
 > 20 years from now, the only people who will remember that you worked late are your kids
 > _Reddit_
@@ -51,6 +52,7 @@ title: Quotes
 > _arabské_
 
 > Jedinou konstantou dneška je změna.
+> _Hérakleitos_
 
 > Co nezměníš ty nezmění nikdo na světě.
 

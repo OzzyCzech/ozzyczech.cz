@@ -1,5 +1,6 @@
 import {defineConfig, passthroughImageService} from 'astro/config';
 import starlight from '@astrojs/starlight';
+import tailwind from "@astrojs/tailwind";
 
 // Markdown plugins
 import links from './src/markdown/links.js';
@@ -23,7 +24,9 @@ export default defineConfig({
 				github: 'https://github.com/OzzyCzech',
 				stackOverflow: 'https://meta.stackoverflow.com/users/355316/ozzyczech'
 			},
-
+			customCss: [
+				'./src/style.css',
+			],
 			logo: {
 				src: './src/assets/roman-ozana.jpg',
 			},
@@ -42,6 +45,7 @@ export default defineConfig({
 				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware'}},
 				{label: 'Povídky', collapsed: true, autogenerate: {directory: 'Povidky'}},
 			]
-		})
+		}),
+		tailwind({applyBaseStyles: false})
 	]
 });
