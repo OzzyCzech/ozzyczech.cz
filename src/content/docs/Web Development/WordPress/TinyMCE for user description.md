@@ -1,12 +1,12 @@
 ---
-title: Use TinyMCE in user description
-sidebar:
-  label: TinyMCE for user description
+title: TinyMCE for user description
 ---
 
-The WordPress user description is plain text by default. The following #PHP code displays the WYSIWYG editor next to the user profile's author description.
+By default, the WordPress user description is plain text.
+The following PHP code adds the WYSIWYG editor TinyMCE
+to display the author description in the user profile.
 
-Just add the code to `function.php` in your template:
+Simply add the code to `function.php` in your template:
 
 ```php
 class CustomUserProfile {
