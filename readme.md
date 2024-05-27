@@ -1,6 +1,6 @@
-# Personal docs
+# Personal notes
 
-View: https://ozzyczech.cz
+Visit https://ozzyczech.cz
 
 ## Contact
 
