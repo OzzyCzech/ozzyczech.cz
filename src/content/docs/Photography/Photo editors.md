@@ -1,5 +1,5 @@
 ---
-title: Photo Editors
+title: Photo editors
 ---
 
 - [Capture One](https://www.captureone.com/en/)

@@ -1,5 +1,6 @@
 ---
 title: Kindle
+tableOfContents: false
 ---
 
 ## Send to kindle

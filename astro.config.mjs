@@ -4,13 +4,13 @@ import tailwind from "@astrojs/tailwind";
 
 // Markdown plugins
 import links from './src/markdown/links.js';
-import video from './src/markdown/video.js';
+import youtube from './src/markdown/youtube.js';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://ozzyczech.cz',
 	markdown: {
-		remarkPlugins: [links, video]
+		remarkPlugins: [links, youtube]
 	},
 	image: {
 		service: passthroughImageService(),

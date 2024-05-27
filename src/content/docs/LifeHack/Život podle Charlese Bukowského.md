@@ -1,5 +1,6 @@
 ---
 title: Život podle Charlese Bukowského
+tableOfContents: false
 ---
 
 Legendární spisovatel a zastánce nevázaného života, Charles Bukowski, má pro vás 10 rad, jak žít naplno.

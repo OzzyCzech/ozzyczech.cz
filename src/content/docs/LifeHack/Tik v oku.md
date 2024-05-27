@@ -1,5 +1,6 @@
 ---
 title: Tik v oku
+tableOfContents: false
 ---
 
 Projevuje se jemným, ale častým a intenzivním, **škubáním ve víčku oka**. Způsobuje ho nejčastěji **přepracování**,
