@@ -49,5 +49,3 @@ sudo mdfind "com_apple_backup_excludeItem = 'com.apple.backupd'"
 ```shell
 tmutil listbackups
 ```
-
-#macOS #TimeMachine 

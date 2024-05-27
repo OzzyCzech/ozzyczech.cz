@@ -63,5 +63,3 @@ caffeinate -t 18000 # 18000 seconds
 ```
 
 Or you can just use free app [KeepingYouAwake](https://keepingyouawake.app/)
-
-#macOS 

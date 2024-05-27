@@ -21,5 +21,3 @@ The `Document.currentScript` property returns the `<script>` element whose scrip
   );
 </script>
 ```
-
-#JavaScript 

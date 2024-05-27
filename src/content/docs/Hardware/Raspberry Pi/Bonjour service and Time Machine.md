@@ -161,5 +161,3 @@ avahi-browse -a | grep $(hostname)
 
 * http://www.avahi.org/
 * https://support.apple.com/bonjour
-
-#Raspberry #iot 

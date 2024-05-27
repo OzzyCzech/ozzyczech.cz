@@ -10,19 +10,13 @@ Obsidian is a powerful **knowledge base** on top of a **local folder** of plain 
 brew install obsidian
 ```
 
-![](https://ozzyczech.cz/i/obsidian.png)
-
 ## [Joplin](https://joplinapp.org/)
 
 Joplin is an open source note-taking app. Capture your thoughts and securely access them from any device.
 
-![](https://ozzyczech.cz/i/joplin.png)
-
 ## [Bear](https://bear.app/)
 
 Markdown Notes for iPhone, iPad, and Mac. Bear is a beautiful, flexible writing app for crafting notes and prose. Download from: https://bear.app/
-
-![](https://ozzyczech.cz/i/bear.png)
 
 ## [MarkText](https://github.com/marktext/marktext)
 
@@ -93,5 +87,3 @@ brew install --cask visual-studio-code
 ## [Mak](https://mak.ink/)
 
 Mak is a universal in-browser [notepad](https://inns.studio/mak) with build in Markdown support.
-
-#macOS #markdown

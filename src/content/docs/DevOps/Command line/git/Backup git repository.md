@@ -77,5 +77,3 @@ do
   git backup $repo /Volumes/Backup/git
 done;
 ```
-
-#git #bash 

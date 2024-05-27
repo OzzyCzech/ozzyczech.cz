@@ -33,5 +33,3 @@ ffmpeg -framerate 1/3 \
 ```
 
 * `-shortest` will take shorten source images or mp3 as length limit for video
-
-#ffmpeg 

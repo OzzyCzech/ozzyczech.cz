@@ -1,5 +1,5 @@
 ---
-title: Clean flash drive before unmount
+title: Clean drive before unmount
 ---
 
 How to **clean flash drive** and delete all hidden (dot) files on mac before unmount? It's simple, save follow commands as `flash`:

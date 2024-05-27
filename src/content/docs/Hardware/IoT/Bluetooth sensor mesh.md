@@ -35,5 +35,3 @@ title: Bluetooth sensor mesh
 
 * [bluetooth5 spec](https://www.bluetooth.com/specifications/%20bluetooth-core-specification/bluetooth5)
 * [Nordicsemi Bluetooth 5](https://www.nordicsemi.com/eng/Products/Bluetooth-5
-
-#iot 

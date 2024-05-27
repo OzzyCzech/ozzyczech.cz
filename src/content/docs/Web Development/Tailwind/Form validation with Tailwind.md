@@ -2,7 +2,7 @@
 title: Form validation with Tailwind
 ---
 
-#Tailwind have multiple utilities for different inputs states like `required`, `invalid`, and `disabled`. See the [pseudo-class reference](https://tailwindcss.com/docs/hover-focus-and-other-states) for a complete list of available pseudo-class modifiers.
+Tailwind have multiple utilities for different inputs states like `required`, `invalid`, and `disabled`. See the [pseudo-class reference](https://tailwindcss.com/docs/hover-focus-and-other-states) for a complete list of available pseudo-class modifiers.
 
 But what if user just loaded website and there are `required` inputs with default (empty) value? They will be immediately red and `invalid` - that's not what you expect!
 

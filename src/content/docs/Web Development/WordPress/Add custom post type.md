@@ -25,5 +25,3 @@ function ($query) {
     }
 );
 ```
-
-#WordPress 

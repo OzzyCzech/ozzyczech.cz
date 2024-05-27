@@ -37,5 +37,3 @@ or stop
 ```bash
 brew services stop mongodb-community
 ```
-
-#macOS #brew 

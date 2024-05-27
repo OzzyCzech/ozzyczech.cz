@@ -19,5 +19,3 @@ git fetch upstream
 git checkout [branch]
 git rebase upstream/[branch]
 ```
-
-#git #github 

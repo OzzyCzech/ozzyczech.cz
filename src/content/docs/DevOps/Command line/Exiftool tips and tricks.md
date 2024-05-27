@@ -108,5 +108,3 @@ Outputs a grouped collection of records as JSON in a directory:
 ```shell
 exiftool -json -g /path > collectionprofile.json
 ```
-
-#bash 

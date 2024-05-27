@@ -99,5 +99,3 @@ You can decide where will be break by including `&#xa;` HTML Encoded **Line Feed
 ```
 
 https://play.tailwindcss.com/ulaNoCcYwu
-
-#Tailwind #CSS
