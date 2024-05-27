@@ -22,5 +22,3 @@ title: Tailwind
 
 - [Color generator](https://uicolors.app/create)
 - [Colors Palette](https://tailwindcolor.com/)
-
-#Tailwind

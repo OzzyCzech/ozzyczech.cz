@@ -1,6 +1,9 @@
 ---
-title: Build with buildx
+title: Build docker containers with buildx
+sidebar:
+  label: Build with buildx
 ---
+
 [buildx](https://github.com/docker/buildx) is a CLI tool that provides a user interface for working with builds. Buildx is a drop-in
 replacement for the legacy `build` client used in earlier versions of Docker Engine and
 Docker Desktop. In newer versions of Docker Desktop and Docker Engine, you’re using Buildx

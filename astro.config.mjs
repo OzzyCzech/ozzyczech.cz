@@ -33,29 +33,9 @@ export default defineConfig({
 			},
 			sidebar: [
 				{label: 'Home', link: '/'},
-				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome'}},
-				{
-					label: 'Web Development',
-					items: [
-						{label: 'Assets', autogenerate: {directory: 'Web Development/Assets'}, collapsed: true},
-						{label: 'Javascript', autogenerate: {directory: 'Web Development/Javascript'}, collapsed: true},
-						{label: 'Tailwind', autogenerate: {directory: 'Web Development/Tailwind'}, collapsed: true},
-						{label: 'CSS', autogenerate: {directory: 'Web Development/CSS'}, collapsed: true},
-						{label: 'PHP', collapsed: true, autogenerate: {directory: 'Web Development/PHP'}},
-						{label: 'WordPress', collapsed: true, autogenerate: {directory: 'Web Development/WordPress'}},
-						{label: 'Services', collapsed: true, autogenerate: {directory: 'Web Development/Services'}},
-						{label: 'Tools', collapsed: true, autogenerate: {directory: 'Web Development/Tools'}},
-					]
-				},
-				{
-					label: 'DevOps',
-					items: [
-						{label: 'macOS', autogenerate: {directory: 'DevOps/macOS'}, collapsed: true},
-						{label: 'Linux', autogenerate: {directory: 'DevOps/Linux'}, collapsed: true},
-						{label: 'Docker', collapsed: true, autogenerate: {directory: 'DevOps/Docker'}},
-						{label: 'Command line', collapsed: true, autogenerate: {directory: 'DevOps/Command line'}},
-					]
-				},
+				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
+				{label: 'Web Development', collapsed: false, autogenerate: {directory: 'Web Development', collapsed: true}},
+				{label: 'DevOps', collapsed: false, autogenerate: {directory: 'DevOps', collapsed: true}},
 				{label: 'LifeHack', collapsed: true, autogenerate: {directory: 'LifeHack'}},
 				{label: 'Photography', collapsed: true, autogenerate: {directory: 'Photography'}},
 				{label: 'Security', collapsed: true, autogenerate: {directory: 'Security'}},

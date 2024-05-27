@@ -1,8 +1,6 @@
 ---
-title: Databases
+title: List of databases
 ---
-
-### Amazon DynamoDB
 
 ### MongoDB
 

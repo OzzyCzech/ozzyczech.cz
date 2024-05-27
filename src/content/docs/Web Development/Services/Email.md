@@ -2,9 +2,9 @@
 title: Email
 ---
 
-### Hosting
+### Email hosting
 
-* [iCloud+](https://www.apple.com/cz/icloud/)
+* [iCloud+](https://www.apple.com/cz/icloud/) - email hosting from Apple
 * [Fastmail](https://www.fastmail.com/) - email hosting from $3/month
 * [Namecheap](https://www.namecheap.com/hosting/email/) - email hosting from $10/year
 * [Hostinger](https://www.hostinger.com/email-hosting) - email hosting from $0.99/month
@@ -16,9 +16,14 @@ You can create free email aliases for your domain name with https://improvmx.com
 
 ### Email API service
 
-- [MailGun](https://www.mailgun.com/)
-- [Postmark app](https://postmarkapp.com/)
-- [AWS SES](https://aws.amazon.com/ses/)
-- [Send Grid](https://sendgrid.com/)
-- [ManDrill](http://www.mandrill.com/)
-- [Resend](https://resend.com/)
+- [MailGun](https://www.mailgun.com/) - email API service
+- [Postmark app](https://postmarkapp.com/) - transactional email service
+- [AWS SES](https://aws.amazon.com/ses/) - Amazon Simple Email Service
+- [Send Grid](https://sendgrid.com/) - email API service
+- [ManDrill](http://www.mandrill.com/) - transactional email service
+- [Resend](https://resend.com/) - Email API for developers
+
+### Newsletter services
+
+- [Sendy](https://sendy.co/) - Send newsletters, 100x cheaper with [AWS SES](https://aws.amazon.com/ses/)
+- [Substack](https://substack.com/) - Start a paid newsletter

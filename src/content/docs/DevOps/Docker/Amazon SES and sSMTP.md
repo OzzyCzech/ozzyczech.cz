@@ -1,5 +1,7 @@
 ---
-title: Amazon SES with sSMTP in Docker
+title: How to build a Docker image with sSMTP and Amazon SES
+sidebar:
+   label: Amazon SES and sSMTP
 ---
 ## What is sSMTP?
 

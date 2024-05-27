@@ -1,5 +1,7 @@
 ---
 title: Packages
+sidebar:
+  order: 1
 ---
 
 ### UI

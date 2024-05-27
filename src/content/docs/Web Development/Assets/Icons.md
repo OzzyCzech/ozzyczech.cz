@@ -43,6 +43,7 @@ title: Icons
 - [iconoir.com](https://iconoir.com/) - Your new default library
 - [Sargam icons](https://sargamicons.com/) - A Collection of 250+ Open-source Icons Devoted to Match Your Exquisite Designs.
 - [Untitled ui icons](https://untitledui.com/icons) - 1110 free icons for Figma
+- [Flagpack](https://flagpack.xyz/) - 250 open source flags
 
 ## Search engines
 

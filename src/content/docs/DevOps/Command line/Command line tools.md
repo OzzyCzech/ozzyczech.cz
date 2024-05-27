@@ -53,6 +53,16 @@ brew install sd
 dog google.com
 ```
 
+## [exa](https://the.exa.website/)
+
+`exa` is a modern replacement for `ls`.
+
+```shell
+exa -l
+```
+
+```shell
+
 ![](https://github.com/ogham/dog/raw/master/dog-screenshot.png)
 
 ```shell

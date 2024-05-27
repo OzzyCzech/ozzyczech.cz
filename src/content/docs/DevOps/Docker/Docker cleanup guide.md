@@ -1,10 +1,13 @@
 ---
-title: Docker cleanup guide
+title: How to cleanup Docker
+sidebar:
+  label: Docker cleanup guide
 ---
+
 Docker **doesn't remove unused objects** such as containers, images, volumes, and networks unless you explicitly tell it to do so.
 How To Remove them?
 
-## Removing All Unused Objects
+### Removing All Unused Objects
 
 Remove stopped containers, all dangling images, and all unused networks:
 
@@ -28,7 +31,7 @@ You can also include all unused volumes, then add `--volumes`:
 docker system prune --volumes
 ```
 
-## Docker Containers
+### Docker Containers
 
 ```shell
 docker container ls -a
@@ -133,5 +136,3 @@ docker volume rm [VOLUME NAME]
 ```shell
 docker volume prune
 ```
-
-#Docker
