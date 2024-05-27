@@ -6,14 +6,15 @@ lastUpdated: 2008-05-14
 Začal bych tím, co to vlastně schůze, porada, meeting nebo briefing je. Někteří
 je definují takto: **nedobrovolná setkání nevhodných lidí, za účelem dohody o
 něčem, co není potřeba řešit**. Četl jsem, že člověk stráví za svou pracovní
-kariéru na poradách něco kolem 6000 hodin, slouží obvykle pro výměnu informací
-v rámci organizace (firmy či podniku).
+kariéru na poradách něco kolem 6000 hodin, slouží obvykle pro výměnu informací v
+rámci organizace (firmy či podniku).
 
-Všichni to určitě znáte, ráno přijdete do práce a kolega Vám povídá:
-_Dneska je porada, nezapomeň na to!_ Doslova vidím, jak Vás tahle informace potěšila.
+Všichni to určitě znáte, ráno přijdete do práce a kolega Vám povídá: _Dneska je
+porada, nezapomeň na to!_ Doslova vidím, jak Vás tahle informace potěšila.
 
 Faktem je, že **99 procent z nás porady nebo schůze nenávidí**. Dalším faktem
-je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami se to má takto:
+je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami se to
+má takto:
 
 ### Jsou příliš drahé
 
@@ -24,10 +25,10 @@ je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami s
 
 ### Jsou obvykle delší, než je potřeba
 
-- Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se
-  Vás netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je
-  **12 minut z hodiny**, se řeší otázky, které skutečně stojí za to, aby se
-  sešlo například oněch 10 lidí a společně je řešili.
+- Troufnu si říct, že 80 % času stráveného na poradě se řeší věci, které se Vás
+  netýkají nebo Vám nejsou nijak přínosné. Zbývajících 20 procent, to je **12
+  minut z hodiny**, se řeší otázky, které skutečně stojí za to, aby se sešlo
+  například oněch 10 lidí a společně je řešili.
 
 ### Setkávání se pro setkávání
 
@@ -39,15 +40,15 @@ je, že ono zbývající 1 procento většinou vede organizaci :-). S poradami s
 
 - Na poradách je obvykle těžší říct svůj názor. Většina lidí mlčí, prostě si to
   odsedí a to podstatné probere na after party (viz níže). S neupřímností je
-  spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada - manažer
-  (šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale
+  spojena formálnost porady. Mnohem přínosnější je tzv. reverzní porada -
+  manažer (šéf) poslouchá, osatní mluví. Porada tak už není věcí manažera, ale
   odpovídají za ní všichni účastníci.
 
 ### After party po poradě
 
 - Odborně se to tuším nazývá _after meeting syndrom (AMS)_. To je doba, kterou
-  účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často probírají
-  také přínosy porady a to jak je to tam nebavilo.
+  účastníci porady stráví sdělováním si dojmů z porady. Samozřejmě často
+  probírají také přínosy porady a to jak je to tam nebavilo.
 
 ### Porady vedou k dalším poradám
 
