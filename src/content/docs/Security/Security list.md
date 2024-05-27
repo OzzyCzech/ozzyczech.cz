@@ -1,7 +1,5 @@
 ---
-title: List of secured tools
-sidebar:
-  label: Security list
+title: Security list
 ---
 
 This is list of security tools I use and would recommend to others.
@@ -33,15 +31,15 @@ Search engines that don't track you:
 
 Don't expect security search from Google 🫣
 
-## Emails
+### Emails
 
-- [Fastmail](https://www.fastmail.com/)
-- [ProtonMail](https://proton.me/mail)
-- [Tutanota](https://tutanota.com/cs/)
+- [ProtonMail](https://proton.me/mail) - Secure email with end-to-end encryption
+- [Fastmail](https://www.fastmail.com/) - Secure, private, ad-free email for your business
+- [Tutanota](https://tutanota.com/cs/) - Secure email for everybody
 
 if you need an anonymous email aliases try [SimpleLogin](https://simplelogin.io/)
 
-## Passwords
+### Password managers
 
 #### [1Passowrd](https://1password.com/)
 
