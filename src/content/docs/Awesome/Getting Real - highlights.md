@@ -1,5 +1,5 @@
 ---
-title: Gettings Real - heighlights
+title: Getting Real - highlights
 ---
 
 ## Starting
@@ -252,7 +252,7 @@ title: Gettings Real - heighlights
 > minutes — and often within a half-hour. And people love it.
 
 > You don't need a manual to use Yahoo or Google or Amazon. So why can't you
-> build a product that doesn't require a manual? Strive to build a tool that
+> build a **product that doesn't require a manual**? Strive to build a tool that
 > requires zero training.
 
 > Just because you discover a bug in your product, doesn't mean it's time to
@@ -267,15 +267,15 @@ title: Gettings Real - heighlights
 
 > **Private betas are fine, public betas are bullshit.**
 
-> Don't wait for your product to reach perfection.
+> Don't wait for your **product to reach perfection**.
 
 > Is it just me, or are we all in beta, all the time?
 
-> Sometimes it's ok to just be a pencil. You don't need to be a swiss-army
-> knife.
+> Sometimes it's ok to just be a pencil.
+> You don't need to be a swiss-army knife.
 
 > With web-based software based on the subscription model, people pay a monthly
 > fee to use the service. You don't need to keep upselling them by adding more
 > and more and more, you just need to provide an ongoing valuable service.
 
-Source: https://basecamp.com/books/Getting%20Real.pdf
+Source: https://basecamp.com/gettingreal/getting-real.pdf
