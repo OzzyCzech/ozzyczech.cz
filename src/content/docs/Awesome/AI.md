@@ -6,7 +6,7 @@ title: AI
 
 - [ChatGPT](https://chat.openai.com/) - ChatBot by OpenAI
 - [Claude](https://claude.ai/chat/) - ChatBot by Anthropic
-- [Google Gemini](https://bard.google.com/) - Google's ChatBot
+- [Gemini](https://bard.google.com/) - Google's ChatBot
 
 ## Images
 
