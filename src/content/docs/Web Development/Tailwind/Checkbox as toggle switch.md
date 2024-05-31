@@ -1,5 +1,5 @@
 ---
-title: Toggle switch
+title: Checkbox as toggle switch
 ---
 
 Learn how to create toggle switch (on/off button) from `<input type="checkbox">`.
