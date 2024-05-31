@@ -21,8 +21,8 @@ title: Analytics and monitoring
 
 ## Open source uptime monitoring
 
-- [Uptime Kuma](https://github.com/louislam/uptime-kuma)
-- [OpenStatus](https://github.com/openstatusHQ/openstatus)
+- [Uptime Kuma](https://github.com/louislam/uptime-kuma) - A fancy self-hosted monitoring tool.
+- [OpenStatus](https://github.com/openstatusHQ/openstatus) - The open-source synthetic & real user monitoring platform
 - [Upptime](https://github.com/upptime/upptime) - GitHub-powered open-source uptime monitor and status page.
 - [Cachet](https://cachethq.io/) - Open source status page system.
 
