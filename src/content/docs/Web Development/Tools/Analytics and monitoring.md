@@ -16,7 +16,6 @@ title: Analytics and monitoring
 - [UptimeRobot](https://uptimerobot.com/) - Free website uptime monitoring.
 - [StatusCake](https://www.statuscake.com/) - Website monitoring with instant alerts.
 - [OneUptime](https://oneuptime.com/) - Monitor, Observe, Debug, Resolve
-- [Pingdom](https://www.pingdom.com/) - Website monitoring service.
 - [Site24x7](https://www.site24x7.com/) - Website monitoring service.
 - [Uptime.com](https://uptime.com/) - Website monitoring service.
 
