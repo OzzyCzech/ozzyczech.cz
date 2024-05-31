@@ -13,10 +13,11 @@ title: Analytics and monitoring
 ## Uptime monitoring
 
 - [Testomato](https://www.testomato.com/) - Automated website testing and monitoring.
-- [UptimeRobot](https://uptimerobot.com/) - Free website uptime monitoring.
 - [StatusCake](https://www.statuscake.com/) - Website monitoring with instant alerts.
+- [UptimeRobot](https://uptimerobot.com/) - Free website uptime monitoring.
 - [OneUptime](https://oneuptime.com/) - Monitor, Observe, Debug, Resolve
-- [Site24x7](https://www.site24x7.com/) - Website monitoring service.
+- [Monitor.Us](http://www.monitor.us/) - Free website monitoring.
+- [Updown](https://updown.io/) - Simple and cheap website monitoring.
 - [Uptime.com](https://uptime.com/) - Website monitoring service.
 
 ## Open source uptime monitoring
