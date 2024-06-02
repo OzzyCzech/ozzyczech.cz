@@ -2,37 +2,41 @@
 title: Icons
 ---
 
-### [Heroicons](https://heroicons.com/)
+## Free icons sets
 
-![](https://ozzyczech.cz/i/heroicons.png)
+##### [SVG Repo](https://www.svgrepo.com/)
+500.000+ Open-licensed SVG Vector and Icons
 
-### [Boostrap Icons](https://icons.getbootstrap.com/)
+##### [Heroicons](https://heroicons.com/)
+Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
 
-![](https://ozzyczech.cz/i/bootstrap-icons.png)
+##### [Remix Icons](https://remixicon.com/)
+2000+ Pixel-perfect vector icons and Iconfont for your next project.
 
-### [Remix Icons](https://remixicon.com/)
+##### [Phosphor Icons](https://phosphoricons.com/)
+Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really.
 
-![](https://ozzyczech.cz/i/remix-icons.png)
+##### [Boostrap Icons](https://icons.getbootstrap.com/)
+Twitters Bootstrap icons
 
-### [Devicon](https://devicon.dev/)
+##### [SVGBox](https://svgbox.net/)
+SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
 
-![](https://ozzyczech.cz/i/devicon.png)
+##### [Material Icons](https://fonts.google.com/icons)
+Material icons are delightful, beautifully crafted symbols for common actions and items.
+https://github.com/google/material-design-icons
 
-### [Phosphor Icons](https://phosphoricons.com/)
+and many more...
 
-![](https://ozzyczech.cz/i/phosphor-icons.png)
-
-### [Twemoji](https://twemoji.twitter.com/)
-
-![](https://ozzyczech.cz/i/twemoji.png)
-
-## Open soucer and free icons sets
-
+- [Devicon](https://devicon.dev/) - Devicon is a set of icons representing programming languages, designing & development tools.
+- [Flowbite Icons](https://flowbite.com/icons/) - 521 free and open-source SVG icons
+- [Twemoji](https://github.com/twitter/twemoji) - Twitter's open source emoji
+- [iconoir.com](https://iconoir.com/) - Your new default library
 - [Teeny icons](https://teenyicons.com/) - small 1x icons set
 - [Majest icons](https://www.majesticons.com/) - Over 720 icons under MIT license
 - [Feather](https://feathericons.com/) - simple and beautiful icons set
 - [Simple Icons](https://simpleicons.org/) - 2441 Free SVG icons for popular brands
-- [iconsax](https://iconsax.io/) - **Vuesax** framework icons
+- [iconsax](https://iconsax.io/) - Vuesax framework icons
 - [ionicons](https://ionic.io/ionicons/) - hand crafter open source icons library
 - [Tabler Icons](https://tablericons.com/) - 1424 Open source free SVG icons for you to use in your web projects.
 - [Tabler Icons.io](https://tabler-icons.io) - Over 4000 pixel-perfect icons for web design and development
@@ -40,12 +44,11 @@ title: Icons
 - [SVG Porn](https://svgporn.com/) - 1000+ free SVG icons for you to use in your web projects.
 - [Feather Icons](https://feathericons.com/) - Simply beautiful open source icons
 - [glyphs.fyi](https://glyphs.fyi/) - Mightiest Icons on the Web
-- [iconoir.com](https://iconoir.com/) - Your new default library
 - [Sargam icons](https://sargamicons.com/) - A Collection of 250+ Open-source Icons Devoted to Match Your Exquisite Designs.
 - [Untitled ui icons](https://untitledui.com/icons) - 1110 free icons for Figma
 - [Flagpack](https://flagpack.xyz/) - 250 open source flags
 
-## Search engines
+## Icon Search Engines
 
 - [icones.js](https://icones.js.org/) - open source icons search
 - [The Noun Project](https://thenounproject.com/) - Icons for everything
@@ -53,14 +56,9 @@ title: Icons
 - [Flaticon](https://flaticon.com) - 3,000,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT
 - [Icons8](https://icons8.com/) - Icons, photos, music, and design tools
 
-## Fonts
+## Icon Fonts
 
-- [Google Material Icons](https://fonts.google.com/icons?selected=Material+Icons) - Material icons are delightful, beautifully crafted symbols for common actions and items.
 - [Font Awesome](https://fontawesome.com/) - The world's most popular and easiest to use icon set just got an upgrade. More icons. More styles. More Options.
-
-## Services
-
-- [SVGBox](https://svgbox.net/) - SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
 
 ## Favicons
 
