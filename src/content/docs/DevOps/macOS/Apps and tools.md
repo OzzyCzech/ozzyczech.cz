@@ -58,6 +58,12 @@ title: Apps and tools
 - [Cappuccino](https://cappuccinoapp.com/) - your inbox for news
 - [NetNewsWire](https://netnewswire.com/) - free and open source RSS reader for Mac and iOS
 
+## VPN Clients
+
+- [Viscosity](https://www.sparklabs.com/viscosity/) - OpenVPN client for Mac and Windows
+- [Shimo](https://www.shimovpn.com/) - VPN client for Mac
+- [WireGuard](https://www.wireguard.com/) - fast, modern, secure VPN tunnel
+
 ### Links
 
 * https://github.com/nikitavoloboev/my-mac-os
