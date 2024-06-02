@@ -23,8 +23,7 @@ Twitters Bootstrap icons
 SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
 
 ##### [Material Icons](https://fonts.google.com/icons)
-Material icons are delightful, beautifully crafted symbols for common actions and items.
-https://github.com/google/material-design-icons
+Material icons are delightful, beautifully crafted symbols [made by Google](https://github.com/google/material-design-icons).
 
 and many more...
 
