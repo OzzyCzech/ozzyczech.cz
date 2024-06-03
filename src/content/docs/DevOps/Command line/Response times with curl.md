@@ -2,7 +2,9 @@
 title: Response times with curl
 ---
 
-Let's create `uptime` file with follow content
+### Creating the `uptime` Script
+
+First, let's create a file named `uptime` and add the following content:
 
 ```shell
 #!/usr/bin/env bash
@@ -25,13 +27,18 @@ EOF
 curl -w "$format" -o /dev/null -s "$@"
 ```
 
-Then you can run:
+This script defines a `format` variable that contains a template for the 
+output. The `curl` command is then used to  measure the performance of
+the specified URL and display the results in the defined format.
+
+### Running the Script
 
 ```shell
-$ uptime https://www.google.com
+chmod +x uptime
+uptime https://www.google.com
 ```
 
-And you get following results:
+You should see output similar to the following:
 
 ```text
 ---------------------------------------------
@@ -47,8 +54,19 @@ Uptime of https://www.google.com is
           time_total:  0.136121s
 ```
 
+Explanation of Output:
 
-Format can be also loded from file
+- `time_namelookup`: The time it took to resolve the DNS name.
+- `time_connect`: The time it took to establish the connection.
+- `time_appconnect`: The time it took to complete the SSL/TLS handshake (if applicable).
+- `time_pretransfer`: The time from the start until just before the file transfer begins.
+- `time_redirect`: The time spent on redirections (if any).
+- `time_starttransfer`: The time from the start until the first byte is received.
+- `time_total`: The total time for the entire request.
+
+### Loading Format from a File
+
+Alternatively, you can store the format in a separate file (e.g., `format.txt`) and use it with `curl`:
 
 ```shell
 curl -w "@format.txt" -o /dev/null -s https://www.google.com
