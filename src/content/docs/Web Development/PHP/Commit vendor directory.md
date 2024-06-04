@@ -19,8 +19,14 @@ Remove `vendor` dir from your `.gitignore` and add follow lines to root of `comp
 ```json
 {
   "scripts": {
-    "post-update-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf vendor/**/**/.git"],
-    "post-install-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf vendor/**/**/.git"]
+    "post-update-cmd": [
+      "echo [WARNING] Delete all .git dirs",
+      "rm -rf vendor/**/**/.git"
+    ],
+    "post-install-cmd": [
+      "echo [WARNING] Delete all .git dirs",
+      "rm -rf vendor/**/**/.git"
+    ]
   }
 }
 ```

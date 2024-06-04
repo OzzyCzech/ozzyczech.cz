@@ -77,4 +77,4 @@ You can also set immutable attribute to `/etc/resolv.conf` file to prevent overw
 chattr -i /etc/resolv.conf
 ```
 
-PS: *Anytime your solution involves `chattr`, it's not really a solution.*
+PS: _Anytime your solution involves `chattr`, it's not really a solution._

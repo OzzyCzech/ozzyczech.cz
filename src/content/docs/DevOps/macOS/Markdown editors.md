@@ -28,7 +28,7 @@ brew install --cask mark-text
 
 ## [Typora](https://typora.io/)
 
-I am just found the best (*for me*) Markdown editor on the planet. Why?
+I am just found the best (_for me_) Markdown editor on the planet. Why?
 
 - it's freeware and opensource
 - it's minimalistic and easy to use

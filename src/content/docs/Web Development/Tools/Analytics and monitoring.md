@@ -26,5 +26,3 @@ title: Analytics and monitoring
 - [OpenStatus](https://github.com/openstatusHQ/openstatus) - The open-source synthetic & real user monitoring platform
 - [Upptime](https://github.com/upptime/upptime) - GitHub-powered open-source uptime monitor and status page.
 - [Cachet](https://cachethq.io/) - Open source status page system.
-
-

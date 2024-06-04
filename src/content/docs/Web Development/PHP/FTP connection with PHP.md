@@ -19,7 +19,7 @@ Function assumes that the provided URI is well-formed and that the FTP server, u
 function getFtpConnection($uri) {
   // Parse the URI and extract its components
   $parsed = parse_url($uri);
- 
+
   $host = $parsed['host'];
   $user = $parsed['user'];
   $pass = $parsed['pass'];
@@ -28,7 +28,7 @@ function getFtpConnection($uri) {
 
   // Connect to the FTP server using the host and port
   $connection = ftp_connect($host, $port) or die("Couldn't connect to " . $host);
-  
+
   // Attempt to log in with the provided username and password
   if (ftp_login($conn, $user, $pass)) {
     // If the login attempt was successful, change the directory to the one specified in the URI

@@ -14,7 +14,6 @@ A JavaScript library for building user interfaces.
 
 [React](https://reactjs.org/) [Preact](https://preactjs.com/)
 
-
 ## Vue
 
 The Progressive JavaScript Framework.
@@ -27,14 +26,12 @@ Fast, unopinionated, minimalist web framework for Node.js. It is designed for bu
 
 [Express.js](https://expressjs.com/)
 
-
 ## Fastify
 
 Fast and low overhead web framework for Node.js. It is highly focused on providing the
 best developer experience with the least overhead and a powerful plugin architecture.
 
 [Fastify](https://www.fastify.io/)
-
 
 ## NestJS
 
@@ -49,7 +46,6 @@ and FRP (Functional Reactive Programming).
 Web application framework that is fast, lightweight, and built on web standards. It supports any JavaScript runtime.
 
 [Hono](https://hono.dev/)
-
 
 ## Next.js
 

@@ -6,7 +6,6 @@ title: Simple events dispatcher
 have nice and clear interface with function `on()`, `one()`, `off()`, `trigger()`,
 `filter()`, `ensure()`, `listeners()`, `events()` - that's all!
 
-
 With **sphido/events** can:
 
 - listeners prioritization

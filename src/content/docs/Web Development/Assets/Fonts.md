@@ -20,7 +20,6 @@ Google Fonts is a library of 1,052 free licensed font families, an interactive w
 
 Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day.
 
-
 ## Monospaced fonts
 
 #### [Fira Code](https://github.com/tonsky/FiraCode)
@@ -65,4 +64,3 @@ Consolas is aimed for use in programming environments and other circumstances wh
 Inconsolata was Raph Levien's first serious original font release. It is a monospace font, designed for printed code listings and the like. There are a great many “programmer fonts,” designed primarily for use on the screen, but in most
 cases do not have the attention to detail
 for high resolution rendering.
-

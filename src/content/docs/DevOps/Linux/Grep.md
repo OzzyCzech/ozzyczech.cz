@@ -2,13 +2,11 @@
 title: Grep
 ---
 
-
 ## Search recursively through all files
 
-Command searches recursively through all files under `"/your/folder"` and its subdirectories, 
-prints the filename and line number for any line containing the exact string `"string"`, 
+Command searches recursively through all files under `"/your/folder"` and its subdirectories,
+prints the filename and line number for any line containing the exact string `"string"`,
 suppresses errors for missing files, and only matches whole words.
-
 
 ```shell
 grep -Rsnw "/your/folder" -e "string"

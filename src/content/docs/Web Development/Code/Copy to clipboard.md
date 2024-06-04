@@ -6,36 +6,40 @@ sidebar:
 
 ```js
 document.onreadystatechange = function () {
-  if (document.readyState == 'complete') {
-
+  if (document.readyState == "complete") {
     // for all pre > code
-    document.querySelectorAll('pre > code').forEach(function (codeBlock) {
-
+    document.querySelectorAll("pre > code").forEach(function (codeBlock) {
       // create anchor element
-      let copy = document.createElement('a');
-      copy.className = 'btn-copy';
-      copy.innerText = 'Copy';
-      copy.title = 'Copy to Clipboard!';
-      copy.href = '#';
+      let copy = document.createElement("a");
+      copy.className = "btn-copy";
+      copy.innerText = "Copy";
+      copy.title = "Copy to Clipboard!";
+      copy.href = "#";
 
       // add click event
-      copy.addEventListener('click', function (e) {
-        copy.innerText = 'Copied!';
+      copy.addEventListener(
+        "click",
+        function (e) {
+          copy.innerText = "Copied!";
 
-        // copy innerText of preformat
-        navigator.clipboard.writeText(codeBlock.innerText).then(function () {
-          setTimeout(function () {
-            copy.innerText = 'Copy';
-          }, 500);
-        }, function (err) {
-          copy.innerText = 'ERROR';
-        });
+          // copy innerText of preformat
+          navigator.clipboard.writeText(codeBlock.innerText).then(
+            function () {
+              setTimeout(function () {
+                copy.innerText = "Copy";
+              }, 500);
+            },
+            function (err) {
+              copy.innerText = "ERROR";
+            },
+          );
 
-        // do nothing else...
-        e.preventDefault();
-        e.stopPropagation();
-
-      }, false);
+          // do nothing else...
+          e.preventDefault();
+          e.stopPropagation();
+        },
+        false,
+      );
 
       // insert before codeBlock <pre><a><code>
       codeBlock.parentNode.insertBefore(copy, codeBlock);

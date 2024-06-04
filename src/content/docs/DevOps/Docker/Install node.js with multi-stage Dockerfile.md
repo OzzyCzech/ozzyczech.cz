@@ -3,7 +3,7 @@ title: Install node.js with multi-stage Dockerfile
 ---
 
 My Dockerfile uses a multi-stage build pattern to optimize the final image size.
-The first stage uses the official Node.js slim image to build a temporary 
+The first stage uses the official Node.js slim image to build a temporary
 image with Node.js installed. The second stage uses a minimal Debian base image.
 
 In the second stage, it avoids re-installing Node by selectively copying only the
@@ -11,10 +11,9 @@ specific binaries and libraries needed to run Node.js from the temporary node im
 
 Specifically, it copies:
 
-* The node and npm binaries from `/usr/local/bin/`
-* The core Node.js libraries from `/usr/local/lib/`
-* The `npm` packages from `/usr/local/lib/node_modules/`
-
+- The node and npm binaries from `/usr/local/bin/`
+- The core Node.js libraries from `/usr/local/lib/`
+- The `npm` packages from `/usr/local/lib/node_modules/`
 
 ```dockerfile
 FROM node:current-slim as node

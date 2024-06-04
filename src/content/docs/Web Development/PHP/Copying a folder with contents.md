@@ -11,7 +11,7 @@ function copyAll($src, $dst) {
     new RecursiveDirectoryIterator($src, RecursiveDirectoryIterator::SKIP_DOTS),
     RecursiveIteratorIterator::SELF_FIRST
   );
-  
+
   foreach ($iterator as $item) {
     if ($item->isDir()) {
       mkdir($dst . DIRECTORY_SEPARATOR . $iterator->getSubPathName());

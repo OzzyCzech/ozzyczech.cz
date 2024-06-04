@@ -7,7 +7,6 @@ title: Content management systems
 - [Hexo](https://hexo.io/) - A fast, simple & powerful blog framework
 - [Sphido](https://sphido.cz) - A rocket 🚀 fast, lightweight, static site generator
 
-
 ### Documentation generators
 
 - [Starlight](https://starlight.astro.build/) - Astro powered CMS/documentation site generator

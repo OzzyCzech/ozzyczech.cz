@@ -33,6 +33,7 @@ brew install bat
 ```shell
 brew install fd
 ```
+
 ## [sd](https://github.com/chmln/sd)
 
 `sd` is an intuitive find & replace command-line tool, it is an alternative to `sed`
@@ -61,10 +62,10 @@ dog google.com
 exa -l
 ```
 
-```shell
+````shell
 
 ![](https://github.com/ogham/dog/raw/master/dog-screenshot.png)
 
 ```shell
 brew install dog
-```
+````

@@ -6,9 +6,7 @@ sidebar:
 ---
 
 ```css
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-	/* it's retina yeah! */  
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* it's retina yeah! */
 }
-``` 
+```

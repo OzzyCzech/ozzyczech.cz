@@ -15,8 +15,8 @@ function something() {
 
 It's highly uncomfortable and long! Therefore, I have prepared a simple object which make all global variables much more accesible from anywhere: https://gist.github.com/OzzyCzech/4737518 (PHP 5.3+ only)
 
- ```php
+```php
 function something() {
-  Globals::wpdb()->query('SQL...');
+ Globals::wpdb()->query('SQL...');
 }
 ```

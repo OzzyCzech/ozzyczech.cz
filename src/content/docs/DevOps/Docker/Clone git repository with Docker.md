@@ -3,6 +3,7 @@ title: Clone git repository with Docker
 sidebar:
   label: Clone git with Docker
 ---
+
 There are many ways to use Git with Docker, but this guide focuses
 on using **SSH Deploy keys** to clone a repository from GitLab or GitHub.
 as easily as possible.
@@ -20,7 +21,7 @@ ssh-keygen -t ed25519 -C "deploy@gitlab.com" -P "" -f .ssh/id_ed25519
 ```
 
 This command will generate a new SSH key pair without passphrase.
-Then you have to add the public key to the [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/) 
+Then you have to add the public key to the [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/)
 or [GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)
 
 After adding the public key to the repository, you can test the connection:

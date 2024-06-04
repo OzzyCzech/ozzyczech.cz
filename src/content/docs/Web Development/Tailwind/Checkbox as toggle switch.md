@@ -20,7 +20,6 @@ Then you have to add follow code to your `tailwind.css` file:
 @tailwind utilities;
 
 @layer base {
-
   label {
     @apply h-6 relative inline-block;
   }
@@ -33,7 +32,7 @@ Then you have to add follow code to your `tailwind.css` file:
     @apply focus:ring-transparent dark:focus:ring-transparent;
     @apply focus-within:ring-0 dark:focus-within:ring-0;
     @apply focus:shadow-none dark:focus:shadow-none;
-    
+
     @apply after:absolute before:absolute;
     @apply after:top-0 before:top-0;
     @apply after:block before:inline-block;

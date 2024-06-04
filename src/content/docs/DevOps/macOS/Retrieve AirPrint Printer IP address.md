@@ -4,7 +4,6 @@ sidebar:
   label: IP address of printer
 ---
 
-
 You can use [ippfind](https://manpages.debian.org/testing/cups-ipp-utils/ippfind.1.en.html) command that finds services
 registered with a DNS server or available through local devices. Its primary purpose is to find IPP printers
 and show their URIs, show their current status, or run commands.

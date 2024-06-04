@@ -2,12 +2,10 @@
 title: Calculate hash of an object
 ---
 
-In PHP, sometimes you need to identify an object using a consistent string based 
-on its internal values. The standard function [`spl_object_hash()`](http://php.net/manual/en/function.spl-object-hash.php) 
-isn't always suitable because its result can change over time. To create 
+In PHP, sometimes you need to identify an object using a consistent string based
+on its internal values. The standard function [`spl_object_hash()`](http://php.net/manual/en/function.spl-object-hash.php)
+isn't always suitable because its result can change over time. To create
 a stable hash, you can use the following method:
-
-
 
 ```php
 class Foo {

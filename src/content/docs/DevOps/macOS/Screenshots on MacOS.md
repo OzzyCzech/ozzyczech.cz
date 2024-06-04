@@ -6,10 +6,10 @@ title: Screenshots on macOS
 
 You can capture the entire screen, a window, or just a portion of the screen.
 
-* `⌘ + ⇧ + 3` Capture the whole screen.
-* `⌘ + ⇧ + 4` Capture a selection.
-* `⌘ + ⇧ + 4 + Space` Capture a window.
-* `⌘ + ⇧ + 5` Capture the whole screen, a selection or a window.
+- `⌘ + ⇧ + 3` Capture the whole screen.
+- `⌘ + ⇧ + 4` Capture a selection.
+- `⌘ + ⇧ + 4 + Space` Capture a window.
+- `⌘ + ⇧ + 5` Capture the whole screen, a selection or a window.
 
 See more information in [Take a screenshot on your Mac](https://support.apple.com/en-us/HT201361).
 
@@ -21,9 +21,9 @@ Command line tool that capture an image of the whole, or part of the screen.
 screencapture -ioW ~/Desktop/screenshot.png
 ```
 
-* `-i` Capture screen interactively, by selection or window.
-* `-W` Start interaction in window selection mode.
-* `-o` In window capture mode, do not capture the shadow of the window.
+- `-i` Capture screen interactively, by selection or window.
+- `-W` Start interaction in window selection mode.
+- `-o` In window capture mode, do not capture the shadow of the window.
 
 More information in [screencapture manual page](https://ss64.com/osx/screencapture.html).
 

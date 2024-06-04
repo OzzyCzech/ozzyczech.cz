@@ -14,8 +14,8 @@ signle bundle file with nice name:
 ```shell
 #!/bin/bash
 
-function git_backup() {	
-	target=$(echo ${1#*:} | tr / _)		
+function git_backup() {
+	target=$(echo ${1#*:} | tr / _)
 	git clone --mirror $1 ${target} && cd ${target}
 	git bundle create ${2-../}/${target%%.git}.bundle --all
 	cd - && rm -rf ${target}
@@ -29,7 +29,7 @@ git_backup git@github.com:OzzyCzech/dotfiles.git ~/Downloads/
 ```
 
 PS: Note that **git bundle** only copies commits that lead to some reference
-(branch or tag) in the repository. So *tangling commits* are not stored
+(branch or tag) in the repository. So _tangling commits_ are not stored
 to the bundle.
 
 You can also create nice alias in `.gitconfig` file:
@@ -40,7 +40,6 @@ backup = "!gb() { target=$(echo ${1#*:} | tr / _); git clone --mirror $1 ${targe
 ```
 
 Backup alias can be also found in my [dotfiles](https://github.com/OzzyCzech/dotfiles/blob/main/.gitconfig) repository.
-
 
 ## Restore
 
@@ -73,7 +72,7 @@ One of the best seems to me [jq](https://stedolan.github.io/jq/)
 
 ```shell
 for repo in $(curl -s https://api.github.com/users/OzzyCzech/repos | jq -r ".[].ssh_url")
-do  
+do
   git backup $repo /Volumes/Backup/git
 done;
 ```

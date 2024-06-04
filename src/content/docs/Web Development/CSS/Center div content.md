@@ -8,17 +8,17 @@ Center `<div>` vertically and horizontally with [Flexbox](https://developer.mozi
 
 ```html
 <div class="flex justify-center items-center w-full h-screen">
-	<p>center</p>
+  <p>center</p>
 </div>
 ```
 
 or CSS
 
 ```css
-div {	
-	display: flex;
-	justify-content: center;
-	align-items: center;
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ```
 
@@ -36,18 +36,20 @@ or CSS
 
 ```css
 div {
-	display: grid;
-	place-items: center;
+  display: grid;
+  place-items: center;
 }
 ```
 
 ## Absolute/relative position
 
-Center `<div>`  content with relative and absolute positioning using [Tailwind](https://play.tailwindcss.com/93dDkcY82t)
+Center `<div>` content with relative and absolute positioning using [Tailwind](https://play.tailwindcss.com/93dDkcY82t)
 
 ```html
 <div class="relative w-full h-screen">
-  <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">center</p>
+  <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    center
+  </p>
 </div>
 ```
 
@@ -55,13 +57,13 @@ or CSS
 
 ```css
 div {
-	position: relative;
+  position: relative;
 }
 
 p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 ```

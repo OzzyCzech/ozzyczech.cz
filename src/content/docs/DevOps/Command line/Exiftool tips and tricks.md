@@ -24,10 +24,10 @@ exiftool -r '-directory=Olympus' -if '$make eq "OLYMPUS CORPORATION"' .
 
 Rename files to datestamp:
 
-*Filename looks like 2014-01-01 12:00:00.jpg and will append -NUM if DateTimeOriginal is the same for multiple files*
+_Filename looks like 2014-01-01 12:00:00.jpg and will append -NUM if DateTimeOriginal is the same for multiple files_
 
 ```shell
-exiftool '-FileName<DateTimeOriginal' -d "%Y-%m-%d %H.%M.%S%%-c.%%e" .  
+exiftool '-FileName<DateTimeOriginal' -d "%Y-%m-%d %H.%M.%S%%-c.%%e" .
 ```
 
 ## Date & time

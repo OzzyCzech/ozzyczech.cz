@@ -25,7 +25,7 @@ git fetch --all --tags; for branch in `git branch -r --format="%(refname:short)"
 This command is super usefull when you need copy repo between remotes:
 
 ```shell
-git remote add alternative git@github.com:....git 
+git remote add alternative git@github.com:....git
 ```
 
 Check if is there another remote:

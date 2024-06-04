@@ -22,13 +22,13 @@ Unraid is a powerful, easy-to-use operating system for self-hosted servers and n
 
 ##### [NAS Kit CM3588](https://www.electronics-lab.com/friendlyelecs-nas-features-rk3588-soc-with-quad-m-2/)
 
-The CM3588 NAS Kit is a high-performance Network Attached Storage (NAS) solution based on 
+The CM3588 NAS Kit is a high-performance Network Attached Storage (NAS) solution based on
 the RK3588 SoC. It features four M.2 slots for storage expansion, dual 2.5GbE ports, and support for up to 32GB of DDR4 RAM.
 
 ##### [Raspberry Pi M.2 HAT+](https://www.raspberrypi.com/products/m2-hat-plus/)
 
-The Raspberry Pi M.2 HAT+ enables you to connect M.2 peripherals such as NVMe drives and 
-AI accelerators to Raspberry Pi 5’s PCIe 2.0 interface, supporting fast (up to 500 MB/s) 
+The Raspberry Pi M.2 HAT+ enables you to connect M.2 peripherals such as NVMe drives and
+AI accelerators to Raspberry Pi 5’s PCIe 2.0 interface, supporting fast (up to 500 MB/s)
 data transfer to and from NVMe drives and other PCIe accessories.
 
 #### Cloud data storages
@@ -40,7 +40,8 @@ data transfer to and from NVMe drives and other PCIe accessories.
 - [Box](https://www.box.com/) - 10GB free storage
 - [MediaFire](https://www.mediafire.com/) - 10GB free storage
 - [Mega](https://mega.nz/) - 50GB free storage
-- 
+-
+
 #### For devlopers
 
 - [iCloud](https://developer.apple.com/icloud/) - 5GB free storage

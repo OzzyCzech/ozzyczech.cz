@@ -32,10 +32,10 @@ If you use the above command with the `-p` flag, then it will not be sticky.
 If you are developer there is few quite common folders that should be excluded:
 
 ```shell
-sudo tmutil addexclusion ~/.composer 
-sudo tmutil addexclusion ~/.npm 
-sudo tmutil addexclusion ~/Library/Developer 
-sudo tmutil addexclusion ~/Library/Containers/com.docker.docker/Data/ 
+sudo tmutil addexclusion ~/.composer
+sudo tmutil addexclusion ~/.npm
+sudo tmutil addexclusion ~/Library/Developer
+sudo tmutil addexclusion ~/Library/Containers/com.docker.docker/Data/
 ```
 
 ### List excluded

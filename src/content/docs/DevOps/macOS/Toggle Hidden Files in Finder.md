@@ -2,7 +2,7 @@
 title: Toggle Hidden Files in Finder
 ---
 
-Run [Automator](http://en.wikipedia.org/wiki/Automator_(software)) and create new Application. Add task **Run Shell script** and paste follow code:
+Run [Automator](<http://en.wikipedia.org/wiki/Automator_(software)>) and create new Application. Add task **Run Shell script** and paste follow code:
 
 ```shell
 STATUS=`defaults read com.apple.finder AppleShowAllFiles`

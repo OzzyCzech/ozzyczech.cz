@@ -27,8 +27,8 @@ EOF
 curl -w "$format" -o /dev/null -s "$@"
 ```
 
-This script defines a `format` variable that contains a template for the 
-output. The `curl` command is then used to  measure the performance of
+This script defines a `format` variable that contains a template for the
+output. The `curl` command is then used to measure the performance of
 the specified URL and display the results in the defined format.
 
 ### Running the Script

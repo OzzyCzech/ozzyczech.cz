@@ -12,13 +12,13 @@ ffmpeg -framerate 1/3 \
        output.mp4
 ```
 
-* `-framerate 1/3` image will be change each 3 sec
-* `-pattern_type glob -i '*.jpg'` will use all *.jpg images from current folder
-* `-vf "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1"` rescale or pad image to 1280x720
-* `-c:v libx264 ` use H.264 codec
-* `-crf 14` CFR (Constant Rate Factor) is betweemn 0–51, where 0 is lossless, 23 is the default, and 51 is worst quality possible.
-* `-r 25` set frame rate.
-* `-pix_fmt` pixel output format
+- `-framerate 1/3` image will be change each 3 sec
+- `-pattern_type glob -i '*.jpg'` will use all \*.jpg images from current folder
+- `-vf "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1"` rescale or pad image to 1280x720
+- `-c:v libx264 ` use H.264 codec
+- `-crf 14` CFR (Constant Rate Factor) is betweemn 0–51, where 0 is lossless, 23 is the default, and 51 is worst quality possible.
+- `-r 25` set frame rate.
+- `-pix_fmt` pixel output format
 
 With background music:
 
@@ -32,4 +32,4 @@ ffmpeg -framerate 1/3 \
        output.mp4
 ```
 
-* `-shortest` will take shorten source images or mp3 as length limit for video
+- `-shortest` will take shorten source images or mp3 as length limit for video

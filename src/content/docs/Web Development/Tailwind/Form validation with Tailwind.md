@@ -24,19 +24,21 @@ Let's crate following Javascript (sort of polyfill):
  * @see https://caniuse.com/?search=user-invalid
  */
 try {
-  if (typeof window !== 'undefined') {
-    document.querySelector(':user-invalid');
+  if (typeof window !== "undefined") {
+    document.querySelector(":user-invalid");
   }
 } catch {
-  document.addEventListener('DOMContentLoaded', () => {
-    for (const input of document.querySelectorAll('input')) {
-      input.addEventListener('change', event => event.target.classList.add('dirty'));
+  document.addEventListener("DOMContentLoaded", () => {
+    for (const input of document.querySelectorAll("input")) {
+      input.addEventListener("change", (event) =>
+        event.target.classList.add("dirty"),
+      );
     }
   });
 }
 ```
 
-This code adds a `dirty` class to all changed input fields, which helps us to *simulate* the `:user-invalid` pseudo-class and clearly mark all inputs that have been changed by the user. Then you can easily distinguish between changed and unchanged inputs that are invalid.
+This code adds a `dirty` class to all changed input fields, which helps us to _simulate_ the `:user-invalid` pseudo-class and clearly mark all inputs that have been changed by the user. Then you can easily distinguish between changed and unchanged inputs that are invalid.
 Following [Tailwind code](https://tailwindcss.com/docs/hover-focus-and-other-states#invalid) requires [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms) plugin:
 
 ```css
@@ -54,18 +56,18 @@ and full CSS example:
 @tailwind base;
 
 @layer base {
-  [type='text'],
-  [type='email'],
-  [type='url'],
-  [type='password'],
-  [type='number'],
-  [type='date'],
-  [type='datetime-local'],
-  [type='month'],
-  [type='search'],
-  [type='tel'],
-  [type='time'],
-  [type='week'],
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
   [multiple],
   textarea,
   select {

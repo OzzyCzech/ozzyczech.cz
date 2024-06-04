@@ -35,20 +35,17 @@ sidebar:
 - [PDF.js](https://github.com/mozilla/pdf.js) - PDF Reader in JavaScript.
 - [PDFKit](https://github.com/foliojs/pdfkit) - PDF generation library.
 
-
 ### Loaders
 
 - [nprogress](https://ricostacruz.com/nprogress/) - nano progress bar
 
-
 ### Templating
 
-*Templating engines allow you to perform string interpolation.*
+_Templating engines allow you to perform string interpolation._
 
 - [MDX](https://mdxjs.com/) - Markdown for the component era
 - [Nunjucks](https://mozilla.github.io/nunjucks/) - A rich and powerful templating language for JavaScript.
 - [marko](https://github.com/marko-js/marko) - A fast, lightweight, HTML-based templating engine for Node.js and the browser with async, streaming, custom tags and CommonJS modules as compiled output.
-
 
 ## Services
 

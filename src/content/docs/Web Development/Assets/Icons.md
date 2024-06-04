@@ -5,24 +5,31 @@ title: Icons
 ## Free icons sets
 
 ##### [SVG Repo](https://www.svgrepo.com/)
+
 500.000+ Open-licensed SVG Vector and Icons
 
 ##### [Heroicons](https://heroicons.com/)
+
 Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
 
 ##### [Remix Icons](https://remixicon.com/)
+
 2000+ Pixel-perfect vector icons and Iconfont for your next project.
 
 ##### [Phosphor Icons](https://phosphoricons.com/)
+
 Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really.
 
 ##### [Boostrap Icons](https://icons.getbootstrap.com/)
+
 Twitters Bootstrap icons
 
 ##### [SVGBox](https://svgbox.net/)
+
 SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
 
 ##### [Material Icons](https://fonts.google.com/icons)
+
 Material icons are delightful, beautifully crafted symbols [made by Google](https://github.com/google/material-design-icons).
 
 and many more...

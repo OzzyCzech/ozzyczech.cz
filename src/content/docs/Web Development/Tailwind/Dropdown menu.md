@@ -14,10 +14,12 @@ They’re made interactive with a JavaScript.
 Let's have button first:
 
 ```html
-<button 
+<button
   data-dropdown="userMenu"
   aria-expanded="false"
-  class="border rounded py-2 px-3 shadow"l>
+  class="border rounded py-2 px-3 shadow"
+  l
+>
   Show menu
 </button>
 ```
@@ -25,19 +27,20 @@ Let's have button first:
 and some simple dropdown menu:
 
 ```html
-
 <div
-	id="userMenu"
-	class="hidden z-50 w-60 text-base bg-white rounded divide-y divide-gray-200 focus:outline-none">
-	<ul>
-		<li>
-			<a
-				href="/"
-				class="block rounded-t py-3 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-				Home
-			</a>
-		</li>
-	</ul>
+  id="userMenu"
+  class="hidden z-50 w-60 text-base bg-white rounded divide-y divide-gray-200 focus:outline-none"
+>
+  <ul>
+    <li>
+      <a
+        href="/"
+        class="block rounded-t py-3 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+      >
+        Home
+      </a>
+    </li>
+  </ul>
 </div>
 ```
 
@@ -51,55 +54,63 @@ yarn add @popperjs/core
 and craete [dropdown-menu.js](https://github.com/OzzyCzech/tailwind-dropdowns/blob/main/src/dropdown-menu.js) file with following content:
 
 ```js
-import {createPopper} from '@popperjs/core/lib/popper-lite.js';
-import flip from '@popperjs/core/lib/modifiers/flip.js';
-import preventOverflow from '@popperjs/core/lib/modifiers/preventOverflow.js';
+import { createPopper } from "@popperjs/core/lib/popper-lite.js";
+import flip from "@popperjs/core/lib/modifiers/flip.js";
+import preventOverflow from "@popperjs/core/lib/modifiers/preventOverflow.js";
 
 /**
  * Menu attributes:
  * id="[dropdown id]"
- * 
+ *
  * Button attributes:
- * 
+ *
  * data-dropdown="[ID of dropdown element]"
  * data-placement="[dropdown placement]"
-*/
+ */
 export function addDropdown(button) {
   const menu = document.querySelector(`#${button.dataset.dropdown}`);
 
   // Popper create instance
   const popper = createPopper(button, menu, {
-    placement: button.dataset.placement || 'bottom-start',
+    placement: button.dataset.placement || "bottom-start",
     modifiers: [flip, preventOverflow],
   });
 
   // toggle menu on button click
-  button.addEventListener('click', async event => {
+  button.addEventListener("click", async (event) => {
     const menu = document.querySelector(`#${event.target.dataset.dropdown}`);
-    menu.classList.toggle('hidden');
-    event.target.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    menu.classList.toggle("hidden");
+    event.target.setAttribute(
+      "aria-expanded",
+      !menu.classList.contains("hidden"),
+    );
 
     await popper.update(); // reposition
 
     // close dropdown menu on Escape or click somewhere else
     function closeMenu(event) {
-      if (event.type === 'click' && (event.target !== button || event.key === 'Escape')) {
-        menu.classList.add('hidden');
-        button.setAttribute('aria-expanded', false);
+      if (
+        event.type === "click" &&
+        (event.target !== button || event.key === "Escape")
+      ) {
+        menu.classList.add("hidden");
+        button.setAttribute("aria-expanded", false);
 
         // remove close menu handlers
-        document.removeEventListener('click', closeMenu);
-        document.removeEventListener('keydown', closeMenu);
+        document.removeEventListener("click", closeMenu);
+        document.removeEventListener("keydown", closeMenu);
       }
     }
 
-    document.addEventListener('click', closeMenu);
-    document.addEventListener('keydown', closeMenu);
+    document.addEventListener("click", closeMenu);
+    document.addEventListener("keydown", closeMenu);
   });
 }
 
 // let's add dropdown menu to all buttons
-for (const dropDownButton of inputDocument.querySelectorAll('[data-dropdown]')) {
+for (const dropDownButton of inputDocument.querySelectorAll(
+  "[data-dropdown]",
+)) {
   addDropdown(dropDownButton);
 }
 ```

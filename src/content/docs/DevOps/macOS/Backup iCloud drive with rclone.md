@@ -14,6 +14,6 @@ If you need also backup of all deleted files (sync usually remove files that was
 there `--backup-dir` parameter.
 
 ```shell
-rclone sync ~/Library/Mobile\ Documents/com~apple~CloudDocs/ /Volumes/Backup/iCloudDriveBackup --copy-links 
+rclone sync ~/Library/Mobile\ Documents/com~apple~CloudDocs/ /Volumes/Backup/iCloudDriveBackup --copy-links
        --backup-dir="/Volumes/Backup/iCloudDriveArchive/$(date +%Y)/$(date +%F_%T)"
 ```

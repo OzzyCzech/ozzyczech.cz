@@ -18,9 +18,9 @@ sudo raspi-config
 ```
 
 1. Change User Password :-) ([default user](https://www.raspberrypi.org/documentation/linux/usage/users.md) `pi` with password `raspberry`)
-2. Change *Localisation Options*... select `en_US.utf8` and whatever else
-3. Enable SSH in *Interfacing Options*...
-4. Configure WiFi in *Network Options* and change *Hostname* (in my case to **pi**)
+2. Change _Localisation Options_... select `en_US.utf8` and whatever else
+3. Enable SSH in _Interfacing Options_...
+4. Configure WiFi in _Network Options_ and change _Hostname_ (in my case to **pi**)
 
 If you have Wifi with hidden SSID, you will need change `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` file
 and add `scan_ssid=1`:
@@ -159,5 +159,5 @@ avahi-browse -a | grep $(hostname)
 
 ### Links
 
-* http://www.avahi.org/
-* https://support.apple.com/bonjour
+- http://www.avahi.org/
+- https://support.apple.com/bonjour

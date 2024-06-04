@@ -3,10 +3,10 @@ title: Reading temperature and humidity data from MHO-C401 with Python
 description: Reading temperature and humidity from MHO-C401 Bluetooth Thermometer Hygrometer using Python and bluepy library.
 sidebar:
   label: MHO-C401
-  order: 1 
+  order: 1
 ---
 
-MHO-C401 is new (2020) MMC E-Ink Screen Smart #Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Gearbest]( https://www.gearbest.com/sale/MHO-C401/) or [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).
+MHO-C401 is new (2020) MMC E-Ink Screen Smart #Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Gearbest](https://www.gearbest.com/sale/MHO-C401/) or [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).
 
 ![MHO-C401](MHO-C401.jpg "MHO-C401 Bluetooth Thermometer Hygrometer")
 
@@ -14,10 +14,10 @@ MHO-C401 is new (2020) MMC E-Ink Screen Smart #Bluetooth Thermometer Hygrometer 
 
 Every [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) (BLE) device have unique [MAC address](https://en.wikipedia.org/wiki/MAC_address) - you can search this address with `hcitool`
 
-> `hcitool` is Linux tool for monitoring and configuring Bluetooth devices. It is aptly named **hci**tool as it communicates via a common HCI ([Host Controller Interface](https://en.wikipedia.org/wiki/Host_controller_interface_(USB,_Firewire)) port to your bluetooth devices. You
+> `hcitool` is Linux tool for monitoring and configuring Bluetooth devices. It is aptly named **hci**tool as it communicates via a common HCI ([Host Controller Interface](<https://en.wikipedia.org/wiki/Host_controller_interface_(USB,_Firewire)>) port to your bluetooth devices. You
 > can utilize the utility to scan for devices and send commands/data for standard Bluetooth and Bluetooth Low Energy.
 
-First check, if your `hcitool` can see your device with `hcitool dev`  command, then you can start `lescan` for other devices arroud.
+First check, if your `hcitool` can see your device with `hcitool dev` command, then you can start `lescan` for other devices arroud.
 
 ```shell
 sudo hcitool lescan
@@ -35,7 +35,7 @@ A4:C1:38:4B:B7:FF MHO-C401
 ...
 ```
 
-As you can see from list my `MHO-C401`  have `A4:C1:38:4B:B7:FF` MAC address.
+As you can see from list my `MHO-C401` have `A4:C1:38:4B:B7:FF` MAC address.
 
 ## Lets read some data!
 
@@ -56,7 +56,7 @@ from bluepy import btle
 device = btle.Peripheral()
 try:
   print("Connecting to device...")
-  device.connect("A4:C1:38:4B:B7:FF") # need change your MAC address here 
+  device.connect("A4:C1:38:4B:B7:FF") # need change your MAC address here
   for service in device.getServices():
     print(str(service))
     for ch in service.getCharacteristics():
@@ -83,19 +83,19 @@ Service <uuid=Generic Access handleStart=1 handleEnd=7>
  Characteristic <Device Name>
  > UUID: 00002a00-0000-1000-8000-00805f9b34fb
  > HANDLE: 0x2
- > SUPPORTS: READ NOTIFY 
+ > SUPPORTS: READ NOTIFY
  > RESULTS  b'MHO-C401\x00'
 
  Characteristic <Appearance>
  > UUID: 00002a01-0000-1000-8000-00805f9b34fb
  > HANDLE: 0x4
- > SUPPORTS: READ 
+ > SUPPORTS: READ
  > RESULTS  b'\x00\x00'
 
  Characteristic <Peripheral Preferred Connection Parameters>
  > UUID: 00002a04-0000-1000-8000-00805f9b34fb
  > HANDLE: 0x6
- > SUPPORTS: READ 
+ > SUPPORTS: READ
  > RESULTS  b'\x14\x00(\x00\x00\x00\xe8\x03'
 
 ...
@@ -115,7 +115,7 @@ try:
   deviceName = device.getCharacteristics(uuid="00002a00-0000-1000-8000-00805f9b34fb")[0].read()
   print("Device name: ", deviceName.decode('ascii'))
 
-  # or by handle  
+  # or by handle
   print("Firmware: " , device.readCharacteristic(0x12).decode('ascii'))
   print("Hardware Revision: " , device.readCharacteristic(0x14).decode('ascii'))
   print("Manufacturer Name: " , device.readCharacteristic(0x18).decode('ascii'))
@@ -126,7 +126,7 @@ try:
   # read device units
   if (device.readCharacteristic(0x33) == b'\x00'):
     print('Units: °C')
-  
+
   if (device.readCharacteristic(0x33) == b'\x01'):
     print('Units: °F')
 
@@ -136,7 +136,7 @@ finally:
 
 ## Reading temperature and humidity
 
-For reading temperature and humidity you have to [subscribe notifications](https://ianharvey.github.io/bluepy-doc/notifications.html) for UUID =  `EBE0CCC1-7A0A-4B0C-8A1A-6FF2997DA3A6` - there are 3 bytes of data. Notifications are processed by creating a “delegate” object and
+For reading temperature and humidity you have to [subscribe notifications](https://ianharvey.github.io/bluepy-doc/notifications.html) for UUID = `EBE0CCC1-7A0A-4B0C-8A1A-6FF2997DA3A6` - there are 3 bytes of data. Notifications are processed by creating a “delegate” object and
 registering it with the `Peripheral`.
 
 ```python
@@ -146,7 +146,7 @@ from datetime import datetime
 device = btle.Peripheral()
 
 class Delegate(btle.DefaultDelegate):
-  def handleNotification(self, cHandle, data):    
+  def handleNotification(self, cHandle, data):
     temperature_bytes = data[:2]
     humidity_bytes = data[2]
     temperature = int.from_bytes(temperature_bytes, byteorder="little") / 100.0
@@ -156,7 +156,7 @@ class Delegate(btle.DefaultDelegate):
     print("    Humidity: {}%".format(humidity))
     print("        Time: {}".format(datetime.now().strftime("%H:%M:%S")))
 
-try:  
+try:
   device.connect("A4:C1:38:4B:B7:FF")
   device.setDelegate(Delegate())
   ch = device.getCharacteristics(uuid="EBE0CCC1-7A0A-4B0C-8A1A-6FF2997DA3A6")[0]
@@ -184,8 +184,8 @@ Source codes https://github.com/OzzyCzech/MHO-C401
 
 ## Sources
 
-* bluepy [API docs](https://ianharvey.github.io/bluepy-doc/index.html) and [source codes](https://github.com/IanHarvey/bluepy)
-* [Introduction to Bluetooth low energy](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt) from Adafruit
-* [WatchFlower](https://emeric.io/WatchFlower/)
-* [Python library to work with Xiaomi Temperature and Humidifier sensor](https://github.com/h4/lywsd02/blob/master/lywsd02/client.py)
-* [xiaomi_bluetooth](https://github.com/andras-tim/poc/blob/master/bluetooth/xiaomi_bluetooth)
+- bluepy [API docs](https://ianharvey.github.io/bluepy-doc/index.html) and [source codes](https://github.com/IanHarvey/bluepy)
+- [Introduction to Bluetooth low energy](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt) from Adafruit
+- [WatchFlower](https://emeric.io/WatchFlower/)
+- [Python library to work with Xiaomi Temperature and Humidifier sensor](https://github.com/h4/lywsd02/blob/master/lywsd02/client.py)
+- [xiaomi_bluetooth](https://github.com/andras-tim/poc/blob/master/bluetooth/xiaomi_bluetooth)

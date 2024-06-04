@@ -9,7 +9,7 @@ How to **clean flash drive** and delete all hidden (dot) files on mac before unm
 
 if [ -n "$1" ]; then
   read -r -p "Clean /Volumes/$1/ and unmount? [y/N] " response
-  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then      
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     find /Volumes/$1/ -name '._*' -type f -delete
     rm -rf /Volumes/$1/.Spotlight-V100/
     rm -rf /Volumes/$1/.Trashes/
@@ -22,4 +22,4 @@ fi
 ```
 
 Then change the access mode of a file `chmod +x flash`. To unmount a clean flash drive just run
-`./flash Flashka` (Flashka is name od drive). 
+`./flash Flashka` (Flashka is name od drive).

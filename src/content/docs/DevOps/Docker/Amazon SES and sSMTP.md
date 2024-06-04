@@ -1,8 +1,9 @@
 ---
 title: How to build a Docker image with sSMTP and Amazon SES
 sidebar:
-   label: Amazon SES and sSMTP
+  label: Amazon SES and sSMTP
 ---
+
 ## What is sSMTP?
 
 SSMTP is a simple MTA (Mail Transfer Agent) that can be used to send email from a command line.

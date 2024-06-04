@@ -22,7 +22,7 @@ WARNING! This will remove:
   - all dangling images
   - all dangling build cache
 
-Are you sure you want to continue? [y/N] 
+Are you sure you want to continue? [y/N]
 ```
 
 You can also include all unused volumes, then add `--volumes`:
@@ -54,7 +54,7 @@ docker container prune
 You can also list what will be removed:
 
 ```shell
-docker container ls -a --filter status=exited --filter status=created 
+docker container ls -a --filter status=exited --filter status=created
 ```
 
 #### Stop and remove all containers

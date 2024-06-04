@@ -2,14 +2,14 @@
 title: Install Nodejs and NPM
 ---
 
-_Node.js_is an open source server environment;_Node.js_is free;_Node.js_runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.). There are two ways you can use to install #nodejs and NPM on your #Raspberry.
+\_Node.js_is an open source server environment;\_Node.js_is free;\_Node.js_runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.). There are two ways you can use to install #nodejs and NPM on your #Raspberry.
 
 ### Install nodejs from NodeSource repository
 
 Launch the Terminal and execute the command below:
 
 ```shell
-sudo su  
+sudo su
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 sudo apt install nodejs
 ```
@@ -17,7 +17,7 @@ sudo apt install nodejs
 ### Install nodejs from source code
 
 ```shell
-sudo apt update  
+sudo apt update
 sudo apt upgrade
 ```
 

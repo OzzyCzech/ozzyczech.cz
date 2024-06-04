@@ -6,7 +6,7 @@ title: Timelapse image capture
 apt-get install fswebcam
 ```
 
-Capture *cron* from camera from 5 AM to 7 PM every day:
+Capture _cron_ from camera from 5 AM to 7 PM every day:
 
 ```shell
 crontab -e

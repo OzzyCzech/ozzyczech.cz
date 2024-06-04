@@ -1,14 +1,15 @@
 ---
 title: MariaDB and Docker Compose
 ---
+
 This is a short instructions how to run #mariadb with #docker official [image](https://hub.docker.com/_/mariadb/) with [docker compose](https://docs.docker.com/compose/) and have suitable developer env. Let's have follow `docker-compose.yml`
 
 ```yaml
 version: "3.9"
 
-volumes:  
+volumes:
   mysql:
-  
+
 services:
 
   mariadb:
@@ -20,7 +21,7 @@ services:
       MARIADB_AUTO_UPGRADE: "yes" # will run mysql_uprade
     restart: always
     volumes:
-	    - mysql:/var/lib/mysql # mysql data      
+	    - mysql:/var/lib/mysql # mysql data
       - ./etc/mysql.ini:/etc/mysql/conf.d/my.ini # config file
       - ./etc/db/mariadb:/docker-entrypoint-initdb.d/:ro # init sql
     ports:

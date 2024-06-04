@@ -1,7 +1,7 @@
 ---
 title: List of CSS frameworks
 sidebar:
-  label: Frameworks  
+  label: Frameworks
 ---
 
 ### Frameworks

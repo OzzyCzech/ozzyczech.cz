@@ -1,6 +1,7 @@
 ---
 title: Human-readable intervals
 ---
+
 # Human-readable intervals
 
 Constants for expressing human-readable intervals in new #WordPress are very useful:

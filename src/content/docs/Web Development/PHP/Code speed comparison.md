@@ -4,11 +4,11 @@ title: Code speed comparison
 
 ```php
 function versus(callable $first, callable $second, $repeat = 100000) {
-	
+
 	$f = microtime(true);
 	foreach (range(0, $repeat) as $r) call_user_func($first);
 	$firstTimer = microtime(true) - $f;
-	
+
 	$s = microtime(true);
 	foreach (range(0, $repeat) as $r) call_user_func($second);
 	$secondTimer = microtime(true) - $s;
@@ -37,7 +37,7 @@ versus(
 );
 ```
 
-Will print: 
+Will print:
 
 ```text
 Second function is 36.72% faster (0.142766 vs 0.090349)

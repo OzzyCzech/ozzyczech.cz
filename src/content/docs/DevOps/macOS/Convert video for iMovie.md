@@ -18,19 +18,19 @@ Formats compatible with macOS Catalina:
 
 Video formats:
 
-* Apple Animation Codec
-* Apple Intermediate Codec
-* Apple ProRes
-* AVCHD (including AVCCAM, AVCHD Lite, and NXCAM)
-* DV (including DVCAM, DVCPRO, and DVCPRO50)
-* H.264
-* HDV
-* HEVC
-* iFrame
-* Motion JPEG (OpenDML only)
-* MPEG-4 SP
-* Photo JPEG
-* XAVC-S
+- Apple Animation Codec
+- Apple Intermediate Codec
+- Apple ProRes
+- AVCHD (including AVCCAM, AVCHD Lite, and NXCAM)
+- DV (including DVCAM, DVCPRO, and DVCPRO50)
+- H.264
+- HDV
+- HEVC
+- iFrame
+- Motion JPEG (OpenDML only)
+- MPEG-4 SP
+- Photo JPEG
+- XAVC-S
 
 Container formats: **3GP**, **AVI**, **M4V**, **MOV** (QuickTime) and **MP4**
 Audio formats: AAC, AIFF, BWF, CAF, MP3, MP4, RF64 and WAV

@@ -23,11 +23,17 @@ Lets starts with HTML code:
   </div>
 
   <div class="py-20 text-center">
-    <a aria-label="Extra ultra giga wide comments are posssible" class="after:max-w-[120px]">Hover this</a>
+    <a
+      aria-label="Extra ultra giga wide comments are posssible"
+      class="after:max-w-[120px]"
+      >Hover this</a
+    >
   </div>
 
   <div class="py-20 text-center">
-    <a aria-label="Sky blue variant" class="before:bg-sky-500 after:bg-sky-500">Hover blue</a>
+    <a aria-label="Sky blue variant" class="before:bg-sky-500 after:bg-sky-500"
+      >Hover blue</a
+    >
   </div>
 </div>
 ```
@@ -62,40 +68,40 @@ Then you have to add follow code to your `tailwind.css` file:
   [aria-label] {
     @apply before:pointer-events-none before:absolute before:z-40;
     @apply before:opacity-0 hover:before:opacity-100;
-    @apply before:bottom-full before:left-1/2 before:-translate-x-1/2;    
+    @apply before:bottom-full before:left-1/2 before:-translate-x-1/2;
     @apply before:h-2 before:w-4;
     @apply before:transition-opacity after:transition-opacity;
-    @apply before:bg-black dark:before:bg-white;    
+    @apply before:bg-black dark:before:bg-white;
   }
 
   [aria-label]::before {
     mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 500 250"><polygon points="0,0 250,250 500,0"/></svg>');
   }
 }
-
 ```
 
 You can easily change tooltip color from default black to something else like follow:
 
 ```html
-<a
-	aria-label="Sky blue variant"
-	class="before:bg-sky-500 after:bg-sky-500">Hover blue</a>
+<a aria-label="Sky blue variant" class="before:bg-sky-500 after:bg-sky-500"
+  >Hover blue</a
+>
 ```
 
 Width of the tooltip can be limited with `after:max-w-[120px]` class.
 
 ```html
 <a
-	aria-label="Extra ultra giga wide comments are posssible"
-	class="after:max-w-[120px]">Hover this</a>
+  aria-label="Extra ultra giga wide comments are posssible"
+  class="after:max-w-[120px]"
+  >Hover this</a
+>
 ```
 
 You can decide where will be break by including `&#xa;` HTML Encoded **Line Feed character** - new line to the `aria-label` .
 
 ```html
-<a
-	aria-label="Multi lines tooltip&#xa;are also possible">Hover this</a>
+<a aria-label="Multi lines tooltip&#xa;are also possible">Hover this</a>
 ```
 
 https://play.tailwindcss.com/ulaNoCcYwu

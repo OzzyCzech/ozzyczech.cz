@@ -6,7 +6,7 @@ Default archive shows only `post` type if you need show all post types just add 
 
 ```php
 add_filter(
-'pre_get_posts', 
+'pre_get_posts',
 function ($query) {
         if (
             $query->is_main_query() &&

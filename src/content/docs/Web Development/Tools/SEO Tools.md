@@ -2,7 +2,7 @@
 title: SEO Tools
 ---
 
-### Google 
+### Google
 
 - [Google Search Console](https://search.google.com/search-console)
 - [Google PageSpeed](https://pagespeed.web.dev/)

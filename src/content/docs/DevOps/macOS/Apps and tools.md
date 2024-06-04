@@ -90,4 +90,3 @@ title: Apps and tools
 - https://github.com/nikitavoloboev/my-mac-os
 - https://github.com/obahareth/my-mac-os
 - https://github.com/jaywcjlove/awesome-mac
-

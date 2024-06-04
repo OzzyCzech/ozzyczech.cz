@@ -3,7 +3,8 @@ title: Comment bubble with Tailwind
 ---
 
 ```html
-<div class="
+<div
+  class="
 	 relative
 	 bg-gray-500 text-white
 	 inline-block text-center 
@@ -21,7 +22,10 @@ title: Comment bubble with Tailwind
 	 after:z-50 
 	 after:border-l-transparent
 	 after:border-b-transparent
-">50</div>
+"
+>
+  50
+</div>
 ```
 
 https://play.tailwindcss.com/6MOkpPmqmu

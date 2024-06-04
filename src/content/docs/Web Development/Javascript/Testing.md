@@ -21,7 +21,6 @@ title: Testing
 - [puppeteer](https://pptr.dev/) - Headless Chrome Node.js API by official Google Chrome team.
 - [cypress](https://www.cypress.io/) - Fast, easy and reliable testing for anything that runs in a browser.
 
-
 #### Libraries
 
 - [Polly.js](https://netflix.github.io/pollyjs) - Record, replay, and stub HTTP interactions.
