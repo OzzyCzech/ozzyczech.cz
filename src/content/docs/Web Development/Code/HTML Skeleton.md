@@ -2,7 +2,7 @@
 title: HTML Skeleton
 ---
 
-Here is my simple HTML boilerplate for web development:
+Here is my simple HTML boilerplate for web development.
 It includes the essential parts needed for the page to 
 work properly and display content. This skeleton has key elements like the
 document type, metadata, and the main content sections
