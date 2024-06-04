@@ -17,4 +17,3 @@ title: AI
 ## Translators
 
 - [DeepL](https://www.deepl.com/translator) - AI translator
-

@@ -124,10 +124,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/starlight-tailwind/-/starlight-tailwind-2.0.3.tgz#6ecb07e922b6d25e5c9daac866ae657a0e01194a"
   integrity sha512-ZwbdXS/9rxYlo3tKZoTZoBPUnaaqek02b341dHwOkmMT0lIR2w+8k0mRUGxnRaYtPdMcaL+nYFd8RUa8sjdyRg==
 
-"@astrojs/starlight@^0.23.1":
-  version "0.23.1"
-  resolved "https://registry.npmjs.org/@astrojs/starlight/-/starlight-0.23.1.tgz"
-  integrity sha512-BMVRpM4suTq4K2plzcISs/t5W3Xw2fHGWhSmF7lg90nps595yHp3j4gFpeukRrynwEhoNu0Bds1zgOBebC3Egg==
+"@astrojs/starlight@^0.23.2":
+  version "0.23.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/starlight/-/starlight-0.23.2.tgz#6518efa649c29a4cd095cbf199672a52f7e9d768"
+  integrity sha512-j8odYR744qCilip9s0UXNzDQ66uu1klD24zRI5Aqzxoj01eVnAsEgDPC8rU/gDTvydKWhF5diBRC1QVDN5JIYw==
   dependencies:
     "@astrojs/mdx" "^3.0.0"
     "@astrojs/sitemap" "^3.0.5"
@@ -3721,10 +3721,10 @@ preferred-pm@^3.1.3:
     path-exists "^4.0.0"
     which-pm "2.0.0"
 
-prettier@^3.2.5:
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.2.5.tgz#e52bc3090586e824964a8813b09aba6233b28368"
-  integrity sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==
+prettier@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.0.tgz#d173ea0524a691d4c0b1181752f2b46724328cdf"
+  integrity sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==
 
 prismjs@^1.29.0:
   version "1.29.0"

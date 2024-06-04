@@ -8,16 +8,16 @@
 		"build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"format": "prettier --write src/content/docs/**/*.md"
+		"format": "prettier --prose-wrap=always --write src/content/docs/**/*.md"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
-		"@astrojs/starlight": "^0.23.1",
+		"@astrojs/starlight": "^0.23.2",
 		"@astrojs/starlight-tailwind": "^2.0.3",
 		"@astrojs/tailwind": "^5.1.0",
 		"@sindresorhus/slugify": "^2.2.1",
 		"astro": "^4.9.2",
-		"prettier": "^3.2.5",
+		"prettier": "^3.3.0",
 		"sharp": "^0.33.4",
 		"tailwindcss": "^3.4.3",
 		"typescript": "^5.4.5",

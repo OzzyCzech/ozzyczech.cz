@@ -271,8 +271,8 @@ title: Getting Real - highlights
 
 > Is it just me, or are we all in beta, all the time?
 
-> Sometimes it's ok to just be a pencil.
-> You don't need to be a swiss-army knife.
+> Sometimes it's ok to just be a pencil. You don't need to be a swiss-army
+> knife.
 
 > With web-based software based on the subscription model, people pay a monthly
 > fee to use the service. You don't need to keep upselling them by adding more

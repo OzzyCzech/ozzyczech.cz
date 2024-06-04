@@ -12,8 +12,12 @@ The standard zoom lens is the photographer's **handy multitool** a variable lens
 
 ## Best wide angel lenses
 
-Technically, wide-angle lenses are those with focal lengths shorter than a ‘normal’ lens. But what’s ‘normal’? That’s based on a diagonal measurement of the individual camera’s sensor size. On an X Series camera, normal lenses are around 28mm, so anything under 28mm is wide
-angle. And that includes models with focal lengths like 16mm, 18mm, 23mm, and so on. ([read more](https://fujifilm-x.com/en-us/exposure-center/which-wide-angle-lens-for-landscapes/))
+Technically, wide-angle lenses are those with focal lengths shorter than a
+‘normal’ lens. But what’s ‘normal’? That’s based on a diagonal measurement of
+the individual camera’s sensor size. On an X Series camera, normal lenses are
+around 28mm, so anything under 28mm is wide angle. And that includes models with
+focal lengths like 16mm, 18mm, 23mm, and so on.
+([read more](https://fujifilm-x.com/en-us/exposure-center/which-wide-angle-lens-for-landscapes/))
 
 ![](http://ozzyczech.cz/i/focal-length.jpg)
 
@@ -23,7 +27,8 @@ Best wide angel lenses are:
 - [Fujifilm XF 8 mm f/3,5 R WR](https://fujifilm-x.com/global/products/lenses/xf8mmf35-r-wr/)
 - [XF 18mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf18mmf14-r-lm-wr/)
 - [XF 23mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf23mmf14-r-lm-wr/)
-- [XF 10-24mm F4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/) - best zoom lens for landscapes
+- [XF 10-24mm F4 R OIS WR](https://fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/) -
+  best zoom lens for landscapes
 - [Viltrox 13 mm F1.4](https://viltroxstore.com/products/13mm-f14-af-lens-for-fujifilm-x-mount-camera-models)
 - [XF 33mm F1.4 R LM WR](https://fujifilm-x.com/global/products/lenses/xf33mmf14-r-lm-wr/)
 

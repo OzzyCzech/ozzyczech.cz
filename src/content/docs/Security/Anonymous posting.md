@@ -2,7 +2,8 @@
 title: Anonymous posting
 ---
 
-This is a list of websites that allow you to post content anonymously and for free.
+This is a list of websites that allow you to post content anonymously and for
+free.
 
 ## Text
 

@@ -2,7 +2,8 @@
 title: User agents
 ---
 
-To change the user agent with the #httpie or #curl, you can use the `--user-agent` option followed by the desired user agent string:
+To change the user agent with the #httpie or #curl, you can use the
+`--user-agent` option followed by the desired user agent string:
 
 ```shell
 curl --user-agent 'My User Agent' example.com
