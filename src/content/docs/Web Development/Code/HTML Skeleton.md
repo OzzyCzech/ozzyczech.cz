@@ -1,5 +1,6 @@
 ---
 title: HTML Skeleton
+tableOfContents: false
 ---
 
 Here is my simple HTML boilerplate for web development.
