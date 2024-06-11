@@ -1,10 +1,11 @@
 ---
 title: Welcome to my notes
+description: A public collection of notes on web development and more by Roman Ožana. Open source and maintained on GitHub. Contributions welcome!
 tableOfContents: false
 ---
 
 This website is a public presentation of my notes collected over time.
-It's open source, you can find the source on [GitHub](https://github.com/OzzyCzech/ozzyczech.cz)
+It's [open source](https://github.com/OzzyCzech/ozzyczech.cz), you can find the source on [GitHub](https://github.com/OzzyCzech/ozzyczech.cz)
 all content is maintained by [Roman Ožana](https://ozana.cz).
 
 ### What's about?
