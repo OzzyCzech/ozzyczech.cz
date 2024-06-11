@@ -38,7 +38,6 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/roman-ozana.jpg',
 			},
-
 			editLink: {
 				baseUrl: 'https://github.com/OzzyCzech/ozzyczech.cz/edit/main/'
 			},
