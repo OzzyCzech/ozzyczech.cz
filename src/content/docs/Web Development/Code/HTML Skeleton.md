@@ -8,7 +8,7 @@ It includes the essential parts needed for the page to
 work properly and display content. This skeleton has key elements like the
 document type, metadata, and the main content sections
 
-```html
+```html title="index.html"
 <!doctype html>
 <html dir="ltr" lang="en">
   <head>

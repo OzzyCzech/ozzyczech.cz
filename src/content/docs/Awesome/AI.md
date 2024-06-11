@@ -1,5 +1,7 @@
 ---
-title: AI
+title: Awesome AI
+sidebar:
+  label: AI
 ---
 
 ## ChatBots
@@ -8,12 +10,14 @@ title: AI
 - [Claude](https://claude.ai/chat/) - ChatBot by Anthropic
 - [Gemini](https://bard.google.com/) - Google's ChatBot
 
-## Images
+## Image generators
 
-- [NightCafe](https://nightcafe.studio/)
+- [Bing Copilot](https://www.bing.com/images/create)
 - [Midjourney](https://midjourney.com/)
-- [IconifyAI](https://www.iconifyai.com/)
+- [NightCafe](https://nightcafe.studio/)
+- [Adobe Firefly](https://firefly.adobe.com/)
 
-## Translators
+## Text processors
 
 - [DeepL](https://www.deepl.com/translator) - AI translator
+- [Write](https://www.deepl.com/write/) - AI writer

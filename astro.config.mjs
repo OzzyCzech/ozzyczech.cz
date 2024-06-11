@@ -7,8 +7,10 @@ import links from './src/markdown/links.js';
 import youtube from './src/markdown/youtube.js';
 
 // https://astro.build/config
+
+const site = 'https://ozzyczech.cz';
 export default defineConfig({
-	site: 'https://ozzyczech.cz',
+	site,
 	markdown: {
 		remarkPlugins: [links, youtube]
 	},
@@ -24,6 +26,12 @@ export default defineConfig({
 				github: 'https://github.com/OzzyCzech',
 				stackOverflow: 'https://meta.stackoverflow.com/users/355316/ozzyczech'
 			},
+			head: [
+				{
+					tag: 'meta',
+					attrs: {property: 'og:image', content: site + 'og.png'},
+				}
+			],
 			customCss: [
 				'./src/style.css',
 			],
