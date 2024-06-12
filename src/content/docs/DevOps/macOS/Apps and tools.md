@@ -83,6 +83,10 @@ title: Apps and tools
 
 - [Czech Holidays Calendar](webcal://www.google.com/calendar/ical/czech__cs%40holiday.calendar.google.com/public/basic.ics)
 
+## Messaging
+
+- [Beeper](https://www.beeper.com/) - All your messaging apps in one place
+
 ## Others
 
 ### Links
