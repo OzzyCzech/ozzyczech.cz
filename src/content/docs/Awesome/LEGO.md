@@ -2,9 +2,7 @@
 title: LEGO
 ---
 
-Lego catalogues, instructions, and other resources.
-
-## Lego catalogues
+## LEGO catalogues
 
 - [BrickLink](https://www.bricklink.com/)
 - [BrickOwl](https://www.brickowl.com/catalog/lego-sets)
