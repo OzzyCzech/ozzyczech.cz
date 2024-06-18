@@ -2,7 +2,9 @@
 title: UTF-8 Symbols
 ---
 
-## Universal Symbols
+Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿◕)](https://symbl.cc/en/)
+
+### Universal Symbols
 
 | Symbol | Description         | HTML Entity |
 | ------ | ------------------- | ----------- |
@@ -38,7 +40,7 @@ title: UTF-8 Symbols
 | `↘`   | Down-Right  |             |
 | `↙`   | Down-Left   |             |
 
-## Apple
+### Apple
 
 | Symbol | Description       |
 | ------ | ----------------- |
@@ -47,5 +49,3 @@ title: UTF-8 Symbols
 | ⇧      | Shift             |
 | ⌥      | Option (or Alt)   |
 | ⌃      | Control (or Ctrl) |
-
-Get more here: https://graphemica.com/
