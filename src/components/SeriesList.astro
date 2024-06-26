@@ -1,7 +1,7 @@
 ---
 import Series from "./Series.astro";
 const html = await Astro.slots.render('default');
-const titles = [...html.matchAll(/(<li>)(?<title>.*?)<\/li>/g)].map((m) => m.groups.title);
+const titles = [...html.matchAll(/(<li>)(?<title>.*?)<\/li>/g)].map((m) => m.groups?.title);
 ---
 
 <div>
