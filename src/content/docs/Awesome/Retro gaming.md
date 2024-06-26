@@ -8,5 +8,5 @@ Download [Lakka](https://www.lakka.tv/) or [RetroPie](https://retropie.org.uk/) 
 
 ## Handhelds
 
-- https://anbernic.com/
-- https://www.goretroid.com/
+- [Anbernic](https://anbernic.com/)
+- [Retroid](https://www.goretroid.com)
