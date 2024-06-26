@@ -6,7 +6,7 @@ sidebar:
 
 ## ChatBots
 
-- [ChatGPT](https://chat.openai.com/) - ChatBot by OpenAI
+- [ChatGPT](https://chatgpt.com/) - ChatBot by OpenAI
 - [Claude](https://claude.ai/chat/) - ChatBot by Anthropic
 - [Gemini](https://bard.google.com/) - Google's ChatBot
 

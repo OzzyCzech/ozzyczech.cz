@@ -1,10 +1,16 @@
 ---
-title: Getting Real - highlights
+title: Highlights from Getting Real
+sidebar:
+  label: Getting Real
 ---
+
+[Getting Real](https://basecamp.com/gettingreal/getting-real.pdf) is a book by Jason Fried,
+David Heinemeier Hansson, and Matthew Linderman of 37signals. It's about skipping all 
+the stuff that represents real
 
 ## Starting
 
-> When there's too many people involved, nothing gets done.
+> When there's **too many people involved**, nothing gets done.
 
 > Many months are spent on planning features and arguing details with the goal
 > of everyone reaching an agreement on what is the "right" thing for the
@@ -31,7 +37,7 @@ title: Getting Real - highlights
 
 ## Change
 
-> The ability to change is key. Having everything fixed makes it tough to
+> The **ability to change is key**. Having everything fixed makes it tough to
 > change.
 
 > If your competition is faster, you must be cheaper. If they sell the story of
@@ -46,7 +52,7 @@ title: Getting Real - highlights
 
 > Change is your best friend.
 
-> If change gets too expensive, you're dead.
+> If change **gets too expensive, you're dead**.
 
 > When it comes to web technology, change must be easy and cheap.
 
@@ -59,8 +65,8 @@ title: Getting Real - highlights
 
 ## New features
 
-> Believe it or not, the bigger problem isn't scaling, it's getting to the point
-> where you have to scale. Without the first problem you won't have the second.
+> Believe it or not, the bigger problem isn't scaling, it's **getting to the point**
+> where you **have to scale**. Without the first problem you won't have the second.
 
 > Organizations need guideposts. They need an outline; employees need to know
 > each day when they wake up why they're going to work.
@@ -70,7 +76,7 @@ title: Getting Real - highlights
 
 > For every new feature you need to...
 >
-> 1. Say no.
+> 1. **Say no.**
 > 2. Force the feature to prove its value.
 > 3. If "no" again, end here. If "yes," continue...
 > 4. Sketch the screen(s)/ui.
@@ -101,9 +107,9 @@ title: Getting Real - highlights
 
 > Guess which part of the day we get the most work done? The alone part. It's
 > not that surprising really. Many people prefer to work either early in the
-> morning or late at night — times when they're not being bothered.
+> morning or late at night — **times when they're not being bothered**.
 
-> The alone zone is where real progress is made.
+> The **alone zone** is where **real progress** is made.
 
 > Getting in the zone takes time. And that's why interruption is your enemy.
 > It's like rem sleep — you don't just go to rem sleep, you go to sleep first
@@ -122,9 +128,9 @@ title: Getting Real - highlights
 > no matter how long they work, they never produce something as good as what the
 > great programmers can produce.
 
-> Enthusiasm. It's one attribute you just can't fake.
+> **Enthusiasm**. It's one attribute you just **can't fake**.
 
-> Someone you can trust to get things done when left alone.
+> Someone you can trust to get things done **when left alone**.
 
 > At Creative Good, we call it "intelligent inconsistency": making sure that
 > each page in the process gives users exactly what they need at that point in
@@ -277,5 +283,3 @@ title: Getting Real - highlights
 > With web-based software based on the subscription model, people pay a monthly
 > fee to use the service. You don't need to keep upselling them by adding more
 > and more and more, you just need to provide an ongoing valuable service.
-
-Source: https://basecamp.com/gettingreal/getting-real.pdf
