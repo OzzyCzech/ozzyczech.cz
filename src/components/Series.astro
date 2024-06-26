@@ -1,4 +1,17 @@
-<div>
-<slot/>
+---
+const {title} = Astro.props;
 
-</div>
+// search titles in the Free movie directory API
+const response = await fetch(`https://api.themoviedb.org/3/search/tv?api_key=${import.meta.env.TMDB_API_KEY}&include_adult=true&query=${title}`).then((r) => r.json());
+const result = response.results.filter((result) => result.name.toLowerCase() === title.toLowerCase()).shift() || response.results.shift();
+
+const img = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : '';
+const link = `https://www.themoviedb.org/tv/${result.id}`;
+const name = result.name;
+---
+<li class="text-center !m-0">
+	<a href={link} target="_blank" class="p-0 m-0">
+		<img src={img} alt="${result.name}" class="rounded-lg shadow"/>
+	</a>
+	<a href={link} title={name} target="_blank" class="inline-flex text-sm leading-normal no-underline hover:underline !text-inherit">{name}</a>
+</li>

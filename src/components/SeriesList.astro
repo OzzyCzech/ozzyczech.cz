@@ -1,0 +1,13 @@
+---
+import Series from "./Series.astro";
+const html = await Astro.slots.render('default');
+const titles = [...html.matchAll(/(<li>)(?<title>.*?)<\/li>/g)].map((m) => m.groups.title);
+---
+
+<div>
+	<ul class="p-0 m-0 list-none grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+		{titles.map((title) => (
+			<Series title={title}/>
+		))}
+	</ul>
+</div>
