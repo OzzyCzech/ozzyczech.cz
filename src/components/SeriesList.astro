@@ -5,7 +5,7 @@ const titles = [...html.matchAll(/(<li>)(?<title>.*?)<\/li>/g)].map((m) => m.gro
 ---
 
 <div>
-	<ul class="p-0 m-0 list-none grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+	<ul class="p-0 m-0 list-none grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3">
 		{titles.map((title) => (
 			<Series title={title}/>
 		))}
