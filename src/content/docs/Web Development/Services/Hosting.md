@@ -12,6 +12,6 @@ title: Hosting
 ### Server hosting
 
 - [Kinsta](https://kinsta.com/application-hosting/) - fast and scalable application hosting
-- [Digital Ocean](https://www.digitalocean.com/) - simplest cloud hosting
 - [Vultr](https://www.vultr.com/) - Instantly deploy High Performance Cloud Servers
+- [Digital Ocean](https://www.digitalocean.com/) - simplest cloud hosting
 - [Amazon S3](https://aws.amazon.com/s3/) - Simple Storage Service
