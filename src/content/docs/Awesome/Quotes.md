@@ -20,9 +20,13 @@ tableOfContents: false
 > When I was a kid I used to pray every night for a new bicycle. Then I realised that the Lord doesn’t work that way so I stole one and asked Him to forgive me.
 > _Emo Philips_
 
-> Až Rusové konečně odtáhnou, tento národ pozná, že je sám svým okupantem. Totalitní ideje a ideje komunismu jsou v něm příliš hluboko zakořeněny. Obávám se říct, že jsou mu jaksi vlastní. Proto musíme být mimořádně ostražití vůči všem pokusům zesměšňovat, omezovat či zatracovat
+> Až Rusové konečně odtáhnou, tento národ pozná, že je sám svým okupantem. Totalitní ideje a ideje komunismu jsou v něm příliš hluboko zakořeněny.
+> Obávám se říct, že jsou mu jaksi vlastní. Proto musíme být mimořádně ostražití vůči všem pokusům zesměšňovat, omezovat či zatracovat
 > demokracii, která se ve vědomí naší společnosti teprve probouzí.
 > _Václav Havel, 1991_
+
+> I'm at that stage in life where I stay out of discussions. Even if you say 1+1=5, you're right, have fun.
+> _Keanu Reeves_
 
 > You can never make the **same mistake twice** because the second time you make it, it's not a mistake, it's a choice.
 > _Steven Denn_
