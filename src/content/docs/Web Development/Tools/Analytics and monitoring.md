@@ -9,7 +9,7 @@ title: Analytics and monitoring
 - [Fathom](https://usefathom.com/) - Simple, light-weight, privacy-focused alternative to Google Analytics.
 - [GoatCounter](https://www.goatcounter.com/) - Simple web statistics. No tracking of personal data.
 - [Simple Analytics](https://simpleanalytics.com/) - Simple, clean, and privacy-friendly analytics.
-- [Metricalp](https://www.metricalp.com/) - Simple, privacy-focused analytics from $2/month. 
+- [Metricalp](https://www.metricalp.com/) - Simple, privacy-focused analytics from $2/month.
 
 ## Uptime monitoring
 

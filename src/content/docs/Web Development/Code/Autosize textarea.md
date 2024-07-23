@@ -87,9 +87,9 @@ textarea.addEventListener("input", () => autosize(textarea));
 
 ### New CSS-only way with `field-sizing`
 
-There is new fancy way to autosize `textarea` or `input` fields 
+There is new fancy way to autosize `textarea` or `input` fields
 using only CSS. You can use `field-sizing: content` to make
-the input field grow with its content.  Current support is 
+the input field grow with its content. Current support is
 [limited to Chromium-only](https://developer.mozilla.org/en-US/docs/Web/CSS/field-sizing),
 but it's a nice alternative and worth considering as future-proof solution.
 
@@ -99,9 +99,8 @@ textarea {
 }
 ```
 
-It's a single CSS property that really does all of that work for you, 
+It's a single CSS property that really does all of that work for you,
 it even sizes to the placeholder when you clear it.
-
 
 ### Conclusion
 

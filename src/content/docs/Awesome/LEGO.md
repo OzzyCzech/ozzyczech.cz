@@ -6,8 +6,7 @@ title: LEGO
 
 - [BrickLink](https://www.bricklink.com/)
 - [BrickOwl](https://www.brickowl.com/catalog/lego-sets)
-- [Brickset](https://brickset.com/) 
-
+- [Brickset](https://brickset.com/)
 
 ## Czech LEGO shops
 

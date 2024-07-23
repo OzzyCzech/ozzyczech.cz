@@ -5,7 +5,7 @@ sidebar:
 ---
 
 [Getting Real](https://basecamp.com/gettingreal/getting-real.pdf) is a book by Jason Fried,
-David Heinemeier Hansson, and Matthew Linderman of 37signals. It's about skipping all 
+David Heinemeier Hansson, and Matthew Linderman of 37signals. It's about skipping all
 the stuff that represents real
 
 ## Starting

@@ -11,7 +11,7 @@ title: HTTP tools
 ### Favicon
 
 - [Favicon Grabber](http://favicongrabber.com/) - getting favicons from any URL'
- 
+
 ### DNS
 
 - [DIG](https://toolbox.googleapps.com/apps/dig/#ANY/) - online DIG from Google

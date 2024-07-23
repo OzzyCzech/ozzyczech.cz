@@ -8,4 +8,4 @@ title: How to
 - dress Italian
 - kiss French
 - spend Arab
-- travel Czech 
+- travel Czech
