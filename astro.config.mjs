@@ -23,7 +23,7 @@ export default defineConfig({
 			tableOfContents: true,
 			pagination: false,
 			social: {
-				github: 'https://github.com/OzzyCzech',
+				github: 'https://github.com/OzzyCzech/ozzyczech.cz',
 				stackOverflow: 'https://meta.stackoverflow.com/users/355316/ozzyczech'
 			},
 			head: [

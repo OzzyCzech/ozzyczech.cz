@@ -15,12 +15,12 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@astrojs/check@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.8.2.tgz#e88b404d19a7e65743a2389692341340b0e60906"
-  integrity sha512-L0V9dGb2PGvK9Mf3kby99Y+qm7EqxaC9tN1MVCvaqp/3pPPZBadR4XAySHipxXqQsxwJS25WQow8/1kMl1e25g==
+"@astrojs/check@^0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.8.3.tgz#3a60ccd34fd11d9b054b00ca54a9a45f0f63a07e"
+  integrity sha512-ajcSe+ezX5jCc3dreQlWzbknzXgSGnDETNe3C1mawUOtGpO4t5z2YGaD0y+wzB84lmgPWaWZa0fKSPwLq/wUHw==
   dependencies:
-    "@astrojs/language-server" "^2.12.1"
+    "@astrojs/language-server" "^2.12.7"
     chokidar "^3.5.3"
     fast-glob "^3.3.1"
     kleur "^4.1.5"
@@ -36,10 +36,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.4.1.tgz#ceb5de49346dbdbfb6cba1b683c07fef7df56e1c"
   integrity sha512-bMf9jFihO8YP940uD70SI/RDzIhUHJAolWVcO1v5PUivxGKvfLZTLTVVxEYzGYyPsA3ivdLNqMnL5VgmQySa+g==
 
-"@astrojs/language-server@^2.12.1":
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.12.1.tgz#799e8eed7626a7263b8e2c38e98a73f4ed111028"
-  integrity sha512-CCibE6XwSmrZEKlPDr48LZJN7NWxOurOJK1yOzqZFMNV8Y6DIqF6s1e60gbNNHMZkthWYBNTPno4Ni/XyviinQ==
+"@astrojs/language-server@^2.12.7":
+  version "2.12.8"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.12.8.tgz#64a1369ace5180958f58ab0e0dbe167b33f2c707"
+  integrity sha512-aUppjqbCdFkd2Cdr8tDtd9id7lAZAmpwpYTQrOm69z8P4NaGUE/ksMIhd0Q99zXfSBjDVC7HlxSjPg8Y7xakfg==
   dependencies:
     "@astrojs/compiler" "^2.9.1"
     "@jridgewell/sourcemap-codec" "^1.4.15"
@@ -149,10 +149,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/starlight-tailwind/-/starlight-tailwind-2.0.3.tgz#6ecb07e922b6d25e5c9daac866ae657a0e01194a"
   integrity sha512-ZwbdXS/9rxYlo3tKZoTZoBPUnaaqek02b341dHwOkmMT0lIR2w+8k0mRUGxnRaYtPdMcaL+nYFd8RUa8sjdyRg==
 
-"@astrojs/starlight@^0.25.1":
-  version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/starlight/-/starlight-0.25.1.tgz#175488ccd77cf228970e192d19b8155fa42f134a"
-  integrity sha512-tniE870QpwDs7stJk/qb1LwE78761Fi77qF/UsWedDU90gC6gPjGOHNrbQYUABAmkQ63t3/Jpq9/kmS6sfHT0g==
+"@astrojs/starlight@^0.25.3":
+  version "0.25.3"
+  resolved "https://registry.yarnpkg.com/@astrojs/starlight/-/starlight-0.25.3.tgz#f1faa850e649e3c4029d16cdbf3cf2124cbb9364"
+  integrity sha512-XNpGbZ54ungtzen4wQkPXn50D1ZquB51paWrZftA0jWxUkj4b/pP8PijAFrGFypydhvu7Dhl0DjD07lrnSSUhQ==
   dependencies:
     "@astrojs/mdx" "^3.1.0"
     "@astrojs/sitemap" "^3.1.5"
@@ -167,6 +167,7 @@
     hastscript "^9.0.0"
     mdast-util-directive "^3.0.0"
     mdast-util-to-markdown "^2.1.0"
+    mdast-util-to-string "^4.0.0"
     pagefind "^1.0.3"
     rehype "^13.0.1"
     rehype-format "^5.0.0"
@@ -4237,10 +4238,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-tailwindcss@^3.4.6:
-  version "3.4.6"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.6.tgz#41faae16607e0916da1eaa4a3b44053457ba70dd"
-  integrity sha512-1uRHzPB+Vzu57ocybfZ4jh5Q3SdlH7XW23J5sQoM9LhE9eIOlzxer/3XPSsycvih3rboRsvt0QCmzSrqyOYUIA==
+tailwindcss@^3.4.7:
+  version "3.4.7"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.7.tgz#6092f18767f5933f59375b9afe558e592fc77201"
+  integrity sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==
   dependencies:
     "@alloc/quick-lru" "^5.2.0"
     arg "^5.0.2"
