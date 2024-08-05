@@ -4,6 +4,16 @@ sidebar:
   order: 1
 ---
 
+
+### Charts
+
+- [ApexCharts](https://apexcharts.com/) - Modern & Interactive Open-source Charts
+- [Chart.js](https://www.chartjs.org/) - Simple yet flexible JavaScript charting for designers & developers
+- [D3.js](https://d3js.org/) - Data-Driven Documents
+- [Highcharts](https://www.highcharts.com/) - Interactive JavaScript charts for your web pages
+- [Recharts](https://recharts.org/) - A composable charting library built on React components
+- [Victory](https://formidable.com/open-source/victory/) - A collection of composable React components for building interactive data visualizations
+ 
 ### UI
 
 - [Swiper](https://swiperjs.com/) - The Most Modern Mobile Touch Slider
