@@ -26,7 +26,7 @@ give @a minecraft:netherite_axe
 
 All items are listed on [Minecraft Item ID List](https://minecraftitemids.com/).
 
-### Show coordinates 
+### Show coordinates
 
 ```text
 /gamerule showcoordinates true
@@ -34,7 +34,9 @@ All items are listed on [Minecraft Item ID List](https://minecraftitemids.com/).
 
 ### Minecraft Seeds
 
-- [`5705783928676095273`](https://www.chunkbase.com/apps/seed-map#seed=5705783928676095273) - Woodland Mansion
+| Seed                  | Description                                                                          |
+|-----------------------|--------------------------------------------------------------------------------------|
+| `5705783928676095273` | [Woodland Mansion](https://www.chunkbase.com/apps/seed-map#seed=5705783928676095273) |
 
 ### (Free) Minecraft Servers
 
