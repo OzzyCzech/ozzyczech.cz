@@ -4,7 +4,7 @@ title: Minecraft
 
 ### Minecraft Commands
 
-##### Game Modes
+##### Setup game mode
 
 ```text
 gamemode creative @a
@@ -26,14 +26,18 @@ give @a minecraft:netherite_axe
 
 All items are listed on [Minecraft Item ID List](https://minecraftitemids.com/).
 
-### Minecraft Servers
+### Show coordinates 
+
+```text
+/gamerule showcoordinates true
+```
+
+### Minecraft Seeds
+
+- [`5705783928676095273`](https://www.chunkbase.com/apps/seed-map#seed=5705783928676095273) - Woodland Mansion
+
+### (Free) Minecraft Servers
 
 - [Aternos](https://aternos.org/) - Free Minecraft server hosting.
 - [Minehut](https://minehut.com/) - Free Minecraft server hosting.
 - [Server.pro](https://server.pro/) - Free Minecraft server hosting.
-
-### Seeds
-
-| Name             | Seed                                                                               | Description                                                          |
-| ---------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Woodland Mansion | [5705783928676095273](https://www.chunkbase.com/apps/seed-map#5705783928676095273) | [Woodland Mansion](https://minecraft.gamepedia.com/Woodland_Mansion) |
