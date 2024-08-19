@@ -11,8 +11,8 @@
 		"format": "prettier --write src/**/*.md"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.2",
-		"@astrojs/starlight": "^0.25.5",
+		"@astrojs/check": "^0.9.3",
+		"@astrojs/starlight": "^0.26.1",
 		"@astrojs/starlight-tailwind": "^2.0.3",
 		"@astrojs/tailwind": "^5.1.0",
 		"@sindresorhus/slugify": "^2.2.1",
