@@ -3,6 +3,9 @@ title: Quotes
 tableOfContents: false
 ---
 
+> Any sufficiently advanced technology is indistinguishable from magic.
+> _Arthur C. Clarke_
+
 > Kdo nemá mravní zásady, obvykle se zahalí do praporu, a parchanti se vždycky dovolávají čistoty své rasy.
 > _Umberto Eco_
 
