@@ -12,6 +12,7 @@ sidebar:
 
 ## Image generators
 
+- [Mystic by Freepik](https://www.freepik.com/ai/image-generator)
 - [Bing Copilot](https://www.bing.com/images/create)
 - [Midjourney](https://midjourney.com/)
 - [NightCafe](https://nightcafe.studio/)
