@@ -18,6 +18,10 @@ sidebar:
 - [NightCafe](https://nightcafe.studio/)
 - [Adobe Firefly](https://firefly.adobe.com/)
 
+### Open source image generators
+
+- [Flux](https://blackforestlabs.ai/)
+
 ## Text processors
 
 - [DeepL](https://www.deepl.com/translator) - AI translator
