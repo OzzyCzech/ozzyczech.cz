@@ -7,6 +7,8 @@ title: Best cameras
 - [Sony A7 IV](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7m4)
 - [Sony A7R IV](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7rm4)
 - [Sony A7C II](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7cm2)
+- [Panasonic Lumix DC-S5 II](https://www.panasonic.com/cz/consumer/fotoaparaty-a-videokamery/fotoaparaty-lumix-s-full-frame/dc-s5.html)
+- [Nikon ZF](https://www.nikon.cz/cs_CZ/product/cameras/z-f) 
 
 ## APS-C sensor size
 
@@ -22,13 +24,8 @@ title: Best cameras
 - [DJI Osmo Pocket 3](https://www.dji.com/cz/osmo-pocket-3)
 - [Insta360 X4](https://www.insta360.com/product/insta360-x4)
 
-Sony FE 35mm f/1.4 GM
-
-
-
-
 ## Compact size camera
 
 - [Fujifilm X100VI](https://fujifilm-x.com/en-us/products/cameras/x100vi/)
 - [Ricoh GR IIIx](http://www.ricoh-imaging.co.jp/english/products/gr-3/)
-- Leica Q2 [Black](https://leica-camera.com/en-SG/photography/cameras/q/q2-black), [Reporter](https://leica-camera.com/en-SG/photography/cameras/q/q2-reporter) or [Monochrome](https://leica-camera.com/en-SG/photography/cameras/q/q2-monochrom)
+- [Leica Q2 Black](https://leica-camera.com/en-SG/photography/cameras/q/q2-black), [Leica Q2 Reporter](https://leica-camera.com/en-SG/photography/cameras/q/q2-reporter) or [Leica Q2 Monochrome](https://leica-camera.com/en-SG/photography/cameras/q/q2-monochrom)
