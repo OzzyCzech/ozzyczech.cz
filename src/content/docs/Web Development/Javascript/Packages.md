@@ -4,7 +4,6 @@ sidebar:
   order: 1
 ---
 
-
 ### Charts
 
 - [ApexCharts](https://apexcharts.com/) - Modern & Interactive Open-source Charts
@@ -13,7 +12,20 @@ sidebar:
 - [Highcharts](https://www.highcharts.com/) - Interactive JavaScript charts for your web pages
 - [Recharts](https://recharts.org/) - A composable charting library built on React components
 - [Victory](https://formidable.com/open-source/victory/) - A collection of composable React components for building interactive data visualizations
- 
+
+### User authentication
+
+- [Auth.js](https://authjs.dev) - A simple, lightweight, and easy-to-use user authentication library for JavaScript
+
+### Emailing
+
+- [Nodemailer](https://nodemailer.com/) - Send e-mails from Node.js – easy as cake!
+- [Amazon SES](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html) - Scalable email service for marketing and transactional communications
+- [Resend](https://resend.com/) - Email for developers
+- [SendGrid](https://sendgrid.com/) - Email Delivery. Simplified.
+- [Mailgun](https://www.mailgun.com/) - Powerful APIs that enable you to send, receive and track email effortlessly.
+- [Postmark](https://postmarkapp.com/) - Fast and reliable transactional email service
+
 ### UI
 
 - [Swiper](https://swiperjs.com/) - The Most Modern Mobile Touch Slider
