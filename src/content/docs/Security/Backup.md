@@ -17,9 +17,9 @@ title: Backup
 ### NAS Storages
 
 - [Synology](https://www.synology.com) - any of the [plus products](https://www.synology.com/cs-cz/products)
-- [TrueNAS](https://www.truenas.com/) - Open Storage Means
-- [NextCloud](https://nextcloud.com/) - The self-hosted productivity platform
-- [Unraid](https://unraid.net/)
+- [TrueNAS](https://www.truenas.com/) - TrueNAS is the enterprise version of FreeNAS
+- [NextCloud](https://nextcloud.com/) - Nextcloud is the most deployed on-premises file share and collaboration platform. Access & collaborate across your devices.
+- [Unraid](https://unraid.net/) - Unraid OS allows sophisticated media aficionados, gamers, and other intensive data-users to have ultimate control over their data, media, applications, and desktops, using just about any combination of hardware.
 
 ### Desktop backup
 
