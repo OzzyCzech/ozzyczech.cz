@@ -4,12 +4,11 @@ sidebar:
   label: Backup git repository
 ---
 
-Git is capable of "bundling" its data into a single file. The [bundle command](https://git-scm.com/docs/git-bundle)
-will package up everything that would normally be pushed over the wire with a git push command
-into a binary file that you can email to someone or put on a flash drive, then unbundle into another repository.
+Git can "bundle" its data into a single file using the [`bundle` command](https://git-scm.com/docs/git-bundle).
+This command packages everything that would typically be pushed over the network with a `git push` into a binary
+file. The file can then be emailed to someone, transferred to a flash drive, and later "unbundled" into another repository.
 
-Following bash function will clone repository and create one
-signle bundle file with nice name:
+Following bash function will clone repository and create one single bundle file with nice name:
 
 ```shell
 #!/bin/bash
@@ -43,7 +42,7 @@ Backup alias can be also found in my [dotfiles](https://github.com/OzzyCzech/dot
 
 ## Restore
 
-You can difectly clone repository from bundle file:
+You can directly clone repository from bundle file:
 
 ```shell
 git clone my-super-file.bundle directory
