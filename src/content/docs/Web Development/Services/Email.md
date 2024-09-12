@@ -33,3 +33,9 @@ You can create free email aliases for your domain name with https://improvmx.com
 - [Email.ml](https://email.ml/) - Minimalist temporary Email
 - [Temp Mail](https://temp-mail.org/en/) - Temporary Email
 - [10 Minute Mail](https://10minutemail.com/) - Temporary Email
+
+
+### Disposable email lists
+
+- [disposable-email-domains](https://github.com/disposable-email-domains/disposable-email-domains/)
+- [disposable/disposable](https://github.com/disposable/disposable)
