@@ -12,6 +12,10 @@ title: Icons
 
 Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
 
+##### [SVGBox](https://svgbox.net/)
+
+SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
+
 ##### [Remix Icons](https://remixicon.com/)
 
 2000+ Pixel-perfect vector icons and Iconfont for your next project.
@@ -24,13 +28,13 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 
 Twitters Bootstrap icons
 
-##### [SVGBox](https://svgbox.net/)
-
-SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
-
 ##### [Material Icons](https://fonts.google.com/icons)
 
 Material icons are delightful, beautifully crafted symbols [made by Google](https://github.com/google/material-design-icons).
+
+##### [SimpleIcons](https://simpleicons.org/)
+
+More than 3000 free SVG icons for popular brands
 
 and many more...
 
@@ -41,7 +45,6 @@ and many more...
 - [Teeny icons](https://teenyicons.com/) - small 1x icons set
 - [Majest icons](https://www.majesticons.com/) - Over 720 icons under MIT license
 - [Feather](https://feathericons.com/) - simple and beautiful icons set
-- [Simple Icons](https://simpleicons.org/) - 2441 Free SVG icons for popular brands
 - [iconsax](https://iconsax.io/) - Vuesax framework icons
 - [ionicons](https://ionic.io/ionicons/) - hand crafter open source icons library
 - [Tabler Icons](https://tablericons.com/) - 1424 Open source free SVG icons for you to use in your web projects.
