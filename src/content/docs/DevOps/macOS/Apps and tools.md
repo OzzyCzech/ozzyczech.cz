@@ -35,7 +35,9 @@ title: Apps and tools
 ## Clipboard managers
 
 - [Maccy](https://maccy.app/) - lightweight and free clipboard manager for macOS
-- [Paste](https://pasteapp.me/) - Clipboard history manager for macOS
+- [ClipBook](https://clipbook.app/) - Clipboard history for macOS (text only)
+- [PasteBar](https://www.pastebar.app/) - Clipboard manager for macOS
+- [Paste](https://pasteapp.me/) - Clipboard history manager for macOS 
 
 ## Tools
 
