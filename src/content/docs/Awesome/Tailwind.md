@@ -2,7 +2,12 @@
 title: Tailwind
 ---
 
-## Components and templates
+[Tailwind](https://tailwindcss.com/docs/installation) is a utility-first CSS framework for rapidly building custom designs. It is a low-level 
+framework that provides you with a set of utility classes that you can use to build your own custom designs. It is not a
+component library like Bootstrap or Material-UI.
+
+
+## Components and templates for Tailwind
 
 - [HyperUI](https://www.hyperui.dev/) - Free Open Source Tailwind CSS Components
 - [Tail-kit](https://www.tailwind-kit.com/) - Tail-kit Components and templates for Tailwind
@@ -19,7 +24,7 @@ title: Tailwind
 
 - [Tail Admin](https://tailadmin.com/) - Free Tailwind CSS Admin Dashboard Template
 
-## Colors
+## Colors generator
 
 - [Color generator](https://uicolors.app/create)
 - [Colors Palette](https://tailwindcolor.com/)
