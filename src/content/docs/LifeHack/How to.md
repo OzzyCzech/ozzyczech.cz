@@ -1,5 +1,6 @@
 ---
 title: How to
+tableOfContents: false
 ---
 
 - speak English

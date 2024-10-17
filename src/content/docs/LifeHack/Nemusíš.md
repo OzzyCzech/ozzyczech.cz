@@ -1,5 +1,6 @@
 ---
 title: Nemusíš
+tableOfContents: false
 ---
 
 Nemusíš pořád **spěchat**,<br/>
