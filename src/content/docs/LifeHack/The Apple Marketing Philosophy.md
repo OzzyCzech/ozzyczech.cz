@@ -3,7 +3,7 @@ title: The Apple Marketing Philosophy
 ---
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/1000px-Apple_Computer_Logo_rainbow.svg.png?20240923063913" width="50" height="50" alt="Apple Logo" style="margin: 1px auto;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/1000px-Apple_Computer_Logo_rainbow.svg.png?20240923063913" width="100" height="100" alt="Apple Logo" style="margin: 1px auto;">
 
 
 # The Apple Marketing Philosophy
