@@ -12,6 +12,10 @@ title: Icons
 
 Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
 
+##### [IconSax](https://iconsax.dev/)
+
+5912 Open source free SVG icons. Highly customizable. No attribution required. For commercial use.
+
 ##### [SVGBox](https://svgbox.net/)
 
 SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
