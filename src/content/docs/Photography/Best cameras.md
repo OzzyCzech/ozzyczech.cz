@@ -19,9 +19,11 @@ title: Best cameras
 
 ## Action cameras
 
-- [GoPro HERO11 Black](https://gopro.com/en/cz/shop/cameras/hero11-black/CHDHX-111-master.html)
-- [DJI Osmo Action 4](https://www.dji.com/cz/osmo-action-4)
+- [DJI Osmo Action 5](https://www.dji.com/cz/osmo-action-5-pro)
 - [DJI Osmo Pocket 3](https://www.dji.com/cz/osmo-pocket-3)
+- [GoPro HERO13](https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html)
+- [Insta AcePro 2](https://www.insta360.com/product/insta360-ace-pro2)
+- [Insta360 Go 3](https://www.insta360.com/product/insta360-go3s)
 - [Insta360 X4](https://www.insta360.com/product/insta360-x4)
 
 ## Compact size camera
