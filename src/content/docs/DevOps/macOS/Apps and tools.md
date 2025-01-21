@@ -30,7 +30,7 @@ title: Apps and tools
 
 ## Ads blockers
 
-- [Wipr](https://giorgiocalderolla.com/wipr.html) - ads blocker for iOS and macOS
+- [Wipr](https://kaylees.site/wipr2.html) - best ad blocker for Safari
 
 ## Clipboard managers
 
@@ -44,7 +44,8 @@ title: Apps and tools
 - [Aerolite](https://aerolite.dev/applite/index.html) - third party applications manager
 - [Sensei](https://cindori.com/sensei) - ultimate app for optimizing your Mac
 - [ImageOptim](https://imageoptim.com/mac) - open source image optimization tool
-- [Paste](https://pasteapp.me/) -
+- [Paste](https://pasteapp.me/) - clipboard history manager for macOS
+- [Ejectify](https://ejectify.app/) - No more disk not ejected properly notifications.
 
 ## Image editing
 
