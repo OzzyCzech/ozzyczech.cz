@@ -4,6 +4,10 @@ title: Icons
 
 ## Free icons sets
 
+##### [Lucide](https://lucide.dev/)
+
+Lucide is a free, open-source icon set drawn in a consistent, modern style.
+
 ##### [SVG Repo](https://www.svgrepo.com/)
 
 500.000+ Open-licensed SVG Vector and Icons
