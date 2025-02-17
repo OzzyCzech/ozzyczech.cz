@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss';
 
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
+}
 
 @layer components {
 
@@ -13,5 +21,3 @@
 		@apply before:content-['»_'] after:content-['_«'];
 	}
 }
-
-@tailwind utilities;

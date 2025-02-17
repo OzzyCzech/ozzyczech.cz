@@ -7,7 +7,7 @@ There's a plenty of libraries (mostly JavaScript) to enable the classic tooltip 
 Lets starts with HTML code:
 
 ```html
-<div class="mx-auto my-20 max-w-prose divide-y rounded-2xl border shadow">
+<div class="mx-auto my-20 max-w-prose divide-y rounded-2xl border shadow-sm">
   <div class="py-20 text-center">
     <span aria-label="Content extra long">Hover this</span>
   </div>

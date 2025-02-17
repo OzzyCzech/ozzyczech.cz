@@ -44,8 +44,8 @@ Following [Tailwind code](https://tailwindcss.com/docs/hover-focus-and-other-sta
 ```css
 /* invalid and dirty or :user*/
 :is(input:user-invalid, input.dirty) {
-  @apply invalid:focus:ring-red-100 invalid:focus:dark:ring-red-500 invalid:focus:dark:ring-opacity-30;
-  @apply invalid:dark:bg-red-800/20 invalid:dark:border-red-900;
+  @apply invalid:focus:ring-red-100 dark:invalid:focus:ring-red-500 dark:invalid:focus:ring-opacity-30;
+  @apply dark:invalid:bg-red-800/20 dark:invalid:border-red-900;
   @apply invalid:bg-red-50 invalid:border-red-300;
 }
 ```
@@ -77,7 +77,7 @@ and full CSS example:
     @apply placeholder-gray-500 dark:placeholder-gray-400;
     @apply dark:border-gray-600 dark:focus:border-gray-500;
 
-    @a,pply focus:ring;
+    @a,pply focus:ring-3;
     @apply focus:ring-blue-200 dark:focus:ring-gray-600;
     @apply focus:ring-opacity-50 dark:focus:ring-opacity-50;
   }
@@ -88,8 +88,8 @@ and full CSS example:
 
 /* invalid and dirty or :user*/
 :is(input:user-invalid, input.dirty) {
-  @apply invalid:focus:ring-red-100 invalid:focus:dark:ring-red-500 invalid:focus:dark:ring-opacity-30;
-  @apply invalid:dark:bg-red-800/20 invalid:dark:border-red-900;
+  @apply invalid:focus:ring-red-100 dark:invalid:focus:ring-red-500 dark:invalid:focus:ring-opacity-30;
+  @apply dark:invalid:bg-red-800/20 dark:invalid:border-red-900;
   @apply invalid:bg-red-50 invalid:border-red-300;
 }
 ```

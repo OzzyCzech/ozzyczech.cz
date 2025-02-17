@@ -46,7 +46,7 @@ Then you have to add follow code to your `tailwind.css` file:
 
     @apply after:bg-white dark:after:bg-gray-50;
     @apply before:bg-gray-300 dark:before:bg-gray-600;
-    @apply before:checked:bg-lime-500 dark:before:checked:bg-lime-500;
+    @apply checked:before:bg-lime-500 dark:checked:before:bg-lime-500;
     @apply checked:after:duration-300 checked:after:translate-x-4;
 
     @apply disabled:after:bg-opacity-75 disabled:cursor-not-allowed;

@@ -22,12 +22,12 @@ Then add following HTML code:
       name="password"
       autocompletetype="password"
       x-autocompletetype="password"
-      class="block w-full border-gray-200 rounded-l border-t border-l border-b p-2 shadow-sm"
+      class="block w-full border-gray-200 rounded-l border-t border-l border-b p-2 shadow-xs"
       placeholder="Your password"
       required
     />
     <label
-      class="cursor-pointer border shadow-sm px-3 border-y border-r m-0 pt-2 rounded-r-md hover:bg-gray-100"
+      class="cursor-pointer border shadow-xs px-3 border-y border-r m-0 pt-2 rounded-r-md hover:bg-gray-100"
     >
       <input
         type="checkbox"

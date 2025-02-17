@@ -17,7 +17,7 @@ Let's have button first:
 <button
   data-dropdown="userMenu"
   aria-expanded="false"
-  class="border rounded py-2 px-3 shadow"
+  class="border rounded-sm py-2 px-3 shadow-sm"
   l
 >
   Show menu
@@ -29,7 +29,7 @@ and some simple dropdown menu:
 ```html
 <div
   id="userMenu"
-  class="hidden z-50 w-60 text-base bg-white rounded divide-y divide-gray-200 focus:outline-none"
+  class="hidden z-50 w-60 text-base bg-white rounded-sm divide-y divide-gray-200 focus:outline-hidden"
 >
   <ul>
     <li>

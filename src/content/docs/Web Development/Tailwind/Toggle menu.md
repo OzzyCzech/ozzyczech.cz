@@ -11,7 +11,7 @@ Following example shows how to create toggle button with Tailwind CSS and Javasc
       <button
         type="button"
         aria-expanded="false"
-        class="group peer flex w-full justify-between rounded px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-950/50"
+        class="group peer flex w-full justify-between rounded-sm px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-950/50"
         onclick="(function toggle(button) { button.setAttribute('aria-expanded', button.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')})(this)"
       >
         <span>Toggle button</span>
@@ -29,14 +29,14 @@ Following example shows how to create toggle button with Tailwind CSS and Javasc
         <li>
           <a
             href="#"
-            class="flex w-full rounded px-2.5 py-1.5 hover:bg-gray-200 dark:hover:bg-gray-950/50"
+            class="flex w-full rounded-sm px-2.5 py-1.5 hover:bg-gray-200 dark:hover:bg-gray-950/50"
             >Link one</a
           >
         </li>
         <li>
           <a
             href="#"
-            class="flex w-full rounded px-2.5 py-1.5 hover:bg-gray-200 dark:hover:bg-gray-950/50"
+            class="flex w-full rounded-sm px-2.5 py-1.5 hover:bg-gray-200 dark:hover:bg-gray-950/50"
             >Link two</a
           >
         </li>

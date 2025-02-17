@@ -1,22 +1,25 @@
-import {defineConfig, passthroughImageService} from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import tailwind from "@astrojs/tailwind";
 
 // Markdown plugins
 import links from './src/markdown/links.js';
 import youtube from './src/markdown/youtube.js';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 
 const site = 'https://ozzyczech.cz';
 export default defineConfig({
 	site,
+
 	markdown: {
 		remarkPlugins: [links, youtube]
 	},
+
 	image: {
 		service: passthroughImageService(),
 	},
+
 	integrations: [
 		starlight({
 			title: 'Roman\'s notes',
@@ -52,7 +55,9 @@ export default defineConfig({
 				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware'}},
 				{label: 'Povídky', collapsed: true, autogenerate: {directory: 'Povidky'}},
 			]
-		}),
-		tailwind({applyBaseStyles: false})
-	]
+		})
+	],
+	vite: {
+		plugins: [tailwindcss()]
+	}
 });

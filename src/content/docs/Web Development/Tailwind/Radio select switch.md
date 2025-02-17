@@ -6,7 +6,7 @@ This code snippet is a `radio` input based multiple select switch using Tailwind
 
 ```html
 <div class="flex h-screen w-full items-center justify-center">
-  <form class="w-full max-w-screen-sm">
+  <form class="w-full max-w-(--breakpoint-sm)">
     <div class="mb-3">
       <span class="mb-0.5 inline-flex font-medium"
         >Please chose one option:</span

@@ -9,9 +9,9 @@ const img = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster
 const link = `https://www.themoviedb.org/tv/${result.id}`;
 const name = result.name;
 ---
-<li class="text-center !m-0">
+<li class="text-center m-0!">
 	<a href={link} target="_blank" class="p-0 m-0">
-		<img src={img} alt="${result.name}" class="rounded-lg shadow"/>
+		<img src={img} alt="${result.name}" class="rounded-lg shadow-sm"/>
 	</a>
-	<a href={link} title={name} target="_blank" class="inline-flex text-sm leading-normal no-underline hover:underline !text-inherit">{name}</a>
+	<a href={link} title={name} target="_blank" class="inline-flex text-sm leading-normal no-underline hover:underline text-inherit!">{name}</a>
 </li>
