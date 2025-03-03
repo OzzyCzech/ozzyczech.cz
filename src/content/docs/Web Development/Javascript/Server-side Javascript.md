@@ -1,5 +1,5 @@
 ---
-title: Server side Javascript
+title: Server-side Javascript
 ---
 
 ## [Bun](https://bun.sh/)
