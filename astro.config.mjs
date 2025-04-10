@@ -25,10 +25,10 @@ export default defineConfig({
 			title: 'Roman\'s notes',
 			tableOfContents: true,
 			pagination: false,
-			social: {
-				github: 'https://github.com/OzzyCzech/ozzyczech.cz',
-				stackOverflow: 'https://meta.stackoverflow.com/users/355316/ozzyczech'
-			},
+			social: [
+				{icon: 'github', label: 'GitHub', href: 'https://github.com/OzzyCzech/ozzyczech.cz'},
+				{icon: 'stackOverflow', label: 'StackOverflow', href: 'https://meta.stackoverflow.com/users/355316/ozzyczech'}
+			],
 			head: [
 				{
 					tag: 'meta',
