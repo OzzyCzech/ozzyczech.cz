@@ -11,13 +11,9 @@ title: Apps and tools
 - [WebStorm](https://www.jetbrains.com/webstorm/) - JavaScript IDE from JetBrains
 - [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE from JetBrains
 
-## Finder extensions
-
-- [Easy New File](https://itunes.apple.com/us/app/easy-new-file/id1162194131?ls=1&mt=12) - Finder extensions for create new File
-- [New File Menu](https://itunes.apple.com/us/app/new-file-menu/id1064959555) - finder extensions for create new File
-
 ## Toolbar apps
 
+- [Supercharge](https://sindresorhus.com/supercharge) - Supercharge your Mac's menu bar
 - [Vanilla](https://matthewpalmer.net/vanilla/) - Hide menu bar icons on your Mac
 - [KeepingYouAwake](https://keepingyouawake.app/) - Prevents your Mac from going to sleep
 - [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
@@ -37,7 +33,7 @@ title: Apps and tools
 - [Maccy](https://maccy.app/) - lightweight and free clipboard manager for macOS
 - [ClipBook](https://clipbook.app/) - Clipboard history for macOS (text only)
 - [PasteBar](https://www.pastebar.app/) - Clipboard manager for macOS
-- [Paste](https://pasteapp.me/) - Clipboard history manager for macOS 
+- [Paste](https://pasteapp.me/) - Clipboard history manager for macOS
 
 ## Tools
 
@@ -80,7 +76,8 @@ title: Apps and tools
 
 ## Journaling
 
-- [Linked](https://uselinked.com/) - Open [source](https://github.com/lostdesign/linked) distract-free journaling app for macOS
+- [Linked](https://uselinked.com/) - Open [source](https://github.com/lostdesign/linked) distract-free journaling app
+  for macOS
 
 ## Calendar
 
