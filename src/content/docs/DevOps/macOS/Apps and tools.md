@@ -57,10 +57,11 @@ JetBrains
 
 ## Image editing
 
-- [Pixelmator Pro](https://www.pixelmator.com/pro/)
-- [Procreate](https://procreate.art/)
-- [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
-- [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+- [Pixelmator Pro](https://www.pixelmator.com/pro/) - Image editing made easy
+- [Procreate](https://procreate.art/) - The most powerful and intuitive digital illustration app
+- [Affinity Photo](https://affinity.serif.com/en-gb/photo/) - The photo editing app that’s a cut above the rest
+- [Affinity Designer](https://affinity.serif.com/en-gb/designer/) - The fastest, smoothest, most precise vector graphic
+  design software available
 
 ## Video editing
 
@@ -68,6 +69,10 @@ JetBrains
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/) - best for mac
 - [iMovie](https://www.apple.com/imovie/) - free video editor for mac
 - [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Free video editor for Windows/macOS
+
+## Video players
+
+- [IINA](https://iina.io/) - The modern video player for macOS
 
 ## Screen recorders
 
