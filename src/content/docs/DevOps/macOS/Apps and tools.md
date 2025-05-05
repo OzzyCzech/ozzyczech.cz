@@ -4,12 +4,17 @@ title: Apps and tools
 
 ## Code editors
 
+- [Zed](https://zed.dev/) - A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
+- [NeoVim](https://neovim.io/) - Vim-fork focused on extensibility and usability
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editor from Microsoft
-- [Zed](https://zedapp.org/) - A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
-- [RustRover](https://www.jetbrains.com/rust/) - Rust IDE from JetBrains
-- [PHPStorm](https://www.jetbrains.com/phpstorm/) - PHP IDE from JetBrains
-- [WebStorm](https://www.jetbrains.com/webstorm/) - JavaScript IDE from JetBrains
-- [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE from JetBrains
+
+JetBrains
+
+- [RustRover](https://www.jetbrains.com/rust/) - Rust IDE
+- [PHPStorm](https://www.jetbrains.com/phpstorm/) - PHP IDE
+- [WebStorm](https://www.jetbrains.com/webstorm/) - JavaScript IDE
+- [Fleet](https://www.jetbrains.com/fleet/) - Lightweight IDE
+- [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE
 
 ## Toolbar apps
 
@@ -27,6 +32,13 @@ title: Apps and tools
 ## Ads blockers
 
 - [Wipr](https://kaylees.site/wipr2.html) - best ad blocker for Safari
+
+## Browsers
+
+- [Arc](https://arc.net/) - A new approach to browsing
+- [Brave](https://brave.com/) - A free and open-source web browser based on the Chromium web browser
+- [Firefox](https://www.mozilla.org/en-US/firefox/new/) - Open-source web browser developed by Mozilla
+- [Zen](https://zen-browser.app/) - A browser that helps you focus
 
 ## Clipboard managers
 
