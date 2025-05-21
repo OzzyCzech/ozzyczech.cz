@@ -66,7 +66,6 @@ const defaultLabels = {
 ---
 
 <div class="flex flex-col gap-8">
-
 	<ActivityCalendar
 		data={data.contributions}
 		theme={gitHubTheme}
@@ -80,11 +79,7 @@ const defaultLabels = {
 			href="https://github.com/OzzyCzech"
 			class="flex items-center gap-2 hover:underline"
 			target="_blank"
-		>
-			@ozzyczech
-			<div class="w-5">
-			</div>
-		</a>
+		>@ozzyczech</a>
 	</div>
 </div>
 ```
