@@ -4,7 +4,7 @@ title: GitHub Activity chart with Astro
 
 This guide shows how to easily create a **GitHub activity chart** using [Astro](https://astro.build/) and the
 `react-activity-calendar` package. Such a chart visually displays
-your [GitHub contributions](https://github.com/ozzyCzech) over the past year and is popular on developer personal sites.
+your [GitHub contributions](https://github.com/ozzyCzech) and is popular on developer personal sites.
 
 By using the `react-activity-calendar` component, you can quickly integrate your contribution overview into an Astro
 project, customize its appearance, and leverage the modern React ecosystem within Astro.
@@ -21,6 +21,8 @@ There is also [free API](https://github.com/grubersjoe/github-contributions-api)
 
 ```text
 https://github-contributions-api.jogruber.de/v4/[YOUR NAME]?y=all
+https://github-contributions-api.jogruber.de/v4/[YOUR NAME]?y=last
+https://github-contributions-api.jogruber.de/v4/[YOUR NAME]?y=2025
 ```
 
 Then, create a new component file, e.g., `GitHubActivity.astro`, and add the following code:
@@ -35,9 +37,6 @@ export type Activity = {
 	level: 0 | 1 | 2 | 3 | 4;
 };
 
-export type Year = number | "last";
-export const prerender = false;
-
 export type ApiResponse = {
 	total: {
 		[year: number]: number;
@@ -46,7 +45,7 @@ export type ApiResponse = {
 	contributions: Array<Activity>;
 };
 
-const response = await fetch("https://github-contributions-api.jogruber.de/v4/OzzyCzech?y=last");
+const response = await fetch("https://github-contributions-api.jogruber.de/v4/OzzyCzech?y=" + new Date().getFullYear());
 const data = (await response.json()) as ApiResponse;
 
 const gitHubTheme = {
@@ -61,7 +60,7 @@ const gitHubTheme = {
 } satisfies ThemeInput;
 
 const defaultLabels = {
-	totalCount: "{{count}} contributions in the last year",
+	totalCount: "{{count}} this year so far",
 };
 ---
 
@@ -86,7 +85,7 @@ const defaultLabels = {
 
 This code fetches the GitHub contributions data for the user `OzzyCzech` and displays it using the
 `react-activity-calendar` component. The theme is set to dark mode, and the labels are customized to show the total
-count of contributions in the last year.
+count of contributions this year.
 
 Finally, you can use this component in your Astro pages or layouts like this:
 
