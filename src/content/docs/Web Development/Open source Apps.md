@@ -9,3 +9,7 @@ Uptime Kuma is an easy-to-use self-hosted monitoring tool.
 #### [Memos](https://www.usememos.com/)
 
 Open Source, Self-hosted note-taking app.
+
+#### [Kara Keep](https://karakeep.app/)
+
+Quickly save links, notes, and images and karakeep will automatically tag them for you using AI for faster retrieval.
