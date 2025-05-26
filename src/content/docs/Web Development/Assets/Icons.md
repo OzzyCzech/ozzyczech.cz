@@ -38,7 +38,8 @@ Twitters Bootstrap icons
 
 ##### [Material Icons](https://fonts.google.com/icons)
 
-Material icons are delightful, beautifully crafted symbols [made by Google](https://github.com/google/material-design-icons).
+Material icons are delightful, beautifully crafted
+symbols [made by Google](https://github.com/google/material-design-icons).
 
 ##### [SimpleIcons](https://simpleicons.org/)
 
@@ -46,7 +47,8 @@ More than 3000 free SVG icons for popular brands
 
 and many more...
 
-- [Devicon](https://devicon.dev/) - Devicon is a set of icons representing programming languages, designing & development tools.
+- [Devicon](https://devicon.dev/) - Devicon is a set of icons representing programming languages, designing &
+  development tools.
 - [Flowbite Icons](https://flowbite.com/icons/) - 521 free and open-source SVG icons
 - [Twemoji](https://github.com/twitter/twemoji) - Twitter's open source emoji
 - [iconoir.com](https://iconoir.com/) - Your new default library
@@ -61,21 +63,26 @@ and many more...
 - [SVG Porn](https://svgporn.com/) - 1000+ free SVG icons for you to use in your web projects.
 - [Feather Icons](https://feathericons.com/) - Simply beautiful open source icons
 - [glyphs.fyi](https://glyphs.fyi/) - Mightiest Icons on the Web
-- [Sargam icons](https://sargamicons.com/) - A Collection of 250+ Open-source Icons Devoted to Match Your Exquisite Designs.
+- [Sargam icons](https://sargamicons.com/) - A Collection of 250+ Open-source Icons Devoted to Match Your Exquisite
+  Designs.
 - [Untitled ui icons](https://untitledui.com/icons) - 1110 free icons for Figma
 - [Flagpack](https://flagpack.xyz/) - 250 open source flags
 
 ## Icon Search Engines
 
+- [Iconify](https://icon-sets.iconify.design/) - search engine for icons, supports over 100 icon sets
+- [Streamline](https://www.streamlinehq.com/) - ultimate icon library with over 350,000 icons
 - [icones.js](https://icones.js.org/) - open source icons search
 - [The Noun Project](https://thenounproject.com/) - Icons for everything
 - [Smash Icons](https://smashicons.com/) - 250 design resources with over 490 000 icons
 - [Flaticon](https://flaticon.com) - 3,000,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT
 - [Icons8](https://icons8.com/) - Icons, photos, music, and design tools
+- [xIcons](https://www.xicons.org/) - icon search engine over fluent, ionicons and more
 
 ## Icon Fonts
 
-- [Font Awesome](https://fontawesome.com/) - The world's most popular and easiest to use icon set just got an upgrade. More icons. More styles. More Options.
+- [Font Awesome](https://fontawesome.com/) - The world's most popular and easiest to use icon set just got an upgrade.
+  More icons. More styles. More Options.
 
 ## Favicons
 
