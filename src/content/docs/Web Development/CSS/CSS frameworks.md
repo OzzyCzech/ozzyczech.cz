@@ -10,6 +10,8 @@ sidebar:
 - [Twitter Boostrap](https://getbootstrap.com/) - world’s most popular front-end open source toolkit
 - [PureCSS](https://purecss.io/) - A set of small, responsive CSS modules
 - [Bulma](https://bulma.io/) - Bulma is a free, open source CSS framework based on Flexbox
+- [Foundation](https://get.foundation/) - A responsive front-end framework
+- [UnoCSS](https://unocss.dev/) - Instant On-demand Atomic CSS Engine
 - [UIKit](https://getuikit.com/) - Lightweight and modular front-end framework
 - [Primer CSS](https://primer.style/css/) - CSS Framework from GitHub
 - [Stylify](https://stylifycss.com/) - Stylify uses CSS-like selectors to generate optimized utility-first
