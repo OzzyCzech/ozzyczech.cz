@@ -10,6 +10,11 @@ sidebar:
 - [Claude](https://claude.ai/chat/) - ChatBot by Anthropic
 - [Gemini](https://bard.google.com/) - Google's ChatBot
 
+
+## Notebooks
+
+- [Google Notebook LM](https://notebooklm.google.com/)
+
 ## Image generators
 
 - [Mystic by Freepik](https://www.freepik.com/ai/image-generator)
