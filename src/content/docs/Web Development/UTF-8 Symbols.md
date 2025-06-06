@@ -7,9 +7,9 @@ Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿
 ### Universal Symbols
 
 | Symbol | Description         | HTML Entity |
-| ------ | ------------------- | ----------- |
-| `❤`   | Heavy black heart   | `&#10084;`  |
-| `©`   | Copyright           | `&copy;`    |
+|--------|---------------------|-------------|
+| `❤`    | Heavy black heart   | `&#10084;`  |
+| `©`    | Copyright           | `&copy;`    |
 | `°`    | Degree sign         | `&deg;`     |
 | `∞`    | Infinity            | `&infin;`   |
 | `…`    | Horizontal Ellipsis | `&hellip;`  |
@@ -21,7 +21,7 @@ Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿
 ## Triangles
 
 | Symbol | Description    | Html Entity            |
-| ------ | -------------- | ---------------------- |
+|--------|----------------|------------------------|
 | `▴`    | Triangle Up    | `&blacktriangle;`      |
 | `▾`    | Triangle Down  | `&blacktriangledown;`  |
 | `◂`    | Triangle Left  | `&blacktriangleleft;`  |
@@ -30,20 +30,20 @@ Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿
 ### Arrows
 
 | Symbol | Description | HTML Entity |
-| ------ | ----------- | ----------- |
+|--------|-------------|-------------|
 | `↑`    | Up          | `&uarr;`    |
 | `↓`    | Down        | `&darr;`    |
 | `←`    | Left        | `&larr;`    |
 | `→`    | Right       | `&rarr;`    |
-| `↖`   | Up-Left     |             |
-| `↗`   | Up-Right    |             |
-| `↘`   | Down-Right  |             |
-| `↙`   | Down-Left   |             |
+| `↖`    | Up-Left     |             |
+| `↗`    | Up-Right    |             |
+| `↘`    | Down-Right  |             |
+| `↙`    | Down-Left   |             |
 
 ### Apple
 
 | Symbol | Description       |
-| ------ | ----------------- |
+|--------|-------------------|
 |       | Apple Logo        |
 | ⌘      | Command (or Cmd)  |
 | ⇧      | Shift             |

@@ -14,7 +14,6 @@ A JavaScript library for building user interfaces.
 
 ### Vue
 
-
 - [Vue](https://vuejs.org/) - The Progressive JavaScript Framework.
 - [Nuxt.js](https://nuxtjs.org/) - A higher-level framework built on top of Vue.js.
 

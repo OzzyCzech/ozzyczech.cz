@@ -11,7 +11,8 @@ sidebar:
 - [D3.js](https://d3js.org/) - Data-Driven Documents
 - [Highcharts](https://www.highcharts.com/) - Interactive JavaScript charts for your web pages
 - [Recharts](https://recharts.org/) - A composable charting library built on React components
-- [Victory](https://formidable.com/open-source/victory/) - A collection of composable React components for building interactive data visualizations
+- [Victory](https://formidable.com/open-source/victory/) - A collection of composable React components for building
+  interactive data visualizations
 
 ### User authentication
 
@@ -20,7 +21,8 @@ sidebar:
 ### Emailing
 
 - [Nodemailer](https://nodemailer.com/) - Send e-mails from Node.js – easy as cake!
-- [Amazon SES](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html) - Scalable email service for marketing and transactional communications
+- [Amazon SES](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html) -
+  Scalable email service for marketing and transactional communications
 - [Resend](https://resend.com/) - Email for developers
 - [SendGrid](https://sendgrid.com/) - Email Delivery. Simplified.
 - [Mailgun](https://www.mailgun.com/) - Powerful APIs that enable you to send, receive and track email effortlessly.
@@ -47,7 +49,8 @@ sidebar:
 ### Searching
 
 - [Pagefind](https://pagefind.app/) - fast, client-side search for static sites
-- [FlexSearch.js](https://github.com/nextapps-de/flexsearch) - Web's fastest and most memory-flexible full-text search library with zero dependencies
+- [FlexSearch.js](https://github.com/nextapps-de/flexsearch) - Web's fastest and most memory-flexible full-text search
+  library with zero dependencies
 - [Fuse.js](https://fusejs.io/) - Lightweight fuzzy-search library
 - [Lunr.js](https://lunrjs.com/) - search made simple
 
@@ -67,7 +70,8 @@ _Templating engines allow you to perform string interpolation._
 
 - [MDX](https://mdxjs.com/) - Markdown for the component era
 - [Nunjucks](https://mozilla.github.io/nunjucks/) - A rich and powerful templating language for JavaScript.
-- [marko](https://github.com/marko-js/marko) - A fast, lightweight, HTML-based templating engine for Node.js and the browser with async, streaming, custom tags and CommonJS modules as compiled output.
+- [marko](https://github.com/marko-js/marko) - A fast, lightweight, HTML-based templating engine for Node.js and the
+  browser with async, streaming, custom tags and CommonJS modules as compiled output.
 
 ## Services
 

@@ -6,7 +6,8 @@ title: Testing
 
 - [xo](https://github.com/xojs/xo) - JavaScript linter with great defaults
 - [prettier](https://github.com/prettier/prettier) - Prettier is an opinionated code formatter.
-- [ESLint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in JavaScript.
+- [ESLint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in
+  JavaScript.
 
 ### Testing Frameworks
 

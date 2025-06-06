@@ -6,7 +6,8 @@ title: Images
 
 Here are some websites where you can find free images to use in your projects:
 
-- [Unsplash.it](https://unsplash.com) - Beautiful, free photos. Gifted by the world’s most generous community of photographers.
+- [Unsplash.it](https://unsplash.com) - Beautiful, free photos. Gifted by the world’s most generous community of
+  photographers.
 - [Pexels](https://www.pexels.com) - Best free stock photos in one place.
 - [Reshot](https://www.reshot.com) - Free Icons & Illustrations
 - [Freepik](https://www.freepik.com)
