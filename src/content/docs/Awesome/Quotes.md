@@ -46,7 +46,7 @@ tableOfContents: false
 > _Steve Jobs_
 
 > Neházej všechno do jednoho pytle, nezdvihneš ho.
-> _anglické_
+> _arabské přísloví_
 
 > Nejdůležitější informace se nacházejí na té části mapy, která je utržená.
 > _Kellyho zákon navigace_
@@ -54,9 +54,6 @@ tableOfContents: false
 > Na každý komplexní problém existuje jednoduchá odpověď, která je zpravidla špatná.
 
 > Kulturnost je jenom nátěr, který je velmi lehce rozpustný v alkoholu.
-
-> Když potřebuješ vyprášit čepici nedělej to o ženu.
-> _arabské_
 
 > Jedinou konstantou dneška je změna.
 > _Hérakleitos_
