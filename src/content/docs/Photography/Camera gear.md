@@ -20,4 +20,5 @@ title: Camera gear
 
 ## Mini-tripods
 
-- [MT-03](https://www.leofoto.com/products_detail.php?id=293) Spider + [MBH-19](https://www.leofoto.com/products_detail.php?id=297)
+- [MT-03](https://www.leofoto.com/products_detail.php?id=293)
+  Spider + [MBH-19](https://www.leofoto.com/products_detail.php?id=297)
