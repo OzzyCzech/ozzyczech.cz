@@ -8,6 +8,7 @@ sidebar:
 
 - [ChatGPT](https://chatgpt.com/) - ChatBot by OpenAI
 - [Claude](https://claude.ai/chat/) - ChatBot by Anthropic
+- [Perplexity](https://www.perplexity.ai/) - AI-powered search engine
 - [Gemini](https://bard.google.com/) - Google's ChatBot
 
 
