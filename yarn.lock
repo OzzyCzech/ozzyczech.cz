@@ -160,10 +160,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/starlight-tailwind/-/starlight-tailwind-4.0.1.tgz#4d710bc3807f0ab48ff77fd9906c8ebc37ea7a56"
   integrity sha512-AOOEWTGqJ7fG66U04xTmZQZ40oZnUYe4Qljpr+No88ozKywtsD1DiXOrGTeHCnZu0hRtMbRtBGB1fZsf0L62iw==
 
-"@astrojs/starlight@^0.35.0":
-  version "0.35.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/starlight/-/starlight-0.35.0.tgz#c9382d2f8f26578311b58233cc426602419c4fc0"
-  integrity sha512-YmHSj2KkzZ2B1ST/ZMqfvctPz1nbw78kBwHF4W2BFKnDFJhCTHFDW81IByT1Dwf52f81LPs8vlOTXtxSZq6yKQ==
+"@astrojs/starlight@^0.35.1":
+  version "0.35.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/starlight/-/starlight-0.35.1.tgz#9b0294fbb5fa61d8f0b698bc01988c812d98c6df"
+  integrity sha512-/hshlAayMd3B+E+h8wY6JWT1lNmX/K1+ugiZPirW5XFo5QUcNMk/Bsa4oHgg+TFoU6kbxPtijo0VppATfD9XuA==
   dependencies:
     "@astrojs/markdown-remark" "^6.3.1"
     "@astrojs/mdx" "^4.2.3"
@@ -1524,10 +1524,10 @@ astro-expressive-code@^0.41.1:
   dependencies:
     rehype-expressive-code "^0.41.2"
 
-astro@^5.12.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-5.12.0.tgz#9ba4508eddfeb62cf626d65e5f86024f57d7cf7c"
-  integrity sha512-Oov5JsMFHuUmuO+Nx6plfv3nQNK1Xl/8CgLvR8lBhZTjYnraxhuPX5COVAzbom+YLgwaDfK7KBd8zOEopRf9mg==
+astro@^5.12.3:
+  version "5.12.3"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-5.12.3.tgz#edb044872ce3978f23d0497d68481a082fae3dad"
+  integrity sha512-fU1hNPMkccm+FuonGsY5DFkC2QyuLCju++8L2ubzBtYBDBf6bmfgmVM7A2dK+Hl+ZJCUNgepsClhBpczj+2LRw==
   dependencies:
     "@astrojs/compiler" "^2.12.2"
     "@astrojs/internal-helpers" "0.6.1"
