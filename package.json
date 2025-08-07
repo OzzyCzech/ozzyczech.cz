@@ -17,7 +17,7 @@
 		"@astrojs/tailwind": "^6.0.2",
 		"@sindresorhus/slugify": "^2.2.1",
 		"@tailwindcss/vite": "^4.1.11",
-		"astro": "^5.12.3",
+		"astro": "^5.12.8",
 		"prettier": "^3.6.2",
 		"sharp": "^0.34.3",
 		"tailwindcss": "^4.1.11",
