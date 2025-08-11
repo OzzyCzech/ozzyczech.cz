@@ -12,16 +12,16 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
-		"@astrojs/starlight": "^0.35.1",
+		"@astrojs/starlight": "^0.35.2",
 		"@astrojs/starlight-tailwind": "^4.0.1",
 		"@astrojs/tailwind": "^6.0.2",
 		"@sindresorhus/slugify": "^2.2.1",
 		"@tailwindcss/vite": "^4.1.11",
-		"astro": "^5.12.3",
+		"astro": "^5.12.9",
 		"prettier": "^3.6.2",
 		"sharp": "^0.34.3",
 		"tailwindcss": "^4.1.11",
-		"typescript": "^5.8.3",
+		"typescript": "^5.9.2",
 		"unist-util-visit": "^5.0.0"
 	}
 }
