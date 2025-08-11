@@ -17,6 +17,7 @@ Check Open-source audit of web browser privacy [privacytests.org](https://privac
 - [DuckDuckGo Privacy Essentials](https://duckduckgo.com/?q=DuckDuckGo+Privacy+Essentials) for all Browsers
 - [uBlock Origin](https://github.com/gorhill/uBlock) - An efficient blocker for Chromium and Firefox. Fast and lean.
 - [Privaci Badger](https://privacybadger.org/) - Privacy Badger automatically learns to block invisible trackers.
+- [Zen](https://zenprivacy.net/) - Zen is a browser extension that helps you to protect your privacy and security online.
 - [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Encrypt the web! HTTPS Everywhere is a Firefox extension to
   protect your communications by enabling HTTPS encryption automatically on sites that are known to support it, even
   when you type URLs or follow links that omit the https: prefix.
