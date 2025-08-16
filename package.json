@@ -16,11 +16,11 @@
 		"@astrojs/starlight-tailwind": "^4.0.1",
 		"@astrojs/tailwind": "^6.0.2",
 		"@sindresorhus/slugify": "^2.2.1",
-		"@tailwindcss/vite": "^4.1.11",
-		"astro": "^5.12.9",
+		"@tailwindcss/vite": "^4.1.12",
+		"astro": "^5.13.2",
 		"prettier": "^3.6.2",
 		"sharp": "^0.34.3",
-		"tailwindcss": "^4.1.11",
+		"tailwindcss": "^4.1.12",
 		"typescript": "^5.9.2",
 		"unist-util-visit": "^5.0.0"
 	}
