@@ -50,7 +50,7 @@ composer update some/package --no-scripts
 ```
 
 Now, when you go to vendor/some/package dir it's common git repository - you can make changes,
-commit and publish new versions of package. But don't forgot run `composer update`
+commit and publish new versions of package. But don't forget run `composer update`
 before commit main repo, becouse there is still .git dir in package! ### Disadvantages
 
 - Large VCS repository size and diffs when you update code.

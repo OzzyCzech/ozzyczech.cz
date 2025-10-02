@@ -32,11 +32,11 @@ function set-cover() {
   for file in "${files[@]}"; do
     ext="${file##*.}"
     output="out.${ext}"
-    
+
     # common arguments
     args=(-y -loglevel error -hide_banner -nostats -i "$file" -i "$cover" -codec copy -map 0:a -map 1)
-    
-    # set cover image based on file extension 
+
+    # set cover image based on file extension
     if [ "$ext" = "mp3" ]; then
       ffmpeg "${args[@]}" -metadata:s:v title="Album Cover" -metadata:s:v comment="Cover (front)" "$output" && mv "$output" "$file"
     elif [ "$ext" = "m4a" ]; then

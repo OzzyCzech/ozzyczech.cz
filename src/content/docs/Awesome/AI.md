@@ -11,7 +11,6 @@ sidebar:
 - [Perplexity](https://www.perplexity.ai/) - AI-powered search engine
 - [Gemini](https://bard.google.com/) - Google's ChatBot
 
-
 ## Notebooks
 
 - [Google Notebook LM](https://notebooklm.google.com/)

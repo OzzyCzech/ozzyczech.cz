@@ -19,7 +19,7 @@ Convert anything to [AZW3](https://convertio.co/azw3-converter/) format.
 ## Calibre
 
 Calibre is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have.
-It’ll allow you to do nearly everything, and it takes things a step beyond normal e-book software. 
+It’ll allow you to do nearly everything, and it takes things a step beyond normal e-book software.
 It’s also completely free and open source and great for both casual users and computer experts.
 
 https://calibre-ebook.com/download
@@ -59,7 +59,7 @@ Will save the file to the following path:
 R/Rowling, Joanne Kathleen/Rowling, Joanne Kathleen - Harry Potter 01 - Harry Potter and the Philosopher´s Stone.epub
 ```
 
-File format is same as the original file name for very easy search and find. Series index is padded with 
+File format is same as the original file name for very easy search and find. Series index is padded with
 zeros to have always two digits. Series and series index are added only if they are present in the metadata.
 
 ## Send to device (Kindle)

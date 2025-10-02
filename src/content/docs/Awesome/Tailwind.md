@@ -2,10 +2,9 @@
 title: Tailwind
 ---
 
-[Tailwind](https://tailwindcss.com/docs/installation) is a utility-first CSS framework for rapidly building custom designs. It is a low-level 
+[Tailwind](https://tailwindcss.com/docs/installation) is a utility-first CSS framework for rapidly building custom designs. It is a low-level
 framework that provides you with a set of utility classes that you can use to build your own custom designs. It is not a
 component library like Bootstrap or Material-UI.
-
 
 ## Components and templates for Tailwind
 

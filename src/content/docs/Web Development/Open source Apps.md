@@ -16,4 +16,4 @@ Quickly save links, notes, and images and karakeep will automatically tag them f
 
 #### [Vert.sh](https://vert.sh/)
 
-The next-generation file converter. [Open source](https://github.com/VERT-sh/VERT), fully local* and free forever.
+The next-generation file converter. [Open source](https://github.com/VERT-sh/VERT), fully local\* and free forever.

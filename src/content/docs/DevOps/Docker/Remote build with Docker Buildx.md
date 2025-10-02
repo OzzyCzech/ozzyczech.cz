@@ -6,9 +6,9 @@ title: Remote build with Docker Buildx
 
 ```shell
 docker buildx create \
-  --name MyBuilder \ 
+  --name MyBuilder \
   --driver docker-container \
-  --platform linux/amd64 \ 
+  --platform linux/amd64 \
   ssh://user@remote-machine
 ```
 
@@ -16,7 +16,7 @@ docker buildx create \
 
 ```shell
 docker buildx build \
-  --builder MyBuilder \ 
+  --builder MyBuilder \
   --load .
 ```
 

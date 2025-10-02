@@ -19,7 +19,7 @@ title: Editors
 
 - [TinyMCE](https://www.tiny.cloud/) - a trusted WYSIWYG editor for
 - [Slate]() - editor framework
-- [Quill](https://quilljs.com/) - powerfull rich text editor
+- [Quill](https://quilljs.com/) - powerful rich text editor
 - [Draft.js](https://draftjs.org/) - Rich Text Editor Framework for React
 - [CKEeditor](https://ckeditor.com/ckeditor-5/) - WYSIWYG editing solution 🤑
 - [Froala](https://www.froala.com/wysiwyg-editor) - next generation Javascript WYSIWYG HTML Editor 🤑
