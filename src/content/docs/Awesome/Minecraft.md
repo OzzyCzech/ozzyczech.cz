@@ -35,7 +35,7 @@ All items are listed on [Minecraft Item ID List](https://minecraftitemids.com/).
 ### Minecraft Seeds
 
 | Seed                  | Description                                                                          |
-|-----------------------|--------------------------------------------------------------------------------------|
+| --------------------- | ------------------------------------------------------------------------------------ |
 | `5705783928676095273` | [Woodland Mansion](https://www.chunkbase.com/apps/seed-map#seed=5705783928676095273) |
 
 ### (Free) Minecraft Servers

@@ -66,4 +66,3 @@ Script will generate `top-5000-domains.s3db` (a SQLLite database) contains table
 
 - Website: https://www.domcop.com/top-10-million-websites
 - Download: https://www.domcop.com/files/top/top10milliondomains.csv.zip
-

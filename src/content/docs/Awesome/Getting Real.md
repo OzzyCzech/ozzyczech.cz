@@ -174,10 +174,10 @@ the stuff that represents real
 > Is a new feature requiring weeks of time and thousands of lines of code?
 > That's your code telling you there's probably a better way.
 
-> **If programmers got paid to remove code from sofware instead of writing new
+> **If programmers got paid to remove code from software instead of writing new
 > code, software would be a whole lot better.**
 
-> Keep your code as simple as possibe each time you increase the amount of code,
+> Keep your code as simple as possible each time you increase the amount of code,
 > your software grows exponentially more complicated. Each minor addition, each
 > change, each interdependency, and each preference has a cascading effect.
 
@@ -190,7 +190,7 @@ the stuff that represents real
 > without having to change boatloads of code. Less software results in fewer
 > bugs. Less software means less support.
 
-> **Tere is No CODE That is More Flexible Than NO Code!**
+> **There is No CODE That is More Flexible Than NO Code!**
 
 > Don't try to lock-in your customers. Let them get their information when they
 > want it and how they want it.

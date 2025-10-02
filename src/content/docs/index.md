@@ -31,7 +31,7 @@ If you find any bugs or outdated information, please create a [pull request](htt
 
 ### 👨‍💻 Technology Stack
 
-Website is build with [Starlight](https://starlight.astro.build/), [Astro](https://astro.build/) and
+Website is built with [Starlight](https://starlight.astro.build/), [Astro](https://astro.build/) and
 [Tailwind CSS](https://tailwindcss.com/) and hosted by [Vercel](https://vercel.com/).
 It's worth mentioning that it used to be built with [Sphido](https://sphido.cz),
 but I've decided to _move everything_ to Starlight. Focus **more on content** and less on technology.

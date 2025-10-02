@@ -9,7 +9,6 @@ title: Hosting
 - [Netlify](https://www.netlify.com/) - serverless hosting for modern websites
 - [Zerops.io](https://zerops.io/) - Dev-first cloud platform that builds, deploys, runs and manages your apps
 
-
 ### Server hosting
 
 - [Vultr](https://www.vultr.com/) - Instantly deploy High Performance Cloud Servers
