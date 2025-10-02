@@ -5,13 +5,19 @@ title: Remote build with Docker Buildx
 ## Create builder instance on remote machine
 
 ```shell
-docker buildx create --name MyBuilder --driver docker-container --platform linux/amd64 ssh://user@remote-machine
+docker buildx create \
+  --name MyBuilder \ 
+  --driver docker-container \
+  --platform linux/amd64 \ 
+  ssh://user@remote-machine
 ```
 
 ## Use the builder instance
 
 ```shell
-docker buildx build --builder MyBuilder --load .
+docker buildx build \
+  --builder MyBuilder \ 
+  --load .
 ```
 
 ## Switch to the builder instance
