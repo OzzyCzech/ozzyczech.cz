@@ -37,22 +37,19 @@ Create a `Dockerfile` with the following content:
 ```dockerfile
 FROM alpine/git:latest
 
----
-title: Copy generated key pair to the container
----COPY --chown=root:root .ssh /root/.ssh
+# Copy generated key pair to the container
+COPY --chown=root:root .ssh /root/.ssh
 
 RUN ssh-keyscan gitlab.com >> /root/.ssh/known_hosts \
   && chown -R root:root /root/.ssh \
   && chmod 700 /root/.ssh \
   && chmod 600 /root/.ssh/*
 
----
-title: Copy bin folder
----COPY entrypoint /usr/local/bin/entrypoint
+# Copy bin folder
+COPY entrypoint /usr/local/bin/entrypoint
 
----
-title: App source code
----WORKDIR /app
+# App source code
+WORKDIR /app
 VOLUME /app
 
 ENTRYPOINT ["entrypoint"]
@@ -63,25 +60,21 @@ Let's have a repository `git@gitlab.com:your/app.git` them your `entrypoint` fil
 ```shell
 #!/usr/bin/env sh
 
----
-title: repository does not exist, clone it
----if [ ! -d .git ]; then
+# repository does not exist, clone it
+if [ ! -d .git ]; then
   git clone git@gitlab.com:your/app.git --branch main --single-branch /app || exit 31
 fi
 
----
-title: Update the repository
----git fetch origin main || exit 32
+# Update the repository
+git fetch origin main || exit 32
 git switch main   || exit 33
 git reset --hard origin/main || exit 34
 
----
-title: Clean up content except node_modules, vendor and .cache
----git clean -dfx --exclude node_modules --exclude vendor --exclude .cache || exit 35
+# Clean up content except node_modules, vendor and .cache
+git clean -dfx --exclude node_modules --exclude vendor --exclude .cache || exit 35
 
----
-title: Update submodules
----git submodule sync || exit 36
+# Update submodules
+git submodule sync || exit 36
 git submodule update --init --force || exit 37
 echo "【ツ】Source code was updated!"
 ```
