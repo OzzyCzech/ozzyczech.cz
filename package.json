@@ -11,16 +11,16 @@
 		"format": "prettier --write src/**/*.md"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/starlight": "^0.36.0",
+		"@astrojs/check": "^0.9.5",
+		"@astrojs/starlight": "^0.36.1",
 		"@astrojs/starlight-tailwind": "^4.0.1",
 		"@astrojs/tailwind": "^6.0.2",
 		"@sindresorhus/slugify": "^3.0.0",
-		"@tailwindcss/vite": "^4.1.14",
-		"astro": "^5.14.1",
+		"@tailwindcss/vite": "^4.1.15",
+		"astro": "^5.14.7",
 		"prettier": "^3.6.2",
 		"sharp": "^0.34.4",
-		"tailwindcss": "^4.1.14",
+		"tailwindcss": "^4.1.15",
 		"typescript": "^5.9.3",
 		"unist-util-visit": "^5.0.0"
 	}
