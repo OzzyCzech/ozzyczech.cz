@@ -47,6 +47,11 @@ JetBrains
 - [PasteBar](https://www.pastebar.app/) - Clipboard manager for macOS
 - [Paste](https://pasteapp.me/) - Clipboard history manager for macOS
 
+## Image viewers
+
+- [FlowVision](https://flowvision.app/) - Image viewer and organizer for macOS
+- [qView](https://interversehq.com/qview/) - Minimalist image viewer
+
 ## Tools
 
 - [Aerolite](https://aerolite.dev/applite/index.html) - third party applications manager
@@ -57,18 +62,16 @@ JetBrains
 
 ## Image editing
 
+- [Affinity Studio](https://www.affinity.studio) - Free all design and photo editing tools
 - [Pixelmator Pro](https://www.pixelmator.com/pro/) - Image editing made easy
 - [Procreate](https://procreate.art/) - The most powerful and intuitive digital illustration app
-- [Affinity Photo](https://affinity.serif.com/en-gb/photo/) - The photo editing app that’s a cut above the rest
-- [Affinity Designer](https://affinity.serif.com/en-gb/designer/) - The fastest, smoothest, most precise vector graphic
-  design software available
 
 ## Video editing
 
+- [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Free video editor for Windows/macOS
 - [LumaFusion](https://luma-touch.com/) - Professional Editing Reimagined for Mobile
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/) - best for mac
 - [iMovie](https://www.apple.com/imovie/) - free video editor for mac
-- [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Free video editor for Windows/macOS
 
 ## Video players
 
