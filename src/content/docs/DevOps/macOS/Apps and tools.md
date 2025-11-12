@@ -22,6 +22,8 @@ JetBrains
 - [Vanilla](https://matthewpalmer.net/vanilla/) - Hide menu bar icons on your Mac
 - [KeepingYouAwake](https://keepingyouawake.app/) - Prevents your Mac from going to sleep
 - [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas
+- [LeaderKey](https://github.com/mikker/LeaderKey.app) - Launch apps and run scripts with keyboard shortcuts
+- [Ice](https://icemenubar.app/) - Ice is a powerful menu bar management tool
 
 ## Note-taking apps
 
@@ -35,10 +37,9 @@ JetBrains
 
 ## Browsers
 
-- [Arc](https://arc.net/) - A new approach to browsing
+- [Zen](https://zen-browser.app/) - A browser that helps you focus
 - [Brave](https://brave.com/) - A free and open-source web browser based on the Chromium web browser
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/) - Open-source web browser developed by Mozilla
-- [Zen](https://zen-browser.app/) - A browser that helps you focus
 
 ## Clipboard managers
 
@@ -59,6 +60,7 @@ JetBrains
 - [ImageOptim](https://imageoptim.com/mac) - open source image optimization tool
 - [Paste](https://pasteapp.me/) - clipboard history manager for macOS
 - [Ejectify](https://ejectify.app/) - No more disk not ejected properly notifications.
+- [Hazel](https://www.noodlesoft.com/) - Automate organizing your files
 
 ## Image editing
 
@@ -76,6 +78,7 @@ JetBrains
 ## Video players
 
 - [IINA](https://iina.io/) - The modern video player for macOS
+- [Elmedia Player](https://www.elmedia-video-player.com/) - Video player for Mac
 
 ## Screen recorders
 
