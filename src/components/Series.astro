@@ -2,7 +2,13 @@
 const {title} = Astro.props;
 
 // search titles in the Free movie directory API
-const response = await fetch(`https://api.themoviedb.org/3/search/tv?api_key=${import.meta.env.TMDB_API_KEY}&include_adult=true&query=${title}`).then((r) => r.json());
+const url = new URL('https://api.themoviedb.org/3/search/tv');
+url.searchParams.append('api_key', import.meta.env.TMDB_API_KEY);
+url.searchParams.append('include_adult', 'true');
+url.searchParams.append('query', title);
+
+console.log(url.toString());
+const response = await fetch(url).then((r) => r.json());
 if (!response || !response.results) return null;
 
 const result = response.results.filter((result: { name: string }) => result.name.toLowerCase() === title.toLowerCase()).shift() || response.results.shift();
