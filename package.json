@@ -12,15 +12,15 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.6",
-		"@astrojs/starlight": "^0.37.0",
+		"@astrojs/starlight": "^0.37.1",
 		"@astrojs/starlight-tailwind": "^4.0.2",
 		"@astrojs/tailwind": "^6.0.2",
 		"@sindresorhus/slugify": "^3.0.0",
-		"@tailwindcss/vite": "^4.1.17",
-		"astro": "^5.16.3",
-		"prettier": "^3.7.3",
+		"@tailwindcss/vite": "^4.1.18",
+		"astro": "^5.16.6",
+		"prettier": "^3.7.4",
 		"sharp": "^0.34.5",
-		"tailwindcss": "^4.1.17",
+		"tailwindcss": "^4.1.18",
 		"typescript": "^5.9.3",
 		"unist-util-visit": "^5.0.0"
 	}
