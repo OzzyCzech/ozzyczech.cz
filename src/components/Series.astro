@@ -7,7 +7,6 @@ url.searchParams.append('api_key', import.meta.env.TMDB_API_KEY);
 url.searchParams.append('include_adult', 'true');
 url.searchParams.append('query', title);
 
-console.log(url.toString());
 const response = await fetch(url).then((r) => r.json());
 if (!response || !response.results) return null;
 
