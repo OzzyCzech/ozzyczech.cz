@@ -2,6 +2,12 @@
 title: Ads blocking
 ---
 
+##### [PiHole](https://pi-hole.net/)
+
+Pi-hole is a network-wide ad blocker that works by blocking ads at the network
+level. It can be set up on a Raspberry Pi or any other DNS-capable device,
+providing ad blocking for all devices connected to your network.
+
 ##### [uBlock](https://ublockorigin.com/)
 
 uBlock is a popular, free, and open-source ad content blocker that effectively
@@ -18,9 +24,3 @@ privacy violations.
 Wiper is an effective ads blocker specifically designed for Safari, providing
 users with a seamless browsing experience by eliminating intrusive
 advertisements and enhancing privacy.
-
-##### [PiHole](https://pi-hole.net/)
-
-Pi-hole is a network-wide ad blocker that works by blocking ads at the network
-level. It can be set up on a Raspberry Pi or any other DNS-capable device,
-providing ad blocking for all devices connected to your network.
