@@ -5,19 +5,29 @@ const {title} = Astro.props;
 const url = new URL('https://api.themoviedb.org/3/search/tv');
 url.searchParams.append('api_key', import.meta.env.TMDB_API_KEY);
 url.searchParams.append('include_adult', 'true');
-url.searchParams.append('query', title);
+
+// year if included in title
+if (title.match(/\((\d{4})\)/)) {
+	url.searchParams.append('year', title.match(/\((\d{4})\)/)![1]);
+	// remove year from title
+	url.searchParams.append('query', title.replace(/\s*\(\d{4}\)/, '').trim());
+} else {
+	url.searchParams.append('query', title);
+}
 
 const response = await fetch(url).then((r) => r.json());
 if (!response || !response.results) return null;
 
 const result = response.results.filter((result: { name: string }) => result.name.toLowerCase() === title.toLowerCase()).shift() || response.results.shift();
-const img = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : '';
-const link = `https://www.themoviedb.org/tv/${result.id}`;
-const name = result.name;
+
+// construct image URL and link
+const img = result?.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : '';
+const link = result.id ? `https://www.themoviedb.org/tv/${result.id}` : '#';
+const name = result.name ?? title
 ---
 <li class="text-center m-0!">
 	<a href={link} target="_blank" class="p-0 m-0">
-		<img src={img} alt="${result.name}" class="rounded-lg shadow-sm"/>
+		<img src={img} alt={result.name} class="rounded-lg shadow-sm"/>
 	</a>
 	<a href={link} title={name} target="_blank" class="inline-flex text-sm leading-normal no-underline hover:underline text-inherit!">{name}</a>
 </li>
