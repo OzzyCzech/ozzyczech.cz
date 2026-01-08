@@ -4,11 +4,9 @@ title: Best cameras
 
 ## Full Frame sensor size
 
-- [Sony A7 IV](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7m4)
-- [Sony A7R IV](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7rm4)
+- [Sony A7 V](https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7m5-b)
 - [Sony A7C II](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7cm2)
-- [Panasonic Lumix DC-S5 II](https://www.panasonic.com/cz/consumer/fotoaparaty-a-videokamery/fotoaparaty-lumix-s-full-frame/dc-s5.html)
-- [Nikon ZF](https://www.nikon.cz/cs_CZ/product/cameras/z-f)
+- [Panasonic DC-S1RM2](https://www.panasonic.com/cz/consumer/fotoaparaty-a-videokamery/fotoaparaty-lumix-s-full-frame/dc-s1rm2.html)
 
 ## APS-C sensor size
 
