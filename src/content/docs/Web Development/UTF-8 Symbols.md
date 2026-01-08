@@ -4,19 +4,34 @@ title: UTF-8 Symbols
 
 Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿◕)](https://symbl.cc/en/)
 
-### Universal Symbols
+## Typography
+
+| Symbol | Description         | HTML Entity | Mac Shortcut | 
+| ------ | ------------------- | ----------- | --------- |
+| `❤`   | Heavy black heart   | `&#10084;`  | |
+| `©`   | Copyright           | `&copy;`    | |
+| `®`   | Registered trademark| `&reg;`     | Opstions + Shift + r |
+| `°`    | Degree sign         | `&deg;`     | |
+| `•`    | Bullet              | `&bull;`    | Options + Shift + 2 |
+| `*`    | Asterisk            | `&ast;`     | Options + 8 |
+| `…`    | Horizontal Ellipsis | `&hellip;`  | Options + Shift + ů |
+
+## Universal Symbols
 
 | Symbol | Description         | HTML Entity |
 | ------ | ------------------- | ----------- |
-| `❤`   | Heavy black heart   | `&#10084;`  |
-| `©`   | Copyright           | `&copy;`    |
-| `°`    | Degree sign         | `&deg;`     |
 | `∞`    | Infinity            | `&infin;`   |
-| `…`    | Horizontal Ellipsis | `&hellip;`  |
-| `*`    | Asterisk            | `&ast;`     |
-| `✓`    | Check               | `&#x2713;`  |
-| `✗`    | Cross               | `&#x2717;`  |
+| `❤`   | Heavy black heart   | `&#10084;`  |
+
+## Checks and Cross
+
+| Symbol | Description         | HTML Entity |
+| ------ | ------------------- | ----------- |
 | `✕`    | Multiplication X    | `&#x2715;`  |
+| `✗`    | Cross               | `&#x2717;`  |
+| `✓`    | Check               | `&#x2713;`  |
+| `✔`    | Checkmark           | `&#x2714;`  |
+| `✘`    | Crossmark           | `&#x274c;`  |
 
 ## Triangles
 
@@ -27,7 +42,7 @@ Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿
 | `◂`    | Triangle Left  | `&blacktriangleleft;`  |
 | `▸`    | Triangle Right | `&blacktriangleright;` |
 
-### Arrows
+## Arrows
 
 | Symbol | Description | HTML Entity |
 | ------ | ----------- | ----------- |
@@ -40,7 +55,7 @@ Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿
 | `↘`   | Down-Right  |             |
 | `↙`   | Down-Left   |             |
 
-### Apple
+## Apple specific
 
 | Symbol | Description       |
 | ------ | ----------------- |
