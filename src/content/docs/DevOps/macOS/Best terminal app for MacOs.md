@@ -2,6 +2,8 @@
 title: Best terminal app for macOS
 ---
 
+List of the best terminal apps for macOS.
+
 ## [iTerm2](https://iterm2.com/)
 
 A powerful replacement for the default Terminal app. Split panes, search, autocomplete, paste history, and extensive customization. Free and open source.
@@ -26,9 +28,7 @@ GPU-based terminal emulator with fast rendering, ligatures, and image support. H
 brew install --cask kitty
 ```
 
-## Similar terminals
-
-### [Warp](https://www.warp.dev/)
+## [Warp](https://www.warp.dev/)
 
 Modern, AI-powered terminal with blocks, command palette, and collaborative features. Built for speed and developer workflow.
 
@@ -36,7 +36,7 @@ Modern, AI-powered terminal with blocks, command palette, and collaborative feat
 brew install --cask warp
 ```
 
-### [Hyper](https://hyper.is/)
+## [Hyper](https://hyper.is/)
 
 Terminal built on web technologies (HTML, CSS, JS). Extensible via plugins and themes.
 
@@ -44,7 +44,7 @@ Terminal built on web technologies (HTML, CSS, JS). Extensible via plugins and t
 brew install --cask hyper
 ```
 
-### [Ghostty](https://ghostty.org/)
+## [Ghostty](https://ghostty.org/)
 
 GPU-accelerated terminal with native macOS feel, ligatures, and image protocol support. Free and open source.
 
