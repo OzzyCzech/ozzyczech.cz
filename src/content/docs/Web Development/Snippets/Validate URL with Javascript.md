@@ -1,8 +1,8 @@
 ---
-title: Validate URL with Javascript
+title: Validate URL with JavaScript
 ---
 
-Following is a simple function to validate a URL with Javascript. It will return the URL if it is valid, otherwise it will return `undefined`.
+Following is a simple function to validate a URL with JavaScript. It will return the URL if it is valid, otherwise it will return `undefined`.
 
 ```javascript
 function getValidUrl(url) {

@@ -1,5 +1,5 @@
 ---
-title: Heighlights search
+title: Highlights search
 ---
 
 The next few lines of code **wrap** all the **keywords** currently being searched for in the

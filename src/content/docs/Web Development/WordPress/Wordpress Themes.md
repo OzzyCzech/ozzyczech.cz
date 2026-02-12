@@ -1,5 +1,5 @@
 ---
-title: Wordpress Themes
+title: WordPress Themes
 ---
 
 - [WordPress](https://wordpress.org/themes/)

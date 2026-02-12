@@ -1,5 +1,5 @@
 ---
-title: Fist post in loop
+title: First post in loop
 ---
 
 ```php

@@ -1,5 +1,5 @@
 ---
-title: Always auto update everything in WordPres
+title: Always auto update everything in WordPress
 ---
 
 This code snippet enables automatic updates for WordPress core, plugins, themes, and translations. It also disables
