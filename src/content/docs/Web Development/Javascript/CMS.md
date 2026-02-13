@@ -1,6 +1,10 @@
 ---
 title: Content management systems
+sidebar:
+  label: CMS
 ---
+
+### Static site generators
 
 - [Astro](https://astro.build/) - The best of React, Vue, Svelte, and traditional static sites, all in one.
 - [Eleventy](https://www.11ty.dev/) - A simpler static site generator
