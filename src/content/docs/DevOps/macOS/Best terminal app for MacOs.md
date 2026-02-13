@@ -51,3 +51,11 @@ GPU-accelerated terminal with native macOS feel, ligatures, and image protocol s
 ```shell
 brew install --cask ghostty
 ```
+
+## [WezTerm](https://wezterm.org/)
+
+A GPU-accelerated cross-platform terminal emulator written in Rust. Offers multiplexing, ligatures, color emoji, and extensive Lua-based configuration. Features built-in image protocol support and rich text formatting.
+
+```shell
+brew install --cask wezterm
+```
