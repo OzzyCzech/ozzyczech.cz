@@ -1,7 +1,7 @@
 ---
-title: Packages
+title: NPM packages
 sidebar:
-  order: 1
+  label: NPM packages
 ---
 
 ### Charts
