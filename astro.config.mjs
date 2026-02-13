@@ -46,13 +46,13 @@ export default defineConfig({
 			},
 			sidebar: [
 				{label: 'Home', link: '/'},
-				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
 				{label: 'Web Development', collapsed: false, autogenerate: {directory: 'Web Development', collapsed: true}},
 				{label: 'DevOps', collapsed: false, autogenerate: {directory: 'DevOps', collapsed: true}},
-				{label: 'LifeHack', collapsed: true, autogenerate: {directory: 'LifeHack'}},
-				{label: 'Photography', collapsed: true, autogenerate: {directory: 'Photography'}},
+				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
+				{label: 'Life Hack', collapsed: true, autogenerate: {directory: 'LifeHack'}},
+				{label: 'Photography', collapsed: true, autogenerate: {directory: 'Photography', collapsed: true}},
 				{label: 'Security', collapsed: true, autogenerate: {directory: 'Security'}},
-				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware'}},
+				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware', collapsed: true}},
 				{label: 'Povídky', collapsed: true, autogenerate: {directory: 'Povidky'}},
 			]
 		})
