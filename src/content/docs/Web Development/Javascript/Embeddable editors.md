@@ -1,5 +1,5 @@
 ---
-title: Editors
+title: Embeddable editors
 description: JavaScript code editors, block editors, and WYSIWYG editors for the web
 ---
 

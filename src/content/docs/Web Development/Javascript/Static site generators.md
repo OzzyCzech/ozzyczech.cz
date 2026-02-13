@@ -1,7 +1,5 @@
 ---
-title: Content management systems
-sidebar:
-  label: CMS
+title: Static site generators
 ---
 
 ### Static site generators
