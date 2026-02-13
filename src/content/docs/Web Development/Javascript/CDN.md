@@ -1,10 +1,10 @@
 ---
 title: Content Delivery Networks
 sidebar:
-  label: CND
+  label: CDN
 ---
 
-### [esm.run](https://www.jsdelivr.com/esm)
+### [esm.run](https://esm.run/)
 
 A new age CDN for JavaScript. esm.run provides modern solutions for delivering JavaScript modules quickly and efficiently.
 
