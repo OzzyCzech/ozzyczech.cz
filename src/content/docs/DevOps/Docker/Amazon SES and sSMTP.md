@@ -17,7 +17,7 @@ without having to maintain your own email servers.
 
 ## Configuring sSMTP with Amazon SES
 
-To use sSMTP with Amazon SMS, you need to configure it to use Amazon's SMTP server.
+To use sSMTP with Amazon SES, you need to configure it to use Amazon's SMTP server.
 
 1. Log in to [your AWS account](https://aws.amazon.com/).
 2. Sign up for the [Amazon SES service](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html).
@@ -36,14 +36,14 @@ Let's create a `ssmtp.conf` file with the following content:
 root=root@example.com
 mailhub=email-smtp.eu-central-1.amazonaws.com:465
 AuthUser=[ Amazon SES SMTP username ]
-AuthPass=[ Amaton SES SMTP password ]
+AuthPass=[ Amazon SES SMTP password ]
 UseTLS=YES
 AuthMethod=LOGIN
 FromLineOverride=YES
 
 ```
 
-Last line in `ssmtp.conf` config need to be keep empty! Let's test our config in Docker.
+The last line in `ssmtp.conf` must be kept empty! Let's test our config in Docker.
 
 ## Prepare Dockerfile
 

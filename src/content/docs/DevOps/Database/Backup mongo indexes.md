@@ -2,7 +2,7 @@
 title: Backup mongo indexes
 ---
 
-There is really short and briliant script for create backup of indexes queries. This code iterate over all collections and create backup of `createIndex()` queries.
+There is a really short and brilliant script to create a backup of index queries. This code iterates over all collections and creates a backup of `createIndex()` queries.
 
 ```js
 print(`// Backup indexes of : ${db.getName()} : database`);
@@ -13,7 +13,7 @@ db.getCollectionNames().forEach(function (collection) {
     .getCollection(collection)
     .getIndexes()
     .forEach(function (index) {
-      if (index.name === "_id_") return; // skip defalut _id indexes
+      if (index.name === "_id_") return; // skip default _id indexes
       const keys = tojsononeline(index.key);
       delete index.id;
       delete index.key;
@@ -24,7 +24,7 @@ db.getCollectionNames().forEach(function (collection) {
 });
 ```
 
-You can save this backup code to file and run int directly with [mongoshell](https://docs.mongodb.com/manual/mongo/) command:
+You can save this backup code to file and run it directly with [mongoshell](https://docs.mongodb.com/manual/mongo/) command:
 
 ```shell
 mongo --quiet mongodb://localhost:27017/mydb ./backup.indexes.js > myindexes.js

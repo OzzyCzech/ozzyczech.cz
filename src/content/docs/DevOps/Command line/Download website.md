@@ -5,10 +5,10 @@ sidebar:
   label: Download website
 ---
 
-There is plenty options, but easiest one is use command line. The **wget** is command line utility
-allows you to download whole web pages, files and images from the specific URL.
+There are plenty of options, but the easiest one is to use the command line. **wget** is a command-line utility
+that allows you to download whole web pages, files and images from a specific URL.
 
-Follow command works just fine:
+The following command works just fine:
 
 ```shell
 wget -nd -nc -np \
@@ -20,7 +20,7 @@ wget -nd -nc -np \
      [example.website.com]
 ```
 
-What's mean all that?
+What do they all mean?
 
 - `-nd`, `--no-directories`: Do not create a hierarchy of directories when retrieving recursively.
 - `-nc`, `--no-clobber`: Do not overwrite existing files.

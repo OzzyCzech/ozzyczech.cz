@@ -1,5 +1,5 @@
 ---
-title: Run FTP server on MacOS
+title: Run FTP server on macOS
 ---
 
 Setup everyhing: `sudo nano /etc/ftpd.conf`

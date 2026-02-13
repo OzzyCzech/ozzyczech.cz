@@ -1,14 +1,14 @@
 ---
-title: Controll TimeMachine from terminal
+title: Control Time Machine from terminal
 ---
 
-You can enable `sudo tmutil enable` or disable `sudo tmutil disable` from command line. If you want to run a Time
+You can enable `sudo tmutil enable` or disable `sudo tmutil disable` from the command line. If you want to run a Time
 Machine backup right away, just run `tmutil startbackup` or
 `tmutil stopbackup` if you ever want to stop a backup.
 
 ## Local snapshots
 
-Follow command will disable and delete "local snapshots":
+The following command will disable and delete "local snapshots":
 
 ```shell
 sudo tmutil disablelocal
@@ -26,10 +26,10 @@ sudo tmutil enablelocal
 sudo tmutil addexclusion ~/Downloads
 ```
 
-There is interesting property `-p` that controls whether or not folder remains in exclusion when is moved.
+There is an interesting property `-p` that controls whether or not the folder remains in exclusion when it is moved.
 If you use the above command with the `-p` flag, then it will not be sticky.
 
-If you are developer there is few quite common folders that should be excluded:
+If you are a developer there are a few quite common folders that should be excluded:
 
 ```shell
 sudo tmutil addexclusion ~/.composer

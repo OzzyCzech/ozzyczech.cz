@@ -1,8 +1,8 @@
 ---
-title: Install Mongo on MacOS
+title: Install Mongo on macOS
 ---
 
-First you need tap official #mongo brew:
+First you need to tap the official MongoDB brew:
 
 ```bash
 brew tap mongodb/brew

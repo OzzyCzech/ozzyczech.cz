@@ -10,7 +10,7 @@ title: List of databases
 
 ### Couchbase
 
-[Couchbase](https://www.couchbase.com/) is open source the NoSQL database, distributed, document-oriented engagement database. It exposes a fast key-value store with managed cache for sub-millisecond data operations, purpose-built indexers for fast queries and a powerful query
+[Couchbase](https://www.couchbase.com/) is an open-source NoSQL database, distributed, document-oriented engagement database. It exposes a fast key-value store with managed cache for sub-millisecond data operations, purpose-built indexers for fast queries and a powerful query
 engine for executing SQL-like queries
 
 ### Amazon DynamoDB
@@ -28,7 +28,7 @@ caching for internet-scale applications.
 
 ### Unbounded
 
-[Unbounded](https://unbounded.cloud/) is the First Programmable NoSQL Database Effortlessly scale your data in the cloud using the language you already know.
+[Unbounded](https://unbounded.cloud/) is the first programmable NoSQL database. Effortlessly scale your data in the cloud using the language you already know.
 
 ### PostgreSQL
 
