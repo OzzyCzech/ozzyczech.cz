@@ -31,7 +31,6 @@ sidebar:
 - **[Antigravity](https://antigravity.google/)**
   AI-powered IDE by Google
 
-
 ## 🚀 Full-Stack App Builders (Vibe Coding)
 
 - **[Google AI Studio](https://aistudio.google.com/)**  
