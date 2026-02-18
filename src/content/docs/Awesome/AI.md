@@ -4,7 +4,7 @@ sidebar:
   label: AI
 ---
 
-## Chatbots & Conversational AI
+## 🤖 Chatbots & Conversational AI
 
 - **[ChatGPT](https://chatgpt.com/)**  
   ChatBot by OpenAI
@@ -15,29 +15,24 @@ sidebar:
 - **[Perplexity](https://www.perplexity.ai/)**  
   AI-powered search engine
 
-## Notebooks & AI Document Editors
+## 💻 AI-powered Code Agents & CLI
 
-- **[Google Notebook LM](https://notebooklm.google.com/)**
+- **[Claude Code](https://claude.ai/code/)**
+  AI-powered code agent by Anthropic
+- **[Codex](https://openai.com/codex/)**  
+  AI-powered code agent by OpenAI
+- **[GitHub Copilot](https://github.com/copilot/)**  
+  AI-powered code agent for GitHub
 
-## Image Generators
+## 🛠️ AI-powered IDEs
 
-- **[Mystic by Freepik](https://www.freepik.com/ai/image-generator)**
-- **[Bing Copilot](https://www.bing.com/images/create)**
-- **[Midjourney](https://midjourney.com/)**
-- **[NightCafe](https://nightcafe.studio/)**
-- **[Adobe Firefly](https://firefly.adobe.com/)**
-- **[Flux](https://blackforestlabs.ai/)**
-
-
-## Text Processing & Writing Tools
-
-- **[DeepL](https://www.deepl.com/translator)**  
-  AI translator
-- **[Write](https://www.deepl.com/write/)**  
-  AI writer
+- **[Cursor](https://cursor.com/)**  
+  AI-powered IDE by Cursor
+- **[Antigravity](https://antigravity.google/)**
+  AI-powered IDE by Google
 
 
-## Online AI Tools & Platforms
+## 🚀 Full-Stack App Builders (Vibe Coding)
 
 - **[Google AI Studio](https://aistudio.google.com/)**  
   AI experiment and prototyping tool by Google
@@ -53,3 +48,27 @@ sidebar:
   Collaborative AI-powered code editor and workspace
 - **[Firebase Studio](https://studio.firebase.google.com/)**  
   Low-code and AI development platform for Firebase
+
+
+## 📓 Notebooks & Knowledge Management
+
+- **[Google Notebook LM](https://notebooklm.google.com/)**
+  AI-powered notebook by Google
+- **[Gamma](https://gamma.app/)** AI-native workspace for generating presentations, websites, and documents in minutes.
+- - **[Heptabase](https://heptabase.com/)** A visual note-taking tool increasingly integrating AI for mapping out complex research.
+- 
+## 🎨 Image & Video Generation
+
+- **[Mystic by Freepik](https://www.freepik.com/ai/image-generator)**
+- **[Bing Copilot](https://www.bing.com/images/create)**
+- **[Midjourney](https://midjourney.com/)**
+- **[NightCafe](https://nightcafe.studio/)**
+- **[Adobe Firefly](https://firefly.adobe.com/)**
+- **[Flux](https://blackforestlabs.ai/)**
+
+## ✍️ Text Processing & Translation
+
+- **[DeepL](https://www.deepl.com/translator)**  
+  AI translator
+- **[Write](https://www.deepl.com/write/)**  
+  AI writer
