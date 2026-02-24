@@ -2,6 +2,10 @@
 title: Markdown editors
 ---
 
+## [FSNotes](https://fsnot.es/)
+
+Modern notes manager for macOS and iOS. Respects open formats like GitHub Flavored Markdown; simple and fast. Supports TextBundle, iCloud sync, tags, cross-note links with `[[double brackets]]`, Mermaid and MathJax, optional Git versioning, and encrypted notes.
+
 ## [Obsidian](https://obsidian.md/)
 
 Obsidian is a powerful **knowledge base** on top of a **local folder** of plain text Markdown files.
