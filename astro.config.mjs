@@ -46,6 +46,7 @@ export default defineConfig({
 			},
 			sidebar: [
 				{label: 'Home', link: '/'},
+				{label: 'AI', collapsed: true, autogenerate: {directory: 'AI', collapsed: false}},
 				{label: 'Web Development', collapsed: false, autogenerate: {directory: 'Web Development', collapsed: true}},
 				{label: 'DevOps', collapsed: false, autogenerate: {directory: 'DevOps', collapsed: true}},
 				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
