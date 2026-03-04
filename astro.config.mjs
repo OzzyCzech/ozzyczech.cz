@@ -2,8 +2,8 @@ import { defineConfig, passthroughImageService } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // Markdown plugins
-import links from './src/markdown/links.js';
-import youtube from './src/markdown/youtube.js';
+import links from './src/markdown/links.ts';
+import youtube from './src/markdown/youtube.ts';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
@@ -13,7 +13,8 @@ export default defineConfig({
 	site,
 
 	markdown: {
-		remarkPlugins: [links, youtube]
+		remarkPlugins: [youtube],
+		rehypePlugins: [links]
 	},
 
 	image: {
