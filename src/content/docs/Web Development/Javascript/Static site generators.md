@@ -12,4 +12,5 @@ title: Static site generators
 ### Documentation generators
 
 - [Starlight](https://starlight.astro.build/) - Astro powered CMS/documentation site generator
+- [docmd.io](https://docmd.io/) - Beautiful documentation from your Markdown files
 - [Docusaurus](https://v2.docusaurus.io/) - Build optimized websites and docs quickly, focus on your content
