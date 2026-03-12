@@ -1,6 +1,10 @@
 ---
 const {title} = Astro.props;
 
+if (!import.meta.env.TMDB_API_KEY) {
+	throw new Error('TMDB_API_KEY is not set');
+}
+
 // search titles in the Free movie directory API
 const url = new URL('https://api.themoviedb.org/3/search/tv');
 url.searchParams.append('api_key', import.meta.env.TMDB_API_KEY);
