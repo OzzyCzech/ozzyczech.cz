@@ -1,5 +1,5 @@
 ---
-title: Backup mongo indexes
+title: Backup MongoDB indexes
 ---
 
 There is a really short and brilliant script to create a backup of index queries. This code iterates over all collections and creates a backup of `createIndex()` queries.

@@ -48,8 +48,9 @@ export default defineConfig({
 			sidebar: [
 				{label: 'Home', link: '/'},
 				{label: 'AI', collapsed: true, autogenerate: {directory: 'AI', collapsed: false}},
-				{label: 'Web Development', collapsed: false, autogenerate: {directory: 'Web Development', collapsed: true}},
-				{label: 'DevOps', collapsed: false, autogenerate: {directory: 'DevOps', collapsed: true}},
+				{label: 'Development', collapsed: false, autogenerate: {directory: 'Development', collapsed: true}},
+				{label: 'Command line', collapsed: true, autogenerate: {directory: 'Command line', collapsed: true}},
+				{label: 'macOS', collapsed: true, autogenerate: {directory: 'macOS', collapsed: true}},
 				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
 				{label: 'Life Hack', collapsed: true, autogenerate: {directory: 'LifeHack'}},
 				{label: 'Photography', collapsed: true, autogenerate: {directory: 'Photography', collapsed: true}},
