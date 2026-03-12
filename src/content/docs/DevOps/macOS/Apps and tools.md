@@ -2,20 +2,6 @@
 title: Apps and tools
 ---
 
-## Code editors
-
-- [Zed](https://zed.dev/) - A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
-- [NeoVim](https://neovim.io/) - Vim-fork focused on extensibility and usability
-- [Visual Studio Code](https://code.visualstudio.com/) - Code editor from Microsoft
-
-JetBrains
-
-- [RustRover](https://www.jetbrains.com/rust/) - Rust IDE
-- [PHPStorm](https://www.jetbrains.com/phpstorm/) - PHP IDE
-- [WebStorm](https://www.jetbrains.com/webstorm/) - JavaScript IDE
-- [Fleet](https://www.jetbrains.com/fleet/) - Lightweight IDE
-- [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE
-
 ## Toolbar apps
 
 - [Supercharge](https://sindresorhus.com/supercharge) - Supercharge your Mac's menu bar

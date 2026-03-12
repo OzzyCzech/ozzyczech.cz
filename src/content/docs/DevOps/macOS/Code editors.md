@@ -1,5 +1,5 @@
 ---
-title: Editors
+title: Code editors
 ---
 
 ### [Zed](https://zed.dev/)
@@ -36,3 +36,30 @@ TextMate remains a lightweight and powerful choice for developers who prefer sim
 
 Free and open-source plain-text editor for macOS. CotEditor is a native macOS app with syntax highlighting, powerful
 find and replace, and a clean interface that follows Apple's design guidelines.
+
+### [NeoVim](https://neovim.io/)
+
+Vim-fork focused on extensibility and usability. NeoVim modernizes Vim with built-in LSP support, Lua-based
+configuration, and a thriving plugin ecosystem while maintaining full Vim compatibility.
+
+## JetBrains
+
+### [RustRover](https://www.jetbrains.com/rust/)
+
+Full-featured IDE for Rust development by JetBrains. RustRover provides smart code completion, on-the-fly analysis,
+and integrated debugging tailored specifically for the Rust ecosystem.
+
+### [PHPStorm](https://www.jetbrains.com/phpstorm/)
+
+Professional IDE for PHP development by JetBrains. PHPStorm offers deep code understanding, top-notch coding assistance,
+and support for all major frameworks and tools in the PHP ecosystem.
+
+### [WebStorm](https://www.jetbrains.com/webstorm/)
+
+Powerful IDE for JavaScript and TypeScript development by JetBrains. WebStorm provides smart coding assistance, built-in
+debugging, and seamless integration with modern frontend frameworks.
+
+### [PyCharm](https://www.jetbrains.com/pycharm/)
+
+Professional IDE for Python development by JetBrains. PyCharm offers intelligent code completion, powerful debugging,
+and built-in support for scientific tools, web frameworks, and databases.
