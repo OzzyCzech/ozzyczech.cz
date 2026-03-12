@@ -22,6 +22,16 @@ features like multiple selections, command palette, and a rich plugin ecosystem.
 Lightweight code editor designed specifically for macOS. CodeRunner supports running code in many languages right from
 the editor, making it a great tool for quick scripting and prototyping.
 
+### [Nova](https://nova.app/)
+
+Native macOS code editor by Panic. Nova offers a beautiful interface, built-in terminal, Git integration, and a rich
+extension library, all optimized specifically for macOS.
+
+### [TextMate](https://macromates.com/)
+
+Open-source text editor for macOS that brought many innovations like snippets, bundles, and scope-based settings.
+TextMate remains a lightweight and powerful choice for developers who prefer simplicity.
+
 ### [CotEditor](https://coteditor.com/)
 
 Free and open-source plain-text editor for macOS. CotEditor is a native macOS app with syntax highlighting, powerful
