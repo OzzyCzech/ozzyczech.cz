@@ -52,6 +52,14 @@ GPU-accelerated terminal with native macOS feel, ligatures, and image protocol s
 brew install --cask ghostty
 ```
 
+## [cmux](https://www.cmux.dev/)
+
+Native macOS terminal built on Ghostty, designed for managing multiple AI coding agents. Features vertical tabs, notification rings, split panes, and a scriptable socket API.
+
+```shell
+brew install --cask cmux
+```
+
 ## [WezTerm](https://wezterm.org/)
 
 A GPU-accelerated cross-platform terminal emulator written in Rust. Offers multiplexing, ligatures, color emoji, and extensive Lua-based configuration. Features built-in image protocol support and rich text formatting.
