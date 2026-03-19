@@ -16,6 +16,10 @@ title: HTTP tools
 
 - [DIG](https://toolbox.googleapps.com/apps/dig/#ANY/) - online DIG from Google
 
+### Local development
+
+- [Slim](https://slim.sh/) - free CLI toolkit that gives your localhost a local HTTPS domain (`.test`, `.loc`, `.dev`) or a public URL via `slim.show`. Supports path-based routing, WebSocket, HMR, and project config via `.slim.yaml`.
+
 ### SSL certificates
 
 - [HTTPS certificates](https://transparencyreport.google.com/https/certificates)
