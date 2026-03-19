@@ -16,10 +16,6 @@ Lucide is a free, open-source icon set drawn in a consistent, modern style.
 
 Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
 
-##### [IconSax](https://iconsax.dev/)
-
-5912 Open source free SVG icons. Highly customizable. No attribution required. For commercial use.
-
 ##### [SVGBox](https://svgbox.net/)
 
 SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
@@ -32,7 +28,7 @@ SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
 
 Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really.
 
-##### [Boostrap Icons](https://icons.getbootstrap.com/)
+##### [Bootstrap Icons](https://icons.getbootstrap.com/)
 
 Twitters Bootstrap icons
 
@@ -54,14 +50,10 @@ and many more...
 - [iconoir.com](https://iconoir.com/) - Your new default library
 - [Teeny icons](https://teenyicons.com/) - small 1x icons set
 - [Majest icons](https://www.majesticons.com/) - Over 720 icons under MIT license
-- [Feather](https://feathericons.com/) - simple and beautiful icons set
+- [Feather Icons](https://feathericons.com/) - Simply beautiful open source icons
 - [iconsax](https://iconsax.io/) - Vuesax framework icons
 - [ionicons](https://ionic.io/ionicons/) - hand crafter open source icons library
-- [Tabler Icons](https://tablericons.com/) - 1424 Open source free SVG icons for you to use in your web projects.
-- [Tabler Icons.io](https://tabler-icons.io) - Over 4000 pixel-perfect icons for web design and development
-- [SimpleIcons](https://simpleicons.org/) - 1463 Free SVG icons for popular brands
-- [SVG Porn](https://svgporn.com/) - 1000+ free SVG icons for you to use in your web projects.
-- [Feather Icons](https://feathericons.com/) - Simply beautiful open source icons
+- [Tabler Icons](https://tabler-icons.io) - Over 4000 pixel-perfect icons for web design and development
 - [glyphs.fyi](https://glyphs.fyi/) - Mightiest Icons on the Web
 - [Sargam icons](https://sargamicons.com/) - A Collection of 250+ Open-source Icons Devoted to Match Your Exquisite
   Designs.
@@ -71,10 +63,10 @@ and many more...
 ## Icon Search Engines
 
 - [Iconify](https://icon-sets.iconify.design/) - search engine for icons, supports over 100 icon sets
+- [Iconsear.ch](https://iconsear.ch/) - search engine for open source icons
 - [Streamline](https://www.streamlinehq.com/) - ultimate icon library with over 350,000 icons
 - [icones.js](https://icones.js.org/) - open source icons search
 - [The Noun Project](https://thenounproject.com/) - Icons for everything
-- [Smash Icons](https://smashicons.com/) - 250 design resources with over 490 000 icons
 - [Flaticon](https://flaticon.com) - 3,000,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT
 - [Icons8](https://icons8.com/) - Icons, photos, music, and design tools
 - [xIcons](https://www.xicons.org/) - icon search engine over fluent, ionicons and more
