@@ -26,4 +26,3 @@ and some minimalistic
 
 - [PostCSS](https://postcss.org/) - A tool for transforming CSS with JavaScript
 - [PurgeCSS](https://purgecss.com/) - PurgeCSS is a tool to remove unused CSS from your project
-- [Pencil](https://www.pencil.dev/) - Designing directly in your preferred IDE
