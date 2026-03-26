@@ -70,6 +70,7 @@ and many more...
 - [Flaticon](https://flaticon.com) - 3,000,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT
 - [Icons8](https://icons8.com/) - Icons, photos, music, and design tools
 - [xIcons](https://www.xicons.org/) - icon search engine over fluent, ionicons and more
+- [Dashboard Icons](https://dashboardicons.com/) - search engine and catalog of icons for dashboards and services
 
 ## Icon Fonts
 
