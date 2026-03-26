@@ -103,20 +103,23 @@ Settings are stored in `~/.claude/settings.json`:
   },
   "model": "opus",
   "enabledPlugins": {
-    "nette@nette": true
+    "nette@nette": true,
+    "impeccable@impeccable": true
   },
   "extraKnownMarketplaces": {
     "nette": {
       "source": {
         "source": "github",
         "repo": "nette/claude-code"
-      }
+      },
+      "autoUpdate": true
     },
     "impeccable": {
       "source": {
         "source": "github",
         "repo": "pbakaus/impeccable"
-      }
+      },
+      "autoUpdate": true
     }
   },
   "voiceEnabled": false
