@@ -2,6 +2,15 @@
 title: AI Tools
 ---
 
+## Coding Agent Tools
+
+- **[cmux](https://www.cmux.dev/)**
+  Native macOS terminal built on Ghostty, designed for managing multiple AI coding agents
+- **[Superset](https://superset.sh/)**
+  Terminal app for running multiple AI coding agents in parallel across isolated Git worktrees
+- **[Conductor](https://www.conductor.build/)**
+  Mac app for orchestrating multiple AI coding agents (Claude Code, Codex) simultaneously in isolated workspaces
+
 ## App Builders
 
 - **[Google AI Studio](https://aistudio.google.com/)**
