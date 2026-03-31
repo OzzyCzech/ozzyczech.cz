@@ -10,6 +10,8 @@ title: AI Tools
   Terminal app for running multiple AI coding agents in parallel across isolated Git worktrees
 - **[Conductor](https://www.conductor.build/)**
   Mac app for orchestrating multiple AI coding agents (Claude Code, Codex) simultaneously in isolated workspaces
+- **[Agentation](https://www.agentation.com/)**
+  Turns UI annotations into structured context that AI coding agents can understand and act on
 
 ## App Builders
 
