@@ -31,6 +31,7 @@ sidebar:
 ### UI
 
 - [Swiper](https://swiperjs.com/) - The Most Modern Mobile Touch Slider
+- [dnd-kit](https://dndkit.com/quickstart) - Modern drag-and-drop toolkit for JavaScript and frameworks
 
 ### Data & time
 
