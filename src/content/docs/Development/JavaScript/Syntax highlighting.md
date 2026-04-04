@@ -16,3 +16,10 @@ detects the language of the code block and applies the appropriate styling, maki
 
 Shiki is a beautiful Syntax Highlighter. [Demo](https://shiki.matsu.io/). Shiki provides stunning code highlighting
 using TextMate grammars and VS Code themes, ensuring that your code looks great in any context.
+
+### [Sugar High](https://github.com/huozhi/sugar-high)
+
+A very small syntax highlighter for JavaScript and JSX (about 1 kB minified and gzipped), with optional presets for
+CSS, Python, Rust, and more. [Demo](https://sugar-high.vercel.app/). Styling uses CSS custom properties (`--sh-*`);
+there is also a [remark plugin](https://github.com/huozhi/sugar-high/tree/main/packages/remark-sugar-high) for
+highlighting fenced code blocks in Markdown.
