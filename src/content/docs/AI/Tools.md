@@ -12,6 +12,8 @@ title: AI Tools
   Mac app for orchestrating multiple AI coding agents (Claude Code, Codex) simultaneously in isolated workspaces
 - **[Agentation](https://www.agentation.com/)**
   Turns UI annotations into structured context that AI coding agents can understand and act on
+- **[goose](https://block.github.io/goose/)**
+  Open source local AI agent from Block for engineering tasks; extensible with MCP servers and your preferred LLM
 
 ## App Builders
 
