@@ -34,7 +34,16 @@ export default defineConfig({
 				{
 					tag: 'meta',
 					attrs: {property: 'og:image', content: site + 'og.png'},
-				}
+				},
+				{
+					tag: 'link',
+					attrs: {
+						rel: 'alternate',
+						type: 'application/rss+xml',
+						title: "Roman's notes",
+						href: site + '/rss.xml',
+					},
+				},
 			],
 			customCss: [
 				'./src/style.css',

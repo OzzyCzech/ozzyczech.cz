@@ -1,20 +1,27 @@
 ---
 ---
 
-<div class="justified-gallery not-content">
+<div class="gallery-grid">
 	<slot />
 </div>
 
 <style>
-	.justified-gallery {
-		display: flex;
-		flex-wrap: wrap;
-		gap: clamp(24px, 3vw, 48px);
-		padding: clamp(16px, 2vw, 32px);
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-auto-flow: row;
+		align-items: start;
+		width: 100%;
+		gap: clamp(8px, 2.5vw, 32px);
+		padding: clamp(4px, 1vw, 12px) 0 0;
+		margin-bottom: 2rem;
 	}
 
-	.justified-gallery::after {
-		content: "";
-		flex-grow: 1000000000;
+	.gallery-grid:last-child {
+		margin-bottom: 0;
+	}
+
+	.gallery-grid > :global(*) {
+		min-width: 0;
 	}
 </style>
