@@ -24,7 +24,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Roman\'s notes',
-			tableOfContents: true,
+			tableOfContents: false,
 			pagination: false,
 			social: [
 				{icon: 'github', label: 'GitHub', href: 'https://github.com/OzzyCzech/ozzyczech.cz'},
