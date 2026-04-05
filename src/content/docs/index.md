@@ -24,6 +24,9 @@ If you want to support me, you can [buy me a coffee](https://buymeacoffee.com/oz
 
 ```shell
 git clone git@github.com:OzzyCzech/ozzyczech.cz.git
+```
+
+```shell
 npm install
 npm run dev
 ```
