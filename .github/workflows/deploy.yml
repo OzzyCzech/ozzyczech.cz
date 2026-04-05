@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: withastro/action@v3
+        with:
+          node-version: 25
+          package-manager: npm@latest
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
 
