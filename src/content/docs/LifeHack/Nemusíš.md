@@ -18,5 +18,5 @@ někdy si dovol dělat chyby.
 Nemusíš být **vždy veselý**,<br/>
 někdy můžeš být smutný.
 
-Nemusíš být vždy první,<br/>
+Nemusíš být **vždy první**,<br/>
 někdy můžeš být poslední.
