@@ -1,5 +1,7 @@
 ---
 title: Photo hosting
+sidebar:
+  order: 40
 ---
 
 ### Apple Photos
