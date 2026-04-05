@@ -1,0 +1,53 @@
+---
+interface Props {
+	src: ImageMetadata;
+	title: string;
+	href?: string;
+}
+
+const { src, title, href } = Astro.props;
+const { width, height } = src;
+const flexStyle = `flex-grow: ${Math.round(width * (100000 / height))}; flex-basis: calc(clamp(200px, 20vw, 350px) * ${width / height});`;
+const sourceDomain = href ? new URL(href).hostname.replace('www.', '') : null;
+---
+
+<figure class="gallery-item" style={flexStyle}>
+	<a href={src.src} target="_blank">
+		<img src={src.src} alt={title} loading="lazy" />
+	</a>
+	{href && sourceDomain && (
+		<a href={href} target="_blank" rel="noopener noreferrer" class="gallery-source">{sourceDomain}</a>
+	)}
+</figure>
+
+<style>
+	.gallery-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 1rem;
+		border: 1px solid rgba(128, 128, 128, 0.2);
+		border-radius: 0.75rem;
+		background: rgba(128, 128, 128, 0.03);
+	}
+
+.gallery-item img {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 0.5rem;
+	}
+
+	.gallery-source {
+		font-family: system-ui, sans-serif;
+		font-size: 0.75rem;
+		opacity: 0.5;
+		text-decoration: none;
+	}
+
+	.gallery-source:hover {
+		opacity: 0.8;
+		text-decoration: underline;
+	}
+</style>

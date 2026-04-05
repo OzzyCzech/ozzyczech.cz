@@ -1,0 +1,35 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import Gallery from '../components/Gallery.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+
+import justCheckingIn from '../content/docs/Fun/just-checking-in.png';
+import hobbies from '../content/docs/Fun/hobbies.png';
+import perfectFit from '../content/docs/Fun/perfect-fit.png';
+import introduction from '../content/docs/Fun/introduction.png';
+import dependency from '../content/docs/Fun/dependency.png';
+import standards from '../content/docs/Fun/standards.png';
+import codeEntropy from '../content/docs/Fun/code-entropy.png';
+import dejaVu from '../content/docs/Fun/deja-vu.png';
+import abychNeslaZima from '../content/docs/Fun/abych-nesla-zima.png';
+---
+
+<StarlightPage frontmatter={{ title: 'Fun', tableOfContents: false, template: 'splash', pagination: false }}>
+	<Gallery>
+		<GalleryImage src={justCheckingIn} title="Just checking in" href="https://www.workchronicles.com/p/comic-just-checking-in-0b4" />
+		<GalleryImage src={hobbies} title="Hobbies" href="https://www.workchronicles.com/p/comic-hobbies" />
+		<GalleryImage src={perfectFit} title="Perfect fit" href="https://www.monkeyuser.com/2021/perfect-fit/" />
+		<GalleryImage src={introduction} title="Introduction" href="https://www.monkeyuser.com/2021/introduction/" />
+		<GalleryImage src={dependency} title="Dependencies" href="https://xkcd.com/2347/" />
+		<GalleryImage src={standards} title="Standards" href="https://xkcd.com/927/" />
+		<GalleryImage src={codeEntropy} title="Code entropy" href="https://www.monkeyuser.com/2019/code-entropy/" />
+		<GalleryImage src={dejaVu} title="Déjà vu" href="https://www.monkeyuser.com/2019/deja-vu/" />
+		<GalleryImage src={abychNeslaZima} title="Abych nešla zima" />
+	</Gallery>
+</StarlightPage>
+
+<style is:global>
+	[data-page-title="Fun"] .hero {
+		display: none;
+	}
+</style>

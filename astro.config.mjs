@@ -56,7 +56,7 @@ export default defineConfig({
 				{label: 'Photography', collapsed: true, autogenerate: {directory: 'Photography', collapsed: true}},
 				{label: 'Security', collapsed: true, autogenerate: {directory: 'Security'}},
 				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware', collapsed: true}},
-				{label: 'Fun', collapsed: true, autogenerate: {directory: 'Fun', collapsed: true}},
+				{label: 'Fun', link: '/fun'},
 				{label: 'Povídky', collapsed: true, autogenerate: {directory: 'Povidky'}},
 			]
 		})
