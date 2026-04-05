@@ -11,6 +11,8 @@ This is an LLM Wiki — a personal knowledge base where LLM actively builds and 
 
 Content lives in `src/content/docs/` organized by topic (AI, Development, macOS, …). Each `.md` file is one wiki page.
 
+Sidebar navigation is configured in `astro.config.mjs`. When adding a new top-level category, always add it to the `sidebar` array there.
+
 ## Workflow
 
 - **Ingest** — when adding a new topic or source: read it, summarize, create or update relevant pages, keep related pages consistent
