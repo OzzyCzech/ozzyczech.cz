@@ -2,6 +2,7 @@
 title: Fujifilm
 sidebar:
   label: Fujifilm
+  order: 4
 ---
 
 ## Cameras
@@ -21,3 +22,7 @@ sidebar:
 | Camera | Sensor | MP | Year | Price (CZK) |
 |--------|--------|----|------|-------------|
 | [Fujifilm X100VI](https://fujifilm-x.com/en-us/products/cameras/x100vi/) | APS-C | 40 | 2024 | ~42 000 |
+
+## Lenses
+
+X Mount optics, naming (**XF** / **XC**), focal-length notes, and practical picks: **[Fujifilm lenses](/photography/fujifilm-lenses/)**.
