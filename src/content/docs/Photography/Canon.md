@@ -2,6 +2,7 @@
 title: Canon
 sidebar:
   label: Canon
+  order: 10
 ---
 
 ## Cameras

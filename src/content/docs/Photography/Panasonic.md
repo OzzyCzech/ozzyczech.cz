@@ -2,6 +2,7 @@
 title: Panasonic
 sidebar:
   label: Panasonic
+  order: 12
 ---
 
 ## Cameras

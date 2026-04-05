@@ -2,6 +2,7 @@
 title: Nikon
 sidebar:
   label: Nikon
+  order: 11
 ---
 
 ## Cameras

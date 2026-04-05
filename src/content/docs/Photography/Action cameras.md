@@ -2,6 +2,7 @@
 title: Action cameras
 sidebar:
   label: Action cameras
+  order: 21
 tableOfContents: false
 ---
 
