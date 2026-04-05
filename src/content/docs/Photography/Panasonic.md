@@ -16,3 +16,7 @@ sidebar:
 | [Panasonic Lumix S1 IIE](https://shop.panasonic.com/products/lumix-s1ii-full-frame-camera-partially-stacked-sensor-dc-s1m2) | Full Frame (Partially Stacked) | 24.2 | 2025 | ~54 000 |
 | [Panasonic Lumix S5 II](https://shop.panasonic.com/pages/lumix-s5m2) | Full Frame | 24.2 | 2023 | ~36 000 |
 | [Panasonic Lumix S9](https://shop.panasonic.com/pages/lumix-s9) | Full Frame | 24.2 | 2024 | ~28 000 |
+
+## Lenses
+
+L-Mount objektivy, praktické tipy a orientační ceny v Kč: **[Panasonic lenses](/photography/panasonic-lenses/)**.
