@@ -20,5 +20,10 @@ I find interesting and worth sharing.
 Yes. The source code is on [GitHub](https://github.com/OzzyCzech/ozzyczech.cz).
 If you find any bugs or outdated information, please create a [pull request](https://github.com/OzzyCzech/ozzyczech.cz/pulls).
 
-- Advertising is not allowed here.
-- If you want to support me, you can [buy me a coffee](https://buymeacoffee.com/ozzyczech).
+If you want to support me, you can [buy me a coffee](https://buymeacoffee.com/ozzyczech).
+
+```shell
+git clone git@github.com:OzzyCzech/ozzyczech.cz.git
+npm install
+npm run dev
+```
