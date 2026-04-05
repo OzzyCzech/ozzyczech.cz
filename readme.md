@@ -5,9 +5,9 @@ Visit https://ozzyczech.cz
 ## Development
 
 ```bash
-yarn install
-yarn dev
-yarn build
+npm install
+npm run dev
+npm run build
 ```
 
 ## Contact
