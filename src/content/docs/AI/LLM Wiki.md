@@ -1,8 +1,14 @@
 ---
 title: LLM Wiki
+sidebar:
+  label: LLM Wiki
 ---
 
 **LLM Wiki** je vzor pro osobní znalostní bázi: místo čistého RAG (pokaždé znovu hledat úryvky v dokumentech) necháváš LLM **postupně budovat a udržovat trvalou wiki** — propojené Markdown soubory mezi tebou a surovými zdroji.
+
+## Co je RAG
+
+**RAG (Retrieval-Augmented Generation)** je technika, kdy LLM před odpovědí nejdřív vyhledá relevantní úryvky z externích dokumentů (vektorová DB, full-text) a pak z nich složí odpověď. Znalost se neukládá — při každém dotazu se hledá znovu.
 
 ## Oproti klasickému RAG
 
@@ -10,7 +16,7 @@ U RAG model při každé otázce znovu skládá odpověď z fragmentů; znalost 
 
 ## Tři vrstvy
 
-1. **Surové zdroje** — články, PDF, poznámky; ideálně neměnné; LLM z nich čte, ne je přepisuje.
+1. **Surové zdroje** — články, PDF, poznámky; ideálně neměnné; LLM z nich čte, nepřepisuje je.
 2. **Wiki** — adresář Markdown stránek, které LLM vytváří a aktualizuje (shrnutí, entity, koncepty, odkazy).
 3. **Schéma** — např. `CLAUDE.md` nebo `AGENTS.md`: pravidla struktury, konvence a workflow (ingest, odpovědi, údržba). Bez toho je agent jen chatbot.
 
