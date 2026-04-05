@@ -1,5 +1,8 @@
 ---
 title: Sony
+sidebar:
+  label: Sony
+  order: 1
 ---
 
 ## Cameras
@@ -22,27 +25,33 @@ title: Sony
 | [Sony A6700](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-6700) | APS-C | 26 | 2023 | ~33 000 |
 | [Sony ZV-E10 II](https://www.sony.com/electronics/interchangeable-lens-cameras/zv-e10m2) | APS-C | 26 | 2024 | ~22 000 |
 
-## Best zoom lenses
+## Lenses
 
-- [Sony FE 16–35mm F2,8 GM II](https://www.sony.cz/electronics/objektivy-s-bajonetem-e/sel1635gm2)
-- [FE PZ 16-35mm F4 G](https://www.sony.cz/lenses/products/selp1635g)
-- [Sigma 16-28 mm f/2,8 DG DN](https://www.sigma-global.com/en/lenses/c022_16_28_28/)
-- [Sony FE 24-105mm F4 G OSS](https://www.sony.cz/electronics/fotoaparaty-objektivy/sel24105g)
+### Zoom
 
-## Best compact lenses
+| Lens | Ohnisko | Clona | Rok | Cena (CZK) |
+|------|---------|-------|-----|------------|
+| [Sony FE 16-35mm F2.8 GM II](https://www.sony.com/electronics/camera-lenses/sel1635gm2) | 16–35mm | f/2.8 | 2023 | ~62 800 |
+| [Sony FE 70-200mm F2.8 GM OSS II](https://www.sony.com/electronics/camera-lenses/sel70200gm2) | 70–200mm | f/2.8 | 2021 | ~62 500 |
+| [Sony FE 100-400mm F4.5-5.6 GM OSS](https://www.sony.com/electronics/camera-lenses/sel100400gm) | 100–400mm | f/4.5–5.6 | 2017 | ~60 000 |
+| [Sony FE 24-105mm F4 G OSS](https://www.sony.com/electronics/camera-lenses/sel24105g) | 24–105mm | f/4 | 2017 | ~25 300 |
+| [Sony FE PZ 16-35mm F4 G](https://www.sony.com/electronics/camera-lenses/selp1635g) | 16–35mm | f/4 | 2022 | ~31 600 |
+| [Sigma 16-28mm f/2.8 DG DN](https://www.sigma-global.com/en/lenses/c022_16_28_28/) | 16–28mm | f/2.8 | 2022 | ~22 900 |
 
-- [Sony FE 24mm F2.8 G](https://www.sony.cz/lenses/products/sel24f28g)
-- [Sony FE 40mm F2.5 G](https://www.sony.cz/lenses/products/sel40f25g)
-- [Sony FE 50mm F2.5 G](https://www.sony.cz/lenses/products/sel50f25g)
-- [Tamron 20-40 mm f/2,8 Di III VXD pro Sony FE](https://www.tamron.eu/p/af6e65ec-cc38-4d6a-8098-1aff349fa997/20-40mm-f28-di-iii-vxd)
+### Compact / Travel
 
-## Best prime lenses
+| Lens | Ohnisko | Clona | Rok | Cena (CZK) |
+|------|---------|-------|-----|------------|
+| [Sony FE 40mm F2.5 G](https://www.sony.com/electronics/camera-lenses/sel40f25g) | 40mm | f/2.5 | 2021 | ~14 300 |
+| [Sony FE 50mm F2.5 G](https://www.sony.com/electronics/camera-lenses/sel50f25g) | 50mm | f/2.5 | 2021 | ~14 000 |
+| [Sony FE 24mm F2.8 G](https://www.sony.com/electronics/camera-lenses/sel24f28g) | 24mm | f/2.8 | 2021 | ~13 900 |
+| [Tamron 20-40mm f/2.8 Di III VXD](https://www.tamron.eu/p/af6e65ec-cc38-4d6a-8098-1aff349fa997/20-40mm-f28-di-iii-vxd) | 20–40mm | f/2.8 | 2022 | ~15 800 |
 
-- Sony FE 20mm F1.8 G
-- Sony FE 35mm F1.4 GM
-- Sony FE 50mm F1.4 GM
+### Prime
 
-Lenses by Category:
-
-- [G-Master lenses](https://www.sony.cz/lenses/e-mount?format=fullframe&subbrand=gmaster)
-- [G-lenses](https://www.sony.cz/lenses/e-mount?format=fullframe&subbrand=glens)
+| Lens | Ohnisko | Clona | Rok | Cena (CZK) |
+|------|---------|-------|-----|------------|
+| [Sony FE 85mm F1.4 GM II](https://www.sony.com/electronics/camera-lenses/sel85f14gm2) | 85mm | f/1.4 | 2023 | ~48 600 |
+| [Sony FE 35mm F1.4 GM](https://www.sony.com/electronics/camera-lenses/sel35f14gm) | 35mm | f/1.4 | 2021 | ~30 000 |
+| [Sony FE 50mm F1.4 GM](https://www.sony.com/electronics/camera-lenses/sel50f14gm) | 50mm | f/1.4 | 2022 | ~29 200 |
+| [Sony FE 20mm F1.8 G](https://www.sony.com/electronics/camera-lenses/sel20f18g) | 20mm | f/1.8 | 2020 | ~22 900 |
