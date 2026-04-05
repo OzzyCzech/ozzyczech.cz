@@ -24,3 +24,7 @@ sidebar:
 | [Canon EOS R50 V](https://www.usa.canon.com/shop/p/eos-r50-v) | APS-C | 24.2 | 2025 | ~19 500 |
 | [Canon EOS R10](https://www.usa.canon.com/shop/p/eos-r10) | APS-C | 24.2 | 2022 | ~19 000 |
 | [Canon EOS R50](https://www.usa.canon.com/shop/p/eos-r50) | APS-C | 24.2 | 2023 | ~15 000 |
+
+## Lenses
+
+RF / RF-S optics, naming, practical picks, and price overview: **[Canon lenses](/photography/canon-lenses/)**.
