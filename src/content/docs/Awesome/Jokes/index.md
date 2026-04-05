@@ -9,7 +9,6 @@ title: Jokes
 
 ## Hobbies
 
-![Hobbies](./hobbies.png)
 [workchronicles.com](https://www.workchronicles.com/p/comic-hobbies)
 
 ## Perfect fit
