@@ -1,8 +1,6 @@
 ---
 title: Sony
-sidebar:
-  label: Sony
-  order: 1
+slug: photography/sony/cameras
 ---
 
 ## Cameras
@@ -27,5 +25,5 @@ sidebar:
 
 ## Lenses
 
-- [Sony FE lenses](/photography/sony-fe-lenses/) — full-frame FE glass
-- [Sony E lenses](/photography/sony-e-lenses/) — APS-C native E lenses
+- [Sony FE lenses](/photography/sony/sony-fe-lenses/) — full-frame FE glass
+- [Sony E lenses](/photography/sony/sony-e-lenses/) — APS-C native E lenses

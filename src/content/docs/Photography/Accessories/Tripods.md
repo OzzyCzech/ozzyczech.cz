@@ -2,7 +2,6 @@
 title: Tripods
 sidebar:
   label: Tripods
-  order: 3
 ---
 
 Monopods and full-size / travel tripods. **Mini / tabletop:** [Mini Tripods](/photography/accessories/mini-tripods/).

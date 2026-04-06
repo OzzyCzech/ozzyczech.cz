@@ -2,7 +2,6 @@
 title: Photo editors
 sidebar:
   label: Photo editors
-  order: 31
 ---
 
 - [Capture One](https://www.captureone.com/en/)

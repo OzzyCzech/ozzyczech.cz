@@ -13,15 +13,11 @@ export default defineConfig({
 	site,
 
 	redirects: {
-		'/photography/filtry': '/photography/accessories/filters',
-		'/photography/equipment/filtry': '/photography/accessories/filters',
-		'/photography/doplňky/filtry': '/photography/accessories/filters',
-		'/photography/camera-gear': '/photography/accessories/camera-gear',
-		'/photography/polarpro-lightleak-lens': '/photography/accessories/polarpro-lightleak-lens',
-		'/photography/equipment/camera-gear': '/photography/accessories/camera-gear',
-		'/photography/equipment/polarpro-lightleak-lens': '/photography/accessories/polarpro-lightleak-lens',
-		'/photography/doplňky/camera-gear': '/photography/accessories/camera-gear',
-		'/photography/doplňky/polarpro-lightleak-lens': '/photography/accessories/polarpro-lightleak-lens',
+		'/photography/sony': '/photography/sony/cameras/',
+		'/photography/canon': '/photography/canon/cameras/',
+		'/photography/nikon': '/photography/nikon/cameras/',
+		'/photography/panasonic': '/photography/panasonic/cameras/',
+		'/photography/fujifilm': '/photography/fujifilm/cameras/',
 	},
 
 	markdown: {
@@ -74,7 +70,51 @@ export default defineConfig({
 				{label: 'macOS', collapsed: true, autogenerate: {directory: 'macOS', collapsed: true}},
 				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
 				{label: 'Life Hack', collapsed: true, autogenerate: {directory: 'LifeHack'}},
-				{label: 'Photography', collapsed: true, autogenerate: {directory: 'Photography', collapsed: true}},
+				{
+					label: 'Photography',
+					collapsed: true,
+					items: [
+						
+						{
+							label: 'Sony',
+							collapsed: false,
+							autogenerate: {directory: 'Photography/Sony', collapsed: false},
+						},
+						{
+							label: 'Fujifilm',
+							collapsed: false,
+							autogenerate: {directory: 'Photography/Fujifilm', collapsed: false},
+						},
+						{
+							label: 'Nikon',
+							collapsed: false,
+							autogenerate: {directory: 'Photography/Nikon', collapsed: false},
+						},
+						{
+							label: 'Panasonic',
+							collapsed: false,
+							autogenerate: {directory: 'Photography/Panasonic', collapsed: false},
+						},
+						{
+							label: 'Canon',
+							collapsed: false,
+							autogenerate: {directory: 'Photography/Canon', collapsed: false},
+						},
+						'photography/compact-cameras',
+						'photography/action-cameras',
+						'photography/photo-hosting',
+						{
+							label: 'Software',
+							collapsed: true,
+							autogenerate: {directory: 'Photography/Software', collapsed: true},
+						},
+						{
+							label: 'Accessories',
+							collapsed: false,
+							autogenerate: {directory: 'Photography/Accessories', collapsed: false},
+						},
+					],
+				},
 				{label: 'Security', collapsed: true, autogenerate: {directory: 'Security'}},
 				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware', collapsed: true}},
 				{label: 'Povídky', collapsed: true, autogenerate: {directory: 'Povidky'}},

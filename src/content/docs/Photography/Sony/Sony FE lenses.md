@@ -1,30 +1,15 @@
 ---
-title: Sony FE lenses
+title: Sony FE lenses (full frame)
 sidebar:
   label: Sony FE lenses
-  order: 2
 ---
 
-## FE lenses (full frame)
-
-**FE** lenses cover the full-frame image circle. On **APS-C** bodies they behave like a **1.5×** tighter field of view. Native **APS-C-only** optics are on [Sony E lenses](/photography/sony-e-lenses/).
+**FE** lenses cover the full-frame image circle. On **APS-C** bodies they behave like a **1.5×** tighter field of view. Native **APS-C-only** optics are on [Sony E lenses](/photography/sony/sony-e-lenses/).
 
 **E mount** is for mirrorless **Alpha** / **ZV** bodies. **A-mount** (DSLR) lenses need a **LA-EA** adapter; AF may be limited.
 
 - [E-mount lens catalog](https://www.sony.com/imaging/c/lenses)
 - [Lens / body compatibility](https://support.d-imaging.sony.co.jp/www/cscs/lens_body/)
-
-*Orientační ceny v&nbsp;Kč — u běžných modelů kontrolováno vůči českým e-shopům (např. [Megapixel](https://www.megapixel.cz), 2026-04); akce se mění. Jinak přepočet z dřívějších odhadů v USD (kurz cca 23,5&nbsp;Kč / USD).*
-
-### APS-C f/2.8 zooms (reference, not FE)
-
-Tyto objektivy **nejsou FE** (nemají plný snímač); na **APS-C** tělech sdílejí **E** bajonet. Plný přehled: [Sony E lenses](/photography/sony-e-lenses/).
-
-| Lens | Notes | Price |
-|------|--------|------|
-| [Sigma 18-50mm F2.8 DC DN Contemporary](https://www.sigma-global.com/en/lenses/c021_18_50_28/) (Sony E) | Kompaktní **f/2.8** standard pro **APS-C** | **~14&nbsp;500&nbsp;Kč** |
-| [Sigma 10-18mm F2.8 DC DN Contemporary](https://www.sigma-global.com/en/lenses/c023_10_18_28/) (Sony E) | **f/2.8** ultraširoký zoom pro **APS-C** | **~19&nbsp;000&nbsp;Kč** |
-| [E 16-55mm F2.8 G](https://www.sony.com/electronics/camera-lenses/sel1655g) | Sony **APS-C** „pro“ standard; s kódy/cashback často **~21–24k** | **~29&nbsp;000&nbsp;Kč** |
 
 ### Standard zoom lenses
 
@@ -124,6 +109,12 @@ Tyto objektivy **nejsou FE** (nemají plný snímač); na **APS-C** tělech sdí
 | [FE 70-200mm F4 Macro G OSS II](https://www.sony.com/electronics/camera-lenses/sel70200g2) | Lighter **f/4**; strong close focus (**~0.5×** across zoom per Sony) | **~40&nbsp;000&nbsp;Kč** |
 | [FE 100-400mm F4.5-5.6 GM OSS](https://www.sony.com/electronics/camera-lenses/sel100400gm) | Wildlife / airshows; **OSS**; teleconverters per Sony tables | **~59&nbsp;000&nbsp;Kč** |
 | [FE 200-600mm F5.6-6.3 G OSS](https://www.sony.com/electronics/camera-lenses/sel200600g) | Long zoom for birds / distance; internal zoom | **~49&nbsp;500&nbsp;Kč** |
+
+#### Third-party telephoto picks
+
+| Lens | Notes | Price |
+|------|--------|------|
+| [Tamron 150-500mm F5-6.7 Di III VC VXD](https://www.tamron.com/global/consumer/lenses/a057/) | **FE** image circle; on **APS-C** very long equivalent reach (crop **×1.5**) | **~42&nbsp;000&nbsp;Kč** |
 
 #### Exotic primes
 

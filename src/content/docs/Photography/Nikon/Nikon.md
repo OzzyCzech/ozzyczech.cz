@@ -1,13 +1,9 @@
 ---
 title: Nikon
-sidebar:
-  label: Nikon
-  order: 11
+slug: photography/nikon/cameras
 ---
 
-## Cameras
-
-### Full Frame
+## Full Frame
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|
@@ -16,7 +12,7 @@ sidebar:
 | [Nikon Z6 III](https://www.nikonusa.com/p/z6iii/1890/overview) | Full Frame (Partially Stacked) | 24.5 | 2024 | ~59&nbsp;500&nbsp;Kč |
 | [Nikon Zf](https://www.nikonusa.com/p/z-f/1761/overview) | Full Frame | 24.5 | 2023 | ~52&nbsp;900&nbsp;Kč |
 
-### APS-C
+## APS-C
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|
@@ -26,4 +22,4 @@ sidebar:
 
 ## Lenses
 
-Nikon Z-mount objektivy (FX/DX), praktické kategorie a orientační ceny: **[Nikon lenses](/photography/nikon-lenses/)**.
+Nikon Z-mount objektivy (FX/DX), praktické kategorie a orientační ceny: **[Nikon lenses](/photography/nikon/lenses/)**.

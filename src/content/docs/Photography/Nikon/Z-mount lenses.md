@@ -2,15 +2,12 @@
 title: Nikon lenses
 sidebar:
   label: Nikon lenses
-  order: 13
 ---
 
 ## Z-mount lenses (FX + DX)
 
 **Nikon Z mount** is shared across full-frame (**FX**) and APS-C (**DX**) mirrorless bodies.  
 On **DX** cameras, full-frame lenses give a **1.5×** tighter field of view.
-
-**Resources:** [NIKKOR Z lens lineup](https://www.nikon.cz/cs_CZ/products/category_pages/lenses/mirrorless.page) · [NIKKOR Z lens list](https://www.nikon.cz/cs_CZ/products/lenses/mirrorless/lineup.page) · [Nikon cameras](/photography/nikon/)
 
 ### Standard zoom lenses
 

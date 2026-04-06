@@ -2,7 +2,6 @@
 title: Image viewers and managers
 sidebar:
   label: Image viewers and managers
-  order: 30
 ---
 
 - [AcdSee](https://www.acdsee.com/en/index) - well known image organizer from 90's

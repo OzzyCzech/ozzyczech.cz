@@ -3,7 +3,6 @@ title: Reading temperature and humidity data from MHO-C401 with Python
 description: Reading temperature and humidity from MHO-C401 Bluetooth Thermometer Hygrometer using Python and bluepy library.
 sidebar:
   label: MHO-C401
-  order: 1
 ---
 
 MHO-C401 is new (2020) MMC E-Ink Screen Smart #Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Gearbest](https://www.gearbest.com/sale/MHO-C401/) or [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).

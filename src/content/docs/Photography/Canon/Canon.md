@@ -1,13 +1,10 @@
 ---
 title: Canon
-sidebar:
-  label: Canon
-  order: 10
+slug: photography/canon/cameras
 ---
 
-## Cameras
 
-### Full Frame
+## Full Frame
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|
@@ -16,7 +13,7 @@ sidebar:
 | [Canon EOS R6 Mark III](https://www.usa.canon.com/shop/p/eos-r6-mark-iii) | Full Frame | 32.5 | 2025 | ~72&nbsp;000&nbsp;Kč |
 | [Canon EOS R8](https://www.usa.canon.com/shop/p/eos-r8) | Full Frame | 24.2 | 2023 | ~30&nbsp;000&nbsp;Kč |
 
-### APS-C
+## APS-C
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|
@@ -24,7 +21,3 @@ sidebar:
 | [Canon EOS R50 V](https://www.usa.canon.com/shop/p/eos-r50-v) | APS-C | 24.2 | 2025 | ~19&nbsp;500&nbsp;Kč |
 | [Canon EOS R10](https://www.usa.canon.com/shop/p/eos-r10) | APS-C | 24.2 | 2022 | ~19&nbsp;000&nbsp;Kč |
 | [Canon EOS R50](https://www.usa.canon.com/shop/p/eos-r50) | APS-C | 24.2 | 2023 | ~15&nbsp;000&nbsp;Kč |
-
-## Lenses
-
-RF / RF-S optics, naming, practical picks, and price overview: **[Canon lenses](/photography/canon-lenses/)**.

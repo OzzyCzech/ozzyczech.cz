@@ -2,7 +2,6 @@
 title: Compact cameras
 sidebar:
   label: Compact cameras
-  order: 20
 ---
 
 ## Fujifilm

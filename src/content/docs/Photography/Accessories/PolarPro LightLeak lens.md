@@ -2,7 +2,6 @@
 title: PolarPro LightLeak lens
 sidebar:
   label: PolarPro LightLeak
-  order: 2
 ---
 
 A special **fully manual** PolarPro lens that deliberately lets in light from the side — similar to **light leaks** on analogue 35 mm film. Light enters around the optics (the barrel has **holes / openings**); you adjust the amount by **rotating the ring** on the lens.

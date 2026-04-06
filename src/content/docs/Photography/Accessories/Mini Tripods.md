@@ -2,7 +2,6 @@
 title: Mini Tripods
 sidebar:
   label: Mini Tripods
-  order: 4
 ---
 
 Tabletop and ultra-compact tripods. **Larger kits:** [Tripods](/photography/accessories/tripods/).

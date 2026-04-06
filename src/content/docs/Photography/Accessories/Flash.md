@@ -2,7 +2,6 @@
 title: Flash
 sidebar:
   label: Flash
-  order: 5
 ---
 
 Speedlights, triggers, and small on-camera lighting.

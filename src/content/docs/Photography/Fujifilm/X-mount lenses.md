@@ -1,19 +1,10 @@
 ---
-title: Fujifilm lenses
-sidebar:
-  label: Fujifilm lenses
-  order: 5
+title: X-mount lenses
 ---
-
-## X-mount lenses
 
 **X Mount** is the bayonet for **Fujifilm X Series** interchangeable-lens bodies. It does **not** fit [GFX](https://fujifilm-x.com/global/special/gfx/) medium-format cameras (**G Mount**). Fixed-lens [X100](https://fujifilm-x.com/en-us/products/cameras/x100vi/) cameras are not X Mount.
 
 The sensor is **APS-C** with a **1.5×** crop vs full frame: multiply focal length by 1.5 for an approximate **35 mm equivalent** field of view (e.g. XF 23 mm → ~35 mm equiv.).
-
-**Resources:** [All XF / XC lenses (official)](https://fujifilm-x.com/global/products/lenses/) · [X Mount roadmap](https://www.fujifilm-x.com/global/products/x-mount-lens-roadmap/) · [Fujifilm](/photography/fujifilm/) camera bodies
-
-**On this page:** [Standard zooms](#standard-zoom-lenses) · [Wide-angle](#wide-angle-lenses) · [Normal & portrait primes](#normal-portrait-and-short-telephoto-primes) · [Telephoto](#telephoto-zooms-and-sports--wildlife) · [Macro](#macro) · [Teleconverters](#teleconverters) · [XF / XC & suffixes](#xf-vs-xc-and-name-suffixes)
 
 ### Standard zoom lenses
 
@@ -168,11 +159,9 @@ About **35–90 mm** focal length on APS-C (roughly **50–135 mm equiv.**): str
 
 Use only where Fujifilm lists compatibility. Third-party **X-mount** teleconverters are uncommon; these **XF** units are the practical choice.
 
-### XF vs XC and name suffixes
+### Lens naming
 
-#### XF vs XC (product lines)
-
-| Line | Idea |
+| Line | Description |
 |------|------|
 | **XF** | Higher-end stills line: metal build, aperture ring on most primes, often weather-resistant (**WR**). |
 | **XC** | Lighter plastic-barrel kit zooms; smaller and cheaper; usually no aperture ring. |

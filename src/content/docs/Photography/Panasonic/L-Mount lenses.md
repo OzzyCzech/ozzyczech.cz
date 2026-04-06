@@ -1,18 +1,11 @@
 ---
-title: Panasonic lenses
-sidebar:
-  label: Panasonic lenses
-  order: 14
+title: L-Mount lenses
 ---
 
 ## L-Mount lenses (Lumix S)
 
 **Panasonic Lumix S** bodies use **L-Mount** (full-frame line).  
 The ecosystem also includes **Sigma** and **Leica** L-Mount lenses.
-
-**Resources:** [Panasonic LUMIX lenses](https://www.panasonic.com/cz/consumer/fotoaparaty-a-videokamery/lumix-objektivy.html) · [L-Mount Alliance](https://l-mount.com/en) · [Panasonic cameras](/photography/panasonic/)
-
-*Approximate street prices in CZK from current CZ listings (can vary by store and promotions).*
 
 ### Standard zoom lenses
 

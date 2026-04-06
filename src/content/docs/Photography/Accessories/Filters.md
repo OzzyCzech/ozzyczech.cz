@@ -2,7 +2,6 @@
 title: Filters
 sidebar:
   label: Filters
-  order: 6
 ---
 
 Screw-in **ND**, **polarisers (CPL)**, and related optics — product notes below.
@@ -12,6 +11,8 @@ Screw-in **ND**, **polarisers (CPL)**, and related optics — product notes belo
 **Related / Související:** [Camera gear](/photography/accessories/camera-gear/), [Tripods](/photography/accessories/tripods/), [Flash](/photography/accessories/flash/).
 
 ## Neewer 2v1: variabilní ND + CPL
+
+![NEEWER 2 in 1 Variable ND ND2–ND32 & CPL filter: knurled black metal ring with adjustment levers, green multi-coating on glass; retail box with waterfall graphic and ND2–ND32 range diagram](neewer-2in1-variable-nd-cpl-filter.png)
 
 ### [NEEWER 2 in 1 Variable ND Filter ND2–ND32 & CPL Filter](https://eu.neewer.com/products/neewer-2-in-1-variable-nd-filter-nd2-nd32-cpl-filter-66601418)
 

@@ -2,7 +2,6 @@
 title: Camera gear
 sidebar:
   label: Camera gear
-  order: 1
 ---
 
 Index of accessory notes (tripods, flash, filters, creative glass).

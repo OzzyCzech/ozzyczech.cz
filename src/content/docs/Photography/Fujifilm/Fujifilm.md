@@ -1,13 +1,10 @@
 ---
 title: Fujifilm
-sidebar:
-  label: Fujifilm
-  order: 4
+slug: photography/fujifilm/cameras
 ---
 
-## Cameras
 
-### APS-C
+## APS-C
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|
@@ -17,7 +14,7 @@ sidebar:
 | [Fujifilm X-E5](https://fujifilm-x.com/en-us/products/cameras/x-e5/) | APS-C | 40 | 2025 | 34&nbsp;324&nbsp;Kč |
 | [Fujifilm X-S20](https://fujifilm-x.com/en-us/products/cameras/x-s20/) | APS-C | 26 | 2023 | 31&nbsp;702&nbsp;Kč |
 
-### Compact
+## Compact
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|
@@ -25,4 +22,4 @@ sidebar:
 
 ## Lenses
 
-X Mount optics, naming (**XF** / **XC**), focal-length notes, and practical picks: **[Fujifilm lenses](/photography/fujifilm-lenses/)**.
+X Mount optics, naming (**XF** / **XC**), focal-length notes, and practical picks: **[Fujifilm lenses](/photography/fujifilm/lenses/)**.

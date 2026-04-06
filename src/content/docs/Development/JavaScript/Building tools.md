@@ -1,7 +1,5 @@
 ---
 title: Building tools
-sidebar:
-  order: 2
 ---
 
 ### [Vite](https://github.com/vitejs/vite)
