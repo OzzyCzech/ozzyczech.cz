@@ -14,8 +14,6 @@ On **DX** cameras, full-frame lenses give a **1.5×** tighter field of view.
 - [NIKKOR Z lens list](https://www.nikon.cz/cs_CZ/products/lenses/mirrorless/lineup.page)
 - [Nikon](/photography/nikon/) camera bodies
 
-*Orientační ceny v&nbsp;Kč (dle aktuálního vyhledávání v českých e-shopech; liší se podle akce a dostupnosti).*
-
 ### Standard zoom lenses
 
 | Lens | Notes | Price |
