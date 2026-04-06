@@ -8,9 +8,8 @@ slug: photography/sony/cameras
 
 Quick reference for **Alpha** and **ZV** system bodies: global-shutter / stacked / conventional sensors, resolution, launch year, and rough CZK levels. **FE** and crop-native **E** lenses live on separate pages below.
 
-## Cameras
 
-### Full Frame
+## Full Frame
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|
@@ -21,7 +20,7 @@ Quick reference for **Alpha** and **ZV** system bodies: global-shutter / stacked
 | [Sony A7 V](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7m5) | Full Frame (Partially Stacked) | 33 | 2025 | ~62&nbsp;000&nbsp;Kč |
 | [Sony A7C II](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7cm2) | Full Frame | 33 | 2023 | ~40&nbsp;000&nbsp;Kč |
 
-### APS-C
+## APS-C
 
 | Camera | Sensor | MP | Year | Price |
 |--------|--------|----|------|-------|

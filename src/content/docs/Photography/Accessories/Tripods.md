@@ -3,15 +3,13 @@ title: Tripods
 description: Notes and links for monopods, travel tripods, and budget full-size tripod options.
 created: 2026-04-06
 updated: 2026-04-06
-sidebar:
-  label: Tripods
 ---
 
 Monopods and full-size / travel tripods. **Mini / tabletop:** [Mini Tripods](/photography/accessories/mini-tripods/).
 
 ### [iFootage Cobra 3](https://eu.ifootagegear.com/products/cobra-3-strike-monopod)
 
-![](https://ozzyczech.cz/i/iFootage-Cobra-3.jpg)
+![iFootage Cobra 3 Strike monopod product photo](https://ozzyczech.cz/i/iFootage-Cobra-3.jpg)
 
 **Cobra 3 Strike** (incl. EU shop): one-touch leg extension, pedal foot with quick reset, quick-release collar, tilt up to ~130° with base. Line also includes other trims (e.g. carbon variants); confirm exact model on the invoice.
 

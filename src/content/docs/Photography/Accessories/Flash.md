@@ -3,11 +3,9 @@ title: Flash
 description: Compact flash units and triggers for mirrorless cameras, including TTL and manual options.
 created: 2022-06-27
 updated: 2026-04-06
-sidebar:
-  label: Flash
 ---
 
-Speedlights, triggers, and small on-camera lighting.
+Speedlights, triggers, and small on-camera lighting for **mirrorless** and **DSLR** hot shoes — with emphasis on **compact** heads that balance on small bodies.
 
 For **small mirrorless** kits, a useful speedlite is short on the hot shoe, roughly **200–300 g** ready to shoot, and still offers **TTL** and **HSS** when you need fill in daylight. The **FlashQ Q20II** further down is lighter and simpler (**manual**, lower GN) when absolute minimum size matters.
 

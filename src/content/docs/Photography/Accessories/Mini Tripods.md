@@ -3,8 +3,6 @@ title: Mini Tripods
 description: Tabletop and ultra-compact tripod options with quick links to recommended models.
 created: 2026-04-06
 updated: 2026-04-06
-sidebar:
-  label: Mini Tripods
 ---
 
 Tabletop and ultra-compact tripods. **Larger kits:** [Tripods](/photography/accessories/tripods/).

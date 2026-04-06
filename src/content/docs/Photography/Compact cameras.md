@@ -1,8 +1,11 @@
 ---
 title: Compact cameras
-sidebar:
-  label: Compact cameras
+description: Premium fixed-lens compacts — Fujifilm X100 and Ricoh GR family with sensor class, MP, year, and indicative Czech prices.
+created: 2026-04-05
+updated: 2026-04-06
 ---
+
+Fixed-lens **enthusiast compacts** with **APS-C** sensors: pocketable alternatives to ILC kits when you want one focal length done well. Prices are indicative **CZK**; confirm current SKUs locally.
 
 ## Fujifilm
 

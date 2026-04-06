@@ -1,51 +1,54 @@
 ---
 title: Photo hosting
+description: Cloud and self-hosted options for photo libraries — Apple, Google, SmugMug, backup-oriented services, and open-source gallery stacks.
+created: 2022-06-27
+updated: 2026-04-06
 ---
 
-### Apple Photos
+Where to **store**, **sync**, and **publish** large photo collections: mainstream cloud lockers, pro-oriented sharing sites, backup-first vendors, and **self-hosted** stacks you control.
 
-[Apple Photos](https://www.icloud.com/photos) is a photo management and editing software developed by Apple Inc. for
-macOS and iOS. It allows users to organize, edit, and share their photos and videos. It is included with macOS and iOS,
-and can be downloaded for free from the App Store.
+## Apple Photos
 
-![](https://ozzyczech.cz/i/apple-photos.png)
+[Apple Photos](https://www.icloud.com/photos) is Apple’s library app for **macOS** and **iOS**: organisation, light edits, shared albums, and **iCloud** sync. Bundled with the OS; extra storage is a paid **iCloud** tier.
 
-### Backblaze
+![Apple Photos library interface on desktop](https://ozzyczech.cz/i/apple-photos.png)
 
-[Backblaze](https://www.backblaze.com) is a cloud storage and cloud backup service provider based in San Mateo,
-California.
+## Backblaze
 
-![](https://ozzyczech.cz/i/backblaze.png)
+[Backblaze](https://www.backblaze.com) is a **cloud backup** provider (personal computer backup and **B2** object storage). Common pattern: archive originals off-site, not a full social gallery replacement.
 
-### SmugMug
+![Backblaze backup service branding](https://ozzyczech.cz/i/backblaze.png)
 
-[SmugMug](https://www.smugmug.com) is a unlimited photo hosting and sharing service.
+## SmugMug
 
-![](https://ozzyczech.cz/i/smugmug.png "https://www.smugmug.com")
+[SmugMug](https://www.smugmug.com) — paid **portfolio / client delivery** hosting with unlimited uploads on personal plans (terms change — check current plans). Geared toward photographers who want branded sites and selling tools.
 
-### Flicker
+![SmugMug website hero](https://ozzyczech.cz/i/smugmug.png)
 
-[Flicker](https://www.flickr.com) is a photo sharing and hosting service.
+## Flickr
+
+[Flickr](https://www.flickr.com) — long-running **photo community** hosting; free tier limits and **Pro** subscriptions for power users.
+
+## Other consumer clouds
 
 ### Google Photos
 
-[Google Photos](https://photos.google.com) is a photo sharing and storage service developed by Google.
+[Google Photos](https://photos.google.com) — Google’s cross-platform library with **sync**, sharing, and ML search; storage counts against Google account quota unless legacy free tiers apply.
 
-### Amazon photos
+### Amazon Photos
 
-[Amazon Photos](https://www.amazon.com/Amazon-Photos/b?ie=UTF8&node=13234696011)
-is a photo sharing and storage service developed by Amazon.
+[Amazon Photos](https://www.amazon.com/Amazon-Photos/b?ie=UTF8&node=13234696011) — storage tied to **Prime** / paid plans; useful if you already live in the Amazon ecosystem.
 
 ### Microsoft OneDrive
 
-[Microsoft OneDrive](https://onedrive.live.com) is a file hosting service and synchronization service operated by
-Microsoft as part of its web version of Office.
+[Microsoft OneDrive](https://onedrive.live.com) — general **file sync**; works as a dumb bucket for exported masters or sidecar RAW+JPEG folders, not a dedicated photo site.
 
-### Self-hosted
+## Self-hosted
 
-- [Nextcloud](https://nextcloud.com)
-- [PhotoPrism](https://photoprism.app)
-- [Piwigo](https://piwigo.org)
+Run your own **gallery / sync** stack:
 
-Sync your photos from your phone to your server using
-[PhotoSync app](https://www.photosync-app.com/home).
+- [Nextcloud](https://nextcloud.com) — files, sync clients, optional gallery apps
+- [PhotoPrism](https://photoprism.app) — AI-browseable library UI for self-hosted collections
+- [Piwigo](https://piwigo.org) — classic open-source web gallery
+
+To push phone originals to your NAS or VPS, mobile apps such as [PhotoSync](https://www.photosync-app.com/home) are a common bridge.

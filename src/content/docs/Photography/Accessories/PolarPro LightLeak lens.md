@@ -1,10 +1,13 @@
 ---
 title: PolarPro LightLeak lens
+description: PolarPro LightLeak — manual lenses with intentional side light leak, focal lengths, mounts, and practical shooting notes.
+created: 2026-04-06
+updated: 2026-04-06
 sidebar:
   label: PolarPro LightLeak
 ---
 
-A special **fully manual** PolarPro lens that deliberately lets in light from the side — similar to **light leaks** on analogue 35 mm film. Light enters around the optics (the barrel has **holes / openings**); you adjust the amount by **rotating the ring** on the lens.
+A **fully manual** PolarPro lens that deliberately admits light from the side — similar to **light leaks** on analogue **35 mm** film. Light enters around the optics (the barrel has openings); you dial the effect with a **rotating ring**.
 
 ![PolarPro LightLeak lens (50mm f/11 unit shown), bronze barrel, front ring engraved POLARPRO LIGHT LEAK, 58mm filter thread marking](polarpro-lightleak-lens.png)
 
