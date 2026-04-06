@@ -111,7 +111,7 @@ export default defineConfig({
 						{
 							label: 'Accessories',
 							collapsed: false,
-							autogenerate: {directory: 'Photography/Accessories', collapsed: false},
+							autogenerate: {directory: 'Photography/Accessories'},
 						},
 					],
 				},

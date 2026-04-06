@@ -2,8 +2,6 @@
 title: L-Mount lenses
 ---
 
-## L-Mount lenses (Lumix S)
-
 **Panasonic Lumix S** bodies use **L-Mount** (full-frame line).  
 The ecosystem also includes **Sigma** and **Leica** L-Mount lenses.
 

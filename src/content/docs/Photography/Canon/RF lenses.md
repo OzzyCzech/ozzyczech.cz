@@ -2,11 +2,11 @@
 title: RF lenses
 ---
 
-## RF lenses
+Canon **RF** = full-frame mirrorless lenses for **EOS R** bodies.
 
-**RF** lenses cover the full-frame image circle for Canon EOS R bodies. They also mount on APS-C models (R7 / R10 / R50 / R50 V), where focal length behaves as ~**1.6×** tighter field of view vs full frame (e.g. 50 mm → ~80 mm equivalent).
-
-Native APS-C **RF-S** options (often smaller and cheaper): **[RF-S lenses](/photography/canon/rf-s-lenses/)**.
+- **Coverage:** full-frame image circle; mounts on **APS-C** EOS R cameras too (**R7** / **R10** / **R50** family) via the same **RF** bayonet.
+- **Crop bodies:** angle of view is ~**1.6×** tighter vs full frame in **35 mm equivalent** terms (e.g. **50 mm** → ~**80 mm** equiv.).
+- **RF-S:** APS-C–native Canon line — same **RF** mount, smaller image circle, lighter kit zooms (not full-frame coverage).
 
 ### Standard zoom lenses
 
@@ -75,12 +75,10 @@ Use only where Canon lists compatibility (mainly selected RF telephoto lenses).
 
 ### RF vs RF-S and name suffixes
 
-#### RF vs RF-S
-
-| Line | Idea |
+| Line | Description |
 |------|------|
-| **RF** | Full-frame mirrorless line for EOS R bodies; also usable on APS-C with crop factor. |
-| **RF-S** | APS-C native lenses for EOS R7 / R10 / R50 class bodies; lighter and usually cheaper — **[RF-S lenses](/photography/canon/rf-s-lenses/)**. |
+| **RF** | Full-frame image circle; use on full-frame or APS-C EOS R with crop. |
+| **RF-S** | APS-C native designs for **R7** / **R10** / **R50** class; lighter kits, same **RF** mount. |
 
 #### Lens name suffixes
 

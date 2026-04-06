@@ -13,8 +13,6 @@ For **full-frame** coverage, see [Sony FE lenses](/photography/sony/sony-fe-lens
 - [E-mount lens catalog](https://www.sony.com/imaging/c/lenses)
 - [Lens / body compatibility](https://support.d-imaging.sony.co.jp/www/cscs/lens_body/)
 
-*Orientační ceny v&nbsp;Kč — u běžných modelů kontrolováno vůči českým e-shopům (např. [Megapixel](https://www.megapixel.cz), 2026-04); akce se mění. Jinak přepočet z dřívějších odhadů v USD (kurz cca 23,5&nbsp;Kč / USD).*
-
 ### APS-C f/2.8 zooms
 
 Compact **f/2.8** trio for **APS-C** (none are **FE** full-frame coverage).
