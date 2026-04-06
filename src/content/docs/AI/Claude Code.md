@@ -1,5 +1,8 @@
 ---
 title: Claude Code
+description: AI-powered code agent by Anthropic — commands, skills, plugins, and settings.
+created: 2025-01-01
+updated: 2026-04-06
 ---
 
 [Claude Code](https://claude.ai/code/) is AI-powered code agent by Anthropic.
@@ -45,6 +48,19 @@ Skills are specialized prompts that extend Claude Code capabilities. They are in
   ```bash
   /plugin marketplace add nette/claude-code
   ```
+
+## Troubleshooting
+
+### 🚨 API Error: Rate limit reached
+
+This error appears when the conversation context is too large (e.g. 1M token window). The fix is to reduce the context by switching to the standard 200k model:
+
+1. Run `/compact` to compress conversation history
+2. Run `/model` and select **opus 4.6** (without the `1m` suffix)
+
+:::note
+`/model` may not show `claude-opus-4-6` without `1m` until after you run `/compact` first.
+:::
 
 ## Settings
 
