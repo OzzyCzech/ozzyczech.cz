@@ -11,7 +11,7 @@ The LLM owns the wiki layer — it creates pages, updates them, maintains cross-
 
 ## Structure
 
-Content lives in `src/content/docs/` organized by topic (AI, Development, macOS, …). Each `.md` file is one wiki page.
+Content lives in `src/content/docs/` organized by topic (AI, Development, macOS, …). Each `.md` or `.mdx` file is one wiki page. Use `.mdx` only when the page needs Astro components.
 
 Sidebar navigation is configured in `astro.config.mjs`. When adding a new top-level category, always add it to the `sidebar` array there. Do not change directory structure without asking first.
 
