@@ -1,50 +1,50 @@
-Zpracuj nový zdroj nebo vstup do wiki podle tohoto postupu:
+Process a new source or input into the wiki using the following steps:
 
-## 1. Identifikace vstupního materiálu
+## 1. Identify the input
 
-- Pokud je vstupem URL, stáhni obsah stránky (`WebFetch`) a extrahuj klíčové informace
-- Pokud je vstupem text, přečti ho a identifikuj téma, klíčové pojmy a typ obsahu (nástroj, tutoriál, reference, koncept...)
-- Pokud je vstupem soubor, přečti ho a porozuměj obsahu
+- If the input is a URL: fetch the page and extract key information
+- If the input is text: read it and identify the topic, key concepts, and content type (tool, tutorial, reference, concept...)
+- If the input is a file: read and understand the content before acting
 
-## 2. Nalezení správného místa
+## 2. Find the right place
 
-Projdi existující strukturu wiki a rozhodni:
+Search the existing wiki structure and decide:
 
-- **Existuje stránka přesně pro toto téma?** → aktualizuj ji
-- **Existuje příbuzná stránka, kde to logicky patří?** → přidej sekci nebo položku
-- **Jde o nástroj?** → zkontroluj `AI/Tools/`, `Development/Tools/`, `Development/Assets/`, `Inspiration/` podle zaměření
-- **Jde o kód/snippet?** → `Development/Snippets/` nebo příslušný jazyk (`PHP/`, `JavaScript/`, `Tailwind/`...)
-- **Neexistuje vhodné místo?** → vytvoř novou stránku; pokud ani kategorie neexistuje, zeptej se uživatele
+- **Does an exact page for this topic already exist?** → update it
+- **Does a related page exist where this logically belongs?** → add a section or list item
+- **Is it a tool?** → check `AI/Tools/`, `Development/Tools/`, `Development/Assets/`, or `Inspiration/` based on focus
+- **Is it a code snippet?** → `Development/Snippets/` or the relevant language directory (`PHP/`, `JavaScript/`, `Tailwind/`...)
+- **No suitable place exists?** → create a new page; if even the category is missing, ask the user first
 
-## 3. Zpracování obsahu
+## 3. Process the content
 
-- Shrň obsah vlastními slovy — nekopíruj verbatim
-- Zachovej pouze to, co má trvalou hodnotu jako reference (ne novinky, ne dočasné akce)
-- Ke každému faktu přiřaď zdroj; pokud zdroj chybí, nedomýšlej
-- Převeď technický žargon do srozumitelné formy, ale zachovej přesné termíny
-- Pokud je zdrojem nástroj/služba: zapiš název, URL, jednovětný popis a klíčové vlastnosti
+- Summarize in your own words — never copy verbatim
+- Keep only what has lasting reference value (not news, not temporary offers)
+- Attribute every factual claim to a source; if a source is missing, do not invent
+- Preserve precise technical terms while keeping the tone clear and scannable
+- For tools/services: capture name, URL, one-sentence description, and key differentiators
 
-## 4. Zápis do wiki
+## 4. Write to the wiki
 
-Při editaci nebo vytváření stránky:
+When editing or creating a page:
 
-- Dodržuj frontmatter pravidla z `CLAUDE.md`: `title`, `description`, `created`, `updated`
-- Nikdy nepoužívej `#` (h1) v těle stránky
-- Začni krátkým intro odstavcem (1–3 věty)
-- Používej `##` pro sekce, `###` pro podsekce
-- Formát pro nástroje: `**[Název](url)** — stručný popis`
-- Křížové odkazy na příbuzné stránky pomocí absolutních URL cest
+- Follow frontmatter rules from `CLAUDE.md`: `title`, `description`, `created`, `updated`
+- Never use `#` (h1) in the page body — Starlight renders `title` as h1
+- Start with a short intro paragraph (1–3 sentences)
+- Use `##` for sections, `###` for subsections
+- Tool format: `**[Name](url)** — short description`
+- Cross-reference related pages using absolute URL paths
 
-## 5. Kontrola konzistence
+## 5. Check consistency
 
-Po zápisu zkontroluj:
+After writing:
 
-- Neodporuje nový obsah něčemu na jiných stránkách?
-- Existují příbuzné stránky, které by měly dostat odkaz na tuto?
-- Je `updated` datum aktuální?
+- Does the new content contradict anything on other pages?
+- Are there related pages that should link to this one?
+- Is the `updated` date current on every modified file?
 
-## 6. Commit a push
+## 6. Commit and push
 
-- Jeden commit na jednu logickou změnu
-- Zpráva ve formátu: `docs: add X to Y` nebo `docs: update X with Z`
-- Vždy pushni po každém commitu
+- One commit per logical change
+- Message format: `docs: add X to Y` or `docs: update X with Z`
+- Always push after every commit
