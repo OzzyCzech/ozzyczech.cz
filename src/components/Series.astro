@@ -23,9 +23,10 @@ const response = await fetch(url).then((r) => r.json());
 if (!response || !response.results) return null;
 
 const result = response.results.filter((result: { name: string }) => result.name.toLowerCase() === title.toLowerCase()).shift() || response.results.shift();
+if (!result) return null;
 
 // construct image URL and link
-const img = result?.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : '';
+const img = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : '';
 const link = result.id ? `https://www.themoviedb.org/tv/${result.id}` : '#';
 const name = result.name ?? title
 ---
