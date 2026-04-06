@@ -1,5 +1,8 @@
 ---
 title: Tripods
+description: Notes and links for monopods, travel tripods, and budget full-size tripod options.
+created: 2026-04-06
+updated: 2026-04-06
 sidebar:
   label: Tripods
 ---
@@ -39,3 +42,8 @@ Travel tripod with **motorised auto-levelling** (optional modules: battery / cam
 | Levelling tolerance | 0.1° | 0.1° |
 
 [Product / store](https://www.benro.com/en/product/benro-theta.html) — pricing and modules change with retail promos.
+
+## Budget travel tripods (under $100)
+
+- **[NEEWER LITETRIP LT07](https://www.amazon.com/NEEWER-LITETRIP-Aluminum-Profile-Compatible/dp/B0D1V6YF98)** — 61" aluminium travel tripod with pan/tilt low-profile ball head, Arca-compatible plate, and phone holder.
+- **[Freewell Real Travel Tripod](https://www.freewellgear.com/en/tripod/1228-the-real-travel-tripod.html)** — ultra-compact lightweight travel tripod with 360 ball head.

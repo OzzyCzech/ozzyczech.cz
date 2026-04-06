@@ -1,5 +1,8 @@
 ---
 title: Mini Tripods
+description: Tabletop and ultra-compact tripod options with quick links to recommended models.
+created: 2026-04-06
+updated: 2026-04-06
 sidebar:
   label: Mini Tripods
 ---
@@ -24,3 +27,7 @@ Tabletop and ultra-compact tripods. **Larger kits:** [Tripods](/photography/acce
 | Weight | ~84–89 g |
 
 Leofoto also sells **[MT-03 + MBH-19](https://www.leofoto.net/en/tabletop-tripods/leofoto-tabletop-tripod-mt-03-mbh-19/p,70590)** as a bundle.
+
+## Other compact options
+
+- **[Ulanzi MT-24](https://allegro.cz/produkt/stolni-stativ-ulanzi-mt-24-camera-vlog-kit-27-cm-cerny-253c2916-7da4-4fa3-baa7-7898089533d7?srsltid=AfmBOoqSkWuBrvaBuQRS17h5BtpTqlfEkLXlPjiidfpKPvuyKfLEHgih)** — metal tabletop tripod kit with 3D head.

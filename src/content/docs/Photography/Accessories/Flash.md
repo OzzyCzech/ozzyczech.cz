@@ -1,5 +1,8 @@
 ---
 title: Flash
+description: Compact flash units and triggers for mirrorless cameras, including TTL and manual options.
+created: 2022-06-27
+updated: 2026-04-06
 sidebar:
   label: Flash
 ---
@@ -11,6 +14,10 @@ For **small mirrorless** kits, a useful speedlite is short on the hot shoe, roug
 ### Compact TTL speedlights (mirrorless-friendly)
 
 Mount-specific variants exist (**TT350C** Canon, **TT350N** Nikon, **TT350F** Fujifilm, **TT350S** Sony, **TT350O** Micro Four Thirds). The TT350 speaks **Godox 2.4 GHz X** radio for master/slave with larger Godox lights.
+
+#### [Godox iT30Pro](https://www.godox.com/product-e/iT30Pro.html)
+
+Ultra-compact on-camera flash from Godox aimed at minimal carry setups.
 
 #### [Godox TT350 Thinklite](https://godox.eu/product/godox-tt350/)
 
