@@ -5,18 +5,8 @@ created: 2024-04-30
 updated: 2026-04-06
 ---
 
-## MailPit
+Lokální SMTP servery pro zachytávání a prohlížení e-mailů během vývoje — bez rizika odeslání reálným příjemcům.
 
-Mailpit is packed full of features for developers wanting to test SMTP and emails. It acts as an SMTP server,
-provides a modern web interface to view & test intercepted emails. It also contains an API for
-automated integration testing.
+- **[Mailpit](https://mailpit.axllent.org/)** — moderní nástupce MailHogu; SMTP server s webovým rozhraním, REST API pro integrační testy a podporou HTML náhledů
 
-https://mailpit.axllent.org/
-
-## MailHog
-
-Web and API based SMTP testing. MailHog is an email testing tool for developers. It is written in Go and
-distributed as a single binary. It is a mail server that intercepts and stores emails sent by applications
-during development and testing. You can view the emails in a web interface or retrieve them with the JSON API.
-
-https://github.com/mailhog/MailHog
+- **[MailHog](https://github.com/mailhog/MailHog)** — jednoduchý SMTP testovací server napsaný v Go, distribuovaný jako jediný binární soubor; webové rozhraní + JSON API; již aktivně nevyvíjen, doporučen Mailpit
