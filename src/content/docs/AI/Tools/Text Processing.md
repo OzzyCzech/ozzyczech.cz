@@ -8,7 +8,7 @@ updated: 2026-04-06
 AI nástroje pro překlad a editaci textu.
 
 - **[DeepL Translate](https://www.deepl.com/translator)**
-  AI translator
+  Nejkvalitnější AI překladač; podporuje 30+ jazyků včetně češtiny, výrazně lepší než Google Translate u slovanských jazyků
 
 - **[DeepL Write](https://www.deepl.com/write/)**
-  AI writer
+  AI editor pro vylepšení stylu a gramatiky textu; navrhuje přeformulování vět

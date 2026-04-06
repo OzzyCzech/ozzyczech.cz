@@ -8,7 +8,7 @@ updated: 2026-04-06
 AI nástroje pro návrh UI a prototypování přímo v prohlížeči nebo IDE.
 
 - **[Stitch](https://stitch.withgoogle.com/)**
-  AI-powered prototyping and design tool by Google
+  AI design nástroj od Googlu — generování UI návrhů z textu nebo obrázků
 
 - **[Pencil](https://www.pencil.dev/)**
-  Designing directly in your preferred IDE
+  Přináší design přímo do IDE; zvyšuje rychlost vývoje tím, že odstraňuje přepínání mezi nástrojem a editorem
