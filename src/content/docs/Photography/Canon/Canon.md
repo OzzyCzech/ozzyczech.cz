@@ -1,8 +1,12 @@
 ---
 title: Canon
+description: Canon EOS R mirrorless lineup — full-frame and APS-C bodies with sensor type, resolution, and rough Czech street prices.
+created: 2026-04-05
+updated: 2026-04-06
 slug: photography/canon/cameras
 ---
 
+Quick reference for current **EOS R** system cameras: stacked vs conventional sensors, megapixels, introduction year, and indicative pricing in CZK. RF-mount lens notes live on separate pages linked below.
 
 ## Full Frame
 
@@ -21,3 +25,7 @@ slug: photography/canon/cameras
 | [Canon EOS R50 V](https://www.usa.canon.com/shop/p/eos-r50-v) | APS-C | 24.2 | 2025 | ~19&nbsp;500&nbsp;Kč |
 | [Canon EOS R10](https://www.usa.canon.com/shop/p/eos-r10) | APS-C | 24.2 | 2022 | ~19&nbsp;000&nbsp;Kč |
 | [Canon EOS R50](https://www.usa.canon.com/shop/p/eos-r50) | APS-C | 24.2 | 2023 | ~15&nbsp;000&nbsp;Kč |
+
+## Lenses
+
+RF-mount glass for these bodies — full-frame **RF** and APS-C **RF-S** lines, categories, and rough CZK levels: [RF lenses](/photography/canon/rf-lenses/) · [RF-S lenses](/photography/canon/rf-s-lenses/).

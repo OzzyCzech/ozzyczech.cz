@@ -1,14 +1,17 @@
 ---
 title: RF-S lenses
+description: Canon RF-S APS-C lenses for EOS R7/R10/R50 — kit, travel, ultra-wide and power-zoom zooms, VR dual-optic models, vs full-frame RF.
+created: 2026-04-06
+updated: 2026-04-06
 ---
 
-Canon **RF-S** = APS-C mirrorless lenses for crop **EOS R** bodies (**R7** / **R10** / **R50** family).
+Canon **RF-S** optics are **APS-C–native** designs for crop **[EOS R](/photography/canon/cameras/)** bodies (**R7** / **R10** / **R50** family). Same **RF** bayonet as full-frame lenses; the difference is image circle and typical size/price. Full-frame options on the same mount: [RF lenses](/photography/canon/rf-lenses/).
 
-- **Mount:** **RF** bayonet (identical to full-frame **RF** glass).
-- **Image circle:** sized for **APS-C** sensors — not a full-frame rating; do not expect clean full-sensor coverage on **R8** / **R6** / **R5**-class bodies.
-- **Full-frame RF on these cameras:** any **RF** lens (full-frame circle) fits and fills the crop sensor; **35 mm equivalent** focal length is ~**1.6×** the printed mm (e.g. **50 mm** → ~**80 mm** equiv.).
-- **Naming:** **L**, **IS**, **STM**, **USM**, **Macro**, … follow the same conventions as **RF** optics.
-- **Lineup (Canon):** four general-purpose zooms plus two **VR / spatial-video** dual-optic models — there are still no plain **RF-S** single-focal primes (non-kit) from Canon.
+- **Same bayonet as full-frame:** **RF-S** lenses use the exact same **RF** mount as [full-frame **RF** glass](/photography/canon/rf-lenses/) — you can swap them on the same camera body.
+- **Built for APS-C only:** they cast a **smaller** image than full-frame lenses — **enough for R7 / R10 / R50** sensors, **not** for a whole **full-frame** chip. On bodies like **R5** / **R6** / **R8** you would normally see **strong vignetting** (dark corners) or uncorrected coverage; Canon intends **RF-S** for crop **EOS R**, not as full-frame tools.
+- **Full-frame RF on your APS-C camera:** you can mount **any** **RF** lens on **R7** / **R10** / **R50** too. The sensor uses the **centre** of the bigger image, so coverage is fine; framing is **~1.6× “longer”** than on full frame — often quoted as **35 mm equivalent** (e.g. a **50 mm** **RF** prime gives about the same angle of view as **~80 mm** on full frame).
+- **Suffixes on the barrel:** **L**, **IS**, **STM**, **USM**, **Macro** mean the **same thing** as on **RF** lenses (build class, stabilisation, focus motor, close-focus design). Table of meanings: [RF lenses](/photography/canon/rf-lenses/) (*Lens name suffixes*).
+- **What Canon actually sells as RF-S:** **five** general **zooms** (kit / travel / ultra-wide / **power-zoom** wide–standard / tele) plus **two** compact **VR / spatial** lenses with **twin front optics** — still **no** normal **RF-S** **single-focal prime** from Canon (aside from those VR models); see tables below and [Prime lenses](#prime-lenses).
 
 ### Standard zoom lenses
 
@@ -22,6 +25,7 @@ Canon **RF-S** = APS-C mirrorless lenses for crop **EOS R** bodies (**R7** / **R
 | Lens | Notes | Price |
 |------|--------|------|
 | [RF-S 10-18mm F4.5-6.3 IS STM](https://www.canon.cz/lenses/rf-s-10-18mm-f4-5-6-3-is-stm/) | Ultra-wide APS-C zoom for travel and vlogging | **~9&nbsp;990&nbsp;Kč** |
+| [RF-S 14-30mm F4-6.3 IS STM PZ](https://www.canon.cz/lenses/rf-s-14-30mm-f4-6-3-is-stm-pz/) | Compact **14–30** mm with internal **power zoom** (PZ) for smooth video; **58 mm** filter; pairs well with **R50 V** / gimbal work | **~10&nbsp;000&nbsp;Kč** |
 
 ### Telephoto zooms
 

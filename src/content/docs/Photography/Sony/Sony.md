@@ -1,7 +1,12 @@
 ---
 title: Sony
+description: Sony Alpha E-mount mirrorless cameras — full-frame and APS-C models with sensor class, MP, year, and indicative Czech prices.
+created: 2026-04-05
+updated: 2026-04-06
 slug: photography/sony/cameras
 ---
+
+Quick reference for **Alpha** and **ZV** system bodies: global-shutter / stacked / conventional sensors, resolution, launch year, and rough CZK levels. **FE** and crop-native **E** lenses live on separate pages below.
 
 ## Cameras
 

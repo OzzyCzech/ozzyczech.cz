@@ -1,8 +1,13 @@
 ---
-title: Nikon lenses
+title: Nikon Z-mount lenses
+description: Nikon Z-mount (Nikkor Z) lenses — FX and DX zooms and primes, teleconverters, naming suffixes, rough Czech prices.
+created: 2026-04-06
+updated: 2026-04-06
 sidebar:
-  label: Nikon lenses
+  label: Z-mount lenses
 ---
+
+Overview of **Nikkor Z** optics for **[Nikon Z cameras](/photography/nikon/cameras/)**: practical groupings, teleconverters, suffix cheat sheet, and indicative pricing in CZK.
 
 ## Z-mount lenses (FX + DX)
 

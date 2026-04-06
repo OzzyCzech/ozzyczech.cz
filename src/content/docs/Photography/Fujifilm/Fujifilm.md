@@ -1,8 +1,12 @@
 ---
 title: Fujifilm
+description: Fujifilm X Series ILC and X100 premium compact — APS-C models with sensor class, MP, year, and indicative Czech prices.
+created: 2026-04-05
+updated: 2026-04-06
 slug: photography/fujifilm/cameras
 ---
 
+Quick reference for **X** interchangeable-lens cameras and the fixed-lens **X100** line: sensor, resolution, generation year, and rough CZK pricing. Mount and lens families are on the X-mount page below.
 
 ## APS-C
 
@@ -22,4 +26,4 @@ slug: photography/fujifilm/cameras
 
 ## Lenses
 
-X Mount optics, naming (**XF** / **XC**), focal-length notes, and practical picks: **[Fujifilm lenses](/photography/fujifilm/lenses/)**.
+X Mount optics, naming (**XF** / **XC**), focal-length notes, and practical picks: **[X-mount lenses](/photography/fujifilm/x-mount-lenses/)**.

@@ -1,7 +1,12 @@
 ---
 title: Nikon
+description: Nikon Z mirrorless bodies — full-frame (FX) and APS-C (DX) models with sensor class, MP, year, and indicative Czech prices.
+created: 2026-04-05
+updated: 2026-04-06
 slug: photography/nikon/cameras
 ---
+
+Quick reference for **Z** system cameras: stacked vs conventional sensors, resolution, introduction year, and rough CZK pricing. **Nikkor Z** lens notes are on a separate page linked below.
 
 ## Full Frame
 
@@ -22,4 +27,4 @@ slug: photography/nikon/cameras
 
 ## Lenses
 
-Nikon Z-mount objektivy (FX/DX), praktické kategorie a orientační ceny: **[Nikon lenses](/photography/nikon/lenses/)**.
+**Nikkor Z** glass for **FX** and **DX** bodies — categories and rough CZK levels: **[Nikon Z-mount lenses](/photography/nikon/z-mount-lenses/)**.

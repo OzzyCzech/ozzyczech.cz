@@ -1,12 +1,15 @@
 ---
 title: RF lenses
+description: Canon RF full-frame lenses for EOS R — zoom and prime lineup, teleconverters, naming suffixes, and indicative Czech prices.
+created: 2026-04-06
+updated: 2026-04-06
 ---
 
-Canon **RF** = full-frame mirrorless lenses for **EOS R** bodies.
+Canon **RF** mirrorless lenses cover a **full-frame** image circle on **[EOS R bodies](/photography/canon/cameras/)**. This page groups common zooms and primes with notes and rough street prices in CZK. For APS-C–native kit and compact zooms, see [RF-S lenses](/photography/canon/rf-s-lenses/).
 
-- **Coverage:** full-frame image circle; mounts on **APS-C** EOS R cameras too (**R7** / **R10** / **R50** family) via the same **RF** bayonet.
-- **Crop bodies:** angle of view is ~**1.6×** tighter vs full frame in **35 mm equivalent** terms (e.g. **50 mm** → ~**80 mm** equiv.).
-- **RF-S:** APS-C–native Canon line — same **RF** mount, smaller image circle, lighter kit zooms (not full-frame coverage).
+- **Same mount everywhere:** every EOS R camera uses the **RF** bayonet, so **full-frame RF** lenses from this list also mount on **APS-C** bodies (**R7**, **R10**, **R50**, …).
+- **What changes on APS-C:** the sensor is smaller, so you use only the **middle** of the lens image — the picture looks **more telephoto** than on full frame. Rule of thumb: multiply focal length by about **1.6** when comparing framing to full frame (in **35 mm equivalent** terms, **50 mm** on APS-C ≈ **~80 mm** on full frame).
+- **RF-S is different:** Canon also sells **RF-S** lenses for the same mount — **built for APS-C** (smaller image circle, often smaller zooms), not for full-frame sensors edge to edge; see the link in the intro and the *RF vs RF-S* table below.
 
 ### Standard zoom lenses
 

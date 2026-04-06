@@ -1,10 +1,13 @@
 ---
 title: Sony FE lenses (full frame)
+description: Sony FE full-frame E-mount lenses — GM/G zooms and primes, teleconverters, naming guide, third-party picks, rough Czech prices.
+created: 2026-04-05
+updated: 2026-04-06
 sidebar:
   label: Sony FE lenses
 ---
 
-**FE** lenses cover the full-frame image circle. On **APS-C** bodies they behave like a **1.5×** tighter field of view. Native **APS-C-only** optics are on [Sony E lenses](/photography/sony/sony-e-lenses/).
+Native and third-party **FE** glass for **[Sony Alpha full-frame bodies](/photography/sony/cameras/)** covers the full-frame image circle. On **APS-C** bodies they behave like a **1.5×** tighter field of view. Native **APS-C-only** optics are on [Sony E lenses](/photography/sony/sony-e-lenses/).
 
 **E mount** is for mirrorless **Alpha** / **ZV** bodies. **A-mount** (DSLR) lenses need a **LA-EA** adapter; AF may be limited.
 

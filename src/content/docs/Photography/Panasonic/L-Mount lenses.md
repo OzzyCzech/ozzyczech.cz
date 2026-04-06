@@ -1,8 +1,11 @@
 ---
 title: L-Mount lenses
+description: L-Mount zooms and primes for Panasonic Lumix S — Panasonic lineup plus selected third-party picks, notes, and rough Czech prices.
+created: 2026-04-06
+updated: 2026-04-06
 ---
 
-**Panasonic Lumix S** bodies use **L-Mount** (full-frame line).  
+**Panasonic Lumix S** bodies ([overview](/photography/panasonic/cameras/)) use **L-Mount** (full-frame line).  
 The ecosystem also includes **Sigma** and **Leica** L-Mount lenses.
 
 ### Standard zoom lenses
