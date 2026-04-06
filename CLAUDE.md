@@ -53,6 +53,7 @@ Sidebar navigation is configured in `astro.config.mjs`. When adding a new top-le
 - Use tables for comparisons and structured data — keep them narrow (max 4–5 columns) so they remain readable
 - Use fenced code blocks with language identifiers (e.g. ```python```, ```bash```)
 - Keep pages concise — aim for scannable content, not exhaustive essays
+- Write in a simple, factual tone — no filler, no fluff, no unnecessary decoration
 - Prefer structured lists and short paragraphs over walls of text
 - One topic per page — split if a page grows beyond a single focused subject
 
