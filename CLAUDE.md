@@ -2,6 +2,8 @@
 
 This is an LLM Wiki — a personal knowledge base where LLM actively builds and maintains structured Markdown pages instead of answering from scratch every time. The wiki is public but primarily serves as a personal reference.
 
+The LLM owns the wiki layer — it creates pages, updates them, maintains cross-references. The human brings sources and questions. Every interaction should leave the wiki better than before.
+
 ## Language
 
 - English is the default language
@@ -46,7 +48,7 @@ Sidebar navigation is configured in `astro.config.mjs`. When adding a new top-le
 
 - Do not use `#` (h1) in page body — Starlight renders `title` as h1
 - Start with a short introductory paragraph (1–3 sentences) explaining what the page covers
-- Use `##` for main sections, `###` for subsections — do not go deeper than `#####`
+- Use `##` for main sections, `###` for subsections — do not go deeper than `####`
 - Use Starlight admonitions where appropriate: `:::note`, `:::tip`, `:::caution`, `:::danger`
 - Use tables for comparisons and structured data — keep them narrow (max 4–5 columns) so they remain readable
 - Use fenced code blocks with language identifiers (e.g. ```python```, ```bash```)
@@ -90,11 +92,16 @@ When adding a new topic or source:
 
 ### Query
 
-Answer from existing wiki pages. If the answer is worth keeping, write it back into the wiki.
+Answer from existing wiki pages. If the answer is worth keeping, write it back into the wiki. Every query should produce two outputs — an answer for the user and an update to the wiki if the answer adds value.
 
 ### Lint
 
-Check for contradictions between pages, outdated claims, orphan pages, and missing cross-references.
+Periodically check for:
+- Contradictions between pages
+- Outdated claims (especially prices, versions, benchmarks)
+- Orphan pages with no inbound links
+- Missing cross-references between related topics
+- Claims without source attribution — never synthesize without citation
 
 ### When to create a new page vs. update existing
 
@@ -115,12 +122,14 @@ When in doubt, update the existing page and split later if it grows too large.
 - Link to the original with a brief note: `[Title](url) — what was used from this source`
 - Include access date for sources that change frequently
 - Do not copy content verbatim — always summarize and restructure in your own words
+- Every factual claim should be traceable to a source — do not synthesize without citation
 
 ## Git conventions
 
 - Use conventional commits: `docs: add page on prompt caching`, `docs: update LLM comparison table`
 - One commit per logical change — adding a page, updating related pages together, fixing a typo
 - Do not batch unrelated changes into a single commit
+- Commit after each LLM pass so diffs are reviewable and revertable
 
 ## Rules
 
