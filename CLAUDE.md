@@ -136,5 +136,6 @@ When in doubt, update the existing page and split later if it grows too large.
 - Do not delete pages without asking first
 - Do not rewrite entire pages when making small updates — edit only the relevant sections
 - Do not create empty placeholder pages — every page must have real content
+- Do not create index or navigation pages that only contain links — every page must have meaningful content of its own
 - When updating a page, check if related pages need updates too
 - Use relative links for cross-references between wiki pages
