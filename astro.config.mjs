@@ -12,6 +12,18 @@ const site = 'https://ozzyczech.cz';
 export default defineConfig({
 	site,
 
+	redirects: {
+		'/photography/filtry': '/photography/accessories/filters',
+		'/photography/equipment/filtry': '/photography/accessories/filters',
+		'/photography/doplňky/filtry': '/photography/accessories/filters',
+		'/photography/camera-gear': '/photography/accessories/camera-gear',
+		'/photography/polarpro-lightleak-lens': '/photography/accessories/polarpro-lightleak-lens',
+		'/photography/equipment/camera-gear': '/photography/accessories/camera-gear',
+		'/photography/equipment/polarpro-lightleak-lens': '/photography/accessories/polarpro-lightleak-lens',
+		'/photography/doplňky/camera-gear': '/photography/accessories/camera-gear',
+		'/photography/doplňky/polarpro-lightleak-lens': '/photography/accessories/polarpro-lightleak-lens',
+	},
+
 	markdown: {
 		remarkPlugins: [youtube],
 		rehypePlugins: [links]

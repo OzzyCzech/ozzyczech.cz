@@ -1,11 +1,11 @@
 ---
-title: Camera gear
+title: Flash
 sidebar:
-  label: Camera gear
-  order: 22
+  label: Flash
+  order: 5
 ---
 
-## Flash & lights
+Speedlights, triggers, and small on-camera lighting.
 
 For **small mirrorless** kits, a useful speedlite is short on the hot shoe, roughly **200–300 g** ready to shoot, and still offers **TTL** and **HSS** when you need fill in daylight. The **FlashQ Q20II** further down is lighter and simpler (**manual**, lower GN) when absolute minimum size matters.
 
@@ -77,60 +77,3 @@ Tiny radio trigger for ISO hot shoe (centre pin only). **No TTL** — manual fla
 | Compatibility | Sony MIS, Canon, Nikon, Pentax, Olympus, Lumix, many third-party flashes; **not** old Sony/Minolta Auto-lock shoe; avoid legacy high-voltage flashes on receiver |
 
 [Quick manual (PDF)](https://cdn.shopify.com/s/files/1/0663/3769/files/T2_quick_manual_201809_web.pdf?v=1694410760)
-
-## Monopods & tripods
-
-### [iFootage Cobra 3](https://eu.ifootagegear.com/products/cobra-3-strike-monopod)
-
-![](https://ozzyczech.cz/i/iFootage-Cobra-3.jpg)
-
-**Cobra 3 Strike** (incl. EU shop): one-touch leg extension, pedal foot with quick reset, quick-release collar, tilt up to ~130° with base. Line also includes other trims (e.g. carbon variants); confirm exact model on the invoice.
-
-| | Monopod only | With folding base |
-|--|--|--|
-| Folded length | ~71.5 cm | ~83.7 cm (Base-P) |
-| Extended height | ~138 cm | ~150 cm |
-| Weight | ~1.0 kg | ~1.45–1.6 kg (base variant) |
-| Payload (listed) | — | **5 kg** (official EU spec for A150S-III aluminium series) |
-
-Older marketing URLs (e.g. “Original version”) may 404 — use the regional store or [global product hub](https://ifootagegear.com/products/cobra3strikemonopod).
-
-### [Benro Theta](https://www.benro.com/en/campaign/theta.html)
-
-![](https://ozzyczech.cz/i/benro-theta.png)
-
-Travel tripod with **motorised auto-levelling** (optional modules: battery / camera control / GoLive streaming / optical matrix for timelapse exposure assist). Carbon legs, aluminium ball head; dual ball + pan/tilt video modes; Auto-Lock QR plate.
-
-| | Theta | Theta MAX |
-|--|--|--|
-| Max payload | 11 kg | 20 kg |
-| Packed length (incl. head) | 44 cm | 53 cm |
-| Packed diameter (max) | 7.2 cm | 7.9 cm |
-| Max height (column up) | 155 cm | — |
-| Max height (column down / spec) | 120 cm | 170 cm (no column up) |
-| Leg sections | 5 | 5 |
-| Leg angles | 20° / 55° / 80° | same |
-| Levelling tolerance | 0.1° | 0.1° |
-
-[Product / store](https://www.benro.com/en/product/benro-theta.html) — pricing and modules change with retail promos.
-
-## Mini tripods
-
-**[Leofoto MT-03](https://www.leofoto.com/products_detail.php?id=293)** — “spider” tabletop legs (aluminium), **1/4″** screw, no head included.
-
-| | |
-|--|--|
-| Load | **5 kg** (camera on 1/4″ screw) |
-| Height | ~35–186 mm |
-| Folded length | ~143–145 mm |
-| Weight | ~162 g |
-| Leg segments | 2; angles ~35° / 55° / 85° |
-
-**[Leofoto MBH-19](https://www.leofoto.com/products_detail.php?id=297)** — mini ball head (19 mm ball), common mate for MT-03.
-
-| | |
-|--|--|
-| Load | ~**2 kg** |
-| Weight | ~84–89 g |
-
-Leofoto also sells **[MT-03 + MBH-19](https://www.leofoto.net/en/tabletop-tripods/leofoto-tabletop-tripod-mt-03-mbh-19/p,70590)** as a bundle.

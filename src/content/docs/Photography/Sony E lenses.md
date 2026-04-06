@@ -14,13 +14,13 @@ sidebar:
 - [E-mount lens catalog](https://www.sony.com/imaging/c/lenses)
 - [Lens / body compatibility](https://support.d-imaging.sony.co.jp/www/cscs/lens_body/)
 
-*Orientační ceny v&nbsp;Kč (přepočet z dřívějších odhadů v USD, kurz cca 23,5&nbsp;Kč / USD).*
+*Orientační ceny v&nbsp;Kč — u běžných modelů kontrolováno vůči českým e-shopům (např. [Megapixel](https://www.megapixel.cz), 2026-04); akce se mění. Jinak přepočet z dřívějších odhadů v USD (kurz cca 23,5&nbsp;Kč / USD).*
 
 ### Standard zoom lenses
 
 | Lens | Notes | Price |
 |------|--------|------|
-| [E 16-55mm F2.8 G](https://www.sony.com/electronics/camera-lenses/sel1655g) | **f/2.8** APS-C standard | **~33&nbsp;000&nbsp;Kč** |
+| [E 16-55mm F2.8 G](https://www.sony.com/electronics/camera-lenses/sel1655g) | **f/2.8** APS-C standard; s kódy/cashback často **~21–24k** | **~29&nbsp;000&nbsp;Kč** |
 | [E PZ 18-110mm F4 G OSS](https://www.sony.com/electronics/camera-lenses/selp18110g) | Cine-style **power zoom** | **~101&nbsp;000&nbsp;Kč** |
 | [E 18-135mm F3.5-5.6 OSS](https://www.sony.com/electronics/camera-lenses/sel18135g) | Long consumer travel zoom | **~15&nbsp;500&nbsp;Kč** |
 
@@ -45,7 +45,7 @@ Many **FE** standard zooms double as long **APS-C** kits (crop); native **APS-C*
 
 | Lens | Notes | Price |
 |------|--------|------|
-| [Sigma 10-18mm F2.8 DC DN Contemporary](https://www.sigma-global.com/en/lenses/c023_10_18_28/) | Constant **f/2.8** ultra-wide zoom for **APS-C** | **~18&nbsp;000&nbsp;Kč** |
+| [Sigma 10-18mm F2.8 DC DN Contemporary](https://www.sigma-global.com/en/lenses/c023_10_18_28/) | Constant **f/2.8** ultra-wide zoom for **APS-C** | **~19&nbsp;000&nbsp;Kč** |
 | [Viltrox AF 13mm F1.4 (E mount)](https://viltroxstore.com/collections/all/e-af-lenses-for-sony) | Fast AF ultra-wide prime | **~12&nbsp;000&nbsp;Kč** |
 
 ### Telephoto zooms and sports / wildlife
