@@ -108,18 +108,6 @@ Update an existing page when:
 
 When in doubt, update the existing page and split later if it grows too large.
 
-### When to create a new page vs. update existing
-
-Create a new page when:
-- The topic is distinct enough to stand on its own (has its own name, tools, concepts)
-- Adding it to an existing page would make that page lose focus
-
-Update an existing page when:
-- The new information is a detail, example, or clarification of an existing topic
-- The existing page explicitly covers this area but is incomplete
-
-When in doubt, update the existing page and split later if it grows too large.
-
 ## Sources and attribution
 
 - When a page is based on an external source, include a `## Sources` section at the bottom
