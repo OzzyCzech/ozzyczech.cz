@@ -26,7 +26,7 @@ Search the existing wiki structure and decide where the content belongs. Follow 
 - Life Hack related content → `LifeHack/` - life hack tools, services, etc.
 - Security related content → `Security/` - security tools, services, etc.
 - Books related content → `Books/` - books, articles, blog posts, etc.
-- Movies related content → `Movies & TV/` - movies about AI, photography, development, life hack, security, etc.
+- Movies and TV related content → `Movies & TV/` - links from ČSFD, Netflix, IMDB, etc.
 - If a source fits multiple categories, pick the one matching its primary use case.
 
 ## 3. Process the content

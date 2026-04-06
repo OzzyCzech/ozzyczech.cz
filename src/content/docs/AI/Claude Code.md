@@ -141,3 +141,9 @@ Settings are stored in `~/.claude/settings.json`:
   "voiceEnabled": false
 }
 ```
+
+
+## Claude Code Status
+
+- [Claude Code Status](https://status.claude.com/) - status of Claude Code services
+- [DownDetector Status](https://downdetector.com/status/claude-ai/) - DownDetector status of Claude Code services

@@ -31,9 +31,8 @@ const link = result.id ? `https://www.themoviedb.org/tv/${result.id}` : '#';
 const name = result.name ?? title
 ---
 <li class="text-center m-0!">
-	<a href={link} target="_blank" class="p-0 m-0">
+	<a href={href ?? link} target="_blank" class="p-0 m-0">
 		<img src={img} alt={name} class="rounded-lg shadow-sm"/>
 	</a>
 	<a href={link} title={name} target="_blank" class="inline-flex text-sm leading-normal no-underline hover:underline text-inherit!">{name}</a>
-	{href && <a href={href} target="_blank" class="block text-xs text-gray-400 hover:underline no-underline">ČSFD</a>}
 </li>

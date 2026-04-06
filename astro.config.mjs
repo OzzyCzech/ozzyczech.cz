@@ -110,7 +110,7 @@ export default defineConfig({
 				},
 				{label: 'Security', collapsed: true, autogenerate: {directory: 'Security'}},
 				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware', collapsed: true}},
-				{label: 'Movies & TV', collapsed: true, autogenerate: {directory: 'Movies & TV'}},
+				{label: 'Movies & TV', collapsed: true, autogenerate: {directory: 'Movies & TV', collapsed: false}},
 				{label: 'Povídky', collapsed: true, autogenerate: {directory: 'Povidky'}},
 			]
 		})
