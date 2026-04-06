@@ -1,5 +1,8 @@
 ---
 title: Content Delivery Networks
+description: Free CDN services for delivering JavaScript, CSS, and other static assets in web projects.
+created: 2024-05-27
+updated: 2026-04-06
 sidebar:
   label: CDN
 ---

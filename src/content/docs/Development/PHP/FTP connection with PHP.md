@@ -1,5 +1,8 @@
 ---
 title: FTP connection with PHP
+description: PHP function to establish an FTP connection from a URI string with credentials and path.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 Following function `getFtpConnection` is designed to establish an FTP connection using a URI string.

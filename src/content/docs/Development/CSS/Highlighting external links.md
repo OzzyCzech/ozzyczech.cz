@@ -1,5 +1,8 @@
 ---
 title: Highlighting external links
+description: CSS snippet to add an external link icon after all outbound links using SVG content.
+created: 2020-04-21
+updated: 2026-04-06
 ---
 
 Follow CSS code add small SVG allow on the top of the external links:

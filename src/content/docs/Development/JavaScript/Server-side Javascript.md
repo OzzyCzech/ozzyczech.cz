@@ -1,5 +1,8 @@
 ---
 title: Server-side Javascript
+description: Server-side JavaScript runtimes including Bun, Deno, and Node.js.
+created: 2022-08-24
+updated: 2026-04-06
 ---
 
 ### [Bun](https://bun.sh/)

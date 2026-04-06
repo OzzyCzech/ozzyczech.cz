@@ -1,5 +1,8 @@
 ---
 title: Syntax highlighting
+description: JavaScript syntax highlighting libraries for embedding code with color in web pages.
+created: 2024-05-27
+updated: 2026-04-06
 ---
 
 ### [Prism](https://prismjs.com/)

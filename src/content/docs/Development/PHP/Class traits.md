@@ -1,5 +1,8 @@
 ---
 title: Class traits
+description: Reusable PHP class traits including a class basename helper for namespaced classes.
+created: 2020-04-14
+updated: 2026-04-06
 ---
 
 ## Class basename trait

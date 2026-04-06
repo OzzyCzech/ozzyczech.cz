@@ -1,5 +1,8 @@
 ---
 title: How to cleanup Docker
+description: Commands to remove unused Docker containers, images, volumes, and networks.
+created: 2020-01-24
+updated: 2026-04-06
 sidebar:
   label: Docker cleanup guide
 ---

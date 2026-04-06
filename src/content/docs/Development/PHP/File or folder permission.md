@@ -1,5 +1,8 @@
 ---
 title: File or folder permission
+description: PHP functions to get and check file or folder permissions.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 Function to get permissions of file or folder in PHP.

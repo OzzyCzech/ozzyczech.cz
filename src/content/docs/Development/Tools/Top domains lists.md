@@ -1,5 +1,8 @@
 ---
 title: Top domains lists
+description: Curated lists of top internet domains useful for analysis, blacklisting, and web crawling.
+created: 2024-09-17
+updated: 2026-04-06
 ---
 
 There are several lists of top domains on the internet. These lists are useful for various purposes,

@@ -1,5 +1,8 @@
 ---
 title: Clone git repository with Docker
+description: How to clone a private Git repository inside Docker using SSH deploy keys.
+created: 2024-03-27
+updated: 2026-04-06
 sidebar:
   label: Clone git with Docker
 ---

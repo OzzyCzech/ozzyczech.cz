@@ -1,5 +1,8 @@
 ---
 title: Center div content
+description: How to center a div vertically and horizontally using Tailwind CSS Flexbox and Grid.
+created: 2023-02-13
+updated: 2026-04-06
 ---
 
 ## Flexbox

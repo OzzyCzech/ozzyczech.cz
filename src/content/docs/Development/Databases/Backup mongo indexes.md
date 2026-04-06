@@ -1,5 +1,8 @@
 ---
 title: Backup MongoDB indexes
+description: Short MongoDB script to backup all collection indexes as createIndex() queries.
+created: 2020-04-20
+updated: 2026-04-06
 ---
 
 There is a really short and brilliant script to create a backup of index queries. This code iterates over all collections and creates a backup of `createIndex()` queries.

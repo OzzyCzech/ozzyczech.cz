@@ -1,5 +1,8 @@
 ---
 title: Fonts
+description: Free font libraries, icon fonts, and tools for finding and using web fonts.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 ## Font libraries

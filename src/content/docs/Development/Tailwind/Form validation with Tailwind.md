@@ -1,5 +1,8 @@
 ---
 title: Form validation with Tailwind
+description: How to use Tailwind CSS pseudo-class utilities for form input validation states.
+created: 2022-03-23
+updated: 2026-04-06
 ---
 
 Tailwind have multiple utilities for different inputs states like `required`, `invalid`, and `disabled`. See the [pseudo-class reference](https://tailwindcss.com/docs/hover-focus-and-other-states) for a complete list of available pseudo-class modifiers.

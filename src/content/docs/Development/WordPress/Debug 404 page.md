@@ -1,5 +1,8 @@
 ---
 title: Debug 404 page
+description: WordPress code snippet to dump 404 page state including permalinks and rewrite rules for debugging.
+created: 2020-12-01
+updated: 2026-04-06
 ---
 
 Following code dump state of #WordPress 404 page with permalins, rewrite rules etc. plase it to `functions.php`

@@ -1,5 +1,8 @@
 ---
 title: Simple events dispatcher
+description: Lightweight PHP event dispatching library with support for listeners, filters, and stop propagation.
+created: 2015-05-13
+updated: 2026-04-06
 ---
 
 `Events` are simple pure functional **event dispatching library** for PHP 5.5+ and

@@ -1,5 +1,8 @@
 ---
 title: Build docker containers with buildx
+description: Guide to using Docker Buildx for building multi-platform container images.
+created: 2023-07-21
+updated: 2026-04-06
 sidebar:
   label: Build with buildx
 ---

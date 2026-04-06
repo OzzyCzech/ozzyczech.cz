@@ -1,6 +1,8 @@
 ---
 title: Commit vendor directory
 description: How to safely commit composer vendor directory to the git repository.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 [Composer](http://getcomposer.org/) is great tool, but sometimes you will need avoid all external dependencies.

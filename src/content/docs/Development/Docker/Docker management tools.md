@@ -1,5 +1,8 @@
 ---
 title: Docker Management Tools
+description: Web-based GUI tools for managing Docker containers, images, volumes, and networks.
+created: 2026-03-04
+updated: 2026-04-06
 sidebar:
   label: Docker management tools
 ---

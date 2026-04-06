@@ -1,5 +1,8 @@
 ---
 title: Convert JSON to PHP code
+description: PHP script to convert JSON data to valid PHP array code using var_export().
+created: 2015-05-13
+updated: 2026-04-06
 ---
 
 Do you need convert #JSON data to valid #PHP code without pain? I've got a short script for that! My simple solution used [var_export()](http://www.php.net/manual/en/function.var-export.php) function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace `stdClass::__set_state/` with `(object)`.

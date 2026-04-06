@@ -1,5 +1,8 @@
 ---
 title: Tailwind tooltip (CSS Only)
+description: How to add CSS-only tooltips to HTML elements using Tailwind CSS without JavaScript.
+created: 2022-03-18
+updated: 2026-04-06
 ---
 
 There's a plenty of libraries (mostly JavaScript) to enable the classic tooltip design pattern. You can easily add tooltips to your elements without JavaScript and in just a few lines of [Tailwind](https://tailwindcss.com/) code and HTML.

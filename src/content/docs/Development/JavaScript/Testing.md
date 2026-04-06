@@ -1,5 +1,8 @@
 ---
-title: JavaScript testing  
+title: JavaScript testing
+description: JavaScript testing frameworks, linters, and formatters for modern web development.
+created: 2024-05-25
+updated: 2026-04-06
 ---
 
 ### Linters & Formatters

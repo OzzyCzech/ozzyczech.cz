@@ -1,5 +1,8 @@
 ---
 title: Always auto update everything in WordPress
+description: WordPress must-use plugin to silently auto-update core, plugins, themes, and translations.
+created: 2025-11-19
+updated: 2026-04-06
 ---
 
 This code snippet enables automatic updates for WordPress core, plugins, themes, and translations. It also disables

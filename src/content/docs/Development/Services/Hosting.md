@@ -1,5 +1,8 @@
 ---
 title: Hosting
+description: Cloud and serverless hosting platforms for deploying modern web applications.
+created: 2022-11-14
+updated: 2026-04-06
 ---
 
 - [Render](https://render.com/) - the fastest way how to host database/website/containers

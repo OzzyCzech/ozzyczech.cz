@@ -1,5 +1,8 @@
 ---
 title: Creating nested menu from directory with Node.js
+description: Node.js async function to generate a nested HTML menu from a directory structure.
+created: 2022-06-08
+updated: 2026-04-06
 sidebar:
   label: Generate menu from directory
 ---

@@ -1,5 +1,8 @@
 ---
 title: Radio select switch
+description: Radio input-based multiple select switch component built with Tailwind CSS.
+created: 2024-06-26
+updated: 2026-04-06
 ---
 
 This code snippet is a `radio` input based multiple select switch using Tailwind CSS.

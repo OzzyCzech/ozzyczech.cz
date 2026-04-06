@@ -1,5 +1,8 @@
 ---
 title: List of databases
+description: Overview of popular databases including MongoDB, Couchbase, and other NoSQL and SQL options.
+created: 2022-06-27
+updated: 2026-04-06
 ---
 
 ### MongoDB

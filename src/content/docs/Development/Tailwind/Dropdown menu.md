@@ -1,6 +1,8 @@
 ---
 title: How to build a Tailwind CSS dropdown element
 description: How to create a dropdown menu with Tailwind CSS and Vanilla JS
+created: 2022-04-26
+updated: 2026-04-06
 sidebar:
   label: Dropdown menu
 ---

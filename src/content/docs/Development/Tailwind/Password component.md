@@ -1,5 +1,8 @@
 ---
 title: Show/hide password with Tailwind and Vanilla JavaScript
+description: How to build a show/hide password toggle button using Tailwind CSS and Vanilla JavaScript.
+created: 2022-06-06
+updated: 2026-04-06
 sidebar:
   label: Password component
 ---

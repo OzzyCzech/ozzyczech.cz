@@ -1,6 +1,8 @@
 ---
 title: Embeddable editors
-description: JavaScript code editors, block editors, and WYSIWYG editors for the web
+description: JavaScript code editors, block editors, and WYSIWYG editors for the web.
+created: 2023-02-13
+updated: 2026-04-06
 ---
 
 Embeddable **code editors**, **block-style editors**, and **rich text (WYSIWYG)** editors you can use in web apps.

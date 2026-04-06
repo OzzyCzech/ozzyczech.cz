@@ -1,5 +1,8 @@
 ---
 title: Install node.js with multi-stage Dockerfile
+description: Multi-stage Dockerfile pattern to add Node.js to a minimal Debian image without reinstalling it.
+created: 2023-09-05
+updated: 2026-04-06
 ---
 
 My Dockerfile uses a multi-stage build pattern to optimize the final image size.

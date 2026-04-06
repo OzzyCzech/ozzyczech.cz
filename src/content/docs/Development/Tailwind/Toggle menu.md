@@ -1,5 +1,8 @@
 ---
 title: Toggle menu
+description: How to create an accessible toggle button with Tailwind CSS and inline JavaScript.
+created: 2023-07-07
+updated: 2026-04-06
 ---
 
 Following example shows how to create toggle button with Tailwind CSS and Javascript inlined in HTML:

@@ -1,5 +1,8 @@
 ---
 title: HTTP tools
+description: Online HTTP tools, DNS utilities, and favicon services for web development and testing.
+created: 2024-04-30
+updated: 2026-04-06
 ---
 
 ### HTTP tools

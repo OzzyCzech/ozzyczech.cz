@@ -1,5 +1,8 @@
 ---
 title: Calculate hash of an object
+description: How to create a stable hash of a PHP object based on its internal values.
+created: 2024-05-25
+updated: 2026-04-06
 ---
 
 In PHP, sometimes you need to identify an object using a consistent string based

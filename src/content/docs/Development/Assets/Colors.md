@@ -1,5 +1,8 @@
 ---
 title: Colors
+description: Color palette generators and Tailwind CSS color tools for web design.
+created: 2023-02-27
+updated: 2026-04-06
 ---
 
 - [Poline](https://meodai.github.io/poline/) - A enigmatic color palette generator for the web

@@ -1,5 +1,8 @@
 ---
 title: Analytics and monitoring
+description: Privacy-friendly Google Analytics alternatives and uptime monitoring services.
+created: 2024-05-27
+updated: 2026-04-06
 ---
 
 ## Google Analytics alternatives

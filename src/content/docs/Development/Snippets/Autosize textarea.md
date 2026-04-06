@@ -1,8 +1,8 @@
 ---
 title: Automatically resize a text area using web components
-description:
-  Automatically resize a text area using web components, autosize library, and
-  custom HTML elements
+description: Automatically resize a text area using web components, autosize library, and custom HTML elements.
+created: 2024-05-24
+updated: 2026-04-06
 sidebar:
   label: Autosize textarea
 ---

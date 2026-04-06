@@ -1,5 +1,8 @@
 ---
 title: Checkbox as toggle switch
+description: How to style a checkbox input as an on/off toggle switch using Tailwind CSS.
+created: 2022-03-31
+updated: 2026-04-06
 ---
 
 Learn how to create toggle switch (on/off button) from `<input type="checkbox">`.

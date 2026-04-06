@@ -1,5 +1,8 @@
 ---
 title: SEO Tools
+description: SEO tools and services including Google Search Console, PageSpeed, and structured data testing.
+created: 2024-04-02
+updated: 2026-04-06
 ---
 
 ### Google

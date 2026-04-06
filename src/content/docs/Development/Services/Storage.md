@@ -1,5 +1,8 @@
 ---
 title: Storage
+description: Self-hosted NAS solutions and cloud storage options for personal and business use.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 #### Self-hosted NAS

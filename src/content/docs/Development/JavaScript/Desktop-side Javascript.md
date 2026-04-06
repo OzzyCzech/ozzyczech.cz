@@ -1,5 +1,8 @@
 ---
 title: Desktop apps
+description: JavaScript frameworks for building cross-platform desktop applications.
+created: 2024-05-27
+updated: 2026-04-06
 ---
 
 ### [Tauri](https://tauri.app/)

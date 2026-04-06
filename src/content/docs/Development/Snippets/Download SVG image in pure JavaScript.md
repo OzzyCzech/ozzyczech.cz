@@ -1,5 +1,8 @@
 ---
 title: Download SVG image in pure Javascript
+description: Pure JavaScript function to generate and download a placeholder SVG image as PNG.
+created: 2020-12-08
+updated: 2026-04-06
 ---
 
 ```js

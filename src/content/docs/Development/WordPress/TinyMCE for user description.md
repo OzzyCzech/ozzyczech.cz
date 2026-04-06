@@ -1,5 +1,8 @@
 ---
 title: TinyMCE for user description
+description: How to add the TinyMCE WYSIWYG editor to the WordPress user profile description field.
+created: 2015-11-12
+updated: 2026-04-06
 ---
 
 By default, the WordPress user description is plain text. The following PHP code adds the WYSIWYG editor TinyMCE to

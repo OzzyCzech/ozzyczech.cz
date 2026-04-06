@@ -1,5 +1,8 @@
 ---
 title: Get user by metadata
+description: How to find a WordPress user by custom metadata using get_users with a meta query.
+created: 2016-08-31
+updated: 2026-04-06
 ---
 
 Getting user by field name is easy, #WordPress have function for

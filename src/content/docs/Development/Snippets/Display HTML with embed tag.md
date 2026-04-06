@@ -1,5 +1,8 @@
 ---
 title: Display HTML with embed tag
+description: How to display HTML content inline using the HTML embed tag.
+created: 2021-04-09
+updated: 2026-04-06
 ---
 
 ```html

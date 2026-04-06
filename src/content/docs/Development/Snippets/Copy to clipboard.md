@@ -1,5 +1,8 @@
 ---
 title: Add copy to clipboard button to all preformat code in pure Javascript
+description: Pure JavaScript snippet to add a copy-to-clipboard button to all preformatted code blocks.
+created: 2020-03-02
+updated: 2026-04-06
 sidebar:
   label: Copy code to clipboard
 ---

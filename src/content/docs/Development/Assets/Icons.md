@@ -1,5 +1,8 @@
 ---
 title: Icons
+description: Free open-source icon sets and SVG icon libraries for web projects.
+created: 2023-02-27
+updated: 2026-04-06
 ---
 
 ## Free icons sets

@@ -1,5 +1,8 @@
 ---
 title: HTML Skeleton
+description: Minimal HTML boilerplate with essential structure for starting new web pages.
+created: 2024-06-02
+updated: 2026-04-06
 tableOfContents: false
 ---
 

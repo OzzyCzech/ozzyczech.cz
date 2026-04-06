@@ -1,5 +1,8 @@
 ---
 title: Static site generators
+description: JavaScript static site generators and documentation generators for building fast websites.
+created: 2024-05-25
+updated: 2026-04-06
 ---
 
 ### Static site generators

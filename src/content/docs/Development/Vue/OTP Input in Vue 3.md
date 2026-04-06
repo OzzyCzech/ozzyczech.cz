@@ -1,5 +1,8 @@
 ---
 title: OTP Input in Vue 3
+description: Minimal Vue 3 OTP input component with keyboard navigation, paste support, and mobile compatibility.
+created: 2025-01-08
+updated: 2026-04-06
 ---
 
 There are my requirements for the OTP input component:

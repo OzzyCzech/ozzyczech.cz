@@ -1,5 +1,8 @@
 ---
 title: Code speed comparison
+description: PHP utility function to benchmark and compare execution speed of two code blocks.
+created: 2020-12-10
+updated: 2026-04-06
 ---
 
 ```php

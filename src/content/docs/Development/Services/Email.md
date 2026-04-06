@@ -1,5 +1,8 @@
 ---
 title: Email
+description: Email hosting providers and transactional email services for developers.
+created: 2022-01-20
+updated: 2026-04-06
 ---
 
 ### Email hosting

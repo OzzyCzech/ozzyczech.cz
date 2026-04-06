@@ -1,5 +1,8 @@
 ---
 title: NPM packages
+description: Curated list of useful NPM packages for charts, utilities, UI, and web development.
+created: 2024-05-25
+updated: 2026-04-06
 sidebar:
   label: NPM packages
 ---

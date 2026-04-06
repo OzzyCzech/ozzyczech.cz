@@ -1,5 +1,8 @@
 ---
 title: User agents
+description: Reference list of browser user agent strings and how to set them with curl and httpie.
+created: 2023-02-06
+updated: 2026-04-06
 ---
 
 To change the user agent with the #httpie or #curl, you can use the

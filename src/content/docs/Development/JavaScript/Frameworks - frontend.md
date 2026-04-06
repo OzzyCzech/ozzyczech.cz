@@ -1,5 +1,8 @@
 ---
 title: Frontend frameworks
+description: Curated list of frontend JavaScript frameworks and UI libraries for the browser.
+created: 2026-02-13
+updated: 2026-04-06
 ---
 
 A curated list of **frontend** JavaScript frameworks: UI libraries, full-stack frameworks, and tools for the browser.

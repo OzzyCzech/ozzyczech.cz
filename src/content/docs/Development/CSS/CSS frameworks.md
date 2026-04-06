@@ -1,5 +1,8 @@
 ---
 title: List of CSS frameworks
+description: Popular CSS frameworks and utility-first libraries for building responsive web interfaces.
+created: 2023-02-06
+updated: 2026-04-06
 sidebar:
   label: Frameworks
 ---

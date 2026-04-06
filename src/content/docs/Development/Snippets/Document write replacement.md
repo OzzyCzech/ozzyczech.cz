@@ -1,5 +1,8 @@
 ---
 title: Document write replacement
+description: JavaScript replacement for document.write using insertAdjacentHTML and document.currentScript.
+created: 2018-11-26
+updated: 2026-04-06
 ---
 
 Replacement of `document.write` can be combination of [insertAdjacentHTML()](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) method and [document.currentScript](https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript) property.

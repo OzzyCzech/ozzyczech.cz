@@ -1,5 +1,8 @@
 ---
 title: Comment bubble with Tailwind
+description: How to create a comment bubble component using Tailwind CSS utility classes.
+created: 2022-06-03
+updated: 2026-04-06
 ---
 
 ```html

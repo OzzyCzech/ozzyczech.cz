@@ -1,5 +1,8 @@
 ---
 title: Queues
+description: Message queue and job processing services for distributed application architectures.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 ##### [Amazon MQ](https://aws.amazon.com/amazon-mq/)

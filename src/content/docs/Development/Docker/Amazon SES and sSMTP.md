@@ -1,5 +1,8 @@
 ---
 title: How to build a Docker image with sSMTP and Amazon SES
+description: How to configure sSMTP in a Docker container to send email via Amazon SES.
+created: 2024-04-19
+updated: 2026-04-06
 sidebar:
   label: Amazon SES and sSMTP
 ---

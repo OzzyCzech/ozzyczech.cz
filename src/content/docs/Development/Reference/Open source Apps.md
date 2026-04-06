@@ -1,5 +1,8 @@
 ---
 title: Open source Apps
+description: Curated list of self-hosted open source applications for monitoring, notes, and productivity.
+created: 2024-11-05
+updated: 2026-04-06
 ---
 
 #### [Uptime Kuma](https://github.com/louislam/uptime-kuma)

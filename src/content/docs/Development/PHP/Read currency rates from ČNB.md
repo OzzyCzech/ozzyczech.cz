@@ -1,5 +1,8 @@
 ---
 title: Read currency rates from ČNB
+description: PHP class to fetch and parse current currency exchange rates from the Czech National Bank.
+created: 2016-10-07
+updated: 2026-04-06
 ---
 
 ```php

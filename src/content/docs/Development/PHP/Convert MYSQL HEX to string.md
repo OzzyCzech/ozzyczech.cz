@@ -1,5 +1,8 @@
 ---
 title: Convert MYSQL HEX to string
+description: How to use MySQL hexadecimal literals and convert between HEX and string values.
+created: 2019-11-27
+updated: 2026-04-06
 ---
 
 [Hexadecimal literal](https://dev.mysql.com/doc/refman/8.0/en/hexadecimal-literals.html) values are

@@ -1,5 +1,8 @@
 ---
 title: UTF-8 Symbols
+description: Reference table of common UTF-8 symbols with HTML entities and Mac keyboard shortcuts.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 Need more symbols? Visit [Graphemica](https://graphemica.com/) or [SYMBL (◕‿◕)](https://symbl.cc/en/)

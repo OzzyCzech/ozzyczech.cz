@@ -1,5 +1,8 @@
 ---
 title: Validate URL with JavaScript
+description: JavaScript function to validate and normalize URLs, returning undefined for invalid inputs.
+created: 2024-05-15
+updated: 2026-04-06
 ---
 
 Following is a simple function to validate a URL with JavaScript. It will return the URL if it is valid, otherwise it will return `undefined`.

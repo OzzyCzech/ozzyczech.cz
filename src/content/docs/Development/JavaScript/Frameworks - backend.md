@@ -1,6 +1,8 @@
 ---
 title: Backend frameworks
-description: Node.js and JavaScript runtime frameworks for building servers and APIs
+description: Node.js and JavaScript runtime frameworks for building servers and APIs.
+created: 2026-02-13
+updated: 2026-04-06
 ---
 
 A curated list of **backend** JavaScript frameworks for Node.js and other runtimes: APIs, web servers, and full-stack apps.

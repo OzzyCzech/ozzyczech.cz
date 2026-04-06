@@ -1,5 +1,8 @@
 ---
 title: Package managers
+description: JavaScript package managers including NPM, Yarn, pnpm, and Bun for managing dependencies.
+created: 2024-05-27
+updated: 2026-04-06
 ---
 
 ### [NPM](https://www.npmjs.com/)

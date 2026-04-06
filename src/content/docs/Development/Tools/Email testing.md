@@ -1,5 +1,8 @@
 ---
 title: Email testing
+description: Tools for testing SMTP email delivery in local and CI development environments.
+created: 2024-04-30
+updated: 2026-04-06
 ---
 
 ## MailPit

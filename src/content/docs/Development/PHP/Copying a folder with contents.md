@@ -1,5 +1,8 @@
 ---
 title: Copying a folder with contents
+description: PHP function to recursively copy a folder and all its contents using iterators.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 I've seen several complicated and ugly functions for copying directories and subdirectories, including their contents.

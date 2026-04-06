@@ -1,5 +1,8 @@
 ---
 title: Add custom post type
+description: How to include custom post types in WordPress category and tag archive queries.
+created: 2015-05-13
+updated: 2026-04-06
 ---
 
 Default archive shows only `post` type if you need show all post types just add follow code to `function.php`

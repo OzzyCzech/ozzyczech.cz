@@ -1,5 +1,8 @@
 ---
 title: Case insensitive in_array
+description: PHP function for case-insensitive array search as a replacement for in_array().
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 Function [`in_array()`](https://php.net/manual/en/function.in-array.php) is case sensitive - which is not always what you want.

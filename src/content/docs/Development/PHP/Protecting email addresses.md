@@ -1,6 +1,8 @@
 ---
 title: Protecting email addresses
 description: How to protect your emails with PHP and Javascript
+created: 2015-05-13
+updated: 2026-04-06
 ---
 
 Working with or without javascript it's combine two technique for email protection [ROT13](http://en.wikipedia.org/wiki/ROT13) and CSS

@@ -1,5 +1,8 @@
 ---
 title: Images
+description: Free stock photo websites and image optimization tools for web development.
+created: 2024-05-24
+updated: 2026-04-06
 ---
 
 ### Free Stock Photos
