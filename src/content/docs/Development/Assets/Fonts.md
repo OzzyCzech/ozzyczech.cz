@@ -5,74 +5,24 @@ created: 2024-05-24
 updated: 2026-04-06
 ---
 
+Knihovny bezplatných fontů a přehled monospaced fontů pro vývojáře.
+
 ## Font libraries
 
-#### [Font resources](https://fontsource.org/)
-
-More then 1800 open-source fonts bundled into [neat packages](https://github.com/fontsource/font-files) for easy use.
-
-#### [Font download](https://font.download)
-
-Font.download is a collection of 200,000+ Free Fonts for personal and commercial use.
-
-#### [Atipo Foundry](https://www.atipofoundry.com/)
-
-Atipo is a digital typeface foundry and graphic design studio. They are passionate about typography and graphic design.
-
-#### [Google Fonts](https://fonts.google.com/)
-
-Google Fonts is a library of 1,052 free licensed font families, an interactive web directory for browsing the library,
-and APIs for conveniently using the fonts via CSS and Android.
-
-#### [Adobe Fonts](https://fonts.adobe.com/)
-
-Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every
-day.
+- **[Google Fonts](https://fonts.google.com/)** — 1 000+ bezplatných rodin fontů s CSS/Android API
+- **[Fontsource](https://fontsource.org/)** — 1 800+ open-source fontů jako npm balíčky; bez CDN závislosti
+- **[Adobe Fonts](https://fonts.adobe.com/)** — tisíce fontů od předních písmolijí; součást Creative Cloud
+- **[Font.download](https://font.download)** — 200 000+ fontů ke stažení zdarma pro osobní i komerční použití
+- **[Atipo Foundry](https://www.atipofoundry.com/)** — digitální písmolijna s vlastními originálními fonty
 
 ## Monospaced fonts
 
-#### [Fira Code](https://github.com/tonsky/FiraCode)
-
-Free monospaced font with programming ligatures.
-
-#### [Cascadia Code Font](https://github.com/microsoft/cascadia-code)
-
-This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and
-feel of the Windows Terminal.
-
-#### [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)
-
-Ubuntu Mono is available via an open source license.
-
-#### [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-
-Roboto Mono is a monospaced addition to the [Roboto](https://github.com/googlefonts/roboto) type family.
-
-#### [Hack](https://sourcefoundry.org/hack/)
-
-Hack has deep roots in the libre, open source typeface community and includes the contributions of the Bitstream Vera &
-DejaVu projects. The face has been re-designed with an expanded glyph set, modifications of the original glyph shapes,
-and meticulous attention to metrics.
-
-#### [Monoid](https://larsenwork.com/monoid/)
-
-Monoid is customizable and optimized for coding with bitmap-like sharpness at 12px/9pt even on low res displays.
-
-#### [Recursive](https://www.recursive.design/)
-
-Built to maximize versatility, control, and performance, Recursive is a five-axis variable font.
-
-#### [JetBrains Mono](https://jetbrains.com/lp/mono/)
-
-Free & open source monospaced font from JetBrains Mono for developers.
-
-#### [Consolas](https://docs.microsoft.com/en-us/typography/font-list/consolas)
-
-Consolas is aimed for use in programming environments and other circumstances where a monospaced font is specified. All
-characters have the same width, like old typewriters, making it a good choice for personal and business correspondance.
-
-#### [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
-
-Inconsolata was Raph Levien's first serious original font release. It is a monospace font, designed for printed code
-listings and the like. There are a great many “programmer fonts,” designed primarily for use on the screen, but in most
-cases do not have the attention to detail for high resolution rendering.
+- **[JetBrains Mono](https://jetbrains.com/lp/mono/)** — populární open-source font od JetBrains; ligatures, zvýšená čitelnost kódu
+- **[Fira Code](https://github.com/tonsky/FiraCode)** — monospaced font s programovacími ligaturami
+- **[Cascadia Code](https://github.com/microsoft/cascadia-code)** — font od Microsoftu pro Windows Terminal; ligatures
+- **[Hack](https://sourcefoundry.org/hack/)** — open-source font vycházející z Bitstream Vera a DejaVu; optimalizovaný pro terminály
+- **[Recursive](https://www.recursive.design/)** — five-axis variable font; maximální variabilita z jediného souboru
+- **[Monoid](https://larsenwork.com/monoid/)** — optimalizovaný pro 12px/9pt i na low-res displejích
+- **[Inconsolata](https://fonts.google.com/specimen/Inconsolata)** — monospace font navržený pro tisk výpisů kódu
+- **[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)** — open-source monospaced font z Ubuntu projektu
+- **[Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)** — monospaced varianta Roboto od Googlu
