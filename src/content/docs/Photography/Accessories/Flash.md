@@ -8,6 +8,12 @@ Speedlights, triggers, and small on-camera lighting.
 
 For **small mirrorless** kits, a useful speedlite is short on the hot shoe, roughly **200–300 g** ready to shoot, and still offers **TTL** and **HSS** when you need fill in daylight. The **FlashQ Q20II** further down is lighter and simpler (**manual**, lower GN) when absolute minimum size matters.
 
+### Ultra-compact mini flash
+
+#### [Godox iT30Pro (Sony)](https://www.megapixel.cz/godox-blesk-it30pro-pro-sony)
+
+Very small on-camera flash option for lightweight Sony mirrorless carry.
+
 ### Compact TTL speedlights (mirrorless-friendly)
 
 Mount-specific variants exist (**TT350C** Canon, **TT350N** Nikon, **TT350F** Fujifilm, **TT350S** Sony, **TT350O** Micro Four Thirds). The TT350 speaks **Godox 2.4 GHz X** radio for master/slave with larger Godox lights.
