@@ -5,12 +5,16 @@ created: 2023-02-27
 updated: 2026-04-06
 ---
 
-- [Lemon Squeezy](https://www.lemonsqueezy.com/)
-- [Paddle](https://paddle.com/)
-- [Stripe](https://stripe.com/)
-- [Deposyt](https://www.deposyt.com/)
-- [Braintree](https://www.braintreepayments.com)
+Přehled platebních bran a platforem pro prodej digitálních produktů a SaaS předplatného.
 
-### Selling digital products
+## Payment gateways
 
-- [GumRoad](https://gumroad.com/) - Sell digital products and subscriptions.
+- **[Stripe](https://stripe.com/)** — nejrozšířenější platební infrastruktura; API-first, podporuje cards, SEPA, Apple Pay a další
+- **[Paddle](https://paddle.com/)** — Merchant of Record platforma; řeší VAT, daně a compliance za vás
+- **[Lemon Squeezy](https://www.lemonsqueezy.com/)** — jednoduchý Merchant of Record pro indie developery a SaaS
+- **[Braintree](https://www.braintreepayments.com)** — platební brána od PayPal; cards, PayPal, Venmo
+- **[Deposyt](https://www.deposyt.com/)** — platební brána s podporou českých platebních metod
+
+## Selling digital products
+
+- **[Gumroad](https://gumroad.com/)** — prodej digitálních produktů, e-booků a předplatného s minimální konfigurací
