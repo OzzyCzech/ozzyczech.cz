@@ -1,11 +1,11 @@
 ---
 title: Filters
-description: Screw-in ND, CPL, and hybrid filters — how to choose thread size, variable-ND caveats, and notes on specific products.
+description: Screw-in ND, CPL, hybrid and creative look filters (incl. PolarPro Portra) — thread size, variable-ND caveats, and product notes.
 created: 2026-04-06
 updated: 2026-04-06
 ---
 
-This page covers **screw-in** filters for stills and video: neutral density (**ND**), circular polarisers (**CPL**), and combined designs. Use it for buying checks and short product notes.
+This page covers **screw-in** filters for stills and video: neutral density (**ND**), circular polarisers (**CPL**), combined designs, and a few **creative / look** filters. Use it for buying checks and short product notes.
 
 ## Choosing screw-in filters
 
@@ -46,8 +46,31 @@ Neewer documents a **limited rotation range** on variable NDs to reduce **cross-
 
 Filter, pouch, cleaning cloth.
 
+## PolarPro Portra Filter
+
+**[PolarPro Portra Filter](https://www.polarpro.com/products/portra-filter)** — **creative** screw-in (and **Helix** system) filter that targets a **Portra 400–inspired** colour response **in camera**, not in post. Optically it mixes **warm/natural tone**, **subtle white mist diffusion** (PolarPro describes it as **1/4** strength), and a **rotating chroma polariser** for glare control and richer separation.
+
+![Sample collage for PolarPro Portra Filter: warm portrait look and contrast with untreated digital](./polarpro-portra-filter-product.jpg)
+
+| | |
+|--|--|
+| *Intent* | Film-inspired warmth, creamy skin, softer highlight roll-off |
+| *Polarisation* | **Adjustable** “chroma” polariser (rotate for reflections) |
+| *Threads (screw-in)* | **49, 67, 77, 82, 86 (c), 95 (c)** mm — confirm **Φ** on each lens |
+| *Also* | **Helix** drop-in variant for quick swaps in the field |
+
+:::note
+PolarPro states the filter is **inspired by** Portra 400, not a lab-accurate emulation — expect a **repeatable look at capture**, then normal grading on top. **Stock and ship dates** on PolarPro’s store change with product waves; check the live page before ordering.
+:::
+
 ## Related
 
 - [Camera gear](/photography/accessories/camera-gear/)
+- [Straps](/photography/accessories/straps/)
 - [Tripods](/photography/accessories/tripods/)
 - [Flash](/photography/accessories/flash/)
+
+## Sources
+
+- [PolarPro — Portra Filter](https://www.polarpro.com/products/portra-filter) — features, FAQ, thread sizes (access **2026-04-06**)
+- Product image: [PolarPro Shopify CDN — portra-filter-collage-1.jpg](https://cdn.shopify.com/s/files/1/1050/9944/files/portra-filter-collage-1.jpg)

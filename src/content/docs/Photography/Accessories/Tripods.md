@@ -1,6 +1,6 @@
 ---
 title: Tripods
-description: Notes and links for monopods, travel tripods, and budget full-size tripod options.
+description: Monopods, travel tripods, budget under-$100 options, and Ulanzi Zero F38 (carbon, Falcam F38 QR).
 created: 2026-04-06
 updated: 2026-04-06
 ---
@@ -45,3 +45,22 @@ Travel tripod with **motorised auto-levelling** (optional modules: battery / cam
 
 - **[NEEWER LITETRIP LT07](https://www.amazon.com/NEEWER-LITETRIP-Aluminum-Profile-Compatible/dp/B0D1V6YF98)** — 61" aluminium travel tripod with pan/tilt low-profile ball head, Arca-compatible plate, and phone holder.
 - **[Freewell Real Travel Tripod](https://www.freewellgear.com/en/tripod/1228-the-real-travel-tripod.html)** — ultra-compact lightweight travel tripod with 360 ball head.
+
+### Ulanzi Zero F38 travel tripod
+
+**[Ulanzi Zero F38 Quick Release Travel Tripod (3131)](https://www.ulanzi.com/products/ulanzi-f38-quick-release-travel-tripod-3131)** — **carbon fibre** travel legs with a **built-in ball head** that uses the **Falcam F38** quick-release (not a generic Arca clamp on the integrated head). Ulanzi ships an **extra centre column** so you can fit a separate **Arca-Swiss** head if you replace the column/head assembly yourself (Arca head not in the base box).
+
+![Ulanzi Zero F38 carbon travel tripod folded, grey legs with red accents](./ulanzi-zero-f38-travel-tripod.jpg)
+
+| | Zero F38 (vendor listing) |
+|--|--|
+| Folded length | ~**42.3 cm** |
+| Max height | ~**159 cm** |
+| Weight | ~**1.1 kg** |
+| Load (claimed) | ~**18 kg** |
+| Leg sections | **5**; leg angles **20° / 55° / 75°** |
+| Head | Integrated **F38** ball head (not user-detachable per FAQ); **removable short column** for low angles |
+
+**Bundles:** same product page often sells add-ons (**backpack clip**, **shoulder strap F38 mount**, **Peak Design–compatible plate**) — see [Straps](/photography/accessories/straps/) for the shoulder QR kit.
+
+**Practically:** premium **travel** size, but **F38-only** on the stock head; ideal if you already committed to **F38** plates across tripod, clip, and strap. If you need **Kirk L-bracket / generic Arca** on the built-in head only, read Ulanzi’s FAQ: use the spare column with your own Arca head instead.

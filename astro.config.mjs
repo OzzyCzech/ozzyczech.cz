@@ -12,14 +12,6 @@ const site = 'https://ozzyczech.cz';
 export default defineConfig({
 	site,
 
-	redirects: {
-		'/photography/sony': '/photography/sony/cameras/',
-		'/photography/canon': '/photography/canon/cameras/',
-		'/photography/nikon': '/photography/nikon/cameras/',
-		'/photography/panasonic': '/photography/panasonic/cameras/',
-		'/photography/fujifilm': '/photography/fujifilm/cameras/',
-	},
-
 	markdown: {
 		remarkPlugins: [youtube],
 		rehypePlugins: [links]

@@ -1,9 +1,12 @@
 ---
 title: AI Tools
+slug: ai/tools
 ---
 
 ## Coding Agent Tools
 
+- **[JetBrains Air](https://air.dev/)**
+  JetBrains desktop app to run multiple coding agents in parallel (Claude Agent, Codex, Gemini CLI, Junie) with Docker or Git worktree isolation — [notes](./jetbrains-air/)
 - **[cmux](https://www.cmux.dev/)**
   Native macOS terminal built on Ghostty, designed for managing multiple AI coding agents
 - **[Superset](https://superset.sh/)**
@@ -14,6 +17,8 @@ title: AI Tools
   Turns UI annotations into structured context that AI coding agents can understand and act on
 - **[goose](https://block.github.io/goose/)**
   Open source local AI agent from Block for engineering tasks; extensible with MCP servers and your preferred LLM
+- **[T3 Code](https://github.com/pingdotgg/t3code)**
+  Minimal web GUI for coding agents (Codex and Claude, more providers planned); quick start `npx t3`, desktop builds via [Releases](https://github.com/pingdotgg/t3code/releases), macOS `brew install --cask t3-code`, Windows `winget install T3Tools.T3Code` — authenticate [Codex CLI](https://github.com/openai/codex) or Claude Code before use
 
 ## App Builders
 
