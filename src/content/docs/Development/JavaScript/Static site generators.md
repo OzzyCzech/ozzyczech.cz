@@ -15,5 +15,6 @@ updated: 2026-04-06
 ### Documentation generators
 
 - [Starlight](https://starlight.astro.build/) - Astro powered CMS/documentation site generator
+- [Fumadocs](https://www.fumadocs.dev/) - React.js documentation framework for Next.js and React Router with MDX support
 - [docmd.io](https://docmd.io/) - Beautiful documentation from your Markdown files
-- [Docusaurus](https://v2.docusaurus.io/) - Build optimized websites and docs quickly, focus on your content
+- [Docusaurus](https://docusaurus.io/) - Build optimized websites and docs quickly, focus on your content
