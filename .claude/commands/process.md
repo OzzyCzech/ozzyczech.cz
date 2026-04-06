@@ -27,6 +27,7 @@ Search the existing wiki structure and decide where the content belongs. Follow 
 - Security related content → `Security/` - security tools, services, etc.
 - Books related content → `Books/` - books, articles, blog posts, etc.
 - Movies and TV related content → `Movies & TV/` - links from ČSFD, Netflix, IMDB, etc.
+- Command line related content → `Command line/` — pick a subfolder by topic: `Bash & shell`, `Git`, `Media` (includes `ffmpeg/`), `Web`, `Network`, `Security`, `Downloads`, `Testing`, or `Tools` (short tool roundup pages).
 - If a source fits multiple categories, pick the one matching its primary use case.
 
 ## 3. Process the content
