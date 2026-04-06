@@ -5,83 +5,40 @@ created: 2023-02-27
 updated: 2026-04-06
 ---
 
-## Free icons sets
+Přehled bezplatných SVG ikon, vyhledávačů a icon fontů pro webové projekty.
 
-##### [Lucide](https://lucide.dev/)
+## Icon sets
 
-Lucide is a free, open-source icon set drawn in a consistent, modern style.
+- **[Lucide](https://lucide.dev/)** — moderní open-source sada ikon v konzistentním stylu; fork Feather Icons
+- **[Heroicons](https://heroicons.com/)** — hand-crafted SVG ikony od tvůrců Tailwind CSS
+- **[Tabler Icons](https://tabler-icons.io)** — 4 000+ pixel-perfect ikon pro web
+- **[Phosphor Icons](https://phosphoricons.com/)** — flexibilní sada pro rozhraní, diagramy a prezentace
+- **[Remix Icons](https://remixicon.com/)** — 2 000+ vektorových ikon
+- **[Bootstrap Icons](https://icons.getbootstrap.com/)** — oficiální ikony pro Bootstrap
+- **[Material Icons](https://fonts.google.com/icons)** — ikony od Googlu pro Material Design
+- **[SimpleIcons](https://simpleicons.org/)** — 3 000+ SVG ikon populárních značek a technologií
+- **[Devicon](https://devicon.dev/)** — ikony programovacích jazyků a vývojových nástrojů
+- **[Flagpack](https://flagpack.xyz/)** — 250 open-source vlajek zemí
+- **[Twemoji](https://github.com/twitter/twemoji)** — open-source emoji od Twitteru
+- **[SVG Repo](https://www.svgrepo.com/)** — 500 000+ SVG ikon s otevřenou licencí
+- **[SVGBox](https://svgbox.net/)** — CDN pro ikony přes `<img>` tag
+- **[Flowbite Icons](https://flowbite.com/icons/)** — 521 free SVG ikon
 
-##### [SVG Repo](https://www.svgrepo.com/)
+## Icon search engines
 
-500.000+ Open-licensed SVG Vector and Icons
+- **[Iconify](https://icon-sets.iconify.design/)** — vyhledávač přes 100+ sad ikon; jednotné API
+- **[icones.js](https://icones.js.org/)** — rychlý open-source vyhledávač ikon
+- **[Dashboard Icons](https://dashboardicons.com/)** — ikony pro dashboardy a self-hosted služby
+- **[The Noun Project](https://thenounproject.com/)** — miliony ikon od komunity tvůrců
+- **[Streamline](https://www.streamlinehq.com/)** — 350 000+ ikon; velká část placená
+- **[Flaticon](https://flaticon.com)** — 3 000 000+ ikon ve formátech SVG, PNG, PSD; free tier s atribucí
+- **[Icons8](https://icons8.com/)** — ikony, fotografie a design nástroje
 
-##### [Heroicons](https://heroicons.com/)
+## Icon fonts
 
-Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
-
-##### [SVGBox](https://svgbox.net/)
-
-SVGBox makes it dead-easy to include icons in your project. Simple `<img>` tags
-
-##### [Remix Icons](https://remixicon.com/)
-
-2000+ Pixel-perfect vector icons and Iconfont for your next project.
-
-##### [Phosphor Icons](https://phosphoricons.com/)
-
-Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really.
-
-##### [Bootstrap Icons](https://icons.getbootstrap.com/)
-
-Twitters Bootstrap icons
-
-##### [Material Icons](https://fonts.google.com/icons)
-
-Material icons are delightful, beautifully crafted
-symbols [made by Google](https://github.com/google/material-design-icons).
-
-##### [SimpleIcons](https://simpleicons.org/)
-
-More than 3000 free SVG icons for popular brands
-
-and many more...
-
-- [Devicon](https://devicon.dev/) - Devicon is a set of icons representing programming languages, designing &
-  development tools.
-- [Flowbite Icons](https://flowbite.com/icons/) - 521 free and open-source SVG icons
-- [Twemoji](https://github.com/twitter/twemoji) - Twitter's open source emoji
-- [iconoir.com](https://iconoir.com/) - Your new default library
-- [Teeny icons](https://teenyicons.com/) - small 1x icons set
-- [Majest icons](https://www.majesticons.com/) - Over 720 icons under MIT license
-- [Feather Icons](https://feathericons.com/) - Simply beautiful open source icons
-- [iconsax](https://iconsax.io/) - Vuesax framework icons
-- [ionicons](https://ionic.io/ionicons/) - hand crafter open source icons library
-- [Tabler Icons](https://tabler-icons.io) - Over 4000 pixel-perfect icons for web design and development
-- [glyphs.fyi](https://glyphs.fyi/) - Mightiest Icons on the Web
-- [Sargam icons](https://sargamicons.com/) - A Collection of 250+ Open-source Icons Devoted to Match Your Exquisite
-  Designs.
-- [Untitled ui icons](https://untitledui.com/icons) - 1110 free icons for Figma
-- [Flagpack](https://flagpack.xyz/) - 250 open source flags
-
-## Icon Search Engines
-
-- [Iconify](https://icon-sets.iconify.design/) - search engine for icons, supports over 100 icon sets
-- [Iconsear.ch](https://iconsear.ch/) - search engine for open source icons
-- [Streamline](https://www.streamlinehq.com/) - ultimate icon library with over 350,000 icons
-- [icones.js](https://icones.js.org/) - open source icons search
-- [The Noun Project](https://thenounproject.com/) - Icons for everything
-- [Flaticon](https://flaticon.com) - 3,000,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT
-- [Icons8](https://icons8.com/) - Icons, photos, music, and design tools
-- [xIcons](https://www.xicons.org/) - icon search engine over fluent, ionicons and more
-- [Dashboard Icons](https://dashboardicons.com/) - search engine and catalog of icons for dashboards and services
-
-## Icon Fonts
-
-- [Font Awesome](https://fontawesome.com/) - The world's most popular and easiest to use icon set just got an upgrade.
-  More icons. More styles. More Options.
+- **[Font Awesome](https://fontawesome.com/)** — nejpoužívanější icon font; free i Pro tier
 
 ## Favicons
 
-- http://favicongrabber.com - free and opensource favicon grabber
-- [RealFaviconGenerator](https://realfavicongenerator.net/) - Favicon Generator. For real usage.
-- https://www.google.com/s2/favicons?domain=ozzyczech.cz - Google favicon service from Chrome
+- **[RealFaviconGenerator](https://realfavicongenerator.net/)** — generátor favikon pro všechny platformy (iOS, Android, Windows, macOS)
+- **[Favicon Grabber](http://favicongrabber.com)** — stažení favikony z libovolné domény přes API
