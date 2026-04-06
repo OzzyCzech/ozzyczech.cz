@@ -23,3 +23,7 @@ sidebar:
 | [Nikon Z50 II](https://www.nikonusa.com/p/z50ii/1784/overview) | APS-C | 20.9 | 2024 | ~26 000 |
 | [Nikon Zfc](https://www.nikonusa.com/p/z-fc/1671/overview) | APS-C | 20.9 | 2021 | ~21 000 |
 | [Nikon Z30](https://www.nikonusa.com/p/z-30/1737/overview) | APS-C | 20.9 | 2022 | ~17 000 |
+
+## Lenses
+
+Z mount optics (FX + DX), practical picks, and orientation pricing: **[Nikon lenses](/photography/nikon-lenses/)**.
