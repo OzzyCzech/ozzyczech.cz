@@ -14,7 +14,7 @@ Zdroje bezplatných fotografií a nástrojů pro placeholder obrázky ve webový
 - **[Pixabay](https://pixabay.com)** — fotografie, ilustrace a vektory zdarma pro komerční použití
 - **[Reshot](https://www.reshot.com)** — ikony a ilustrace zdarma
 - **[Freepik](https://www.freepik.com)** — vektory, PSD a fotografie; free tier s atribucí
-- **[Burst](https://burst.shopify.com)** — fotografie od Shopify, optimalizované pro e-commerce projekty
+- **[Burst](https://www.shopify.com/stock-photos/)** — fotografie od Shopify, optimalizované pro e-commerce projekty
 - **[Kaboompics](https://kaboompics.com)** — lifestyle a interiérové fotografie
 - **[Foodiesfeed](https://www.foodiesfeed.com)** — fotografie jídla zdarma
 - **[Gratisography](https://gratisography.com)** — kreativní a netradiční fotografie
