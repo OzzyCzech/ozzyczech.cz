@@ -5,29 +5,23 @@ created: 2024-05-24
 updated: 2026-04-06
 ---
 
-### Free Stock Photos
+Zdroje bezplatných fotografií a nástrojů pro placeholder obrázky ve webových projektech.
 
-Here are some websites where you can find free images to use in your projects:
+## Free Stock Photos
 
-- [Unsplash.it](https://unsplash.com) - Beautiful, free photos. Gifted by the world’s most generous community of
-  photographers.
-- [Pexels](https://www.pexels.com) - Best free stock photos in one place.
-- [Reshot](https://www.reshot.com) - Free Icons & Illustrations
-- [Freepik](https://www.freepik.com)
-- [Pixabay](https://pixabay.com) - High quality photos and illustrations free for commercial use
-- [Freeimages](https://www.freeimages.com)
-- [Stockvault](https://www.stockvault.net)
-- [Picography](https://picography.co)
-- [Picjumbo](https://picjumbo.com)
-- [PikWizard](https://pikwizard.com)
-- [Burst](https://burst.shopify.com)
-- [Gratisography](https://gratisography.com)
-- [Stocksnap](https://stocksnap.io)
-- [Freephotos](https://freephotos.cc)
-- [PxFuel](https://www.pxfuel.com)
-- [Kaboompics](https://kaboompics.com)
-- [Foodiesfeed](https://www.foodiesfeed.com)
+- **[Unsplash](https://unsplash.com)** — velká knihovna kvalitních fotografií, licence zdarma i pro komerční použití
+- **[Pexels](https://www.pexels.com)** — fotografie a videa zdarma, licence CC0
+- **[Pixabay](https://pixabay.com)** — fotografie, ilustrace a vektory zdarma pro komerční použití
+- **[Reshot](https://www.reshot.com)** — ikony a ilustrace zdarma
+- **[Freepik](https://www.freepik.com)** — vektory, PSD a fotografie; free tier s atribucí
+- **[Burst](https://burst.shopify.com)** — fotografie od Shopify, optimalizované pro e-commerce projekty
+- **[Kaboompics](https://kaboompics.com)** — lifestyle a interiérové fotografie
+- **[Foodiesfeed](https://www.foodiesfeed.com)** — fotografie jídla zdarma
+- **[Gratisography](https://gratisography.com)** — kreativní a netradiční fotografie
+- **[Stocksnap](https://stocksnap.io)** — CC0 fotografie s vyhledáváním
+- **[Picjumbo](https://picjumbo.com)** — fotografie zdarma od jednoho fotografa
+- **[Freeimages](https://www.freeimages.com)** — starší databáze stock fotek zdarma
 
-### Placeholder Images
+## Placeholder Images
 
-- [Lorem Picsum](https://picsum.photos/) - The Lorem Ipsum for photos.
+- **[Lorem Picsum](https://picsum.photos/)** — placeholder fotografie na míru; stačí zadat rozměry v URL (`https://picsum.photos/200/300`)
