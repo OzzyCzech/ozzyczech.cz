@@ -58,6 +58,7 @@ export default defineConfig({
 				{label: 'Home', link: '/'},
 				{label: 'AI', collapsed: true, autogenerate: {directory: 'AI', collapsed: false}},
 				{label: 'Development', collapsed: false, autogenerate: {directory: 'Development', collapsed: true}},
+				{label: 'Inspiration', collapsed: true, autogenerate: {directory: 'Inspiration', collapsed: false}},
 				{label: 'Command line', collapsed: true, autogenerate: {directory: 'Command line', collapsed: true}},
 				{label: 'macOS', collapsed: true, autogenerate: {directory: 'macOS', collapsed: true}},
 				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
