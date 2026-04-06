@@ -1,54 +1,112 @@
 ---
 title: Generate SSH key
+description: Create an Ed25519 SSH key pair, hook it into ssh-agent, and install the public key on a server or Git hosting.
+created: 2023-06-30
+updated: 2026-04-06
 ---
 
-Ed25519 uses elliptic curve cryptography with good security and performance.
+Ed25519 is the default choice for new keys: small keys, strong security, and good performance. Use **RSA** only when you must support legacy systems that do not accept Ed25519.
 
-## Create new key
+## Create a key pair
 
-```shell
-ssh-keygen -t ed25519 -C "$(whoami)@$(hostname)" -P "" -f ~/.ssh/id_ed25519
+Interactive generation (lets you set a passphrase at the prompt—recommended):
+
+```bash
+ssh-keygen -t ed25519 -C "your@email.com" -f ~/.ssh/id_ed25519
 ```
 
-or if you prefer email address
+Non-interactive with an **empty** passphrase (scripts or disposable environments only):
 
-```shell
-ssh-keygen -t ed25519 -C "your@email.com" -P "" -f ~/.ssh/id_ed25519
+```bash
+ssh-keygen -t ed25519 -C "$(whoami)@$(hostname -f 2>/dev/null || hostname)" -f ~/.ssh/id_ed25519 -N ""
 ```
 
-Start the SSH agent in the background:
+:::caution
+Empty passphrases protect nothing if the private key file is copied. Prefer an interactive run with a passphrase for laptops and long-lived keys.
+:::
 
-```shell
+Comment (`-C`) is a public label (often your email); it does not change cryptography.
+
+## ssh-agent and SSH config
+
+Start an agent in the current shell:
+
+```bash
 eval "$(ssh-agent -s)"
 ```
 
-Update your `~/.ssh/config`:
+### macOS (Keychain integration)
+
+Add to `~/.ssh/config`:
 
 ```text
 Host *
- AddKeysToAgent yes
- UseKeychain yes
- IdentityFile ~/.ssh/id_ed25519
- IdentityFile ~/.ssh/id_rsa
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
 ```
 
-Add the private key to the SSH agent on macOS:
+`UseKeychain` and `IdentityFile` for extra keys (for example `~/.ssh/id_rsa`) are **macOS OpenSSH** behaviors; load the key into the agent and store the passphrase in the Keychain:
 
-```shell
+```bash
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
 
-## Copy public key to clipboard
+### Linux and other systems
 
-```shell
-cat ~/.ssh/id_ed25519.pub | pbcopy
+Omit `UseKeychain` (unsupported). Typical `~/.ssh/config` snippet:
+
+```text
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
 ```
 
-Once you have created a new SSH public key, this key can be copied to the `.ssh/authorized_keys` file on remote hosts
-to allow remote login or upload your key to [GitHub](https://github.com/settings/keys)
+Then:
 
-```shell
-ssh-copy-id -i ~/.ssh/id_ed25519.pub root@remote.server.address
+```bash
+ssh-add ~/.ssh/id_ed25519
 ```
 
-[Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+:::note
+On Linux you may need `ssh-askpass` or a desktop keyring so `ssh-add` can prompt for a passphrase in GUI sessions.
+:::
+
+## Copy the public key
+
+**macOS** (copy `~/.ssh/id_ed25519.pub` to the clipboard):
+
+```bash
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+**Linux** (if `xclip` is installed):
+
+```bash
+xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+```
+
+Otherwise print it and paste manually:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+## Authorize on a remote host
+
+Appends your public key to `~/.ssh/authorized_keys` on the server:
+
+```bash
+ssh-copy-id -i ~/.ssh/id_ed25519.pub user@remote.example
+```
+
+:::note
+`ssh-copy-id` ships on many Linux distributions. On macOS it is available in recent releases; if the command is missing, paste the `.pub` line into `~/.ssh/authorized_keys` on the server manually.
+:::
+
+For **GitHub** (and similar), add the **public** key in the provider’s SSH key settings—not the private key.
+
+## Sources
+
+- [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) — Ed25519, ssh-agent, and macOS Keychain flow
+- `man ssh-keygen` / `man ssh-add` — flags such as `-N` (passphrase) and agent behavior
