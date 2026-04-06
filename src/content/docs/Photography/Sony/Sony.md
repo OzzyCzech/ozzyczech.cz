@@ -27,6 +27,10 @@ Quick reference for **Alpha** and **ZV** system bodies: global-shutter / stacked
 | [Sony A6700](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-6700) | APS-C | 26 | 2023 | ~29&nbsp;000&nbsp;Kč |
 | [Sony ZV-E10 II](https://www.sony.com/electronics/interchangeable-lens-cameras/zv-e10m2) | APS-C | 26 | 2024 | ~20&nbsp;000&nbsp;Kč |
 
+## Batteries
+
+- **[SmallRig NP-FZ100 USB-C](https://www.smallrig.com/SmallRig-NP-FZ100-USB-C-Rechargeable-Camera-Battery-4265.html)** (model **4265**) — 2400 mAh replacement for Sony **NP-FZ100**; charges in-housing over **USB-C** (about 5 V / 2.2 A) so you can top up from a power bank or charger without a dedicated dock. Same form factor as the OEM cell; check Sony’s latest firmware notes for your body if third-party packs are restricted.
+
 ## Lenses
 
 - [Sony FE lenses](/photography/sony/sony-fe-lenses/) — full-frame FE glass
