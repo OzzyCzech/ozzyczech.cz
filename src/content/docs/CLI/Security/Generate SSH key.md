@@ -5,7 +5,7 @@ created: 2023-06-30
 updated: 2026-04-06
 ---
 
-Ed25519 is the default choice for new keys: small keys, strong security, and good performance. Use **RSA** only when you must support legacy systems that do not accept Ed25519.
+[Ed25519](https://www.rfc-editor.org/rfc/rfc8032) is defined in **RFC 8032** (Elliptic-curve signature scheme EdDSA); it is the default choice for new SSH keys because keys stay small while security and performance remain strong. Use **RSA** only when you must support legacy systems that do not accept Ed25519.
 
 ## Create a key pair
 
@@ -108,5 +108,6 @@ For **GitHub** (and similar), add the **public** key in the provider’s SSH key
 
 ## Sources
 
+- [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://www.rfc-editor.org/rfc/rfc8032) — normative definition of Ed25519 (and Ed448)
 - [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) — Ed25519, ssh-agent, and macOS Keychain flow
 - `man ssh-keygen` / `man ssh-add` — flags such as `-N` (passphrase) and agent behavior
