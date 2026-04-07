@@ -5,20 +5,24 @@ created: 2022-11-14
 updated: 2026-04-07
 ---
 
-- [Render](https://render.com/) - the fastest way how to host database/website/containers
-- [Railway](https://railway.app/) - code centric hosting
-- [Vercel](https://vercel.com/dashboard) - serverless hosting for modern websites
-- [Fly.io](https://fly.io/) - deploy app close to your users
-- [Netlify](https://www.netlify.com/) - serverless hosting for modern websites
-- [Zerops.io](https://zerops.io/) - Dev-first cloud platform that builds, deploys, runs and manages your apps
+Overview of hosting platforms for web applications, APIs, and static sites — from serverless PaaS to dedicated cloud servers.
 
-### GitHub Pages subdomains
+## Cloud / PaaS
+
+- **[Render](https://render.com/)** — hosts databases, web services, and containers with automatic deploys from Git
+- **[Railway](https://railway.app/)** — code-centric deployment platform with built-in databases and environment management
+- **[Vercel](https://vercel.com/)** — serverless hosting optimized for frontend frameworks and edge functions
+- **[Fly.io](https://fly.io/)** — runs containerized apps in regions close to users
+- **[Netlify](https://www.netlify.com/)** — static site and serverless function hosting with Git-based CI/CD
+- **[Zerops.io](https://zerops.io/)** — dev-first cloud platform for building, deploying, and running apps
+
+## Server hosting
+
+- **[Vultr](https://www.vultr.com/)** — cloud compute with VMs, bare metal, and Kubernetes
+- **[Digital Ocean](https://www.digitalocean.com/)** — straightforward cloud hosting with VMs, managed databases, and app platform
+- **[Kinsta](https://kinsta.com/application-hosting/)** — application and database hosting on Google Cloud
+- **[Amazon S3](https://aws.amazon.com/s3/)** — object storage service, commonly used for static asset hosting
+
+## GitHub Pages subdomains
 
 - **[JS.ORG](https://js.org/)** — free `*.js.org` subdomains for JavaScript projects hosted on GitHub Pages; register via pull request to the js.org repository
-
-### Server hosting
-
-- [Vultr](https://www.vultr.com/) - Instantly deploy High Performance Cloud Servers
-- [Digital Ocean](https://www.digitalocean.com/) - simplest cloud hosting
-- [Kinsta](https://kinsta.com/application-hosting/) - fast and scalable application hosting
-- [Amazon S3](https://aws.amazon.com/s3/) - Simple Storage Service
