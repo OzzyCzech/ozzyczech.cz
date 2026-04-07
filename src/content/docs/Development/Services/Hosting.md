@@ -2,7 +2,7 @@
 title: Hosting
 description: Cloud and serverless hosting platforms for deploying modern web applications.
 created: 2022-11-14
-updated: 2026-04-06
+updated: 2026-04-07
 ---
 
 - [Render](https://render.com/) - the fastest way how to host database/website/containers
@@ -11,6 +11,10 @@ updated: 2026-04-06
 - [Fly.io](https://fly.io/) - deploy app close to your users
 - [Netlify](https://www.netlify.com/) - serverless hosting for modern websites
 - [Zerops.io](https://zerops.io/) - Dev-first cloud platform that builds, deploys, runs and manages your apps
+
+### GitHub Pages subdomains
+
+- **[JS.ORG](https://js.org/)** — free `*.js.org` subdomains for JavaScript projects hosted on GitHub Pages; register via pull request to the js.org repository
 
 ### Server hosting
 
