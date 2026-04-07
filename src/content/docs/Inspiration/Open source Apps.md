@@ -2,24 +2,12 @@
 title: Open source Apps
 description: Curated list of self-hosted open source applications for monitoring, notes, and productivity.
 created: 2024-11-05
-updated: 2026-04-06
+updated: 2026-04-07
 ---
 
-#### [Uptime Kuma](https://github.com/louislam/uptime-kuma)
+Self-hosted open-source apps worth running yourself. More options at **[Selfhostlist](https://selfhostlist.org)**.
 
-Uptime Kuma is an easy-to-use self-hosted monitoring tool.
-
-#### [Memos](https://www.usememos.com/)
-
-Open Source, Self-hosted note-taking app.
-
-#### [Kara Keep](https://karakeep.app/)
-
-Quickly save links, notes, and images and karakeep will automatically tag them for you using AI for faster retrieval.
-
-#### [Vert.sh](https://vert.sh/)
-
-The next-generation file converter. [Open source](https://github.com/VERT-sh/VERT), fully local\* and free forever.
-
-
-Get more from [Selfhostlist](https://selfhostlist.org)
+- **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** — self-hosted uptime monitoring with a web UI and multi-channel alert support
+- **[Memos](https://www.usememos.com/)** — lightweight self-hosted note-taking app with a plain-text and Markdown interface
+- **[Karakeep](https://karakeep.app/)** — self-hosted bookmark and note manager that uses AI to auto-tag saved links, images, and text
+- **[Vert.sh](https://vert.sh/)** — [open-source](https://github.com/VERT-sh/VERT) file converter that runs fully in the browser without uploading files to a server
