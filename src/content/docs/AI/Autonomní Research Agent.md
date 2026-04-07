@@ -85,7 +85,3 @@ Jednou za čas lze spustit **nezávislý audit**, který:
 - **Persistentní paměť mimo kontext** – PostgreSQL + pgvector jako skutečná long-term memory
 - **Živý blueprint** – výzkum se nepřekládá jen do faktů, ale do návrhu systému
 - **Model-agnostičnost** – databáze přežije výměnu modelu
-
-## Viz také
-
-- [Architektura AI agentů – analogie kuchyně](/AI/AI-agents---analogie-kuchyne)
