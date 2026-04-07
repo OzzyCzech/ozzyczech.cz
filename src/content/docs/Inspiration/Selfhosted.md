@@ -1,11 +1,11 @@
 ---
-title: Open source Apps
-description: Curated list of self-hosted open source applications for monitoring, notes, and productivity.
+title: Selfhosted
+description: Self-hosted open-source applications for monitoring, notes, bookmarking, and productivity.
 created: 2024-11-05
 updated: 2026-04-07
 ---
 
-Self-hosted open-source apps worth running yourself. More options at **[Selfhostlist](https://selfhostlist.org)**.
+Self-hosted open-source apps worth running yourself. More options at **[Awesome Homelab](https://www.awesome-homelab.com)**.
 
 - **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** — self-hosted uptime monitoring with a web UI and multi-channel alert support
 - **[Memos](https://www.usememos.com/)** — lightweight self-hosted note-taking app with a plain-text and Markdown interface
