@@ -1,67 +1,17 @@
 ---
 title: Terminals
+description: Terminal emulator apps for macOS, from lightweight to GPU-accelerated and AI-powered.
+created: 2026-04-01
+updated: 2026-04-07
 ---
 
-### [cmux](https://www.cmux.dev/)
+Terminal emulators for macOS. All are installable via `brew install --cask <name>`.
 
-Native macOS terminal built on Ghostty, designed for managing multiple AI coding agents. Features vertical tabs, notification rings, split panes, and a scriptable socket API.
-
-```shell
-brew install --cask cmux
-```
-
-### [Ghostty](https://ghostty.org/)
-
-GPU-accelerated terminal with native macOS feel, ligatures, and image protocol support. Free and open source.
-
-```shell
-brew install --cask ghostty
-```
-
-### [iTerm2](https://iterm2.com/)
-
-A powerful replacement for the default Terminal app. Split panes, search, autocomplete, paste history, and extensive customization. Free and open source.
-
-```shell
-brew install --cask iterm2
-```
-
-### [Warp](https://www.warp.dev/)
-
-Modern, AI-powered terminal with blocks, command palette, and collaborative features. Built for speed and developer workflow.
-
-```shell
-brew install --cask warp
-```
-
-### [Kitty](https://sw.kovidgoyal.net/kitty/)
-
-GPU-based terminal emulator with fast rendering, ligatures, and image support. Highly configurable and lightweight.
-
-```shell
-brew install --cask kitty
-```
-
-### [Alacritty](https://alacritty.org/)
-
-A fast, cross-platform terminal emulator written in Rust. GPU-accelerated rendering, minimal configuration, and focuses on performance.
-
-```shell
-brew install --cask alacritty
-```
-
-### [WezTerm](https://wezterm.org/)
-
-A GPU-accelerated cross-platform terminal emulator written in Rust. Offers multiplexing, ligatures, color emoji, and extensive Lua-based configuration. Features built-in image protocol support and rich text formatting.
-
-```shell
-brew install --cask wezterm
-```
-
-### [Hyper](https://hyper.is/)
-
-Terminal built on web technologies (HTML, CSS, JS). Extensible via plugins and themes.
-
-```shell
-brew install --cask hyper
-```
+- **[Ghostty](https://ghostty.org/)** — GPU-accelerated terminal with native macOS feel, ligatures, and image protocol support; open source
+- **[cmux](https://www.cmux.dev/)** — macOS terminal built on Ghostty for managing multiple AI coding agents; features vertical tabs, split panes, and a socket API
+- **[iTerm2](https://iterm2.com/)** — long-standing Terminal replacement with split panes, search, autocomplete, paste history, and deep customization; open source
+- **[Warp](https://www.warp.dev/)** — AI-assisted terminal with command blocks, a command palette, and team sharing features
+- **[Kitty](https://sw.kovidgoyal.net/kitty/)** — GPU-accelerated terminal with ligatures, image support, and a tiling window system; highly configurable
+- **[WezTerm](https://wezterm.org/)** — GPU-accelerated cross-platform terminal written in Rust; supports multiplexing, ligatures, and Lua-based configuration
+- **[Alacritty](https://alacritty.org/)** — minimal, GPU-accelerated terminal written in Rust focused on performance and simplicity
+- **[Hyper](https://hyper.is/)** — terminal built on web technologies (HTML/CSS/JS) with a plugin and theme ecosystem

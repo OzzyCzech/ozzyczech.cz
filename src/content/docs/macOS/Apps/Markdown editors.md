@@ -1,93 +1,24 @@
 ---
 title: Markdown editors
+description: Markdown and plain-text editors for macOS, from distraction-free writing apps to full knowledge bases.
+created: 2020-10-12
+updated: 2026-04-07
 ---
 
-## [FSNotes](https://fsnot.es/)
+Markdown-focused writing and note apps for macOS. For note-taking apps see also [Notes and calendar](/macos/apps/notes-and-calendar/).
 
-Modern notes manager for macOS and iOS. Respects open formats like GitHub Flavored Markdown; simple and fast. Supports TextBundle, iCloud sync, tags, cross-note links with `[[double brackets]]`, Mermaid and MathJax, optional Git versioning, and encrypted notes.
-
-## [Obsidian](https://obsidian.md/)
-
-Obsidian is a powerful **knowledge base** on top of a **local folder** of plain text Markdown files.
-
-```shell
-brew install obsidian
-```
-
-## [Joplin](https://joplinapp.org/)
-
-Joplin is an open source note-taking app. Capture your thoughts and securely access them from any device.
-
-## [Bear](https://bear.app/)
-
-Markdown Notes for iPhone, iPad, and Mac. Bear is a beautiful, flexible writing app for crafting notes and prose. Download from: https://bear.app/
-
-## [MarkText](https://github.com/marktext/marktext)
-
-A simple and elegant markdown editor, available for Linux, macOS and Windows.
-
-```shell
-brew install --cask mark-text
-```
-
-## [Typora](https://typora.io/)
-
-I am just found the best (_for me_) Markdown editor on the planet. Why?
-
-- it's freeware and opensource
-- it's minimalistic and easy to use
-- combine wysiwyg and plaintext editing
-- support folders, [front matter](https://jekyllrb.com/docs/front-matter/), custom styles,
-- allow quick file open ⌘ + ⇧ + O 😍
-
-```shell
-brew install --cask typora
-```
-
-## [Byword](https://bywordapp.com/)
-
-Byword is a Markdown editor that offers a clean and simple interface. It also includes a range of
-features such as syntax highlighting, distraction-free mode, and export options
-
-## [iA Writer](https://ia.net/writer)
-
-iA Writer is a minimal, distraction-free writing app for Mac, iOS, and Android. It's the perfect tool for writing long texts, essays, articles, and books.
-
-## [Paper](https://papereditor.app/)
-
-Paper is a beautiful, flexible writing app for crafting notes and prose in Markdown.
-
-## [Nota](https://nota.md/)
-
-Pro notes app designed for local Markdown files. From simple notes and todo lists, to articles and journals, to wikis and second brain — no accounts, no subscription, no vendor lock-in.
-
-## [Notable](https://notable.app/)
-
-Markdown note-taking app supports tags, dark theme, zen mode, multi edit and so on
-
-```shell
-brew install --cask notable
-```
-
-## [MacDown](https://macdown.uranusjr.com/)
-
-MacDown is a free and open-source Markdown editor that offers a clean and intuitive
-interface. It also includes a live preview and syntax highlighting.
-
-```shell
-brew install --cask macdown
-```
-
-## [GitJournal](https://gitjournal.io/)
-
-Mobile first Markdown Notes integrated with Git. Can be integrated with other editors.
-
-## [Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
-
-```shell
-brew install --cask visual-studio-code
-```
-
-## [Mak](https://mak.ink/)
-
-Mak is a universal in-browser [notepad](https://inns.studio/mak) with build in Markdown support.
+- **[Obsidian](https://obsidian.md/)** — knowledge base and note editor built on a local folder of Markdown files; extensible with a large plugin ecosystem
+- **[FSNotes](https://fsnot.es/)** — fast note manager supporting GitHub Flavored Markdown, TextBundle, iCloud sync, `[[wikilinks]]`, Mermaid, MathJax, tags, and optional Git versioning
+- **[Nota](https://nota.md/)** — pro Markdown notes app for local files; no account or subscription required
+- **[Bear](https://bear.app/)** — polished Markdown editor for Mac and iOS with tags and iCloud sync
+- **[iA Writer](https://ia.net/writer)** — minimal writing environment with focus mode, syntax highlighting for content style, and export to Word/PDF
+- **[Typora](https://typora.io/)** — WYSIWYG Markdown editor that renders formatting inline rather than showing raw syntax
+- **[Joplin](https://joplinapp.org/)** — open-source note-taking app with end-to-end encryption and sync via Nextcloud, Dropbox, or WebDAV
+- **[Paper](https://papereditor.app/)** — minimal macOS Markdown editor with a clean, distraction-free interface
+- **[MarkText](https://github.com/marktext/marktext)** — open-source WYSIWYG Markdown editor for Linux, macOS, and Windows
+- **[Byword](https://bywordapp.com/)** — lightweight Markdown editor with focus mode, syntax highlighting, and publishing to WordPress and Medium
+- **[Notable](https://notable.app/)** — Markdown note-taking app with tags, dark theme, and multi-note editing
+- **[MacDown](https://macdown.uranusjr.com/)** — free and open-source split-pane Markdown editor with live preview
+- **[GitJournal](https://gitjournal.io/)** — mobile Markdown note app with Git-backed storage; integrates with desktop editors
+- **[Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)** — general code editor with built-in Markdown preview and extensions for enhanced editing
+- **[Mak](https://mak.ink/)** — in-browser plain-text notepad with Markdown support; no install required
