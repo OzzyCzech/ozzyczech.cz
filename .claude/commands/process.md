@@ -68,7 +68,7 @@ When editing or creating a page:
 After writing, verify within a realistic scope:
 
 - Review pages in the **same category** and any **directly linked pages** for contradictions
-- Add links to this content from related pages where it would be useful
+- Add links to this content from related pages only when the existing page explicitly covers the same topic — do not add back-links just because pages share a theme
 - If you notice a broader inconsistency outside this scope, flag it to the user rather than silently editing unrelated pages
 
 ## 6. Commit and push
