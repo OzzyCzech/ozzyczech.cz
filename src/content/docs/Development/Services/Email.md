@@ -2,42 +2,43 @@
 title: Email
 description: Email hosting providers and transactional email services for developers.
 created: 2022-01-20
-updated: 2026-04-06
+updated: 2026-04-07
 ---
 
-### Email hosting
+Reference for email hosting, transactional APIs, newsletter platforms, and disposable email tools.
 
-- [iCloud+](https://www.apple.com/cz/icloud/) - email hosting from Apple
-- [Fastmail](https://www.fastmail.com/) - email hosting from $3/month
-- [Namecheap](https://www.namecheap.com/hosting/email/) - email hosting from $10/year
-- [Hostinger](https://www.hostinger.com/email-hosting) - email hosting from $0.99/month
-- [Mailbox](https://mailbox.org/en/services#e-mail-account) - email hosting from Germany for 1€/month
-- [Tutanota](https://tutanota.com) - secure email hosting 1€/month
-- [Protonmail](https://protonmail.com/) - Secure Email Based in Switzerland from 4€/month
+## Email hosting
 
-You can create free email aliases for your domain name with https://improvmx.com/
+- **[iCloud+](https://www.apple.com/icloud/)** — email hosting with custom domain support for Apple users
+- **[Fastmail](https://www.fastmail.com/)** — independent email hosting focused on privacy and performance
+- **[Namecheap](https://www.namecheap.com/hosting/email/)** — affordable email hosting bundled with domain registration
+- **[Hostinger](https://www.hostinger.com/email-hosting)** — basic email hosting for small sites
+- **[Mailbox.org](https://mailbox.org/en/services#e-mail-account)** — privacy-focused email hosting based in Germany
+- **[Tuta](https://tuta.com)** — end-to-end encrypted email with calendar and contacts
+- **[Proton Mail](https://proton.me/mail)** — end-to-end encrypted email based in Switzerland
+- **[ImprovMX](https://improvmx.com/)** — free email alias forwarding for custom domains
 
-### Email API service
+## Email API
 
-- [MailGun](https://www.mailgun.com/) - email API service
-- [Postmark app](https://postmarkapp.com/) - transactional email service
-- [AWS SES](https://aws.amazon.com/ses/) - Amazon Simple Email Service
-- [Send Grid](https://sendgrid.com/) - email API service
-- [ManDrill](http://www.mandrill.com/) - transactional email service
-- [Resend](https://resend.com/) - Email API for developers
+- **[Mailgun](https://www.mailgun.com/)** — transactional email API with SMTP relay and log analytics
+- **[Postmark](https://postmarkapp.com/)** — transactional email delivery focused on inbox placement
+- **[AWS SES](https://aws.amazon.com/ses/)** — Amazon Simple Email Service for high-volume sending
+- **[SendGrid](https://sendgrid.com/)** — email API for transactional and marketing email
+- **[Mandrill](https://mailchimp.com/features/transactional-email/)** — transactional email add-on for Mailchimp
+- **[Resend](https://resend.com/)** — email API for developers with React Email integration
 
-### Newsletter services
+## Newsletter services
 
-- [Sendy](https://sendy.co/) - Send newsletters, 100x cheaper with [AWS SES](https://aws.amazon.com/ses/)
-- [Substack](https://substack.com/) - Start a paid newsletter
+- **[Sendy](https://sendy.co/)** — self-hosted newsletter tool that sends via [AWS SES](https://aws.amazon.com/ses/)
+- **[Substack](https://substack.com/)** — newsletter and subscription publishing platform
 
-### Temporary email
+## Temporary email
 
-- [Email.ml](https://email.ml/) - Minimalist temporary Email
-- [Temp Mail](https://temp-mail.org/en/) - Temporary Email
-- [10 Minute Mail](https://10minutemail.com/) - Temporary Email
+- **[Email.ml](https://email.ml/)** — minimalist temporary email
+- **[Temp Mail](https://temp-mail.org/en/)** — disposable email with a simple web interface
+- **[10 Minute Mail](https://10minutemail.com/)** — auto-expiring temporary email address
 
-### Disposable email lists
+## Disposable domain lists
 
-- [disposable-email-domains](https://github.com/disposable-email-domains/disposable-email-domains/)
-- [disposable/disposable](https://github.com/disposable/disposable)
+- **[disposable-email-domains](https://github.com/disposable-email-domains/disposable-email-domains/)** — community-maintained list of disposable email domains
+- **[disposable/disposable](https://github.com/disposable/disposable)** — aggregated blocklist of throwaway email providers
