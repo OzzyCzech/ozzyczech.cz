@@ -2,7 +2,7 @@
 title: Frontend frameworks
 description: Curated list of frontend JavaScript frameworks and UI libraries for the browser.
 created: 2026-02-13
-updated: 2026-04-06
+updated: 2026-04-07
 ---
 
 A curated list of **frontend** JavaScript frameworks: UI libraries, full-stack frameworks, and tools for the browser.
@@ -17,6 +17,7 @@ A curated list of **frontend** JavaScript frameworks: UI libraries, full-stack f
 
 - **[Vue](https://vuejs.org/)** — Progressive framework for UIs: use as a library or scale up with tooling.
 - **[Nuxt](https://nuxt.com/)** — Vue framework for full-stack apps, SSG, and SSR with great DX.
+- **[shadcn-vue](https://www.shadcn-vue.com/)** — Vue port of shadcn/ui; copy-paste component collection built on Radix Vue and Tailwind CSS that you own and customize directly in your codebase
 
 ## Svelte
 
