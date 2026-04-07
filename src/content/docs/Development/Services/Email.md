@@ -32,6 +32,10 @@ Reference for email hosting, transactional APIs, newsletter platforms, and dispo
 - **[Sendy](https://sendy.co/)** — self-hosted newsletter tool that sends via [AWS SES](https://aws.amazon.com/ses/)
 - **[Substack](https://substack.com/)** — newsletter and subscription publishing platform
 
+## Testing
+
+- **[Mail Tester](https://www.mail-tester.com/)** — online spam score checker; send an email to the provided address and get a deliverability report
+
 ## Temporary email
 
 - **[Email.ml](https://email.ml/)** — minimalist temporary email
