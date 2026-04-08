@@ -1,11 +1,28 @@
 ---
 title: AI Tools
-description: Přehled AI nástrojů pro tvorbu aplikací, kódování, design, generování obrázků a videa, správu znalostí a zpracování textu.
+description: Přehled AI nástrojů — chatboti, platformy, app buildery, kódování, design, generování obrázků a videa, správa znalostí a zpracování textu.
 created: 2026-04-08
 updated: 2026-04-08
 ---
 
 Přehled AI nástrojů podle kategorie použití.
+
+## 💬 Chatbots
+
+Hlavní AI chatboti dostupné jako webová rozhraní.
+
+- **[ChatGPT](https://chatgpt.com/)** — konverzační AI od OpenAI; jedno z nejpoužívanějších LLM rozhraní
+- **[Claude](https://claude.ai/)** — konverzační AI od Anthropic; zaměřený na bezpečnost a dlouhý kontext
+- **[Gemini](https://gemini.google.com/)** — konverzační AI od Googlu; integrovaný s Google Workspace a Search
+- **[Perplexity](https://www.perplexity.ai/)** — AI vyhledávač odpovídající na otázky s citovanými zdroji v reálném čase
+
+## 🗄️ Platforms
+
+- **[Hugging Face](https://huggingface.co/)** — kolaborativní platforma pro sdílení AI modelů, datasetů a aplikací
+- **[Ollama](https://ollama.com/)** — spouštění LLM lokálně na vlastním počítači
+- **[Replicate](https://replicate.com/)** — spouštění open-source AI modelů v cloudu přes jednoduché API
+- **[OpenRouter](https://openrouter.ai/)** — jednotné API pro přístup k modelům od OpenAI, Anthropic, Google, Meta a dalších
+- **[LM Studio](https://lmstudio.ai/)** — desktopová aplikace pro spouštění lokálních LLM s jednoduchým GUI
 
 ## 🏗️ App Builders
 
