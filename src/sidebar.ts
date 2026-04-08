@@ -10,7 +10,7 @@ export const sidebar: StarlightUserConfig['sidebar'] = [
 			{label: 'Claude Code', collapsed: false, autogenerate: {directory: 'AI/Claude Code'}},
 			{label: 'Guides', collapsed: false, autogenerate: {directory: 'AI/Guides'}},
 			{label: 'Tools', collapsed: false, autogenerate: {directory: 'AI/Tools'}},
-			'AI/Benchmarks',
+			'ai/benchmarks',
 		],
 	},
 	{label: 'Development', collapsed: false, autogenerate: {directory: 'Development', collapsed: true}},
