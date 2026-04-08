@@ -27,4 +27,4 @@ Curated list of plugins, skills, and open-source projects worth following for AI
 
 ## 🔗 Related
 
-- [Claude Code](/AI/Agents/Claude%20Code) — plugins and settings reference
+- [Claude Code](/AI/Claude%20Code/Claude%20Code) — plugins and settings reference
