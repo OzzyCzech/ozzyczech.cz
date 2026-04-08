@@ -15,3 +15,18 @@ mDNS (Multicast DNS) umožňuje IoT zařízením oznámit svou přítomnost v lo
 | Windows | Bonjour | [instalátor od Apple](https://support.apple.com/downloads/bonjour-for-windows) |
 | Linux | avahi | obvykle předinstalováno (`avahi-daemon`) |
 | ESP32 / ESP-IDF | mDNS component | [dokumentace Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/protocols/mdns.html) |
+
+## Service types
+
+Zařízení oznamují své služby pomocí mDNS service types. Nejčastěji používané:
+
+| Service type | Protokol | Poznámka |
+|---|---|---|
+| `_smb._tcp` | SMB | sdílení souborů — aktuálně doporučené Apple i NAS výrobci |
+| `_http._tcp` | HTTP | webová rozhraní, API |
+| `_mqtt._tcp` | MQTT | IoT messaging |
+| `_afpovertcp._tcp` | AFP | starší Apple Filing Protocol — **deprecated**, Apple doporučuje SMB |
+
+:::caution
+AFP (Apple Filing Protocol) je od macOS 11 deprecated. Nová zařízení a NAS by měla pro sdílení souborů používat SMB (`_smb._tcp`).
+:::
