@@ -1,5 +1,8 @@
 ---
-title: Timelapse image capture
+title: Timelapse image capture with fswebcam
+description: Jak zachytávat snímky webkamerou pomocí fswebcam a cronu a složit je do timelapse videa přes ffmpeg.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 ```shell

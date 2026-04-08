@@ -1,5 +1,8 @@
 ---
-title: Create image slideshow
+title: Create image slideshow with ffmpeg
+description: Jak vytvořit MP4 slideshow z JPG obrázků pomocí ffmpeg — s volitelnou hudbou na pozadí.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 Following will take all `*.jpg` images from current folder and create mp4 image

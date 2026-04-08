@@ -1,5 +1,8 @@
 ---
 title: Exiftool tips and tricks
+description: Přehled praktických příkazů pro exiftool — třídění fotek, oprava dat, GPS metadata a export do JSON.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 ## Organize images

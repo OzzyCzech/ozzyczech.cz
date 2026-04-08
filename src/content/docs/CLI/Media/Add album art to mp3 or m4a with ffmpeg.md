@@ -1,14 +1,11 @@
 ---
 title: Add album art to mp3 or m4a with ffmpeg
+description: Bash funkce pro hromadné vložení cover image do MP3 a M4A souborů pomocí ffmpeg.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
-Do you want your audio files to look as good as they sound? Adding a cover image
-to your `MP3` or `M4A` files can significantly enhance your music library's
-visual appeal. With this nifty Bash function, set-cover, you can automate the
-process of embedding cover images into your audio files using `ffmpeg`.
-
-Copy the function definition and paste it into your terminal or add it to your
-`.bashrc` or `.bash_profile` file to make it available in every session.
+Bash funkce `set-cover` pro vložení cover image do `MP3` nebo `M4A` souborů. Přidej ji do `.bashrc` nebo `.bash_profile`.
 
 ```shell
 # Set cover image to audio files

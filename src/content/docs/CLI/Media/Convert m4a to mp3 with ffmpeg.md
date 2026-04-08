@@ -1,5 +1,8 @@
 ---
 title: Convert m4a to mp3 with ffmpeg
+description: Hromadný převod M4A souborů na MP3 pomocí ffmpeg a libmp3lame.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 Convert all `m4a` files in the current directory to `mp3` files.

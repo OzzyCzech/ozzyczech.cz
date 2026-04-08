@@ -1,5 +1,8 @@
 ---
 title: Get metadata with ffprobe
+description: Jak číst metadata z audio a video souborů pomocí ffprobe a jq.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 To extract metadata from a media file using `ffprobe`, you can use the following command:

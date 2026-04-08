@@ -1,5 +1,8 @@
 ---
 title: Convert GIF to WebM
+description: Jak převést animovaný GIF na WebM video pomocí ffmpeg a vložit ho do HTML.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 ```shell
