@@ -1,120 +1,79 @@
 ---
-title: Security list
+title: Security List
+description: Přehled nástrojů pro soukromí a bezpečnost — prohlížeče, hesla, VPN, messaging a šifrované úložiště.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
-This is list of security tools I use and would recommend to others.
+Osobní přehled nástrojů pro digitální bezpečnost a soukromí.
 
-## Browsers
+## 🌐 Prohlížeče
 
-- [Brave](https://brave.com/download/) - block ads and cookie trackers
-- [FireFox](https://www.mozilla.org/cs/firefox/new/) or [LibreWolf](https://librewolf.net/) fork
-- [Opera](https://www.opera.com/)
+- **[Brave](https://brave.com/)** — Chromium-based prohlížeč s vestavěným blokátorem reklam a trackerů
+- **[Firefox](https://www.mozilla.org/firefox/)** — open-source prohlížeč od Mozilla; dobrý základ pro privacy hardening
+- **[LibreWolf](https://librewolf.net/)** — fork Firefoxu s předkonfigurovaným privacy nastavením a odstraněnou telemetrií
 
-Check Open-source audit of web browser privacy [privacytests.org](https://privacytests.org/) -
+Srovnání prohlížečů z hlediska soukromí: **[privacytests.org](https://privacytests.org/)**
 
-### Browsers extensions
+### Rozšíření
 
-- [DuckDuckGo Privacy Essentials](https://duckduckgo.com/?q=DuckDuckGo+Privacy+Essentials) for all Browsers
-- [uBlock Origin](https://github.com/gorhill/uBlock) - An efficient blocker for Chromium and Firefox. Fast and lean.
-- [Privaci Badger](https://privacybadger.org/) - Privacy Badger automatically learns to block invisible trackers.
-- [Zen](https://zenprivacy.net/) - Zen is a browser extension that helps you to protect your privacy and security online.
-- [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Encrypt the web! HTTPS Everywhere is a Firefox extension to
-  protect your communications by enabling HTTPS encryption automatically on sites that are known to support it, even
-  when you type URLs or follow links that omit the https: prefix.
+- **[uBlock Origin](https://github.com/gorhill/uBlock)** — efektivní open-source blokátor reklam a trackerů pro Chrome a Firefox
+- **[Privacy Badger](https://privacybadger.org/)** — rozšíření od EFF; blokuje trackery na základě jejich chování
+- **[DuckDuckGo Privacy Essentials](https://duckduckgo.com/app)** — blokování trackerů, vynucení HTTPS a hodnocení soukromí stránek
+- **[Zen](https://zenprivacy.net/)** — blokátor reklam a skriptů pro Chrome a Firefox
 
-## Search engines
+## 🔍 Vyhledávače
 
-Search engines that don't track you:
+Vyhledávače bez sledování uživatelů:
 
-- [DuckDuckGo](https://duckduckgo.com/)
-- [Startpage](https://www.startpage.com/)
-- [Qwant](https://www.qwant.com/)
+- **[DuckDuckGo](https://duckduckgo.com/)** — nejrozšířenější privacy-friendly vyhledávač
+- **[Startpage](https://www.startpage.com/)** — vrací výsledky Google bez sledování
+- **[Qwant](https://www.qwant.com/)** — evropský vyhledávač bez profilování uživatelů
 
-Don't expect security search from Google 🫣
+## 📧 Email
 
-### Emails
+- **[ProtonMail](https://proton.me/mail)** — end-to-end šifrovaný email; servery ve Švýcarsku
+- **[Fastmail](https://www.fastmail.com/)** — rychlý a spolehlivý email bez reklam; není E2E šifrovaný ale nabízí silné soukromí
+- **[Tuta](https://tuta.com/)** — E2E šifrovaný email a kalendář; dříve Tutanota
+- **[SimpleLogin](https://simplelogin.io/)** — aliasy emailových adres pro anonymní registrace; akvizovaný Protonem
 
-- [ProtonMail](https://proton.me/mail) - Secure email with end-to-end encryption
-- [Fastmail](https://www.fastmail.com/) - Secure, private, ad-free email for your business
-- [Tutanota](https://tutanota.com/cs/) - Secure email for everybody
+## 🔑 Správci hesel
 
-if you need an anonymous email aliases try [SimpleLogin](https://simplelogin.io/)
+- **[1Password](https://1password.com/)** — komerční správce hesel s podporou týmů a bezpečnostními audity; doporučeno pro firemní použití
+- **[Bitwarden](https://bitwarden.com/)** — open-source správce hesel; lze self-hostovat; auditovaný třetí stranou
+- **[Dashlane](https://www.dashlane.com/)** — komerční správce hesel s VPN a dark web monitoringem
+- **[NordPass](https://nordpass.com/)** — správce hesel od NordVPN; XChaCha20 šifrování
+- **[Keeper](https://www.keepersecurity.com/)** — správce hesel zaměřený na firmy s zero-knowledge architekturou
+- **[Buttercup](https://buttercup.pw/)** — open-source správce hesel pro desktop a mobil; ukládá do vlastního souboru
+- **[iCloud Keychain](https://support.apple.com/en-us/HT204085)** — vestavěný správce hesel na Apple zařízeních; integrovaný s Safari a systémem
 
-### Password managers
+## 💬 Messaging
 
-#### [1Passowrd](https://1password.com/)
+- **[Signal](https://signal.org/)** — end-to-end šifrovaný messenger; open-source protokol považovaný za gold standard zabezpečené komunikace
+- **[Session](https://getsession.org/)** — decentralizovaný messenger bez telefonního čísla; směruje zprávy přes onion routing síť
+- **[Threema](https://threema.ch/)** — placený šifrovaný messenger; nevyžaduje telefonní číslo ani email; server ve Švýcarsku
+- **[Wire](https://wire.com/)** — E2E šifrovaný messenger a platforma pro týmovou komunikaci; open-source
 
-1Password is a password manager developed by AgileBits Inc. It provides a place for users to store various passwords,
-software licenses, and other sensitive information in a virtual vault that is locked with a PBKDF2-guarded master
-password.
+Srovnání bezpečnosti: **[securemessagingapps.com](https://www.securemessagingapps.com/)**
 
-#### [BitWarden](https://bitwarden.com)
+## 🌍 DNS
 
-BitWarden is a free and open-source password management service that stores sensitive information such as website
+- **[1.1.1.1](https://one.one.one.one/)** — rychlý DNS resolver od Cloudflare s volitelnou blokací malware (1.1.1.2) a volitelným VPN klientem
+- **[Quad9 (9.9.9.9)](https://www.quad9.net/)** — DNS resolver s automatickým blokováním škodlivých domén
 
-#### The others
+## 🔒 VPN
 
-Any password manager is better than no password manager. If you don't like 1Password or BitWarden, try one of these:
+- **[Mullvad](https://mullvad.net/)** — švédský VPN bez uživatelských účtů; platba kryptoměnou nebo hotovostí; pravidelně auditovaný
+- **[IVPN](https://www.ivpn.net/)** — VPN s důrazem na anonymitu; nezaznamenává logy; auditovaný
+- **[ProtonVPN](https://protonvpn.com/)** — švýcarský VPN od tvůrců ProtonMail; open-source klienti; auditovaný
+- **[Njalla](https://njal.la/)** — privacy-first doménový registrátor a VPN provozovaný spoluzakladatelem Pirate Bay
 
-- [Dashline](https://www.dashlane.com/)
-- [LastPass](https://www.lastpass.com/)
-- [NordPass](https://nordpass.com/)
-- [Keeper Security](https://www.keepersecurity.com/)
-- [Buttercup](https://buttercup.pw/)
-- [iCloud Keychain](https://support.apple.com/en-us/HT204085)
+## 🗂️ Šifrované úložiště
 
-## Messaging apps
+- **[Proton Drive](https://proton.me/drive/)** — end-to-end šifrované cloudové úložiště od Protonu
+- **[NordLocker](https://nordlocker.com/)** — šifrování souborů lokálně i v cloudu; od NordVPN
+- **[pCloud](https://www.pcloud.com/)** — cloudové úložiště s volitelným client-side šifrováním (pCloud Crypto)
 
-##### [Signal](https://signal.org/)
+## 🔐 Autentizace
 
-Say "hello" to a different messaging experience. An unexpected focus on privacy,
-combined with all the features you expect.
-
-##### [Session](https://getsession.org/)
-
-Session is a private messenger that aims to remove any chance of metadata
-collection by routing all messages through an onion routing network.
-
-##### [Threema](https://threema.ch/en)
-
-Threema is the world’s favorite secure messenger and keeps your data out of the
-hands of hackers, corporations and governments.
-
-##### [Wire](https://wire.com/en)
-
-Element is a Matrix-based end-to-end encrypted messenger and collaboration app.
-
-Read more about [Secure messaging apps](https://www.securemessagingapps.com/)
-
-### Domain Name Servers
-
-- [1.1.1.1](https://one.one.one.one/) - free VPN and DNS from CloudFlare
-- [9.9.9.9](https://www.quad9.net/)
-
-### VPN
-
-- [IVPN](https://www.ivpn.net/)
-- [VPNHub](https://www.vpnhub.com/) - free VPN from PornHub
-- [ProtonVPN](https://protonvpn.com/) - High-speed Swiss VPN that safeguards your privacy.
-- [Njalla](https://njal.la/)
-- [Mullvad](https://mullvad.net/en/)
-
-### Secure storage
-
-##### [ProtonDrive](https://proton.me/drive)
-
-ProtonDrive is a secure cloud storage service that allows you to store, share, and access your files from any device.
-
-##### [NordLocker](https://nordlocker.com/)
-
-NordLocker is a file encryption tool that secures files stored on your computer or in the cloud.
-
-##### [pCloud](https://www.pcloud.com/)
-
-pCloud is the secure cloud storage, where you can store, share and work on all your files.
-
-### Authentication
-
-##### [YubiKey](https://www.yubico.com/)
-
-YubiKey is a hardware authentication device manufactured by Yubico that supports one-time passwords, public-key
+- **[YubiKey](https://www.yubico.com/)** — hardwarový autentizační klíč od Yubico; podporuje FIDO2, WebAuthn, OTP a PIV
