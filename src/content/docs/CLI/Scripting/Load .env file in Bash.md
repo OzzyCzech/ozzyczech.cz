@@ -1,5 +1,8 @@
 ---
 title: Load .env file in Bash
+description: Load .env file in Bash
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 There is an easy way to load an `.env` file in #bash. Let's have example `.env` file:

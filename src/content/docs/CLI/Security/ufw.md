@@ -3,8 +3,6 @@ title: UFW basics
 description: Uncomplicated Firewall (ufw) — defaults, SSH, and rule management on Debian-based Linux.
 created: 2025-01-01
 updated: 2026-04-06
-sidebar:
-  label: UFW
 ---
 
 [UFW](https://help.ubuntu.com/community/UFW) (Uncomplicated Firewall) is the default host firewall helper on Ubuntu: it wraps lower-level packet filtering so you can allow or deny traffic with simple commands. This page covers the usual defaults, SSH, and how to inspect or remove rules.
