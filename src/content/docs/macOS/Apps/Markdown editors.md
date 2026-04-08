@@ -21,5 +21,6 @@ Markdown-focused writing and note apps for macOS. For note-taking apps see also 
 - **[Notable](https://notable.app/)** — Markdown note-taking app with tags, dark theme, and multi-note editing
 - **[MacDown](https://macdown.uranusjr.com/)** — free and open-source split-pane Markdown editor with live preview
 - **[GitJournal](https://gitjournal.io/)** — mobile Markdown note app with Git-backed storage; integrates with desktop editors
+- **[Cogito](https://cogito.md/)** — native macOS Markdown editor (free beta, requires macOS Tahoe 26+) with wiki links, `![[embeds]]`, synced source/preview scrolling, Quick Open (⌘P), multi-tab support, and syntax highlighting for 20+ languages; stores plain files on disk with no proprietary database
 - **[Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)** — general code editor with built-in Markdown preview and extensions for enhanced editing
 - **[Mak](https://mak.ink/)** — in-browser plain-text notepad with Markdown support; no install required
