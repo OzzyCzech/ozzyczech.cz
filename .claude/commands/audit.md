@@ -22,6 +22,7 @@ Pick 5–10 pages at random from `src/content/docs/` (across different categorie
 **Structure**
 - Does the page follow frontmatter rules (`title`, `description`, `created`, `updated`)?
 - Is the page free of `#` h1 headings in the body?
+- Does the selected `title` match the actual page content and topic?
 
 ## 3. Report findings
 
@@ -43,6 +44,8 @@ Use:
 ## 4. Fix what you can
 
 For issues that are clear and low-risk (missing `updated`, broken frontmatter, structural problems), fix them directly.
+
+Always validate that article content matches its current `title`. If it does not, automatically update the `title` so it accurately reflects the content.
 
 For issues that require external verification (outdated claims, suspicious facts), flag them to the user — do not silently update facts you cannot verify.
 
