@@ -7,7 +7,7 @@ sidebar:
   label: MHO-C401
 ---
 
-MHO-C401 is new (2020) MMC E-Ink Screen Smart Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Gearbest](https://www.gearbest.com/sale/MHO-C401/) or [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).
+MHO-C401 is new (2020) MMC E-Ink Screen Smart Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).
 
 ![MHO-C401](MHO-C401.jpg "MHO-C401 Bluetooth Thermometer Hygrometer")
 
@@ -47,7 +47,7 @@ sudo apt-get install python3-pip libglib2.0-dev
 sudo pip3 install bluepy
 ```
 
-Each BLE devices provide [Services](https://www.bluetooth.com/specifications/gatt/services/) and [Characteristics](https://www.bluetooth.com/specifications/gatt/characteristics/). **Services** are used to break data up into logic entities, and contain specific chunks of data
+Each BLE devices provide [Services](https://www.bluetooth.com/specifications/assigned-numbers/) and [Characteristics](https://www.bluetooth.com/specifications/assigned-numbers/). **Services** are used to break data up into logic entities, and contain specific chunks of data
 called **characteristics**. A service can have one or more characteristics, and each service distinguishes itself from other services by means of a unique numeric ID called a UUID, which can be either 16-bit (for officially adopted BLE Services) or 128-bit (for custom services).
 
 The Python code below will generate a list of all the available services and characteristics on the our BLE device.
