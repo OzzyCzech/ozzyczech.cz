@@ -5,30 +5,35 @@ created: 2026-04-08
 updated: 2026-04-08
 ---
 
-```shell
-apt-get install fswebcam
+Automatické zachytávání snímků z webkamery pomocí `fswebcam` a `cron`, následné složení do timelapse videa přes `ffmpeg`.
+
+## Instalace
+
+```bash
+sudo apt-get install fswebcam
 ```
 
-Capture _cron_ from camera from 5 AM to 7 PM every day:
+## Cron — zachytávání snímků
 
-```shell
+Snímky každou minutu od 5:00 do 19:00:
+
+```bash
 crontab -e
 ```
 
-add follow line
+Přidej řádek (uprav cestu `/home/pi/images/` podle svého):
 
-```shell
-*  5-19 * * * fswebcam --jpeg 95 -r 1024x768 -S 100 --no-banner /home/images$
+```
+*  5-19 * * * fswebcam --jpeg 95 -r 1024x768 -S 100 --no-banner /home/pi/images/$(date +\%Y\%m\%d\%H\%M\%S).jpg
 ```
 
-you can also share every xxx image via twitter or something
+- `--jpeg 95` — kvalita JPEG 95 %
+- `-r 1024x768` — rozlišení
+- `-S 100` — přeskočí prvních 100 snímků (zahřívání kamery)
+- `--no-banner` — odstraní timestamp banner
 
-```shell
-59  5-19 * * * tweet it...
-```
+## Složení timelapse videa
 
-Generate timelapse video from all images:
-
-```shell
-ffmpeg -framerate 30 -pattern_type glob -i 'images/*.jpeg' -vcodec libx264 video.mp4
+```bash
+ffmpeg -framerate 30 -pattern_type glob -i 'images/*.jpg' -vcodec libx264 video.mp4
 ```
