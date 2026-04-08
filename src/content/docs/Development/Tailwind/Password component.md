@@ -7,7 +7,7 @@ sidebar:
   label: Password component
 ---
 
-I will show you a simple way in Vanilla #JavaScript how to made show/hide password button. Let's start with #Tailwind first:
+I will show you a simple way in Vanilla JavaScript how to made show/hide password button. Let's start with Tailwind first:
 
 ```html
 <script src="https://cdn.tailwindcss.com?plugins=forms"></script>

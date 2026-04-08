@@ -5,7 +5,7 @@ created: 2018-10-24
 updated: 2026-04-06
 ---
 
-This is a short instructions how to run #mariadb with #docker official [image](https://hub.docker.com/_/mariadb/) with [docker compose](https://docs.docker.com/compose/) and have suitable developer env. Let's have follow `docker-compose.yml`
+This is a short instructions how to run mariadb with docker official [image](https://hub.docker.com/_/mariadb/) with [docker compose](https://docs.docker.com/compose/) and have suitable developer env. Let's have follow `docker-compose.yml`
 
 ```yaml
 version: "3.9"

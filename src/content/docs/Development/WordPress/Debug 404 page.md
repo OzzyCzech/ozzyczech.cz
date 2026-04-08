@@ -5,7 +5,7 @@ created: 2020-12-01
 updated: 2026-04-06
 ---
 
-Following code dump state of #WordPress 404 page with permalins, rewrite rules etc. plase it to `functions.php`
+Following code dump state of WordPress 404 page with permalins, rewrite rules etc. plase it to `functions.php`
 
 ```php
 ini_set('error_reporting', -1);

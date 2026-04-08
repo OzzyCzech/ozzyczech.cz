@@ -7,7 +7,7 @@ sidebar:
   label: Generate menu from directory
 ---
 
-I would like to create a nested menu and show all files and directories (except hidden folders) in the selected directory with#nodejs
+I would like to create a nested menu and show all files and directories (except hidden folders) in the selected directory with nodejs
 
 ```js
 import { readdir } from "node:fs/promises";

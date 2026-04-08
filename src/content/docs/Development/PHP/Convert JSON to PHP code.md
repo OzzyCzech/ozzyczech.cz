@@ -5,7 +5,7 @@ created: 2015-05-13
 updated: 2026-04-06
 ---
 
-Do you need convert #JSON data to valid #PHP code without pain? I've got a short script for that! My simple solution used [var_export()](http://www.php.net/manual/en/function.var-export.php) function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace `stdClass::__set_state/` with `(object)`.
+Do you need convert JSON data to valid PHP code without pain? I've got a short script for that! My simple solution used [var_export()](http://www.php.net/manual/en/function.var-export.php) function. This function generates almost valid, well formatted PHP code from usual JSON data. Invalidity of code can be fix with one regular expression, which replace `stdClass::__set_state/` with `(object)`.
 
 Take a closer look at example data. I have here [currency.json](https://gist.github.com/Fluidbyte/2973986) - PHP code should look something like this:
 

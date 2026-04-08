@@ -4,7 +4,7 @@ sidebar:
   label: Clone everything
 ---
 
-Following script clone all #git branches and tags at once:
+Following script clone all git branches and tags at once:
 
 ```shell
 #!/bin/bash

@@ -2,7 +2,7 @@
 title: Bluetooth sensor mesh
 ---
 
-**Idea**: Create #bluetooth mesh from bunch of env. sensors (doors, windows, temperature, humidity, move sensors, buttons) connected to hub.
+**Idea**: Create bluetooth mesh from bunch of env. sensors (doors, windows, temperature, humidity, move sensors, buttons) connected to hub.
 
 ## Bluetooth mesh
 

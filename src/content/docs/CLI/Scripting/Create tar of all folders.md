@@ -1,20 +1,20 @@
 ---
+title: Create tar of all folders
+description: Create a tar archive for each direct subfolder in the current directory.
+created: 2018-10-25
+updated: 2026-04-08
+---
 
-## title: How to Create Tar Archives for Each Folder in a Directory
-sidebar:
-  label: Create tar of all folders
+This command creates one archive per direct subfolder in the current directory.
 
-The following commands create tar archives folder by folder into their own tar — so each folder becomes `folder.tar`.
+## Compressed archives
 
-**Compressed archive**
-
-```shell
-find . -type d -maxdepth 1 -mindepth 1 -exec tar zcvf {}.tar.gz {} \;
+```bash
+find . -maxdepth 1 -mindepth 1 -type d -exec tar -czvf "{}.tar.gz" "{}" \;
 ```
 
-**Uncompressed archive**
+## Uncompressed archives
 
-```shell
-find . -type d -maxdepth 1 -mindepth 1 -exec tar cvf {}.tar {}  \;
+```bash
+find . -maxdepth 1 -mindepth 1 -type d -exec tar -cvf "{}.tar" "{}" \;
 ```
-

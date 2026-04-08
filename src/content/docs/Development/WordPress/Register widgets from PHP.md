@@ -5,7 +5,7 @@ created: 2016-08-31
 updated: 2026-04-06
 ---
 
-PHP driven registration of the Widgets in #WordPress can be quite confusing. There is my way how to handle it:
+PHP driven registration of the Widgets in WordPress can be quite confusing. There is my way how to handle it:
 
 ```php
 class Widgets {

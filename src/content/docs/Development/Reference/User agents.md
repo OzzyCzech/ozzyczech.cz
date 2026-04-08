@@ -5,7 +5,7 @@ created: 2023-02-06
 updated: 2026-04-06
 ---
 
-To change the user agent with the #httpie or #curl, you can use the
+To change the user agent with the httpie or curl, you can use the
 `--user-agent` option followed by the desired user agent string:
 
 ```shell
