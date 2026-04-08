@@ -5,7 +5,6 @@ import starlight from '@astrojs/starlight';
 import links from './src/markdown/links.ts';
 import youtube from './src/markdown/youtube.ts';
 import tailwindcss from '@tailwindcss/vite';
-import { sidebar } from './src/sidebar.ts';
 
 // https://astro.build/config
 
@@ -55,7 +54,50 @@ export default defineConfig({
 			editLink: {
 				baseUrl: 'https://github.com/OzzyCzech/ozzyczech.cz/edit/main/'
 			},
-			sidebar
+			sidebar: [
+				{label: 'Home', link: '/'},
+				{
+					label: 'AI',
+					collapsed: true,
+					items: [
+						{label: 'Agents', collapsed: false, autogenerate: {directory: 'AI/Agents'}},
+						{label: 'Claude Code', collapsed: false, autogenerate: {directory: 'AI/Claude Code'}},
+						{label: 'Guides', collapsed: false, autogenerate: {directory: 'AI/Guides'}},
+						{label: 'Tools', collapsed: false, autogenerate: {directory: 'AI/Tools'}},
+						'ai/benchmarks',
+					],
+				},
+				{label: 'Development', collapsed: false, autogenerate: {directory: 'Development', collapsed: true}},
+				{label: 'Inspiration', collapsed: true, autogenerate: {directory: 'Inspiration', collapsed: false}},
+				{
+					label: 'Shell & CLI',
+					collapsed: true,
+					autogenerate: {directory: 'CLI', collapsed: true},
+				},
+				{label: 'macOS', collapsed: true, autogenerate: {directory: 'macOS', collapsed: true}},
+				{label: 'Awesome', collapsed: true, autogenerate: {directory: 'Awesome', collapsed: false}},
+				{label: 'Life Hack', collapsed: true, autogenerate: {directory: 'LifeHack'}},
+				{
+					label: 'Photography',
+					collapsed: true,
+					items: [
+						{label: 'Sony', collapsed: false, autogenerate: {directory: 'Photography/Sony', collapsed: false}},
+						{label: 'Fujifilm', collapsed: false, autogenerate: {directory: 'Photography/Fujifilm', collapsed: false}},
+						{label: 'Nikon', collapsed: false, autogenerate: {directory: 'Photography/Nikon', collapsed: false}},
+						{label: 'Panasonic', collapsed: false, autogenerate: {directory: 'Photography/Panasonic', collapsed: false}},
+						{label: 'Canon', collapsed: false, autogenerate: {directory: 'Photography/Canon', collapsed: false}},
+						'photography/compact-cameras',
+						'photography/action-cameras',
+						'photography/photo-hosting',
+						{label: 'Software', collapsed: true, autogenerate: {directory: 'Photography/Software', collapsed: true}},
+						{label: 'Accessories', collapsed: false, autogenerate: {directory: 'Photography/Accessories'}},
+					],
+				},
+				{label: 'Security', collapsed: true, autogenerate: {directory: 'Security'}},
+				{label: 'Hardware', collapsed: true, autogenerate: {directory: 'Hardware', collapsed: true}},
+				{label: 'Movies & TV', collapsed: true, autogenerate: {directory: 'Movies & TV', collapsed: false}},
+				{label: 'Povídky', collapsed: true, autogenerate: {directory: 'Povidky'}},
+			]
 		})
 	],
 	vite: {
