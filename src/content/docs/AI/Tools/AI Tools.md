@@ -1,0 +1,53 @@
+---
+title: AI Tools
+description: Přehled AI nástrojů pro tvorbu aplikací, kódování, design, generování obrázků a videa, správu znalostí a zpracování textu.
+created: 2026-04-08
+updated: 2026-04-08
+---
+
+Přehled AI nástrojů podle kategorie použití.
+
+## 🏗️ App Builders
+
+Nástroje pro tvorbu aplikací pomocí AI — generování kódu, vizuální buildery a experimentální prostředí.
+
+- **[Google AI Studio](https://aistudio.google.com/)** — experimentální prostředí od Googlu pro prototypování s Gemini modely; rychlý přístup k API bez nutnosti nastavovat infrastrukturu
+- **[Lovable](https://www.lovable.dev)** — AI full-stack app builder — popis aplikace v přirozeném jazyce → hotová React aplikace s backendem
+- **[Bolt](https://bolt.new/)** — AI vývojové prostředí od StackBlitz; generuje a spouští full-stack aplikace přímo v prohlížeči
+- **[Replit](https://replit.com/ai)** — kolaborativní AI coding prostředí v cloudu; okamžité spuštění bez lokálního nastavení
+- **[Firebase Studio](https://studio.firebase.google.com/)** — AI-asistované vývojové prostředí od Googlu pro Firebase projekty
+- **[Macaly](https://www.macaly.com/)** — tvorba webů a webových aplikací popisem v přirozeném jazyce — bez nutnosti psát kód
+- **[Base44](https://base44.com/)** — AI app builder akvizovaný Wixem; generování webových aplikací z popisu
+
+## 💻 Coding
+
+- **[Claude Code](https://claude.ai/code/)** — AI coding agent by Anthropic
+- **[Codex](https://openai.com/codex/)** — AI coding agent by OpenAI
+- **[GitHub Copilot](https://github.com/copilot/)** — AI coding agent integrovaný přímo do GitHubu
+- **[Cursor](https://cursor.com/)** — AI-powered IDE
+- **[Antigravity](https://antigravity.google/)** — AI-powered IDE by Google
+- **[Zed](https://zed.dev/)** — vysokovýkonný editor s vestavěnou AI
+
+## 🎨 Design & Prototyping
+
+- **[Stitch](https://stitch.withgoogle.com/)** — AI design nástroj od Googlu; generování UI návrhů z textu nebo obrázků
+- **[Pencil](https://www.pencil.dev/)** — přináší design přímo do IDE; odstraňuje přepínání mezi designovým nástrojem a editorem
+
+## 🖼️ Image & Video
+
+- **[Midjourney](https://www.midjourney.com/)** — de facto standard pro umělecky kvalitní AI generování obrázků
+- **[Flux](https://blackforestlabs.ai/)** — open-weights model od Black Forest Labs; vyniká v renderování textu a fotorealismu
+- **[Adobe Firefly](https://firefly.adobe.com/)** — komerčně bezpečné AI modely integrované do Photoshopu a Illustratoru
+- **[Luma Dream Machine](https://lumalabs.ai/dream-machine)** — generátor videí z textu nebo obrázků
+- **[Sora / Veo](https://veo.google/)** — špičkové nástroje pro kinematografické video generování od OpenAI a Googlu
+
+## 📓 Notebooks & Knowledge Management
+
+- **[Google NotebookLM](https://notebooklm.google.com/)** — AI notebook od Googlu pro analýzu a syntézu dokumentů
+- **[Gamma](https://gamma.app/)** — AI generování prezentací, webů a dokumentů z textu
+- **[Heptabase](https://heptabase.com/)** — vizuální nástroj pro poznámky s integrací AI pro mapování výzkumu
+
+## 📝 Text Processing & Translation
+
+- **[DeepL Translate](https://www.deepl.com/translator)** — nejkvalitnější AI překladač; podporuje 30+ jazyků včetně češtiny
+- **[DeepL Write](https://www.deepl.com/write/)** — AI editor pro vylepšení stylu a gramatiky textu
