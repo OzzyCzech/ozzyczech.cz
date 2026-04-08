@@ -2,12 +2,13 @@
 title: Markdown editors
 description: Markdown and plain-text editors for macOS, from distraction-free writing apps to full knowledge bases.
 created: 2020-10-12
-updated: 2026-04-07
+updated: 2026-04-08
 ---
 
 Markdown-focused writing and note apps for macOS. For note-taking apps see also [Notes and calendar](/macos/apps/notes-and-calendar/).
 
 - **[Obsidian](https://obsidian.md/)** — knowledge base and note editor built on a local folder of Markdown files; extensible with a large plugin ecosystem
+- **[Logseq](https://logseq.com/)** — privacy-first, open-source knowledge base with outliner-style note-taking, bi-directional links, and local-first Markdown/Org-mode storage
 - **[FSNotes](https://fsnot.es/)** — fast note manager supporting GitHub Flavored Markdown, TextBundle, iCloud sync, `[[wikilinks]]`, Mermaid, MathJax, tags, and optional Git versioning
 - **[Nota](https://nota.md/)** — pro Markdown notes app for local files; no account or subscription required
 - **[Bear](https://bear.app/)** — polished Markdown editor for Mac and iOS with tags and iCloud sync

@@ -2,7 +2,7 @@
 title: LLM Wiki
 description: Vzor osobní znalostní báze, kde LLM průběžně buduje a udržuje trvalou wiki místo opakovaného RAG.
 created: 2025-04-06
-updated: 2026-04-06
+updated: 2026-04-08
 sidebar:
   label: LLM Wiki
 ---
@@ -15,7 +15,7 @@ sidebar:
 
 ## Oproti klasickému RAG
 
-U RAG model při každé otázce znovu skládá odpověď z fragmentů; znalost se **nekumuluje**. U LLM Wiki se po přidání zdroje informace **zapracují do struktury** (stránky entit, témata, rozporů, syntéza) a zůstávají aktualizované. Člověk většinou nepíše wiki ručně — stará se o zdroje, směr a otázky; LLM dělá sumarizaci, křížové odkazy a „účetnictví“ mezi stránkami. V praxi často **Obsidian** jako prohlížeč/graf, **agent** jako editor.
+U RAG model při každé otázce znovu skládá odpověď z fragmentů; znalost se **nekumuluje**. U LLM Wiki se po přidání zdroje informace **zapracují do struktury** (stránky entit, témata, rozporů, syntéza) a zůstávají aktualizované. Člověk většinou nepíše wiki ručně — stará se o zdroje, směr a otázky; LLM dělá sumarizaci, křížové odkazy a „účetnictví“ mezi stránkami. V praxi často **Obsidian** nebo **[Logseq](https://logseq.com/)** jako prohlížeč/graf, **agent** jako editor.
 
 ## Tři vrstvy
 
