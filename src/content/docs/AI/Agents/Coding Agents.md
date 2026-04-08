@@ -7,8 +7,6 @@ updated: 2026-04-08
 
 Nástroje pro orchestraci AI coding agentů umožňují spouštět více agentů paralelně v izolovaných prostředích (Docker, Git worktrees), přepínat mezi nimi a reviewovat výstupy. Liší se platformou, licenčním modelem a podporovanými agenty.
 
-## Tools
-
 - **[cmux](https://cmux.com/)**
   Native macOS terminal postavený na Ghostty, navržený pro správu více AI coding agentů zároveň — open source (GPL-3.0), ke stažení přes Homebrew.
 
