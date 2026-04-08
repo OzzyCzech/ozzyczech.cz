@@ -5,6 +5,7 @@ created: 2026-03-19
 updated: 2026-04-08
 sidebar:
   label: Benchmarks
+  order: 99
 ---
 
 Resources for comparing AI model performance through independent benchmarks and community leaderboards.
