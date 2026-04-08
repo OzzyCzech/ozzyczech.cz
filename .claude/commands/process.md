@@ -2,33 +2,19 @@ Process a new source or input into the wiki using the following steps:
 
 ## 1. Identify the input
 
-- If the input is a **URL**: fetch the page and extract key information. If the URL is unreachable or behind a paywall, ask the user to paste the relevant text manually.
-- If the input is **text**: read it and identify the topic, key concepts, and content type (tool, tutorial, reference, concept…)
-- If the input is a **file**: read and understand the content before acting
-- If the input is ambiguous or too broad, ask a clarifying question before proceeding.
+Fetch URLs, read files, or parse text to identify the topic and content type.
+If a URL is unreachable, ask the user to paste the content. If the input is ambiguous, ask before proceeding.
 
 ## 2. Find the right place
 
-Search the existing wiki structure and decide where the content belongs. Follow this priority order:
+Search the existing wiki structure in `content/docs/` and decide where the content belongs:
 
-1. **Exact page exists** → update it (add section, append to list, refresh outdated info)
-2. **Related page exists where this logically belongs** → add a section or list item there
-3. **No suitable page exists** → create a new one; if even the category is missing, ask the user first
+1. **Exact page exists** → update it
+2. **Related page exists** → add a section or list item there
+3. **No suitable page exists** → create a new page in the best-fitting folder
+4. **No suitable folder exists** → ask the user first
 
-**Category decision guide:**
-
-- AI related content → `AI/` - AI tools, services, models, etc.
-- Photography related content → `Photography/` - cameras, lenses, flashes, accessories, tripods, filters, etc.
-- Development related content → `Development/` - programming languages, frameworks, tools, etc.  
-- Inspiration related content → `Inspiration/` - open source projects, tools, services, etc.
-- macOS related content → `macOS/` - macOS tools, services, etc.
-- Hardware related content → `Hardware/` - hardware tools, services, etc.
-- Life Hack related content → `LifeHack/` - life hack tools, services, etc.
-- Security related content → `Security/` - security tools, services, etc.
-- Books related content → `Books/` - books, articles, blog posts, etc.
-- Movies and TV related content → `Movies & TV/` - links from ČSFD, Netflix, IMDB, etc.
-- Shell & CLI related content → `CLI/` — pick a subfolder by topic: `Bash & shell`, `Git`, `Media` (includes `ffmpeg/`), `Web`, `Network`, `Security`, `Downloads`, `Testing`, or `Tools` (short tool roundup pages).
-- If a source fits multiple categories, pick the one matching its primary use case.
+Match content to folders by primary use case. If a source fits multiple categories, pick the one matching its primary use case. When in doubt, browse the existing folder structure for context.
 
 ## 3. Process the content
 
@@ -43,10 +29,8 @@ Extract and rewrite — never copy verbatim from the source.
 
 **Discard:**
 
-- Pricing, free-tier limits, and plan details (these change constantly)
-- Time-limited offers, launch promotions, "just announced" framing
-- Marketing superlatives and filler ("revolutionary", "blazing fast", "best-in-class")
-- News-style narrative or commentary without reference value
+- Pricing, plan details, and free-tier limits (change constantly)
+- Marketing fluff, launch framing, and time-sensitive claims
 
 **Formatting rules for tools/services:**
 
@@ -65,16 +49,13 @@ When editing or creating a page:
 
 ## 5. Check consistency
 
-After writing, verify within a realistic scope:
-
 - Review pages in the **same category** and any **directly linked pages** for contradictions
 - Add links to this content from related pages only when the existing page explicitly covers the same topic — do not add back-links just because pages share a theme
 - If you notice a broader inconsistency outside this scope, flag it to the user rather than silently editing unrelated pages
 
 ## 6. Commit and push
 
-- Group all changes from a single source into **one commit** (even if multiple files were modified)
-- Push once after the commit is complete
+Group all changes from a single source into **one commit**, then push.
 
 **Commit message format:**
 
