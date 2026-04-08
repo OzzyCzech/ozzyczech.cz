@@ -1,12 +1,11 @@
 ---
-title: Anonymous posting
+title: Anonymous Posting
+description: Weby pro anonymní publikování textu bez nutnosti registrace.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
-This is a list of websites that allow you to post content anonymously and for
-free.
+Nástroje pro rychlé sdílení textu online bez registrace nebo trvalé identity.
 
-## Text
-
-- https://telegra.ph/ - Post anything online
-- https://pastebin.com/ - Pastebin.com is the number one paste tool since 2002. Pastebin is a website where you can store text online for a set period of time.
-- [pen.io](http://pen.io/) - Publish a beautiful page in seconds and share it with the world
+- **[Telegra.ph](https://telegra.ph/)** — minimalistický anonymní publishing nástroj od Telegramu; bez registrace, podporuje formátování a obrázky
+- **[Pastebin](https://pastebin.com/)** — nejrozšířenější nástroj pro sdílení krátkých textů a kódu; příspěvky lze nastavit jako soukromé nebo s časovým vypršením
