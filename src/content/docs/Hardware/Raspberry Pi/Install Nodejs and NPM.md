@@ -1,34 +1,40 @@
 ---
-title: Install Nodejs and NPM
+title: Install Node.js and NPM
+description: Jak nainstalovat Node.js na Raspberry Pi — přes nvm (doporučeno) nebo NodeSource repozitář.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
-### Install nodejs from NodeSource repository
+Nejflexibilnější způsob instalace Node.js na Raspberry Pi je přes **nvm** (Node Version Manager), který umožňuje snadno přepínat mezi verzemi. Alternativou je NodeSource repozitář.
 
-Launch the Terminal and execute the command below:
+## Doporučeno: nvm
 
-```shell
-sudo su
-curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-sudo apt install nodejs
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/HEAD/install.sh | bash
 ```
 
-### Install nodejs from source code
+Po instalaci restartuj terminál (nebo spusť `source ~/.bashrc`), pak nainstaluj aktuální LTS:
 
-```shell
-sudo apt update
-sudo apt upgrade
+```bash
+nvm install --lts
+nvm use --lts
 ```
 
-Then you have to detect platform with `uname -m` and download correct file from [dist](https://nodejs.org/dist/latest/) wigh wget:
+Ověření:
 
-```shell
-sudo wget https://nodejs.org/dist/latest/node-v18.3.0-linux-armv7l.tar.gz
+```bash
+node -v
+npm -v
 ```
 
-Untar file and copy content to `/usr/local` folder:
+## Alternativa: NodeSource repozitář
 
-```shell
-sudo tar -xzf node-v18.3.0-linux-armv7l.tar.gz
-cd node-v18.3.0-linux-armv7l
-sudo copy -R * /usr/local
+```bash
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo bash -
+sudo apt install -y nodejs
 ```
+
+## Sources
+
+- [nvm — GitHub](https://github.com/nvm-sh/nvm) — instalace a dokumentace
+- [NodeSource distributions](https://github.com/nodesource/distributions) — aktuální setup scripty
