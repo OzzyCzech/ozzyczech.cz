@@ -1,48 +1,52 @@
 ---
 title: Backup
+description: Přehled nástrojů a služeb pro zálohování dat — cloud, NAS, fyzická média a CLI nástroje.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
-### Long term backup on Cloud
+Strategie a nástroje pro zálohování dat podle typu úložiště a použití.
 
-- [Amazon Glacier](https://aws.amazon.com/glacier/) - Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup.
-- [Amazon Drive](https://www.amazon.com/clouddrive/home) - Cloud Storage from Amazon (from $11 per year)
-- [Azure Archive Storage](https://azure.microsoft.com/services/storage/archive/) - Azure Archive Storage offers low-cost, durable, and highly available secure cloud storage
+## ☁️ Cloud archivace
 
-### Lifetime cold M-DISC storage
+Levné dlouhodobé úložiště pro zřídka přistupovaná data.
 
-- [External Ultra HD 4K Slimline Blu‑ray Writer with USB-C](https://www.verbatim-europe.cz/cz/prod/ultra-hd-4k-external-slimline-blu-ray-writer-43888/) 4K Ultra HD Blu-ray reader/writer compatible with Blu-ray MDISC up to 100 GB MDISC
-- [External Blu-ray Slimline Writer with USB-C](https://www.verbatim-europe.cz/cz/prod/external-slimline-blu-ray-writer-usb-31-gen-1-with-usb-c-connection-43889/) - reader/writer compatible with Blu-ray MDISC up to 100 GB MDISC
-- [Blu-ray M-DISC](http://www.verbatim-europe.co.uk/en/cat/mdisc-archival-media/) - lifetime archival storafe (up to 1000 years)
+- **[Amazon S3 Glacier](https://aws.amazon.com/glacier/)** — extrémně levné cloudové úložiště od AWS určené pro archivaci a dlouhodobé zálohy
+- **[Azure Archive Storage](https://azure.microsoft.com/services/storage/archive/)** — nejlevnější úroveň Azure Blob Storage pro studená a archivní data
 
-### NAS Storages
+## 💿 M-DISC fyzická archivace
 
-- [Synology](https://www.synology.com) - any of the [plus products](https://www.synology.com/cs-cz/products)
-- [TrueNAS](https://www.truenas.com/) - TrueNAS is the enterprise version of FreeNAS
-- [NextCloud](https://nextcloud.com/) - Nextcloud is the most deployed on-premises file share and collaboration platform. Access & collaborate across your devices.
-- [Unraid](https://unraid.net/) - Unraid OS allows sophisticated media aficionados, gamers, and other intensive data-users to have ultimate control over their data, media, applications, and desktops, using just about any combination of hardware.
+M-DISC je optické médium určené pro trvalou archivaci — výrobce udává životnost až 1 000 let.
 
-### Desktop backup
+- **[Verbatim M-DISC Blu-ray](http://www.verbatim-europe.co.uk/en/cat/mdisc-archival-media/)** — M-DISC média pro Blu-ray; dostupná kapacita až 100 GB na disk
+- **[Verbatim Ultra HD 4K Slimline Blu-ray Writer](https://www.verbatim-europe.cz/cz/prod/ultra-hd-4k-external-slimline-blu-ray-writer-43888/)** — externí USB-C mechanika kompatibilní s M-DISC médii
+- **[Verbatim External Blu-ray Slimline Writer](https://www.verbatim-europe.cz/cz/prod/external-slimline-blu-ray-writer-usb-31-gen-1-with-usb-c-connection-43889/)** — alternativní model s USB 3.1 Gen 1 a USB-C
 
-- [Back up your Mac with Time Machine](https://support.apple.com/en-us/HT201250)
-- [Backup and Restore in Windows](https://support.microsoft.com/en-us/windows/backup-and-restore-in-windows-352091d2-bb9d-3ea3-ed18-52ef2b88cbef)
+## 🗄️ NAS
 
-### Mobile devices
+- **[Synology](https://www.synology.com)** — NAS pro domácnosti i firmy; doporučená řada [Plus produktů](https://www.synology.com/cs-cz/products)
+- **[TrueNAS](https://www.truenas.com/)** — open-source NAS OS postavený na ZFS; enterprise verze původního FreeNAS
+- **[Nextcloud](https://nextcloud.com/)** — self-hosted platforma pro sdílení souborů a spolupráci; alternativa ke Google Drive
+- **[Unraid](https://unraid.net/)** — NAS OS s flexibilní kombinací disků různých velikostí; populární pro domácí media servery
 
-- [How to back up your iPhone and iPad](https://support.apple.com/en-us/HT203977)
+## 🖥️ Desktop
 
-### Tools
+- **[Time Machine](https://support.apple.com/en-us/HT201250)** — vestavěné zálohování macOS na externí disk nebo síťové úložiště
+- **[Backup and Restore](https://support.microsoft.com/en-us/windows/backup-and-restore-in-windows-352091d2-bb9d-3ea3-ed18-52ef2b88cbef)** — vestavěné zálohování Windows
 
-- [ForkLift 3](https://binarynights.com/) - they have function called Synclet
-- [rclone](https://rclone.org/) - rclone is a command line program to sync files to cloud storages
-- [restic](https://restic.net/) Restic is a modern backup program that can back up your files
-- [borg](https://borgbackup.readthedocs.io/en/stable/) - BorgBackup (short: Borg) is a deduplicating backup program. Optionally, it supports compression and authenticated encryption.
+## 📱 Mobilní zařízení
 
-## Cloud backup service
+- **[Záloha iPhone a iPad](https://support.apple.com/en-us/HT203977)** — officiální průvodce zálohováním přes iCloud nebo iTunes/Finder
 
-- [Backblaze](https://www.backblaze.com/) - low cost cloud storage, unlimited backup
-- [Wasabi](https://wasabi.com/) - 80% less then S3 from Amazon (1TB ~ 6 USD)
-- [Linode](https://www.linode.com/) - S3 Compatible storage
-- [Resilio](https://www.resilio.com/individuals/) - Share All Your Data Across All Your Devices with personal cloud
-- [CrashPlan](https://www.crashplan.com/en-us/)
+## 🛠️ Nástroje
 
-see more https://brianlovin.com/security
+- **[rclone](https://rclone.org/)** — CLI nástroj pro synchronizaci souborů s cloudovými úložišti (S3, Backblaze, Google Drive a desítky dalších)
+- **[restic](https://restic.net/)** — moderní zálohovací program s deduplikací, šifrováním a podporou mnoha backendů
+- **[BorgBackup](https://borgbackup.readthedocs.io/en/stable/)** — zálohovací program s deduplikací, kompresí a autentizovaným šifrováním
+
+## ☁️ Cloud zálohovací služby
+
+- **[Backblaze](https://www.backblaze.com/)** — levné cloudové úložiště kompatibilní s S3 API; oblíbená alternativa k AWS S3
+- **[Wasabi](https://wasabi.com/)** — S3-kompatibilní cloudové úložiště bez poplatků za odchozí data
+- **[Resilio Sync](https://www.resilio.com/individuals/)** — P2P synchronizace souborů napříč zařízeními bez centrálního serveru
+- **[CrashPlan](https://www.crashplan.com/)** — zálohovací služba zaměřená na malé firmy a power users
