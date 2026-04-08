@@ -2,7 +2,7 @@
 title: Terminals
 description: Terminal emulator apps for macOS, from lightweight to GPU-accelerated and AI-powered.
 created: 2026-04-01
-updated: 2026-04-07
+updated: 2026-04-08
 ---
 
 Terminal emulators for macOS. All are installable via `brew install --cask <name>`.
@@ -15,3 +15,4 @@ Terminal emulators for macOS. All are installable via `brew install --cask <name
 - **[WezTerm](https://wezterm.org/)** — GPU-accelerated cross-platform terminal written in Rust; supports multiplexing, ligatures, and Lua-based configuration
 - **[Alacritty](https://alacritty.org/)** — minimal, GPU-accelerated terminal written in Rust focused on performance and simplicity
 - **[Hyper](https://hyper.is/)** — terminal built on web technologies (HTML/CSS/JS) with a plugin and theme ecosystem
+- **[rootshell](https://rootshell.com/)** — Metal-accelerated terminal for iPhone, iPad, Vision Pro, and Mac built on libghostty; includes integrated SSH client, native Git CLI, Mosh support, post-quantum cryptography, and a built-in AI agent
