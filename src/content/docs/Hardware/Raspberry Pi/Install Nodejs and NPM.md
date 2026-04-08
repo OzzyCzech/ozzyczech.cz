@@ -30,9 +30,12 @@ npm -v
 ## Alternativa: NodeSource repozitář
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo bash -
+curl -fsSL https://deb.nodesource.com/setup_lts.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
 sudo apt install -y nodejs
 ```
+
+`setup_lts.x` aktuálně instaluje Node.js v22 (aktuální LTS).
 
 ## Sources
 
