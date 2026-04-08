@@ -1,26 +1,13 @@
 ---
-title: Ads blocking
+title: Ad Blockers
+description: Přehled nástrojů pro blokování reklam a trackerů — od browserových rozšíření po síťové řešení.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
-##### [PiHole](https://pi-hole.net/)
+Nástroje pro blokování reklam a sledovacích skriptů na úrovni prohlížeče i celé sítě.
 
-Pi-hole is a network-wide ad blocker that works by blocking ads at the network
-level. It can be set up on a Raspberry Pi or any other DNS-capable device,
-providing ad blocking for all devices connected to your network.
-
-##### [uBlock](https://ublockorigin.com/)
-
-uBlock is a popular, free, and open-source ad content blocker that effectively
-filters out unwanted advertisements while browsing the web.
-
-##### [PrivacyBadger](https://privacybadger.org/)
-
-Privacy Badger is a browser extension designed to protect users' privacy by
-automatically blocking third-party trackers and analyzing websites for potential
-privacy violations.
-
-##### [Wiper](https://giorgiocalderolla.com/wipr.html)
-
-Wiper is an effective ads blocker specifically designed for Safari, providing
-users with a seamless browsing experience by eliminating intrusive
-advertisements and enhancing privacy.
+- **[uBlock Origin](https://ublockorigin.com/)** — svobodný a open-source blokátor obsahu pro prohlížeče; nízká spotřeba paměti, filtruje reklamy i trackery
+- **[Privacy Badger](https://privacybadger.org/)** — browserové rozšíření od EFF; automaticky blokuje third-party trackery na základě jejich chování, ne jen seznamů
+- **[Wipr](https://giorgiocalderolla.com/wipr.html)** — blokátor reklam a trackerů pro Safari na macOS a iOS
+- **[Pi-hole](https://pi-hole.net/)** — síťový blokátor reklam fungující jako DNS server; blokuje reklamy na všech zařízeních v síti bez nutnosti instalovat rozšíření do každého prohlížeče
