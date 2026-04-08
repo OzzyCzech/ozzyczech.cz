@@ -1,5 +1,8 @@
 ---
-title: Bluetooth sensor mesh
+title: Bluetooth Sensor Mesh
+description: Výzkumné poznámky k návrhu Bluetooth mesh sítě z nRF52 senzorů pro dům — teplota, vlhkost, dveře, okna.
+created: 2026-04-08
+updated: 2026-04-08
 ---
 
 **Idea**: Create bluetooth mesh from bunch of env. sensors (doors, windows, temperature, humidity, move sensors, buttons) connected to hub.

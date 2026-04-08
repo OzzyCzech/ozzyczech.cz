@@ -1,6 +1,8 @@
 ---
-title: Reading temperature and humidity data from MHO-C401 with Python
-description: Reading temperature and humidity from MHO-C401 Bluetooth Thermometer Hygrometer using Python and bluepy library.
+title: MHO-C401 — čtení dat přes BLE a Python
+description: Čtení teploty a vlhkosti z Xiaomi MHO-C401 Bluetooth termometru pomocí Pythonu a knihovny bluepy.
+created: 2026-04-08
+updated: 2026-04-08
 sidebar:
   label: MHO-C401
 ---

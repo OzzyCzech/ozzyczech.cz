@@ -4,8 +4,7 @@ description: Overview of independent AI model benchmarks and leaderboards for co
 created: 2026-03-19
 updated: 2026-04-08
 sidebar:
-  label: Benchmarks
-  order: 99
+  label: AI Benchmarks
 ---
 
 Resources for comparing AI model performance through independent benchmarks and community leaderboards.
