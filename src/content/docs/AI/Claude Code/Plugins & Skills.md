@@ -1,6 +1,6 @@
 ---
-title: Agent Resources
-description: Curated plugins, skills, and open-source projects for AI coding agents.
+title: Plugins & Skills
+description: Curated Claude Code plugins, skills, and open-source agent skill collections.
 created: 2026-04-08
 updated: 2026-04-08
 ---
