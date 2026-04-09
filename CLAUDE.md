@@ -141,6 +141,7 @@ ack --type=markdown "search_text"
 - One commit per logical change — adding a page, updating related pages together, fixing a typo
 - Do not batch unrelated changes into a single commit
 - Commit after each LLM pass so diffs are reviewable and revertable
+- Always push after committing
 
 ## Rules
 
