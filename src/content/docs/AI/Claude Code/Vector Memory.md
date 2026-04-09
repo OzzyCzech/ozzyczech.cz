@@ -1,13 +1,13 @@
 ---
 title: Vector Memory for Claude Code
-description: Build a persistent semantic memory system for Claude Code using ChromaDB and BGE-M3 embeddings via MCP.
+description: Vlastní vektorový paměťový systém pro Claude Code s ChromaDB a BGE-M3 embeddingy přes MCP.
 created: 2026-04-09
 updated: 2026-04-09
 ---
 
-A local vector memory system gives Claude Code persistent, semantic memory across sessions. Instead of stuffing entire memory files into the prompt, only the most relevant fragments are retrieved — saving 80–90% of tokens compared to full in-context memory.
+Lokální vektorová paměť dává Claude Code persistentní sémantickou paměť napříč sezeními. Místo vkládání celých paměťových souborů do promptu se načtou jen nejrelevantnější fragmenty — úspora 80–90 % tokenů oproti plné paměti v kontextu.
 
-## Architecture
+## Architektura
 
 ```
 Claude Code
@@ -15,28 +15,28 @@ Claude Code
     ▼
 MCP Server (stdio)
     │
-    ├── BGE-M3 (local embedding model, ~3 GB RAM)
-    │     └── dense vectors (1024-dim)
+    ├── BGE-M3 (lokální embedding model, ~3 GB RAM)
+    │     └── dense vektory (1024-dim)
     │
-    └── ChromaDB (vector database)
-          └── collections: memory, code_patterns, decisions…
+    └── ChromaDB (vektorová databáze)
+          └── kolekce: memory, code_patterns, decisions…
 ```
 
-On search, the query is embedded via BGE-M3 and ChromaDB returns the top-N relevant fragments. On store, the text is embedded and written to ChromaDB with metadata (category, project, timestamp).
+Při dotazu se query převede přes BGE-M3 na vektor a ChromaDB vrátí top-N relevantních fragmentů. Při ukládání se text vektorizuje a uloží do ChromaDB s metadaty (kategorie, projekt, timestamp).
 
-## Requirements
+## Požadavky
 
 - Python 3.10+
-- `uv` (recommended) or `pip`
-- Docker (optional — for ChromaDB server mode)
-- ~4 GB free RAM (3 GB model + ChromaDB overhead)
-- ~2 GB disk for BGE-M3 model download
+- `uv` (doporučeno) nebo `pip`
+- Docker (volitelně — pro ChromaDB server mode)
+- ~4 GB volné RAM (3 GB model + ChromaDB overhead)
+- ~2 GB disk pro stažení BGE-M3 modelu
 
-## Setup
+## Instalace
 
 ### 1. ChromaDB
 
-**Option A — Docker (recommended for stability):**
+**Varianta A — Docker (doporučeno pro stabilitu):**
 
 ```bash
 docker run -d \
@@ -48,14 +48,14 @@ docker run -d \
   chromadb/chroma:latest
 ```
 
-**Option B — Embedded (no Docker):**
+**Varianta B — Embedded (bez Dockeru):**
 
 ```python
 import chromadb
 client = chromadb.PersistentClient(path="~/.claude-memory/chromadb")
 ```
 
-### 2. BGE-M3 and MCP server dependencies
+### 2. BGE-M3 a závislosti MCP serveru
 
 ```bash
 mkdir ~/claude-memory-mcp && cd ~/claude-memory-mcp
@@ -63,21 +63,21 @@ uv init && uv venv && source .venv/bin/activate
 uv add "mcp[cli]" chromadb FlagEmbedding torch numpy
 ```
 
-Verify the model downloads correctly (~2 GB on first run):
+Ověření stažení modelu (~2 GB při prvním spuštění):
 
 ```bash
 python -c "from FlagEmbedding import BGEM3FlagModel; m = BGEM3FlagModel('BAAI/bge-m3', use_fp16=True); print('OK')"
 ```
 
 :::note
-Use `use_fp16=False` on CPU. Use `use_fp16=True` on GPU (CUDA) or Apple Silicon (MPS) for faster inference with minimal accuracy loss.
+Na CPU nastavte `use_fp16=False`. Na GPU (CUDA) nebo Apple Silicon (MPS) je `use_fp16=True` rychlejší s minimální ztrátou přesnosti.
 :::
 
 ### 3. MCP server
 
-Create `~/claude-memory-mcp/server.py` with four tools: `memory_search`, `memory_store`, `memory_delete`, `memory_stats`. The server loads BGE-M3 on startup and connects to ChromaDB. See the full implementation in the [source guide](#sources).
+Vytvořte `~/claude-memory-mcp/server.py` se čtyřmi nástroji: `memory_search`, `memory_store`, `memory_delete`, `memory_stats`. Server načte BGE-M3 při startu a připojí se k ChromaDB.
 
-### 4. Register with Claude Code
+### 4. Registrace do Claude Code
 
 ```bash
 claude mcp add memory-search -- \
@@ -85,86 +85,86 @@ claude mcp add memory-search -- \
   ~/claude-memory-mcp/server.py
 ```
 
-Verify:
+Ověření:
 
 ```bash
 claude mcp list
-# Should show: memory-search (stdio)
+# Měl by se zobrazit: memory-search (stdio)
 ```
 
-## MCP Tools
+## MCP nástroje
 
-| Tool | Purpose |
-|------|---------|
-| `memory_search(query, top_k)` | Semantic search — returns top-N relevant fragments |
-| `memory_store(content, category, project)` | Store with deduplication via content hash |
-| `memory_delete(content_or_id)` | Delete by ID or content |
-| `memory_stats()` | Count, category breakdown, and project list |
+| Nástroj | Účel |
+|---------|------|
+| `memory_search(query, top_k)` | Sémantické vyhledávání — vrátí top-N relevantních fragmentů |
+| `memory_store(content, category, project)` | Uložení s deduplikací přes hash obsahu |
+| `memory_delete(content_or_id)` | Smazání podle ID nebo obsahu |
+| `memory_stats()` | Počet vzpomínek, rozložení kategorií, seznam projektů |
 
-### Categories for `memory_store`
+### Kategorie pro `memory_store`
 
 `general`, `bugfix`, `architecture`, `preference`, `code_pattern`, `decision`, `learning`, `debug_insight`
 
-## CLAUDE.md configuration
+## Konfigurace CLAUDE.md
 
-Add to your project or global `~/.claude/CLAUDE.md` to guide Claude on when to use the memory tools:
+Přidej do projektového nebo globálního `~/.claude/CLAUDE.md`:
 
 ```markdown
-## Memory system
+## Paměťový systém
 
-### When to SEARCH (memory_search):
-- At the start of each session — search for project context
-- Before implementing a new feature — check for relevant notes
-- When referencing past decisions, bugs, or architecture
+### Kdy VYHLEDÁVAT (memory_search):
+- Na začátku každé session — prohledej paměť pro kontext projektu
+- Před implementací nového feature — ověř, zda existují relevantní poznámky
+- Při referencích na minulá rozhodnutí, bugy nebo architekturu
 
-### When to STORE (memory_store):
-- Non-trivial bugs solved (category: bugfix)
-- Architectural decisions with reasoning (category: architecture, decision)
-- Project-specific code patterns (category: code_pattern)
-- User preferences and workflow habits (category: preference)
+### Kdy UKLÁDAT (memory_store):
+- Vyřešený netriviální bug (kategorie: bugfix)
+- Architektonické rozhodnutí a jeho důvody (kategorie: architecture, decision)
+- Opakující se code pattern specifický pro projekt (kategorie: code_pattern)
+- Uživatelovy preference a workflow (kategorie: preference)
 
-### When NOT to store:
-- Information already in CLAUDE.md or README
-- Trivial or temporary debug output
-- Information obvious from the code
+### Kdy NEUKLÁDAT:
+- Informace, které jsou v CLAUDE.md nebo README
+- Dočasné debug výstupy
+- Informace zřejmé z kódu
 
-### Rules:
-- Always include category and project name when storing
-- Keep entries concise but self-contained — future sessions have no other context
-- At the end of a longer session, store a summary of what was done
+### Pravidla:
+- Vždy uváděj kategorii a název projektu při ukládání
+- Ukládej stručně ale kompletně — budoucí session nemá jiný kontext
+- Na konci delší session ulož shrnutí toho, co bylo uděláno
 ```
 
-## Two-level fallback strategy
+## Dvouúrovňová fallback strategie
 
-For quick fixes and simple syntax questions, vector search adds unnecessary latency. Use a two-level approach:
+Pro rychlé opravy a jednoduché dotazy je vektorové vyhledávání zbytečně pomalé:
 
-| Level | Source | Latency | Use for |
-|-------|--------|---------|---------|
-| 1 — Local | CLAUDE.md, auto memory, project files | ~0 ms | Quick fixes, syntax, simple questions |
-| 2 — Vector DB | ChromaDB via MCP | ~200–500 ms | Historical context, cross-session decisions, architecture |
+| Úroveň | Zdroj | Latence | Použití |
+|--------|-------|---------|---------|
+| 1 — Lokální | CLAUDE.md, auto memory, soubory projektu | ~0 ms | Quick fixy, syntaxe, jednoduché dotazy |
+| 2 — Vektorová DB | ChromaDB přes MCP | ~200–500 ms | Historický kontext, mezisesionová rozhodnutí, architektura |
 
-Rule: if the answer is in CLAUDE.md or auto memory, skip the vector DB. At the start of a new session, always search the vector DB for project context.
+Pravidlo: pokud odpověď najdeš v CLAUDE.md nebo auto memory, vektorovou DB nepoužívej. Na začátku nové session vždy prohledej vektorovou DB pro kontext projektu.
 
-## Model comparison
+## Porovnání modelů
 
-| Model | RAM | Czech quality | Speed |
-|-------|-----|--------------|-------|
-| BGE-M3 (fp16) | ~1.5 GB | Best | Medium |
-| BGE-M3 (fp32) | ~3 GB | Best | Slower |
-| multilingual-e5-large | ~1.2 GB | Good | Medium |
-| all-MiniLM-L6-v2 | ~100 MB | Poor | Fast |
+| Model | RAM | Kvalita CZ | Rychlost |
+|-------|-----|-----------|----------|
+| BGE-M3 (fp16) | ~1.5 GB | Nejlepší | Střední |
+| BGE-M3 (fp32) | ~3 GB | Nejlepší | Pomalejší |
+| multilingual-e5-large | ~1.2 GB | Dobrá | Střední |
+| all-MiniLM-L6-v2 | ~100 MB | Slabá | Rychlá |
 
-BGE-M3 from BAAI is the best option for multilingual projects — particularly for Czech, Slovak, and other non-English languages.
+BGE-M3 od BAAI je nejlepší volba pro vícejazyčné projekty — zejména pro češtinu, slovenštinu a další neanglické jazyky.
 
-## Maintenance
+## Údržba
 
-**Backup:**
+**Záloha:**
 
 ```bash
 cp -r ~/.claude-memory/chromadb ~/.claude-memory/chromadb-backup-$(date +%Y%m%d)
 ```
 
-**Cleanup old entries (90+ days):**
+**Čištění starých vzpomínek (90+ dní):**
 
 ```python
 import chromadb
@@ -181,20 +181,16 @@ to_delete = [id_ for id_, meta in zip(all_data["ids"], all_data["metadatas"])
 
 if to_delete:
     collection.delete(ids=to_delete)
-    print(f"Deleted {len(to_delete)} old entries.")
+    print(f"Smazáno {len(to_delete)} starých vzpomínek.")
 ```
 
-## Summary
+## Shrnutí
 
-| Metric | Value |
-|--------|-------|
-| RAM usage | ~3 GB (model) + ~100 MB (DB) |
-| Search latency | ~200–500 ms (CPU) |
-| Token savings | ~80–90 % vs full memory in prompt |
-| Best for | Large memory (hundreds of entries), multilingual projects |
+| Aspekt | Hodnota |
+|--------|---------|
+| RAM | ~3 GB (model) + ~100 MB (DB) |
+| Latence vyhledávání | ~200–500 ms (CPU) |
+| Úspora tokenů | ~80–90 % oproti plné paměti v promptu |
+| Vhodné pro | Větší paměť (stovky poznámek), vícejazyčné projekty |
 
-For small projects with a handful of notes, the built-in [auto memory](../claude-code) in Claude Code is sufficient.
-
-## Sources
-
-- Czech guide "Vektorová paměť pro Claude Code: ChromaDB + BGE-M3" — full implementation with server.py code
+Pro malé projekty s pár poznámkami stačí vestavěná [auto memory](../claude-code) Claude Code.
