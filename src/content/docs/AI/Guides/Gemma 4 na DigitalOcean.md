@@ -18,11 +18,7 @@ Návod na spuštění Gemma 4 přes [Ollama](https://ollama.com/) na DigitalOcea
 
 ## GPU Droplet
 
-RTX 4000 Ada — 1× GPU, 20 GB VRAM, 8 vCPU, 32 GB RAM. Lokace jen US/Kanada.
-
-:::caution
-Vypnutý droplet se účtuje dál — po testování vždy **Destroy**.
-:::
+[DigitalOcean GPU Droplets](https://www.digitalocean.com/products/gradient/gpu-droplets) — RTX 4000 Ada, 1× GPU, 20 GB VRAM, 8 vCPU, 32 GB RAM.
 
 ## Instalace
 
