@@ -49,6 +49,10 @@ Příklad reálného schématu: [CLAUDE.md tohoto projektu](https://github.com/O
 Flat-file přístup začíná narážet na limity kolem ~400 000 slov (nebo ~1 000 článků). Pro větší wiki:
 
 - **[qmd](https://github.com/tobi/qmd)** — lokální vyhledávač pro Markdown s hybridním BM25/vektorovým vyhledáváním + MCP integrace
+
+  ```bash
+  bun install -g @tobilu/qmd
+  ```
 - **SQLite transakční log** — výkonnější než file-based indexing pro velké wiki
 - **[Obsidian](https://obsidian.md/) Dataview** — pluginy pro vizualizaci a dotazy nad wiki
 
