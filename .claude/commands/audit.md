@@ -19,6 +19,11 @@ Pick 5–10 pages at random from `src/content/docs/` (across different categorie
 - Do claims contradict what you know from other pages in the wiki or from general knowledge?
 - Are there broken or suspicious links?
 
+**Links**
+- Check every external URL in the page with a HEAD request (`curl -sIL --max-time 10 <url>`)
+- If a link returns 4xx/5xx or times out, try to find the correct URL automatically (search for the tool/project by name, check GitHub, official site, etc.)
+- If the correct URL cannot be determined automatically, report it to the user and ask what to do
+
 **Structure**
 - Does the page follow frontmatter rules (`title`, `description`, `created`, `updated`)?
 - Is the page free of `#` h1 headings in the body?

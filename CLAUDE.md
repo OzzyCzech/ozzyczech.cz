@@ -127,6 +127,14 @@ When in doubt, update the existing page and split later if it grows too large.
 - Do not copy content verbatim — always summarize and restructure in your own words
 - Every factual claim should be traceable to a source — do not synthesize without citation
 
+## Searching
+
+If `ack` is available, use it to search Markdown files:
+
+```bash
+ack --type=markdown "search_text"
+```
+
 ## Git conventions
 
 - Use conventional commits: `docs: add page on prompt caching`, `docs: update LLM comparison table`
