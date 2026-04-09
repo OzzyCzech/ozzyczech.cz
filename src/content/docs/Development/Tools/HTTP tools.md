@@ -2,29 +2,31 @@
 title: HTTP tools
 description: Online HTTP tools, DNS utilities, and favicon services for web development and testing.
 created: 2024-04-30
-updated: 2026-04-06
+updated: 2026-04-09
 ---
 
-### HTTP tools
+Quick-reference collection of online and CLI tools for HTTP inspection, DNS lookups, SSL analysis, and local development.
 
-- [GeoIP](https://redirect.li/) - HTTP and Geo IP information
-- [httpbin](https://httpbin.org) - A simple HTTP Request & Response Service.
-- [httpie](https://httpie.org/) - A command line HTTP client
+## HTTP
 
-### Favicon
+- **[httpbin](https://httpbin.org)** — returns request/response data as JSON; useful for testing HTTP clients and inspecting headers, auth, and redirects
+- **[httpie](https://httpie.org/)** — command-line HTTP client with human-friendly syntax; alternative to curl with color output and JSON support
+- **[GeoIP](https://redirect.li/)** — shows HTTP request details and GeoIP information for the incoming connection
 
-- [Favicon Grabber](http://favicongrabber.com/) - getting favicons from any URL'
+## Favicon
 
-### DNS
+- **[Favicon Grabber](http://favicongrabber.com/)** — fetches favicons from any domain via a simple API
 
-- [DIG](https://toolbox.googleapps.com/apps/dig/#ANY/) - online DIG from Google
+## DNS
 
-### Local development
+- **[DIG](https://toolbox.googleapps.com/apps/dig/#ANY/)** — web-based DNS lookup tool from Google's Admin Toolbox; supports all record types
 
-- [Slim](https://slim.sh/) - free CLI toolkit that gives your localhost a local HTTPS domain (`.test`, `.loc`, `.dev`) or a public URL via `slim.show`. Supports path-based routing, WebSocket, HMR, and project config via `.slim.yaml`.
+## Local development
 
-### SSL certificates
+- **[Slim](https://slim.sh/)** — CLI that gives localhost a local HTTPS domain (`.test`, `.loc`, `.dev`) or a public URL via `slim.show`; supports path-based routing, WebSocket, HMR, and per-project config via `.slim.yaml`
 
-- [HTTPS certificates](https://transparencyreport.google.com/https/certificates)
-- [crt.sh](https://crt.sh) - Certificate Search
-- [SSL Labs](https://www.ssllabs.com/ssltest/)
+## SSL certificates
+
+- **[SSL Labs](https://www.ssllabs.com/ssltest/)** — grades SSL/TLS configuration of any public HTTPS server; checks protocol support, cipher suites, and certificate chain
+- **[crt.sh](https://crt.sh)** — searches Certificate Transparency logs; useful for finding all certificates issued for a domain
+- **[HTTPS Transparency Report](https://transparencyreport.google.com/https/certificates)** — Google's searchable database of certificates logged via Certificate Transparency
