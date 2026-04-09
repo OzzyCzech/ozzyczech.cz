@@ -13,7 +13,7 @@ updated: 2026-04-09
 
 ## Oproti klasickému RAG
 
-U RAG model při každé otázce znovu skládá odpověď z fragmentů; znalost se **nekumuluje**. U LLM Wiki se po přidání zdroje informace **zapracují do struktury** (stránky entit, témata, rozporů, syntéza) a zůstávají aktualizované. Člověk většinou nepíše wiki ručně — stará se o zdroje, směr a otázky; LLM dělá sumarizaci, křížové odkazy a „účetnictví“ mezi stránkami. V praxi často **Obsidian** nebo **[Logseq](https://logseq.com/)** jako prohlížeč/graf, **agent** jako editor.
+U RAG model při každé otázce znovu skládá odpověď z fragmentů; znalost se **nekumuluje**. U LLM Wiki se po přidání zdroje informace **zapracují do struktury** (stránky entit, témata, rozporů, syntéza) a zůstávají aktualizované. Člověk většinou nepíše wiki ručně — stará se o zdroje, směr a otázky; LLM dělá sumarizaci, křížové odkazy a „účetnictví“ mezi stránkami. V praxi často **[Obsidian](https://obsidian.md/)** nebo **[Logseq](https://logseq.com/)** jako prohlížeč/graf, **agent** jako editor.
 
 ## Tři vrstvy
 
@@ -50,7 +50,7 @@ Flat-file přístup začíná narážet na limity kolem ~400 000 slov (nebo ~1 0
 
 - **[qmd](https://github.com/tobi/qmd)** — lokální vyhledávač pro Markdown s hybridním BM25/vektorovým vyhledáváním + MCP integrace
 - **SQLite transakční log** — výkonnější než file-based indexing pro velké wiki
-- **Obsidian Dataview** — pluginy pro vizualizaci a dotazy nad wiki
+- **[Obsidian](https://obsidian.md/) Dataview** — pluginy pro vizualizaci a dotazy nad wiki
 
 Wiki jako **git repo** dává historii změn a spolupráci zdarma.
 
