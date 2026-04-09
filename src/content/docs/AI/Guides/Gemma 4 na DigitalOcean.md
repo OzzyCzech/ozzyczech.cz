@@ -67,13 +67,3 @@ ollama ps
 :::note
 `nvidia-smi` na Debian 13 nefunguje — balíček neobsahuje binárku. Použijte `ollama ps` nebo `lsmod | grep nvidia`.
 :::
-
-## Troubleshooting
-
-| Problém | Řešení |
-|---------|--------|
-| `ollama ps` → `100% CPU` | Chybí `nvidia-cuda-toolkit`, doinstalovat a restartovat Ollama |
-| `lsmod \| grep nvidia` prázdný | `modprobe nvidia`, pokud nefunguje → `reboot` |
-| `Unable to locate package nvidia-driver` | Chybí non-free repo, viz výše |
-| `Unable to locate package linux-headers-6.x.x...` | Použít `linux-headers-amd64` místo specifické verze |
-| `nvidia-smi: command not found` | Na Debian 13 nefunkční, použít `ollama ps` |
