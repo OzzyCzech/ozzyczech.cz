@@ -2,7 +2,7 @@
 title: Email
 description: Email hosting providers and transactional email services for developers.
 created: 2022-01-20
-updated: 2026-04-07
+updated: 2026-04-09
 ---
 
 Reference for email hosting, transactional APIs, newsletter platforms, and disposable email tools.
@@ -35,6 +35,13 @@ Reference for email hosting, transactional APIs, newsletter platforms, and dispo
 ## Testing
 
 - **[Mail Tester](https://www.mail-tester.com/)** — online spam score checker; send an email to the provided address and get a deliverability report
+
+### Local SMTP servers
+
+Local SMTP servers capture outgoing email during development — no risk of sending to real recipients.
+
+- **[Mailpit](https://mailpit.axllent.org/)** — modern successor to MailHog; SMTP server with web UI, REST API for integration tests, and HTML preview support
+- **[MailHog](https://github.com/mailhog/MailHog)** — simple Go-based SMTP test server distributed as a single binary; web UI and JSON API; no longer actively developed, Mailpit recommended
 
 ## Temporary email
 
