@@ -2,7 +2,7 @@
 title: LLM Wiki
 description: Vzor osobní znalostní báze, kde LLM průběžně buduje a udržuje trvalou wiki místo opakovaného RAG.
 created: 2025-04-06
-updated: 2026-04-08
+updated: 2026-04-09
 sidebar:
   label: LLM Wiki
 ---
@@ -50,7 +50,7 @@ Příklad reálného schématu: [CLAUDE.md tohoto projektu](https://github.com/O
 
 Flat-file přístup začíná narážet na limity kolem ~400 000 slov (nebo ~1 000 článků). Pro větší wiki:
 
-- **[qmd](https://github.com/nomic-ai/qmd)** — lokální vyhledávač pro Markdown s hybridním BM25/vektorovým vyhledáváním + MCP integrace
+- **[qmd](https://github.com/tobi/qmd)** — lokální vyhledávač pro Markdown s hybridním BM25/vektorovým vyhledáváním + MCP integrace
 - **SQLite transakční log** — výkonnější než file-based indexing pro velké wiki
 - **Obsidian Dataview** — pluginy pro vizualizaci a dotazy nad wiki
 
