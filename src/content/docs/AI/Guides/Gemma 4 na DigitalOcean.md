@@ -9,12 +9,16 @@ Návod na spuštění Gemma 4 přes [Ollama](https://ollama.com/) na DigitalOcea
 
 ## Modely
 
-| Model | Stažení | Min. VRAM | Poznámka |
-|-------|---------|-----------|----------|
-| `gemma4:e2b` | ~7 GB | 8 GB | Nejlehčí, OK i na CPU |
-| `gemma4:e4b` | ~10 GB | 6 GB | Sweet spot pro slabší GPU |
-| `gemma4:26b` | ~18 GB | 16 GB | MoE (3,8B active), ideální pro RTX 4000 |
-| `gemma4:31b` | ~20 GB | 24 GB | Dense, potřebuje větší GPU |
+| Model | Architektura | Kontext | Modality | Min. VRAM (Q4) |
+|-------|-------------|---------|----------|----------------|
+| `gemma4:e2b` | Dense, 2.3B | 128K | Text, obraz, audio | ~3.2 GB |
+| `gemma4:e4b` *(= latest)* | Dense, 4.5B | 128K | Text, obraz, audio | ~5 GB |
+| `gemma4:26b` | MoE, 3.8B aktivní / 128 expertů | 256K | Text, obraz | ~15.6 GB |
+| `gemma4:31b` | Dense, 30.7B | 256K | Text, obraz | ~17.4 GB |
+
+:::tip
+Pro RTX 4000 Ada (20 GB) je `gemma4:26b` ideální volba — MoE aktivuje jen 3.8B parametrů na token, takže je rychlý jako 4B model, ale kvalitou se blíží 31B.
+:::
 
 ## GPU Droplet
 
@@ -39,7 +43,8 @@ modprobe nvidia
 # Ollama
 curl -fsSL https://ollama.com/install.sh | sh
 
-# Spuštění
+# Stažení modelu a spuštění
+ollama pull gemma4:26b
 ollama run gemma4:26b
 ```
 
@@ -57,6 +62,27 @@ EOF
 systemctl daemon-reload && systemctl restart ollama
 ```
 
+## Parametry generování
+
+Doporučené výchozí hodnoty pro Gemma 4:
+
+```bash
+/set parameter temperature 1.0
+/set parameter top_p 0.95
+/set parameter top_k 64
+/set parameter num_ctx 32768
+```
+
+Přidejte `--keepalive 30m` při spouštění, aby model zůstal načtený v paměti a nedocházelo ke zdržení při každém dotazu:
+
+```bash
+ollama run gemma4:26b --keepalive 30m
+```
+
+## Thinking mode
+
+Gemma 4 podporuje „thinking mode" — model před odpovědí projde interním uvažováním. Aktivuje se přidáním `<|think|>` tokenu do systémového promptu nebo parametrem `enable_thinking=True` v chat template.
+
 ## Ověření GPU
 
 ```bash
@@ -67,3 +93,8 @@ ollama ps
 :::note
 `nvidia-smi` na Debian 13 nefunguje — balíček neobsahuje binárku. Použijte `ollama ps` nebo `lsmod | grep nvidia`.
 :::
+
+## Sources
+
+- [Gemma 4 + Ollama Local Setup](https://findskill.ai/blog/gemma-4-ollama-local-setup/) — parametry, architektura modelů, best practices
+- [ollama.com/library/gemma4](https://ollama.com/library/gemma4) — dostupné tagy a doporučené parametry
