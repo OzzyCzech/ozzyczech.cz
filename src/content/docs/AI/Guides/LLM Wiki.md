@@ -3,8 +3,6 @@ title: LLM Wiki
 description: Vzor osobní znalostní báze, kde LLM průběžně buduje a udržuje trvalou wiki místo opakovaného RAG.
 created: 2025-04-06
 updated: 2026-04-09
-sidebar:
-  label: LLM Wiki
 ---
 
 **LLM Wiki** je vzor pro osobní znalostní bázi: místo čistého RAG (pokaždé znovu hledat úryvky v dokumentech) necháváš LLM **postupně budovat a udržovat trvalou wiki** — propojené Markdown soubory mezi tebou a surovými zdroji.
@@ -38,7 +36,7 @@ Příklad reálného schématu: [CLAUDE.md tohoto projektu](https://github.com/O
 ### Praktické nástroje pro ingest
 
 - **[MarkDownload](https://github.com/deathau/markdownload)** — rozšíření prohlížeče pro jednoduché zachycení webu do Markdownu
-- **Obsidian Web Clipper** — alternativa pro uživatele Obsidianu
+- **[Obsidian Web Clipper](https://obsidian.md/clipper)** — alternativa pro uživatele Obsidianu
 - **Telegram + Whisper** — hlasový pipeline pro hands-free přidávání zdrojů
 
 ## Index a log
