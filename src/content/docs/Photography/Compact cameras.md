@@ -35,11 +35,15 @@ Fixed-lens **enthusiast compacts** with **APS-C** sensors: pocketable alternativ
 
 ## Full-frame alternativy
 
-Pro srovnání — nejsou APS-C, ale pohybují se ve stejné kategorii:
+Pro srovnání — nejsou APS-C, ale pohybují se ve stejné kategorii. Fixed-lens:
 
 - **[Sony RX1R III](https://www.sony.com/en/articles/sony-rx1r-iii)** — full-frame 61 MP, ZEISS 35 mm f/2, IBIS (2025)
 - **[Leica Q3](https://leica-camera.com/en-int/en-INT/photography/cameras/q/q3-black)** — full-frame 60 MP, 28 mm f/1.7 Summilux
 - **[Leica Q3 43](https://leica-camera.com/en-int/en-INT/photography/cameras/q/q3-43-black)** — full-frame 60 MP, 43 mm f/2 Summicron
+
+Kompaktní ILC (vyměnitelné objektivy):
+
+- **Panasonic Lumix DC-S9** — full-frame 24.2 MP, L-mount, 5.8K video, PDAF; jeden z nejmenších full-frame ILC těl bez integrovaného hledáčku (2024)
 
 ## Sources
 
