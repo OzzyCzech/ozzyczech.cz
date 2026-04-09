@@ -142,4 +142,6 @@ When in doubt, update the existing page and split later if it grows too large.
 - Do not create index or navigation pages that only contain links — every page must have meaningful content of its own
 - When updating a page, check if related pages need updates too
 - Use relative links for cross-references between wiki pages
+- All page links must use slugs: lowercase with hyphens as separators. Convert the page title by lowercasing everything and replacing spaces with hyphens. Example: `Claude Code` → `claude-code`
+- When linking to pages in the same directory, always use `../slug` (not `./slug`) — the page URL includes the page name as a path segment, so `./` resolves into the current page, not the directory
 - Never add redirects to `astro.config.mjs` when reorganizing content — only do so when explicitly asked

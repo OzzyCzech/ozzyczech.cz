@@ -65,10 +65,10 @@ PolarPro states the filter is **inspired by** Portra 400, not a lab-accurate emu
 
 ## Related
 
-- [Camera gear](/photography/accessories/camera-gear/)
-- [Straps](/photography/accessories/straps/)
-- [Tripods](/photography/accessories/tripods/)
-- [Flash](/photography/accessories/flash/)
+- [Camera gear](../camera-gear)
+- [Straps](../straps)
+- [Tripods](../tripods)
+- [Flash](../flash)
 
 ## Sources
 

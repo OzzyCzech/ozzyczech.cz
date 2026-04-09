@@ -27,8 +27,8 @@ Notes on **carrying straps** for mirrorless and small DSLR kits: comfort, quick 
 
 ## Related
 
-- [Camera gear](/photography/accessories/camera-gear/) — accessory index
-- [Tripods](/photography/accessories/tripods/) — Ulanzi Zero F38 bundles with strap mount options
+- [Camera gear](../camera-gear) — accessory index
+- [Tripods](../tripods) — Ulanzi Zero F38 bundles with strap mount options
 
 ## Sources
 

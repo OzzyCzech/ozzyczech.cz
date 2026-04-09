@@ -2,7 +2,9 @@
 title: Claude Code
 description: AI-powered code agent by Anthropic — commands, skills, plugins, and settings.
 created: 2025-01-01
-updated: 2026-04-06
+updated: 2026-04-09
+sidebar:
+  order: 1
 ---
 
 [Claude Code](https://claude.ai/code/) is AI-powered code agent by Anthropic.
@@ -34,20 +36,6 @@ Skills are specialized prompts that extend Claude Code capabilities. They are in
 | `/schedule`          | Manage scheduled remote agents         |
 | `/claude-api`        | Help building apps with Claude API     |
 | `/update-config`     | Configure Claude Code settings         |
-
-## Plugins
-
-- **[Impeccable](https://impeccable.style/)** — code style and formatting plugin
-
-  ```bash
-  /plugin marketplace add pbakaus/impeccable
-  ```
-
-- **[Nette](https://github.com/nette/claude-code)** — skills for Nette framework development
-
-  ```bash
-  /plugin marketplace add nette/claude-code
-  ```
 
 ## Troubleshooting
 
@@ -147,3 +135,8 @@ Settings are stored in `~/.claude/settings.json`:
 
 - [Claude Code Status](https://status.claude.com/) - status of Claude Code services
 - [DownDetector Status](https://downdetector.com/status/claude-ai/) - DownDetector status of Claude Code services
+
+## 🔗 Related
+
+- [Plugins](../plugins) — plugin marketplace overview
+- [Skills](../skills) — open-source skill collections
