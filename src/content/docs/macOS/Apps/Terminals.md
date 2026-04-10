@@ -2,12 +2,13 @@
 title: Terminals
 description: Terminal emulator apps for macOS, from lightweight to GPU-accelerated and AI-powered.
 created: 2026-04-01
-updated: 2026-04-08
+updated: 2026-04-10
 ---
 
 Terminal emulators for macOS. All are installable via `brew install --cask <name>`.
 
 - **[Ghostty](https://ghostty.org/)** — GPU-accelerated terminal with native macOS feel, ligatures, and image protocol support; open source
+- **[Okena](https://www.okena.dev/)** — native terminal multiplexer written in Rust with GPU-accelerated rendering (GPUI), designed for running multiple CLI agents side-by-side; features project columns, automatic session restoration, git integration, and cross-platform support (macOS, Linux, Windows); open source (MIT)
 - **[cmux](https://www.cmux.dev/)** — macOS terminal built on Ghostty for managing multiple AI coding agents; features vertical tabs, split panes, and a socket API
 - **[iTerm2](https://iterm2.com/)** — long-standing Terminal replacement with split panes, search, autocomplete, paste history, and deep customization; open source
 - **[Warp](https://www.warp.dev/)** — AI-assisted terminal with command blocks, a command palette, and team sharing features
