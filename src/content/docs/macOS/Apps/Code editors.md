@@ -2,7 +2,7 @@
 title: Code editors
 description: Code editors and IDEs for macOS, from lightweight text editors to full-featured JetBrains IDEs.
 created: 2026-03-12
-updated: 2026-04-07
+updated: 2026-04-10
 ---
 
 Code editors and IDEs available on macOS.
@@ -13,6 +13,7 @@ Code editors and IDEs available on macOS.
 - **[Sublime Text](https://www.sublimetext.com/)** — fast editor known for multiple cursors, the command palette, and a rich plugin ecosystem
 - **[CodeRunner](https://coderunnerapp.com/)** — macOS editor that runs code in many languages directly from the editor; useful for quick scripting
 - **[TextMate](https://macromates.com/)** — open-source macOS editor that introduced snippets and scope-based settings; lightweight and keyboard-driven
+- **[Lapce](https://lap.dev/lapce)** — open-source code editor written in Rust with built-in LSP support, Vim-like modal editing, and a focus on performance
 - **[CotEditor](https://coteditor.com/)** — free and open-source plain-text editor with syntax highlighting and a native macOS interface
 - **[NeoVim](https://neovim.io/)** — modernized Vim fork with built-in LSP support, Lua-based configuration, and full Vim compatibility
 
