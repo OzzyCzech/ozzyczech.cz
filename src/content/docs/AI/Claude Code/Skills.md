@@ -2,12 +2,22 @@
 title: Skills
 description: Curated open-source skill collections for Claude Code and AI coding agents.
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 ---
 
 Open-source skill collections that extend Claude Code and other AI coding agents with specialized workflows.
 
 ## 🛠️ Skills
+
+- **[Superpowers](https://github.com/obra/superpowers)** — kompletní agentic workflow framework od Jesseho Vincenta (Prime Radiant); kompozitní "skills" řídí celý vývojový cyklus: brainstorming → plán → implementace přes subagenty → TDD → code review → merge/PR. Agent automaticky detekuje relevantní skill a dodržuje ho jako povinný workflow. Funguje s Claude Code, Cursor, Codex, OpenCode, Gemini CLI a GitHub Copilot CLI.
+
+  Install in Claude Code:
+
+  ```bash
+  /plugin install superpowers@claude-plugins-official
+  ```
+
+  Klíčové skills: `brainstorming`, `writing-plans`, `subagent-driven-development`, `test-driven-development`, `systematic-debugging`, `using-git-worktrees`, `requesting-code-review`, `writing-skills`
 
 - **[agent-skills](https://github.com/addyosmani/agent-skills)** — 19 production-grade engineering workflow skills for AI coding agents covering the full dev lifecycle (define → plan → build → verify → review → ship); works with Claude Code, Cursor, Gemini CLI, Windsurf, and GitHub Copilot
 
