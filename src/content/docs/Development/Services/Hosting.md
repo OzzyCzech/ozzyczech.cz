@@ -2,7 +2,7 @@
 title: Hosting
 description: Cloud and serverless hosting platforms for deploying modern web applications.
 created: 2022-11-14
-updated: 2026-04-07
+updated: 2026-04-10
 ---
 
 Overview of hosting platforms for web applications, APIs, and static sites — from serverless PaaS to dedicated cloud servers.
@@ -22,6 +22,13 @@ Overview of hosting platforms for web applications, APIs, and static sites — f
 - **[Digital Ocean](https://www.digitalocean.com/)** — straightforward cloud hosting with VMs, managed databases, and app platform
 - **[Kinsta](https://kinsta.com/application-hosting/)** — application and database hosting on Google Cloud
 - **[Amazon S3](https://aws.amazon.com/s3/)** — object storage service, commonly used for static asset hosting
+
+## Self-hosted clouds
+
+Open-source PaaS platforms you run on your own server — alternatives to Vercel, Heroku, or Railway without vendor lock-in.
+
+- **[Coolify](https://coolify.io/)** — self-hostable alternative to Vercel / Netlify / Railway with Git push-to-deploy, automatic SSL, database backups, and 280+ one-click services
+- **[Dokploy](https://dokploy.com/)** — open-source deployment platform with Docker Compose support, multi-server management, Traefik integration, and built-in database backups
 
 ## GitHub Pages subdomains
 
