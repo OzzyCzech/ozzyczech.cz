@@ -2,7 +2,7 @@
 title: Markdown editors
 description: Markdown and plain-text editors for macOS, from distraction-free writing apps to full knowledge bases.
 created: 2020-10-12
-updated: 2026-04-08
+updated: 2026-04-10
 ---
 
 Markdown-focused writing and note apps for macOS. For note-taking apps see also [Notes and calendar](/macos/apps/notes-and-calendar/).
@@ -12,6 +12,7 @@ Markdown-focused writing and note apps for macOS. For note-taking apps see also 
 - **[FSNotes](https://fsnot.es/)** — fast note manager supporting GitHub Flavored Markdown, TextBundle, iCloud sync, `[[wikilinks]]`, Mermaid, MathJax, tags, and optional Git versioning
 - **[Nota](https://nota.md/)** — pro Markdown notes app for local files; no account or subscription required
 - **[Bear](https://bear.app/)** — polished Markdown editor for Mac and iOS with tags and iCloud sync
+- **[Ulysses](https://ulysses.app/)** — full-featured writing app for Mac, iPad and iPhone with markup-based editor, built-in grammar and style checker, iCloud sync, writing goals, and direct publishing to WordPress, Ghost, Medium and Micro.blog (subscription)
 - **[iA Writer](https://ia.net/writer)** — minimal writing environment with focus mode, syntax highlighting for content style, and export to Word/PDF
 - **[Typora](https://typora.io/)** — WYSIWYG Markdown editor that renders formatting inline rather than showing raw syntax
 - **[Joplin](https://joplinapp.org/)** — open-source note-taking app with end-to-end encryption and sync via Nextcloud, Dropbox, or WebDAV
