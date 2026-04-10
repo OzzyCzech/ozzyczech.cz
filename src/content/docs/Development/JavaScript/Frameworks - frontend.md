@@ -2,7 +2,7 @@
 title: Frontend frameworks
 description: Curated list of frontend JavaScript frameworks and UI libraries for the browser.
 created: 2026-02-13
-updated: 2026-04-07
+updated: 2026-04-10
 ---
 
 A curated list of **frontend** JavaScript frameworks: UI libraries, full-stack frameworks, and tools for the browser.
@@ -19,17 +19,17 @@ A curated list of **frontend** JavaScript frameworks: UI libraries, full-stack f
 - **[Nuxt](https://nuxt.com/)** — Vue framework for full-stack apps, SSG, and SSR with great DX.
 - **[shadcn-vue](https://www.shadcn-vue.com/)** — Vue port of shadcn/ui; copy-paste component collection built on Radix Vue and Tailwind CSS that you own and customize directly in your codebase
 
-## Svelte
+## Svelte ecosystem
 
 - **[Svelte](https://svelte.dev/)** — Compiler-first framework: you write components, it outputs small, fast JavaScript that updates the DOM directly (no virtual DOM).
+- **[SvelteKit](https://svelte.dev/docs/kit)** — Full-stack Svelte framework with file-based routing, SSR, SSG, and API routes.
 
 ## Angular
 
-- **[Angular](https://angular.io/)** — Full platform for building single-page apps with TypeScript, CLI, and built-in routing/state.
+- **[Angular](https://angular.dev/)** — Full platform for building single-page apps with TypeScript, CLI, and built-in routing/state.
 
 ## Other frontend frameworks
 
-- **[Remix](https://remix.run/)** — Full-stack React framework focused on web standards, fast loads, and great UX.
 - **[Qwik](https://qwik.dev/)** — Framework built for resumability and instant loading, at any app size.
 - **[Solid](https://www.solidjs.com/)** — Declarative UI library with fine-grained reactivity and a React-like API.
 - **[htmx](https://htmx.org/)** — Use AJAX, WebSockets, and SSE directly in HTML via attributes; minimal JavaScript.
