@@ -1,8 +1,10 @@
 ---
-title: js.org subdomain
+title: Jak získat js.org subdoménu
 description: Jak získat bezplatnou js.org subdoménu pro GitHub Pages projekt přes js-org/js.org repozitář.
 created: 2026-04-10
 updated: 2026-04-10
+sidebar:
+  label: js.org subdoména
 ---
 
 [js.org](https://js.org/) poskytuje bezplatné subdomény ve tvaru `project.js.org` pro projekty hostované na GitHub Pages. Subdoména se přidává PR do veřejného repozitáře [js-org/js.org](https://github.com/js-org/js.org).
@@ -81,5 +83,14 @@ Automatické CI kontroluje formát PR description i validitu `cnames_active.js`.
 
 ## Vzor
 
-- Příklad úspěšného PR: [js-org/js.org#11061](https://github.com/js-org/js.org/pull/11061)
-- PR šablona: [PULL_REQUEST_TEMPLATE.md](https://github.com/js-org/js.org/blob/master/PULL_REQUEST_TEMPLATE.md)
+Příklad úspěšného PR — [js-org/js.org#11061](https://github.com/js-org/js.org/pull/11061):
+
+```markdown
+- [x] There is reasonable content on the page (see: [No Content](https://github.com/js-org/js.org/wiki/No-Content))
+- [x] I have read and accepted the [Terms and Conditions](http://js.org/terms.html)
+- The site content can be seen at https://ozzyczech.github.io/mock-to-openapi/
+
+> The site content is a web tool and npm package (mock-to-openapi) for converting JSON mock objects to OpenAPI schemas and is relevant to JavaScript developers specifically because it is a JavaScript/TypeScript CLI tool and library published on npm that helps developers generate OpenAPI definitions from JSON examples
+```
+
+Raw šablona PR description: [PULL_REQUEST_TEMPLATE.md](https://github.com/js-org/js.org/blob/master/PULL_REQUEST_TEMPLATE.md)
