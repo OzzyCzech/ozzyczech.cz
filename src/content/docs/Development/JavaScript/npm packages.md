@@ -64,6 +64,10 @@ Curated npm packages by category. For publishing packages, see [npm Trusted Publ
 
 - **[nprogress](https://ricostacruz.com/nprogress/)** — slim progress bar for page load and async operations
 
+## CLI
+
+- **[Ink](https://github.com/vadimdemedes/ink)** — React renderer for interactive command-line apps; uses Yoga for Flexbox layouts in the terminal
+
 ## Services
 
 - **[NPM Trends](https://www.npmtrends.com/)** — compare npm package download counts over time
