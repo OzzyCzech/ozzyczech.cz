@@ -2,27 +2,12 @@
 title: Syntax highlighting
 description: JavaScript syntax highlighting libraries for embedding code with color in web pages.
 created: 2024-05-27
-updated: 2026-04-06
+updated: 2026-04-10
 ---
 
-### [Prism](https://prismjs.com/)
+JavaScript libraries for syntax highlighting code blocks in web pages, documentation, and editors.
 
-A lightweight, extensible syntax highlighter, built with modern web standards in mind. [Demo](https://prismjs.com/).
-Prism is designed to be simple yet powerful, offering a variety of features to enhance code presentation.
-
-### [Highlight.js](https://highlightjs.org/)
-
-A syntax highlighter written in JavaScript. [Demo](https://highlightjs.org/static/demo/). Highlight.js automatically
-detects the language of the code block and applies the appropriate styling, making it easy to use.
-
-### [Shiki](https://github.com/shikijs/shiki)
-
-Shiki is a beautiful Syntax Highlighter. [Demo](https://shiki.matsu.io/). Shiki provides stunning code highlighting
-using TextMate grammars and VS Code themes, ensuring that your code looks great in any context.
-
-### [Sugar High](https://github.com/huozhi/sugar-high)
-
-A very small syntax highlighter for JavaScript and JSX (about 1 kB minified and gzipped), with optional presets for
-CSS, Python, Rust, and more. [Demo](https://sugar-high.vercel.app/). Styling uses CSS custom properties (`--sh-*`);
-there is also a [remark plugin](https://github.com/huozhi/sugar-high/tree/main/packages/remark-sugar-high) for
-highlighting fenced code blocks in Markdown.
+- **[Shiki](https://shiki.style/)** — syntax highlighter using TextMate grammars and VS Code themes; produces accurate, rich output
+- **[Prism](https://prismjs.com/)** — lightweight, extensible highlighter with a large plugin and theme ecosystem
+- **[Highlight.js](https://highlightjs.org/)** — auto-detecting syntax highlighter; works out of the box with no configuration
+- **[Sugar High](https://github.com/huozhi/sugar-high)** — ~1 kB syntax highlighter for JS/JSX; CSS custom properties for styling, with a remark plugin for Markdown
