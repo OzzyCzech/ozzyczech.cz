@@ -2,7 +2,7 @@
 title: Skills
 description: Curated open-source skill collections for Claude Code and AI coding agents.
 created: 2026-04-08
-updated: 2026-04-10
+updated: 2026-04-11
 ---
 
 Open-source skill collections that extend Claude Code and other AI coding agents with specialized workflows.
@@ -29,6 +29,21 @@ Open-source skill collections that extend Claude Code and other AI coding agents
   ```
 
   Key skills: `spec-driven-development`, `test-driven-development`, `security-and-hardening`, `performance-optimization`, `code-review-and-quality`, `shipping-and-launch`
+
+- **[caveman](https://github.com/JuliusBrussee/caveman)** — "why use many token when few do trick" — skill/plugin that makes the agent talk like a caveman, cutting ~75% of output tokens while keeping full technical accuracy; includes intensity levels (Lite / Full / Ultra), 文言文 classical Chinese mode, terse commit messages (`caveman-commit`), one-line code reviews (`caveman-review`), and a `caveman-compress` tool that rewrites memory files (e.g. `CLAUDE.md`) into compressed prose saving ~45% of input tokens
+
+  Install in Claude Code:
+
+  ```bash
+  claude plugin marketplace add JuliusBrussee/caveman
+  claude plugin install caveman@caveman
+  ```
+
+  Any agent (Cursor, Copilot, Windsurf, Cline, Codex):
+
+  ```bash
+  npx skills add JuliusBrussee/caveman
+  ```
 
 - **[claude-improve](https://github.com/TerenceBristol/claude-improve)** — self-improving retrospective skill; after each conversation Claude reflects on what went wrong and updates its own CLAUDE.md rules to do better next time
 
