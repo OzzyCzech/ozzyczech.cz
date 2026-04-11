@@ -16,10 +16,16 @@ if (title.match(/\((\d{4})\)/)) {
 	url.searchParams.append('query', title);
 }
 
-const response = await fetch(url).then((r) => r.json());
-if (!response || !response.results) return null;
-
-const result = response.results.filter((result: { title: string }) => result.title.toLowerCase() === title.toLowerCase()).shift() || response.results.shift();
+let result: any = null;
+try {
+	const res = await fetch(url);
+	if (!res.ok) return null;
+	const response = await res.json();
+	if (!response?.results) return null;
+	result = response.results.find((r: { title: string }) => r.title.toLowerCase() === title.toLowerCase()) ?? response.results[0] ?? null;
+} catch {
+	return null;
+}
 if (!result) return null;
 
 const img = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : '';
