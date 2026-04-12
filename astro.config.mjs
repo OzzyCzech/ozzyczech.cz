@@ -62,6 +62,7 @@ export default defineConfig({
 					items: [
 						{label: 'Agents', collapsed: false, autogenerate: {directory: 'AI/Agents'}},
 						{label: 'Claude Code', collapsed: false, autogenerate: {directory: 'AI/Claude Code'}},
+						{label: 'Gemma', collapsed: false, autogenerate: {directory: 'AI/Gemma'}},
 						{label: 'Tools', collapsed: false, autogenerate: {directory: 'AI/Tools'}},
 						{label: 'Guides', collapsed: false, autogenerate: {directory: 'AI/Guides'}},
 						'ai/benchmarks',
