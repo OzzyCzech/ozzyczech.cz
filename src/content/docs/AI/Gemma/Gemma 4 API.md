@@ -5,11 +5,11 @@ created: 2026-04-12
 updated: 2026-04-12
 ---
 
-Tři hlavní způsoby, jak volat Gemma 4 přes API: lokálně přes Ollama, přes Google AI Studio (free tier) nebo přes OpenRouter (OpenAI-kompatibilní). Každý se hodí na jiný use case.
+Gemma 4 můžete přes API volat třemi hlavními způsoby: lokálně přes Ollama, přes Google AI Studio (bezplatný tier) nebo přes OpenRouter (OpenAI-kompatibilní vrstva). Každý se hodí pro trochu jiný scénář.
 
 ## Ollama — lokální API
 
-Pokud máte [Ollama nainstalovanou](../gemma-4-na-digitalocean), běží API server na `localhost:11434`. Žádný API klíč, žádné limity, kompletně zdarma.
+Pokud máte [Ollamu nainstalovanou](../gemma-4-na-digitalocean), API server běží na `localhost:11434`. Nepotřebujete API klíč, nenarazíte na limity a vše funguje zcela zdarma.
 
 ### Generování
 
@@ -48,9 +48,9 @@ const data = await response.json();
 console.log(data.response);
 ```
 
-### Chat API (multi-turn)
+### Chat API (více kol)
 
-Pro konverzace s historií zpráv:
+Pro konverzace s historií zpráv použijte:
 
 ```python
 import requests
@@ -91,12 +91,12 @@ Ollama je ideální pro vývoj a experimenty — žádné náklady, úplné souk
 
 ## Google AI Studio
 
-Google nabízí Gemma 4 přes AI Studio API s free tierem. Běží na Google TPU infrastruktuře, takže je to rychlé.
+Google nabízí Gemma 4 přes AI Studio API s bezplatným tierem. Služba běží na infrastruktuře Google TPU, takže odpovědi bývají rychlé.
 
 ### Získání API klíče
 
-1. Jděte na [aistudio.google.com](https://aistudio.google.com/)
-2. Klikněte na „Get API Key"
+1. Přejděte na [aistudio.google.com](https://aistudio.google.com/)
+2. Klikněte na „Get API Key“
 3. Vytvořte klíč
 
 ### Python SDK
@@ -128,7 +128,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemma-4-27b-it:gen
   }'
 ```
 
-### Free tier limity
+### Limity bezplatného tieru
 
 | Limit | Hodnota |
 |-------|---------|
@@ -136,7 +136,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemma-4-27b-it:gen
 | Požadavky za den (RPD) | 1 500 |
 | Tokeny za minutu | 1 000 000 |
 
-### Error handling
+### Zpracování chyb
 
 ```python
 import google.generativeai as genai
@@ -175,12 +175,12 @@ for chunk in response:
 
 ## OpenRouter (OpenAI-kompatibilní)
 
-OpenRouter používá stejný formát jako OpenAI API — pokud máte kód pro GPT, stačí změnit model string.
+OpenRouter používá stejný formát jako OpenAI API. Pokud už máte kód pro GPT, obvykle stačí změnit identifikátor modelu.
 
 ### Získání API klíče
 
 1. Registrace na [openrouter.ai](https://openrouter.ai/)
-2. Dobití kreditu (minimum $5)
+2. Dobití kreditu (minimum 5 USD)
 3. Vygenerování API klíče
 
 ### Python
@@ -251,15 +251,15 @@ for chunk in stream:
 
 | | Ollama (lokální) | Google AI Studio | OpenRouter |
 |---|---|---|---|
-| Cena | Zdarma | Free tier (15 RPM) | Pay per token |
+| Cena | Zdarma | Bezplatný tier (15 RPM) | Platba za token |
 | Rychlost | Závisí na HW | Rychlé (Google TPU) | Rychlé |
 | Soukromí | Kompletní (offline) | Data jdou na Google | Data jdou k poskytovateli |
-| Rate limity | Žádné | 15 RPM / 1 500 RPD | Podle kreditu |
+| Limity | Žádné | 15 RPM / 1 500 RPD | Podle kreditu |
 | OpenAI kompatibilní | Částečně | Ne (vlastní SDK) | Ano |
-| Ideální pro | Soukromí, vývoj | Prototypy zdarma | Produkce, multi-model |
+| Ideální pro | Soukromí, vývoj | Prototypy zdarma | Produkci, práci s více modely |
 
 :::note
-- **Side projekt** → Google AI Studio free tier
+- **Vedlejší projekt** → bezplatný tier v Google AI Studio
 - **Soukromí** → Ollama lokálně
 - **Produkce** → OpenRouter (flexibilita, fallback na jiné modely)
 - **Učení** → Ollama (žádné API klíče, žádné limity)
@@ -267,10 +267,10 @@ for chunk in stream:
 
 ## Časté problémy
 
-- **„Connection refused" na Ollama** — zkontrolujte, že Ollama server běží (`ollama serve`)
-- **„Model not found" na Google AI Studio** — názvy modelů se mění, ověřte aktuální ID v [dokumentaci](https://ai.google.dev/gemma/docs)
-- **Pomalé odpovědi na Ollama** — pravděpodobně běží na CPU, viz [Gemma 4 na DigitalOcean](../gemma-4-na-digitalocean) pro GPU setup
-- **Timeouty** — u dlouhých generování zvyšte HTTP client timeout
+- **„Connection refused“ v Ollamě** — zkontrolujte, že Ollama server běží (`ollama serve`)
+- **„Model not found“ v Google AI Studio** — názvy modelů se mění, takže si ověřte aktuální ID v [dokumentaci](https://ai.google.dev/gemma/docs)
+- **Pomalé odpovědi v Ollamě** — model pravděpodobně běží na CPU; pro GPU setup viz [Gemma 4 na DigitalOcean](../gemma-4-na-digitalocean)
+- **Timeouty** — u delších generování zvyšte timeout HTTP klienta
 
 ## Sources
 

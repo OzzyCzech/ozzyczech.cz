@@ -1,11 +1,11 @@
 ---
 title: Gemma 4 na DigitalOcean GPU Droplet
-description: Jak nastavit Gemma 4 přes Ollama na DigitalOcean GPU Droplet s Debian 13 a RTX 4000 Ada.
+description: Jak spustit Gemma 4 přes Ollama na DigitalOcean GPU Droplet s Debian 13 a RTX 4000 Ada.
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-12
 ---
 
-Návod na spuštění Gemma 4 přes [Ollama](https://ollama.com/) na DigitalOcean GPU Droplet. Ověřeno na Debian 13 (Trixie) s RTX 4000 Ada (20 GB VRAM), duben 2026.
+Praktický návod, jak spustit Gemma 4 přes [Ollama](https://ollama.com/) na DigitalOcean GPU Droplet. Postup je ověřený na Debianu 13 (Trixie) s kartou RTX 4000 Ada (20 GB VRAM), stav k dubnu 2026.
 
 ## Modely
 
@@ -50,7 +50,7 @@ ollama run gemma4:26b
 
 ### Vzdálený přístup k API
 
-Pokud chcete přistupovat k Ollama API vzdáleně:
+Pokud chcete k Ollama API přistupovat vzdáleně:
 
 ```bash
 mkdir -p /etc/systemd/system/ollama.service.d
@@ -73,7 +73,7 @@ Doporučené výchozí hodnoty pro Gemma 4:
 /set parameter num_ctx 32768
 ```
 
-Přidejte `--keepalive 30m` při spouštění, aby model zůstal načtený v paměti a nedocházelo ke zdržení při každém dotazu:
+Při spuštění můžete přidat `--keepalive 30m`, aby model zůstal načtený v paměti a nezdržoval se při každém novém dotazu:
 
 ```bash
 ollama run gemma4:26b --keepalive 30m
@@ -81,7 +81,7 @@ ollama run gemma4:26b --keepalive 30m
 
 ## Thinking mode
 
-Gemma 4 podporuje „thinking mode" — model před odpovědí projde interním uvažováním. Aktivuje se přidáním `<|think|>` tokenu do systémového promptu nebo parametrem `enable_thinking=True` v chat template.
+Gemma 4 podporuje "thinking mode" — model si před odpovědí projde interní fázi uvažování. Zapnete ho přidáním tokenu `<|think|>` do systémového promptu nebo parametrem `enable_thinking=True` v chat template.
 
 ## Ověření GPU
 
@@ -91,7 +91,7 @@ ollama ps
 ```
 
 :::note
-`nvidia-smi` na Debian 13 nefunguje — balíček neobsahuje binárku. Použijte `ollama ps` nebo `lsmod | grep nvidia`.
+`nvidia-smi` na Debianu 13 nefunguje, protože balíček neobsahuje příslušnou binárku. Místo toho použijte `ollama ps` nebo `lsmod | grep nvidia`.
 :::
 
 ## Sources
