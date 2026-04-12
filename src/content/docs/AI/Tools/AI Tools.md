@@ -38,7 +38,7 @@ Nástroje pro tvorbu aplikací pomocí AI — generování kódu, vizuální bui
 
 ## 💻 Coding
 
-- **[Graphify](../graphify)** — open-source knowledge graph skill for AI coding assistants; builds a queryable graph from code, docs, and diagrams ([graphify.net](https://graphify.net))
+- **[Graphify](../graphify)** — open-source „skill“ pro AI coding asistenty; staví dotazovatelný graf z kódu, dokumentace a diagramů ([graphify.net](https://graphify.net))
 - **[Claude Code](https://claude.ai/code/)** — AI coding agent by Anthropic
 - **[Codex](https://openai.com/codex/)** — AI coding agent by OpenAI
 - **[GitHub Copilot](https://github.com/copilot/)** — AI coding agent integrovaný přímo do GitHubu
