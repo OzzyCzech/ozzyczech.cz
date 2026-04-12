@@ -2,7 +2,7 @@
 title: Skills
 description: Curated open-source skill collections for Claude Code and AI coding agents.
 created: 2026-04-08
-updated: 2026-04-11
+updated: 2026-04-12
 ---
 
 Open-source skill collections that extend Claude Code and other AI coding agents with specialized workflows.
@@ -49,5 +49,6 @@ Open-source skill collections that extend Claude Code and other AI coding agents
 
 ## 🔗 Related
 
+- [Graphify](../tools/graphify) — knowledge graph builder skill (Tree-sitter + LLM extraction) for codebase understanding
 - [Claude Code](../claude-code) — commands and settings reference
 - [Plugins](../plugins) — Claude Code plugin marketplace
