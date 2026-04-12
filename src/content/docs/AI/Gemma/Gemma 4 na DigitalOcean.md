@@ -5,7 +5,7 @@ created: 2026-04-09
 updated: 2026-04-12
 ---
 
-Praktický návod, jak spustit Gemma 4 přes [Ollama](https://ollama.com/) na DigitalOcean GPU Droplet. Postup je ověřený na Debianu 13 (Trixie) s kartou RTX 4000 Ada (20 GB VRAM), stav k dubnu 2026.
+Praktický návod, jak spustit Gemma 4 přes [Ollama](https://ollama.com/) na [DigitalOcean GPU Droplet](https://www.digitalocean.com/products/gradient/gpu-droplets). Postup je ověřený na Debianu 13 (Trixie) s kartou RTX 4000 Ada (20 GB VRAM), stav k dubnu 2026.
 
 ## Modely
 
