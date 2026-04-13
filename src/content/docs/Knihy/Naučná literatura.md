@@ -29,8 +29,8 @@ Naučné knihy, které stojí za přečtení.
 
 ## Práce a produktivita
 
-- The World Beyond Your Head — Matthew Crawford
-- Hluboká práce — Cal Newport
+- [The World Beyond Your Head](https://www.goodreads.com/book/show/22609447-the-world-beyond-your-head) — Matthew Crawford
+- [Hluboká práce](https://www.databazeknih.cz/prehled-knihy/hluboka-prace-310127) — Cal Newport
 - [Čtyři tisíce týdnů](https://www.knihydobrovsky.cz/kniha/ctyri-tisice-tydnu-443845828) — Oliver Burkeman
 - [Insanely Simple](https://www.knihydobrovsky.cz/kniha/insanely-simple-the-obsession-that-drives-apple-s-success-197265296) — Ken Segall
 
