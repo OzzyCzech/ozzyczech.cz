@@ -5,7 +5,7 @@ created: 2024-05-25
 updated: 2026-04-10
 ---
 
-Curated npm packages by category. For publishing packages, see [npm Trusted Publishing](../javascript/npm-trusted-publishing).
+Curated npm packages by category. For publishing packages, see [npm Trusted Publishing](../npm-trusted-publishing).
 
 ## Charts
 
