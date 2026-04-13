@@ -2,10 +2,10 @@
 title: Vector Memory for Claude Code
 description: Vlastní vektorový paměťový systém pro Claude Code s ChromaDB a BGE-M3 embeddingy přes MCP.
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-10
 ---
 
-Lokální vektorová paměť dává Claude Code persistentní sémantickou paměť napříč sezeními. Místo vkládání celých paměťových souborů do promptu se načtou jen nejrelevantnější fragmenty — úspora 80–90 % tokenů oproti plné paměti v kontextu.
+Lokální vektorová paměť dává Claude Code persistentní sémantickou paměť napříč sezeními. Místo vkládání celých paměťových souborů do promptu se načtou jen nejrelevantnější fragmenty — úspora 80–90 % tokenů oproti plné paměti v kontextu. Řešení kombinuje [ChromaDB](https://www.trychroma.com/) jako vektorovou databázi s embedding modelem [BGE-M3](https://huggingface.co/BAAI/bge-m3) (BAAI) vystaveným Claude Code přes [MCP](https://modelcontextprotocol.io/).
 
 ## Architektura
 
@@ -194,3 +194,11 @@ if to_delete:
 | Vhodné pro | Větší paměť (stovky poznámek), vícejazyčné projekty |
 
 Pro malé projekty s pár poznámkami stačí vestavěná [auto memory](../claude-code) Claude Code.
+
+## Sources
+
+- [ChromaDB dokumentace](https://docs.trychroma.com/) — instalace, persistent client, Docker deployment
+- [BGE-M3 na Hugging Face](https://huggingface.co/BAAI/bge-m3) — model od BAAI, 1024-dim dense vektory, multilingvální (100+ jazyků)
+- [FlagEmbedding repo](https://github.com/FlagOpen/FlagEmbedding) — referenční implementace BGEM3FlagModel
+- [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) — FastMCP a stdio transport
+- Vlastní průvodce (interní zdroj) — kompletní setup včetně kódu MCP serveru, ověřeno 2026-04
