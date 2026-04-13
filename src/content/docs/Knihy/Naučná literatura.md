@@ -1,5 +1,5 @@
 ---
-title: Naučná literatura
+title: 🔬 Naučná literatura
 description: Výběr naučné literatury — věda, historie, produktivita a survival.
 created: 2024-01-01
 updated: 2026-04-10

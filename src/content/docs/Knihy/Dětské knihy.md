@@ -1,13 +1,11 @@
 ---
-title: Dětské knihy
+title: 🧸 Dětské knihy
 description: Doporučené dětské knihy — pohádky, příběhy a dobrodružství pro děti.
 created: 2024-01-01
 updated: 2026-04-10
 ---
 
 Dětské knihy, které stojí za přečtení nahlas i samostatně.
-
-## 🧸 Pro děti
 
 - [Za chvíli jsme doma, jen si odskočíme do Afriky](https://www.databazeknih.cz/prehled-knihy/za-chvili-jsme-doma-jen-si-odskocime-do-afriky-239618) — Oliver Scherz
 - [Tappi](https://www.databazeknih.cz/search?q=Marcin+Mortka) — Marcin Mortka

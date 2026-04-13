@@ -1,5 +1,5 @@
 ---
-title: Odsun sudetských Němců
+title: 🏛️ Odsun sudetských Němců
 description: Výběr knih a zdrojů o Sudetech, vyhnání Čechů z pohraničí, Lidicích, Ležácích a konečném řešení české otázky.
 created: 2026-04-10
 updated: 2026-04-10
