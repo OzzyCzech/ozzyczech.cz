@@ -2,7 +2,7 @@
 title: Markdown editors
 description: Markdown and plain-text editors for macOS, from distraction-free writing apps to full knowledge bases.
 created: 2020-10-12
-updated: 2026-04-10
+updated: 2026-04-13
 ---
 
 Markdown-focused writing and note apps for macOS. For note-taking apps see also [Notes and calendar](/macos/apps/notes-and-calendar/).
@@ -25,3 +25,4 @@ Markdown-focused writing and note apps for macOS. For note-taking apps see also 
 - **[Cogito](https://cogito.md/)** — native macOS Markdown editor (free beta, requires macOS Tahoe 26+) with wiki links, `![[embeds]]`, synced source/preview scrolling, Quick Open (⌘P), multi-tab support, and syntax highlighting for 20+ languages; stores plain files on disk with no proprietary database
 - **[Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)** — general code editor with built-in Markdown preview and extensions for enhanced editing
 - **[Mak](https://mak.ink/)** — in-browser plain-text notepad with Markdown support; no install required
+- **[Clearly Markdown](https://clearly.md/)** — native SwiftUI/AppKit Markdown editor for macOS with GitHub Flavored Markdown preview, Mermaid diagrams, KaTeX math, callouts, footnotes, PDF export, menubar scratchpad, and QuickLook integration; open source and free
