@@ -5,7 +5,7 @@ created: 2024-01-01
 updated: 2026-04-10
 ---
 
-Beletrie, kterou jsem přečetl a stojí za doporučení.
+Osobní výběr beletrie — romány, sci-fi, krimi a historická fikce.
 
 ## Romány a próza
 
