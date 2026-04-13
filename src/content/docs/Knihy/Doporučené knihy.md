@@ -1,6 +1,11 @@
 ---
-title: Books
+title: Doporučené knihy
+description: Osobní výběr přečtených knih — beletrie, naučná literatura, historie a dětské knihy.
+created: 2024-01-01
+updated: 2026-04-10
 ---
+
+Osobní seznam knih, které stojí za přečtení — od beletrie a naučné literatury až po dětské knihy.
 
 ## 📖 Beletrie
 
