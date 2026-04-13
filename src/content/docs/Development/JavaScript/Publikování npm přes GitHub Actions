@@ -1,5 +1,5 @@
 ---
-title: npm Trusted Publishing
+title: Publikování npm přes GitHub Actions
 description: Publikování npm balíčků přes GitHub Actions bez tokenů pomocí OIDC Trusted Publishing.
 created: 2026-04-10
 updated: 2026-04-10
