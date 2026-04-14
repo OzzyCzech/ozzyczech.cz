@@ -2,7 +2,7 @@
 title: Hosting
 description: Cloud and serverless hosting platforms for deploying modern web applications.
 created: 2022-11-14
-updated: 2026-04-07
+updated: 2026-04-14
 ---
 
 Overview of hosting platforms for web applications, APIs, and static sites — from serverless PaaS to dedicated cloud servers.
@@ -21,8 +21,7 @@ Overview of hosting platforms for web applications, APIs, and static sites — f
 - **[Vultr](https://www.vultr.com/)** — cloud compute with VMs, bare metal, and Kubernetes
 - **[Digital Ocean](https://www.digitalocean.com/)** — straightforward cloud hosting with VMs, managed databases, and app platform
 - **[Kinsta](https://kinsta.com/application-hosting/)** — application and database hosting on Google Cloud
-- **[Amazon S3](https://aws.amazon.com/s3/)** — object storage service, commonly used for static asset hosting
 
-## GitHub Pages subdomains
+## Static hosting
 
-- **[JS.ORG](https://js.org/)** — free `*.js.org` subdomains for JavaScript projects hosted on GitHub Pages; register via pull request to the js.org repository
+- **[Amazon S3](https://aws.amazon.com/s3/)** — object storage, commonly used for static asset and website hosting
