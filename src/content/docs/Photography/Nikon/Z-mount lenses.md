@@ -7,7 +7,7 @@ sidebar:
   label: Z-mount lenses
 ---
 
-Overview of **Nikkor Z** optics for **[Nikon Z cameras](/photography/nikon/cameras/)**: practical groupings, teleconverters, suffix cheat sheet, and indicative pricing in CZK.
+Overview of **Nikkor Z** optics for **[Nikon Z cameras](/photography/nikon/nikon/)**: practical groupings, teleconverters, suffix cheat sheet, and indicative pricing in CZK.
 
 ## Z-mount lenses (FX + DX)
 

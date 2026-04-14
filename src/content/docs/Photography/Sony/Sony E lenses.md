@@ -7,7 +7,7 @@ sidebar:
   label: Sony E lenses
 ---
 
-For **[Sony Alpha crop bodies](/photography/sony/cameras/)** and the **ZV** line, this page lists lenses with an **APS-C image circle**: Sony **E** (no **FE** in the name), Sigma **DC DN** (mirrorless crop), and Tamron **Di III-A**. On **full-frame** bodies most of these **vignette** unless you use **APS-C crop**.
+For **[Sony Alpha crop bodies](/photography/sony/sony/)** and the **ZV** line, this page lists lenses with an **APS-C image circle**: Sony **E** (no **FE** in the name), Sigma **DC DN** (mirrorless crop), and Tamron **Di III-A**. On **full-frame** bodies most of these **vignette** unless you use **APS-C crop**.
 
 For **full-frame** coverage, see [Sony FE lenses](/photography/sony/sony-fe-lenses/). Long **FE** teles you might pair with an APS-C body for reach are linked from the telephoto section below.
 

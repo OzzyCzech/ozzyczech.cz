@@ -7,7 +7,7 @@ sidebar:
   label: Sony FE lenses
 ---
 
-Native and third-party **FE** glass for **[Sony Alpha full-frame bodies](/photography/sony/cameras/)** covers the full-frame image circle. On **APS-C** bodies they behave like a **1.5×** tighter field of view. Native **APS-C-only** optics are on [Sony E lenses](/photography/sony/sony-e-lenses/).
+Native and third-party **FE** glass for **[Sony Alpha full-frame bodies](/photography/sony/sony/)** covers the full-frame image circle. On **APS-C** bodies they behave like a **1.5×** tighter field of view. Native **APS-C-only** optics are on [Sony E lenses](/photography/sony/sony-e-lenses/).
 
 **E mount** is for mirrorless **Alpha** / **ZV** bodies. **A-mount** (DSLR) lenses need a **LA-EA** adapter; AF may be limited.
 

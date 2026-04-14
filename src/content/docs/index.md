@@ -5,7 +5,7 @@ tableOfContents: false
 ---
 
 This is my personal knowledge base — a public collection of notes I've gathered over time.
-It works as an [LLM Wiki](/ai/llm-wiki/): I curate the sources and direction,
+It works as an [LLM Wiki](/ai/guides/llm-wiki/): I curate the sources and direction,
 an LLM agent helps organize, summarize, and keep things consistent.
 It's [open source](https://github.com/OzzyCzech/ozzyczech.cz) and maintained by [Roman Ožana](https://ozana.cz).
 

@@ -5,7 +5,7 @@ created: 2026-04-05
 updated: 2026-04-06
 ---
 
-**X Mount** is the bayonet for **[Fujifilm X Series](/photography/fujifilm/cameras/)** interchangeable-lens bodies. It does **not** fit [GFX](https://fujifilm-x.com/global/special/gfx/) medium-format cameras (**G Mount**). Fixed-lens [X100](https://fujifilm-x.com/en-us/products/cameras/x100vi/) cameras are not X Mount.
+**X Mount** is the bayonet for **[Fujifilm X Series](/photography/fujifilm/fujifilm/)** interchangeable-lens bodies. It does **not** fit [GFX](https://fujifilm-x.com/global/special/gfx/) medium-format cameras (**G Mount**). Fixed-lens [X100](https://fujifilm-x.com/en-us/products/cameras/x100vi/) cameras are not X Mount.
 
 The sensor is **APS-C** with a **1.5×** crop vs full frame: multiply focal length by 1.5 for an approximate **35 mm equivalent** field of view (e.g. XF 23 mm → ~35 mm equiv.).
 

@@ -5,7 +5,7 @@ created: 2026-04-06
 updated: 2026-04-06
 ---
 
-Canon **RF** mirrorless lenses cover a **full-frame** image circle on **[EOS R bodies](/photography/canon/cameras/)**. This page groups common zooms and primes with notes and rough street prices in CZK. For APS-C–native kit and compact zooms, see [RF-S lenses](/photography/canon/rf-s-lenses/).
+Canon **RF** mirrorless lenses cover a **full-frame** image circle on **[EOS R bodies](/photography/canon/canon/)**. This page groups common zooms and primes with notes and rough street prices in CZK. For APS-C–native kit and compact zooms, see [RF-S lenses](/photography/canon/rf-s-lenses/).
 
 - **Same mount everywhere:** every EOS R camera uses the **RF** bayonet, so **full-frame RF** lenses from this list also mount on **APS-C** bodies (**R7**, **R10**, **R50**, …).
 - **What changes on APS-C:** the sensor is smaller, so you use only the **middle** of the lens image — the picture looks **more telephoto** than on full frame. Rule of thumb: multiply focal length by about **1.6** when comparing framing to full frame (in **35 mm equivalent** terms, **50 mm** on APS-C ≈ **~80 mm** on full frame).

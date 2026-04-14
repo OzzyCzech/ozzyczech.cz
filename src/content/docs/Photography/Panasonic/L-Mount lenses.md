@@ -5,7 +5,7 @@ created: 2026-04-06
 updated: 2026-04-06
 ---
 
-**Panasonic Lumix S** bodies ([overview](/photography/panasonic/cameras/)) use **L-Mount** (full-frame line).  
+**Panasonic Lumix S** bodies ([overview](/photography/panasonic/panasonic/)) use **L-Mount** (full-frame line).  
 The ecosystem also includes **Sigma** and **Leica** L-Mount lenses.
 
 ### Standard zoom lenses
