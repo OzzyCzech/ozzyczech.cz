@@ -2,7 +2,7 @@
 title: Utilities
 description: macOS utility apps for system optimization, file automation, and app management.
 created: 2026-04-01
-updated: 2026-04-07
+updated: 2026-04-14
 ---
 
 Miscellaneous macOS utilities for managing apps, files, and system behavior.
@@ -13,6 +13,7 @@ Miscellaneous macOS utilities for managing apps, files, and system behavior.
 - **[Ejectify](https://ejectify.app/)** — automatically ejects external drives when your Mac sleeps to prevent "disk not ejected properly" errors
 - **[Hazel](https://www.noodlesoft.com/)** — rule-based file organization automation; watches folders and applies actions on matching files
 - **[Open Screen](https://openscreen.vercel.app/)** — share your Mac screen to a phone or tablet over the local network via a browser
+- **[Wispr Flow](https://wisprflow.ai/)** — AI voice dictation that transcribes speech into edited text in any app; auto-removes filler words, learns personal vocabulary, supports 100+ languages
 
 ## Curated app lists
 
