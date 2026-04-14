@@ -1,5 +1,8 @@
 ---
 title: YouTube downloader
+description: Download YouTube videos and extract audio using yt-dlp.
+created: 2022-11-01
+updated: 2026-04-06
 ---
 
 First intall [yt-dlp](https://github.com/yt-dlp/yt-dlp) (that's [youtube-dl](https://github.com/ytdl-org/youtube-dl) fork based on the inactive [youtube-dlc](https://github.com/blackjack4494/yt-dlc))

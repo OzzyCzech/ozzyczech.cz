@@ -1,5 +1,8 @@
 ---
 title: Nemusíš
+description: Krátká báseň o tom, že nemusíš pořád spěchat, podávat výkony a být dokonalý.
+created: 2024-06-18
+updated: 2026-04-05
 tableOfContents: false
 ---
 

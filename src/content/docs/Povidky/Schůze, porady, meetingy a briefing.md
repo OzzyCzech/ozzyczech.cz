@@ -1,5 +1,8 @@
 ---
 title: Schůze, porady, meetingy a briefing
+description: Proč většina lidí nenávidí porady a jak je udělat efektivnější.
+created: 2024-05-24
+updated: 2025-06-06
 lastUpdated: 2008-05-14
 ---
 

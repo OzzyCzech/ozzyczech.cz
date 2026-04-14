@@ -1,5 +1,8 @@
 ---
 title: Návod na život
+description: Jednoduchá pravidla pro spokojený život — komunikace, odpouštění a spoléhání na sebe.
+created: 2024-05-24
+updated: 2024-05-24
 tableOfContents: false
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Život podle Charlese Bukowského
+description: 10 životních rad od Charlese Bukowského — jak žít naplno a nebát se.
+created: 2018-11-02
+updated: 2024-05-27
 tableOfContents: false
 ---
 

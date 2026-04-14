@@ -1,5 +1,8 @@
 ---
 title: Parkinsonův zákon
+description: Parkinsonovy zákony o rozpínavosti práce, výdajů a složitosti.
+created: 2024-05-24
+updated: 2024-05-24
 tableOfContents: false
 ---
 

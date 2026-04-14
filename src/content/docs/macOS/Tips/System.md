@@ -1,5 +1,8 @@
 ---
 title: System tips
+description: macOS system tips — screenshots, keyboard shortcuts, and command line utilities.
+created: 2026-04-01
+updated: 2026-04-01
 ---
 
 ## Screenshots

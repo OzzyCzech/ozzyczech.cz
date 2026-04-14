@@ -1,5 +1,8 @@
 ---
 title: LEGO
+description: LEGO catalogues and Czech LEGO shops.
+created: 2023-03-23
+updated: 2024-07-23
 ---
 
 ## LEGO catalogues

@@ -1,5 +1,8 @@
 ---
 title: Command line tools
+description: Essential command line tools for macOS development installed via Homebrew.
+created: 2026-04-01
+updated: 2026-04-01
 ---
 
 ## [Homebrew](https://brew.sh/)

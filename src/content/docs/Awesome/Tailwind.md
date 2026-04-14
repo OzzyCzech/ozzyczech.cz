@@ -1,5 +1,8 @@
 ---
 title: Tailwind
+description: Tailwind CSS components, templates, admin interfaces, and color generators.
+created: 2022-06-03
+updated: 2025-10-02
 ---
 
 [Tailwind](https://tailwindcss.com/docs/installation) is a utility-first CSS framework for rapidly building custom designs. It is a low-level

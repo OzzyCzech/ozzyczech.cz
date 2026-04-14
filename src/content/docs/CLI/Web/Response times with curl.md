@@ -1,5 +1,8 @@
 ---
 title: Response times with curl
+description: Measure website response times using a custom curl script.
+created: 2023-03-22
+updated: 2026-04-06
 ---
 
 ### Creating the `uptime` Script

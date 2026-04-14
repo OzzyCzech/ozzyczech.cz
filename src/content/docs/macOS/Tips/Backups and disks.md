@@ -1,5 +1,8 @@
 ---
 title: Backups and disks
+description: Time Machine management and disk utilities from the macOS command line.
+created: 2026-04-01
+updated: 2026-04-01
 ---
 
 ## Time Machine from Terminal

@@ -1,5 +1,8 @@
 ---
 title: Clone all branches and tags at once
+description: Script to fetch and track all remote branches and tags in a git repository.
+created: 2017-08-11
+updated: 2026-04-08
 sidebar:
   label: Clone everything
 ---

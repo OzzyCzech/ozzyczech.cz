@@ -1,5 +1,8 @@
 ---
 title: Filozofické břity
+description: Přehled filozofických břitev — Occamova, Hitchensova, Hanlonova a další principy kritického myšlení.
+created: 2024-11-22
+updated: 2025-10-02
 tableOfContents: false
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Mé Bulharské dobrodružství
+description: Příběh o krádeži dokladů v Burgasu a jak fungují české úřady v zahraničí.
+created: 2015-05-13
+updated: 2025-06-06
 lastUpdated: 2007-01-07
 ---
 

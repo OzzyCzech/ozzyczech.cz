@@ -1,5 +1,8 @@
 ---
 title: Jak poznat Gisáka
+description: Humorný návod, jak bezpečně poznat GISáka na ulici.
+created: 2015-05-13
+updated: 2025-06-06
 lastUpdated: 2007-01-07
 ---
 

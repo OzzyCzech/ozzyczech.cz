@@ -1,6 +1,8 @@
 ---
 title: Taking website screenshots from the command line
-description: Capture website with Google Chrome and save it as a screenshot or PDF
+description: Capture website with Google Chrome and save it as a screenshot or PDF.
+created: 2024-05-24
+updated: 2026-04-06
 sidebar:
   label: Website screenshot
 ---

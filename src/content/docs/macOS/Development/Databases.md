@@ -1,5 +1,8 @@
 ---
 title: Databases
+description: Database tools for macOS — Sequel Ace, Medis, and MongoDB setup via Homebrew.
+created: 2026-04-01
+updated: 2026-04-01
 ---
 
 ## SQL

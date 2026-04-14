@@ -1,5 +1,8 @@
 ---
 title: Highlights from Getting Real
+description: Key highlights and quotes from the Getting Real book by 37signals.
+created: 2018-11-05
+updated: 2025-10-02
 sidebar:
   label: Getting Real
 ---

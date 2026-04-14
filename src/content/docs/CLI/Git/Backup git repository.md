@@ -1,5 +1,8 @@
 ---
 title: Backup git repository
+description: Create a single bundle file backup of a git repository using git bundle.
+created: 2019-09-27
+updated: 2026-04-06
 sidebar:
   label: Backup git repository
 ---

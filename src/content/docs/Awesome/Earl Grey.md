@@ -1,5 +1,8 @@
 ---
 title: Earl Grey
+description: Overview of Earl Grey tea and recommended blends to try.
+created: 2022-07-05
+updated: 2024-05-27
 ---
 
 Earl Grey is a tea blend which has been flavoured with the addition of oil of

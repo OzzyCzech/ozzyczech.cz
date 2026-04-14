@@ -1,5 +1,8 @@
 ---
 title: Command line tools
+description: Essential command line tools — ack, bat, fd, and other useful CLI utilities.
+created: 2023-03-20
+updated: 2026-04-06
 ---
 
 ## [ack](https://beyondgrep.com)

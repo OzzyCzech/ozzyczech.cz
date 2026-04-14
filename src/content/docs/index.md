@@ -1,6 +1,8 @@
 ---
 title: Welcome to my notes
 description: A personal knowledge base about web development and more by Roman Ožana. Maintained as an LLM Wiki — curated by a human, structured by AI. Open source on GitHub.
+created: 2024-05-24
+updated: 2026-04-14
 tableOfContents: false
 ---
 

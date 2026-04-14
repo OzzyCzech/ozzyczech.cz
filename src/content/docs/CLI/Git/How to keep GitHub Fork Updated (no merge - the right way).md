@@ -1,5 +1,8 @@
 ---
 title: How to keep GitHub Fork Updated (no merge - the right way)
+description: Keep your GitHub fork updated using rebase instead of merge for a clean history.
+created: 2015-11-12
+updated: 2026-04-06
 sidebar:
   label: Update GitHub Fork
 ---

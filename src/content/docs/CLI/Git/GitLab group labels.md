@@ -1,5 +1,8 @@
 ---
 title: GitLab group labels
+description: Set up GitLab group labels for origin, priority, status, and type using glab CLI.
+created: 2026-03-12
+updated: 2026-04-14
 ---
 
 Setup group labels for GitLab using [glab](https://gitlab.com/gitlab-org/cli) CLI.

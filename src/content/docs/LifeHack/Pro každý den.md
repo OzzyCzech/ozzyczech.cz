@@ -1,6 +1,8 @@
 ---
 title: Pro každý den
 description: Několik tipů, jak si zlepšit každý den.
+created: 2024-05-24
+updated: 2024-05-24
 tableOfContents: false
 ---
 

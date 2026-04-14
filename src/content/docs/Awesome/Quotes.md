@@ -1,5 +1,8 @@
 ---
 title: Quotes
+description: Collection of memorable quotes about technology, life, and society.
+created: 2015-05-25
+updated: 2025-06-06
 tableOfContents: false
 ---
 

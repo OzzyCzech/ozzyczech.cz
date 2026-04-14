@@ -1,5 +1,8 @@
 ---
 title: Made in China - Paranoidní povídka na dobrou noc
+description: Krátká paranoidní povídka o tom, co by se stalo, kdyby Čína vyhlásila embargo na vývoz.
+created: 2020-05-29
+updated: 2025-06-06
 ---
 
 China právě vyhlásila jednostranné embargo na vývoz výrobku vyrobených na jejich území. USA a prakticky celá Evropa se

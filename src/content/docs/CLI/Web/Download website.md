@@ -1,6 +1,8 @@
 ---
 title: Download website with wget
-description: Download a website with wget command
+description: Download a website with wget command.
+created: 2019-09-12
+updated: 2026-04-06
 sidebar:
   label: Download website
 ---

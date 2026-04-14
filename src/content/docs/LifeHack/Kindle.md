@@ -1,5 +1,8 @@
 ---
 title: Kindle
+description: Kindle tips — sending documents, managing content, converters, and Calibre setup.
+created: 2023-02-20
+updated: 2025-10-02
 ---
 
 ## Send to kindle

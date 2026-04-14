@@ -1,5 +1,8 @@
 ---
 title: Jak (ne)napsat diplomku
+description: Humorný návod, jak prokrastinovat místo psaní diplomové práce.
+created: 2015-05-13
+updated: 2025-06-06
 lastUpdated: 2007-05-09
 ---
 

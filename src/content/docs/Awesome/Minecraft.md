@@ -1,5 +1,8 @@
 ---
 title: Minecraft
+description: Useful Minecraft commands for game mode, entities, items, and coordinates.
+created: 2023-07-16
+updated: 2025-10-02
 ---
 
 ### Minecraft Commands
