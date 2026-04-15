@@ -78,8 +78,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: write      # pro vytvoření GitHub Release
-      id-token: write      # POVINNÉ pro OIDC trusted publishing
+      contents: write
+      id-token: write
     steps:
       - uses: actions/checkout@v6
 
@@ -117,6 +117,99 @@ git push origin main --tags
 - **`softprops/action-gh-release@v3`** — bez explicitního `tag_name` a `name` použije tag z workflow (push trigger s `tags`), název releasu odvodí automaticky.
 - **`--provenance` flag** — technicky volitelný, ale doporučený. Někteří uživatelé hlásí problémy bez něj při prvním publikování.
 - **Žádný `NODE_AUTH_TOKEN`** — nenastavujte ho ani prázdný. Pokud ho npm CLI detekuje, pokusí se o tokenovou autentizaci místo OIDC.
+
+## Alternativa: Bun
+
+Pokud používáte [Bun](https://bun.sh/) jako package manager a runner testů, přidejte `oven-sh/setup-bun` před `setup-node`. Publikace stále používá `npm publish` — OIDC autentizace je navázaná na `.npmrc` vytvořený akcí `setup-node`:
+
+```yaml
+name: Publish to npm & Create Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: oven-sh/setup-bun@v2
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "25"
+          registry-url: "https://registry.npmjs.org"
+
+      - run: bun install --frozen-lockfile
+      - run: bun run build
+      - run: bun run test
+
+      - name: Publish to npm
+        run: npm publish --provenance --access public
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          generate_release_notes: true
+```
+
+`--frozen-lockfile` je Bun ekvivalent `npm ci` — vyžaduje commitnutý `bun.lockb` (nebo `bun.lock` v novějších verzích).
+
+## Alternativa: pnpm
+
+Pro [pnpm](https://pnpm.io/) použijte `pnpm/action-setup` a nastavte cache na `pnpm` v `setup-node`:
+
+```yaml
+name: Publish to npm & Create Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: pnpm/action-setup@v5
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "25"
+          registry-url: "https://registry.npmjs.org"
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build
+      - run: pnpm test
+
+      - name: Publish to npm
+        run: npm publish --provenance --access public
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          generate_release_notes: true
+```
+
+`pnpm install --frozen-lockfile` je analogie `npm ci`. Vyžaduje commitnutý `pnpm-lock.yaml`.
 
 ## Alternativní trigger: GitHub Release
 
