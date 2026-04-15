@@ -88,7 +88,7 @@ jobs:
           node-version: "25"
           registry-url: "https://registry.npmjs.org"
 
-      - run: npm install
+      - run: npm ci
       - run: npm run build
       - run: npm test
 
@@ -110,6 +110,7 @@ git push origin main --tags
 
 ## Proč je workflow napsaný právě takhle
 
+- **`npm ci`** (ne `npm install`) — instaluje přesně podle `package-lock.json`, reprodukovatelné buildy. **Vyžaduje commitnutý `package-lock.json`** v repozitáři.
 - **`id-token: write`** — nejdůležitější řádek. Bez něj GitHub Actions nevygeneruje OIDC token a npm se nedokáže autentizovat.
 - **`registry-url`** v `setup-node` — povinný, přestože `registry.npmjs.org` je výchozí. Bez explicitního nastavení akce nevytvoří `.npmrc` soubor potřebný pro autentizaci.
 - **Node 25** — obsahuje novější npm s podporou OIDC. Minimum je npm ≥ 11.5.1 (tj. Node ≥ 24); pro starší verze přidejte `npm install -g npm@latest` před publikováním.
