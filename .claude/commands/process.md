@@ -56,6 +56,7 @@ When editing or creating a page:
 - Use `##` for sections, `###` for subsections
 - Cross-reference related pages using absolute URL paths
 - Set `updated` to today's date on every modified file
+- Do not add a `## Sources` section when it would only duplicate the same URL already linked directly in the relevant list item or section content
 
 ## 5. Check consistency
 
