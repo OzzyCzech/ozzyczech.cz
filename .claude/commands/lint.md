@@ -21,7 +21,16 @@ Find pages that contain factual claims (statistics, version numbers, benchmarks,
 
 Check all relative and absolute internal links between wiki pages. Flag any that point to a file or anchor that does not exist.
 
-## 5. Report
+## 5. Filename diacritics
+
+Find `.md`/`.mdx` files whose names contain non-ASCII characters (Czech diacritics). For each match, compute the transliterated ASCII version using:
+
+- `č → c`, `ř → r`, `š → s`, `ž → z`, `ň → n`, `ť → t`, `ď → d`
+- `á → a`, `é → e`, `ě → e`, `í → i`, `ó → o`, `ú → u`, `ů → u`, `ý → y`
+
+Rename each affected file with `git mv` to preserve history. The page `title` in frontmatter must keep diacritics — only the filename changes. After renaming, search the wiki for broken links that referenced the old slug (with diacritics) and update them.
+
+## 6. Report
 
 Output a structured report grouped by issue type:
 
@@ -37,17 +46,22 @@ Output a structured report grouped by issue type:
 
 ## Broken internal links
 - src/content/docs/AI/Example.md:12 — links to /AI/Nonexistent
+
+## Filename diacritics
+- src/content/docs/LifeHack/Nemusíš.md → Nemusis.md
 ```
 
 If no issues are found in a category, write `None found.`
 
-## 6. Fix what you can
+## 7. Fix what you can
 
 Fix frontmatter issues (missing fields, wrong date order) directly.
 
+Rename filenames with diacritics using `git mv` and update any internal links that referenced the old slug.
+
 Do not add fake sources, do not remove content, do not rewrite pages. For orphans and missing sources, report only — let the user decide.
 
-## 7. Commit fixes
+## 8. Commit fixes
 
 If any files were changed:
 

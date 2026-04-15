@@ -18,7 +18,8 @@ Sidebar navigation is configured in `astro.config.mjs`. When adding a new top-le
 ## File naming
 
 - Use human-readable filenames with spaces: `Canon RF lenses.md`, not `canon-rf-lenses.md`
-- Filenames can be in English or Czech, matching the page language
+- Filenames must use ASCII only — transliterate Czech diacritics (`č → c`, `ř → r`, `š → s`, `ž → z`, `á → a`, `é → e`, `í → i`, `ó → o`, `ú/ů → u`, `ý → y`, `ň → n`, `ť → t`, `ď → d`). Example: `Nemusíš.md` → `Nemusis.md`, `Dětské knihy.md` → `Detske knihy.md`. The page `title` in frontmatter keeps diacritics; only the filename is transliterated.
+- Filenames can be in English or Czech (transliterated), matching the page language
 - Keep filenames short but descriptive — 2–4 words max
 - No date prefixes — this is a wiki, not a blog
 
