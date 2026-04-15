@@ -96,7 +96,7 @@ jobs:
         run: npm publish --provenance --access public
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           generate_release_notes: true
 ```
@@ -114,7 +114,7 @@ git push origin main --tags
 - **`id-token: write`** — nejdůležitější řádek. Bez něj GitHub Actions nevygeneruje OIDC token a npm se nedokáže autentizovat.
 - **`registry-url`** v `setup-node` — povinný, přestože `registry.npmjs.org` je výchozí. Bez explicitního nastavení akce nevytvoří `.npmrc` soubor potřebný pro autentizaci.
 - **Node 25** — obsahuje novější npm s podporou OIDC. Minimum je npm ≥ 11.5.1 (tj. Node ≥ 24); pro starší verze přidejte `npm install -g npm@latest` před publikováním.
-- **`softprops/action-gh-release@v2`** — bez explicitního `tag_name` a `name` použije tag z workflow (push trigger s `tags`), název releasu odvodí automaticky.
+- **`softprops/action-gh-release@v3`** — bez explicitního `tag_name` a `name` použije tag z workflow (push trigger s `tags`), název releasu odvodí automaticky.
 - **`--provenance` flag** — technicky volitelný, ale doporučený. Někteří uživatelé hlásí problémy bez něj při prvním publikování.
 - **Žádný `NODE_AUTH_TOKEN`** — nenastavujte ho ani prázdný. Pokud ho npm CLI detekuje, pokusí se o tokenovou autentizaci místo OIDC.
 
