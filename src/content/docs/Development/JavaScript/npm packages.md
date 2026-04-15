@@ -5,7 +5,7 @@ created: 2024-05-25
 updated: 2026-04-10
 ---
 
-Curated npm packages by category. For publishing packages, see [Publikování npm přes GitHub Actions](../publikování-npm-přes-github-actions).
+Curated npm packages by category. For publishing packages, see [Publikování npm přes GitHub Actions](../publikovani-npm-pres-github-actions).
 
 ## Charts
 
