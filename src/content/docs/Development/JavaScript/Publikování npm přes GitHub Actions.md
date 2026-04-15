@@ -85,7 +85,7 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: "24"
+          node-version: "25"
           registry-url: "https://registry.npmjs.org"
 
       - run: npm ci
