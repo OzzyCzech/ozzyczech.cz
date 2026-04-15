@@ -2,7 +2,7 @@
 title: Publikování npm přes GitHub Actions
 description: Publikování npm balíčků přes GitHub Actions bez tokenů pomocí OIDC Trusted Publishing.
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-04-15
 ---
 
 **npm Trusted Publishers** je doporučený způsob publikování balíčků na npm od července 2025 (GA). Místo dlouhodobých tokenů využívá OIDC (OpenID Connect) — GitHub Actions se automaticky prokáže npm registru svou identitou, žádné tajné tokeny nejsou potřeba. Od prosince 2025 jsou klasické tokeny pro CI/CD prakticky mrtvé.
@@ -88,11 +88,9 @@ jobs:
           node-version: "25"
           registry-url: "https://registry.npmjs.org"
 
-      - run: npm ci
-
+      - run: npm install
+      - run: npm run build
       - run: npm test
-
-      - run: npm run build --if-present
 
       - name: Publish to npm
         run: npm publish --provenance --access public
@@ -100,8 +98,6 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
-          name: Release ${{ github.ref_name }}
           generate_release_notes: true
 ```
 
@@ -116,7 +112,8 @@ git push origin main --tags
 
 - **`id-token: write`** — nejdůležitější řádek. Bez něj GitHub Actions nevygeneruje OIDC token a npm se nedokáže autentizovat.
 - **`registry-url`** v `setup-node` — povinný, přestože `registry.npmjs.org` je výchozí. Bez explicitního nastavení akce nevytvoří `.npmrc` soubor potřebný pro autentizaci.
-- **Node 24** — obsahuje npm ≥ 11.5.1, minimální verzi s podporou OIDC. Pro Node 22 přidejte `npm install -g npm@latest` před publikováním.
+- **Node 25** — obsahuje novější npm s podporou OIDC. Minimum je npm ≥ 11.5.1 (tj. Node ≥ 24); pro starší verze přidejte `npm install -g npm@latest` před publikováním.
+- **`softprops/action-gh-release@v2`** — bez explicitního `tag_name` a `name` použije tag z workflow (push trigger s `tags`), název releasu odvodí automaticky.
 - **`--provenance` flag** — technicky volitelný, ale doporučený. Někteří uživatelé hlásí problémy bez něj při prvním publikování.
 - **Žádný `NODE_AUTH_TOKEN`** — nenastavujte ho ani prázdný. Pokud ho npm CLI detekuje, pokusí se o tokenovou autentizaci místo OIDC.
 
