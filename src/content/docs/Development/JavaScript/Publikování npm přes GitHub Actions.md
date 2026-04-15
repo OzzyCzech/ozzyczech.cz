@@ -166,7 +166,3 @@ npm audit signatures
 ```
 
 Pro maximální zabezpečení nastavte na npmjs.com **„Require two-factor authentication and disallow tokens"** — tím zablokujete jakékoli tokenové publikování a povolíte pouze nakonfigurovaný trusted publisher.
-
-## Sources
-
-- Vlastní průvodce (interní zdroj) — kompletní setup s detaily a úskalími, ověřeno v praxi 2025–2026
