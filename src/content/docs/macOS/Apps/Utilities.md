@@ -2,12 +2,13 @@
 title: Utilities
 description: macOS utility apps for system optimization, file automation, and app management.
 created: 2026-04-01
-updated: 2026-04-14
+updated: 2026-04-16
 ---
 
 Miscellaneous macOS utilities for managing apps, files, and system behavior.
 
 - **[Applite](https://aerolite.dev/applite/index.html)** — GUI front-end for Homebrew Cask; browse, install, and update third-party apps
+- **[PureMac](https://github.com/momenbasel/PureMac)** — free, open-source (MIT) app manager and system cleaner; heuristic file matching for complete app removal, cache cleanup, Xcode artifact removal; SwiftUI, macOS 13+
 - **[Sensei](https://cindori.com/sensei)** — Mac performance and maintenance tool with disk cleaner, app uninstaller, and hardware monitor
 - **[ImageOptim](https://imageoptim.com/mac)** — open-source image compression tool that strips metadata and reduces file size losslessly
 - **[Ejectify](https://ejectify.app/)** — automatically ejects external drives when your Mac sleeps to prevent "disk not ejected properly" errors
