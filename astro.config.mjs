@@ -33,7 +33,7 @@ export default defineConfig({
 			head: [
 				{
 					tag: 'meta',
-					attrs: {property: 'og:image', content: site + 'og.png'},
+					attrs: {property: 'og:image', content: site + '/og.png'},
 				},
 				{
 					tag: 'link',
