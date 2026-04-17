@@ -69,6 +69,7 @@ export default defineConfig({
 					],
 				},
 				{label: 'Development', collapsed: false, autogenerate: {directory: 'Development', collapsed: true}},
+				{label: 'PHP', collapsed: true, autogenerate: {directory: 'PHP'}},
 				{label: 'Inspiration', collapsed: true, autogenerate: {directory: 'Inspiration', collapsed: false}},
 				{
 					label: 'Shell & CLI',
