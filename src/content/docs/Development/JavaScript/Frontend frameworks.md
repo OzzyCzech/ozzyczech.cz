@@ -2,7 +2,7 @@
 title: Frontend frameworks
 description: Curated list of frontend JavaScript frameworks and UI libraries for the browser.
 created: 2026-02-13
-updated: 2026-04-10
+updated: 2026-04-17
 ---
 
 A curated list of **frontend** JavaScript frameworks: UI libraries, full-stack frameworks, and tools for the browser.
@@ -12,12 +12,6 @@ A curated list of **frontend** JavaScript frameworks: UI libraries, full-stack f
 - **[React](https://react.dev/)** — Library for building user interfaces with components and a large ecosystem.
 - **[Preact](https://preactjs.com/)** — Small (~3 kB) alternative to React with the same modern API.
 - **[Next.js](https://nextjs.org/)** — React framework with server rendering, static export, and file-based routing.
-
-## Vue ecosystem
-
-- **[Vue](https://vuejs.org/)** — Progressive framework for UIs: use as a library or scale up with tooling.
-- **[Nuxt](https://nuxt.com/)** — Vue framework for full-stack apps, SSG, and SSR with great DX.
-- **[shadcn-vue](https://www.shadcn-vue.com/)** — Vue port of shadcn/ui; copy-paste component collection built on Radix Vue and Tailwind CSS that you own and customize directly in your codebase
 
 ## Svelte ecosystem
 
