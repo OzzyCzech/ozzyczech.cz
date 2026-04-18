@@ -2,7 +2,7 @@
 title: AI Tools
 description: Přehled AI nástrojů — chatboti, platformy, app buildery, kódování, design, generování obrázků a videa, správa znalostí a zpracování textu.
 created: 2026-04-08
-updated: 2026-04-12
+updated: 2026-04-18
 ---
 
 Přehled AI nástrojů podle kategorie použití.
@@ -39,6 +39,7 @@ Nástroje pro tvorbu aplikací pomocí AI — generování kódu, vizuální bui
 ## 💻 Coding
 
 - **[Graphify](../graphify)** — open-source „skill“ pro AI coding asistenty; staví dotazovatelný graf z kódu, dokumentace a diagramů ([graphify.net](https://graphify.net))
+- **[Pliny.gg](../pliny-the-prompter)** — veřejný rozcestník kolem red teamingu LLM, transparentnosti a souvisejících projektů (přehled z [pliny.gg](https://pliny.gg), bez jailbreak textů)
 - **[Claude Code](https://claude.ai/code/)** — AI coding agent by Anthropic
 - **[Codex](https://openai.com/codex/)** — AI coding agent by OpenAI
 - **[GitHub Copilot](https://github.com/copilot/)** — AI coding agent integrovaný přímo do GitHubu
