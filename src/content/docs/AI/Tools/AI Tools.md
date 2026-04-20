@@ -68,7 +68,7 @@ Nástroje pro tvorbu aplikací pomocí AI — generování kódu, vizuální bui
 
 ## 🔧 Testing & Analysis
 
-- **[Is It Agent Ready?](../is-it-agent-ready)** — skener od Cloudflare; vyhodnotí, jak dobře web podporuje AI agenty — kontroluje `robots.txt`, MCP, OAuth, content negotiation a agentic commerce standardy ([isitagentready.com](https://isitagentready.com/))
+- **[Is It Agent Ready?](https://isitagentready.com/)** — skener od Cloudflare; vyhodnotí, jak dobře web podporuje AI agenty — kontroluje `robots.txt`, MCP, OAuth, content negotiation a agentic commerce standardy
 
 ## 📝 Text Processing & Translation
 
