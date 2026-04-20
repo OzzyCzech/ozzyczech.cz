@@ -2,7 +2,7 @@
 title: AI Tools
 description: Přehled AI nástrojů — chatboti, platformy, app buildery, kódování, design, generování obrázků a videa, správa znalostí a zpracování textu.
 created: 2026-04-08
-updated: 2026-04-18
+updated: 2026-04-20
 ---
 
 Přehled AI nástrojů podle kategorie použití.
@@ -65,6 +65,10 @@ Nástroje pro tvorbu aplikací pomocí AI — generování kódu, vizuální bui
 - **[Google NotebookLM](https://notebooklm.google.com/)** — AI notebook od Googlu pro analýzu a syntézu dokumentů
 - **[Gamma](https://gamma.app/)** — AI generování prezentací, webů a dokumentů z textu
 - **[Heptabase](https://heptabase.com/)** — vizuální nástroj pro poznámky s integrací AI pro mapování výzkumu
+
+## 🔧 Testing & Analysis
+
+- **[Is It Agent Ready?](../is-it-agent-ready)** — skener od Cloudflare; vyhodnotí, jak dobře web podporuje AI agenty — kontroluje `robots.txt`, MCP, OAuth, content negotiation a agentic commerce standardy ([isitagentready.com](https://isitagentready.com/))
 
 ## 📝 Text Processing & Translation
 
