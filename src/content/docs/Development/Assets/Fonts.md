@@ -2,7 +2,7 @@
 title: Fonts
 description: Free font libraries, icon fonts, and tools for finding and using web fonts.
 created: 2024-05-24
-updated: 2026-04-06
+updated: 2026-04-21
 ---
 
 Knihovny bezplatných fontů a přehled monospaced fontů pro vývojáře.
@@ -14,6 +14,10 @@ Knihovny bezplatných fontů a přehled monospaced fontů pro vývojáře.
 - **[Adobe Fonts](https://fonts.adobe.com/)** — tisíce fontů od předních písmolijí; součást Creative Cloud
 - **[Font.download](https://font.download)** — 200 000+ fontů ke stažení zdarma pro osobní i komerční použití
 - **[Atipo Foundry](https://www.atipofoundry.com/)** — digitální písmolijna s vlastními originálními fonty
+
+## 🛠️ Font management
+
+- **[Pica](https://pica.joshpuckett.me/)** — bezplatný macOS font manager s vizuálními náhledy, kolekcemi, one-click aktivací a watch folderem pro automatickou detekci fontů
 
 ## Monospaced fonts
 
