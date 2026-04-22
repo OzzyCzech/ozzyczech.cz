@@ -1,12 +1,13 @@
 ---
 const { title, href } = Astro.props;
 
-if (!import.meta.env.TMDB_API_KEY) {
-	throw new Error('TMDB_API_KEY is not set');
+const apiKey = import.meta.env.TMDB_API_KEY;
+if (!apiKey) {
+	return;
 }
 
 const url = new URL('https://api.themoviedb.org/3/search/movie');
-url.searchParams.append('api_key', import.meta.env.TMDB_API_KEY);
+url.searchParams.append('api_key', apiKey);
 url.searchParams.append('include_adult', 'true');
 
 if (title.match(/\((\d{4})\)/)) {
@@ -19,14 +20,14 @@ if (title.match(/\((\d{4})\)/)) {
 let result: any = null;
 try {
 	const res = await fetch(url);
-	if (!res.ok) return null;
+	if (!res.ok) return;
 	const response = await res.json();
-	if (!response?.results) return null;
+	if (!response?.results) return;
 	result = response.results.find((r: { title: string }) => r.title.toLowerCase() === title.toLowerCase()) ?? response.results[0] ?? null;
 } catch {
-	return null;
+	return;
 }
-if (!result) return null;
+if (!result) return;
 
 const img = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : '';
 const link = result.id ? `https://www.themoviedb.org/movie/${result.id}` : '#';
