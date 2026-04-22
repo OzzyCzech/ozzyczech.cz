@@ -2,7 +2,7 @@
 title: AI Tools
 description: Přehled AI nástrojů — chatboti, platformy, app buildery, kódování, design, generování obrázků a videa, správa znalostí a zpracování textu.
 created: 2026-04-08
-updated: 2026-04-20
+updated: 2026-04-22
 ---
 
 Přehled AI nástrojů podle kategorie použití.
@@ -68,7 +68,7 @@ Nástroje pro tvorbu aplikací pomocí AI — generování kódu, vizuální bui
 
 ## 🔧 Testing & Analysis
 
-- **[Is It Agent Ready?](https://isitagentready.com/)** — skener od Cloudflare; vyhodnotí, jak dobře web podporuje AI agenty — kontroluje `robots.txt`, MCP, OAuth, content negotiation a agentic commerce standardy
+- **[Agent-Ready Web](../agent-ready-web)** — nástroje a standardy pro testování přístupnosti webů pro AI agenty — content negotiation, content signals, diagnostické skenery
 
 ## 📝 Text Processing & Translation
 
