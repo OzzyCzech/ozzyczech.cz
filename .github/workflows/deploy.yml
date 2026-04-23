@@ -19,9 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: withastro/action@v3
+      - uses: withastro/action@v6
         with:
-          node-version: 25
+          node-version: 24
           package-manager: npm@latest
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
@@ -34,4 +34,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
