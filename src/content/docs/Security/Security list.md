@@ -2,7 +2,7 @@
 title: Security List
 description: Přehled nástrojů pro soukromí a bezpečnost — prohlížeče, hesla, VPN, messaging a šifrované úložiště.
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-23
 ---
 
 Osobní přehled nástrojů pro digitální bezpečnost a soukromí.
@@ -41,6 +41,7 @@ Vyhledávače bez sledování uživatelů:
 
 - **[1Password](https://1password.com/)** — komerční správce hesel s podporou týmů a bezpečnostními audity; doporučeno pro firemní použití
 - **[Bitwarden](https://bitwarden.com/)** — open-source správce hesel; lze self-hostovat; auditovaný třetí stranou
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** — neoficiální Bitwarden-kompatibilní server napsaný v Rustu; výrazně nižší nároky na paměť a CPU než oficiální server, ideální pro self-hosting na malých VPS nebo Raspberry Pi
 - **[Dashlane](https://www.dashlane.com/)** — komerční správce hesel s VPN a dark web monitoringem
 - **[NordPass](https://nordpass.com/)** — správce hesel od NordVPN; XChaCha20 šifrování
 - **[Keeper](https://www.keepersecurity.com/)** — správce hesel zaměřený na firmy s zero-knowledge architekturou
