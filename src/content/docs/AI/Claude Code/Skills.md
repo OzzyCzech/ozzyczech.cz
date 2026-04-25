@@ -2,7 +2,7 @@
 title: Skills
 description: Curated open-source skill collections for Claude Code and AI coding agents.
 created: 2026-04-08
-updated: 2026-04-12
+updated: 2026-04-25
 ---
 
 Open-source skill collections that extend Claude Code and other AI coding agents with specialized workflows.
@@ -46,6 +46,12 @@ Open-source skill collections that extend Claude Code and other AI coding agents
   ```
 
 - **[claude-improve](https://github.com/TerenceBristol/claude-improve)** — self-improving retrospective skill; after each conversation Claude reflects on what went wrong and updates its own CLAUDE.md rules to do better next time
+
+## 📋 CLAUDE.md templates
+
+Reusable `CLAUDE.md` behavioral guidelines that can be merged into any project's configuration.
+
+- **[andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)** — single CLAUDE.md derived from Andrej Karpathy's observations on common LLM coding pitfalls; enforces four principles: think before coding (surface assumptions and tradeoffs), simplicity first (no speculative abstractions), surgical changes (touch only what's needed), and goal-driven execution (define verifiable success criteria before implementing)
 
 ## 🔗 Related
 
