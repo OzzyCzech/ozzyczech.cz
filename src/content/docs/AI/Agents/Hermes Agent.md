@@ -4,7 +4,6 @@ description: Open-source autonomous agent by Nous Research that runs on your ser
 created: 2026-04-08
 updated: 2026-04-08
 ---
-
 Hermes Agent is an open-source autonomous agent developed by Nous Research (MIT license). Unlike IDE copilots or chatbot wrappers, it runs persistently on your own infrastructure, learns from every session, and self-improves by generating new skills over time.
 
 ## 🔑 Key capabilities
@@ -22,13 +21,13 @@ Supports 14+ platforms: CLI, Telegram, Discord, Slack, WhatsApp, Signal, Matrix,
 
 ## 🛠️ Deployment backends
 
-| Backend | Notes |
-|---|---|
-| Local | Linux, macOS, WSL2 |
-| Docker | Container hardening and namespace isolation |
-| SSH | Remote execution |
-| Singularity | HPC environments |
-| Modal / Daytona | Serverless, near-zero cost when idle |
+| Backend         | Notes                                       |
+| --------------- | ------------------------------------------- |
+| Local           | Linux, macOS, WSL2                          |
+| Docker          | Container hardening and namespace isolation |
+| SSH             | Remote execution                            |
+| Singularity     | HPC environments                            |
+| Modal / Daytona | Serverless, near-zero cost when idle        |
 
 ## 🤖 Model support
 
