@@ -17,7 +17,7 @@ If a URL is unreachable, ask the user to paste the content. If the input is ambi
 
 ## 2. Find the right place
 
-Search the existing wiki structure in `content/docs/` and decide where the content belongs:
+Search the existing wiki structure in `src/content/docs/` and decide where the content belongs:
 
 1. **Exact page exists** → update it
 2. **Related page exists** → add a section or list item there
@@ -36,6 +36,7 @@ Extract and rewrite — never copy verbatim from the source.
 - Precise technical terms, APIs, version numbers
 - Key differentiators and unique capabilities
 - Source attribution for every factual claim
+- Inline links are enough when they directly support the claim; avoid duplicate `## Sources` sections with the same URL
 
 **Discard:**
 
@@ -54,7 +55,8 @@ When editing or creating a page:
 - Never use `#` (h1) in the page body — Starlight renders `title` as h1
 - Start with a short intro paragraph (1–3 sentences)
 - Use `##` for sections, `###` for subsections
-- Cross-reference related pages using absolute URL paths
+- Use ASCII-only filenames. Transliterate Czech diacritics in filenames (`Dětské knihy.md` → `Detske knihy.md`), but keep diacritics in the page `title`
+- Use slug-based wiki links. Prefer relative links for nearby cross-references (`../slug`); root-relative links (`/section/page/`) are acceptable for broader index-style links
 - Set `updated` to today's date on every modified file
 - Do not add a `## Sources` section when it would only duplicate the same URL already linked directly in the relevant list item or section content
 
@@ -62,11 +64,12 @@ When editing or creating a page:
 
 - Review pages in the **same category** and any **directly linked pages** for contradictions
 - Add links to this content from related pages only when the existing page explicitly covers the same topic — do not add back-links just because pages share a theme
+- When adding a new top-level category, add it to the `sidebar` array in `astro.config.mjs`
 - If you notice a broader inconsistency outside this scope, flag it to the user rather than silently editing unrelated pages
 
 ## 6. Commit and push
 
-Group all changes from a single source into **one commit**, then push.
+Group all changes from a single source into **one commit**, then push. If push is rejected because the remote changed, rebase on `origin/main`, then push again.
 
 **Commit message format:**
 

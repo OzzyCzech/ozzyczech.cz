@@ -124,6 +124,7 @@ When in doubt, update the existing page and split later if it grows too large.
 - When a page is based on an external source, include a `## Sources` section at the bottom
 - If the page is written purely from LLM knowledge without external sources, omit the `## Sources` section entirely
 - Link to the original with a brief note: `[Title](url) — what was used from this source`
+- Do not add a `## Sources` section when it would only duplicate the same URL already linked directly in the relevant list item or paragraph
 - Include access date for sources that change frequently
 - Do not copy content verbatim — always summarize and restructure in your own words
 - Every factual claim should be traceable to a source — do not synthesize without citation
@@ -143,6 +144,7 @@ ack --type=markdown "search_text"
 - Do not batch unrelated changes into a single commit
 - Commit after each LLM pass so diffs are reviewable and revertable
 - Always push after committing
+- If push is rejected because the remote changed, rebase on `origin/main`, then push again
 
 ## Rules
 
@@ -151,7 +153,7 @@ ack --type=markdown "search_text"
 - Do not create empty placeholder pages — every page must have real content
 - Do not create index or navigation pages that only contain links — every page must have meaningful content of its own
 - When updating a page, check if related pages need updates too
-- Use relative links for cross-references between wiki pages
+- Use slug-based wiki links for cross-references between wiki pages. Prefer relative links for nearby pages; root-relative links are acceptable for broader index-style links
 - All page links must use slugs: lowercase with hyphens as separators. Convert the page title by lowercasing everything and replacing spaces with hyphens. Example: `Claude Code` → `claude-code`
 - When linking to pages in the same directory, always use `../slug` (not `./slug`) — the page URL includes the page name as a path segment, so `./` resolves into the current page, not the directory
 - Never add redirects to `astro.config.mjs` when reorganizing content — only do so when explicitly asked
