@@ -2,7 +2,7 @@
 title: AI Tools
 description: Přehled AI nástrojů — chatboti, platformy, app buildery, kódování, design, generování obrázků a videa, správa znalostí a zpracování textu.
 created: 2026-04-08
-updated: 2026-06-04
+updated: 2026-07-28
 ---
 
 Přehled AI nástrojů podle kategorie použití.
@@ -60,7 +60,7 @@ Nástroje pro tvorbu aplikací pomocí AI — generování kódu, vizuální bui
 - **[Flux](https://blackforestlabs.ai/)** — open-weights model od Black Forest Labs; vyniká v renderování textu a fotorealismu
 - **[Adobe Firefly](https://firefly.adobe.com/)** — komerčně bezpečné AI modely integrované do Photoshopu a Illustratoru
 - **[Ideogram](https://ideogram.ai/)** — AI generátor obrázků zaměřený na renderování textu a typografie; canvas s vrstvami, Magic Prompt rozšiřování zadání a Remix existujících obrázků
-- **[Luma Dream Machine](https://lumalabs.ai/dream-machine)** — generátor videí z textu nebo obrázků
+- **[Luma](../luma)** — generování videa (Ray 3.2 — keyframe control, 16bit HDR, EXR export) a obrázků (Uni-1); web app i API ([lumalabs.ai](https://lumalabs.ai/))
 - **[Sora / Veo](https://veo.google/)** — špičkové nástroje pro kinematografické video generování od OpenAI a Googlu
 
 ## 📓 Notebooks & Knowledge Management
