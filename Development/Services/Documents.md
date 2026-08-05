@@ -2,10 +2,10 @@
 title: Document conversion
 description: Self-hosted and cloud services for converting HTML, Office documents, and Markdown to and from PDF.
 created: 2026-04-15
-updated: 2026-05-21
+updated: 2026-08-05
 ---
 
-Services for converting documents between formats — typically HTML, Office, or Markdown into PDF — exposed as HTTP APIs for easy integration.
+Services for converting documents between formats — typically HTML, Office, or Markdown into PDF — exposed as HTTP APIs for easy integration. For interactive, in-browser conversion instead of an API, see [Client-side web tools](/development/tools/client-side-web-tools/).
 
 ## Self-hosted
 
