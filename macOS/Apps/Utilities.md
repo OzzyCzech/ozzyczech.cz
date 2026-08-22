@@ -2,7 +2,7 @@
 title: Utilities
 description: macOS utility apps for system optimization, file automation, and app management.
 created: 2026-04-01
-updated: 2026-06-14
+updated: 2026-08-22
 ---
 
 Miscellaneous macOS utilities for managing apps, files, and system behavior.
@@ -12,6 +12,7 @@ Miscellaneous macOS utilities for managing apps, files, and system behavior.
 - **[Mole](https://github.com/tw93/mole)** — open-source (MIT) shell-based CLI that bundles CleanMyMac/AppCleaner/DaisyDisk/iStat-style features in one binary (`mo` command): deep cache cleanup, smart app uninstaller with leftover removal, disk analyzer with TUI, live CPU/GPU/memory dashboard, project build-artifact purge; `--dry-run` previews destructive actions
 - **[Sensei](https://cindori.com/sensei)** — Mac performance and maintenance tool with disk cleaner, app uninstaller, and hardware monitor
 - **[ImageOptim](https://imageoptim.com/mac)** — open-source image compression tool that strips metadata and reduces file size losslessly
+- **[Clop](https://lowtechguys.com/clop/)** — on-device optimizer for images, videos and PDFs (macOS 13+); compresses anything copied to the clipboard automatically, plus drop zones, hotkey downscaling, cropping to aspect ratios, GIF conversion, speed-up and audio stripping for screen recordings, and HEIC/TIFF/MOV conversion; uses the Apple Silicon Media Engine and bundles pngquant, jpegoptim, gifsicle, ffmpeg, libvips, gifski and ghostscript; integrates with Shortcuts, Dropshare and shelf apps (Yoink, Dockside), and ships a CLI for batch work
 - **[Ejectify](https://ejectify.app/)** — automatically ejects external drives when your Mac sleeps to prevent "disk not ejected properly" errors
 - **[Hazel](https://www.noodlesoft.com/)** — rule-based file organization automation; watches folders and applies actions on matching files
 - **[Open Screen](https://openscreen.vercel.app/)** — share your Mac screen to a phone or tablet over the local network via a browser
