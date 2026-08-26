@@ -25,6 +25,7 @@ Tools for SEO auditing, structured data validation, performance testing, and key
 
 ### Competitor & keyword research
 
+- **[Ahrefs](https://ahrefs.com/)** — commercial SEO platform built on its own crawler and web index (AhrefsBot, ~170T pages, 41.9B keywords across 217+ countries), covering backlink and competitor analysis (Site Explorer), keyword research, rank tracking, site audits, and content/link prospecting (Content Explorer); Brand Radar tracks brand mentions in AI search answers
 - **[Semrush](https://www.semrush.com/)** — commercial all-in-one marketing platform combining keyword research (28B keyword database across 142 geographic databases), backlink analysis (43T backlinks), site audits, rank tracking, and competitor traffic analytics; its AI Visibility toolkit tracks how often a brand is cited in LLM answers and compares that share against competitors
 - **[OpenSEO](https://openseo.so/)** — open-source (MIT) alternative to Semrush/Ahrefs for keyword research, backlink analysis, rank tracking, competitor insights, and AI visibility; self-hostable via Docker or Cloudflare, or use the managed version at [app.openseo.so](https://app.openseo.so/); requires bringing your own DataForSEO API key
 
