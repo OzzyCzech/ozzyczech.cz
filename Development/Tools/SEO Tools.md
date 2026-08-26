@@ -2,7 +2,7 @@
 title: SEO Tools
 description: SEO tools and services including Google Search Console, PageSpeed, structured data testing, and open-source alternatives to Semrush/Ahrefs.
 created: 2024-04-02
-updated: 2026-05-11
+updated: 2026-08-26
 ---
 
 Tools for SEO auditing, structured data validation, performance testing, and keyword/backlink research.
@@ -25,6 +25,7 @@ Tools for SEO auditing, structured data validation, performance testing, and key
 
 ### Competitor & keyword research
 
+- **[Semrush](https://www.semrush.com/)** — commercial all-in-one marketing platform combining keyword research (28B keyword database across 142 geographic databases), backlink analysis (43T backlinks), site audits, rank tracking, and competitor traffic analytics; its AI Visibility toolkit tracks how often a brand is cited in LLM answers and compares that share against competitors
 - **[OpenSEO](https://openseo.so/)** — open-source (MIT) alternative to Semrush/Ahrefs for keyword research, backlink analysis, rank tracking, competitor insights, and AI visibility; self-hostable via Docker or Cloudflare, or use the managed version at [app.openseo.so](https://app.openseo.so/); requires bringing your own DataForSEO API key
 
 ### Performance testing
