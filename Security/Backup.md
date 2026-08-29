@@ -2,7 +2,7 @@
 title: Backup
 description: Přehled nástrojů a služeb pro zálohování dat — cloud, NAS, fyzická média a CLI nástroje.
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-08-29
 ---
 
 Strategie a nástroje pro zálohování dat podle typu úložiště a použití.
@@ -23,6 +23,8 @@ M-DISC je optické médium určené pro trvalou archivaci — výrobce udává �
 - **[Verbatim External Blu-ray Slimline Writer](https://www.verbatim-europe.cz/cz/prod/external-slimline-blu-ray-writer-usb-31-gen-1-with-usb-c-connection-43889/)** — alternativní model s USB 3.1 Gen 1 a USB-C
 
 ## 🗄️ NAS
+
+Hardwarové NAS boxy jsou popsané na stránce [NAS](/hardware/nas/).
 
 - **[Synology](https://www.synology.com)** — NAS pro domácnosti i firmy; doporučená řada [Plus produktů](https://www.synology.com/cs-cz/products)
 - **[TrueNAS](https://www.truenas.com/)** — open-source NAS OS postavený na ZFS; enterprise verze původního FreeNAS
