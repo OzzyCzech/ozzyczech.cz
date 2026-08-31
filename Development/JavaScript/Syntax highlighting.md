@@ -2,7 +2,7 @@
 title: Syntax highlighting
 description: JavaScript syntax highlighting libraries for embedding code with color in web pages.
 created: 2024-05-27
-updated: 2026-08-17
+updated: 2026-08-31
 ---
 
 Modern JavaScript libraries for syntax highlighting code blocks in docs, blogs, and web apps.
@@ -30,7 +30,7 @@ This list focuses on established projects, but their release cadence and mainten
 
 ## Notes
 
-- For full in-browser editing (not just highlighting), see [Embeddable editors](./embeddable-editors).
+- For full in-browser editing (not just highlighting), see [Embeddable editors](../embeddable-editors).
 - For documentation sites, build-time highlighting avoids client-side processing and a flash of unhighlighted code.
 
 ## Sources

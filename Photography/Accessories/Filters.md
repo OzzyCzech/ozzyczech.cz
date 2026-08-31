@@ -2,7 +2,7 @@
 title: Filters
 description: Screw-in ND, CPL, hybrid and creative look filters (incl. PolarPro Portra) — thread size, variable-ND caveats, and product notes.
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-08-31
 ---
 
 This page covers **screw-in** filters for stills and video: neutral density (**ND**), circular polarisers (**CPL**), combined designs, and a few **creative / look** filters. Use it for buying checks and short product notes.
@@ -22,7 +22,7 @@ If the filter’s front diameter is larger than the lens barrel, your **original
 
 ## Neewer 2-in-1: variable ND + CPL
 
-![Neewer 2-in-1 variable ND (ND2–ND32) and CPL: knurled metal ring, green multi-coated glass, retail box with ND range diagram](neewer-2in1-variable-nd-cpl-filter.png)
+![Neewer 2-in-1 variable ND (ND2–ND32) and CPL: knurled metal ring, green multi-coated glass, retail box with ND range diagram](./neewer-2in1-variable-nd-cpl-filter.png)
 
 ### Overview
 

@@ -2,10 +2,10 @@
 title: RF-S lenses
 description: Canon RF-S APS-C lenses for EOS R7/R10/R50 — kit, travel, ultra-wide and power-zoom zooms, VR dual-optic models, vs full-frame RF.
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-08-31
 ---
 
-Canon **RF-S** optics are **APS-C–native** designs for crop **[EOS R](/photography/canon/canon/)** bodies (**R7** / **R10** / **R50** family). Same **RF** bayonet as full-frame lenses; the difference is image circle and typical size/price. Full-frame options on the same mount: [RF lenses](/photography/canon/rf-lenses/).
+Canon **RF-S** optics are **APS-C–native** designs for crop **[EOS R](/photography/canon/cameras/)** bodies (**R7** / **R10** / **R50** family). Same **RF** bayonet as full-frame lenses; the difference is image circle and typical size/price. Full-frame options on the same mount: [RF lenses](/photography/canon/rf-lenses/).
 
 - **Same bayonet as full-frame:** **RF-S** lenses use the exact same **RF** mount as [full-frame **RF** glass](/photography/canon/rf-lenses/) — you can swap them on the same camera body.
 - **Built for APS-C only:** they cast a **smaller** image than full-frame lenses — **enough for R7 / R10 / R50** sensors, **not** for a whole **full-frame** chip. On bodies like **R5** / **R6** / **R8** you would normally see **strong vignetting** (dark corners) or uncorrected coverage; Canon intends **RF-S** for crop **EOS R**, not as full-frame tools.

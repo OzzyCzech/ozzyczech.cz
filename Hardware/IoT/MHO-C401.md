@@ -2,14 +2,14 @@
 title: MHO-C401 — čtení dat přes BLE a Python
 description: Čtení teploty a vlhkosti z Xiaomi MHO-C401 Bluetooth termometru pomocí Pythonu a knihovny bluepy.
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-08-31
 sidebar:
   label: MHO-C401
 ---
 
 MHO-C401 is new (2020) MMC E-Ink Screen Smart Bluetooth Thermometer Hygrometer BT2.0 Temperature Humidity Sensor from Xiaomi. You can order yours on [Aliexpress](https://www.aliexpress.com/item/4001174769598.html).
 
-![MHO-C401](MHO-C401.jpg "MHO-C401 Bluetooth Thermometer Hygrometer")
+![MHO-C401](./mho-c401.jpg "MHO-C401 Bluetooth Thermometer Hygrometer")
 
 ## Searching for sensor
 

@@ -2,7 +2,7 @@
 title: Hermes WebUI v Dockeru
 description: Nasazení komunitního webového rozhraní pro Hermes Agent v Dockeru za reverzní proxy Traefik s vlastní doménou.
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-08-31
 ---
 [Hermes WebUI](https://github.com/nesquena/hermes-webui) je komunitní browserové rozhraní pro [Hermes Agent](../hermes-agent). Tříbloková Claude-style stránka: vlevo sessions, uprostřed chat, vpravo workspace. Plná parita s CLI — vše co umí terminál umí i toto UI.
 
@@ -80,7 +80,7 @@ Po `docker compose up -d` Traefik poslouchá na 80/443, automaticky vystavuje Le
 
 Hermes nainstalovaný oficiálním installerem jako `linuxuser` (UID 1000):
 
-```
+```text
 /home/linuxuser/.hermes/
 ├── hermes-agent/          # zdrojový kód agenta s pyproject.toml
 ├── config.yaml            # provider, model, klíče
