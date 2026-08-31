@@ -5,7 +5,7 @@ created: 2020-10-12
 updated: 2026-06-19
 _width: normal
 ---
-Markdown-focused writing and note apps for macOS. For note-taking apps see also [Notes and calendar](/macos/apps/notes-and-calendar/).
+Markdown-focused writing and note apps for macOS.
 
 ### 🆕 New and noteworthy
 
