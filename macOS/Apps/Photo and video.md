@@ -2,7 +2,7 @@
 title: Photo and video
 description: Image viewers, photo editors, video players, and screen recorders for macOS.
 created: 2026-04-01
-updated: 2026-05-06
+updated: 2026-08-31
 ---
 
 Apps for viewing, editing, and recording photos and video on macOS.
@@ -35,6 +35,7 @@ Apps for viewing, editing, and recording photos and video on macOS.
 - **[Kap](https://getkap.co/)** — older open-source screen recorder that exports to GIF, MP4, WebM, and APNG; check current macOS compatibility before relying on it
 - **[Screen Studio](https://www.screen.studio/)** — screen recording app with automatic zoom, cursor effects, and background styling
 - **[MacShot](https://macshot.io/)** — free, open-source screenshot and recording tool with annotation, OCR, scroll capture, and cloud upload; GPLv3
+- **[Recordly](https://recordly.dev/)** — open-source (AGPLv3) Screen Studio alternative built on Electron/TypeScript; auto-zoom, smoothed cursor animations with loopable cursor paths, generated backgrounds, dynamic webcam bubble that resizes to give the camera the spotlight, drag-and-drop timeline for speed/zooms/annotations/audio, separate microphone and system audio tracks, imported audio and webcam footage, `.recordly` project files, and MP4 or looping GIF export; ships as a `.dmg` for Apple Silicon and Intel, plus Windows and Linux builds
 
 ## FFmpeg and Apple format compatibility
 
