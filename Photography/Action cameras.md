@@ -108,9 +108,9 @@ Announced in China on 26 March 2026 and launched globally on **16 April 2026**, 
 - **Stand-out features:** Larger touchscreen, built-in storage, markedly lighter body than Pocket 3
 - **Price (CZ):** [current listings on Heureka](https://sportovni-kamery.heureka.cz/)
 
-### [DJI Osmo Pocket 4 Pro](https://www.dji.com/osmo-pocket-4-pro) (2026)
+### [DJI Osmo Pocket 4P](https://www.dji.com/osmo-pocket-4p) (2026)
 
-Dual-lens variant, launched globally **30 July 2026**.
+Dual-lens variant, launched globally **30 July 2026**. DJI's own name is **Pocket 4P**; some coverage calls it "Pocket 4 Pro".
 
 - **Sensor / optics:** dual-lens setup on a 1" sensor, Hasselblad colour science
 - **Video:** 10-bit **D-Log 2**
@@ -118,7 +118,7 @@ Dual-lens variant, launched globally **30 July 2026**.
 - **Price (CZ):** [current listings on Heureka](https://sportovni-kamery.heureka.cz/)
 
 :::note
-Neither the Pocket 4 nor the Pocket 4 Pro launched in the **United States** — DJI shipped both globally while excluding the US market. Availability in the EU, including Czechia, is unaffected.
+Neither the Pocket 4 nor the Pocket 4P launched in the **United States** — DJI shipped both globally while excluding the US market. Availability in the EU, including Czechia, is unaffected.
 :::
 
 ### [DJI Osmo Pocket 3](https://www.dji.com/cz/osmo-pocket-3) (2023) — previous generation
