@@ -16,7 +16,8 @@ The 2026 line-up shifted significantly. GoPro **skipped the HERO14 Black entirel
 
 | Camera | Year | Sensor | MP | Weight |
 |--------|------|--------|----|--------|
-| [Insta360 X6](https://www.insta360.com/product/insta360-x6) | 2026 | 2× 1/1.1" | 8K 360° | n/a |
+| [GoPro MISSION 1 PRO ILS](https://www.prnewswire.com/news-releases/gopro-launches-mission-1-pro-ils-the-worlds-smallest-most-rugged-compact-cinema-camera-with-interchangeable-lenses-302860145.html) | 2026 | 1" (MFT mount) | 50 | 197 g |
+| [Insta360 X6](https://www.insta360.com/product/insta360-x6) | 2026 | 2× 1/1.1" | 120 (360°) | n/a |
 | [DJI Osmo Pocket 4P](https://www.dji.com/osmo-pocket-4p) | 2026 | 1" dual-lens | n/a | 230 g |
 | [Insta360 Luna Ultra](https://www.insta360.com/product/insta360-luna-ultra) | 2026 | 1" + 1/1.3" tele | 37 | ~200 g |
 | [GoPro MISSION 1 / PRO](https://gopro.com/en/us/news/gopro-announces-three-cameras-mission-1-2026) | 2026 | 1" quad Bayer | 50 | n/a |
@@ -35,7 +36,7 @@ The 2026 line-up shifted significantly. GoPro **skipped the HERO14 Black entirel
 
 ### [GoPro MISSION 1 series](https://gopro.com/en/us/news/gopro-announces-three-cameras-mission-1-2026) (2026)
 
-GoPro's next-generation platform, pitched as compact **cinema** cameras rather than a HERO refresh. MISSION 1 and MISSION 1 PRO reached retail globally on **28 May 2026**; the interchangeable-lens PRO ILS was slated for **Q3 2026**.
+GoPro's next-generation platform, pitched as compact **cinema** cameras rather than a HERO refresh. MISSION 1 and MISSION 1 PRO reached retail globally on **28 May 2026**. The interchangeable-lens **PRO ILS** followed: pre-orders opened **26 August 2026** with shipping from **2 September 2026**.
 
 - **Sensor:** 50 MP 1" **quad Bayer**, binning to 12 MP in 4K modes; 1.6 µm native pixel pitch, effective 3.2 µm in 4K; ~14 stops dynamic range at sensor level
 - **Processor:** **GP3** on a 5 nm node (GP2 was 12 nm), with an AI NPU for pixel processing and low light
@@ -43,11 +44,11 @@ GoPro's next-generation platform, pitched as compact **cinema** cameras rather t
 - **Video (non-PRO):** 8K/30, 4K/120, 1080p/240 (16:9); Open Gate capped at 4K/120
 - **Waterproof:** 20 m without a housing, 60 m with the protective housing
 - **Battery:** Enduro 2; 5+ h at 1080p30, 3+ h at 4K30 per charge
-- **PRO ILS:** GoPro's first interchangeable-lens body — a **Micro Four Thirds** mount with no electronic contacts, so manual-focus / manual-aperture glass only; ~2.7× crop vs full frame (~3× with stabilisation)
+- **PRO ILS:** GoPro's first interchangeable-lens body — a **Micro Four Thirds** mount with no electronic contacts, so manual-focus / manual-aperture glass only (lenses sold separately); ~2.7× crop vs full frame (~3× with stabilisation). 197 g body, 8K/60, 4K/240 and 1440p/480, Open Gate to 8K/30 and 4K/120, 10-bit **GP-Log2**, four-mic array with 32-bit float audio written to a separate `.wav`
 - **Price (CZ):** [current listings on Heureka](https://sportovni-kamery.heureka.cz/)
 
 :::caution
-GoPro did **not** release a HERO14 Black. It skipped a HERO flagship in 2025 and again in 2026, moving the GP3 silicon into MISSION 1 instead — the first break in a nearly decade-long annual HERO cadence. The HERO13 Black below remains the current HERO-line camera.
+GoPro did **not** release a HERO14 Black. It skipped a HERO flagship in 2025 and has not launched one in 2026 either as of August, moving the GP3 silicon into MISSION 1 instead — the first break in a nearly decade-long annual HERO cadence. The HERO13 Black below remains the current HERO-line camera.
 :::
 
 ### [GoPro MAX 2](https://gopro.com/en/us/cameras/max-2) (2025)
@@ -218,6 +219,8 @@ As of August 2026 the Luna Pro is sold **in China only**, with no international 
 
 - [GoPro — MISSION 1 announcement](https://gopro.com/en/us/news/gopro-announces-three-cameras-mission-1-2026) and [retail availability release](https://www.prnewswire.com/news-releases/gopros-new-mission-1-series-cameras-mounts-and-accessories-now-available-on-retail-shelves-globally-and-at-goprocom-302784335.html) — models, video modes, waterproofing, battery, ship dates
 - [CineD — MISSION 1 at NAB 2026](https://www.cined.com/gopro-mission-1-series-at-nab-2026-on-the-1-inch-sensor-gp3-processor-and-an-mft-mount/) — quad Bayer sensor, pixel pitch, dynamic range, MFT mount details
+- [GoPro — MISSION 1 PRO ILS launch release](https://www.prnewswire.com/news-releases/gopro-launches-mission-1-pro-ils-the-worlds-smallest-most-rugged-compact-cinema-camera-with-interchangeable-lenses-302860145.html) — 26 Aug pre-order, 2 Sep shipping, 197 g, GP-Log2, 32-bit float audio
+- [Engadget — Insta360 X6 review](https://www.engadget.com/2234775/insta360-x6-review/) — confirms 120 MP 360° stills, 8K/50, battery runtime post-launch
 - [Digital Camera World — no HERO14 Black](https://www.digitalcameraworld.com/cameras/action-cameras/wheres-the-gopro-hero14-black-for-the-first-time-in-10-years-gopro-didnt-launch-a-new-flagship-action-camera) — the skipped HERO flagship
 - [Newsshooter — Insta360 X6](https://www.newsshooter.com/2026/08/12/insta360-x6-flagship-8k-360-camera/) — sensors, 8K/50, Dolby Vision, battery, dive rating
 - [Insta360 — Luna Ultra launch release](https://www.prnewswire.com/news-releases/insta360-launches-luna-ultra-leica-co-engineered-gimbal-camera-built-for-next-generation-mobile-filmmaking-302796602.html) — both cameras, zoom range, stills modes, battery, storage, weight, 10 June date
