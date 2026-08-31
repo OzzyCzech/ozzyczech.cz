@@ -1,3 +1,8 @@
+---
+description: Randomly sample wiki pages and audit their quality
+argument-hint: [category | count]
+---
+
 Randomly sample pages from the wiki and audit their quality.
 
 ## 1. Select pages to audit
@@ -20,7 +25,7 @@ Pick 5–10 pages at random from `./` (across different categories). If the user
 - Are there broken or suspicious links?
 
 **Links**
-- Check every external URL in the page with a HEAD request (`curl -sIL --max-time 10 <url>`)
+- Check every external URL in the page with a HEAD request (`curl -sIL --max-time 10 <url>`) — batch URLs and check them in parallel (e.g. `xargs -P 8`) instead of one by one
 - If a link returns 4xx/5xx or times out, try to find the correct URL automatically (search for the tool/project by name, check GitHub, official site, etc.)
 - If the correct URL cannot be determined automatically, report it to the user and ask what to do
 

@@ -1,6 +1,9 @@
-Research a topic across the web and propose where it fits into the wiki. Unlike `/process`, the input is a question or topic — not a known source. Stop for review before writing.
+---
+description: Research a topic on the web and propose where it fits into the wiki
+argument-hint: [topic or question]
+---
 
-ARGUMENTS: a topic, question, or area to research (e.g. "local-first databases", "Rust HTTP clients", "AI code review tools").
+Research a topic across the web and propose where it fits into the wiki. Unlike `/process`, the input is a question or topic — not a known source (e.g. "local-first databases", "Rust HTTP clients", "AI code review tools"). Stop for review before writing.
 
 ## 1. Check the wiki first
 
@@ -54,14 +57,7 @@ Then **wait for the user to approve, redirect, or refine.** Do not write to the 
 
 ## 5. After approval — hand off to `/process` flow
 
-Once approved, follow the steps from `.claude/commands/process.md` starting at step 3 (Process the content):
-
-- Extract and rewrite, never copy verbatim
-- Apply the standard frontmatter and formatting rules from `CLAUDE.md`
-- Set `created` and `updated` to today
-- Use the `**[Name](url)** — description` format for tools
-- Check consistency with neighbouring pages
-- Commit as `docs: research [topic] — add [page]` (or `update [page]`) and push
+Once approved, follow the steps from `.claude/commands/process.md` starting at step 3 (Process the content). The only delta: commit as `docs: research [topic] — add [page]` (or `update [page]`).
 
 ## Defaults
 

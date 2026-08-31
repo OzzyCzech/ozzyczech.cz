@@ -1,3 +1,7 @@
+---
+description: Scan the wiki for structural and consistency issues
+---
+
 Scan the wiki for structural and consistency issues.
 
 ## 1. Frontmatter issues
@@ -32,7 +36,7 @@ Check all internal links and sidebar paths:
 - Relative/absolute wiki links point to existing files or anchors
 - Page links use lowercase hyphenated slugs
 - Same-directory page links use `../slug`, not `./slug`
-- Sidebar paths in `astro.config.mjs` are lowercase and valid
+- Sidebar paths in `starlight.config.mjs` are lowercase and valid
 
 ## 5. Page structure
 

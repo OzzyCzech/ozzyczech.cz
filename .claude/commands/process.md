@@ -1,3 +1,8 @@
+---
+description: Process a new source (URL, file, or text) into the wiki
+argument-hint: [url | file | text]
+---
+
 Process a new source or input into the wiki using the following steps:
 
 ## 1. Identify the input
@@ -49,27 +54,18 @@ Extract and rewrite — never copy verbatim from the source.
 
 ## 4. Write to the wiki
 
-When editing or creating a page:
-
-- Follow frontmatter rules from `CLAUDE.md`: `title`, `description`, `created`, `updated`
-- Never use `#` (h1) in the page body — Starlight renders `title` as h1
-- Start with a short intro paragraph (1–3 sentences)
-- Use `##` for sections, `###` for subsections
-- Use ASCII-only filenames. Transliterate Czech diacritics in filenames (`Dětské knihy.md` → `Detske knihy.md`), but keep diacritics in the page `title`
-- Use slug-based wiki links. Prefer relative links for nearby cross-references (`../slug`); root-relative links (`/section/page/`) are acceptable for broader index-style links
-- Set `updated` to today's date on every modified file
-- Do not add a `## Sources` section when it would only duplicate the same URL already linked directly in the relevant list item or section content
+Apply all frontmatter, filename, page-format, and linking rules from `CLAUDE.md`. In particular, set `updated` to today's date on every modified file (and `created` only on new pages).
 
 ## 5. Check consistency
 
 - Review pages in the **same category** and any **directly linked pages** for contradictions
 - Add links to this content from related pages only when the existing page explicitly covers the same topic — do not add back-links just because pages share a theme
-- When adding a new top-level category, add it to the `sidebar` array in `astro.config.mjs`
+- When adding a new top-level category, add it to the `sidebar` array in `starlight.config.mjs`
 - If you notice a broader inconsistency outside this scope, flag it to the user rather than silently editing unrelated pages
 
 ## 6. Commit and push
 
-Group all changes from a single source into **one commit**, then push. If push is rejected because the remote changed, rebase on `origin/main`, then push again.
+Group all changes from a single source into **one commit**, then push (git conventions per `CLAUDE.md`).
 
 **Commit message format:**
 
