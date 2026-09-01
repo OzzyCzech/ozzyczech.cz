@@ -1,8 +1,8 @@
 ---
-title: Action cameras
+title: Action & pocket cameras
 description: Comparison of current action, pocket, and 360° cameras — GoPro MISSION 1, DJI Osmo Action / Pocket, Insta360 X and Luna — specs and stand-out features.
 created: 2026-04-05
-updated: 2026-08-31
+updated: 2026-09-01
 tableOfContents: false
 ---
 
@@ -20,8 +20,8 @@ The 2026 line-up shifted significantly. GoPro **skipped the HERO14 Black entirel
 | [Insta360 X6](https://www.insta360.com/product/insta360-x6) | 2026 | 2× 1/1.1" | 120 (360°) | n/a |
 | [DJI Osmo Pocket 4P](https://www.dji.com/osmo-pocket-4p) | 2026 | 1" dual-lens | n/a | 230 g |
 | [Insta360 Luna Ultra](https://www.insta360.com/product/insta360-luna-ultra) | 2026 | 1" + 1/1.3" tele | 37 | ~200 g |
-| [GoPro MISSION 1 / PRO](https://gopro.com/en/us/news/gopro-announces-three-cameras-mission-1-2026) | 2026 | 1" quad Bayer | 50 | n/a |
-| [DJI Osmo Pocket 4](https://www.dji.com/osmo-pocket-4) | 2026 | 1" | 37 | n/a |
+| [GoPro MISSION 1 / PRO](https://gopro.com/en/us/news/gopro-announces-three-cameras-mission-1-2026) | 2026 | 1" quad Bayer | 50 | ~207 g (PRO) |
+| [DJI Osmo Pocket 4](https://www.dji.com/osmo-pocket-4) | 2026 | 1" | 37 | 190.5 g |
 | Insta360 Luna Pro | 2026 | 1" | n/a | n/a |
 | [DJI Osmo Action 6](https://www.dji.com/osmo-action-6) | 2025 | 1/1.1" | 38 | 149 g |
 | [Insta360 X5](https://www.insta360.com/product/insta360-x5) | 2025 | 2× 1/1.28" | 72 (360°) | 200 g |
@@ -94,7 +94,8 @@ Announced in China on 26 March 2026 and launched globally on **16 April 2026**, 
 - **Stabilisation:** 3-axis mechanical gimbal, as on Pocket 3
 - **Battery:** 1545 mAh (~20% larger than Pocket 3); up to ~4 h at 1080p
 - **Storage:** **107 GB built in** at ~800 MB/s — no card needed for most shoots
-- **Stand-out features:** Larger touchscreen, built-in storage, markedly lighter body than Pocket 3
+- **Weight:** 190.5 g, 144.2 × 44.4 × 33.5 mm — **heavier** than the Pocket 3 (179 g), despite pre-launch rumours of a lighter body
+- **Stand-out features:** Larger touchscreen, built-in storage, 4K/240 slow-mo
 - **Price (CZ):** [current listings on Heureka](https://sportovni-kamery.heureka.cz/)
 
 :::note
@@ -227,7 +228,9 @@ As of August 2026 the Luna Pro is sold **in China only**, with no international 
 - [Notebookcheck — Luna Ultra hands-on](https://www.notebookcheck.net/Dual-cam-Insta360-Luna-Ultra-official-hands-on-preview-1-inch-sensor-10-bit-iLog-f-1-8-aperture-take-on-DJI.1278337.0.html) — f/1.8 main lens, 10-bit I-Log
 - [Imaging Resource — Luna Pro unveiling](https://www.imaging-resource.com/news/insta360-officially-unveils-the-luna-pro-pocket-gimbal-camera/) — single-camera spec, 4K vertical, China-only availability
 - [GSMArena — DJI Osmo Pocket 4](https://www.gsmarena.com/dji_osmo_pocket_4_brings_new_1_sensor_larger_touchscreen_and_builtin_storage_-news-72403.php) and [CineD — Osmo Pocket 4P](https://www.cined.com/dji-osmo-pocket-4p-released-dual-lens-design-1-inch-sensor-and-10-bit-d-log-2-recording/) — sensor, video modes, storage, launch dates
+- [DJI — Osmo Pocket 4 specifications](https://www.dji.com/osmo-pocket-4/specs) — official 190.5 g weight and dimensions
+- [Engadget — GoPro Mission 1 Pro review](https://www.engadget.com/2180965/gopro-mission-1-pro-review/) — measured body weight (0.46 lb ≈ 207 g)
 - [DroneDJ — Pocket 4P global launch](https://dronedj.com/2026/07/23/dji-pocket-4p-us-launch/) — 30 July date and the US exclusion
 - [Daily Camera News — Ace Pro 3 rumours](https://www.dailycameranews.com/2026/08/insta360-ace-pro-3-rumors/) — revised late-2026 / early-2027 window
 
-Per-model specification claims are backed by the manufacturer pages linked in each heading. Accessed **2026-08-31**.
+Per-model specification claims are backed by the manufacturer pages linked in each heading. Accessed **2026-08-31** and **2026-09-01**.
