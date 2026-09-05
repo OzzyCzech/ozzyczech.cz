@@ -1,11 +1,11 @@
 ---
 title: Network and communication
-description: Browsers, VPN clients, RSS readers, and messaging apps for macOS.
+description: Browsers, VPN clients, download managers, RSS readers, and messaging apps for macOS.
 created: 2026-04-01
-updated: 2026-04-07
+updated: 2026-09-05
 ---
 
-Apps for browsing the web, managing network privacy, reading feeds, and messaging on macOS.
+Apps for browsing the web, managing network privacy, downloading files, reading feeds, and messaging on macOS.
 
 ## Browsers
 
@@ -16,6 +16,18 @@ Apps for browsing the web, managing network privacy, reading feeds, and messagin
 ## Ad blockers
 
 - **[Wipr](https://kaylees.site/wipr2.html)** — content blocker for Safari using the native Safari Extensions API
+
+## Download managers
+
+- **[AB Download Manager](https://abdownloadmanager.com/)** — free and open-source (Apache-2.0) desktop download manager written in Kotlin with Compose Multiplatform; a free [IDM](https://www.internetdownloadmanager.com/) alternative that splits a file into segments and pulls them over several connections at once when the server supports range requests, plus download queues and schedulers, dark/light/black themes, and official [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ab-download-manager/) and [Chrome](https://chromewebstore.google.com/detail/ab-download-manager-brows/bbobopahenonfdgjgaleledndnnfhooj) extensions that hand downloads over from the browser; builds for macOS (Intel and Apple Silicon), Windows, Linux and Android. Install on macOS from the author's own tap — it is not in homebrew-cask core:
+
+  ```shell
+  brew tap amir1376/tap && brew install --cask ab-download-manager
+  ```
+
+  :::caution
+  The project is not published on Google Play or other app stores. Anything claiming to be it there should be treated as fake — [download from the website or GitHub releases](https://github.com/amir1376/ab-download-manager/releases/latest).
+  :::
 
 ## VPN
 
